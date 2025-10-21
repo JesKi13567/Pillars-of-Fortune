@@ -1,0 +1,20 @@
+scoreboard players set #ctrl_pillar_type jkpof.int 0
+scoreboard players set #ctrl_pillar_count_order jkpof.int 0
+scoreboard players set #ctrl_pillar_height jkpof.int 40
+scoreboard players set #ctrl_pillar_distance jkpof.int 1
+
+scoreboard players set #ctrl_item_player jkpof.int 0
+scoreboard players set #ctrl_item_count_order jkpof.int 0
+scoreboard players set #ctrl_item_time jkpof.int 5
+
+scoreboard players set #ctrl_ground_type jkpof.int 0
+scoreboard players set #ctrl_ground_radius jkpof.int 16
+scoreboard players set #ctrl_ground_floor jkpof.int 1
+scoreboard players set #ctrl_ground_floor_random jkpof.int 0
+
+scoreboard players set #ctrl_time jkpof.int 1
+scoreboard players set #ctrl_time_freeze jkpof.int 1
+
+scoreboard players set #ctrl_night_vision jkpof.int 0
+
+execute if score #ctrl_preset jkpof.int matches 0 run data merge entity @e[limit=1, type=item_display, tag=jkpof_display_ctrl_preset] {CustomName: [{text: "默认", color: "yellow"}], item: {count: 1, id: "iron_ingot"}}
