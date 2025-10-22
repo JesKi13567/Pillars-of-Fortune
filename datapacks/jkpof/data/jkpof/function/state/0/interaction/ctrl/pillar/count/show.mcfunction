@@ -8,6 +8,6 @@ execute if score #ctrl_pillar_count_order jkpof.int matches 1 run data modify en
 execute if score #ctrl_pillar_count_order jkpof.int matches 2 run data modify entity @e[type=text_display, tag=jkpof_display_show_ctrl_pillar_count, limit=1] text set value {text: "5", color: "yellow"}
 execute if score #ctrl_pillar_count_order jkpof.int matches 3 run data modify entity @e[type=text_display, tag=jkpof_display_show_ctrl_pillar_count, limit=1] text set value {text: "4", color: "yellow"}
 
-data modify entity @e[type=text_display, tag=jkpof_display_joingame2, limit=1] text set value [{text: "需要 ", color: "yellow"}, {text: "2~", color: "gold"}, {score: {name: "#ctrl_pillar_count_num", objective: "jkpof.int"}, color: "gold"}, " 人。"]
+data modify entity @e[type=text_display, tag=jkpof_display_players, limit=1] text set value [{text: "需要 ", color: "yellow"}, {text: "2~", color: "gold"}, {score: {name: "#ctrl_pillar_count_num", objective: "jkpof.int"}, color: "gold"}, " 人。"]
 
 function jkpof:state/0/interaction/ctrl/pillar/distance/show

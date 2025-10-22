@@ -1,0 +1,17 @@
+{
+    "criteria": {
+        "jkpof": {
+            "trigger": "using_item",
+            "conditions": {
+                "item": {
+                    "items": [
+                        "fire_charge"
+                    ]
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "jkpof:state/using_item"
+    }
+}

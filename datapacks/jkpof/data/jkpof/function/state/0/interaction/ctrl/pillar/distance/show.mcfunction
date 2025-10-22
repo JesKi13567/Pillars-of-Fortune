@@ -9,4 +9,6 @@ execute if score #ctrl_pillar_distance jkpof.int matches 0 run function jkpof:st
 execute if score #ctrl_pillar_distance jkpof.int matches 1 run function jkpof:state/0/interaction/ctrl/pillar/distance/0 {n1: 12, n2: 8}
 execute if score #ctrl_pillar_distance jkpof.int matches 2 run function jkpof:state/0/interaction/ctrl/pillar/distance/0 {n1: 17, n2: 12}
 
+execute as @e[type=marker, tag=jkpof_player_spawn, tag=!jkpof_player_spawn_C] at @s run rotate @s facing 0 ~ 0
+
 function jkpof:state/0/interaction/ctrl/pillar/height/show

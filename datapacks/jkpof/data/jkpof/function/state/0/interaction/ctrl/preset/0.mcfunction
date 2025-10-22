@@ -15,6 +15,6 @@ scoreboard players set #ctrl_ground_floor_random jkpof.int 0
 scoreboard players set #ctrl_time jkpof.int 1
 scoreboard players set #ctrl_time_freeze jkpof.int 1
 
-scoreboard players set #ctrl_night_vision jkpof.int 0
+scoreboard players set #ctrl_night_vision jkpof.int 1
 
 execute if score #ctrl_preset jkpof.int matches 0 run data merge entity @e[limit=1, type=item_display, tag=jkpof_display_ctrl_preset] {CustomName: [{text: "默认", color: "yellow"}], item: {count: 1, id: "iron_ingot"}}

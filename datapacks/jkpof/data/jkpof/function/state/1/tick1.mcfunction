@@ -7,4 +7,4 @@ execute store result score #players jkpof.int if entity @a[scores={jkpof.state=2
 execute if score #players jkpof.int matches ..1 unless score #test_mode jkpof.int matches 1 run function jkpof:state/1/end
 
 # 突变
-function jkpof:state/1/progress/mutation/tick1
+function jkpof:state/1/progress/event/tick1

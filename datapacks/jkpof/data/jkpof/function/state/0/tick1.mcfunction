@@ -7,6 +7,3 @@ execute as @a[gamemode=adventure] at @s run function jkpof:state/0/player
 
 # 交互实体
 execute as @e[type=interaction] at @s run function jkpof:state/0/interaction/tick
-
-# 清理
-kill @e[type=!#jkpof:safe]

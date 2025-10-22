@@ -1,5 +1,5 @@
 # 游戏结束
-execute if entity @p[scores={jkpof.state=2}, gamemode=survival] run tellraw @a [{text: "【幸运之柱】", color: "yellow"}, {text: "游戏结束，恭喜 ", color: green}, {selector: "@p[scores={jkpof.state=2}, gamemode=survival]", color: "white"}, {text: " 获得胜利！", color: "green"}]
+execute if entity @p[scores={jkpof.state=2}, gamemode=survival] run function jkpof:state/1/end_
 execute unless entity @p[scores={jkpof.state=2}, gamemode=survival] run tellraw @a [{text: "【幸运之柱】", color: "yellow"}, {text: "游戏结束，没人获胜喵。", color: "green"}]
 
 scoreboard players operation #time_last_m jkpof.int = #time_last jkpof.int
