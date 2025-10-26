@@ -1,5 +1,6 @@
 gamemode survival @s
-spawnpoint @s 0 130 0
+spawnpoint @s 0 123 0
+recipe give @s *
 scoreboard players set @s jkpof.state 2
 execute store result score @s jkpof.id run scoreboard players add #player_temp jkpof.int 1
 

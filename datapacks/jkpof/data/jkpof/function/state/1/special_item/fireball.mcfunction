@@ -1,6 +1,6 @@
 # 消耗和冷却
-clear @s fire_charge 1
-scoreboard players set @s jkpof.cd.fireball 6
+clear @s fire_charge[consumable={"consume_seconds": 1000000, "animation": "none"}, custom_name=[{text: "可发射的", "color": "gold", "italic": false}, {"translate": "entity.minecraft.fireball", "color": "white"}], lore=[[{text: "按", "color": "gray", "italic": false}, {text: " [", "color": "white"}, {"keybind": "key.use", "color": "white"}, {text: "] ", "color": "white"}, "来发射。"]]] 1
+scoreboard players set @s jkpof.cd.fireball 1
 
 # 生成
 summon fireball ^ ^ ^.3 {Tags: ["jkpof", "jkpof_fireball_new"]}

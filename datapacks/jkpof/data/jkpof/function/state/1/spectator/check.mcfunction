@@ -7,7 +7,5 @@ execute as @s[scores={jkpof.id=1.., jkpof.death=1..}] run function jkpof:state/1
 
 # 高度过低死亡
 execute store result score @s jkpof.Y run data get entity @s Pos[1]
-damage @s[scores={jkpof.Y=..-120}] 100 out_of_world
-
-# 冷却
-scoreboard players remove @a[scores={jkpof.cd.fireball=1..}] jkpof.cd.fireball 1
+execute unless score #test_mode jkpof.int matches 1 run damage @s[scores={jkpof.Y=..-120}] 100 out_of_world
+execute if score #test_mode jkpof.int matches 1 run tp @s[scores={jkpof.Y=..-100}] 0 118 0

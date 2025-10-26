@@ -1,5 +1,6 @@
 ## 游戏初始化
 scoreboard players reset * jkpof.death
+scoreboard players reset * jkpof.spec.vote
 scoreboard players reset #test_mode jkpof.int
 scoreboard players reset #start_flag jkpof.int
 scoreboard players reset #event_time jkpof.int
@@ -8,6 +9,7 @@ scoreboard players set #time_res jkpof.int 3
 scoreboard players set #before_start jkpof.int 3
 scoreboard players set #state jkpof.int 1
 scoreboard players set #time_last jkpof.int 0
+scoreboard players set #trash jkpof.int 93
 
 scoreboard players set #progress_mode jkpof.int 0
 scoreboard players set #progress_value jkpof.int 63
@@ -16,6 +18,7 @@ scoreboard players set #progress_count jkpof.int 0
 
 difficulty hard
 gamerule pvp true
+execute if score #ctrl_natural_regen jkpof.int matches 0 run gamerule naturalRegeneration false
 worldborder set 49
 kill @e[type=marker, tag=jkpof_clean]
 kill @e[type=marker, tag=jkpof_lava_marker]

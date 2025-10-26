@@ -1,0 +1,1 @@
+$give @s $(item) $(n)

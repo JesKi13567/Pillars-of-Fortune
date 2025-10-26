@@ -11,6 +11,6 @@ title @a subtitle {score: {name: "#countdown", objective: "jkpof.int"}}
 
 execute if score #start_flag jkpof.int matches 2 run scoreboard players remove #countdown jkpof.int 1
 
-execute positioned 132 48 0 run playsound block.note_block.xylophone block @a
+execute positioned 100 64 0 run playsound block.note_block.xylophone block @a
 
 execute if score #countdown jkpof.int matches ..0 run function jkpof:state/1/enter

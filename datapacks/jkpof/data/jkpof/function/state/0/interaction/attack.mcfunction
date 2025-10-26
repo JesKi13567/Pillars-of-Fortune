@@ -16,6 +16,9 @@ execute as @s[tag=jkpof_interaction_ctrl_ground_floor_random] run function jkpof
 
 execute as @s[tag=jkpof_interaction_ctrl_time] run function jkpof:state/0/interaction/ctrl/time/freeze
 execute as @s[tag=jkpof_interaction_ctrl_night_vision] run function jkpof:state/0/interaction/ctrl/night_vision
+execute as @s[tag=jkpof_interaction_ctrl_natural_regen] run function jkpof:state/0/interaction/ctrl/natural_regen
+execute as @s[tag=jkpof_interaction_ctrl_vote] run function jkpof:state/0/interaction/ctrl/vote
+
 execute as @s[tag=jkpof_interaction_ctrl_preset] run function jkpof:state/0/interaction/ctrl/preset/show
 execute as @s[tag=!jkpof_interaction_ctrl_preset] run function jkpof:state/0/interaction/ctrl/preset/_1
 

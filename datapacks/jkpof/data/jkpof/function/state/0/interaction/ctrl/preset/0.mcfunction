@@ -16,5 +16,7 @@ scoreboard players set #ctrl_time jkpof.int 1
 scoreboard players set #ctrl_time_freeze jkpof.int 1
 
 scoreboard players set #ctrl_night_vision jkpof.int 1
+scoreboard players set #ctrl_natural_regen jkpof.int 1
+scoreboard players set #ctrl_vote jkpof.int 1
 
-execute if score #ctrl_preset jkpof.int matches 0 run data merge entity @e[limit=1, type=item_display, tag=jkpof_display_ctrl_preset] {CustomName: [{text: "默认", color: "yellow"}], item: {count: 1, id: "iron_ingot"}}
+execute if score #ctrl_preset jkpof.int matches 0 run data merge entity @e[limit=1, type=item_display, tag=jkpof_display_ctrl_preset] {CustomName: [{text: "默认", color: "yellow"}], item: {id: "iron_ingot"}}

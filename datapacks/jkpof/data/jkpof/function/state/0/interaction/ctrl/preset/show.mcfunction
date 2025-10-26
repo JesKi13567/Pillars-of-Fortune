@@ -29,3 +29,7 @@ function jkpof:state/0/interaction/ctrl/ground/floor_random
 function jkpof:state/0/interaction/ctrl/time/show
 scoreboard players remove #ctrl_night_vision jkpof.int 1
 function jkpof:state/0/interaction/ctrl/night_vision
+scoreboard players remove #ctrl_natural_regen jkpof.int 1
+function jkpof:state/0/interaction/ctrl/natural_regen
+scoreboard players remove #ctrl_vote jkpof.int 1
+function jkpof:state/0/interaction/ctrl/vote
