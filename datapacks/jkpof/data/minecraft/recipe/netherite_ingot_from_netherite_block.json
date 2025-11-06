@@ -1,0 +1,21 @@
+{
+  "type": "crafting_shapeless",
+  "category": "misc",
+  "group": "netherite_ingot",
+  "ingredients": [
+    "netherite_block"
+  ],
+  "result": {
+    "count": 9,
+    "id": "netherite_ingot",
+    "components": {
+      "lore": [
+        {
+          "text": "可直接用于合成武器/装备。",
+          "color": "gray",
+          "italic": false
+        }
+      ]
+    }
+  }
+}

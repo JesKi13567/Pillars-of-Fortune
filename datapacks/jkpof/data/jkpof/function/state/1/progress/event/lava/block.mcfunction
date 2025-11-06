@@ -7,5 +7,4 @@ execute as @s[scores={jkpof.int=20}] run setblock ~ ~ ~ red_wool
 execute as @s[scores={jkpof.int=0}] run setblock ~ ~ ~ lava
 
 kill @s[scores={jkpof.int=..0}]
-
 scoreboard players remove @s jkpof.int 1

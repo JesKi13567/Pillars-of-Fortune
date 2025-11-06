@@ -12,20 +12,20 @@ execute store result bossbar jkpof:progress max run scoreboard players get #prog
 title @a times 0 3s 8t
 
 # 边界收缩
-execute if score #progress_mode jkpof.int matches -1 run function jkpof:state/1/progress/event/once/border
+execute if score #progress_mode jkpof.int matches -1 run function jkpof:state/1/progress/event/once/border/global
 
 # 万箭齐发
-execute if score #progress_mode jkpof.int matches 1 run tellraw @a [{text: "【幸运之柱】", color: "yellow"}, {text: "2 秒 ", color: "white"}, {text: "后，玩家头上将不断生成箭矢，持续", color: "aqua"}, " 3 秒 ", {text: "！", color: "aqua"}]
+execute if score #progress_mode jkpof.int matches 1 run tellraw @a [{text: "【幸运之柱】", color: "yellow"}, {text: "2 秒 ", color: "white"}, {text: "后，玩家头上将不断生成", color: "aqua"}, {translate: "entity.minecraft.arrow"}, {text: "，持续", color: "aqua"}, " 3 秒", {text: "！", color: "aqua"}]
 execute if score #progress_mode jkpof.int matches 1 run title @a title {text: "万箭齐发", color: "aqua"}
 execute if score #progress_mode jkpof.int matches 1 run title @a subtitle {text: "注意头顶的箭雨", color: "green"}
 
 # 熔岩地板
-execute if score #progress_mode jkpof.int matches 2 run tellraw @a [{text: "【幸运之柱】", color: "yellow"}, {text: "现在开始，玩家脚下的方块会逐渐变成", color: "aqua"}, {translate: "block.minecraft.lava", color: "white"}, {text: "，持续", color: "aqua"}, " 5 秒 ", {text: "！", color: "aqua"}]
+execute if score #progress_mode jkpof.int matches 2 run tellraw @a [{text: "【幸运之柱】", color: "yellow"}, {text: "现在开始，玩家脚下的方块会逐渐变成", color: "aqua"}, {translate: "block.minecraft.lava"}, {text: "，持续", color: "aqua"}, " 5 秒", {text: "！", color: "aqua"}]
 execute if score #progress_mode jkpof.int matches 2 run title @a title {text: "熔岩地板", color: "aqua"}
 execute if score #progress_mode jkpof.int matches 2 run title @a subtitle {text: "注意脚下的方块", color: "green"}
 
 # 雷霆之劫
-execute if score #progress_mode jkpof.int matches 3 run tellraw @a [{text: "【幸运之柱】", color: "yellow"}, {text: "将在", color: "aqua"}, " 5 秒 ", {text: "后给予随机玩家一发雷电！", color: "aqua"}]
+execute if score #progress_mode jkpof.int matches 3 run tellraw @a [{text: "【幸运之柱】", color: "yellow"}, {text: "将在", color: "aqua"}, " 5 秒 ", {text: "后给予随机玩家一发", color: "aqua"}, {translate: "entity.minecraft.lightning_bolt"}, {text: "！", color: "aqua"}]
 execute if score #progress_mode jkpof.int matches 3 run title @a title {text: "雷霆之劫", color: "aqua"}
 execute if score #progress_mode jkpof.int matches 3 run title @a subtitle {text: "命有此劫", color: "green"}
 

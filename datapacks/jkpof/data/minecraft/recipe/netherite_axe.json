@@ -1,0 +1,17 @@
+{
+  "type": "crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": "stick",
+    "X": "#netherite_tool_materials"
+  },
+  "pattern": [
+    "XX",
+    "X#",
+    " #"
+  ],
+  "result": {
+    "count": 1,
+    "id": "netherite_axe"
+  }
+}

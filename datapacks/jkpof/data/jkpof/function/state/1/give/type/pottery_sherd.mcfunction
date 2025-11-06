@@ -1,3 +1,5 @@
+execute if score #ctrl_item_player jkpof.int matches 0 store result score @s jkpof.item.color run random value 1..23
+
 $execute if score @s jkpof.item.color matches 1 run give @s angler_pottery_sherd $(n)
 $execute if score @s jkpof.item.color matches 2 run give @s archer_pottery_sherd $(n)
 $execute if score @s jkpof.item.color matches 3 run give @s arms_up_pottery_sherd $(n)

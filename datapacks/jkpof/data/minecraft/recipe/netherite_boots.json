@@ -1,0 +1,15 @@
+{
+  "type": "crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "X": "diamond"
+  },
+  "pattern": [
+    "X X",
+    "X X"
+  ],
+  "result": {
+    "count": 1,
+    "id": "netherite_boots"
+  }
+}
