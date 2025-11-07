@@ -1340,7 +1340,7 @@ $execute if score @s jkpof.item.order matches 1339 run give @s blaze_rod[custom_
 $execute if score @s jkpof.item.order matches 1340 run give @s bat_spawn_egg[custom_name=[{text: "自燃", color: "red", italic: false}, {translate: "block.minecraft.tnt", color: "white"}], lore=[{text: "顾名思义，放下即自燃。", color: "gray", italic: false}], item_model=tnt, entity_data={"id": "tnt"}] $(n)
 $execute if score @s jkpof.item.order matches 1341 run give @s bat_spawn_egg[custom_name=[{text: "可随处放置的", color: "light_purple", italic: false}, {translate: "item.minecraft.end_crystal", color: "white"}], lore=[{text: "顾名思义，可随处放置。", color: "gray", italic: false}], item_model=end_crystal, entity_data={"id": "end_crystal"}] $(n)
 $execute if score @s jkpof.item.order matches 1342 run give @s stick[custom_name={text: "击退棒", color: "gold", italic: false}, enchantments={knockback: 5}] $(n)
-$execute if score @s jkpof.item.order matches 1343 run give @s netherite_ingot[lore=[{text: "可直接用于合成武器/装备。", color: "gray", italic: false}]] $(n)
+$execute if score @s jkpof.item.order matches 1343 run give @s netherite_ingot[lore=[{text: "可直接用于合成下界合金制的武器/装备。", color: "gray", italic: false}]] $(n)
 $execute if score @s jkpof.item.order matches 1344 run function jkpof:state/1/give/type/armor_trim_smithing_template {n: $(n)}
 $execute if score @s jkpof.item.order matches 1345 run function jkpof:state/1/give/type/arrow {n: $(n)}
 $execute if score @s jkpof.item.order matches 1346 run function jkpof:state/1/give/type/banner_pattern {n: $(n)}

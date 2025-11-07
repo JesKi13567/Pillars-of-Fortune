@@ -63,7 +63,7 @@ summon text_display 100 72 -10 {Tags: ["jkpof"], brightness: {block: 15, sky: 15
 summon interaction 100 65.75 -10 {Tags: ["jkpof", "jkpof_interaction", "jkpof_display_lobby", "jkpof_display_lobby_item"], response: true, width: .5, height: .5}
 summon text_display 100 66 -10 {Tags: ["jkpof"], brightness: {block: 15, sky: 15}, alignment: "center", text: {text: "下一个", color: "yellow"}}
 summon item_display 100 68 -10 {Tags: ["jkpof", "jkpof_display_lobby_item"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [1f, 1f, 1f], translation: [0f, 0f, 0f]}, item: {id: "grass_block"}, Rotation: [-180f, 0f]}
-summon text_display 100 66.5 -10 {Tags: ["jkpof", "jkpof_display_lobby_item"], brightness: {block: 15, sky: 15}, alignment: "center", text: "原版修改\n无耐久物品最大堆叠个数均为 64。"}
+summon text_display 100 66.5 -10 {Tags: ["jkpof", "jkpof_display_lobby_item"], brightness: {block: 15, sky: 15}, alignment: "center", text: "原版修改\n无耐久物品最大堆叠个数均为 64，\n若自己制作的物品未堆叠则需丢出刷新。"}
 
 #- 事件
 summon text_display 100 72 10 {Tags: ["jkpof"], brightness: {block: 15, sky: 15}, alignment: "center", billboard: "center", transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [6f, 6f, 6f], translation: [0f, 0f, 0f]}, text: {text: "事件", color: "aqua", bold: true}}

@@ -2,7 +2,7 @@ scoreboard players add #lobby_item jkpof.int 1
 execute if score #lobby_item jkpof.int matches 7.. run scoreboard players set #lobby_item jkpof.int 0
 
 execute if score #lobby_item jkpof.int matches 0 run data modify entity @e[type=item_display, tag=jkpof_display_lobby_item, limit=1] item.id set value "grass_block"
-execute if score #lobby_item jkpof.int matches 0 run data modify entity @e[type=text_display, tag=jkpof_display_lobby_item, limit=1] text set value "原版修改\n无耐久物品最大堆叠个数均为 64。"
+execute if score #lobby_item jkpof.int matches 0 run data modify entity @e[type=text_display, tag=jkpof_display_lobby_item, limit=1] text set value "原版修改\n无耐久物品最大堆叠个数均为 64，\n若自己制作的物品未堆叠则需丢出刷新。"
 
 execute if score #lobby_item jkpof.int matches 1 run data modify entity @e[type=item_display, tag=jkpof_display_lobby_item, limit=1] item.id set value "fire_charge"
 execute if score #lobby_item jkpof.int matches 1 run data modify entity @e[type=text_display, tag=jkpof_display_lobby_item, limit=1] text set value ["", {text: "可发射的", color: "gold"}, {translate: "entity.minecraft.fireball"}, "\n", {text: "按"}, {text: " [", color: "gold"}, {keybind: "key.use", color: "gold"}, {text: "] ", color: "gold"}, "来发射。"]
@@ -20,4 +20,4 @@ execute if score #lobby_item jkpof.int matches 5 run data modify entity @e[type=
 execute if score #lobby_item jkpof.int matches 5 run data modify entity @e[type=text_display, tag=jkpof_display_lobby_item, limit=1] text set value ["", {text: "击退棒", color: "gold"}, "\n", {translate: "enchantment.minecraft.knockback"}, " ", {translate: "enchantment.level.5"}]
 
 execute if score #lobby_item jkpof.int matches 6 run data modify entity @e[type=item_display, tag=jkpof_display_lobby_item, limit=1] item.id set value "netherite_ingot"
-execute if score #lobby_item jkpof.int matches 6 run data modify entity @e[type=text_display, tag=jkpof_display_lobby_item, limit=1] text set value ["", {translate: "item.minecraft.netherite_ingot"}, "\n", "可直接用于合成武器/装备。"]
+execute if score #lobby_item jkpof.int matches 6 run data modify entity @e[type=text_display, tag=jkpof_display_lobby_item, limit=1] text set value ["", {translate: "item.minecraft.netherite_ingot"}, "\n", "可直接用于合成下界合金制的武器/装备。"]

@@ -11,7 +11,7 @@
     "components": {
       "lore": [
         {
-          "text": "可直接用于合成武器/装备。",
+          "text": "可直接用于合成下界合金制的武器/装备。",
           "color": "gray",
           "italic": false
         }
