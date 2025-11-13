@@ -30,4 +30,4 @@ execute unless score #trash jkpof.int matches 31.. unless score #trash jkpof.int
 function jkpof:state/1/height_limit/sec1
 
 # 进度条
-execute if score #ctrl_event jkpof.int matches 1 run function jkpof:state/1/progress/sec1
+execute if score #event_ctrl_real jkpof.int matches 1 run function jkpof:state/1/progress/sec1

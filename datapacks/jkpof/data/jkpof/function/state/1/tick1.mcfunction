@@ -3,11 +3,11 @@
 execute as @a[gamemode=!spectator] run function jkpof:state/1/spectator/tick1
 
 # 检查人数
-execute store result score #players jkpof.int if entity @a[scores={jkpof.state=2}, gamemode=survival]
-execute if score #players jkpof.int matches ..1 unless score #test_mode jkpof.int matches 1 run function jkpof:state/1/end/check
+execute unless score #test_mode jkpof.int matches 1 if score #ctrl_team jkpof.int matches 0 run function jkpof:state/1/end/by_players
+execute unless score #test_mode jkpof.int matches 1 if score #ctrl_team jkpof.int matches 1 run function jkpof:state/1/end/by_teams
 
 # 事件
-execute if score #ctrl_event jkpof.int matches 1 run function jkpof:state/1/progress/event/tick1
+execute if score #event_ctrl_real jkpof.int matches 1 run function jkpof:state/1/progress/event/tick1
 
 # 玩家生成威胁性生物
 execute as @a[scores={jkpof.state=2}] run function jkpof:state/1/spawn_egg/tick1

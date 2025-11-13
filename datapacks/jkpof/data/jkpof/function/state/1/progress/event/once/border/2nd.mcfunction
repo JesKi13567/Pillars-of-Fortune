@@ -10,3 +10,7 @@ fill -15 50 15 15 50 15 red_concrete
 fill 15 50 -15 15 50 15 red_concrete
 fill -15 50 -15 15 50 -15 red_concrete
 fill -15 50 -15 -15 50 15 red_concrete
+
+# 移出随机池
+data remove storage jk:pof data.event.list[0]
+execute store result storage jk:pof data.event.count int 1 run scoreboard players remove #event_s jkpof.int 1
