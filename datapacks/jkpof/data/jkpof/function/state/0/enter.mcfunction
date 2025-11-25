@@ -7,6 +7,7 @@ scoreboard players reset * jkpof.vote
 difficulty peaceful
 gamerule pvp false
 gamerule fallDamage false
+gamerule fireDamage false
 gamerule naturalRegeneration true
 gamerule announceAdvancements false
 gamerule locatorBar false
@@ -14,11 +15,12 @@ worldborder set 1000
 kill @e[type=item_display, tag=jkpof_barrier]
 spawnpoint @a 0 64 -100
 tp @a 0 64 -100
-tellraw @a [{text: "【幸运之柱】", color: "yellow"}, {text: "游戏已重置！", color: "green"}]
+gamemode adventure @a
+tellraw @a [{storage: "jk:pof", nbt: "txt.POF", color: "yellow"}, {storage: "jk:pof", nbt: "txt.game.reset", color: "green"}]
 
 # 清理地图
 kill @e[type=marker, tag=jkpof_clean]
 summon marker 0 130 0 {Tags: ["jkpof", "jkpof_clean"]}
 scoreboard players set @e[type=marker, tag=jkpof_clean, limit=1] jkpof.int 100
 bossbar set jkpof:progress visible false
-function jkpof:state/0/player_clear
+function jkpof:state/0/player/clear

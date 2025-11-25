@@ -1,6 +1,6 @@
 effect give @a[scores={jkpof.state=2}, gamemode=survival] jump_boost 15 9
 effect give @a[scores={jkpof.state=2}, gamemode=survival] slow_falling 15 0
 
-tellraw @a [{text: "【幸运之柱】", color: "yellow"}, {text: "现在给予所有玩家持续", color: "aqua"}, " 15 秒 ", {text: "的 ", color: "aqua"}, {translate: "effect.minecraft.jump_boost"}, {text: " + ", color: "aqua"}, {translate: "effect.minecraft.slow_falling"}, {text: "。", color: "aqua"}]
-title @a title {text: "月球漫步", color: "aqua"}
-title @a subtitle {text: "跳跃和降落得到增益", color: "green"}
+tellraw @a [{storage: "jk:pof", nbt: "txt.POF", color: "yellow"}, {storage: "jk:pof", nbt: "txt.event.moon_walk.tellraw", color: "aqua"}, {translate: "effect.minecraft.jump_boost"}, {text: " + ", color: "aqua"}, {translate: "effect.minecraft.slow_falling"}, {storage: "jk:pof", nbt: "txt.event.global.last", color: "aqua"}, "15", {storage: "jk:pof", nbt: "txt.seconds"}, {storage: "jk:pof", nbt: "txt.char.1", color: "aqua"}]
+title @a title {storage: "jk:pof", nbt: "txt.event.moon_walk.name", color: "aqua"}
+title @a subtitle {storage: "jk:pof", nbt: "txt.event.moon_walk.subtitle", color: "green"}

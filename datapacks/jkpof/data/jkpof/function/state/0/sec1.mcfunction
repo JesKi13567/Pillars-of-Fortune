@@ -1,5 +1,5 @@
 # 所有人
-execute positioned 0 64 -100 as @a unless entity @s[distance=..40] run tp @s ~ ~ ~
+execute positioned 0 64 -100 as @a unless entity @s[distance=..40] run function jkpof:state/0/player/back
 gamemode adventure @a[gamemode=!creative]
 
 # 清理

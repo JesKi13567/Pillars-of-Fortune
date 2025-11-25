@@ -1,4 +1,4 @@
-tellraw @a [{text: "【幸运之柱】", color: "yellow"}, {text: "边界将 ", color: "aqua"}, {text: "→8←", color: "green"}, " 5 秒", {text: "，", color: "aqua"}, {text: "↓30↓", color: "green"}, " 15 秒", {text: "！", color: "aqua"}]
+tellraw @a [{storage: "jk:pof", nbt: "txt.POF", color: "yellow"}, {storage: "jk:pof", nbt: "txt.event.border.tellraw", color: "aqua"}, {text: " →8←", color: "green"}, " 5", {storage: "jk:pof", nbt: "txt.seconds"}, {text: ", ", color: "aqua"}, {text: "↓30↓", color: "green"}, " 15", {storage: "jk:pof", nbt: "txt.seconds"}, {storage: "jk:pof", nbt: "txt.char.1", color: "aqua"}]
 title @a subtitle {text: "→8← ↓30↓", color: "green"}
 
 worldborder set 13 5

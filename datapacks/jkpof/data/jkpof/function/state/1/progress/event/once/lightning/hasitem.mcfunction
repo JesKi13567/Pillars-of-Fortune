@@ -1,4 +1,4 @@
-tellraw @s [{text: "【幸运之柱】", color: "yellow"}, {text: "恭喜你渡劫成功，你背包中某栏位获得了覆盖的随机附魔！", color: "aqua"}]
+tellraw @s [{storage: "jk:pof", nbt: "txt.POF", color: "yellow"}, {storage: "jk:pof", nbt: "txt.event.lightning.player.me.hasitem", color: "aqua"}]
 
 # 随机取背包种类
 execute store result score #lightning_backpack jkpof.int run random value 1..41

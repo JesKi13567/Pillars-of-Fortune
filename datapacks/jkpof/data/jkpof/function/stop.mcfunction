@@ -1,3 +1,2 @@
-tellraw @a [{text: "【幸运之柱】", color: "yellow"}, {text: "游戏被强行终止！", color: "aqua"}]
-gamemode adventure @a
+tellraw @a [{storage: "jk:pof", nbt: "txt.POF", color: "yellow"}, {storage: "jk:pof", nbt: "txt.game.end.force", color: "aqua"}]
 function jkpof:state/0/enter

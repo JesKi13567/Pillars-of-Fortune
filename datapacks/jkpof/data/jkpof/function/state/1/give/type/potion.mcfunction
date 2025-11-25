@@ -1,4 +1,4 @@
-execute if score #ctrl_item_player jkpof.int matches 0 store result score @s jkpof.item.color run random value 1..46
+execute if score #ctrl_item_mode jkpof.int matches 0 store result score @s jkpof.item.color run random value 1..46
 
 $execute if score @s jkpof.item.color matches 1 run give @s $(potion)[potion_contents={potion: "awkward"}, max_stack_size=64] $(n)
 $execute if score @s jkpof.item.color matches 2 run give @s $(potion)[potion_contents={potion: "fire_resistance"}, max_stack_size=64] $(n)

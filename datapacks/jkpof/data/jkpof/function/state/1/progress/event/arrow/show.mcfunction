@@ -1,0 +1,3 @@
+tellraw @a [{storage: "jk:pof", nbt: "txt.POF", color: "yellow"}, {text: "2", color: "white"}, {storage: "jk:pof", nbt: "txt.seconds", color: "white"}, {storage: "jk:pof", nbt: "txt.event.arrow.tellraw", color: "aqua"}, {translate: "entity.minecraft.arrow"}, {storage: "jk:pof", nbt: "txt.event.global.last", color: "aqua"}, "3", {storage: "jk:pof", nbt: "txt.seconds"}, {storage: "jk:pof", nbt: "txt.char.1", color: "aqua"}]
+title @a title {storage: "jk:pof", nbt: "txt.event.arrow.name", color: "aqua"}
+title @a subtitle {storage: "jk:pof", nbt: "txt.event.arrow.subtitle", color: "green"}

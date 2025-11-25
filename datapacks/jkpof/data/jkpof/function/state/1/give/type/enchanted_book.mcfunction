@@ -1,4 +1,4 @@
-execute if score #ctrl_item_player jkpof.int matches 0 store result score @s jkpof.item.color run random value 1..42
+execute if score #ctrl_item_mode jkpof.int matches 0 store result score @s jkpof.item.color run random value 1..42
 
 give @s experience_bottle 32
 give @s anvil

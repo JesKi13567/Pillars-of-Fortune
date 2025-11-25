@@ -7,5 +7,5 @@ execute if score #ctrl_item_count_order jkpof.int matches 2 run scoreboard playe
 
 execute if score #ctrl_item_count_order jkpof.int matches 0..2 run data modify entity @e[type=text_display, tag=jkpof_display_show_ctrl_item_count, limit=1] text set value {score: {name: "#ctrl_item_count_num", objective: "jkpof.int"}, color: "yellow"}
 
-execute if score #ctrl_item_count_order jkpof.int matches 3 run data modify entity @e[type=text_display, tag=jkpof_display_show_ctrl_item_count, limit=1] text set value {text: "随机1~4", color: "yellow"}
-execute if score #ctrl_item_count_order jkpof.int matches 4 run data modify entity @e[type=text_display, tag=jkpof_display_show_ctrl_item_count, limit=1] text set value {text: "随机1~8", color: "yellow"}
+execute if score #ctrl_item_count_order jkpof.int matches 3 run data modify entity @e[type=text_display, tag=jkpof_display_show_ctrl_item_count, limit=1] text set value [{storage: "jk:pof", nbt: "txt.lobby.global.random", color: "yellow"}, " 1~4"]
+execute if score #ctrl_item_count_order jkpof.int matches 4 run data modify entity @e[type=text_display, tag=jkpof_display_show_ctrl_item_count, limit=1] text set value [{storage: "jk:pof", nbt: "txt.lobby.global.random", color: "yellow"}, " 1~8"]

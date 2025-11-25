@@ -1,4 +1,5 @@
 ## 游戏初始化
+scoreboard players reset * jkpof.leavegame
 scoreboard players reset * jkpof.death
 scoreboard players reset * jkpof.spawn_egg.ender_dragon
 scoreboard players reset * jkpof.spawn_egg.wither
@@ -28,6 +29,7 @@ scoreboard players set #event_loop jkpof.int 0
 difficulty hard
 gamerule pvp true
 gamerule fallDamage true
+gamerule fireDamage true
 execute if score #ctrl_natural_regen jkpof.int matches 0 run gamerule naturalRegeneration false
 execute if score #ctrl_advancement jkpof.int matches 1 run gamerule announceAdvancements true
 execute if score #ctrl_locator_bar jkpof.int matches 1 run gamerule locatorBar true
@@ -37,8 +39,8 @@ summon item_display 0 120 0 {Tags: ["jkpof", "jkpof_barrier"], brightness: {bloc
 scoreboard players operation #event_ctrl_real jkpof.int = #event_ctrl jkpof.int
 execute if score #event_ctrl_real jkpof.int matches 1 run bossbar set jkpof:progress visible true
 bossbar set jkpof:progress max 60
-tellraw @a [{text: "【幸运之柱】", color: "yellow"}, {text: "游戏已开始！", color: "green"}]
-function jkpof:state/0/player_clear
+tellraw @a [{storage: "jk:pof", nbt: "txt.POF", color: "yellow"}, {storage: "jk:pof", nbt: "txt.game.start.ed", color: "green"}]
+function jkpof:state/0/player/clear
 
 # 事件池
 data remove storage jk:pof data.event.list
@@ -68,7 +70,7 @@ execute if score #ctrl_team jkpof.int matches 1 as @a[scores={jkpof.state=1, jkp
 ## 地图
 # 柱子初始
 execute as @e[type=marker, tag=jkpof_player_spawn] at @s run fill ~ ~-1 ~ ~ 1 ~ bedrock
-# 无地图
-execute if score #ctrl_map jkpof.int matches 0 run function jkpof:state/1/fill/map/random
-# 有地图
-execute if score #ctrl_map jkpof.int matches 1.. run function jkpof:state/1/fill/map/by with storage jk:pof data.map
+# 地图确认
+function jkpof:state/0/interaction/ctrl/ground/map_set
+execute if score #ctrl_map_real jkpof.int matches 0 run function jkpof:state/1/fill/map/random
+execute if score #ctrl_map_real jkpof.int matches 1.. run function jkpof:state/1/fill/map/by with storage jk:pof data.map

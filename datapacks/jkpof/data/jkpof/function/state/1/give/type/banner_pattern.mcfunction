@@ -1,4 +1,4 @@
-execute if score #ctrl_item_player jkpof.int matches 0 store result score @s jkpof.item.color run random value 1..10
+execute if score #ctrl_item_mode jkpof.int matches 0 store result score @s jkpof.item.color run random value 1..10
 
 $execute if score @s jkpof.item.color matches 1 run give @s bordure_indented_banner_pattern[max_stack_size=64] $(n)
 $execute if score @s jkpof.item.color matches 2 run give @s creeper_banner_pattern[max_stack_size=64] $(n)

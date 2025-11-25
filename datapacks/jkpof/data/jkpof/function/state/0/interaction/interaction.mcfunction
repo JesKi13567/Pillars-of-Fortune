@@ -6,5 +6,5 @@ execute as @s[tag=jkpof_interaction_ctrl_pillar_distance] run function jkpof:sta
 
 execute as @s[tag=jkpof_interaction_ctrl_time] run function jkpof:state/0/interaction/ctrl/time/change
 
-#execute on target run effect give @s glowing 1 0 true
+execute on target run effect give @s glowing 1 0 true
 data remove entity @s interaction
