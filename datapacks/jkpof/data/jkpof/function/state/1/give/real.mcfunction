@@ -1216,3 +1216,4 @@ $execute if score @s jkpof.item.order matches 1215 run function jkpof:state/1/gi
 $execute if score @s jkpof.item.order matches 1216 run function jkpof:state/1/give/type/color16 {n: $(n), item: harness}
 $execute if score @s jkpof.item.order matches 1217 run function jkpof:state/1/give/type/color17 {n: $(n), item: bundle}
 $execute if score @s jkpof.item.order matches 1218..1278 run function jkpof:state/1/give/type/copper_made {n: $(n)}
+$execute if score @s jkpof.item.order matches 1279.. run function jkpof:_by_version/give/extra/item {x: $(x), n: $(n)}

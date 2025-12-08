@@ -7,7 +7,7 @@ bossbar add jkpof:progress ""
 bossbar set jkpof:progress color blue
 
 # storage
-data modify storage jk:pof data.enchantments set value ["aqua_affinity", "bane_of_arthropods", "binding_curse", "blast_protection", "breach", "channeling", "density", "depth_strider", "efficiency", "feather_falling", "fire_aspect", "fire_protection", "flame", "fortune", "frost_walker", "impaling", "infinity", "knockback", "looting", "loyalty", "luck_of_the_sea", "lure", "mending", "multishot", "piercing", "power", "projectile_protection", "protection", "punch", "quick_charge", "respiration", "riptide", "sharpness", "silk_touch", "smite", "soul_speed", "sweeping_edge", "swift_sneak", "thorns", "unbreaking", "vanishing_curse", "wind_burst"]
+data modify storage jk:pof data.enchantments set value ["aqua_affinity", "bane_of_arthropods", "binding_curse", "blast_protection", "breach", "channeling", "density", "depth_strider", "efficiency", "feather_falling", "fire_aspect", "fire_protection", "flame", "fortune", "frost_walker", "impaling", "infinity", "knockback", "looting", "loyalty", "luck_of_the_sea", "lure", "mending", "multishot", "piercing", "power", "projectile_protection", "protection", "punch", "quick_charge", "respiration", "riptide", "sharpness", "silk_touch", "smite", "soul_speed", "sweeping_edge", "swift_sneak", "thorns", "unbreaking", "vanishing_curse", "wind_burst", "lunge"]
 
 # 队伍
 team add jkpof.red {text: "红队", color: "red"}
@@ -119,7 +119,7 @@ summon text_display 0 0 0 {Tags: ["jkpof", "jkpof_display_text"], view_range: fa
 #- 游戏
 summon text_display 0 70 -90 {Tags: ["jkpof", "jkpof_lobby_const_top_play"], brightness: {block: 15, sky: 15}, alignment: "center", billboard: "center", transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [6f, 6f, 6f], translation: [0f, 0f, 0f]}, text: {text: "游戏", color: "green", bold: true}}
 summon text_display 0 68.5 -90 {Tags: ["jkpof", "jkpof_display_players"], brightness: {block: 15, sky: 15}, alignment: "center", billboard: "center", transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [2f, 2f, 2f], translation: [0f, 0f, 0f]}, text: {text: "自动分配人数。\n（最多 9 人）", color: "yellow"}, line_width: 1000}
-summon text_display 0 70 -100 {Tags: ["jkpof", "jkpof_lobby_const_top_lore"], brightness: {block: 15, sky: 15}, alignment: "center", billboard: "center", transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [2f, 2f, 2f], translation: [0f, 0f, 0f]}, text: [{text: "【幸运之柱】", color: "yellow"}, {text: " v1.1.1", color: "gold"}, "\n", {text: "玩家初始生成在各个柱子顶端，\n每隔一段时间获得随机物品，\n最终目标是活到最后。", color: "green"}, "\n", {text: "本地图作者：JK137", color: "aqua"}], background: -2030043136, line_width: 1000}
+summon text_display 0 70 -100 {Tags: ["jkpof", "jkpof_lobby_const_top_lore"], brightness: {block: 15, sky: 15}, alignment: "center", billboard: "center", transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [2f, 2f, 2f], translation: [0f, 0f, 0f]}, text: [{text: "【幸运之柱】", color: "yellow"}, {text: " v1.1.2", color: "gold"}, "\n", {text: "玩家初始生成在各个柱子顶端，\n每隔一段时间获得随机物品，\n最终目标是活到最后。", color: "green"}, "\n", {text: "本地图作者：JK137", color: "aqua"}], background: -2030043136, line_width: 1000}
 
 #- 道具
 summon text_display -10 70 -100 {Tags: ["jkpof", "jkpof_lobby_const_top_items"], brightness: {block: 15, sky: 15}, alignment: "center", billboard: "center", transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [6f, 6f, 6f], translation: [0f, 0f, 0f]}, text: {text: "道具", color: "red", bold: true}}
@@ -230,10 +230,11 @@ summon text_display 0 65.05 -113 {Tags: ["jkpof", "jkpof_display_ctrl_team"], br
 summon text_display 0 64.5 -113 {Tags: ["jkpof", "jkpof_display_show_ctrl_team"], brightness: {block: 15, sky: 15}, alignment: "center", billboard: "center", text: {text: "无效", color: "yellow"}}
 
 # 语言
-summon interaction 0 64.1 -101.3 {Tags: ["jkpof", "jkpof_interaction", "jkpof_display_lobby", "jkpof_interaction_ctrl_lang"], response: true, width: .5, height: .5}
-summon text_display 0 64.1 -101.7 {Tags: ["jkpof", "jkpof_display_ctrl_lang"], brightness: {block: 15, sky: 15}, alignment: "center", text: {text: "语言/Language", color: "green"}, Rotation: [0f, -90f]}
-summon text_display 0 64.1 -101.2 {Tags: ["jkpof", "jkpof_display_show_ctrl_lang"], brightness: {block: 15, sky: 15}, alignment: "center", text: {text: "简体中文", color: "yellow"}, Rotation: [0f, -90f]}
-summon text_display 0 64.1 -102.2 {Tags: ["jkpof", "jkpof_lobby_const_short_text_explain"], brightness: {block: 15, sky: 15}, text: [{text: "POF = Pillars Of Fortune", color: "yellow"}, "\n", {text: "VOF = Votes Of Fortune", color: "aqua"}, "\n", {text: "BOF = Brooms Of Fortune", color: "green"}, "\n", {text: "EOF = Eggs Of Fortune", color: "gold"}], Rotation: [0f, -90f], view_range: false}
+summon interaction 0 64.01 -101.5 {Tags: ["jkpof", "jkpof_interaction", "jkpof_display_lobby", "jkpof_interaction_ctrl_lang"], response: true, width: 1, height: .1}
+summon text_display 0 64.01 -101.7 {Tags: ["jkpof", "jkpof_display_ctrl_lang"], brightness: {block: 15, sky: 15}, alignment: "center", text: {text: "Lang", color: "green"}, Rotation: [0f, -90f]}
+summon text_display 0 64.01 -101.2 {Tags: ["jkpof", "jkpof_display_show_ctrl_lang"], brightness: {block: 15, sky: 15}, alignment: "center", text: {text: "简体中文", color: "yellow"}, Rotation: [0f, -90f]}
+summon text_display 0 64.01 -102.4 {Tags: ["jkpof", "jkpof_lobby_const_short_text_explain"], brightness: {block: 15, sky: 15}, text: [{text: "POF = Pillars Of Fortune", color: "yellow"}, "\n", {text: "VOF = Votes Of Fortune", color: "aqua"}, "\n", {text: "BOF = Brooms Of Fortune", color: "green"}, "\n", {text: "EOF = Eggs Of Fortune", color: "gold"}], Rotation: [0f, -90f], view_range: false}
+summon item_display 0 63.99 -101.5 {Tags: ["jkpof"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [2f, 2f, 0f], translation: [0f, 0f, 0f]}, item: {id: "snowball"}, Glowing: true, Rotation: [0f, -90f]}
 
 # 时间
 summon interaction 0 64.25 -116 {Tags: ["jkpof", "jkpof_interaction", "jkpof_interaction_ctrl_time"], response: true, width: .5, height: .5}

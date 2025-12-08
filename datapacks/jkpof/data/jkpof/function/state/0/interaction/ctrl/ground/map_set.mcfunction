@@ -15,3 +15,5 @@ execute if score #ctrl_map_real jkpof.int matches 5 run data modify storage jk:p
 execute if score #ctrl_map_real jkpof.int matches 5 run data modify storage jk:pof data.map.block1 set value "stone_pressure_plate"
 execute if score #ctrl_map_real jkpof.int matches 5 run data modify storage jk:pof data.map.block2 set value "sand"
 execute if score #ctrl_map_real jkpof.int matches 5 run data modify storage jk:pof data.map.block3 set value "tnt"
+
+execute store result storage jk:pof data.map.id int 1 run scoreboard players get #ctrl_map_real jkpof.int

@@ -12,14 +12,5 @@ $execute if score #ctrl_map_real jkpof.int matches 5 run function jkpof:state/1/
 
 # 展示
 title @a times 4t 2s 4t
-execute if score #ctrl_map_real jkpof.int matches 1 run title @a title {storage: "jk:pof", nbt: "txt.map.title.1", color: "green"}
-execute if score #ctrl_map_real jkpof.int matches 2 run title @a title {storage: "jk:pof", nbt: "txt.map.title.2", color: "green"}
-execute if score #ctrl_map_real jkpof.int matches 3 run title @a title {storage: "jk:pof", nbt: "txt.map.title.3", color: "green"}
-execute if score #ctrl_map_real jkpof.int matches 4 run title @a title {storage: "jk:pof", nbt: "txt.map.title.4", color: "green"}
-execute if score #ctrl_map_real jkpof.int matches 5 run title @a title {storage: "jk:pof", nbt: "txt.map.title.5", color: "green"}
-
-execute if score #ctrl_map_real jkpof.int matches 1 run title @a subtitle {storage: "jk:pof", nbt: "txt.map.subtitle.1", color: "yellow"}
-execute if score #ctrl_map_real jkpof.int matches 2 run title @a subtitle {storage: "jk:pof", nbt: "txt.map.subtitle.2", color: "yellow"}
-execute if score #ctrl_map_real jkpof.int matches 3 run title @a subtitle {storage: "jk:pof", nbt: "txt.map.subtitle.3", color: "yellow"}
-execute if score #ctrl_map_real jkpof.int matches 4 run title @a subtitle {storage: "jk:pof", nbt: "txt.map.subtitle.4", color: "yellow"}
-execute if score #ctrl_map_real jkpof.int matches 5 run title @a subtitle {storage: "jk:pof", nbt: "txt.map.subtitle.5", color: "yellow"}
+$title @a title {storage: "jk:pof", nbt: "txt.map.title.$(id)", color: "green"}
+$title @a subtitle {storage: "jk:pof", nbt: "txt.map.subtitle.$(id)", color: "yellow"}

@@ -6,11 +6,7 @@ scoreboard players reset * jkpof.team
 scoreboard players reset * jkpof.vote
 difficulty peaceful
 gamerule pvp false
-gamerule fallDamage false
-gamerule fireDamage false
-gamerule naturalRegeneration true
-gamerule announceAdvancements false
-gamerule locatorBar false
+function jkpof:_by_version/gamerule/0
 worldborder set 1000
 kill @e[type=item_display, tag=jkpof_barrier]
 spawnpoint @a 0 64 -100

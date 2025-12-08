@@ -28,11 +28,7 @@ scoreboard players set #event_border jkpof.int 2
 scoreboard players set #event_loop jkpof.int 0
 difficulty hard
 gamerule pvp true
-gamerule fallDamage true
-gamerule fireDamage true
-execute if score #ctrl_natural_regen jkpof.int matches 0 run gamerule naturalRegeneration false
-execute if score #ctrl_advancement jkpof.int matches 1 run gamerule announceAdvancements true
-execute if score #ctrl_locator_bar jkpof.int matches 1 run gamerule locatorBar true
+function jkpof:_by_version/gamerule/1
 worldborder set 49
 kill @e[type=marker, tag=!jkpof_player_spawn]
 summon item_display 0 120 0 {Tags: ["jkpof", "jkpof_barrier"], brightness: {block: 15, sky: 15}, teleport_duration: 10, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [49f, 49f, .1f], translation: [0f, 0f, 0f]}, item: {id: "barrier"}, Rotation: [0f, -90f]}

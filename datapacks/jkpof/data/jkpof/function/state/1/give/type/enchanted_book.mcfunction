@@ -1,8 +1,9 @@
-execute if score #ctrl_item_mode jkpof.int matches 0 store result score @s jkpof.item.color run random value 1..42
+execute if score #ctrl_item_mode jkpof.int matches 0 store result score @s jkpof.item.color run function jkpof:_by_version/give/random/enchantment
 
 give @s experience_bottle 32
 give @s anvil
 
+$execute if score @s jkpof.item.color matches 0 run give @s enchanted_book[stored_enchantments={"wind_burst": $(x)}, max_stack_size=64] $(n)
 $execute if score @s jkpof.item.color matches 1 run give @s enchanted_book[stored_enchantments={"aqua_affinity": $(x)}, max_stack_size=64] $(n)
 $execute if score @s jkpof.item.color matches 2 run give @s enchanted_book[stored_enchantments={"bane_of_arthropods": $(x)}, max_stack_size=64] $(n)
 $execute if score @s jkpof.item.color matches 3 run give @s enchanted_book[stored_enchantments={"binding_curse": $(x)}, max_stack_size=64] $(n)
@@ -44,4 +45,4 @@ $execute if score @s jkpof.item.color matches 38 run give @s enchanted_book[stor
 $execute if score @s jkpof.item.color matches 39 run give @s enchanted_book[stored_enchantments={"thorns": $(x)}, max_stack_size=64] $(n)
 $execute if score @s jkpof.item.color matches 40 run give @s enchanted_book[stored_enchantments={"unbreaking": $(x)}, max_stack_size=64] $(n)
 $execute if score @s jkpof.item.color matches 41 run give @s enchanted_book[stored_enchantments={"vanishing_curse": $(x)}, max_stack_size=64] $(n)
-$execute if score @s jkpof.item.color matches 42 run give @s enchanted_book[stored_enchantments={"wind_burst": $(x)}, max_stack_size=64] $(n)
+$execute if score @s jkpof.item.color matches 42.. run function jkpof:_by_version/give/extra/enchantment {x: $(x), n: $(n)}
