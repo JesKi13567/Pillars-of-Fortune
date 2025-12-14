@@ -1,5 +1,4 @@
-scoreboard players operation #version jkpof.int = #cur_version jkpof.int
-function jkpof:state/0/interaction/ctrl/lang/_zh_cn
+scoreboard players set #loaded jkpof.int 1
 tellraw @a [{storage: "jk:pof", nbt: "txt.POF", color: "yellow"}, {storage: "jk:pof", nbt: "txt.datapack.updated", color: "green"}]
 
 # bossbar
@@ -114,157 +113,157 @@ worldborder damage buffer 1
 kill @e[type=!player]
 
 # 解析storage文本用
-summon text_display 0 0 0 {Tags: ["jkpof", "jkpof_display_text"], view_range: false}
+summon text_display 0 0 0 {Tags: ["jkpof", "jkpof_display_text"], view_range: 0}
 
 #- 游戏
-summon text_display 0 70 -90 {Tags: ["jkpof", "jkpof_lobby_const_top_play"], brightness: {block: 15, sky: 15}, alignment: "center", billboard: "center", transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [6f, 6f, 6f], translation: [0f, 0f, 0f]}, text: {text: "游戏", color: "green", bold: true}}
-summon text_display 0 68.5 -90 {Tags: ["jkpof", "jkpof_display_players"], brightness: {block: 15, sky: 15}, alignment: "center", billboard: "center", transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [2f, 2f, 2f], translation: [0f, 0f, 0f]}, text: {text: "自动分配人数。\n（最多 9 人）", color: "yellow"}, line_width: 1000}
-summon text_display 0 70 -100 {Tags: ["jkpof", "jkpof_lobby_const_top_lore"], brightness: {block: 15, sky: 15}, alignment: "center", billboard: "center", transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [2f, 2f, 2f], translation: [0f, 0f, 0f]}, text: [{text: "【幸运之柱】", color: "yellow"}, {text: " v1.1.2", color: "gold"}, "\n", {text: "玩家初始生成在各个柱子顶端，\n每隔一段时间获得随机物品，\n最终目标是活到最后。", color: "green"}, "\n", {text: "本地图作者：JK137", color: "aqua"}], background: -2030043136, line_width: 1000}
+summon text_display 0 70 -90 {Tags: ["jkpof", "jkpof_lobby_const_top_play"], brightness: {block: 15, sky: 15}, billboard: "center", transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [6f, 6f, 6f], translation: [0f, 0f, 0f]}}
+summon text_display 0 68.5 -90 {Tags: ["jkpof", "jkpof_display_players"], brightness: {block: 15, sky: 15}, billboard: "center", transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [2f, 2f, 2f], translation: [0f, 0f, 0f]}, line_width: 1000}
+summon text_display 0 70 -100 {Tags: ["jkpof", "jkpof_lobby_const_top_lore"], brightness: {block: 15, sky: 15}, billboard: "center", transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [2f, 2f, 2f], translation: [0f, 0f, 0f]}, background: -2030043136, line_width: 1000}
 
 #- 道具
-summon text_display -10 70 -100 {Tags: ["jkpof", "jkpof_lobby_const_top_items"], brightness: {block: 15, sky: 15}, alignment: "center", billboard: "center", transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [6f, 6f, 6f], translation: [0f, 0f, 0f]}, text: {text: "道具", color: "red", bold: true}}
+summon text_display -10 70 -100 {Tags: ["jkpof", "jkpof_lobby_const_top_items"], brightness: {block: 15, sky: 15}, billboard: "center", transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [6f, 6f, 6f], translation: [0f, 0f, 0f]}}
 
-summon item_display -10 68.25 -100 {Tags: ["jkpof", "jkpof_display_lobby_item"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [1f, 1f, 1f], translation: [0f, 0f, 0f]}, item: {id: "totem_of_undying"}, Rotation: [90f, 0f]}
-summon text_display -10 66.5 -100 {Tags: ["jkpof", "jkpof_display_lobby_item"], brightness: {block: 15, sky: 15}, alignment: "center", text: "堆叠修改\n无耐久物品最大堆叠个数均为 64，\n若发现有物品未堆叠则需丢出刷新。", Rotation: [-90f, 0f], line_width: 1000}
+summon item_display -10 68.25 -100 {Tags: ["jkpof", "jkpof_display_lobby_item"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [1f, 1f, 1f], translation: [0f, 0f, 0f]}, Rotation: [90f, 0f]}
+summon text_display -10 66.5 -100 {Tags: ["jkpof", "jkpof_display_lobby_item"], brightness: {block: 15, sky: 15}, Rotation: [-90f, 0f], line_width: 1000}
 
 summon interaction -10 65.75 -100 {Tags: ["jkpof", "jkpof_interaction", "jkpof_display_lobby", "jkpof_display_lobby_item"], response: true, width: .5, height: .5}
-summon text_display -10 66 -100 {Tags: ["jkpof", "jkpof_lobby_const_global_next"], brightness: {block: 15, sky: 15}, alignment: "center", text: {text: "下一个", color: "yellow"}, Rotation: [-90f, 0f]}
+summon text_display -10 66 -100 {Tags: ["jkpof", "jkpof_lobby_const_global_next"], brightness: {block: 15, sky: 15}, Rotation: [-90f, 0f]}
 
 #- 事件
-summon text_display 10 70 -100 {Tags: ["jkpof", "jkpof_lobby_const_top_events"], brightness: {block: 15, sky: 15}, alignment: "center", billboard: "center", transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [6f, 6f, 6f], translation: [0f, 0f, 0f]}, text: {text: "事件", color: "aqua", bold: true}}
+summon text_display 10 70 -100 {Tags: ["jkpof", "jkpof_lobby_const_top_events"], brightness: {block: 15, sky: 15}, billboard: "center", transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [6f, 6f, 6f], translation: [0f, 0f, 0f]}}
 
-summon item_display 10 68.25 -100 {Tags: ["jkpof", "jkpof_display_event_order"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [1f, 1f, 1f], translation: [0f, 0f, 0f]}, item: {id: "emerald"}, Rotation: [-90f, 0f]}
-summon text_display 10 66.5 -100 {Tags: ["jkpof", "jkpof_display_event_order"], brightness: {block: 15, sky: 15}, alignment: "center", text: ["无事发生", "\n", {text: "无事发生也是一种事件，\n开局时必出。", color: "aqua"}], Rotation: [90f, 0f], line_width: 1000}
+summon item_display 10 68.25 -100 {Tags: ["jkpof", "jkpof_display_event_order"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [1f, 1f, 1f], translation: [0f, 0f, 0f]}, Rotation: [-90f, 0f]}
+summon text_display 10 66.5 -100 {Tags: ["jkpof", "jkpof_display_event_order"], brightness: {block: 15, sky: 15}, Rotation: [90f, 0f], line_width: 1000}
 
 summon interaction 10 65.75 -101 {Tags: ["jkpof", "jkpof_interaction", "jkpof_display_lobby", "jkpof_display_event_page_prev"], response: true, width: .5, height: .5}
-summon text_display 10 66 -101 {Tags: ["jkpof", "jkpof_lobby_const_global_prev"], brightness: {block: 15, sky: 15}, alignment: "center", text: {text: "上一个", color: "yellow"}, Rotation: [90f, 0f]}
+summon text_display 10 66 -101 {Tags: ["jkpof", "jkpof_lobby_const_global_prev"], brightness: {block: 15, sky: 15}, Rotation: [90f, 0f]}
 
 summon interaction 10 65.75 -100 {Tags: ["jkpof", "jkpof_interaction", "jkpof_display_lobby", "jkpof_display_event_switch"], response: true, width: .5, height: .5}
-summon text_display 10 66 -100 {Tags: ["jkpof", "jkpof_display_event_switch"], brightness: {block: 15, sky: 15}, alignment: "center", text: {text: "已启用", color: "green"}, Rotation: [90f, 0f]}
+summon text_display 10 66 -100 {Tags: ["jkpof", "jkpof_display_event_switch"], brightness: {block: 15, sky: 15}, Rotation: [90f, 0f]}
 
 summon interaction 10 65.75 -99 {Tags: ["jkpof", "jkpof_interaction", "jkpof_display_lobby", "jkpof_display_event_page_next"], response: true, width: .5, height: .5}
-summon text_display 10 66 -99 {Tags: ["jkpof", "jkpof_lobby_const_global_next"], brightness: {block: 15, sky: 15}, alignment: "center", text: {text: "下一个", color: "yellow"}, Rotation: [90f, 0f]}
+summon text_display 10 66 -99 {Tags: ["jkpof", "jkpof_lobby_const_global_next"], brightness: {block: 15, sky: 15}, Rotation: [90f, 0f]}
 
-summon text_display 10 65.25 -100 {Tags: ["jkpof", "jkpof_lobby_const_global_1button"], brightness: {block: 15, sky: 15}, alignment: "center", text: {text: "一键操作", color: "gold"}, Rotation: [90f, 0f]}
+summon text_display 10 65.25 -100 {Tags: ["jkpof", "jkpof_lobby_const_global_1button"], brightness: {block: 15, sky: 15}, Rotation: [90f, 0f]}
 summon interaction 10 65 -100 {Tags: ["jkpof", "jkpof_interaction", "jkpof_display_lobby", "jkpof_display_event_ctrl"], response: true, width: .5, height: .5}
-summon text_display 10 65 -100 {Tags: ["jkpof", "jkpof_display_event_ctrl"], brightness: {block: 15, sky: 15}, alignment: "center", text: {text: "已全部启用", color: "green"}, Rotation: [90f, 0f]}
+summon text_display 10 65 -100 {Tags: ["jkpof", "jkpof_display_event_ctrl"], brightness: {block: 15, sky: 15}, Rotation: [90f, 0f]}
 
 #- 设置
-summon text_display 0 70 -110 {Tags: ["jkpof", "jkpof_lobby_const_top_settings"], brightness: {block: 15, sky: 15}, alignment: "center", billboard: "center", transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [6f, 6f, 6f], translation: [0f, 0f, 0f]}, text: {text: "设置", color: "gold", bold: true}}
+summon text_display 0 70 -110 {Tags: ["jkpof", "jkpof_lobby_const_top_settings"], brightness: {block: 15, sky: 15}, billboard: "center", transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [6f, 6f, 6f], translation: [0f, 0f, 0f]}}
 
 ## 物品
-summon text_display -2 67.5 -110 {Tags: ["jkpof", "jkpof_display_ctrl_item_show"], brightness: {block: 15, sky: 15}, alignment: "center", billboard: "center", text: {text: "随机物品给予", color: "gold"}}
+summon text_display -2 67.5 -110 {Tags: ["jkpof", "jkpof_display_ctrl_item_show"], brightness: {block: 15, sky: 15}, billboard: "center"}
 
 # 分配模式
 summon interaction -2 64.25 -110 {Tags: ["jkpof", "jkpof_interaction", "jkpof_interaction_ctrl_item_mode"], response: true, width: .5, height: .5}
-summon text_display -2 65.05 -110 {Tags: ["jkpof", "jkpof_display_ctrl_item_mode"], brightness: {block: 15, sky: 15}, alignment: "center", billboard: "center", text: {text: "分配模式", color: "green"}}
-summon item_display -2 64.5 -110 {Tags: ["jkpof", "jkpof_display_ctrl_item_mode"], brightness: {block: 15, sky: 15}, CustomNameVisible: 1b, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.4f, .4f, .4f], translation: [0f, 0f, 0f]}, CustomName: {text: "不同", color: "yellow"}, item: {id: "raw_gold"}, Rotation: [-180f, 0f]}
+summon text_display -2 65.05 -110 {Tags: ["jkpof", "jkpof_display_ctrl_item_mode"], brightness: {block: 15, sky: 15}, billboard: "center"}
+summon item_display -2 64.5 -110 {Tags: ["jkpof", "jkpof_display_ctrl_item_mode"], brightness: {block: 15, sky: 15}, CustomNameVisible: 1b, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.4f, .4f, .4f], translation: [0f, 0f, 0f]}, Rotation: [-180f, 0f]}
 
 # 数量
 summon interaction -2 65.25 -110 {Tags: ["jkpof", "jkpof_interaction", "jkpof_interaction_ctrl_item_count"], response: true, width: .5, height: .5}
-summon text_display -2 66.05 -110 {Tags: ["jkpof", "jkpof_display_ctrl_item_count"], brightness: {block: 15, sky: 15}, alignment: "center", billboard: "center", text: {text: "数量", color: "green"}}
-summon text_display -2 65.5 -110 {Tags: ["jkpof", "jkpof_display_show_ctrl_item_count"], brightness: {block: 15, sky: 15}, alignment: "center", billboard: "center", text: {text: "1", color: "yellow"}}
+summon text_display -2 66.05 -110 {Tags: ["jkpof", "jkpof_display_ctrl_item_count"], brightness: {block: 15, sky: 15}, billboard: "center"}
+summon text_display -2 65.5 -110 {Tags: ["jkpof", "jkpof_display_show_ctrl_item_count"], brightness: {block: 15, sky: 15}, billboard: "center"}
 
 # 间隔秒数
 summon interaction -2 66.25 -110 {Tags: ["jkpof", "jkpof_interaction", "jkpof_interaction_ctrl_item_time"], response: true, width: .5, height: .5}
-summon text_display -2 67.05 -110 {Tags: ["jkpof", "jkpof_display_ctrl_item_time"], brightness: {block: 15, sky: 15}, alignment: "center", billboard: "center", text: {text: "间隔秒数", color: "green"}}
-summon text_display -2 66.5 -110 {Tags: ["jkpof", "jkpof_display_show_ctrl_item_time"], brightness: {block: 15, sky: 15}, alignment: "center", billboard: "center", text: {text: "5", color: "yellow"}}
+summon text_display -2 67.05 -110 {Tags: ["jkpof", "jkpof_display_ctrl_item_time"], brightness: {block: 15, sky: 15}, billboard: "center"}
+summon text_display -2 66.5 -110 {Tags: ["jkpof", "jkpof_display_show_ctrl_item_time"], brightness: {block: 15, sky: 15}, billboard: "center"}
 
 ## 柱子
-summon text_display 0 68.5 -110 {Tags: ["jkpof", "jkpof_display_ctrl_pillar_show"], brightness: {block: 15, sky: 15}, alignment: "center", billboard: "center", text: {text: "柱子", color: "gold"}}
+summon text_display 0 68.5 -110 {Tags: ["jkpof", "jkpof_display_ctrl_pillar_show"], brightness: {block: 15, sky: 15}, billboard: "center"}
 
 # 种类
 summon interaction 0 64.25 -110 {Tags: ["jkpof", "jkpof_interaction", "jkpof_interaction_ctrl_pillar_type"], response: true, width: .5, height: .5}
-summon text_display 0 65.05 -110 {Tags: ["jkpof", "jkpof_display_ctrl_pillar_type"], brightness: {block: 15, sky: 15}, alignment: "center", billboard: "center", text: {text: "种类", color: "green"}}
-summon item_display 0 64.5 -110 {Tags: ["jkpof", "jkpof_display_ctrl_pillar_type"], brightness: {block: 15, sky: 15}, CustomNameVisible: 1b, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.4f, .4f, .4f], translation: [0f, 0f, 0f]}, CustomName: [{text: "不同", color: "aqua"}, " ", {text: "随机", color: "yellow"}], item: {id: "purpur_pillar"}, Rotation: [-180f, 0f]}
+summon text_display 0 65.05 -110 {Tags: ["jkpof", "jkpof_display_ctrl_pillar_type"], brightness: {block: 15, sky: 15}, billboard: "center"}
+summon item_display 0 64.5 -110 {Tags: ["jkpof", "jkpof_display_ctrl_pillar_type"], brightness: {block: 15, sky: 15}, CustomNameVisible: 1b, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.4f, .4f, .4f], translation: [0f, 0f, 0f]}, Rotation: [-180f, 0f]}
 
 # 数量
 summon interaction 0 65.25 -110 {Tags: ["jkpof", "jkpof_interaction", "jkpof_interaction_ctrl_pillar_count"], response: true, width: .5, height: .5}
-summon text_display 0 66.05 -110 {Tags: ["jkpof", "jkpof_display_ctrl_pillar_count"], brightness: {block: 15, sky: 15}, alignment: "center", billboard: "center", text: {text: "数量", color: "green"}}
-summon text_display 0 65.5 -110 {Tags: ["jkpof", "jkpof_display_show_ctrl_pillar_count"], brightness: {block: 15, sky: 15}, alignment: "center", billboard: "center", text: {text: "自动", color: "yellow"}}
+summon text_display 0 66.05 -110 {Tags: ["jkpof", "jkpof_display_ctrl_pillar_count"], brightness: {block: 15, sky: 15}, billboard: "center"}
+summon text_display 0 65.5 -110 {Tags: ["jkpof", "jkpof_display_show_ctrl_pillar_count"], brightness: {block: 15, sky: 15}, billboard: "center"}
 
 # 高度
 summon interaction 0 66.25 -110 {Tags: ["jkpof", "jkpof_interaction", "jkpof_interaction_ctrl_pillar_height"], response: true, width: .5, height: .5}
-summon text_display 0 67.05 -110 {Tags: ["jkpof", "jkpof_display_ctrl_pillar_height"], brightness: {block: 15, sky: 15}, alignment: "center", billboard: "center", text: {text: "高度", color: "green"}}
-summon text_display 0 66.5 -110 {Tags: ["jkpof", "jkpof_display_show_ctrl_pillar_height"], brightness: {block: 15, sky: 15}, alignment: "center", billboard: "center", text: {text: "40", color: "yellow"}}
+summon text_display 0 67.05 -110 {Tags: ["jkpof", "jkpof_display_ctrl_pillar_height"], brightness: {block: 15, sky: 15}, billboard: "center"}
+summon text_display 0 66.5 -110 {Tags: ["jkpof", "jkpof_display_show_ctrl_pillar_height"], brightness: {block: 15, sky: 15}, billboard: "center"}
 
 # 间距
 summon interaction 0 67.25 -110 {Tags: ["jkpof", "jkpof_interaction", "jkpof_interaction_ctrl_pillar_distance"], response: true, width: .5, height: .5}
-summon text_display 0 68.05 -110 {Tags: ["jkpof", "jkpof_display_ctrl_pillar_distance"], brightness: {block: 15, sky: 15}, alignment: "center", billboard: "center", text: {text: "间距", color: "green"}}
-summon text_display 0 67.5 -110 {Tags: ["jkpof", "jkpof_display_show_ctrl_pillar_distance"], brightness: {block: 15, sky: 15}, alignment: "center", billboard: "center", text: {text: "<-->", color: "yellow"}}
+summon text_display 0 68.05 -110 {Tags: ["jkpof", "jkpof_display_ctrl_pillar_distance"], brightness: {block: 15, sky: 15}, billboard: "center"}
+summon text_display 0 67.5 -110 {Tags: ["jkpof", "jkpof_display_show_ctrl_pillar_distance"], brightness: {block: 15, sky: 15}, billboard: "center"}
 
 ## 地图
 summon interaction 0 64.25 -107 {Tags: ["jkpof", "jkpof_interaction", "jkpof_interaction_ctrl_map"], response: true, width: .5, height: .5}
-summon text_display 0 65.05 -107 {Tags: ["jkpof", "jkpof_display_ctrl_map"], brightness: {block: 15, sky: 15}, alignment: "center", billboard: "center", text: {text: "地图", color: "green"}}
-summon item_display 0 64.5 -107 {Tags: ["jkpof", "jkpof_display_ctrl_map"], brightness: {block: 15, sky: 15}, CustomNameVisible: 1b, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.4f, .4f, .4f], translation: [0f, 0f, 0f]}, CustomName: ["", {text: "已禁用", color: "yellow"}], item: {id: "barrier"}, Rotation: [-180f, 0f]}
+summon text_display 0 65.05 -107 {Tags: ["jkpof", "jkpof_display_ctrl_map"], brightness: {block: 15, sky: 15}, billboard: "center"}
+summon item_display 0 64.5 -107 {Tags: ["jkpof", "jkpof_display_ctrl_map"], brightness: {block: 15, sky: 15}, CustomNameVisible: 1b, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.4f, .4f, .4f], translation: [0f, 0f, 0f]}, Rotation: [-180f, 0f]}
 
 ## 地面
-summon text_display 2 68.5 -110 {Tags: ["jkpof", "jkpof_display_ctrl_ground_show"], brightness: {block: 15, sky: 15}, alignment: "center", billboard: "center", text: {text: "地面", color: "gold"}}
+summon text_display 2 68.5 -110 {Tags: ["jkpof", "jkpof_display_ctrl_ground_show"], brightness: {block: 15, sky: 15}, billboard: "center"}
 
 # 种类
 summon interaction 2 64.25 -110 {Tags: ["jkpof", "jkpof_interaction", "jkpof_interaction_ctrl_ground_type"], response: true, width: .5, height: .5}
-summon text_display 2 65.05 -110 {Tags: ["jkpof", "jkpof_display_ctrl_ground_type"], brightness: {block: 15, sky: 15}, alignment: "center", billboard: "center", text: {text: "种类", color: "green"}}
-summon item_display 2 64.5 -110 {Tags: ["jkpof", "jkpof_display_ctrl_ground_type"], brightness: {block: 15, sky: 15}, CustomNameVisible: 1b, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.4f, .4f, .4f], translation: [0f, 0f, 0f]}, CustomName: {text: "随机", color: "yellow"}, item: {id: "chiseled_stone_bricks"}, Rotation: [-180f, 0f]}
+summon text_display 2 65.05 -110 {Tags: ["jkpof", "jkpof_display_ctrl_ground_type"], brightness: {block: 15, sky: 15}, billboard: "center"}
+summon item_display 2 64.5 -110 {Tags: ["jkpof", "jkpof_display_ctrl_ground_type"], brightness: {block: 15, sky: 15}, CustomNameVisible: 1b, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.4f, .4f, .4f], translation: [0f, 0f, 0f]}, Rotation: [-180f, 0f]}
 
 # 半径
 summon interaction 2 65.25 -110 {Tags: ["jkpof", "jkpof_interaction", "jkpof_interaction_ctrl_ground_radius"], response: true, width: .5, height: .5}
-summon text_display 2 66.05 -110 {Tags: ["jkpof", "jkpof_display_ctrl_ground_radius"], brightness: {block: 15, sky: 15}, alignment: "center", billboard: "center", text: {text: "半径", color: "green"}}
-summon text_display 2 65.5 -110 {Tags: ["jkpof", "jkpof_display_show_ctrl_ground_radius"], brightness: {block: 15, sky: 15}, alignment: "center", billboard: "center", text: {text: "16", color: "yellow"}}
+summon text_display 2 66.05 -110 {Tags: ["jkpof", "jkpof_display_ctrl_ground_radius"], brightness: {block: 15, sky: 15}, billboard: "center"}
+summon text_display 2 65.5 -110 {Tags: ["jkpof", "jkpof_display_show_ctrl_ground_radius"], brightness: {block: 15, sky: 15}, billboard: "center"}
 
 # 层数
 summon interaction 2 66.25 -110 {Tags: ["jkpof", "jkpof_interaction", "jkpof_interaction_ctrl_ground_floor"], response: true, width: .5, height: .5}
-summon text_display 2 67.05 -110 {Tags: ["jkpof", "jkpof_display_ctrl_ground_floor"], brightness: {block: 15, sky: 15}, alignment: "center", billboard: "center", text: {text: "层数", color: "green"}}
-summon text_display 2 66.5 -110 {Tags: ["jkpof", "jkpof_display_show_ctrl_ground_floor"], brightness: {block: 15, sky: 15}, alignment: "center", billboard: "center", text: {text: "1", color: "yellow"}}
+summon text_display 2 67.05 -110 {Tags: ["jkpof", "jkpof_display_ctrl_ground_floor"], brightness: {block: 15, sky: 15}, billboard: "center"}
+summon text_display 2 66.5 -110 {Tags: ["jkpof", "jkpof_display_show_ctrl_ground_floor"], brightness: {block: 15, sky: 15}, billboard: "center"}
 
 # 各层随机
 summon interaction 2 67.25 -110 {Tags: ["jkpof", "jkpof_interaction", "jkpof_interaction_ctrl_ground_floor_random"], response: true, width: .5, height: .5}
-summon text_display 2 68.05 -110 {Tags: ["jkpof", "jkpof_display_ctrl_ground_floor_random"], brightness: {block: 15, sky: 15}, alignment: "center", billboard: "center", text: {text: "各层随机", color: "green"}}
-summon text_display 2 67.5 -110 {Tags: ["jkpof", "jkpof_display_show_ctrl_ground_floor_random"], brightness: {block: 15, sky: 15}, alignment: "center", billboard: "center", text: {text: "无效", color: "yellow"}}
+summon text_display 2 68.05 -110 {Tags: ["jkpof", "jkpof_display_ctrl_ground_floor_random"], brightness: {block: 15, sky: 15}, billboard: "center"}
+summon text_display 2 67.5 -110 {Tags: ["jkpof", "jkpof_display_show_ctrl_ground_floor_random"], brightness: {block: 15, sky: 15}, billboard: "center"}
 
 ## 杂项
-summon text_display 0 66.75 -116 {Tags: ["jkpof", "jkpof_display_ctrl_others_show"], brightness: {block: 15, sky: 15}, alignment: "center", billboard: "center", text: {text: "杂项", color: "gold"}}
+summon text_display 0 66.75 -116 {Tags: ["jkpof", "jkpof_display_ctrl_others_show"], brightness: {block: 15, sky: 15}, billboard: "center"}
 
 # 队伍
 summon interaction 0 64.25 -113 {Tags: ["jkpof", "jkpof_interaction", "jkpof_interaction_ctrl_team"], response: true, width: .5, height: .5}
-summon text_display 0 65.05 -113 {Tags: ["jkpof", "jkpof_display_ctrl_team"], brightness: {block: 15, sky: 15}, alignment: "center", billboard: "center", text: {text: "队伍\n（需设定柱子数）", color: "green"}}
-summon text_display 0 64.5 -113 {Tags: ["jkpof", "jkpof_display_show_ctrl_team"], brightness: {block: 15, sky: 15}, alignment: "center", billboard: "center", text: {text: "无效", color: "yellow"}}
+summon text_display 0 65.05 -113 {Tags: ["jkpof", "jkpof_display_ctrl_team"], brightness: {block: 15, sky: 15}, billboard: "center"}
+summon text_display 0 64.5 -113 {Tags: ["jkpof", "jkpof_display_show_ctrl_team"], brightness: {block: 15, sky: 15}, billboard: "center"}
 
 # 语言
 summon interaction 0 64.01 -101.5 {Tags: ["jkpof", "jkpof_interaction", "jkpof_display_lobby", "jkpof_interaction_ctrl_lang"], response: true, width: 1, height: .1}
-summon text_display 0 64.01 -101.7 {Tags: ["jkpof", "jkpof_display_ctrl_lang"], brightness: {block: 15, sky: 15}, alignment: "center", text: {text: "Lang", color: "green"}, Rotation: [0f, -90f]}
-summon text_display 0 64.01 -101.2 {Tags: ["jkpof", "jkpof_display_show_ctrl_lang"], brightness: {block: 15, sky: 15}, alignment: "center", text: {text: "简体中文", color: "yellow"}, Rotation: [0f, -90f]}
-summon text_display 0 64.01 -102.4 {Tags: ["jkpof", "jkpof_lobby_const_short_text_explain"], brightness: {block: 15, sky: 15}, text: [{text: "POF = Pillars Of Fortune", color: "yellow"}, "\n", {text: "VOF = Votes Of Fortune", color: "aqua"}, "\n", {text: "BOF = Brooms Of Fortune", color: "green"}, "\n", {text: "EOF = Eggs Of Fortune", color: "gold"}], Rotation: [0f, -90f], view_range: false}
-summon item_display 0 63.99 -101.5 {Tags: ["jkpof"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [2f, 2f, 0f], translation: [0f, 0f, 0f]}, item: {id: "snowball"}, Glowing: true, Rotation: [0f, -90f]}
+summon text_display 0 64.01 -101.7 {Tags: ["jkpof", "jkpof_display_ctrl_lang"], brightness: {block: 15, sky: 15}, text: {text: "Lang", color: "green"}, Rotation: [0f, -90f]}
+summon text_display 0 64.01 -101.2 {Tags: ["jkpof", "jkpof_display_show_ctrl_lang"], brightness: {block: 15, sky: 15}, text: {text: "???", color: "yellow"}, Rotation: [0f, -90f]}
+summon text_display 0 64.01 -102.4 {Tags: ["jkpof", "jkpof_lobby_const_short_text_explain"], brightness: {block: 15, sky: 15}, text: [{text: "POF = Pillars Of Fortune", color: "yellow"}, "\n", {text: "VOF = Votes Of Fortune", color: "aqua"}, "\n", {text: "BOF = Brooms Of Fortune", color: "green"}, "\n", {text: "EOF = Eggs Of Fortune", color: "gold"}], Rotation: [0f, -90f], view_range: 0}
+summon text_display 0 65.0 -101.5 {Tags: ["jkpof", "jkpof_lobby_const_set_lang_1st"], brightness: {block: 15, sky: 15}, text: [{text: "请先设置语言！\nSet your language first!", color: "green"}, {text: "\n↓↓↓", color: "yellow"}], billboard: "center", line_width: 1000}
 
 # 时间
 summon interaction 0 64.25 -116 {Tags: ["jkpof", "jkpof_interaction", "jkpof_interaction_ctrl_time"], response: true, width: .5, height: .5}
-summon text_display 0 65.05 -116 {Tags: ["jkpof", "jkpof_display_ctrl_time"], brightness: {block: 15, sky: 15}, alignment: "center", billboard: "center", text: {text: "时间", color: "green"}}
-summon item_display 0 64.5 -116 {Tags: ["jkpof", "jkpof_display_ctrl_time"], brightness: {block: 15, sky: 15}, CustomNameVisible: 1b, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.4f, .4f, .4f], translation: [0f, 0f, 0f]}, CustomName: {text: "中午", color: "yellow"}, item: {id: "clock"}, Glowing: true, Rotation: [-180f, 0f]}
+summon text_display 0 65.05 -116 {Tags: ["jkpof", "jkpof_display_ctrl_time"], brightness: {block: 15, sky: 15}, billboard: "center"}
+summon item_display 0 64.5 -116 {Tags: ["jkpof", "jkpof_display_ctrl_time"], brightness: {block: 15, sky: 15}, CustomNameVisible: 1b, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.4f, .4f, .4f], translation: [0f, 0f, 0f]}, item: {id: "clock"}, Glowing: true, Rotation: [-180f, 0f]}
 
 # 夜视
 summon interaction 2 64.25 -116 {Tags: ["jkpof", "jkpof_interaction", "jkpof_interaction_ctrl_night_vision"], response: true, width: .5, height: .5}
-summon text_display 2 65.05 -116 {Tags: ["jkpof", "jkpof_display_ctrl_night_vision"], brightness: {block: 15, sky: 15}, alignment: "center", billboard: "center", text: {translate: "effect.minecraft.night_vision", color: "green"}}
-summon item_display 2 64.5 -116 {Tags: ["jkpof", "jkpof_display_ctrl_night_vision"], brightness: {block: 15, sky: 15}, CustomNameVisible: 1b, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.4f, .4f, .4f], translation: [0f, 0f, 0f]}, CustomName: {text: "已启用", color: "yellow"}, item: {id: "golden_carrot"}, Rotation: [-180f, 0f]}
+summon text_display 2 65.05 -116 {Tags: ["jkpof", "jkpof_display_ctrl_night_vision"], brightness: {block: 15, sky: 15}, billboard: "center", text: {translate: "effect.minecraft.night_vision", color: "green"}}
+summon item_display 2 64.5 -116 {Tags: ["jkpof", "jkpof_display_ctrl_night_vision"], brightness: {block: 15, sky: 15}, CustomNameVisible: 1b, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.4f, .4f, .4f], translation: [0f, 0f, 0f]}, Rotation: [-180f, 0f]}
 
 # 自然回血
 summon interaction -2 64.25 -116 {Tags: ["jkpof", "jkpof_interaction", "jkpof_interaction_ctrl_natural_regen"], response: true, width: .5, height: .5}
-summon text_display -2 65.05 -116 {Tags: ["jkpof", "jkpof_display_ctrl_natural_regen"], brightness: {block: 15, sky: 15}, alignment: "center", billboard: "center", text: {text: "自然回血", color: "green"}}
-summon item_display -2 64.5 -116 {Tags: ["jkpof", "jkpof_display_ctrl_natural_regen"], brightness: {block: 15, sky: 15}, CustomNameVisible: 1b, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.4f, .4f, .4f], translation: [0f, 0f, 0f]}, CustomName: {text: "已启用", color: "yellow"}, item: {id: "golden_apple"}, Rotation: [-180f, 0f]}
+summon text_display -2 65.05 -116 {Tags: ["jkpof", "jkpof_display_ctrl_natural_regen"], brightness: {block: 15, sky: 15}, billboard: "center"}
+summon item_display -2 64.5 -116 {Tags: ["jkpof", "jkpof_display_ctrl_natural_regen"], brightness: {block: 15, sky: 15}, CustomNameVisible: 1b, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.4f, .4f, .4f], translation: [0f, 0f, 0f]}, Rotation: [-180f, 0f]}
 
 # 进度展示
 summon interaction -2 65.25 -116 {Tags: ["jkpof", "jkpof_interaction", "jkpof_interaction_ctrl_advancement"], response: true, width: .5, height: .5}
-summon text_display -2 66.05 -116 {Tags: ["jkpof", "jkpof_display_ctrl_advancement"], brightness: {block: 15, sky: 15}, alignment: "center", billboard: "center", text: {text: "进度展示", color: "green"}}
-summon item_display -2 65.5 -116 {Tags: ["jkpof", "jkpof_display_ctrl_advancement"], brightness: {block: 15, sky: 15}, CustomNameVisible: 1b, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.4f, .4f, .4f], translation: [0f, 0f, 0f]}, CustomName: {text: "已启用", color: "yellow"}, item: {id: "dragon_egg"}, Rotation: [-180f, 0f]}
+summon text_display -2 66.05 -116 {Tags: ["jkpof", "jkpof_display_ctrl_advancement"], brightness: {block: 15, sky: 15}, billboard: "center"}
+summon item_display -2 65.5 -116 {Tags: ["jkpof", "jkpof_display_ctrl_advancement"], brightness: {block: 15, sky: 15}, CustomNameVisible: 1b, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.4f, .4f, .4f], translation: [0f, 0f, 0f]}, Rotation: [-180f, 0f]}
 
 # 定位栏
 summon interaction 2 65.25 -116 {Tags: ["jkpof", "jkpof_interaction", "jkpof_interaction_ctrl_locator_bar"], response: true, width: .5, height: .5}
-summon text_display 2 66.05 -116 {Tags: ["jkpof", "jkpof_display_ctrl_locator_bar"], brightness: {block: 15, sky: 15}, alignment: "center", billboard: "center", text: {text: "定位栏", color: "green"}}
-summon item_display 2 65.5 -116 {Tags: ["jkpof", "jkpof_display_ctrl_locator_bar"], brightness: {block: 15, sky: 15}, CustomNameVisible: 1b, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.4f, .4f, .4f], translation: [0f, 0f, 0f]}, CustomName: {text: "已启用", color: "yellow"}, item: {id: "compass"}, Rotation: [-180f, 0f]}
+summon text_display 2 66.05 -116 {Tags: ["jkpof", "jkpof_display_ctrl_locator_bar"], brightness: {block: 15, sky: 15}, billboard: "center"}
+summon item_display 2 65.5 -116 {Tags: ["jkpof", "jkpof_display_ctrl_locator_bar"], brightness: {block: 15, sky: 15}, CustomNameVisible: 1b, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.4f, .4f, .4f], translation: [0f, 0f, 0f]}, Rotation: [-180f, 0f]}
 
 # 预设
 summon interaction 0 65.25 -116 {Tags: ["jkpof", "jkpof_interaction", "jkpof_interaction_ctrl_preset"], response: true, width: .5, height: .5}
-summon text_display 0 66.05 -116 {Tags: ["jkpof", "jkpof_display_ctrl_preset"], brightness: {block: 15, sky: 15}, alignment: "center", billboard: "center", text: {text: "预设", color: "green", bold: true}}
-summon item_display 0 65.5 -116 {Tags: ["jkpof", "jkpof_display_ctrl_preset"], brightness: {block: 15, sky: 15}, CustomNameVisible: 1b, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.4f, .4f, .4f], translation: [0f, 0f, 0f]}, CustomName: {text: "默认", color: "yellow"}, item: {id: "iron_ingot"}, Rotation: [-180f, 0f]}
+summon text_display 0 66.05 -116 {Tags: ["jkpof", "jkpof_display_ctrl_preset"], brightness: {block: 15, sky: 15}, billboard: "center"}
+summon item_display 0 65.5 -116 {Tags: ["jkpof", "jkpof_display_ctrl_preset"], brightness: {block: 15, sky: 15}, CustomNameVisible: 1b, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.4f, .4f, .4f], translation: [0f, 0f, 0f]}, Rotation: [-180f, 0f]}
 
 scoreboard players set #ctrl_preset jkpof.int -1
 function jkpof:state/0/interaction/ctrl/preset/show

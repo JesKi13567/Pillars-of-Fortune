@@ -23,4 +23,4 @@ scoreboard players set #ctrl_night_vision jkpof.int 1
 scoreboard players set #ctrl_natural_regen jkpof.int 1
 scoreboard players set #ctrl_advancement jkpof.int 1
 scoreboard players set #ctrl_locator_bar jkpof.int 1
-scoreboard players set #ctrl_lang jkpof.int 0
+scoreboard players set #ctrl_lang jkpof.int -1

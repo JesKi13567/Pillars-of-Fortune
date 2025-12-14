@@ -1,11 +1,11 @@
 # 幸运之柱 JK's Pillars of Fortune
-## v1.1.2 for MC 1.21.9-11
+## v1.1.3 for MC 1.21.9-11
 - [简体中文](#zh_cn)
 - [English](#en_us)
 ## Lang
-语言可以在大厅出生点附近切换（有高亮显示），同时设定好客户端语言效果更佳。
+语言可以在大厅出生点附近切换（初始有提示），同时设定好客户端语言效果更佳。
 
-The (highlighted) language can be switched near the lobby spawn point, and setting the client language in advance will be better.
+The language can be switched near the lobby spawn point \(has hint in initial\), and setting the client language in advance will be better.
 
 ## zh_cn
 ### 目录
@@ -66,11 +66,12 @@ The (highlighted) language can be switched near the lobby spawn point, and setti
 |-|-|
 |堆叠修改|无耐久物品最大堆叠个数均为 64，若发现有物品未堆叠则需丢出刷新。|
 |可发射的火球|按 \[右键\] 来发射。|
+|可发射的末影龙火球|按 \[右键\] 来发射。|
 |急救平台|按 \[右键\] 在脚下生成一层粘液块平台。|
 |自燃TNT|顾名思义。|
 |可随处放置的末地水晶|顾名思义。|
 |击退棒|击退 V|
-|下界合金锭|可直接用于合成下界合金制的武器/装备。|
+|下界合金锭|可直接用于合成下界合金制的物品。|
 |折跃珍珠|沿指针方向瞬移，最多 20 格。|
 |战利品箱|来自原版 MC 的随机战利品。|
 |玩家头颅|玩家死亡会掉落头颅。|
@@ -85,7 +86,7 @@ The (highlighted) language can be switched near the lobby spawn point, and setti
 
 1. [Items](#Items)
 ### Info
-Players spawn on top of pillars at the beginning, receive random items at regular intervals, their goal is to be the last player standing.
+Players spawn on top of pillars at the beginning, receive random items at regular intervals, their goal is to be the last player surviving.
 
 This **map** supports 2~9 players/teams. If Team Mode is on, player count has no limitation \(in theory\).
 ### Settings
@@ -109,7 +110,7 @@ All settings can be configured in the lobby.
 ||Natural Regeneration|Whether players can regenerate health by eating common food|
 ||Show Advancements|Prevents other players from knowing if you've received specific items|
 ||Locator Bar|Whether to display player positions on the experience bar|
-||**Presets**|Settings' presets (Default, Unity, etc.)|
+||**Presets**|Settings' presets \(Default, Unity, etc.\)|
 ||**Map Theme**|Includes Random; affects Pillars & Ground; if enabled, the theme name will be displayed at the beginning|
 ||**Team Mode**|Can be enabled only if the Pillar Count is not set to "Auto"|
 
@@ -134,11 +135,12 @@ Items are also displayed in the lobby.
 |-|-|
 |Stack Modification|All non-durable items have a maximum stack size of 64, if not, drop them to refresh.|
 |Shootable Fireball|Press \[Right Button\] to shoot.|
+|Shootable Dragon Fireball|Press \[Right Button\] to shoot.|
 |Aid Platform|Press \[Right Button\] to place a Slime Block platform under your feet.|
 |Self-Igniting TNT|As the name says.|
 |Place-Anywhere End Crystal|As the name says.|
 |Knockback Stick|Knockback V|
-|Netherite Ingot|Can be directly used to craft Netherite tools/armor.|
+|Netherite Ingot|Can be directly used to craft Netherite things.|
 |Warp Pearl|Teleport up to 20 blocks in the direction you're facing.|
 |Loot Chest|Random loot from vanilla Minecraft.|
 |Player Head|Players drop their own heads upon death.|

@@ -7,7 +7,7 @@ data modify entity @e[type=text_display, tag=jkpof_lobby_const_top_play, limit=1
 data modify entity @e[type=text_display, tag=jkpof_lobby_const_top_items, limit=1] text set value [{storage: "jk:pof", nbt: "txt.lobby.const.top.items", color: "red", bold: true}]
 data modify entity @e[type=text_display, tag=jkpof_lobby_const_top_events, limit=1] text set value [{storage: "jk:pof", nbt: "txt.lobby.const.top.events", color: "aqua", bold: true}]
 data modify entity @e[type=text_display, tag=jkpof_lobby_const_top_settings, limit=1] text set value [{storage: "jk:pof", nbt: "txt.lobby.const.top.settings", color: "gold", bold: true}]
-data modify entity @e[type=text_display, tag=jkpof_lobby_const_top_lore, limit=1] text set value [{storage: "jk:pof", nbt: "txt.POF", color: "yellow"}, {text: " v1.1.2", color: "gold"}, "\n", {storage: "jk:pof", nbt: "txt.lobby.const.top.lore.p1", color: "green"}, "\n", {storage: "jk:pof", nbt: "txt.lobby.const.top.lore.p2", color: "aqua"}]
+data modify entity @e[type=text_display, tag=jkpof_lobby_const_top_lore, limit=1] text set value [{storage: "jk:pof", nbt: "txt.POF", color: "yellow"}, {text: " v1.1.3", color: "gold"}, "\n", {storage: "jk:pof", nbt: "txt.lobby.const.top.lore.p1", color: "green"}, "\n", {storage: "jk:pof", nbt: "txt.lobby.const.top.lore.p2", color: "aqua"}]
 
 data modify entity @e[type=text_display, tag=jkpof_display_ctrl_item_show, limit=1] text set value [{storage: "jk:pof", nbt: "txt.lobby.const.settings.random_item_give.name", color: "gold"}]
 data modify entity @e[type=text_display, tag=jkpof_display_ctrl_item_mode, limit=1] text set value [{storage: "jk:pof", nbt: "txt.lobby.const.settings.random_item_give.distribution_mode", color: "green"}]
@@ -40,4 +40,5 @@ execute as @e[type=text_display, tag=jkpof_lobby_const_global_next] run data mod
 execute as @e[type=text_display, tag=jkpof_lobby_const_global_prev] run data modify entity @s text set value [{storage: "jk:pof", nbt: "txt.lobby.const.global.prev", color: "yellow"}]
 execute as @e[type=text_display, tag=jkpof_lobby_const_global_1button] run data modify entity @s text set value [{storage: "jk:pof", nbt: "txt.lobby.const.global.1button_ctrl", color: "gold"}]
 
-data modify entity @e[type=text_display, tag=jkpof_lobby_const_short_text_explain, limit=1] view_range set value false
+data modify entity @e[type=text_display, tag=jkpof_lobby_const_short_text_explain, limit=1] view_range set value 0
+data modify entity @e[type=text_display, tag=jkpof_lobby_const_set_lang_1st, limit=1] view_range set value 0

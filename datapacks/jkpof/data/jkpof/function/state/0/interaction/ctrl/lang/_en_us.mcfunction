@@ -128,7 +128,7 @@ data modify storage jk:pof txt.lobby.item.global.to_shoot set value "to shoot."
 data modify storage jk:pof txt.lobby.item.knockback_stick set value "Knockback Stick"
 data modify storage jk:pof txt.lobby.item.loot_chest.lore set value "Random loot from vanilla Minecraft."
 data modify storage jk:pof txt.lobby.item.loot_chest.name set value "Loot Chest"
-data modify storage jk:pof txt.lobby.item.netherite set value "Can be directly used to craft Netherite tools/armor."
+data modify storage jk:pof txt.lobby.item.netherite set value "Can be directly used to craft Netherite things."
 data modify storage jk:pof txt.lobby.item.platform.name set value "Aid Platform"
 data modify storage jk:pof txt.lobby.item.platform.p1 set value "to place a\n"
 data modify storage jk:pof txt.lobby.item.platform.p2 set value " platform under your feet."
@@ -178,4 +178,4 @@ data modify storage jk:pof txt.teams.yellow set value " Yellow Team "
 
 function jkpof:state/0/interaction/ctrl/lang/__
 
-data modify entity @e[type=text_display, tag=jkpof_lobby_const_short_text_explain, limit=1] view_range set value true
+data modify entity @e[type=text_display, tag=jkpof_lobby_const_short_text_explain, limit=1] view_range set value 1

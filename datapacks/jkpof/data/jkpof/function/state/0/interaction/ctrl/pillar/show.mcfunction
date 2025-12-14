@@ -1,4 +1,4 @@
-# 显示
+# 柱子数
 execute unless score #ctrl_pillar_count_order jkpof.int matches -1 run scoreboard players operation #ctrl_pillar_count_order_real jkpof.int = #ctrl_pillar_count_order jkpof.int
 execute if score #ctrl_pillar_count_order_real jkpof.int matches 0 run scoreboard players set #ctrl_pillar_count_num jkpof.int 9
 execute if score #ctrl_pillar_count_order_real jkpof.int matches 1 run scoreboard players set #ctrl_pillar_count_num jkpof.int 8
@@ -28,4 +28,10 @@ execute if score #ctrl_team jkpof.int matches 1 if score #ctrl_pillar_count_orde
 execute if score #ctrl_team jkpof.int matches 1 if score #ctrl_pillar_count_order_real jkpof.int matches 0..1 positioned -11 63 -95 run fill ~ ~ ~ ~1 ~4 ~12 gray_wool replace lime_concrete
 execute if score #ctrl_team jkpof.int matches 1 if score #ctrl_pillar_count_order_real jkpof.int matches 0 positioned 4 63 -95 run fill ~ ~ ~ ~1 ~4 ~12 orange_wool replace lime_concrete
 
-function jkpof:state/0/interaction/ctrl/pillar/distance/show
+# 间距
+execute if score #ctrl_pillar_distance jkpof.int matches 0 run data modify entity @e[type=text_display, tag=jkpof_display_show_ctrl_pillar_distance, limit=1] text set value {text: "<->", color: "yellow"}
+execute if score #ctrl_pillar_distance jkpof.int matches 1 run data modify entity @e[type=text_display, tag=jkpof_display_show_ctrl_pillar_distance, limit=1] text set value {text: "<-->", color: "yellow"}
+execute if score #ctrl_pillar_distance jkpof.int matches 2 run data modify entity @e[type=text_display, tag=jkpof_display_show_ctrl_pillar_distance, limit=1] text set value {text: "<--->", color: "yellow"}
+
+# 高度
+data modify entity @e[type=text_display, tag=jkpof_display_show_ctrl_pillar_height, limit=1] text set value {score: {name: "#ctrl_pillar_height", objective: "jkpof.int"}, color: "yellow"}

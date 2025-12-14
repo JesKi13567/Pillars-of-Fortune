@@ -128,7 +128,7 @@ data modify storage jk:pof txt.lobby.item.global.to_shoot set value "来发射�
 data modify storage jk:pof txt.lobby.item.knockback_stick set value "击退棒"
 data modify storage jk:pof txt.lobby.item.loot_chest.lore set value "来自原版 MC 的随机战利品。"
 data modify storage jk:pof txt.lobby.item.loot_chest.name set value "战利品箱"
-data modify storage jk:pof txt.lobby.item.netherite set value "可直接用于合成下界合金制的武器/装备。"
+data modify storage jk:pof txt.lobby.item.netherite set value "可直接用于合成下界合金制的物品。"
 data modify storage jk:pof txt.lobby.item.platform.name set value "急救平台"
 data modify storage jk:pof txt.lobby.item.platform.p1 set value "在脚下生成一层"
 data modify storage jk:pof txt.lobby.item.platform.p2 set value "平台。"

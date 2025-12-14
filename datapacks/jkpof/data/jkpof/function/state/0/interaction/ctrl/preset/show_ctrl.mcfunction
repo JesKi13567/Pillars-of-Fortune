@@ -7,7 +7,7 @@ function jkpof:state/0/interaction/ctrl/item/count
 scoreboard players remove #ctrl_item_time jkpof.int 1
 function jkpof:state/0/interaction/ctrl/item/time
 
-function jkpof:state/0/interaction/ctrl/pillar/count/show
+function jkpof:state/0/interaction/ctrl/pillar/show
 function jkpof:state/0/interaction/ctrl/ground/show
 
 function jkpof:state/0/interaction/ctrl/time/show
