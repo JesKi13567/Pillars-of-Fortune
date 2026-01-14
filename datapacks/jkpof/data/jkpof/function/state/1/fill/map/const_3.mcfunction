@@ -1,5 +1,5 @@
 # 柱子
-$execute as @e[type=marker, tag=jkpof_player_spawn] at @s run fill ~ ~-2 ~ ~ 1 ~ $(block0)
+$execute as @e[type=marker, tag=jkpof_player_spawn] at @s run fill ~ ~-2 ~ ~ 1 ~ $(block0) strict
 
 # 地面
 $function jkpof:state/1/fill/map/floor {integrity: '1.0', r: '$(r)', y: '0'}

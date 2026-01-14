@@ -15,4 +15,4 @@ execute if score #ctrl_ground_type jkpof.int matches 0 if score #ctrl_ground_flo
 execute if score #ctrl_pillar_type jkpof.int matches 0 as @e[type=marker, tag=jkpof_player_spawn] at @s run function jkpof:state/1/fill/random {tar: '#pillar', x1: '~', y1: '~-2', z1: '~', x2: '~', y2: '1', z2: '~'}
 execute if score #ctrl_pillar_type jkpof.int matches 1 store result score #pillar jkpof.int run random value 1..1164
 execute if score #ctrl_pillar_type jkpof.int matches 1 at @e[type=marker, tag=jkpof_player_spawn] run function jkpof:state/1/fill/const {tar: '#pillar', x1: '~', y1: '~-2', z1: '~', x2: '~', y2: '1', z2: '~'}
-execute if score #ctrl_pillar_type jkpof.int matches 3 as @e[type=marker, tag=jkpof_player_spawn] at @s run fill ~ ~-2 ~ ~ 1 ~ air
+execute if score #ctrl_pillar_type jkpof.int matches 3 as @e[type=marker, tag=jkpof_player_spawn] at @s run fill ~ ~-2 ~ ~ 1 ~ air strict

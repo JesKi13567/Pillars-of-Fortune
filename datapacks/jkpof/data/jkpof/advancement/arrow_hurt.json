@@ -1,0 +1,19 @@
+{
+    "criteria": {
+        "jkpof": {
+            "trigger": "entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "direct_entity": {
+                            "type": "arrow"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "jkpof:state/1/special_item/arrow/hurt"
+    }
+}

@@ -1,16 +1,36 @@
 gamemode survival @s
 spawnpoint @s 0 120 0
-recipe give @s *
+#recipe give @s *
 scoreboard players set @s jkpof.state 2
 
 # 玩家标号
 execute store result score @s jkpof.id run scoreboard players add #id_temp jkpof.int 1
 
-# 分数对齐，传送
-tag @s add jkpof_player_wait
-execute if score #ctrl_team jkpof.int matches 0 as @e[type=marker, tag=jkpof_player_spawn] if score @s jkpof.id = @p[tag=jkpof_player_wait] jkpof.id run tp @p[tag=jkpof_player_wait] @s
-execute if score #ctrl_team jkpof.int matches 1 as @e[type=marker, tag=jkpof_player_spawn] if score @s jkpof.id = @p[tag=jkpof_player_wait] jkpof.team run tp @p[tag=jkpof_player_wait] @s
-tag @s remove jkpof_player_wait
+execute if score #ctrl_team jkpof.int matches 0 run tp @s[scores={jkpof.id=1}] @e[type=marker, tag=jkpof_player_spawn, limit=1, scores={jkpof.id=1}]
+execute if score #ctrl_team jkpof.int matches 0 run tp @s[scores={jkpof.id=2}] @e[type=marker, tag=jkpof_player_spawn, limit=1, scores={jkpof.id=2}]
+execute if score #ctrl_team jkpof.int matches 0 run tp @s[scores={jkpof.id=3}] @e[type=marker, tag=jkpof_player_spawn, limit=1, scores={jkpof.id=3}]
+execute if score #ctrl_team jkpof.int matches 0 run tp @s[scores={jkpof.id=4}] @e[type=marker, tag=jkpof_player_spawn, limit=1, scores={jkpof.id=4}]
+execute if score #ctrl_team jkpof.int matches 0 run tp @s[scores={jkpof.id=5}] @e[type=marker, tag=jkpof_player_spawn, limit=1, scores={jkpof.id=5}]
+execute if score #ctrl_team jkpof.int matches 0 run tp @s[scores={jkpof.id=6}] @e[type=marker, tag=jkpof_player_spawn, limit=1, scores={jkpof.id=6}]
+execute if score #ctrl_team jkpof.int matches 0 run tp @s[scores={jkpof.id=7}] @e[type=marker, tag=jkpof_player_spawn, limit=1, scores={jkpof.id=7}]
+execute if score #ctrl_team jkpof.int matches 0 run tp @s[scores={jkpof.id=8}] @e[type=marker, tag=jkpof_player_spawn, limit=1, scores={jkpof.id=8}]
+execute if score #ctrl_team jkpof.int matches 0 run tp @s[scores={jkpof.id=9}] @e[type=marker, tag=jkpof_player_spawn, limit=1, scores={jkpof.id=9}]
+execute if score #ctrl_team jkpof.int matches 0 run tp @s[scores={jkpof.id=10}] @e[type=marker, tag=jkpof_player_spawn, limit=1, scores={jkpof.id=10}]
+execute if score #ctrl_team jkpof.int matches 0 run tp @s[scores={jkpof.id=11}] @e[type=marker, tag=jkpof_player_spawn, limit=1, scores={jkpof.id=11}]
+execute if score #ctrl_team jkpof.int matches 0 run tp @s[scores={jkpof.id=12}] @e[type=marker, tag=jkpof_player_spawn, limit=1, scores={jkpof.id=12}]
+
+execute if score #ctrl_team jkpof.int matches 1..2 run tp @s[scores={jkpof.team=1}] @e[type=marker, tag=jkpof_player_spawn, limit=1, scores={jkpof.id=1}]
+execute if score #ctrl_team jkpof.int matches 1..2 run tp @s[scores={jkpof.team=2}] @e[type=marker, tag=jkpof_player_spawn, limit=1, scores={jkpof.id=2}]
+execute if score #ctrl_team jkpof.int matches 1..2 run tp @s[scores={jkpof.team=3}] @e[type=marker, tag=jkpof_player_spawn, limit=1, scores={jkpof.id=3}]
+execute if score #ctrl_team jkpof.int matches 1..2 run tp @s[scores={jkpof.team=4}] @e[type=marker, tag=jkpof_player_spawn, limit=1, scores={jkpof.id=4}]
+execute if score #ctrl_team jkpof.int matches 1..2 run tp @s[scores={jkpof.team=5}] @e[type=marker, tag=jkpof_player_spawn, limit=1, scores={jkpof.id=5}]
+execute if score #ctrl_team jkpof.int matches 1..2 run tp @s[scores={jkpof.team=6}] @e[type=marker, tag=jkpof_player_spawn, limit=1, scores={jkpof.id=6}]
+execute if score #ctrl_team jkpof.int matches 1..2 run tp @s[scores={jkpof.team=7}] @e[type=marker, tag=jkpof_player_spawn, limit=1, scores={jkpof.id=7}]
+execute if score #ctrl_team jkpof.int matches 1..2 run tp @s[scores={jkpof.team=8}] @e[type=marker, tag=jkpof_player_spawn, limit=1, scores={jkpof.id=8}]
+execute if score #ctrl_team jkpof.int matches 1..2 run tp @s[scores={jkpof.team=9}] @e[type=marker, tag=jkpof_player_spawn, limit=1, scores={jkpof.id=9}]
+execute if score #ctrl_team jkpof.int matches 1..2 run tp @s[scores={jkpof.team=10}] @e[type=marker, tag=jkpof_player_spawn, limit=1, scores={jkpof.id=10}]
+execute if score #ctrl_team jkpof.int matches 1..2 run tp @s[scores={jkpof.team=11}] @e[type=marker, tag=jkpof_player_spawn, limit=1, scores={jkpof.id=11}]
+execute if score #ctrl_team jkpof.int matches 1..2 run tp @s[scores={jkpof.team=12}] @e[type=marker, tag=jkpof_player_spawn, limit=1, scores={jkpof.id=12}]
 
 # 夜视
 execute if score #ctrl_night_vision jkpof.int matches 1 run effect give @s night_vision infinite 0 true

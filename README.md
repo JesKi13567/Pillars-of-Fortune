@@ -1,7 +1,8 @@
 # 幸运之柱 JK's Pillars of Fortune
-## v1.1.3 for MC 1.21.9-11
+## v1.2 for MC 1.21.11
 - [简体中文](#zh_cn)
 - [English](#en_us)
+
 ## Lang
 语言可以在大厅出生点附近切换（初始有提示），同时设定好客户端语言效果更佳。
 
@@ -16,10 +17,14 @@ The language can be switched near the lobby spawn point \(has hint in initial\),
 1. [事件](#事件)
 
 1. [道具](#道具)
+
 ### 介绍
 玩家初始生成在各个柱子顶端，每隔一段时间获得随机物品，最终目标是活到最后。
 
-本**地图**支持 2~9 人/队 游玩，若开启队伍模式，理论上人数不限。
+本地图支持 2~12 人/队 游玩，若开启队伍模式，理论上人数不限。
+
+如何开始：玩家站在**黄绿色混凝土**上方等待即可。
+
 ### 设置
 所有设置都在大厅操作。
 
@@ -56,6 +61,7 @@ The language can be switched near the lobby spawn point \(has hint in initial\),
 |雷霆之劫|给予随机玩家一发闪电束，同时给该玩家背包某一栏位进行随机附魔。其中，金苹果会变成附魔金苹果。|
 |月球漫步|所有玩家获得 跳跃提升 + 缓降 效果。|
 |飞鸡来袭|随机选取 2 名玩家确定一条水平投影直线，在 Y=120 处生成一只鸡，其沿此直线飞行途中会定时投放被激活的TNT。|
+|连锁换位|所有玩家随机交换位置，也可能不会。|
 |边界收缩|边界收缩方向为 →↓←，可收缩最多 2 次。|
 |观众投票|（观众事件）观众可投票选择下一玩家事件。事件初始触发冷却为 30 秒时开启投票，观众投票人数达到一半后确认下一事件。|
 
@@ -64,17 +70,24 @@ The language can be switched near the lobby spawn point \(has hint in initial\),
 
 |道具列表|描述|
 |-|-|
-|堆叠修改|无耐久物品最大堆叠个数均为 64，若发现有物品未堆叠则需丢出刷新。|
+|物品堆叠|大部分无耐久物品最大堆叠个数均修改为 64。|
 |可发射的火球|按 \[右键\] 来发射。|
 |可发射的末影龙火球|按 \[右键\] 来发射。|
 |急救平台|按 \[右键\] 在脚下生成一层粘液块平台。|
-|自燃TNT|顾名思义。|
+|自燃TNT|3 秒后爆炸。|
 |可随处放置的末地水晶|顾名思义。|
 |击退棒|击退 V|
 |下界合金锭|可直接用于合成下界合金制的物品。|
-|折跃珍珠|沿指针方向瞬移，最多 20 格。|
-|战利品箱|来自原版 MC 的随机战利品。|
-|玩家头颅|玩家死亡会掉落头颅。|
+|折跃珍珠|沿指针方向瞬移最多 20 格，无视方块阻挡。|
+|战利品箱|来自原版 MC 的随机战利品，一个顶俩！|
+|玩家的头|玩家死亡会掉落头颅。|
+|虚空护符|在落入虚空时把你送回来。|
+|弓 / 弩|能发射刷怪蛋并生成。|
+|死亡笔记|被写入名字的玩家有概率在 40 秒后获得不可避免的死亡。需保证主手使用、正文为某一玩家名、书名为“DEATH NOTE”。初始/最低概率为 50%，每次使用将减去 100%。以下物品食用后将增加概率：苹果 : 金苹果 : 附魔金苹果 = 10% : 20% : 50%|
+|刷怪蛋|苦力怕刷怪蛋：均为自燃苦力怕。末影龙刷怪蛋：末影龙更智能了。狼、猫＆鹦鹉：都是驯服的。|
+|信标|在发出光柱的信标上方，丢入玩家的头能使对应玩家复活。若成功，则会消耗掉第一层基座以及它本身。另外，铜块及其涂蜡变种也可作为基座。|
+|囚笼|用两层玻璃把玩家包裹起来。|
+|时间控制器|使用后增加 1/4 游戏天。|
 
 ## en_us
 ### Contents
@@ -85,10 +98,14 @@ The language can be switched near the lobby spawn point \(has hint in initial\),
 1. [Events](#Events)
 
 1. [Items](#Items)
+
 ### Info
 Players spawn on top of pillars at the beginning, receive random items at regular intervals, their goal is to be the last player surviving.
 
-This **map** supports 2~9 players/teams. If Team Mode is on, player count has no limitation \(in theory\).
+This map supports 2~12 players/teams. If Team Mode is on, player count has no limitation \(in theory\).
+
+How to start: players need to stand on the **Lime Concrete** and wait.
+
 ### Settings
 All settings can be configured in the lobby.
 
@@ -125,6 +142,7 @@ Events are displayed in the lobby, and players can toggle their activation statu
 |Lightning Strike|A random player will be struck by a Lightning Bolt, and a random slot in their inventory will receive a random enchantment. Additionally, the Golden Apple in that slot will be converted into the Enchanted Golden Apple.|
 |Moon Walk|All players will receive Jump Boost + Slow Falling effects.|
 |Bomb Chicken|Randomly select 2 players to form a horizontal projection line, then summon a Chicken at Y=120. As it flies along this line, it will drop Primed TNT at regular intervals.|
+|Chain Swap|All players' positions will be randomly swapped, or not.|
 |Border Shrink|Border shrink direction: →↓←, max twice.|
 |Spectators' Vote|\(Spectator Event\) Spectators can vote for the next player event. Voting opens when the initial event cooldown is 30 seconds. The next event will be confirmed once half of the spectators have voted.|
 
@@ -133,17 +151,24 @@ Items are also displayed in the lobby.
 
 |Items|Description|
 |-|-|
-|Stack Modification|All non-durable items have a maximum stack size of 64, if not, drop them to refresh.|
+|Item Stack|Most non-durable items have a maximum stack size of 64.|
 |Shootable Fireball|Press \[Right Button\] to shoot.|
 |Shootable Dragon Fireball|Press \[Right Button\] to shoot.|
 |Aid Platform|Press \[Right Button\] to place a Slime Block platform under your feet.|
-|Self-Igniting TNT|As the name says.|
+|Self-Igniting TNT|Explode in 3 seconds.|
 |Place-Anywhere End Crystal|As the name says.|
 |Knockback Stick|Knockback V|
 |Netherite Ingot|Can be directly used to craft Netherite things.|
-|Warp Pearl|Teleport up to 20 blocks in the direction you're facing.|
-|Loot Chest|Random loot from vanilla Minecraft.|
+|Warp Pearl|Teleport up to 20 blocks in the direction you're facing, ignoring all block obstructions.|
+|Loot Chest|Random loot from vanilla Minecraft, which is doubled!|
 |Player Head|Players drop their own heads upon death.|
+|Void Charm|When you fall into void, send you back.|
+|Bow / Crossbow|Can shoot spawn eggs then summon them.|
+|Death Note|The player whose name is written in this book has a chance of getting inevitable death in 40 seconds. When using, ensure it's on your mainhand, the content is one player's name and the book title is \"DEATH NOTE\". The initial/minimum probability is 50%, every use will reduce 100%. Consuming any of the following items will increase this probability: Apple : Golden Apple : Enchanted Golden Apple = 10% : 20% : 50%|
+|Spawn Egg|Creeper Spawn Egg: now spawns Self-Igniting Creeper. Ender Dragon Spawn Egg: Ender Dragon becomes more intelligent. Wolf, Cat & Parrot: they are tamed.|
+|Beacon|Active the Beacon (beam is visible) then drop a Player Head on it to respawn the corresponding player. Upon success, the first layer of base blocks and itself will be consumed. In addition, Block of Copper and its waxed type can be used as base blocks.|
+|Cage|Surrounds the player with two layers of Glass.|
+|Time Controller|Adds 1/4 game day on use.|
 
 ## By JK137
 https://github.com/JesKi13567/Pillars-of-Fortune

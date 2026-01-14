@@ -1,6 +1,6 @@
 # 消耗和冷却
 clear @s blaze_rod[custom_data={jkpof: ["platform"]}] 1
-scoreboard players set @s jkpof.cd.platform 1
+scoreboard players set @s jkpof.cd 20
 
 # 生成
 summon marker ~ ~-3 ~ {Tags: ["jkpof", "jkpof_slime", "jkpof_check_pos"]}

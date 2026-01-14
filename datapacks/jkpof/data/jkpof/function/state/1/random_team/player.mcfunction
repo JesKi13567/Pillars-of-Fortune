@@ -1,0 +1,12 @@
+execute as @s[scores={jkpof.int=0}] run function jkpof:state/1/random_team/join {team: red, id: 1}
+execute as @s[scores={jkpof.int=1}] run function jkpof:state/1/random_team/join {team: blue, id: 2}
+execute as @s[scores={jkpof.int=2}] run function jkpof:state/1/random_team/join {team: green, id: 3}
+execute as @s[scores={jkpof.int=3}] run function jkpof:state/1/random_team/join {team: yellow, id: 4}
+execute as @s[scores={jkpof.int=4}] run function jkpof:state/1/random_team/join {team: cyan, id: 5}
+execute as @s[scores={jkpof.int=5}] run function jkpof:state/1/random_team/join {team: white, id: 6}
+execute as @s[scores={jkpof.int=6}] run function jkpof:state/1/random_team/join {team: pink, id: 7}
+execute as @s[scores={jkpof.int=7}] run function jkpof:state/1/random_team/join {team: gray, id: 8}
+execute as @s[scores={jkpof.int=8}] run function jkpof:state/1/random_team/join {team: gold, id: 9}
+execute as @s[scores={jkpof.int=9}] run function jkpof:state/1/random_team/join {team: lime, id: 10}
+execute as @s[scores={jkpof.int=10}] run function jkpof:state/1/random_team/join {team: purple, id: 11}
+execute as @s[scores={jkpof.int=11}] run function jkpof:state/1/random_team/join {team: light_gray, id: 12}

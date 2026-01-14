@@ -1,18 +1,17 @@
 # 地图
-function jkpof:state/0/interaction/ctrl/ground/map_set
+function jkpof:state/0/interaction/ctrl/ground/map/set
 
 execute if score #ctrl_map_real jkpof.int matches 0 run data modify entity @e[type=item_display, tag=jkpof_display_ctrl_map, limit=1] item.id set value "barrier"
 execute if score #ctrl_map_real jkpof.int matches 0 run data modify entity @e[type=text_display, tag=jkpof_display_text, limit=1] text set value [{storage: "jk:pof", nbt: "txt.lobby.bool.disabled.common", color: "yellow"}]
 execute if score #ctrl_map_real jkpof.int matches 1 run data modify entity @e[type=item_display, tag=jkpof_display_ctrl_map, limit=1] item.id set value "cobweb"
-execute if score #ctrl_map_real jkpof.int matches 1 run data modify entity @e[type=text_display, tag=jkpof_display_text, limit=1] text set value [{storage: "jk:pof", nbt: "txt.map.title.1", color: "yellow"}]
 execute if score #ctrl_map_real jkpof.int matches 2 run data modify entity @e[type=item_display, tag=jkpof_display_ctrl_map, limit=1] item.id set value "honey_block"
-execute if score #ctrl_map_real jkpof.int matches 2 run data modify entity @e[type=text_display, tag=jkpof_display_text, limit=1] text set value [{storage: "jk:pof", nbt: "txt.map.title.2", color: "yellow"}]
 execute if score #ctrl_map_real jkpof.int matches 3 run data modify entity @e[type=item_display, tag=jkpof_display_ctrl_map, limit=1] item.id set value "snow_block"
-execute if score #ctrl_map_real jkpof.int matches 3 run data modify entity @e[type=text_display, tag=jkpof_display_text, limit=1] text set value [{storage: "jk:pof", nbt: "txt.map.title.3", color: "yellow"}]
 execute if score #ctrl_map_real jkpof.int matches 4 run data modify entity @e[type=item_display, tag=jkpof_display_ctrl_map, limit=1] item.id set value "gold_block"
-execute if score #ctrl_map_real jkpof.int matches 4 run data modify entity @e[type=text_display, tag=jkpof_display_text, limit=1] text set value [{storage: "jk:pof", nbt: "txt.map.title.4", color: "yellow"}]
 execute if score #ctrl_map_real jkpof.int matches 5 run data modify entity @e[type=item_display, tag=jkpof_display_ctrl_map, limit=1] item.id set value "tnt"
-execute if score #ctrl_map_real jkpof.int matches 5 run data modify entity @e[type=text_display, tag=jkpof_display_text, limit=1] text set value [{storage: "jk:pof", nbt: "txt.map.title.5", color: "yellow"}]
+execute if score #ctrl_map_real jkpof.int matches 6 run data modify entity @e[type=item_display, tag=jkpof_display_ctrl_map, limit=1] item.id set value "decorated_pot"
+execute if score #ctrl_map_real jkpof.int matches 7 run data modify entity @e[type=item_display, tag=jkpof_display_ctrl_map, limit=1] item.id set value "end_stone"
+execute if score #ctrl_map_real jkpof.int matches 8 run data modify entity @e[type=item_display, tag=jkpof_display_ctrl_map, limit=1] item.id set value "big_dripleaf"
+execute if score #ctrl_map_real jkpof.int matches 1.. run function jkpof:state/0/interaction/ctrl/ground/map/name with storage jk:pof data.map
 execute if score #ctrl_map jkpof.int matches -1 run data modify entity @e[type=item_display, tag=jkpof_display_ctrl_map, limit=1] item.id set value "map"
 execute if score #ctrl_map jkpof.int matches -1 run data modify entity @e[type=text_display, tag=jkpof_display_text, limit=1] text set value [{storage: "jk:pof", nbt: "txt.lobby.global.random", color: "yellow"}]
 

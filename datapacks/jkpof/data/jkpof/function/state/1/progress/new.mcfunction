@@ -3,8 +3,8 @@ scoreboard players add #event_loop jkpof.int 1
 
 execute if score #event_loop jkpof.int matches ..5 if score #ctrl_team jkpof.int matches 0 if score #players jkpof.int matches 2 run tellraw @a [{storage: "jk:pof", nbt: "txt.POF", color: "yellow"}, {storage: "jk:pof", nbt: "txt.event.loop.half_time.2.players", color: "aqua"}]
 execute if score #event_loop jkpof.int matches ..5 if score #ctrl_team jkpof.int matches 0 if score #players jkpof.int matches 2 run scoreboard players set #event_loop jkpof.int 7
-execute if score #event_loop jkpof.int matches ..5 if score #ctrl_team jkpof.int matches 1 if score #teams jkpof.int matches 2 run tellraw @a [{storage: "jk:pof", nbt: "txt.POF", color: "yellow"}, {storage: "jk:pof", nbt: "txt.event.loop.half_time.2.teams", color: "aqua"}]
-execute if score #event_loop jkpof.int matches ..5 if score #ctrl_team jkpof.int matches 1 if score #teams jkpof.int matches 2 run scoreboard players set #event_loop jkpof.int 7
+execute if score #event_loop jkpof.int matches ..5 if score #ctrl_team jkpof.int matches 1..2 if score #teams jkpof.int matches 2 run tellraw @a [{storage: "jk:pof", nbt: "txt.POF", color: "yellow"}, {storage: "jk:pof", nbt: "txt.event.loop.half_time.2.teams", color: "aqua"}]
+execute if score #event_loop jkpof.int matches ..5 if score #ctrl_team jkpof.int matches 1..2 if score #teams jkpof.int matches 2 run scoreboard players set #event_loop jkpof.int 7
 
 execute if score #event_loop jkpof.int matches 6 run tellraw @a [{storage: "jk:pof", nbt: "txt.POF", color: "yellow"}, {storage: "jk:pof", nbt: "txt.event.loop.half_time.6", color: "aqua"}]
 
@@ -32,12 +32,15 @@ execute if score #event_mode jkpof.int matches 4 run function jkpof:state/1/prog
 # 飞鸡来袭
 execute if score #event_mode jkpof.int matches 5 run function jkpof:state/1/progress/event/bomb_chicken/summon
 
+# 连锁换位
+execute if score #event_mode jkpof.int matches 6 run function jkpof:state/1/progress/event/once/chain_swap/show
+
 # 持续时间
 execute if score #event_mode jkpof.int matches 1.. run scoreboard players set #event_time jkpof.int 100
 execute if score #event_mode jkpof.int matches 1.. run scoreboard players operation #event_type jkpof.int = #event_mode jkpof.int
 
 # 新阶段
-execute unless score #event_mode jkpof.int matches 0 as @a[scores={jkpof.state=2}, gamemode=survival] at @s run playsound block.note_block.bit player @s
+execute unless score #event_mode jkpof.int matches 0 as @a[scores={jkpof.state=2}, gamemode=survival] at @s run playsound block.note_block.bit
 
 execute store result score #event_cur_count jkpof.int run data get storage jk:pof data.event.count
 execute if score #event_cur_count jkpof.int matches 0.. run function jkpof:state/1/progress/roll/start

@@ -1,16 +1,7 @@
 {
     "pack": {
-        "min_format": 88,
+        "min_format": 94,
         "max_format": 94,
         "description": "Pillars of Fortune, by JK137"
-    },
-    "overlays": {
-        "entries": [
-            {
-                "min_format": 94,
-                "max_format": 94,
-                "directory": "1_21_11"
-            }
-        ]
     }
 }

@@ -1,5 +1,0 @@
-gamerule fall_damage false
-gamerule fire_damage false
-gamerule natural_health_regeneration true
-gamerule show_advancement_messages false
-gamerule locator_bar false

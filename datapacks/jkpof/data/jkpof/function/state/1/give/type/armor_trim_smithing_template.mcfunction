@@ -1,5 +1,6 @@
-execute if score #ctrl_item_mode jkpof.int matches 0 store result score @s jkpof.item.color run random value 1..18
+execute if score #ctrl_item_mode jkpof.int matches 0 store result score @s jkpof.item.color run random value 0..18
 
+$execute if score @s jkpof.item.color matches 0 run give @s netherite_upgrade_smithing_template $(n)
 $execute if score @s jkpof.item.color matches 1 run give @s bolt_armor_trim_smithing_template $(n)
 $execute if score @s jkpof.item.color matches 2 run give @s coast_armor_trim_smithing_template $(n)
 $execute if score @s jkpof.item.color matches 3 run give @s dune_armor_trim_smithing_template $(n)

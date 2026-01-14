@@ -1,0 +1,12 @@
+$summon marker -$(n1) 40 0 {Tags: ["jkpof", "jkpof_player_spawn", "W"]}
+$summon marker $(n1) 40 0 {Tags: ["jkpof", "jkpof_player_spawn", "E"]}
+$summon marker 0 40 -$(n1) {Tags: ["jkpof", "jkpof_player_spawn", "N"]}
+$summon marker 0 40 $(n1) {Tags: ["jkpof", "jkpof_player_spawn", "S"]}
+$summon marker $(n2) 40 $(n2) {Tags: ["jkpof", "jkpof_player_spawn", "SE"]}
+$summon marker $(n2) 40 -$(n2) {Tags: ["jkpof", "jkpof_player_spawn", "NE"]}
+$summon marker -$(n2) 40 $(n2) {Tags: ["jkpof", "jkpof_player_spawn", "SW"]}
+$summon marker -$(n2) 40 -$(n2) {Tags: ["jkpof", "jkpof_player_spawn", "NW"]}
+$summon marker $(n3) 40 $(n3) {Tags: ["jkpof", "jkpof_player_spawn", "SEO"]}
+$summon marker $(n3) 40 -$(n3) {Tags: ["jkpof", "jkpof_player_spawn", "NEO"]}
+$summon marker -$(n3) 40 $(n3) {Tags: ["jkpof", "jkpof_player_spawn", "SWO"]}
+$summon marker -$(n3) 40 -$(n3) {Tags: ["jkpof", "jkpof_player_spawn", "NWO"]}
