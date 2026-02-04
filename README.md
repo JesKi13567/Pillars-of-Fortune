@@ -1,5 +1,5 @@
 # 幸运之柱 JK's Pillars of Fortune
-## v1.2 for MC 1.21.11
+## v1.2.1 for MC 1.21.11
 - [简体中文](#zh_cn)
 - [English](#en_us)
 
@@ -23,7 +23,7 @@ The language can be switched near the lobby spawn point \(has hint in initial\),
 
 本地图支持 2~12 人/队 游玩，若开启队伍模式，理论上人数不限。
 
-如何开始：玩家站在**黄绿色混凝土**上方等待即可。
+如何开始：玩家站在**黄绿色混凝土**或**羊毛**上方等待即可。
 
 ### 设置
 所有设置都在大厅操作。
@@ -34,7 +34,6 @@ The language can be switched near the lobby spawn point \(has hint in initial\),
 ||数量|给予的物品个数|
 ||间隔秒数|每次获得物品的间隔|
 |**柱子**|种类|包含随机，会被**地图**影响|
-||数量|包含自动，设定游玩人数/队伍数|
 ||高度|越大则顶部离地面越远|
 ||间距|越大则离其他柱子越远|
 |**地面**|种类|包含随机，会被**地图**影响|
@@ -46,24 +45,33 @@ The language can be switched near the lobby spawn point \(has hint in initial\),
 ||自然回血|玩家是否可吃普通食物回血|
 ||进度展示|可避免其他玩家知晓你是否获得某物品|
 ||定位栏|展示经验栏上的玩家位置|
-||**预设**|设置项的预设（默认、共同体等）|
+||**预设**|设置项的预设|
 ||**地图**|包含随机，将影响柱子和地面，开局时会显示名称|
-||**队伍模式**|柱子数量不为 “自动” 时才可启用|
+||颠倒模式|玩家初始获得*重力装置\*2*，柱子将在地面下方生成，部分事件会被影响|
+||小孩模式|玩家尺寸大小为原来的 1/2|
+
+以下设置在「游戏」附近调整。
+
+|设置项|描述|
+|-|-|
+|**柱子数**|用于设定游玩人数或队伍数，选项包含 *自动/2/4/5/8/9/12*|
+|**队伍模式**|柱子数量不为 “自动” 时才可启用，有自选与随机分配，默认禁用|
 
 ### 事件
 事件会在大厅展示，同时玩家可以选择是否启用。
 
 |事件列表|描述|
 |-|-|
+|观众投票|（观众事件）观众可投票选择下一玩家事件。事件初始触发冷却为 30 秒时开启投票，观众投票人数达到一半后确认下一事件。|
+|边界收缩|边界收缩方向为 →← + ↓/↑，可收缩最多 2 次。|
 |无事发生|无事发生也是一种事件，开局时必出。|
 |万箭齐发|所有玩家头上将不断生成箭，缓冲 2 秒，持续 3 秒。|
 |熔岩地板|所有玩家脚下的方块会逐渐变成熔岩。黄色羊毛->橙色羊毛->红色羊毛->熔岩。|
 |雷霆之劫|给予随机玩家一发闪电束，同时给该玩家背包某一栏位进行随机附魔。其中，金苹果会变成附魔金苹果。|
 |月球漫步|所有玩家获得 跳跃提升 + 缓降 效果。|
-|飞鸡来袭|随机选取 2 名玩家确定一条水平投影直线，在 Y=120 处生成一只鸡，其沿此直线飞行途中会定时投放被激活的TNT。|
+|飞鸡来袭|随机选取 2 名玩家确定一条水平投影直线，在限高屏障处生成一只鸡，其沿此直线飞行途中会定时投放被激活的TNT。|
 |连锁换位|所有玩家随机交换位置，也可能不会。|
-|边界收缩|边界收缩方向为 →↓←，可收缩最多 2 次。|
-|观众投票|（观众事件）观众可投票选择下一玩家事件。事件初始触发冷却为 30 秒时开启投票，观众投票人数达到一半后确认下一事件。|
+|道具补给|接下来的 3 次物品给予均有 60% 概率为道具。正常情况下，这个值是 14/1284。|
 
 ### 道具
 道具也会在大厅展示。
@@ -84,10 +92,13 @@ The language can be switched near the lobby spawn point \(has hint in initial\),
 |虚空护符|在落入虚空时把你送回来。|
 |弓 / 弩|能发射刷怪蛋并生成。|
 |死亡笔记|被写入名字的玩家有概率在 40 秒后获得不可避免的死亡。需保证主手使用、正文为某一玩家名、书名为“DEATH NOTE”。初始/最低概率为 50%，每次使用将减去 100%。以下物品食用后将增加概率：苹果 : 金苹果 : 附魔金苹果 = 10% : 20% : 50%|
-|刷怪蛋|苦力怕刷怪蛋：均为自燃苦力怕。末影龙刷怪蛋：末影龙更智能了。狼、猫＆鹦鹉：都是驯服的。|
+|刷怪蛋|苦力怕刷怪蛋：均为自燃苦力怕。末影龙刷怪蛋：末影龙更智能了。狼、猫＆鹦鹉：都是驯服的。部分生物拥有更多变种。|
 |信标|在发出光柱的信标上方，丢入玩家的头能使对应玩家复活。若成功，则会消耗掉第一层基座以及它本身。另外，铜块及其涂蜡变种也可作为基座。|
 |囚笼|用两层玻璃把玩家包裹起来。|
 |时间控制器|使用后增加 1/4 游戏天。|
+|鞘翅|可与任意胸甲锻造在一起，耐久会叠加。|
+|超级星|使用后无敌 15 秒。|
+|重力装置|永久地颠倒自己的重力方向。|
 
 ## en_us
 ### Contents
@@ -104,7 +115,7 @@ Players spawn on top of pillars at the beginning, receive random items at regula
 
 This map supports 2~12 players/teams. If Team Mode is on, player count has no limitation \(in theory\).
 
-How to start: players need to stand on the **Lime Concrete** and wait.
+How to start: players need to stand on **Lime Concrete** or **wool** and wait.
 
 ### Settings
 All settings can be configured in the lobby.
@@ -115,7 +126,6 @@ All settings can be configured in the lobby.
 ||Count|Number of items given|
 ||Interval Seconds|Time between items given|
 |**Pillars**|Type|Includes Random; affected by the **Map Theme** setting|
-||Count|Includes Auto; the number of players/teams|
 ||Height|Higher value = top farther from the ground|
 ||Distance|Higher value = farther from other pillars|
 |**Ground**|Type|Includes Random; affected by the **Map Theme** setting|
@@ -127,24 +137,33 @@ All settings can be configured in the lobby.
 ||Natural Regeneration|Whether players can regenerate health by eating common food|
 ||Show Advancements|Prevents other players from knowing if you've received specific items|
 ||Locator Bar|Whether to display player positions on the experience bar|
-||**Presets**|Settings' presets \(Default, Unity, etc.\)|
+||**Presets**|Settings' presets|
 ||**Map Theme**|Includes Random; affects Pillars & Ground; if enabled, the theme name will be displayed at the beginning|
-||**Team Mode**|Can be enabled only if the Pillar Count is not set to "Auto"|
+||Upside Down Mode|Players get *Gravity Device\*2* on spawn, the pillars are under the ground, some events will be influenced|
+||Kid Mode|Set players' scale to 1/2|
+
+Following settings can be adjusted near the "Play" area.
+
+|Settings|Description|
+|-|-|
+|**Pillar Count**|The number of players or teams, including the options of *Auto/2/4/5/8/9/12*|
+|**Team Mode**|Can be enabled only if the Pillar Count is not set to "Auto"|
 
 ### Events
 Events are displayed in the lobby, and players can toggle their activation status.
 
 |Events|Description|
 |-|-|
+|Spectators' Vote|\(Spectator Event\) Spectators can vote for the next player event. Voting opens when the initial event cooldown is 30 seconds. The next event will be confirmed once half of the spectators have voted.|
+|Border Shrink|Border shrink direction: →← + ↓/↑, max twice.|
 |Nothing Happens|Nothing Happens is also an event, and it will definitely be triggered at the beginning.|
 |Arrow Rain|The Arrow will be continuously summoned above all players' heads, with a 2s buffer and a 3s duration.|
 |Lava Floor|Blocks beneath all players' feet will gradually transform into Lava. Yellow Wool->Orange Wool->Red Wool->Lava|
 |Lightning Strike|A random player will be struck by a Lightning Bolt, and a random slot in their inventory will receive a random enchantment. Additionally, the Golden Apple in that slot will be converted into the Enchanted Golden Apple.|
 |Moon Walk|All players will receive Jump Boost + Slow Falling effects.|
-|Bomb Chicken|Randomly select 2 players to form a horizontal projection line, then summon a Chicken at Y=120. As it flies along this line, it will drop Primed TNT at regular intervals.|
+|Bomb Chicken|Randomly select 2 players to form a horizontal projection line, then summon a Chicken at height-limit barrier. As it flies along this line, it will drop Primed TNT at regular intervals.|
 |Chain Swap|All players' positions will be randomly swapped, or not.|
-|Border Shrink|Border shrink direction: →↓←, max twice.|
-|Spectators' Vote|\(Spectator Event\) Spectators can vote for the next player event. Voting opens when the initial event cooldown is 30 seconds. The next event will be confirmed once half of the spectators have voted.|
+|Prop Supply|The next 3 items players receive have a 60% chance of being props. In common situation, the number is 14/1284.|
 
 ### Items
 Items are also displayed in the lobby.
@@ -165,10 +184,13 @@ Items are also displayed in the lobby.
 |Void Charm|When you fall into void, send you back.|
 |Bow / Crossbow|Can shoot spawn eggs then summon them.|
 |Death Note|The player whose name is written in this book has a chance of getting inevitable death in 40 seconds. When using, ensure it's on your mainhand, the content is one player's name and the book title is \"DEATH NOTE\". The initial/minimum probability is 50%, every use will reduce 100%. Consuming any of the following items will increase this probability: Apple : Golden Apple : Enchanted Golden Apple = 10% : 20% : 50%|
-|Spawn Egg|Creeper Spawn Egg: now spawns Self-Igniting Creeper. Ender Dragon Spawn Egg: Ender Dragon becomes more intelligent. Wolf, Cat & Parrot: they are tamed.|
+|Spawn Egg|Creeper Spawn Egg: now spawns Self-Igniting Creeper. Ender Dragon Spawn Egg: Ender Dragon becomes more intelligent. Wolf, Cat & Parrot: they are tamed. Some mobs have more variants.|
 |Beacon|Active the Beacon (beam is visible) then drop a Player Head on it to respawn the corresponding player. Upon success, the first layer of base blocks and itself will be consumed. In addition, Block of Copper and its waxed type can be used as base blocks.|
 |Cage|Surrounds the player with two layers of Glass.|
 |Time Controller|Adds 1/4 game day on use.|
+|Elytra|Can be smithed together with any chestplate, and the durability will be combined.|
+|Super Star|Invulnerable for 15s.|
+|Gravity Device|Permanently reverse your gravity.|
 
 ## By JK137
 https://github.com/JesKi13567/Pillars-of-Fortune

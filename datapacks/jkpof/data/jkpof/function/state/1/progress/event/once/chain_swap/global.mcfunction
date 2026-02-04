@@ -9,3 +9,7 @@ execute if score #ctrl_team jkpof.int matches 1..2 as @e[type=marker, tag=jkpof_
 
 # 传送并清除
 execute as @a[tag=jkpof_swap_player] at @s run function jkpof:state/1/progress/event/once/chain_swap/player
+
+# 音效
+playsound block.beacon.power_select block @a 0 1000000 0 10000000
+playsound entity.enderman.teleport block @a 0 1000000 0 10000000

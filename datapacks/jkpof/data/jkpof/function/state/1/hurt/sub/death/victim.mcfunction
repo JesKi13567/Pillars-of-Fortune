@@ -1,0 +1,42 @@
+execute as @s[scores={jkpof.damage.source.last=0}] run function jkpof:state/1/hurt/sub/death/victim_ {type: self}
+execute as @s[scores={jkpof.damage.source.last=1..}] run function jkpof:state/1/hurt/sub/death/victim_ {type: murder}
+
+execute as @s[scores={jkpof.damage.type.last=201}] run tellraw @a ["", {storage: "jk:pof", nbt: "txt.DOF", color: "red"}, {translate: "death.attack.player", with: [{selector: "@s"}, {selector: "@p[tag=jkpof_murder]"}]}]
+execute as @s[scores={jkpof.damage.type.last=202}] run tellraw @a ["", {storage: "jk:pof", nbt: "txt.DOF", color: "red"}, {translate: "death.attack.arrow", with: [{selector: "@s"}, {selector: "@p[tag=jkpof_murder]"}]}]
+execute as @s[scores={jkpof.damage.type.last=203}] run tellraw @a ["", {storage: "jk:pof", nbt: "txt.DOF", color: "red"}, {translate: "death.attack.trident", with: [{selector: "@s"}, {selector: "@p[tag=jkpof_murder]"}]}]
+execute as @s[scores={jkpof.damage.type.last=204}] run tellraw @a ["", {storage: "jk:pof", nbt: "txt.DOF", color: "red"}, {translate: "death.attack.fireball", with: [{selector: "@s"}, {selector: "@p[tag=jkpof_murder]"}]}]
+execute as @s[scores={jkpof.damage.type.last=205}] run tellraw @a ["", {storage: "jk:pof", nbt: "txt.DOF", color: "red"}, {translate: "death.attack.fireworks.player", with: [{selector: "@s"}, {selector: "@p[tag=jkpof_murder]"}]}]
+execute as @s[scores={jkpof.damage.type.last=206}] run tellraw @a ["", {storage: "jk:pof", nbt: "txt.DOF", color: "red"}, {translate: "death.attack.thorns", with: [{selector: "@s"}, {selector: "@p[tag=jkpof_murder]"}]}]
+execute as @s[scores={jkpof.damage.type.last=207}] run tellraw @a ["", {storage: "jk:pof", nbt: "txt.DOF", color: "red"}, {translate: "death.attack.indirectMagic", with: [{selector: "@s"}, {selector: "@p[tag=jkpof_murder]"}]}]
+execute as @s[scores={jkpof.damage.type.last=208}] run tellraw @a ["", {storage: "jk:pof", nbt: "txt.DOF", color: "red"}, {translate: "death.attack.mace_smash", with: [{selector: "@s"}, {selector: "@p[tag=jkpof_murder]"}]}]
+execute as @s[scores={jkpof.damage.type.last=209}] run tellraw @a ["", {storage: "jk:pof", nbt: "txt.DOF", color: "red"}, {translate: "death.attack.spear", with: [{selector: "@s"}, {selector: "@p[tag=jkpof_murder]"}]}]
+execute as @s[scores={jkpof.damage.type.last=210}] run tellraw @a ["", {storage: "jk:pof", nbt: "txt.DOF", color: "red"}, {translate: "death.attack.explosion.player", with: [{selector: "@s"}, {selector: "@p[tag=jkpof_murder]"}]}]
+execute as @s[scores={jkpof.damage.type.last=299}] run tellraw @a ["", {storage: "jk:pof", nbt: "txt.DOF", color: "red"}, {selector: "@s"}, {storage: "jk:pof", nbt: "txt.death.victim.death_note.p1"}, {selector: "@p[tag=jkpof_murder]"}, {storage: "jk:pof", nbt: "txt.death.victim.death_note.p2"}]
+
+execute as @s[scores={jkpof.damage.type.last=301}] run tellraw @a ["", {storage: "jk:pof", nbt: "txt.DOF", color: "red"}, {translate: "death.attack.onFire.player", with: [{selector: "@s"}, {selector: "@p[tag=jkpof_murder]"}]}]
+execute as @s[scores={jkpof.damage.type.last=302}] run tellraw @a ["", {storage: "jk:pof", nbt: "txt.DOF", color: "red"}, {translate: "death.attack.magic.player", with: [{selector: "@s"}, {selector: "@p[tag=jkpof_murder]"}]}]
+execute as @s[scores={jkpof.damage.type.last=303}] run tellraw @a ["", {storage: "jk:pof", nbt: "txt.DOF", color: "red"}, {translate: "death.attack.wither.player", with: [{selector: "@s"}, {selector: "@p[tag=jkpof_murder]"}]}]
+execute as @s[scores={jkpof.damage.type.last=304}] run tellraw @a ["", {storage: "jk:pof", nbt: "txt.DOF", color: "red"}, {translate: "death.attack.starve.player", with: [{selector: "@s"}, {selector: "@p[tag=jkpof_murder]"}]}]
+execute as @s[scores={jkpof.damage.type.last=305}] run tellraw @a ["", {storage: "jk:pof", nbt: "txt.DOF", color: "red"}, {translate: "death.attack.cactus.player", with: [{selector: "@s"}, {selector: "@p[tag=jkpof_murder]"}]}]
+execute as @s[scores={jkpof.damage.type.last=306}] run tellraw @a ["", {storage: "jk:pof", nbt: "txt.DOF", color: "red"}, {translate: "death.attack.inFire.player", with: [{selector: "@s"}, {selector: "@p[tag=jkpof_murder]"}]}]
+execute as @s[scores={jkpof.damage.type.last=307}] run tellraw @a ["", {storage: "jk:pof", nbt: "txt.DOF", color: "red"}, {translate: "death.attack.lava.player", with: [{selector: "@s"}, {selector: "@p[tag=jkpof_murder]"}]}]
+execute as @s[scores={jkpof.damage.type.last=308}] run tellraw @a ["", {storage: "jk:pof", nbt: "txt.DOF", color: "red"}, {translate: "death.attack.hotFloor.player", with: [{selector: "@s"}, {selector: "@p[tag=jkpof_murder]"}]}]
+execute as @s[scores={jkpof.damage.type.last=309}] run tellraw @a ["", {storage: "jk:pof", nbt: "txt.DOF", color: "red"}, {translate: "death.attack.sweetBerryBush.player", with: [{selector: "@s"}, {selector: "@p[tag=jkpof_murder]"}]}]
+execute as @s[scores={jkpof.damage.type.last=310}] run tellraw @a ["", {storage: "jk:pof", nbt: "txt.DOF", color: "red"}, {translate: "death.attack.inWall.player", with: [{selector: "@s"}, {selector: "@p[tag=jkpof_murder]"}]}]
+execute as @s[scores={jkpof.damage.type.last=311}] run tellraw @a ["", {storage: "jk:pof", nbt: "txt.DOF", color: "red"}, {translate: "death.attack.drown.player", with: [{selector: "@s"}, {selector: "@p[tag=jkpof_murder]"}]}]
+execute as @s[scores={jkpof.damage.type.last=312}] run tellraw @a ["", {storage: "jk:pof", nbt: "txt.DOF", color: "red"}, {translate: "death.attack.freeze.player", with: [{selector: "@s"}, {selector: "@p[tag=jkpof_murder]"}]}]
+execute as @s[scores={jkpof.damage.type.last=313}] run tellraw @a ["", {storage: "jk:pof", nbt: "txt.DOF", color: "red"}, {translate: "death.attack.cramming.player", with: [{selector: "@s"}, {selector: "@p[tag=jkpof_murder]"}]}]
+execute as @s[scores={jkpof.damage.type.last=314}] run tellraw @a ["", {storage: "jk:pof", nbt: "txt.DOF", color: "red"}, {translate: "death.attack.lightningBolt.player", with: [{selector: "@s"}, {selector: "@p[tag=jkpof_murder]"}]}]
+execute as @s[scores={jkpof.damage.type.last=315}] run tellraw @a ["", {storage: "jk:pof", nbt: "txt.DOF", color: "red"}, {translate: "death.attack.outsideBorder.player", with: [{selector: "@s"}, {selector: "@p[tag=jkpof_murder]"}]}]
+execute as @s[scores={jkpof.damage.type.last=316}] run tellraw @a ["", {storage: "jk:pof", nbt: "txt.DOF", color: "red"}, {translate: "death.attack.outOfWorld.player", with: [{selector: "@s"}, {selector: "@p[tag=jkpof_murder]"}]}]
+execute as @s[scores={jkpof.damage.type.last=317}] run tellraw @a ["", {storage: "jk:pof", nbt: "txt.DOF", color: "red"}, {translate: "death.attack.fall.player", with: [{selector: "@s"}, {selector: "@p[tag=jkpof_murder]"}]}]
+execute as @s[scores={jkpof.damage.type.last=318}] run tellraw @a ["", {storage: "jk:pof", nbt: "txt.DOF", color: "red"}, {translate: "death.attack.stalagmite.player", with: [{selector: "@s"}, {selector: "@p[tag=jkpof_murder]"}]}]
+execute as @s[scores={jkpof.damage.type.last=319}] run tellraw @a ["", {storage: "jk:pof", nbt: "txt.DOF", color: "red"}, {translate: "death.attack.anvil.player", with: [{selector: "@s"}, {selector: "@p[tag=jkpof_murder]"}]}]
+execute as @s[scores={jkpof.damage.type.last=320}] run tellraw @a ["", {storage: "jk:pof", nbt: "txt.DOF", color: "red"}, {translate: "death.attack.fallingStalactite.player", with: [{selector: "@s"}, {selector: "@p[tag=jkpof_murder]"}]}]
+execute as @s[scores={jkpof.damage.type.last=321}] run tellraw @a ["", {storage: "jk:pof", nbt: "txt.DOF", color: "red"}, {translate: "death.attack.fallingBlock.player", with: [{selector: "@s"}, {selector: "@p[tag=jkpof_murder]"}]}]
+execute as @s[scores={jkpof.damage.type.last=322}] run tellraw @a ["", {storage: "jk:pof", nbt: "txt.DOF", color: "red"}, {translate: "death.attack.flyIntoWall.player", with: [{selector: "@s"}, {selector: "@p[tag=jkpof_murder]"}]}]
+execute as @s[scores={jkpof.damage.type.last=323}] run tellraw @a ["", {storage: "jk:pof", nbt: "txt.DOF", color: "red"}, {translate: "death.attack.explosion.player", with: [{selector: "@s"}, {selector: "@p[tag=jkpof_murder]"}]}]
+execute as @s[scores={jkpof.damage.type.last=324}] run tellraw @a ["", {storage: "jk:pof", nbt: "txt.DOF", color: "red"}, {translate: "death.attack.arrow", with: [{selector: "@s"}, {selector: "@p[tag=jkpof_murder]"}]}]
+
+# 击杀数 +1
+execute unless score #test_mode jkpof.int matches 1 run scoreboard players add @p[tag=jkpof_murder] jkpof.kills 1

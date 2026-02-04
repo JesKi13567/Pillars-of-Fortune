@@ -1,0 +1,1 @@
+{"criteria":{"jkpof":{"trigger":"entity_hurt_player","conditions":{"damage":{"type":{"source_entity":{"type":"ender_dragon"}}}}}},"rewards":{"function":"jkpof:state/1/hurt/entity/ender_dragon"}}

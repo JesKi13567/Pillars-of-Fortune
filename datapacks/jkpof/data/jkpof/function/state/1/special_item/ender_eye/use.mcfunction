@@ -11,3 +11,6 @@ effect give @s slow_falling 1 0 true
 execute at @s run summon marker ~ ~-1 ~ {Tags: ["jkpof", "jkpof_slime", "jkpof_check_pos"]}
 execute as @e[type=marker, tag=jkpof_check_pos] at @s run function jkpof:state/1/special_item/check_pos
 execute as @e[type=marker, tag=jkpof_slime] at @s run setblock ~ ~ ~ slime_block
+
+# 清理
+kill @e[type=marker, tag=jkpof_check_pos]

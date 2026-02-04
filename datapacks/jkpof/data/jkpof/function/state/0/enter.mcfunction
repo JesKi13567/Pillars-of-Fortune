@@ -12,9 +12,9 @@ gamerule natural_health_regeneration true
 gamerule show_advancement_messages false
 gamerule locator_bar false
 worldborder set 1000
-kill @e[type=item_display, tag=jkpof_barrier]
+kill @e[type=item_display, tag=jkpof_height_barrier]
 spawnpoint @a 0 64 -100
-tp @a 0 64 -100
+tp @a 0 64 -100 0 0
 gamemode adventure @a
 tellraw @a [{storage: "jk:pof", nbt: "txt.POF", color: "yellow"}, {storage: "jk:pof", nbt: "txt.game.reset", color: "green"}]
 function jkpof:state/0/interaction/ctrl/time/set
@@ -24,4 +24,4 @@ kill @e[type=marker, tag=jkpof_clean]
 summon marker 0 129 0 {Tags: ["jkpof", "jkpof_clean"]}
 scoreboard players set @e[type=marker, tag=jkpof_clean, limit=1] jkpof.int 100
 bossbar set jkpof:progress visible false
-function jkpof:state/0/player/clear
+execute as @a run function jkpof:state/0/player/clear

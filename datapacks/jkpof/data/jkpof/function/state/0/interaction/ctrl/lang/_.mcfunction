@@ -6,7 +6,7 @@ data modify entity @e[type=text_display, tag=jkpof_lobby_const_top_play, limit=1
 data modify entity @e[type=text_display, tag=jkpof_lobby_const_top_items, limit=1] text set value [{storage: "jk:pof", nbt: "txt.lobby.const.top.items", color: "red", bold: true}]
 data modify entity @e[type=text_display, tag=jkpof_lobby_const_top_events, limit=1] text set value [{storage: "jk:pof", nbt: "txt.lobby.const.top.events", color: "aqua", bold: true}]
 data modify entity @e[type=text_display, tag=jkpof_lobby_const_top_settings, limit=1] text set value [{storage: "jk:pof", nbt: "txt.lobby.const.top.settings", color: "gold", bold: true}]
-data modify entity @e[type=text_display, tag=jkpof_lobby_const_top_lore, limit=1] text set value [{storage: "jk:pof", nbt: "txt.POF", color: "yellow"}, {text: " v1.2", color: "gold"}, "\n", {storage: "jk:pof", nbt: "txt.lobby.const.top.lore.p1", color: "green"}, "\n", {storage: "jk:pof", nbt: "txt.lobby.const.top.lore.p2", color: "aqua"}]
+data modify entity @e[type=text_display, tag=jkpof_lobby_const_top_lore, limit=1] text set value [{storage: "jk:pof", nbt: "txt.POF", color: "yellow"}, {text: " v1.2.1", color: "gold"}, "\n", {storage: "jk:pof", nbt: "txt.lobby.const.top.lore.p1", color: "green"}, "\n", {storage: "jk:pof", nbt: "txt.lobby.const.top.lore.p2", color: "aqua"}]
 
 data modify entity @e[type=text_display, tag=jkpof_display_ctrl_item_show, limit=1] text set value [{storage: "jk:pof", nbt: "txt.lobby.const.settings.random_item_give.name", color: "gold"}]
 data modify entity @e[type=text_display, tag=jkpof_display_ctrl_item_mode, limit=1] text set value [{storage: "jk:pof", nbt: "txt.lobby.const.settings.random_item_give.distribution_mode", color: "green"}]
@@ -32,6 +32,9 @@ data modify entity @e[type=text_display, tag=jkpof_display_ctrl_time, limit=1] t
 data modify entity @e[type=text_display, tag=jkpof_display_ctrl_natural_regen, limit=1] text set value [{storage: "jk:pof", nbt: "txt.lobby.const.settings.natural_regen", color: "green"}]
 data modify entity @e[type=text_display, tag=jkpof_display_ctrl_advancement, limit=1] text set value [{storage: "jk:pof", nbt: "txt.lobby.const.settings.advancement", color: "green"}]
 data modify entity @e[type=text_display, tag=jkpof_display_ctrl_locator_bar, limit=1] text set value [{storage: "jk:pof", nbt: "txt.lobby.const.settings.locator_bar", color: "green"}]
+data modify entity @e[type=text_display, tag=jkpof_display_ctrl_upside_down, limit=1] text set value [{storage: "jk:pof", nbt: "txt.lobby.const.settings.upside_down", color: "green"}]
+data modify entity @e[type=text_display, tag=jkpof_display_ctrl_kid_mode, limit=1] text set value [{storage: "jk:pof", nbt: "txt.lobby.const.settings.kid_mode", color: "green"}]
+
 data modify entity @e[type=text_display, tag=jkpof_display_ctrl_preset, limit=1] text set value [{storage: "jk:pof", nbt: "txt.lobby.const.settings.presets", color: "green"}]
 
 data modify entity @e[type=text_display, tag=jkpof_lobby_const_short_text_explain, limit=1] view_range set value 0

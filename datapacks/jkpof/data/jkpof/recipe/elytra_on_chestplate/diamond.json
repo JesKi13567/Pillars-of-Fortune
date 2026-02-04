@@ -1,0 +1,20 @@
+{
+  "type": "smithing_transform",
+  "base": "diamond_chestplate",
+  "template": "elytra",
+  "result": {
+    "count": 1,
+    "id": "diamond_chestplate",
+    "components": {
+      "glider": {},
+      "max_damage": 960,
+      "lore": [
+        {
+          "text": "✈",
+          "color": "gray",
+          "italic": false
+        }
+      ]
+    }
+  }
+}

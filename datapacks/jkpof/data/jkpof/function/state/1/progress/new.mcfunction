@@ -35,12 +35,15 @@ execute if score #event_mode jkpof.int matches 5 run function jkpof:state/1/prog
 # 连锁换位
 execute if score #event_mode jkpof.int matches 6 run function jkpof:state/1/progress/event/once/chain_swap/show
 
+# 道具补给
+execute if score #event_mode jkpof.int matches 7 run function jkpof:state/1/progress/event/once/prop_supply
+
 # 持续时间
 execute if score #event_mode jkpof.int matches 1.. run scoreboard players set #event_time jkpof.int 100
 execute if score #event_mode jkpof.int matches 1.. run scoreboard players operation #event_type jkpof.int = #event_mode jkpof.int
 
 # 新阶段
-execute unless score #event_mode jkpof.int matches 0 as @a[scores={jkpof.state=2}, gamemode=survival] at @s run playsound block.note_block.bit
+execute unless score #event_mode jkpof.int matches 0 run playsound block.note_block.bit block @a[scores={jkpof.state=2}, gamemode=survival] 0 1000000 0 10000000
 
 execute store result score #event_cur_count jkpof.int run data get storage jk:pof data.event.count
 execute if score #event_cur_count jkpof.int matches 0.. run function jkpof:state/1/progress/roll/start

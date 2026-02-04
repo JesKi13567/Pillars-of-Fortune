@@ -1,0 +1,20 @@
+{
+  "type": "smithing_transform",
+  "base": "netherite_chestplate",
+  "template": "elytra",
+  "result": {
+    "count": 1,
+    "id": "netherite_chestplate",
+    "components": {
+      "glider": {},
+      "max_damage": 1024,
+      "lore": [
+        {
+          "text": "✈",
+          "color": "gray",
+          "italic": false
+        }
+      ]
+    }
+  }
+}

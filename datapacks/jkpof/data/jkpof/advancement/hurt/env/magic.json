@@ -1,0 +1,1 @@
+{"criteria":{"jkpof":{"trigger":"entity_hurt_player","conditions":{"damage":{"type":{"tags":[{"expected":true,"id":"jkpof:env/magic"}]}}}}},"rewards":{"function":"jkpof:state/1/hurt/env/magic"}}

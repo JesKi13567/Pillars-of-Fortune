@@ -10,7 +10,9 @@
                         "blaze_rod",
                         "ender_eye",
                         "glass",
-                        "clock"
+                        "clock",
+                        "nether_star",
+                        "magenta_glazed_terracotta"
                     ]
                 }
             }

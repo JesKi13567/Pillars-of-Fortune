@@ -1,0 +1,10 @@
+{
+    "criteria": {
+        "jkpof": {
+            "trigger": "used_totem"
+            }
+    },
+    "rewards": {
+        "function": "jkpof:state/1/hurt/sub/death/live"
+    }
+}

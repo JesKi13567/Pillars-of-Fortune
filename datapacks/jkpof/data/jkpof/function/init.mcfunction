@@ -79,35 +79,110 @@ team modify jkpof.spec friendlyFire false
 scoreboard objectives add jkpof.state dummy "玩家状态"
 scoreboard objectives add jkpof.id dummy "玩家id"
 scoreboard objectives add jkpof.team dummy "玩家队伍"
-scoreboard objectives add jkpof.death deathCount "玩家死亡接口"
 scoreboard objectives add jkpof.vote trigger "旁观者投票事件"
-scoreboard objectives add jkpof.leavegame custom:leave_game "玩家离开游戏"
 
-scoreboard objectives add jkpof.spawn_egg.ender_dragon used:ender_dragon_spawn_egg "玩家生成-末影龙"
-scoreboard objectives add jkpof.spawn_egg.wither used:wither_spawn_egg "玩家生成-凋灵"
-scoreboard objectives add jkpof.spawn_egg.warden used:warden_spawn_egg "玩家生成-监守者"
-scoreboard objectives add jkpof.spawn_egg.elder_guardian used:elder_guardian_spawn_egg "玩家生成-远古守卫者"
-scoreboard objectives add jkpof.spawn_egg.ghast used:ghast_spawn_egg "玩家生成-恶魂"
-scoreboard objectives add jkpof.spawn_egg.blaze used:blaze_spawn_egg "玩家生成-烈焰人"
-scoreboard objectives add jkpof.spawn_egg.breeze used:breeze_spawn_egg "玩家生成-旋风人"
-scoreboard objectives add jkpof.spawn_egg.vex used:vex_spawn_egg "玩家生成-恼鬼"
-scoreboard objectives add jkpof.spawn_egg.wolf used:wolf_spawn_egg "玩家生成-狼"
-scoreboard objectives add jkpof.spawn_egg.cat used:cat_spawn_egg "玩家生成-猫"
-scoreboard objectives add jkpof.spawn_egg.parrot used:parrot_spawn_egg "玩家生成-鹦鹉"
+scoreboard objectives add jkpof.death deathCount "玩家死亡接口"
+scoreboard objectives add jkpof.leavegame custom:leave_game "玩家离开游戏"
+scoreboard objectives add jkpof.kills dummy "本局击杀数"
+scoreboard objectives add jkpof.lives dummy "本局存活次数"
+scoreboard objectives add jkpof.tp dummy "死亡传送标记"
 
 scoreboard objectives add jkpof.cd dummy "玩家冷却（刻）"
-scoreboard objectives add jkpof.void_charm dummy "虚空护符-持续"
+scoreboard objectives add jkpof.void_charm.last dummy "虚空护符-持续"
+scoreboard objectives add jkpof.void_charm.hold dummy "虚空护符-持有"
 scoreboard objectives add jkpof.use.apple used:apple "苹果-食用"
 scoreboard objectives add jkpof.use.golden_apple used:golden_apple "金苹果-食用"
 scoreboard objectives add jkpof.use.enchanted_golden_apple used:enchanted_golden_apple "附魔金苹果-食用"
 scoreboard objectives add jkpof.death_note.chance dummy "死亡笔记-概率"
 scoreboard objectives add jkpof.death_note.cd dummy "死亡笔记-死亡倒计时"
+scoreboard objectives add jkpof.death_note.source dummy "死亡笔记-来源"
+scoreboard objectives add jkpof.super_star dummy "超级星-持续"
+scoreboard objectives add jkpof.gravity dummy "重力方向"
 
 scoreboard objectives add jkpof.item.order dummy "物品标号"
 scoreboard objectives add jkpof.item.color dummy "物品颜色标号"
+
 scoreboard objectives add jkpof.X dummy "实体X坐标"
 scoreboard objectives add jkpof.Y dummy "实体Y坐标"
 scoreboard objectives add jkpof.Z dummy "实体Z坐标"
+
+scoreboard objectives add jkpof.damage.source.last dummy "玩家受伤-来源-最终"
+scoreboard objectives add jkpof.damage.source.now dummy "玩家受伤-来源-当前"
+scoreboard objectives add jkpof.damage.source.real dummy "玩家受伤-来源-追踪"
+scoreboard objectives add jkpof.damage.type.last dummy "玩家受伤-类型-最终"
+scoreboard objectives add jkpof.damage.type.now dummy "玩家受伤-类型-当前"
+scoreboard objectives add jkpof.damage.type.real dummy "玩家受伤-类型-追踪"
+scoreboard objectives add jkpof.damage.forgive dummy "玩家受伤-仇恨计时"
+scoreboard objectives add jkpof.damage.temp dummy "玩家受伤-暂时值"
+
+scoreboard objectives add jkpof.spawn_egg.ender_dragon used:ender_dragon_spawn_egg ""
+scoreboard objectives add jkpof.spawn_egg.wither used:wither_spawn_egg ""
+scoreboard objectives add jkpof.spawn_egg.warden used:warden_spawn_egg ""
+scoreboard objectives add jkpof.spawn_egg.elder_guardian used:elder_guardian_spawn_egg ""
+scoreboard objectives add jkpof.spawn_egg.ghast used:ghast_spawn_egg ""
+scoreboard objectives add jkpof.spawn_egg.blaze used:blaze_spawn_egg ""
+scoreboard objectives add jkpof.spawn_egg.breeze used:breeze_spawn_egg ""
+scoreboard objectives add jkpof.spawn_egg.vex used:vex_spawn_egg ""
+scoreboard objectives add jkpof.spawn_egg.evoker used:evoker_spawn_egg ""
+
+scoreboard objectives add jkpof.spawn_egg.wolf used:wolf_spawn_egg ""
+scoreboard objectives add jkpof.spawn_egg.cat used:cat_spawn_egg ""
+scoreboard objectives add jkpof.spawn_egg.parrot used:parrot_spawn_egg ""
+
+scoreboard objectives add jkpof.spawn_egg.villager used:villager_spawn_egg ""
+scoreboard objectives add jkpof.spawn_egg.rabbit used:rabbit_spawn_egg ""
+scoreboard objectives add jkpof.spawn_egg.vindicator used:vindicator_spawn_egg ""
+scoreboard objectives add jkpof.spawn_egg.pillager used:pillager_spawn_egg ""
+scoreboard objectives add jkpof.spawn_egg.sheep used:sheep_spawn_egg ""
+scoreboard objectives add jkpof.spawn_egg.fox used:fox_spawn_egg ""
+
+scoreboard objectives add jkpof.spawn_egg.chicken used:chicken_spawn_egg ""
+scoreboard objectives add jkpof.spawn_egg.cow used:cow_spawn_egg ""
+scoreboard objectives add jkpof.spawn_egg.pig used:pig_spawn_egg ""
+scoreboard objectives add jkpof.spawn_egg.frog used:frog_spawn_egg ""
+
+scoreboard objectives add jkpof.spawn_egg.bat used:bat_spawn_egg ""
+
+scoreboard objectives add jkpof.spawn_egg.bee used:bee_spawn_egg ""
+scoreboard objectives add jkpof.spawn_egg.bogged used:bogged_spawn_egg ""
+scoreboard objectives add jkpof.spawn_egg.cave_spider used:cave_spider_spawn_egg ""
+scoreboard objectives add jkpof.spawn_egg.creaking used:creaking_spawn_egg ""
+scoreboard objectives add jkpof.spawn_egg.creeper used:creeper_spawn_egg ""
+scoreboard objectives add jkpof.spawn_egg.dolphin used:dolphin_spawn_egg ""
+scoreboard objectives add jkpof.spawn_egg.drowned used:drowned_spawn_egg ""
+scoreboard objectives add jkpof.spawn_egg.enderman used:enderman_spawn_egg ""
+scoreboard objectives add jkpof.spawn_egg.endermite used:endermite_spawn_egg ""
+scoreboard objectives add jkpof.spawn_egg.goat used:goat_spawn_egg ""
+scoreboard objectives add jkpof.spawn_egg.guardian used:guardian_spawn_egg ""
+scoreboard objectives add jkpof.spawn_egg.hoglin used:hoglin_spawn_egg ""
+scoreboard objectives add jkpof.spawn_egg.husk used:husk_spawn_egg ""
+scoreboard objectives add jkpof.spawn_egg.iron_golem used:iron_golem_spawn_egg ""
+scoreboard objectives add jkpof.spawn_egg.llama used:llama_spawn_egg ""
+scoreboard objectives add jkpof.spawn_egg.magma_cube used:magma_cube_spawn_egg ""
+scoreboard objectives add jkpof.spawn_egg.nautilus used:nautilus_spawn_egg ""
+scoreboard objectives add jkpof.spawn_egg.panda used:panda_spawn_egg ""
+scoreboard objectives add jkpof.spawn_egg.parched used:parched_spawn_egg ""
+scoreboard objectives add jkpof.spawn_egg.phantom used:phantom_spawn_egg ""
+scoreboard objectives add jkpof.spawn_egg.piglin used:piglin_spawn_egg ""
+scoreboard objectives add jkpof.spawn_egg.piglin_brute used:piglin_brute_spawn_egg ""
+scoreboard objectives add jkpof.spawn_egg.polar_bear used:polar_bear_spawn_egg ""
+scoreboard objectives add jkpof.spawn_egg.pufferfish used:pufferfish_spawn_egg ""
+scoreboard objectives add jkpof.spawn_egg.ravager used:ravager_spawn_egg ""
+scoreboard objectives add jkpof.spawn_egg.shulker used:shulker_spawn_egg ""
+scoreboard objectives add jkpof.spawn_egg.silverfish used:silverfish_spawn_egg ""
+scoreboard objectives add jkpof.spawn_egg.skeleton used:skeleton_spawn_egg ""
+scoreboard objectives add jkpof.spawn_egg.slime used:slime_spawn_egg ""
+scoreboard objectives add jkpof.spawn_egg.spider used:spider_spawn_egg ""
+scoreboard objectives add jkpof.spawn_egg.stray used:stray_spawn_egg ""
+scoreboard objectives add jkpof.spawn_egg.trader_llama used:trader_llama_spawn_egg ""
+scoreboard objectives add jkpof.spawn_egg.witch used:witch_spawn_egg ""
+scoreboard objectives add jkpof.spawn_egg.wither_skeleton used:wither_skeleton_spawn_egg ""
+scoreboard objectives add jkpof.spawn_egg.zoglin used:zoglin_spawn_egg ""
+scoreboard objectives add jkpof.spawn_egg.zombie used:zombie_spawn_egg ""
+scoreboard objectives add jkpof.spawn_egg.zombie_nautilus used:zombie_nautilus_spawn_egg ""
+scoreboard objectives add jkpof.spawn_egg.zombie_villager used:zombie_villager_spawn_egg ""
+scoreboard objectives add jkpof.spawn_egg.zombified_piglin used:zombified_piglin_spawn_egg ""
+scoreboard objectives add jkpof.spawn_egg.pufferfish_bucket used:pufferfish_bucket ""
 
 scoreboard objectives add jkpof.hp health "♥"
 scoreboard objectives setdisplay list jkpof.hp
@@ -129,12 +204,13 @@ scoreboard players set #event_enable_3 jkpof.int 1
 scoreboard players set #event_enable_4 jkpof.int 1
 scoreboard players set #event_enable_5 jkpof.int 1
 scoreboard players set #event_enable_6 jkpof.int 1
+scoreboard players set #event_enable_7 jkpof.int 1
 
-# 其他游戏规则已在地图设定好了
 worldborder center 0 0
 worldborder warning distance 0
-worldborder damage amount 1
+worldborder damage amount 0.5
 worldborder damage buffer 1
+gamerule show_death_messages false
 
 kill @e[type=!player]
 
@@ -199,6 +275,12 @@ summon interaction -10 64.5 -99.0 {Tags: ["jkpof", "jkpof_display_lobby_item", "
 summon item_display -10 64.75 -99.0 {Tags: ["jkpof", "jkpof_display_lobby_item", "16"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.45f, .45f, .45f], translation: [0f, 0f, 0f]}, item: {id: "glass", components: {enchantment_glint_override: true}}, Rotation: [90f, 0f]}
 summon interaction -10 64.5 -99.5 {Tags: ["jkpof", "jkpof_display_lobby_item", "17"], response: true, width: .5, height: .5}
 summon item_display -10 64.75 -99.5 {Tags: ["jkpof", "jkpof_display_lobby_item", "17"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.45f, .45f, .45f], translation: [0f, 0f, 0f]}, item: {id: "clock", components: {enchantment_glint_override: true}}, Rotation: [90f, 0f]}
+summon interaction -10 64.5 -100.0 {Tags: ["jkpof", "jkpof_display_lobby_item", "18"], response: true, width: .5, height: .5}
+summon item_display -10 64.75 -100.0 {Tags: ["jkpof", "jkpof_display_lobby_item", "18"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.45f, .45f, .45f], translation: [0f, 0f, 0f]}, item: {id: "elytra"}, Rotation: [90f, 0f]}
+summon interaction -10 64.5 -100.5 {Tags: ["jkpof", "jkpof_display_lobby_item", "19"], response: true, width: .5, height: .5}
+summon item_display -10 64.75 -100.5 {Tags: ["jkpof", "jkpof_display_lobby_item", "19"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.45f, .45f, .45f], translation: [0f, 0f, 0f]}, item: {id: "nether_star"}, Rotation: [90f, 0f]}
+summon interaction -10 64.5 -101.0 {Tags: ["jkpof", "jkpof_display_lobby_item", "20"], response: true, width: .5, height: .5}
+summon item_display -10 64.75 -101.0 {Tags: ["jkpof", "jkpof_display_lobby_item", "20"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.45f, .45f, .45f], translation: [0f, 0f, 0f]}, item: {id: "magenta_glazed_terracotta", components: {enchantment_glint_override: true}}, Rotation: [90f, 0f]}
 
 #- 事件
 summon text_display 10 70 -100 {Tags: ["jkpof", "jkpof_lobby_const_top_events"], brightness: {block: 15, sky: 15}, billboard: "center", transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [6f, 6f, 6f], translation: [0f, 0f, 0f]}}
@@ -230,6 +312,8 @@ summon interaction 10 64.75 -99.5 {Tags: ["jkpof", "jkpof_display_event_order", 
 summon item_display 10 65.0 -99.5 {Tags: ["jkpof", "jkpof_display_event_order", "5"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.45f, .45f, .45f], translation: [0f, 0f, 0f]}, Rotation: [-90f, 0f]}
 summon interaction 10 64.75 -99.0 {Tags: ["jkpof", "jkpof_display_event_order", "6"], response: true, width: .5, height: .5}
 summon item_display 10 65.0 -99.0 {Tags: ["jkpof", "jkpof_display_event_order", "6"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.45f, .45f, .45f], translation: [0f, 0f, 0f]}, Rotation: [-90f, 0f]}
+summon interaction 10 64.75 -98.5 {Tags: ["jkpof", "jkpof_display_event_order", "7"], response: true, width: .5, height: .5}
+summon item_display 10 65.0 -98.5 {Tags: ["jkpof", "jkpof_display_event_order", "7"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.45f, .45f, .45f], translation: [0f, 0f, 0f]}, Rotation: [-90f, 0f]}
 
 #- 设置
 summon text_display 0 70 -110 {Tags: ["jkpof", "jkpof_lobby_const_top_settings"], brightness: {block: 15, sky: 15}, billboard: "center", transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [6f, 6f, 6f], translation: [0f, 0f, 0f]}}
@@ -305,7 +389,7 @@ summon item_display 0 64.5 -113 {Tags: ["jkpof", "jkpof_display_ctrl_map"], brig
 summon interaction 0 64.01 -101.5 {Tags: ["jkpof", "jkpof_ctrl_lang"], response: true, width: 1, height: .1}
 summon text_display 0 64.01 -101.7 {Tags: ["jkpof", "jkpof_display_ctrl_lang"], brightness: {block: 15, sky: 15}, text: {text: "Lang", color: "green"}, background: 0, Rotation: [0f, -90f]}
 summon text_display 0 64.01 -101.2 {Tags: ["jkpof", "jkpof_display_show_ctrl_lang"], brightness: {block: 15, sky: 15}, text: {text: "???", color: "yellow"}, background: 0, Rotation: [0f, -90f]}
-summon text_display 0 64.01 -102.4 {Tags: ["jkpof", "jkpof_lobby_const_short_text_explain"], brightness: {block: 15, sky: 15}, text: [{text: "POF = Pillars Of Fortune", color: "yellow"}, "\n", {text: "VOF = Votes Of Fortune", color: "aqua"}, "\n", {text: "BOF = Brooms Of Fortune", color: "green"}, "\n", {text: "EOF = Eggs Of Fortune", color: "gold"}], background: 0, Rotation: [0f, -90f], view_range: 0}
+summon text_display 0 64.01 -102.4 {Tags: ["jkpof", "jkpof_lobby_const_short_text_explain"], brightness: {block: 15, sky: 15}, text: [{text: "POF = Pillars Of Fortune", color: "yellow"}, "\n", {text: "VOF = Votes Of Fortune", color: "aqua"}, "\n", {text: "BOF = Brooms Of Fortune", color: "green"}, "\n", {text: "EOF = Eggs Of Fortune", color: "gold"}, "\n", {text: "DOF = Death Of Fortune", color: "red"}], background: 0, Rotation: [0f, -90f], view_range: 0}
 summon text_display 0 65.0 -101.5 {Tags: ["jkpof", "jkpof_lobby_const_set_lang_1st"], brightness: {block: 15, sky: 15}, text: [{text: "请先设置语言！\nSet your language first!", color: "green"}, {text: "\n↓↓↓", color: "yellow"}], billboard: "center", line_width: 1000}
 
 # 时间
@@ -332,6 +416,16 @@ summon item_display -2 65.5 -116 {Tags: ["jkpof", "jkpof_display_ctrl_advancemen
 summon interaction 2 65.25 -116 {Tags: ["jkpof", "jkpof_ctrl", "jkpof_ctrl_locator_bar"], response: true, width: .5, height: .5}
 summon text_display 2 66.05 -116 {Tags: ["jkpof", "jkpof_display_ctrl_locator_bar"], brightness: {block: 15, sky: 15}, billboard: "center"}
 summon item_display 2 65.5 -116 {Tags: ["jkpof", "jkpof_display_ctrl_locator_bar"], brightness: {block: 15, sky: 15}, CustomNameVisible: 1b, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.4f, .4f, .4f], translation: [0f, 0f, 0f]}, Rotation: [-180f, 0f]}
+
+# 颠倒模式
+summon interaction -2 66.25 -116 {Tags: ["jkpof", "jkpof_ctrl", "jkpof_ctrl_upside_down"], response: true, width: .5, height: .5}
+summon text_display -2 67.05 -116 {Tags: ["jkpof", "jkpof_display_ctrl_upside_down"], brightness: {block: 15, sky: 15}, billboard: "center"}
+summon item_display -2 66.5 -116 {Tags: ["jkpof", "jkpof_display_ctrl_upside_down"], brightness: {block: 15, sky: 15}, CustomNameVisible: 1b, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.4f, .4f, .4f], translation: [0f, 0f, 0f]}, Rotation: [-180f, 0f]}
+
+# 小孩模式
+summon interaction 2 66.25 -116 {Tags: ["jkpof", "jkpof_ctrl", "jkpof_ctrl_kid_mode"], response: true, width: .5, height: .5}
+summon text_display 2 67.05 -116 {Tags: ["jkpof", "jkpof_display_ctrl_kid_mode"], brightness: {block: 15, sky: 15}, billboard: "center"}
+summon item_display 2 66.5 -116 {Tags: ["jkpof", "jkpof_display_ctrl_kid_mode"], brightness: {block: 15, sky: 15}, CustomNameVisible: 1b, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.4f, .4f, .4f], translation: [0f, 0f, 0f]}, Rotation: [-180f, 0f]}
 
 # 预设
 summon interaction 0 65.25 -116 {Tags: ["jkpof", "jkpof_ctrl_preset"], response: true, width: .5, height: .5}

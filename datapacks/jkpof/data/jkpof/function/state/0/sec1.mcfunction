@@ -5,6 +5,9 @@ gamemode adventure @a[gamemode=!creative]
 # 清理
 kill @e[type=!#jkpof:safe]
 
+# 离开游戏
+execute as @a[scores={jkpof.leavegame=1..}] run function jkpof:state/0/player/leavegame
+
 # 检查人数，开始游戏
 execute unless score #start_flag jkpof.int matches 1 run scoreboard players set #countdown jkpof.int 10
 execute unless score #ctrl_team jkpof.int matches 1 run function jkpof:state/0/ready/check_players

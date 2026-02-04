@@ -1,6 +1,8 @@
 # 游戏结束
 execute if entity @p[scores={jkpof.state=2}, gamemode=survival] run function jkpof:state/1/end/win
 execute unless entity @p[scores={jkpof.state=2}, gamemode=survival] run tellraw @a [{storage: "jk:pof", nbt: "txt.POF", color: "yellow"}, {storage: "jk:pof", nbt: "txt.game.end.win.no", color: "green"}]
+execute if entity @p[scores={jkpof.kills=2..}] run function jkpof:state/1/end/king {type: kill, color: red}
+execute if entity @p[scores={jkpof.lives=2..}] run function jkpof:state/1/end/king {type: live, color: yellow}
 
 scoreboard players operation #time_last_m jkpof.int = #time_last jkpof.int
 scoreboard players operation #time_last_m jkpof.int /= #60 jkpof.int

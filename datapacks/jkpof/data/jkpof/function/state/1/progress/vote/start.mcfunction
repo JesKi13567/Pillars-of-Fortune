@@ -9,15 +9,17 @@ execute if score #event_enable_3 jkpof.int matches 1 run function jkpof:state/1/
 execute if score #event_enable_4 jkpof.int matches 1 run function jkpof:state/1/progress/vote/colored {id: '4', name: 'moon_walk'}
 execute if score #event_enable_5 jkpof.int matches 1 run function jkpof:state/1/progress/vote/colored {id: '5', name: 'bomb_chicken'}
 execute if score #event_enable_6 jkpof.int matches 1 run function jkpof:state/1/progress/vote/colored {id: '6', name: 'chain_swap'}
+execute if score #event_enable_7 jkpof.int matches 1 run function jkpof:state/1/progress/vote/colored {id: '7', name: 'prop_supply'}
 
 tellraw @a[gamemode=spectator] [\
-{selector: "@e[type=marker, tag=jkpof_vote_show, tag=-1]", hover_event: {action: "show_text", value: ["[", {storage: "jk:pof", nbt: "txt.event.border.name"}, "]"]}, click_event: {action: "run_command", command: "/trigger jkpof.vote set 7"}}, \
+{selector: "@e[type=marker, tag=jkpof_vote_show, tag=-1]", hover_event: {action: "show_text", value: ["[", {storage: "jk:pof", nbt: "txt.event.border.name"}, "]"]}, click_event: {action: "run_command", command: "/trigger jkpof.vote set 8"}}, \
 {selector: "@e[type=marker, tag=jkpof_vote_show, tag=1]", hover_event: {action: "show_text", value: ["[", {storage: "jk:pof", nbt: "txt.event.arrow.name"}, "]"]}, click_event: {action: "run_command", command: "/trigger jkpof.vote set 1"}}, \
 {selector: "@e[type=marker, tag=jkpof_vote_show, tag=2]", hover_event: {action: "show_text", value: ["[", {storage: "jk:pof", nbt: "txt.event.lava.name"}, "]"]}, click_event: {action: "run_command", command: "/trigger jkpof.vote set 2"}}, \
 {selector: "@e[type=marker, tag=jkpof_vote_show, tag=3]", hover_event: {action: "show_text", value: ["[", {storage: "jk:pof", nbt: "txt.event.lightning.name"}, "]"]}, click_event: {action: "run_command", command: "/trigger jkpof.vote set 3"}}, \
 {selector: "@e[type=marker, tag=jkpof_vote_show, tag=4]", hover_event: {action: "show_text", value: ["[", {storage: "jk:pof", nbt: "txt.event.moon_walk.name"}, "]"]}, click_event: {action: "run_command", command: "/trigger jkpof.vote set 4"}}, \
 {selector: "@e[type=marker, tag=jkpof_vote_show, tag=5]", hover_event: {action: "show_text", value: ["[", {storage: "jk:pof", nbt: "txt.event.bomb_chicken.name"}, "]"]}, click_event: {action: "run_command", command: "/trigger jkpof.vote set 5"}}, \
 {selector: "@e[type=marker, tag=jkpof_vote_show, tag=6]", hover_event: {action: "show_text", value: ["[", {storage: "jk:pof", nbt: "txt.event.chain_swap.name"}, "]"]}, click_event: {action: "run_command", command: "/trigger jkpof.vote set 6"}}, \
+{selector: "@e[type=marker, tag=jkpof_vote_show, tag=7]", hover_event: {action: "show_text", value: ["[", {storage: "jk:pof", nbt: "txt.event.prop_supply.name"}, "]"]}, click_event: {action: "run_command", command: "/trigger jkpof.vote set 7"}}, \
 ]
 
 kill @e[type=marker, tag=jkpof_vote_show]

@@ -1,0 +1,2 @@
+advancement revoke @s only jkpof:hurt/env/falling_stalactite
+scoreboard players set @s jkpof.damage.type.now 320

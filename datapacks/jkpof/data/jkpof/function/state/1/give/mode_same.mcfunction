@@ -1,4 +1,5 @@
-execute store result score #item_order jkpof.int run random value 1..1284
+execute if score #supply_real jkpof.int matches 0..3 store result score #item_order jkpof.int run random value 1..1284
+execute if score #supply_real jkpof.int matches 4..9 store result score #item_order jkpof.int run random value 1193..1206
 
 # 锻造模板19、箭48、旗帜图案10、珊瑚（非固体方块）20、附魔书43、马/鹦鹉螺铠11、山羊角8、唱片21、陶片23、药水系列46*3、色16*2、色17*1、铜制品（是否涂蜡）120
 execute if score #item_order jkpof.int matches 1210 store result score #item_color jkpof.int run random value 0..18

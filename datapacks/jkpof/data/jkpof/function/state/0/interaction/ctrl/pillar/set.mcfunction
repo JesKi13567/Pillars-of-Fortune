@@ -22,5 +22,9 @@ execute if score #ctrl_pillar_count_order_real jkpof.int matches 5 if score #ctr
 
 execute as @e[type=marker, tag=jkpof_player_spawn, tag=!C] at @s run rotate @s facing 0 ~ 0
 
-execute store result storage jk:pof data.pillar_height.h int 1 run scoreboard players get #ctrl_pillar_height jkpof.int
+execute if score #ctrl_upside_down jkpof.int matches 0 run scoreboard players operation #height_temp jkpof.int = #ctrl_pillar_height jkpof.int
+execute if score #ctrl_upside_down jkpof.int matches 1 run scoreboard players set #height_temp jkpof.int 50
+execute if score #ctrl_upside_down jkpof.int matches 1 run scoreboard players operation #height_temp jkpof.int -= #ctrl_pillar_height jkpof.int
+
+execute store result storage jk:pof data.pillar_height.h int 1 run scoreboard players get #height_temp jkpof.int
 function jkpof:state/0/interaction/ctrl/pillar/height/real with storage jk:pof data.pillar_height

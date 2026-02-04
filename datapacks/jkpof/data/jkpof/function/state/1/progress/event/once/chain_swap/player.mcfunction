@@ -27,6 +27,4 @@ tag @s remove jkpof_swap_player
 kill @e[type=marker, tag=jkpof_swap_marker_sel3]
 
 # 特效
-playsound block.beacon.power_select block @a
-playsound entity.enderman.teleport block @a
 particle reverse_portal ~ ~1.3 ~ 0.4 0.4 0.4 0.15 100

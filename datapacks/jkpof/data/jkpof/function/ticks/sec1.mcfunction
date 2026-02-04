@@ -1,6 +1,6 @@
 schedule function jkpof:ticks/sec1 1s replace
 execute if score #state jkpof.int matches 0 run function jkpof:state/0/sec1
-execute if score #state jkpof.int matches 1 run function jkpof:state/1/sec1
+execute if score #state jkpof.int matches 1 run function jkpof:state/1/ticks/sec1
 
 # bossbar
 bossbar set jkpof:progress players @a

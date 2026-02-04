@@ -1,0 +1,1 @@
+{"criteria":{"jkpof":{"trigger":"entity_hurt_player","conditions":{"damage":{"type":{"tags":[{"expected":true,"id":"jkpof:player/generic_kill"}]}}}}},"rewards":{"function":"jkpof:state/1/hurt/player/generic_kill"}}

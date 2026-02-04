@@ -18,6 +18,9 @@ execute as @s[tag=14] run scoreboard players set #lobby_item jkpof.int 14
 execute as @s[tag=15] run scoreboard players set #lobby_item jkpof.int 15
 execute as @s[tag=16] run scoreboard players set #lobby_item jkpof.int 16
 execute as @s[tag=17] run scoreboard players set #lobby_item jkpof.int 17
+execute as @s[tag=18] run scoreboard players set #lobby_item jkpof.int 18
+execute as @s[tag=19] run scoreboard players set #lobby_item jkpof.int 19
+execute as @s[tag=20] run scoreboard players set #lobby_item jkpof.int 20
 
 execute if score #lobby_item jkpof.int matches 0 run function jkpof:state/0/interaction/lobby/item/order {n: 0}
 execute if score #lobby_item jkpof.int matches 1 run function jkpof:state/0/interaction/lobby/item/order {n: 1}
@@ -37,6 +40,9 @@ execute if score #lobby_item jkpof.int matches 14 run function jkpof:state/0/int
 execute if score #lobby_item jkpof.int matches 15 run function jkpof:state/0/interaction/lobby/item/order {n: 15}
 execute if score #lobby_item jkpof.int matches 16 run function jkpof:state/0/interaction/lobby/item/order {n: 16}
 execute if score #lobby_item jkpof.int matches 17 run function jkpof:state/0/interaction/lobby/item/order {n: 17}
+execute if score #lobby_item jkpof.int matches 18 run function jkpof:state/0/interaction/lobby/item/order {n: 18}
+execute if score #lobby_item jkpof.int matches 19 run function jkpof:state/0/interaction/lobby/item/order {n: 19}
+execute if score #lobby_item jkpof.int matches 20 run function jkpof:state/0/interaction/lobby/item/order {n: 20}
 
 execute if score #lobby_item jkpof.int matches 0 run data modify entity @e[type=text_display, tag=jkpof_display_lobby_item, tag=-1, limit=1] text set value [{storage: "jk:pof", nbt: "txt.lobby.item.stack.name"}, "\n", {storage: "jk:pof", nbt: "txt.lobby.item.stack.lore", color: "aqua"}]
 execute if score #lobby_item jkpof.int matches 1 run data modify entity @e[type=text_display, tag=jkpof_display_lobby_item, tag=-1, limit=1] text set value ["", {storage: "jk:pof", nbt: "txt.lobby.item.global.shootable", color: "gold"}, {translate: "entity.minecraft.fireball"}, "\n", {storage: "jk:pof", nbt: "txt.lobby.item.global.press"}, {text: " [", color: "aqua"}, {keybind: "key.use", color: "aqua"}, {text: "] ", color: "aqua"}, {storage: "jk:pof", nbt: "txt.lobby.item.global.to_shoot"}]
@@ -56,3 +62,6 @@ execute if score #lobby_item jkpof.int matches 14 run data modify entity @e[type
 execute if score #lobby_item jkpof.int matches 15 run data modify entity @e[type=text_display, tag=jkpof_display_lobby_item, tag=-1, limit=1] text set value [{translate: "block.minecraft.beacon"}, "\n", {storage: "jk:pof", nbt: "txt.lobby.item.respawn_device.lore.p1", color: "aqua"}, {translate: "block.minecraft.beacon"}, {storage: "jk:pof", nbt: "txt.lobby.item.respawn_device.lore.p2", color: "aqua"}, {translate: "block.minecraft.player_head"}, {storage: "jk:pof", nbt: "txt.lobby.item.respawn_device.lore.p3", color: "aqua"}, {translate: "block.minecraft.copper_block"}, {storage: "jk:pof", nbt: "txt.lobby.item.respawn_device.lore.p4", color: "aqua"}]
 execute if score #lobby_item jkpof.int matches 16 run data modify entity @e[type=text_display, tag=jkpof_display_lobby_item, tag=-1, limit=1] text set value ["", {storage: "jk:pof", nbt: "txt.lobby.item.cage.name", color: "yellow"}, "\n", {storage: "jk:pof", nbt: "txt.lobby.item.cage.lore.p1", color: "aqua"}, {translate: "block.minecraft.glass"}, {storage: "jk:pof", nbt: "txt.lobby.item.cage.lore.p2", color: "aqua"}]
 execute if score #lobby_item jkpof.int matches 17 run data modify entity @e[type=text_display, tag=jkpof_display_lobby_item, tag=-1, limit=1] text set value ["", {storage: "jk:pof", nbt: "txt.lobby.item.clock.name", color: "gold"}, "\n", {storage: "jk:pof", nbt: "txt.lobby.item.clock.lore", color: "yellow"}]
+execute if score #lobby_item jkpof.int matches 18 run data modify entity @e[type=text_display, tag=jkpof_display_lobby_item, tag=-1, limit=1] text set value ["", {translate: "item.minecraft.elytra", color: "light_purple"}, "\n", {storage: "jk:pof", nbt: "txt.lobby.item.elytra"}]
+execute if score #lobby_item jkpof.int matches 19 run data modify entity @e[type=text_display, tag=jkpof_display_lobby_item, tag=-1, limit=1] text set value ["", {storage: "jk:pof", nbt: "txt.lobby.item.super_star.name", color: "aqua"}, "\n", {storage: "jk:pof", nbt: "txt.lobby.item.super_star.lore"}]
+execute if score #lobby_item jkpof.int matches 20 run data modify entity @e[type=text_display, tag=jkpof_display_lobby_item, tag=-1, limit=1] text set value ["", {storage: "jk:pof", nbt: "txt.lobby.item.gravity_device.name", color: "light_purple"}, "\n", {storage: "jk:pof", nbt: "txt.lobby.item.gravity_device.lore"}]

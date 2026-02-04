@@ -1,35 +1,44 @@
-clear @a
-effect clear @a
-effect give @a saturation 1 9 true
-effect give @a instant_health 1 9 true
-effect give @a resistance 1 9 true
-xp set @a 0 levels
-xp set @a 0 points
-advancement revoke @a everything
-item replace entity @a enderchest.0 with air
-item replace entity @a enderchest.1 with air
-item replace entity @a enderchest.2 with air
-item replace entity @a enderchest.3 with air
-item replace entity @a enderchest.4 with air
-item replace entity @a enderchest.5 with air
-item replace entity @a enderchest.6 with air
-item replace entity @a enderchest.7 with air
-item replace entity @a enderchest.8 with air
-item replace entity @a enderchest.9 with air
-item replace entity @a enderchest.10 with air
-item replace entity @a enderchest.11 with air
-item replace entity @a enderchest.12 with air
-item replace entity @a enderchest.13 with air
-item replace entity @a enderchest.14 with air
-item replace entity @a enderchest.15 with air
-item replace entity @a enderchest.16 with air
-item replace entity @a enderchest.17 with air
-item replace entity @a enderchest.18 with air
-item replace entity @a enderchest.19 with air
-item replace entity @a enderchest.20 with air
-item replace entity @a enderchest.21 with air
-item replace entity @a enderchest.22 with air
-item replace entity @a enderchest.23 with air
-item replace entity @a enderchest.24 with air
-item replace entity @a enderchest.25 with air
-item replace entity @a enderchest.26 with air
+clear @s
+advancement revoke @s everything
+
+effect clear @s
+effect give @s saturation 1 9 true
+effect give @s instant_health 1 9 true
+effect give @s resistance 1 9 true
+
+xp set @s 0 levels
+xp set @s 0 points
+
+attribute @s scale base reset
+attribute @s knockback_resistance base reset
+attribute @s gravity base reset
+
+function jkpof:state/1/hurt/sub/forgive
+
+item replace entity @s enderchest.0 with air
+item replace entity @s enderchest.1 with air
+item replace entity @s enderchest.2 with air
+item replace entity @s enderchest.3 with air
+item replace entity @s enderchest.4 with air
+item replace entity @s enderchest.5 with air
+item replace entity @s enderchest.6 with air
+item replace entity @s enderchest.7 with air
+item replace entity @s enderchest.8 with air
+item replace entity @s enderchest.9 with air
+item replace entity @s enderchest.10 with air
+item replace entity @s enderchest.11 with air
+item replace entity @s enderchest.12 with air
+item replace entity @s enderchest.13 with air
+item replace entity @s enderchest.14 with air
+item replace entity @s enderchest.15 with air
+item replace entity @s enderchest.16 with air
+item replace entity @s enderchest.17 with air
+item replace entity @s enderchest.18 with air
+item replace entity @s enderchest.19 with air
+item replace entity @s enderchest.20 with air
+item replace entity @s enderchest.21 with air
+item replace entity @s enderchest.22 with air
+item replace entity @s enderchest.23 with air
+item replace entity @s enderchest.24 with air
+item replace entity @s enderchest.25 with air
+item replace entity @s enderchest.26 with air

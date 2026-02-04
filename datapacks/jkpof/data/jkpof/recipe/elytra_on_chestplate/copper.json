@@ -1,0 +1,20 @@
+{
+  "type": "smithing_transform",
+  "base": "copper_chestplate",
+  "template": "elytra",
+  "result": {
+    "count": 1,
+    "id": "copper_chestplate",
+    "components": {
+      "glider": {},
+      "max_damage": 608,
+      "lore": [
+        {
+          "text": "✈",
+          "color": "gray",
+          "italic": false
+        }
+      ]
+    }
+  }
+}

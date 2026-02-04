@@ -1,4 +1,4 @@
-execute as @a at @s run playsound ui.toast.challenge_complete
+playsound ui.toast.challenge_complete block @a 0 1000000 0 10000000
 
 tag @p[scores={jkpof.state=2}, gamemode=survival] add jkpof_winner
 

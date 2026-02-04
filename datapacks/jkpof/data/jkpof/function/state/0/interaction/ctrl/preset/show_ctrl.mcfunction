@@ -19,3 +19,7 @@ scoreboard players remove #ctrl_advancement jkpof.int 1
 function jkpof:state/0/interaction/ctrl/advancement
 scoreboard players remove #ctrl_locator_bar jkpof.int 1
 function jkpof:state/0/interaction/ctrl/locator_bar
+scoreboard players remove #ctrl_upside_down jkpof.int 1
+function jkpof:state/0/interaction/ctrl/upside_down
+scoreboard players remove #ctrl_kid_mode jkpof.int 1
+function jkpof:state/0/interaction/ctrl/kid_mode

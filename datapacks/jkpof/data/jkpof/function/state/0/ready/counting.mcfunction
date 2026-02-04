@@ -1,5 +1,5 @@
 # 音效
-execute as @a at @s run playsound block.note_block.xylophone
+playsound block.note_block.xylophone block @a 0 1000000 0 10000000
 
 # 人数不够
 execute unless score #ctrl_team jkpof.int matches 1 if score #players jkpof.int matches ..1 run function jkpof:state/0/ready/cancel

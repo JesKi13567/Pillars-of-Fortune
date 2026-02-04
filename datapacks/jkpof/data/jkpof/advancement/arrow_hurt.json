@@ -14,6 +14,6 @@
         }
     },
     "rewards": {
-        "function": "jkpof:state/1/special_item/arrow/hurt"
+        "function": "jkpof:state/1/special_item/spawn_egg/arrow/hurt"
     }
 }
