@@ -1,10 +1,12 @@
 # 幸运之柱 JK's Pillars of Fortune
-## v1.2.1 for MC 1.21.11
+## v1.2.2 for MC 1.21.11
 - [简体中文](#zh_cn)
 - [English](#en_us)
 
 ## Lang
 语言可以在大厅出生点附近切换（初始有提示），同时设定好客户端语言效果更佳。
+
+- 现在还支持繁体中文，感谢[@AlexCai2019](https://github.com/AlexCai2019)。
 
 The language can be switched near the lobby spawn point \(has hint in initial\), and setting the client language in advance will be better.
 
