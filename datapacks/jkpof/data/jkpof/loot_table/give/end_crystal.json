@@ -1,0 +1,42 @@
+{
+	"type": "advancement_reward",
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "bat_spawn_egg",
+					"functions": [
+						{
+							"function": "set_name",
+							"entity": "this",
+							"name": [
+								{"nbt": "txt.lobby.item.global.place_anywhere", "storage": "jk:pof", "color": "light_purple", "italic": false},
+								{"translate": "item.minecraft.end_crystal", "color": "white"}
+							]
+						},
+						{
+							"function": "set_components",
+							"components": {
+								"item_model": "end_crystal",
+								"entity_data": {
+									"id": "end_crystal",
+									"ShowBottom": false
+								}
+							}
+						},
+						{
+							"function": "set_count",
+							"count": {
+								"type": "storage",
+								"storage": "jk:pof",
+								"path": "data.item_count.n"
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

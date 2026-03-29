@@ -1,0 +1,5 @@
+{
+	"parent": "jkpof:give/root",
+	"criteria": {"clock": {"trigger": "impossible"}},
+	"rewards": {"loot": ["jkpof:give/clock"]}
+}

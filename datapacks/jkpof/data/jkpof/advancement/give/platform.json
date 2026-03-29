@@ -1,0 +1,5 @@
+{
+	"parent": "jkpof:give/root",
+	"criteria": {"platform": {"trigger": "impossible"}},
+	"rewards": {"loot": ["jkpof:give/platform"]}
+}
