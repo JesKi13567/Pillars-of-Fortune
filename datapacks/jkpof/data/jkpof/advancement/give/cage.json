@@ -1,0 +1,5 @@
+{
+	"parent": "jkpof:give/root",
+	"criteria": {"cage": {"trigger": "impossible"}},
+	"rewards": {"loot": ["jkpof:give/cage"]}
+}

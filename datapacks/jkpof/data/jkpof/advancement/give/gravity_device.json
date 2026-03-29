@@ -1,0 +1,5 @@
+{
+	"parent": "jkpof:give/root",
+	"criteria": {"gravity_device": {"trigger": "impossible"}},
+	"rewards": {"loot": ["jkpof:give/gravity_device"]}
+}

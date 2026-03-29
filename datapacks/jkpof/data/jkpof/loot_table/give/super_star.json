@@ -1,0 +1,50 @@
+{
+	"type": "advancement_reward",
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "nether_star",
+					"functions": [
+						{
+							"function": "set_name",
+							"entity": "this",
+							"name": {"nbt": "txt.lobby.item.super_star.name", "storage": "jk:pof", "color": "aqua", "italic": false}
+						},
+						{
+							"function": "set_lore",
+							"mode": "append",
+							"entity": "this",
+							"lore": [
+								{"nbt": "txt.lobby.item.super_star.lore", "storage": "jk:pof", "color": "gray", "italic": false}
+							]
+						},
+						{
+							"function": "set_custom_data",
+							"tag": {"jkpof": ["super_star"]}
+						},
+						{
+							"function": "set_components",
+							"components": {
+								"consumable": {
+									"consume_seconds": 1000000,
+									"animation": "none"
+								}
+							}
+						},
+						{
+							"function": "set_count",
+							"count": {
+								"type": "storage",
+								"storage": "jk:pof",
+								"path": "data.item_count.n"
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

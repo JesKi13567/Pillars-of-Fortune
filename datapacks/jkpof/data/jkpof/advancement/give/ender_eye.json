@@ -1,0 +1,5 @@
+{
+	"parent": "jkpof:give/root",
+	"criteria": {"ender_eye": {"trigger": "impossible"}},
+	"rewards": {"loot": ["jkpof:give/ender_eye"]}
+}

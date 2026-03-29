@@ -1,0 +1,41 @@
+{
+	"type": "advancement_reward",
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "creeper_spawn_egg",
+					"functions": [
+						{
+							"function": "set_name",
+							"entity": "this",
+							"name": [
+								{"nbt": "txt.lobby.item.global.self_igniting", "storage": "jk:pof", "color": "red", "italic": false},
+								{"translate": "entity.minecraft.creeper", "color": "white"}
+							]
+						},
+						{
+							"function": "set_components",
+							"components": {
+								"entity_data": {
+									"id": "creeper",
+									"ignited": true
+								}
+							}
+						},
+						{
+							"function": "set_count",
+							"count": {
+								"type": "storage",
+								"storage": "jk:pof",
+								"path": "data.item_count.n"
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

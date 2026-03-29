@@ -1,0 +1,57 @@
+{
+	"type": "advancement_reward",
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "fire_charge",
+					"functions": [
+						{
+							"function": "set_name",
+							"entity": "this",
+							"name": [
+								{"nbt": "txt.lobby.item.global.shootable", "storage": "jk:pof", "color": "gold", "italic": false},
+								{"translate": "entity.minecraft.fireball", "color": "white"}
+							]
+						},
+						{
+							"function": "set_lore",
+							"mode": "append",
+							"entity": "this",
+							"lore": [
+								[
+									{"nbt": "txt.lobby.item.global.press", "storage": "jk:pof", "color": "gray", "italic": false},
+									{"text": " [", "color": "white", "extra": [{"keybind": "key.use"}, "] "]},
+									{"nbt": "txt.lobby.item.global.to_shoot", "storage": "jk:pof"}
+								]
+							]
+						},
+						{
+							"function": "set_custom_data",
+							"tag": {"jkpof": ["fireball"]}
+						},
+						{
+							"function": "set_components",
+							"components": {
+								"consumable": {
+									"consume_seconds": 1000000,
+									"animation": "none"
+								}
+							}
+						},
+						{
+							"function": "set_count",
+							"count": {
+								"type": "storage",
+								"storage": "jk:pof",
+								"path": "data.item_count.n"
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}
