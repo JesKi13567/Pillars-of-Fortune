@@ -1161,3 +1161,4 @@ $execute if score $(tar) jkpof.int matches 1160 run fill $(x1) $(y1) $(z1) $(x2)
 $execute if score $(tar) jkpof.int matches 1161 run fill $(x1) $(y1) $(z1) $(x2) $(y2) $(z2) yellow_wool replace bedrock strict
 $execute if score $(tar) jkpof.int matches 1162 run fill $(x1) $(y1) $(z1) $(x2) $(y2) $(z2) zombie_head replace bedrock strict
 $execute if score $(tar) jkpof.int matches 1163 run fill $(x1) $(y1) $(z1) $(x2) $(y2) $(z2) zombie_wall_head replace bedrock strict
+$execute if score $(tar) jkpof.int matches 1164 run fill $(x1) $(y1) $(z1) $(x2) $(y2) $(z2) golden_dandelion replace bedrock strict

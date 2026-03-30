@@ -18,7 +18,7 @@ scoreboard players reset * jkpof.super_star
 scoreboard players reset * jkpof.gravity
 
 scoreboard players reset * jkpof.item.order
-scoreboard players reset * jkpof.item.color
+scoreboard players reset * jkpof.item.count
 
 scoreboard players reset * jkpof.X
 scoreboard players reset * jkpof.Y
@@ -133,7 +133,7 @@ kill @e[type=marker, tag=!jkpof_player_spawn]
 scoreboard players operation #event_ctrl_real jkpof.int = #event_ctrl jkpof.int
 execute if score #event_ctrl_real jkpof.int matches 1 run bossbar set jkpof:progress visible true
 bossbar set jkpof:progress max 60
-tellraw @a [{storage: "jk:pof", nbt: "txt.POF", color: "yellow"}, {storage: "jk:pof", nbt: "txt.game.start.ed", color: "green"}]
+tellraw @a [{storage: "jk:pof", interpret: true, nbt: "txt.POF", color: "yellow"}, {storage: "jk:pof", interpret: true, nbt: "txt.game.start.ed", color: "green"}]
 execute as @a run function jkpof:state/0/player/clear
 
 # 事件池
@@ -180,6 +180,6 @@ execute if score #ctrl_map_real jkpof.int matches 0 run function jkpof:state/1/f
 execute if score #ctrl_map_real jkpof.int matches 1.. run function jkpof:state/1/fill/map/by with storage jk:pof data.map
 
 # 特殊模式
-execute if score #ctrl_kid_mode jkpof.int matches 1 run tellraw @a [{storage: "jk:pof", nbt: "txt.lobby.const.settings.kid_mode", color: "green"}, {storage: "jk:pof", nbt: "txt.char.colon"}, {storage: "jk:pof", nbt: "txt.lobby.bool.enabled.common", color: "yellow"}]
-execute if score #ctrl_upside_down jkpof.int matches 1 run tellraw @a [{storage: "jk:pof", nbt: "txt.lobby.const.settings.upside_down", color: "green"}, {storage: "jk:pof", nbt: "txt.char.colon"}, {storage: "jk:pof", nbt: "txt.lobby.bool.enabled.common", color: "yellow"}]
-execute if score #ctrl_upside_down jkpof.int matches 1 run give @a[scores={jkpof.state=2}, gamemode=survival] magenta_glazed_terracotta[custom_data={jkpof: ["gravity_device"]}, consumable={consume_seconds: 1000000, animation: "none"}, custom_name={text: "重力装置", color: "light_purple", italic: false}, lore=[{text: "永久地颠倒自己的重力方向。", color: "gray", italic: false}, "", {text: "Gravity Device", color: "light_purple", italic: false}, {text: "Permanently reverse your gravity.", color: "gray", italic: false}], enchantment_glint_override=true] 2
+execute if score #ctrl_kid_mode jkpof.int matches 1 run tellraw @a [{storage: "jk:pof", interpret: true, nbt: "txt.lobby.const.settings.kid_mode", color: "green"}, {storage: "jk:pof", interpret: true, nbt: "txt.char.colon"}, {storage: "jk:pof", interpret: true, nbt: "txt.lobby.bool.enabled.common", color: "yellow"}]
+execute if score #ctrl_upside_down jkpof.int matches 1 run tellraw @a [{storage: "jk:pof", interpret: true, nbt: "txt.lobby.const.settings.upside_down", color: "green"}, {storage: "jk:pof", interpret: true, nbt: "txt.char.colon"}, {storage: "jk:pof", interpret: true, nbt: "txt.lobby.bool.enabled.common", color: "yellow"}]
+execute if score #ctrl_upside_down jkpof.int matches 1 as @a[scores={jkpof.state=2}, gamemode=survival] run loot give @s loot jkpof:item/prop/gravity_device

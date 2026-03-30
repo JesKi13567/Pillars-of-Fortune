@@ -1,0 +1,641 @@
+{
+    "functions": [
+        {
+            "function": "set_count",
+            "count": {
+                "type": "score",
+                "target": "this",
+                "score": "jkpof.item.count"
+            }
+        }
+    ],
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "fire_charge",
+                    "functions": [
+                        {
+                            "function": "set_components",
+                            "components": {
+                                "custom_data": {
+                                    "jkpof": [
+                                        "fireball"
+                                    ]
+                                },
+                                "consumable": {
+                                    "consume_seconds": 1000000,
+                                    "animation": "none"
+                                }
+                            }
+                        },
+                        {
+                            "function": "set_name",
+                            "entity": "this",
+                            "name": [
+                                {
+                                    "storage": "jk:pof",
+                                    "interpret": true,
+                                    "nbt": "txt.lobby.item.global.shootable",
+                                    "color": "gold",
+                                    "italic": false
+                                },
+                                {
+                                    "translate": "entity.minecraft.fireball",
+                                    "color": "white"
+                                }
+                            ]
+                        },
+                        {
+                            "function": "set_lore",
+                            "entity": "this",
+                            "mode": "replace_all",
+                            "lore": [
+                                [
+                                    {
+                                        "storage": "jk:pof",
+                                        "interpret": true,
+                                        "nbt": "txt.lobby.item.global.press",
+                                        "color": "gray",
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": " [",
+                                        "color": "white"
+                                    },
+                                    {
+                                        "keybind": "key.use",
+                                        "color": "white"
+                                    },
+                                    {
+                                        "text": "] ",
+                                        "color": "white"
+                                    },
+                                    {
+                                        "storage": "jk:pof",
+                                        "interpret": true,
+                                        "nbt": "txt.lobby.item.global.to_shoot"
+                                    }
+                                ]
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "dragon_breath",
+                    "functions": [
+                        {
+                            "function": "set_components",
+                            "components": {
+                                "custom_data": {
+                                    "jkpof": [
+                                        "fireball_dragon"
+                                    ]
+                                },
+                                "consumable": {
+                                    "consume_seconds": 1000000,
+                                    "animation": "none"
+                                }
+                            }
+                        },
+                        {
+                            "function": "set_name",
+                            "entity": "this",
+                            "name": [
+                                {
+                                    "storage": "jk:pof",
+                                    "interpret": true,
+                                    "nbt": "txt.lobby.item.global.shootable",
+                                    "color": "gold",
+                                    "italic": false
+                                },
+                                {
+                                    "translate": "entity.minecraft.dragon_fireball",
+                                    "color": "white"
+                                }
+                            ]
+                        },
+                        {
+                            "function": "set_lore",
+                            "entity": "this",
+                            "mode": "replace_all",
+                            "lore": [
+                                [
+                                    {
+                                        "storage": "jk:pof",
+                                        "interpret": true,
+                                        "nbt": "txt.lobby.item.global.press",
+                                        "color": "gray",
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": " [",
+                                        "color": "white"
+                                    },
+                                    {
+                                        "keybind": "key.use",
+                                        "color": "white"
+                                    },
+                                    {
+                                        "text": "] ",
+                                        "color": "white"
+                                    },
+                                    {
+                                        "storage": "jk:pof",
+                                        "interpret": true,
+                                        "nbt": "txt.lobby.item.global.to_shoot"
+                                    }
+                                ]
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "blaze_rod",
+                    "functions": [
+                        {
+                            "function": "set_components",
+                            "components": {
+                                "custom_data": {
+                                    "jkpof": [
+                                        "platform"
+                                    ]
+                                },
+                                "consumable": {
+                                    "consume_seconds": 1000000,
+                                    "animation": "none"
+                                }
+                            }
+                        },
+                        {
+                            "function": "set_name",
+                            "entity": "this",
+                            "name": [
+                                {
+                                    "storage": "jk:pof",
+                                    "interpret": true,
+                                    "nbt": "txt.lobby.item.platform.name",
+                                    "color": "gold",
+                                    "italic": false
+                                }
+                            ]
+                        },
+                        {
+                            "function": "set_lore",
+                            "entity": "this",
+                            "mode": "replace_all",
+                            "lore": [
+                                [
+                                    {
+                                        "storage": "jk:pof",
+                                        "interpret": true,
+                                        "nbt": "txt.lobby.item.global.press",
+                                        "color": "gray",
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": " [",
+                                        "color": "white"
+                                    },
+                                    {
+                                        "keybind": "key.use",
+                                        "color": "white"
+                                    },
+                                    {
+                                        "text": "] ",
+                                        "color": "white"
+                                    },
+                                    {
+                                        "storage": "jk:pof",
+                                        "interpret": true,
+                                        "nbt": "txt.lobby.item.platform.p1"
+                                    },
+                                    {
+                                        "translate": "block.minecraft.slime_block",
+                                        "color": "white"
+                                    },
+                                    {
+                                        "storage": "jk:pof",
+                                        "interpret": true,
+                                        "nbt": "txt.lobby.item.platform.p2"
+                                    }
+                                ]
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "bat_spawn_egg",
+                    "functions": [
+                        {
+                            "function": "set_components",
+                            "components": {
+                                "entity_data": {
+                                    "id": "tnt",
+                                    "fuse": 60
+                                },
+                                "item_model": "tnt"
+                            }
+                        },
+                        {
+                            "function": "set_name",
+                            "entity": "this",
+                            "name": [
+                                {
+                                    "storage": "jk:pof",
+                                    "interpret": true,
+                                    "nbt": "txt.lobby.item.global.self_igniting",
+                                    "color": "red",
+                                    "italic": false
+                                },
+                                {
+                                    "translate": "block.minecraft.tnt",
+                                    "color": "white"
+                                }
+                            ]
+                        },
+                        {
+                            "function": "set_lore",
+                            "entity": "this",
+                            "mode": "replace_all",
+                            "lore": [
+                                {
+                                    "storage": "jk:pof",
+                                    "interpret": true,
+                                    "nbt": "txt.lobby.item.tnt.lore",
+                                    "color": "gray",
+                                    "italic": false
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "bat_spawn_egg",
+                    "functions": [
+                        {
+                            "function": "set_components",
+                            "components": {
+                                "entity_data": {
+                                    "id": "end_crystal",
+                                    "ShowBottom": false
+                                },
+                                "item_model": "end_crystal"
+                            }
+                        },
+                        {
+                            "function": "set_name",
+                            "entity": "this",
+                            "name": [
+                                {
+                                    "storage": "jk:pof",
+                                    "interpret": true,
+                                    "nbt": "txt.lobby.item.global.place_anywhere",
+                                    "color": "light_purple",
+                                    "italic": false
+                                },
+                                {
+                                    "translate": "item.minecraft.end_crystal",
+                                    "color": "white"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "stick",
+                    "functions": [
+                        {
+                            "function": "set_components",
+                            "components": {
+                                "enchantments": {
+                                    "knockback": 5
+                                }
+                            }
+                        },
+                        {
+                            "function": "set_name",
+                            "entity": "this",
+                            "name": [
+                                {
+                                    "storage": "jk:pof",
+                                    "interpret": true,
+                                    "nbt": "txt.lobby.item.knockback_stick",
+                                    "color": "gold",
+                                    "italic": false
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "ender_eye",
+                    "functions": [
+                        {
+                            "function": "set_components",
+                            "components": {
+                                "custom_data": {
+                                    "jkpof": [
+                                        "ender_eye"
+                                    ]
+                                },
+                                "consumable": {
+                                    "consume_seconds": 1000000,
+                                    "animation": "none"
+                                }
+                            }
+                        },
+                        {
+                            "function": "set_name",
+                            "entity": "this",
+                            "name": [
+                                {
+                                    "storage": "jk:pof",
+                                    "interpret": true,
+                                    "nbt": "txt.lobby.item.ender_eye.name",
+                                    "color": "light_purple",
+                                    "italic": false
+                                }
+                            ]
+                        },
+                        {
+                            "function": "set_lore",
+                            "entity": "this",
+                            "mode": "replace_all",
+                            "lore": [
+                                [
+                                    {
+                                        "storage": "jk:pof",
+                                        "interpret": true,
+                                        "nbt": "txt.lobby.item.ender_eye.lore",
+                                        "color": "gray",
+                                        "italic": false
+                                    }
+                                ]
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "chest",
+                    "functions": [
+                        {
+                            "function": "set_components",
+                            "components": {
+                                "container_loot": {
+                                    "loot_table": "jkpof:loot/chest"
+                                }
+                            }
+                        },
+                        {
+                            "function": "set_name",
+                            "entity": "this",
+                            "name": [
+                                {
+                                    "storage": "jk:pof",
+                                    "interpret": true,
+                                    "nbt": "txt.lobby.item.loot_chest.name",
+                                    "color": "yellow",
+                                    "italic": false
+                                }
+                            ]
+                        },
+                        {
+                            "function": "set_lore",
+                            "entity": "this",
+                            "mode": "replace_all",
+                            "lore": [
+                                [
+                                    {
+                                        "storage": "jk:pof",
+                                        "interpret": true,
+                                        "nbt": "txt.lobby.item.loot_chest.lore",
+                                        "color": "gray",
+                                        "italic": false
+                                    }
+                                ]
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "bedrock",
+                    "functions": [
+                        {
+                            "function": "set_components",
+                            "components": {
+                                "custom_data": {
+                                    "jkpof": [
+                                        "void_charm"
+                                    ]
+                                },
+                                "enchantment_glint_override": true
+                            }
+                        },
+                        {
+                            "function": "set_name",
+                            "entity": "this",
+                            "name": [
+                                {
+                                    "storage": "jk:pof",
+                                    "interpret": true,
+                                    "nbt": "txt.lobby.item.void_charm.name",
+                                    "color": "light_purple",
+                                    "italic": false
+                                }
+                            ]
+                        },
+                        {
+                            "function": "set_lore",
+                            "entity": "this",
+                            "mode": "replace_all",
+                            "lore": [
+                                [
+                                    {
+                                        "storage": "jk:pof",
+                                        "interpret": true,
+                                        "nbt": "txt.lobby.item.void_charm.lore",
+                                        "color": "gray",
+                                        "italic": false
+                                    }
+                                ]
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "glass",
+                    "functions": [
+                        {
+                            "function": "set_components",
+                            "components": {
+                                "custom_data": {
+                                    "jkpof": [
+                                        "cage"
+                                    ]
+                                },
+                                "consumable": {
+                                    "consume_seconds": 1000000,
+                                    "animation": "none"
+                                },
+                                "enchantment_glint_override": true
+                            }
+                        },
+                        {
+                            "function": "set_name",
+                            "entity": "this",
+                            "name": [
+                                {
+                                    "storage": "jk:pof",
+                                    "interpret": true,
+                                    "nbt": "txt.lobby.item.cage.name",
+                                    "color": "yellow",
+                                    "italic": false
+                                }
+                            ]
+                        },
+                        {
+                            "function": "set_lore",
+                            "entity": "this",
+                            "mode": "replace_all",
+                            "lore": [
+                                [
+                                    {
+                                        "storage": "jk:pof",
+                                        "interpret": true,
+                                        "nbt": "txt.lobby.item.cage.lore.p1",
+                                        "color": "gray",
+                                        "italic": false
+                                    },
+                                    {
+                                        "translate": "block.minecraft.glass",
+                                        "color": "white"
+                                    },
+                                    {
+                                        "storage": "jk:pof",
+                                        "interpret": true,
+                                        "nbt": "txt.lobby.item.cage.lore.p2"
+                                    }
+                                ]
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "clock",
+                    "functions": [
+                        {
+                            "function": "set_components",
+                            "components": {
+                                "custom_data": {
+                                    "jkpof": [
+                                        "clock"
+                                    ]
+                                },
+                                "consumable": {
+                                    "consume_seconds": 1000000,
+                                    "animation": "none"
+                                },
+                                "enchantment_glint_override": true
+                            }
+                        },
+                        {
+                            "function": "set_name",
+                            "entity": "this",
+                            "name": [
+                                {
+                                    "storage": "jk:pof",
+                                    "interpret": true,
+                                    "nbt": "txt.lobby.item.clock.name",
+                                    "color": "gold",
+                                    "italic": false
+                                }
+                            ]
+                        },
+                        {
+                            "function": "set_lore",
+                            "entity": "this",
+                            "mode": "replace_all",
+                            "lore": [
+                                [
+                                    {
+                                        "storage": "jk:pof",
+                                        "interpret": true,
+                                        "nbt": "txt.lobby.item.clock.lore",
+                                        "color": "yellow",
+                                        "italic": false
+                                    }
+                                ]
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "nether_star",
+                    "functions": [
+                        {
+                            "function": "set_components",
+                            "components": {
+                                "custom_data": {
+                                    "jkpof": [
+                                        "super_star"
+                                    ]
+                                },
+                                "consumable": {
+                                    "consume_seconds": 1000000,
+                                    "animation": "none"
+                                }
+                            }
+                        },
+                        {
+                            "function": "set_name",
+                            "entity": "this",
+                            "name": [
+                                {
+                                    "storage": "jk:pof",
+                                    "interpret": true,
+                                    "nbt": "txt.lobby.item.super_star.name",
+                                    "color": "aqua",
+                                    "italic": false
+                                }
+                            ]
+                        },
+                        {
+                            "function": "set_lore",
+                            "entity": "this",
+                            "mode": "replace_all",
+                            "lore": [
+                                [
+                                    {
+                                        "storage": "jk:pof",
+                                        "interpret": true,
+                                        "nbt": "txt.lobby.item.super_star.lore",
+                                        "color": "gray",
+                                        "italic": false
+                                    }
+                                ]
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "loot_table",
+                    "value": "jkpof:item/prop/gravity_device"
+                }
+            ]
+        }
+    ]
+}

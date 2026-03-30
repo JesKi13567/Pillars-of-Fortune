@@ -1,0 +1,59 @@
+{
+    "pools": [
+        {
+            "rolls": 2,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "magenta_glazed_terracotta",
+                    "functions": [
+                        {
+                            "function": "set_components",
+                            "components": {
+                                "custom_data": {
+                                    "jkpof": [
+                                        "gravity_device"
+                                    ]
+                                },
+                                "consumable": {
+                                    "consume_seconds": 1000000,
+                                    "animation": "none"
+                                },
+                                "enchantment_glint_override": true
+                            }
+                        },
+                        {
+                            "function": "set_name",
+                            "entity": "this",
+                            "name": [
+                                {
+                                    "storage": "jk:pof",
+                                    "interpret": true,
+                                    "nbt": "txt.lobby.item.gravity_device.name",
+                                    "color": "light_purple",
+                                    "italic": false
+                                }
+                            ]
+                        },
+                        {
+                            "function": "set_lore",
+                            "entity": "this",
+                            "mode": "replace_all",
+                            "lore": [
+                                [
+                                    {
+                                        "storage": "jk:pof",
+                                        "interpret": true,
+                                        "nbt": "txt.lobby.item.gravity_device.lore",
+                                        "color": "gray",
+                                        "italic": false
+                                    }
+                                ]
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

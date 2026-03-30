@@ -1,7 +1,7 @@
 execute if score #ctrl_upside_down jkpof.int matches 0 run summon marker 0 0 0 {Tags: ["jkpof", "jkpof_height_symbol"], CustomName: "↓"}
 execute if score #ctrl_upside_down jkpof.int matches 1 run summon marker 0 0 0 {Tags: ["jkpof", "jkpof_height_symbol"], CustomName: "↑"}
 
-tellraw @a [{storage: "jk:pof", nbt: "txt.POF", color: "yellow"}, {storage: "jk:pof", nbt: "txt.event.border.tellraw", color: "aqua"}, {text: " →8←", color: "green"}, " 5", {storage: "jk:pof", nbt: "txt.event.global.seconds"}, {text: ", ", color: "aqua"}, {selector: "@e[type=marker, tag=jkpof_height_symbol, limit=1]", color: "green"}, {text: "30", color: "green"}, {selector: "@e[type=marker, tag=jkpof_height_symbol, limit=1]", color: "green"}, " 15", {storage: "jk:pof", nbt: "txt.event.global.seconds"}, {storage: "jk:pof", nbt: "txt.char.exclamation", color: "aqua"}]
+tellraw @a [{storage: "jk:pof", interpret: true, nbt: "txt.POF", color: "yellow"}, {storage: "jk:pof", interpret: true, nbt: "txt.event.border.tellraw", color: "aqua"}, {text: " →8←", color: "green"}, " 5", {storage: "jk:pof", interpret: true, nbt: "txt.event.global.seconds"}, {text: ", ", color: "aqua"}, {selector: "@e[type=marker, tag=jkpof_height_symbol, limit=1]", color: "green"}, {text: "30", color: "green"}, {selector: "@e[type=marker, tag=jkpof_height_symbol, limit=1]", color: "green"}, " 15", {storage: "jk:pof", interpret: true, nbt: "txt.event.global.seconds"}, {storage: "jk:pof", interpret: true, nbt: "txt.char.exclamation", color: "aqua"}]
 title @a subtitle [{text: "→8← ", color: "green"}, {selector: "@e[type=marker, tag=jkpof_height_symbol, limit=1]"}, "30", {selector: "@e[type=marker, tag=jkpof_height_symbol, limit=1]"}]
 
 kill @e[type=marker, tag=jkpof_height_symbol]

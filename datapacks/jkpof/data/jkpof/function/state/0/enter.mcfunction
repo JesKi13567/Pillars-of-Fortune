@@ -16,7 +16,7 @@ kill @e[type=item_display, tag=jkpof_height_barrier]
 spawnpoint @a 0 64 -100
 tp @a 0 64 -100 0 0
 gamemode adventure @a
-tellraw @a [{storage: "jk:pof", nbt: "txt.POF", color: "yellow"}, {storage: "jk:pof", nbt: "txt.game.reset", color: "green"}]
+execute if score #ctrl_lang jkpof.int matches 0.. run tellraw @a [{storage: "jk:pof", interpret: true, nbt: "txt.POF", color: "yellow"}, {storage: "jk:pof", interpret: true, nbt: "txt.game.reset", color: "green"}]
 function jkpof:state/0/interaction/ctrl/time/set
 
 # 清理地图

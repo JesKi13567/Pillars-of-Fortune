@@ -19,7 +19,7 @@ tag @s remove jkpof_self
 tp @s @e[type=marker, tag=jkpof_swap_marker_sel3, limit=1]
 # 显示提示
 execute as @a if score @s jkpof.id = @e[type=marker, tag=jkpof_swap_marker_sel3, limit=1] jkpof.id run tag @s add jkpof_swap_target
-tellraw @s ["", {storage: "jk:pof", nbt: "txt.POF", color: "yellow"}, {storage: "jk:pof", nbt: "txt.event.chain_swap.tellraw.p2", color: "aqua"}, " ", {selector: "@a[tag=jkpof_swap_target]"}, " ", {storage: "jk:pof", nbt: "txt.event.chain_swap.tellraw.p3", color: "aqua"}]
+tellraw @s ["", {storage: "jk:pof", interpret: true, nbt: "txt.POF", color: "yellow"}, {storage: "jk:pof", interpret: true, nbt: "txt.event.chain_swap.tellraw.p2", color: "aqua"}, " ", {selector: "@a[tag=jkpof_swap_target]"}, " ", {storage: "jk:pof", interpret: true, nbt: "txt.event.chain_swap.tellraw.p3", color: "aqua"}]
 tag @a[tag=jkpof_swap_target] remove jkpof_swap_target
 
 # 清理

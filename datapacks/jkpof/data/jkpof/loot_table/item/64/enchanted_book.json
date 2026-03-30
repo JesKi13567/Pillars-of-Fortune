@@ -1,0 +1,525 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "enchanted_book",
+                    "functions": [
+                        {
+                            "function": "set_enchantments",
+                            "enchantments": {
+                                "aqua_affinity": 5
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "enchanted_book",
+                    "functions": [
+                        {
+                            "function": "set_enchantments",
+                            "enchantments": {
+                                "bane_of_arthropods": 5
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "enchanted_book",
+                    "functions": [
+                        {
+                            "function": "set_enchantments",
+                            "enchantments": {
+                                "binding_curse": 5
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "enchanted_book",
+                    "functions": [
+                        {
+                            "function": "set_enchantments",
+                            "enchantments": {
+                                "blast_protection": 5
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "enchanted_book",
+                    "functions": [
+                        {
+                            "function": "set_enchantments",
+                            "enchantments": {
+                                "breach": 5
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "enchanted_book",
+                    "functions": [
+                        {
+                            "function": "set_enchantments",
+                            "enchantments": {
+                                "channeling": 5
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "enchanted_book",
+                    "functions": [
+                        {
+                            "function": "set_enchantments",
+                            "enchantments": {
+                                "density": 5
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "enchanted_book",
+                    "functions": [
+                        {
+                            "function": "set_enchantments",
+                            "enchantments": {
+                                "depth_strider": 5
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "enchanted_book",
+                    "functions": [
+                        {
+                            "function": "set_enchantments",
+                            "enchantments": {
+                                "efficiency": 5
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "enchanted_book",
+                    "functions": [
+                        {
+                            "function": "set_enchantments",
+                            "enchantments": {
+                                "feather_falling": 5
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "enchanted_book",
+                    "functions": [
+                        {
+                            "function": "set_enchantments",
+                            "enchantments": {
+                                "fire_aspect": 5
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "enchanted_book",
+                    "functions": [
+                        {
+                            "function": "set_enchantments",
+                            "enchantments": {
+                                "fire_protection": 5
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "enchanted_book",
+                    "functions": [
+                        {
+                            "function": "set_enchantments",
+                            "enchantments": {
+                                "flame": 5
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "enchanted_book",
+                    "functions": [
+                        {
+                            "function": "set_enchantments",
+                            "enchantments": {
+                                "fortune": 5
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "enchanted_book",
+                    "functions": [
+                        {
+                            "function": "set_enchantments",
+                            "enchantments": {
+                                "frost_walker": 5
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "enchanted_book",
+                    "functions": [
+                        {
+                            "function": "set_enchantments",
+                            "enchantments": {
+                                "impaling": 5
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "enchanted_book",
+                    "functions": [
+                        {
+                            "function": "set_enchantments",
+                            "enchantments": {
+                                "infinity": 5
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "enchanted_book",
+                    "functions": [
+                        {
+                            "function": "set_enchantments",
+                            "enchantments": {
+                                "knockback": 5
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "enchanted_book",
+                    "functions": [
+                        {
+                            "function": "set_enchantments",
+                            "enchantments": {
+                                "looting": 5
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "enchanted_book",
+                    "functions": [
+                        {
+                            "function": "set_enchantments",
+                            "enchantments": {
+                                "loyalty": 5
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "enchanted_book",
+                    "functions": [
+                        {
+                            "function": "set_enchantments",
+                            "enchantments": {
+                                "luck_of_the_sea": 5
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "enchanted_book",
+                    "functions": [
+                        {
+                            "function": "set_enchantments",
+                            "enchantments": {
+                                "lunge": 5
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "enchanted_book",
+                    "functions": [
+                        {
+                            "function": "set_enchantments",
+                            "enchantments": {
+                                "lure": 5
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "enchanted_book",
+                    "functions": [
+                        {
+                            "function": "set_enchantments",
+                            "enchantments": {
+                                "mending": 5
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "enchanted_book",
+                    "functions": [
+                        {
+                            "function": "set_enchantments",
+                            "enchantments": {
+                                "multishot": 5
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "enchanted_book",
+                    "functions": [
+                        {
+                            "function": "set_enchantments",
+                            "enchantments": {
+                                "piercing": 5
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "enchanted_book",
+                    "functions": [
+                        {
+                            "function": "set_enchantments",
+                            "enchantments": {
+                                "power": 5
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "enchanted_book",
+                    "functions": [
+                        {
+                            "function": "set_enchantments",
+                            "enchantments": {
+                                "projectile_protection": 5
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "enchanted_book",
+                    "functions": [
+                        {
+                            "function": "set_enchantments",
+                            "enchantments": {
+                                "protection": 5
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "enchanted_book",
+                    "functions": [
+                        {
+                            "function": "set_enchantments",
+                            "enchantments": {
+                                "punch": 5
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "enchanted_book",
+                    "functions": [
+                        {
+                            "function": "set_enchantments",
+                            "enchantments": {
+                                "quick_charge": 5
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "enchanted_book",
+                    "functions": [
+                        {
+                            "function": "set_enchantments",
+                            "enchantments": {
+                                "respiration": 5
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "enchanted_book",
+                    "functions": [
+                        {
+                            "function": "set_enchantments",
+                            "enchantments": {
+                                "riptide": 5
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "enchanted_book",
+                    "functions": [
+                        {
+                            "function": "set_enchantments",
+                            "enchantments": {
+                                "sharpness": 5
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "enchanted_book",
+                    "functions": [
+                        {
+                            "function": "set_enchantments",
+                            "enchantments": {
+                                "silk_touch": 5
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "enchanted_book",
+                    "functions": [
+                        {
+                            "function": "set_enchantments",
+                            "enchantments": {
+                                "smite": 5
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "enchanted_book",
+                    "functions": [
+                        {
+                            "function": "set_enchantments",
+                            "enchantments": {
+                                "soul_speed": 5
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "enchanted_book",
+                    "functions": [
+                        {
+                            "function": "set_enchantments",
+                            "enchantments": {
+                                "sweeping_edge": 5
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "enchanted_book",
+                    "functions": [
+                        {
+                            "function": "set_enchantments",
+                            "enchantments": {
+                                "swift_sneak": 5
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "enchanted_book",
+                    "functions": [
+                        {
+                            "function": "set_enchantments",
+                            "enchantments": {
+                                "thorns": 5
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "enchanted_book",
+                    "functions": [
+                        {
+                            "function": "set_enchantments",
+                            "enchantments": {
+                                "unbreaking": 5
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "enchanted_book",
+                    "functions": [
+                        {
+                            "function": "set_enchantments",
+                            "enchantments": {
+                                "vanishing_curse": 5
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "enchanted_book",
+                    "functions": [
+                        {
+                            "function": "set_enchantments",
+                            "enchantments": {
+                                "wind_burst": 5
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

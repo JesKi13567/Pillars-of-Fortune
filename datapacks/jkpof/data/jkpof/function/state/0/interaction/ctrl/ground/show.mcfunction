@@ -2,7 +2,7 @@
 function jkpof:state/0/interaction/ctrl/ground/map/set
 
 execute if score #ctrl_map_real jkpof.int matches 0 run data modify entity @e[type=item_display, tag=jkpof_display_ctrl_map, limit=1] item.id set value "barrier"
-execute if score #ctrl_map_real jkpof.int matches 0 run data modify entity @e[type=text_display, tag=jkpof_display_text, limit=1] text set value [{storage: "jk:pof", nbt: "txt.lobby.bool.disabled.common", color: "yellow"}]
+execute if score #ctrl_map_real jkpof.int matches 0 run data modify entity @e[type=text_display, tag=jkpof_display_text, limit=1] text set value [{storage: "jk:pof", interpret: true, nbt: "txt.lobby.bool.disabled.common", color: "yellow"}]
 execute if score #ctrl_map_real jkpof.int matches 1 run data modify entity @e[type=item_display, tag=jkpof_display_ctrl_map, limit=1] item.id set value "cobweb"
 execute if score #ctrl_map_real jkpof.int matches 2 run data modify entity @e[type=item_display, tag=jkpof_display_ctrl_map, limit=1] item.id set value "honey_block"
 execute if score #ctrl_map_real jkpof.int matches 3 run data modify entity @e[type=item_display, tag=jkpof_display_ctrl_map, limit=1] item.id set value "snow_block"
@@ -15,13 +15,13 @@ execute if score #ctrl_map_real jkpof.int matches 9 run data modify entity @e[ty
 execute if score #ctrl_map_real jkpof.int matches 10 run data modify entity @e[type=item_display, tag=jkpof_display_ctrl_map, limit=1] item.id set value "oak_log"
 execute if score #ctrl_map_real jkpof.int matches 1.. run function jkpof:state/0/interaction/ctrl/ground/map/name with storage jk:pof data.map
 execute if score #ctrl_map jkpof.int matches -1 run data modify entity @e[type=item_display, tag=jkpof_display_ctrl_map, limit=1] item.id set value "map"
-execute if score #ctrl_map jkpof.int matches -1 run data modify entity @e[type=text_display, tag=jkpof_display_text, limit=1] text set value [{storage: "jk:pof", nbt: "txt.lobby.global.random", color: "yellow"}]
+execute if score #ctrl_map jkpof.int matches -1 run data modify entity @e[type=text_display, tag=jkpof_display_text, limit=1] text set value [{storage: "jk:pof", interpret: true, nbt: "txt.lobby.global.random", color: "yellow"}]
 
 data modify entity @e[type=item_display, tag=jkpof_display_ctrl_map, limit=1] CustomName set from entity @e[type=text_display, tag=jkpof_display_text, limit=1] text
 
 # 是否各层随机
-execute if score #ctrl_ground_floor_random jkpof.int matches 0 run data modify entity @e[type=text_display, tag=jkpof_display_show_ctrl_ground_floor_random, limit=1] text set value {storage: "jk:pof", nbt: "txt.lobby.bool.disabled.common", color: "yellow"}
-execute if score #ctrl_ground_floor_random jkpof.int matches 1 run data modify entity @e[type=text_display, tag=jkpof_display_show_ctrl_ground_floor_random, limit=1] text set value {storage: "jk:pof", nbt: "txt.lobby.bool.enabled.common", color: "yellow"}
+execute if score #ctrl_ground_floor_random jkpof.int matches 0 run data modify entity @e[type=text_display, tag=jkpof_display_show_ctrl_ground_floor_random, limit=1] text set value {storage: "jk:pof", interpret: true, nbt: "txt.lobby.bool.disabled.common", color: "yellow"}
+execute if score #ctrl_ground_floor_random jkpof.int matches 1 run data modify entity @e[type=text_display, tag=jkpof_display_show_ctrl_ground_floor_random, limit=1] text set value {storage: "jk:pof", interpret: true, nbt: "txt.lobby.bool.enabled.common", color: "yellow"}
 
 # 层数
 data modify entity @e[type=text_display, tag=jkpof_display_show_ctrl_ground_floor, limit=1] text set value {score: {name: "#ctrl_ground_floor", objective: "jkpof.int"}, color: "yellow"}
@@ -33,37 +33,37 @@ data modify storage jk:pof data.map.r set from storage jk:pof data.ground_radius
 
 # 地面种类
 execute if score #ctrl_ground_type jkpof.int matches 0 run data modify entity @e[type=item_display, tag=jkpof_display_ctrl_ground_type, limit=1] item.id set value "chiseled_stone_bricks"
-execute if score #ctrl_ground_type jkpof.int matches 0 run data modify entity @e[type=text_display, tag=jkpof_display_text, limit=1] text set value [{storage: "jk:pof", nbt: "txt.lobby.global.random", color: "yellow"}]
+execute if score #ctrl_ground_type jkpof.int matches 0 run data modify entity @e[type=text_display, tag=jkpof_display_text, limit=1] text set value [{storage: "jk:pof", interpret: true, nbt: "txt.lobby.global.random", color: "yellow"}]
 execute if score #ctrl_ground_type jkpof.int matches 1 run data modify entity @e[type=item_display, tag=jkpof_display_ctrl_ground_type, limit=1] item.id set value "bedrock"
 execute if score #ctrl_ground_type jkpof.int matches 1 run data modify entity @e[type=text_display, tag=jkpof_display_text, limit=1] text set value [{translate: "block.minecraft.bedrock", color: "white"}]
 execute if score #ctrl_ground_type jkpof.int matches 2 run data modify entity @e[type=item_display, tag=jkpof_display_ctrl_ground_type, limit=1] item.id set value "bucket"
 execute if score #ctrl_ground_type jkpof.int matches 2 run data modify entity @e[type=text_display, tag=jkpof_display_text, limit=1] text set value [{translate: "block.minecraft.air", color: "white"}]
 execute if score #ctrl_map_real jkpof.int matches 1.. run data modify entity @e[type=item_display, tag=jkpof_display_ctrl_ground_type, limit=1] item.id set value "barrier"
-execute if score #ctrl_map_real jkpof.int matches 1.. run data modify entity @e[type=text_display, tag=jkpof_display_text, limit=1] text set value [{storage: "jk:pof", nbt: "txt.lobby.global.invalid", color: "yellow"}]
+execute if score #ctrl_map_real jkpof.int matches 1.. run data modify entity @e[type=text_display, tag=jkpof_display_text, limit=1] text set value [{storage: "jk:pof", interpret: true, nbt: "txt.lobby.global.invalid", color: "yellow"}]
 
 data modify entity @e[type=item_display, tag=jkpof_display_ctrl_ground_type, limit=1] CustomName set from entity @e[type=text_display, tag=jkpof_display_text, limit=1] text
 
 # 柱子种类
 execute if score #ctrl_pillar_type jkpof.int matches 0 run data modify entity @e[type=item_display, tag=jkpof_display_ctrl_pillar_type, limit=1] item.id set value "purpur_pillar"
-execute if score #ctrl_pillar_type jkpof.int matches 0 run data modify entity @e[type=text_display, tag=jkpof_display_text, limit=1] text set value [{storage: "jk:pof", nbt: "txt.lobby.bool.diff", color: "aqua"}, " ", {storage: "jk:pof", nbt: "txt.lobby.global.random", color: "yellow"}]
+execute if score #ctrl_pillar_type jkpof.int matches 0 run data modify entity @e[type=text_display, tag=jkpof_display_text, limit=1] text set value [{storage: "jk:pof", interpret: true, nbt: "txt.lobby.bool.diff", color: "aqua"}, " ", {storage: "jk:pof", interpret: true, nbt: "txt.lobby.global.random", color: "yellow"}]
 execute if score #ctrl_pillar_type jkpof.int matches 1 run data modify entity @e[type=item_display, tag=jkpof_display_ctrl_pillar_type, limit=1] item.id set value "quartz_pillar"
-execute if score #ctrl_pillar_type jkpof.int matches 1 run data modify entity @e[type=text_display, tag=jkpof_display_text, limit=1] text set value [{storage: "jk:pof", nbt: "txt.lobby.bool.same", color: "white"}, " ", {storage: "jk:pof", nbt: "txt.lobby.global.random", color: "yellow"}]
+execute if score #ctrl_pillar_type jkpof.int matches 1 run data modify entity @e[type=text_display, tag=jkpof_display_text, limit=1] text set value [{storage: "jk:pof", interpret: true, nbt: "txt.lobby.bool.same", color: "white"}, " ", {storage: "jk:pof", interpret: true, nbt: "txt.lobby.global.random", color: "yellow"}]
 execute if score #ctrl_pillar_type jkpof.int matches 2 run data modify entity @e[type=item_display, tag=jkpof_display_ctrl_pillar_type, limit=1] item.id set value "bedrock"
 execute if score #ctrl_pillar_type jkpof.int matches 2 run data modify entity @e[type=text_display, tag=jkpof_display_text, limit=1] text set value [{translate: "block.minecraft.bedrock", color: "white"}]
 execute if score #ctrl_pillar_type jkpof.int matches 3 run data modify entity @e[type=item_display, tag=jkpof_display_ctrl_pillar_type, limit=1] item.id set value "bucket"
 execute if score #ctrl_pillar_type jkpof.int matches 3 run data modify entity @e[type=text_display, tag=jkpof_display_text, limit=1] text set value [{translate: "block.minecraft.air", color: "white"}]
 execute if score #ctrl_map_real jkpof.int matches 1.. run data modify entity @e[type=item_display, tag=jkpof_display_ctrl_pillar_type, limit=1] item.id set value "barrier"
-execute if score #ctrl_map_real jkpof.int matches 1.. run data modify entity @e[type=text_display, tag=jkpof_display_text, limit=1] text set value [{storage: "jk:pof", nbt: "txt.lobby.global.invalid", color: "yellow"}]
+execute if score #ctrl_map_real jkpof.int matches 1.. run data modify entity @e[type=text_display, tag=jkpof_display_text, limit=1] text set value [{storage: "jk:pof", interpret: true, nbt: "txt.lobby.global.invalid", color: "yellow"}]
 
 data modify entity @e[type=item_display, tag=jkpof_display_ctrl_pillar_type, limit=1] CustomName set from entity @e[type=text_display, tag=jkpof_display_text, limit=1] text
 
 # 无效
-execute if score #ctrl_ground_floor jkpof.int matches 1 run data modify entity @e[type=text_display, tag=jkpof_display_show_ctrl_ground_floor_random, limit=1] text set value {storage: "jk:pof", nbt: "txt.lobby.global.invalid", color: "yellow"}
-execute unless score #ctrl_ground_type jkpof.int matches 0 run data modify entity @e[type=text_display, tag=jkpof_display_show_ctrl_ground_floor_random, limit=1] text set value {storage: "jk:pof", nbt: "txt.lobby.global.invalid", color: "yellow"}
+execute if score #ctrl_ground_floor jkpof.int matches 1 run data modify entity @e[type=text_display, tag=jkpof_display_show_ctrl_ground_floor_random, limit=1] text set value {storage: "jk:pof", interpret: true, nbt: "txt.lobby.global.invalid", color: "yellow"}
+execute unless score #ctrl_ground_type jkpof.int matches 0 run data modify entity @e[type=text_display, tag=jkpof_display_show_ctrl_ground_floor_random, limit=1] text set value {storage: "jk:pof", interpret: true, nbt: "txt.lobby.global.invalid", color: "yellow"}
 
-execute if score #ctrl_ground_type jkpof.int matches 2 run data modify entity @e[type=text_display, tag=jkpof_display_show_ctrl_ground_floor_random, limit=1] text set value {storage: "jk:pof", nbt: "txt.lobby.global.invalid", color: "yellow"}
-execute if score #ctrl_ground_type jkpof.int matches 2 if score #ctrl_map_real jkpof.int matches 0 run data modify entity @e[type=text_display, tag=jkpof_display_show_ctrl_ground_floor, limit=1] text set value {storage: "jk:pof", nbt: "txt.lobby.global.invalid", color: "yellow"}
-execute if score #ctrl_ground_type jkpof.int matches 2 if score #ctrl_map_real jkpof.int matches 0 run data modify entity @e[type=text_display, tag=jkpof_display_show_ctrl_ground_radius, limit=1] text set value {storage: "jk:pof", nbt: "txt.lobby.global.invalid", color: "yellow"}
+execute if score #ctrl_ground_type jkpof.int matches 2 run data modify entity @e[type=text_display, tag=jkpof_display_show_ctrl_ground_floor_random, limit=1] text set value {storage: "jk:pof", interpret: true, nbt: "txt.lobby.global.invalid", color: "yellow"}
+execute if score #ctrl_ground_type jkpof.int matches 2 if score #ctrl_map_real jkpof.int matches 0 run data modify entity @e[type=text_display, tag=jkpof_display_show_ctrl_ground_floor, limit=1] text set value {storage: "jk:pof", interpret: true, nbt: "txt.lobby.global.invalid", color: "yellow"}
+execute if score #ctrl_ground_type jkpof.int matches 2 if score #ctrl_map_real jkpof.int matches 0 run data modify entity @e[type=text_display, tag=jkpof_display_show_ctrl_ground_radius, limit=1] text set value {storage: "jk:pof", interpret: true, nbt: "txt.lobby.global.invalid", color: "yellow"}
 
-execute if score #ctrl_map_real jkpof.int matches 1.. run data modify entity @e[type=text_display, tag=jkpof_display_show_ctrl_ground_floor_random, limit=1] text set value {storage: "jk:pof", nbt: "txt.lobby.global.invalid", color: "yellow"}
-execute unless score #ctrl_map jkpof.int matches -1 unless score #ctrl_map_real jkpof.int matches ..5 unless score #ctrl_map_real jkpof.int matches 7 unless score #ctrl_map_real jkpof.int matches 9.. run data modify entity @e[type=text_display, tag=jkpof_display_show_ctrl_ground_floor, limit=1] text set value {storage: "jk:pof", nbt: "txt.lobby.global.invalid", color: "yellow"}
+execute if score #ctrl_map_real jkpof.int matches 1.. run data modify entity @e[type=text_display, tag=jkpof_display_show_ctrl_ground_floor_random, limit=1] text set value {storage: "jk:pof", interpret: true, nbt: "txt.lobby.global.invalid", color: "yellow"}
+execute unless score #ctrl_map jkpof.int matches -1 unless score #ctrl_map_real jkpof.int matches ..5 unless score #ctrl_map_real jkpof.int matches 7 unless score #ctrl_map_real jkpof.int matches 9.. run data modify entity @e[type=text_display, tag=jkpof_display_show_ctrl_ground_floor, limit=1] text set value {storage: "jk:pof", interpret: true, nbt: "txt.lobby.global.invalid", color: "yellow"}

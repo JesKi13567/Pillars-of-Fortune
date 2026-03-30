@@ -7,4 +7,4 @@ scoreboard players remove @s[scores={jkpof.use.apple=1..}] jkpof.use.apple 1
 scoreboard players remove @s[scores={jkpof.use.golden_apple=1..}] jkpof.use.golden_apple 1
 scoreboard players remove @s[scores={jkpof.use.enchanted_golden_apple=1..}] jkpof.use.enchanted_golden_apple 1
 
-title @s actionbar [{text: "", color: "gold"}, {storage: "jk:pof", nbt: "txt.lobby.item.death_note.chance_show", color: "dark_red"}, {score: {name: "@s", objective: "jkpof.death_note.chance"}}, "%"]
+title @s actionbar [{text: "", color: "gold"}, {storage: "jk:pof", interpret: true, nbt: "txt.lobby.item.death_note.chance_show", color: "dark_red"}, {score: {name: "@s", objective: "jkpof.death_note.chance"}}, "%"]

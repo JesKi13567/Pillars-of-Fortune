@@ -1,0 +1,104 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "writable_book",
+                    "functions": [
+                        {
+                            "function": "set_components",
+                            "components": {
+                                "custom_data": {
+                                    "jkpof": [
+                                        "death_note"
+                                    ]
+                                },
+                                "enchantment_glint_override": true
+                            }
+                        },
+                        {
+                            "function": "set_name",
+                            "entity": "this",
+                            "name": [
+                                {
+                                    "storage": "jk:pof",
+                                    "interpret": true,
+                                    "nbt": "txt.lobby.item.death_note.name",
+                                    "color": "dark_red",
+                                    "italic": false
+                                }
+                            ]
+                        },
+                        {
+                            "function": "set_lore",
+                            "entity": "this",
+                            "mode": "replace_all",
+                            "lore": [
+                                {
+                                    "storage": "jk:pof",
+                                    "interpret": true,
+                                    "nbt": "txt.lobby.item.death_note.lore.p1",
+                                    "color": "gray",
+                                    "italic": false
+                                },
+                                {
+                                    "storage": "jk:pof",
+                                    "interpret": true,
+                                    "nbt": "txt.lobby.item.death_note.lore.p1e",
+                                    "color": "gray",
+                                    "italic": false
+                                },
+                                {
+                                    "storage": "jk:pof",
+                                    "interpret": true,
+                                    "nbt": "txt.lobby.item.death_note.lore.p2",
+                                    "color": "gray",
+                                    "italic": false
+                                },
+                                {
+                                    "storage": "jk:pof",
+                                    "interpret": true,
+                                    "nbt": "txt.lobby.item.death_note.lore.p2e",
+                                    "color": "gray",
+                                    "italic": false
+                                },
+                                {
+                                    "storage": "jk:pof",
+                                    "interpret": true,
+                                    "nbt": "txt.lobby.item.death_note.lore.p3",
+                                    "color": "gray",
+                                    "italic": false
+                                },
+                                {
+                                    "storage": "jk:pof",
+                                    "interpret": true,
+                                    "nbt": "txt.lobby.item.death_note.lore.p4",
+                                    "color": "gray",
+                                    "italic": false
+                                },
+                                [
+                                    {
+                                        "translate": "item.minecraft.apple",
+                                        "color": "white",
+                                        "italic": false
+                                    },
+                                    " : ",
+                                    {
+                                        "translate": "item.minecraft.golden_apple"
+                                    },
+                                    " : ",
+                                    {
+                                        "translate": "item.minecraft.enchanted_golden_apple"
+                                    },
+                                    " = 10% : 20% : 50%"
+                                ]
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

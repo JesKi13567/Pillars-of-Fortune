@@ -7,7 +7,7 @@ execute store result score #entity_variant jkpof.int run random value -1..6
 execute if score #entity_variant jkpof.int matches -1 run loot spawn 0 800 0 kill @s
 execute if score #entity_variant jkpof.int matches -1 at @e[type=villager, tag=jkpof_variant, limit=1] summon mannequin positioned 0 800 0 run data modify entity @s profile.name set from entity @e[type=item, distance=..1, limit=1] Item.components."minecraft:profile".name
 execute if score #entity_variant jkpof.int matches -1 as @e[type=mannequin, tag=!jkpof_variant_ed] run data modify entity @s CustomName set from entity @s profile.name
-execute if score #entity_variant jkpof.int matches -1 as @e[type=mannequin, tag=!jkpof_variant_ed] run data merge entity @s {CustomNameVisible: true, description: "20 ♥"}
+execute if score #entity_variant jkpof.int matches -1 as @e[type=mannequin, tag=!jkpof_variant_ed] run data merge entity @s {CustomNameVisible: true, hide_description: true}
 execute if score #entity_variant jkpof.int matches -1 positioned 0 800 0 run kill @e[type=item, distance=..1]
 execute if score #entity_variant jkpof.int matches -1 run tp @e[type=villager, tag=jkpof_variant, limit=1] 0 -200 0
 execute if score #entity_variant jkpof.int matches 0 run data modify entity @e[type=villager, tag=jkpof_variant, limit=1] VillagerData.type set value "desert"

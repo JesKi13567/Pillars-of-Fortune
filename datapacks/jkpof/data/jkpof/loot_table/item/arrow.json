@@ -1,0 +1,30 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "weight": 1,
+                    "type": "item",
+                    "name": "arrow"
+                },
+                {
+                    "weight": 1,
+                    "type": "item",
+                    "name": "spectral_arrow"
+                },
+                {
+                    "weight": 46,
+                    "type": "item",
+                    "name": "tipped_arrow",
+                    "functions": [
+                        {
+                            "function": "set_random_potion",
+                            "options": "#jkpof:all"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

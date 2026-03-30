@@ -1,5 +1,6 @@
 scoreboard players set #loaded jkpof.int 1
-tellraw @a [{storage: "jk:pof", nbt: "txt.POF", color: "yellow"}, {storage: "jk:pof", nbt: "txt.datapack.updated", color: "green"}]
+execute unless score #ctrl_lang jkpof.int matches -1.. run scoreboard players set #ctrl_lang jkpof.int -1
+execute if score #ctrl_lang jkpof.int matches 0.. run tellraw @a [{storage: "jk:pof", interpret: true, nbt: "txt.POF", color: "yellow"}, {storage: "jk:pof", interpret: true, nbt: "txt.datapack.updated", color: "green"}]
 
 # bossbar
 bossbar add jkpof:progress ""
@@ -100,7 +101,7 @@ scoreboard objectives add jkpof.super_star dummy "超级星-持续"
 scoreboard objectives add jkpof.gravity dummy "重力方向"
 
 scoreboard objectives add jkpof.item.order dummy "物品标号"
-scoreboard objectives add jkpof.item.color dummy "物品颜色标号"
+scoreboard objectives add jkpof.item.count dummy "物品个数"
 
 scoreboard objectives add jkpof.X dummy "实体X坐标"
 scoreboard objectives add jkpof.Y dummy "实体Y坐标"
@@ -186,7 +187,6 @@ scoreboard objectives add jkpof.spawn_egg.pufferfish_bucket used:pufferfish_buck
 
 scoreboard objectives add jkpof.hp health "♥"
 scoreboard objectives setdisplay list jkpof.hp
-scoreboard objectives setdisplay below_name jkpof.hp
 
 scoreboard players set #2 jkpof.int 2
 scoreboard players set #20 jkpof.int 20

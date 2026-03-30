@@ -1,7 +1,7 @@
-execute if score #ctrl_time jkpof.int matches 0 run data modify entity @e[type=text_display, tag=jkpof_display_text, limit=1] text set value [{storage: "jk:pof", nbt: "txt.lobby.time_set.show.0", color: "yellow"}]
-execute if score #ctrl_time jkpof.int matches 1 run data modify entity @e[type=text_display, tag=jkpof_display_text, limit=1] text set value [{storage: "jk:pof", nbt: "txt.lobby.time_set.show.1", color: "yellow"}]
-execute if score #ctrl_time jkpof.int matches 2 run data modify entity @e[type=text_display, tag=jkpof_display_text, limit=1] text set value [{storage: "jk:pof", nbt: "txt.lobby.time_set.show.2", color: "yellow"}]
-execute if score #ctrl_time jkpof.int matches 3 run data modify entity @e[type=text_display, tag=jkpof_display_text, limit=1] text set value [{storage: "jk:pof", nbt: "txt.lobby.time_set.show.3", color: "yellow"}]
+execute if score #ctrl_time jkpof.int matches 0 run data modify entity @e[type=text_display, tag=jkpof_display_text, limit=1] text set value [{storage: "jk:pof", interpret: true, nbt: "txt.lobby.time_set.show.0", color: "yellow"}]
+execute if score #ctrl_time jkpof.int matches 1 run data modify entity @e[type=text_display, tag=jkpof_display_text, limit=1] text set value [{storage: "jk:pof", interpret: true, nbt: "txt.lobby.time_set.show.1", color: "yellow"}]
+execute if score #ctrl_time jkpof.int matches 2 run data modify entity @e[type=text_display, tag=jkpof_display_text, limit=1] text set value [{storage: "jk:pof", interpret: true, nbt: "txt.lobby.time_set.show.2", color: "yellow"}]
+execute if score #ctrl_time jkpof.int matches 3 run data modify entity @e[type=text_display, tag=jkpof_display_text, limit=1] text set value [{storage: "jk:pof", interpret: true, nbt: "txt.lobby.time_set.show.3", color: "yellow"}]
 data modify entity @e[type=item_display, tag=jkpof_display_ctrl_time, limit=1] CustomName set from entity @e[type=text_display, tag=jkpof_display_text, limit=1] text
 
 function jkpof:state/0/interaction/ctrl/time/set

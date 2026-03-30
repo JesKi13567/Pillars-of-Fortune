@@ -1,5 +1,5 @@
 # 给予物品倒计时
-title @s actionbar [{storage: "jk:pof", nbt: "txt.game.item_give", color: "yellow"}, {score: {name: "#time_res", objective: "jkpof.int"}, color: "gold"}, {storage: "jk:pof", nbt: "txt.event.global.seconds"}]
+title @s actionbar [{storage: "jk:pof", interpret: true, nbt: "txt.game.item_give", color: "yellow"}, {score: {name: "#time_res", objective: "jkpof.int"}, color: "gold"}, {storage: "jk:pof", interpret: true, nbt: "txt.event.global.seconds"}]
 
 # 限高
 execute store result score @s jkpof.Y run data get entity @s Pos[1]

@@ -25,5 +25,3 @@ scoreboard players set #ctrl_advancement jkpof.int 1
 scoreboard players set #ctrl_locator_bar jkpof.int 1
 scoreboard players set #ctrl_upside_down jkpof.int 0
 scoreboard players set #ctrl_kid_mode jkpof.int 0
-
-scoreboard players set #ctrl_lang jkpof.int -1

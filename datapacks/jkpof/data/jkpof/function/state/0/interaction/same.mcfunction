@@ -13,12 +13,12 @@ execute as @s[tag=jkpof_ctrl_ground_radius] run function jkpof:state/0/interacti
 execute as @s[tag=jkpof_ctrl_ground_floor] run function jkpof:state/0/interaction/ctrl/ground/floor/s
 execute as @s[tag=jkpof_ctrl_ground_floor_random] run function jkpof:state/0/interaction/ctrl/ground/floor/random
 
-execute as @s[tag=jkpof_ctrl_night_vision] run function jkpof:state/0/interaction/ctrl/night_vision
-execute as @s[tag=jkpof_ctrl_natural_regen] run function jkpof:state/0/interaction/ctrl/natural_regen
-execute as @s[tag=jkpof_ctrl_advancement] run function jkpof:state/0/interaction/ctrl/advancement
-execute as @s[tag=jkpof_ctrl_locator_bar] run function jkpof:state/0/interaction/ctrl/locator_bar
-execute as @s[tag=jkpof_ctrl_upside_down] run function jkpof:state/0/interaction/ctrl/upside_down
-execute as @s[tag=jkpof_ctrl_kid_mode] run function jkpof:state/0/interaction/ctrl/kid_mode
+execute as @s[tag=jkpof_ctrl_night_vision] run function jkpof:state/0/interaction/ctrl/switcher {id: 'night_vision', item: 'golden_carrot'}
+execute as @s[tag=jkpof_ctrl_natural_regen] run function jkpof:state/0/interaction/ctrl/switcher {id: 'natural_regen', item: 'golden_apple'}
+execute as @s[tag=jkpof_ctrl_advancement] run function jkpof:state/0/interaction/ctrl/switcher {id: 'advancement', item: 'dragon_egg'}
+execute as @s[tag=jkpof_ctrl_locator_bar] run function jkpof:state/0/interaction/ctrl/switcher {id: 'locator_bar', item: 'compass'}
+execute as @s[tag=jkpof_ctrl_upside_down] run function jkpof:state/0/interaction/ctrl/switcher {id: 'upside_down', item: 'magenta_glazed_terracotta'}
+execute as @s[tag=jkpof_ctrl_kid_mode] run function jkpof:state/0/interaction/ctrl/switcher {id: 'kid_mode', item: 'wheat_seeds'}
 
 execute as @s[tag=jkpof_ctrl_lang] run function jkpof:state/0/interaction/ctrl/lang
 

@@ -2,7 +2,7 @@ forceload add -24 -24 24 24
 forceload add -17 -117 17 -83
 
 scoreboard objectives add jkpof.int dummy
-execute if score #loaded jkpof.int matches 1 run tellraw @a [{storage: "jk:pof", nbt: "txt.POF", color: "yellow"}, {storage: "jk:pof", nbt: "txt.datapack.loaded", color: "green"}]
+execute if score #loaded jkpof.int matches 1 run tellraw @a [{storage: "jk:pof", interpret: true, nbt: "txt.POF", color: "yellow"}, {storage: "jk:pof", interpret: true, nbt: "txt.datapack.loaded", color: "green"}]
 execute unless score #loaded jkpof.int matches 1 run function jkpof:init
 
 schedule function jkpof:ticks/tick1 1t replace

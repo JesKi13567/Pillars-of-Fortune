@@ -1,4 +1,4 @@
-tellraw @s [{storage: "jk:pof", nbt: "txt.POF", color: "yellow"}, {storage: "jk:pof", nbt: "txt.event.lightning.player.me.hasitem", color: "aqua"}]
+tellraw @s [{storage: "jk:pof", interpret: true, nbt: "txt.POF", color: "yellow"}, {storage: "jk:pof", interpret: true, nbt: "txt.event.lightning.player.me.hasitem", color: "aqua"}]
 
 # 随机取背包种类
 execute store result score #lightning_backpack jkpof.int run random value 1..41

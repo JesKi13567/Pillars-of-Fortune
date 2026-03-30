@@ -11,6 +11,6 @@ execute as @e[type=chicken, tag=jkpof_chicken, limit=1] at @s run tp @s ^ ^ ^-12
 tag @a remove jkpof_chicken_0
 tag @a remove jkpof_chicken_1
 
-tellraw @a [{storage: "jk:pof", nbt: "txt.POF", color: "yellow"}, {storage: "jk:pof", nbt: "txt.event.bomb_chicken.tellraw", color: "aqua"}]
-title @a title {storage: "jk:pof", nbt: "txt.event.bomb_chicken.name", color: "aqua"}
-title @a subtitle {storage: "jk:pof", nbt: "txt.event.bomb_chicken.subtitle", color: "green"}
+tellraw @a [{storage: "jk:pof", interpret: true, nbt: "txt.POF", color: "yellow"}, {storage: "jk:pof", interpret: true, nbt: "txt.event.bomb_chicken.tellraw", color: "aqua"}]
+title @a title {storage: "jk:pof", interpret: true, nbt: "txt.event.bomb_chicken.name", color: "aqua"}
+title @a subtitle {storage: "jk:pof", interpret: true, nbt: "txt.event.bomb_chicken.subtitle", color: "green"}

@@ -24,4 +24,4 @@ scoreboard players operation #teams jkpof.int += #teams_10 jkpof.int
 scoreboard players operation #teams jkpof.int += #teams_11 jkpof.int
 scoreboard players operation #teams jkpof.int += #teams_12 jkpof.int
 execute if score #teams jkpof.int matches 2.. run scoreboard players set #start_flag jkpof.int 1
-data modify entity @e[type=text_display, tag=jkpof_display_players_count, limit=1] text set value [{storage: "jk:pof", nbt: "txt.lobby.play_tip.current.teams", color: "aqua"}, {score: {name: "#teams", objective: "jkpof.int"}, color: "gold"}]
+data modify entity @e[type=text_display, tag=jkpof_display_players_count, limit=1] text set value [{storage: "jk:pof", interpret: true, nbt: "txt.lobby.play_tip.current.teams", color: "aqua"}, {score: {name: "#teams", objective: "jkpof.int"}, color: "gold"}]

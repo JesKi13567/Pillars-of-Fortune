@@ -1,12 +1,12 @@
 # 循环次数增加
 scoreboard players add #event_loop jkpof.int 1
 
-execute if score #event_loop jkpof.int matches ..5 if score #ctrl_team jkpof.int matches 0 if score #players jkpof.int matches 2 run tellraw @a [{storage: "jk:pof", nbt: "txt.POF", color: "yellow"}, {storage: "jk:pof", nbt: "txt.event.loop.half_time.2.players", color: "aqua"}]
+execute if score #event_loop jkpof.int matches ..5 if score #ctrl_team jkpof.int matches 0 if score #players jkpof.int matches 2 run tellraw @a [{storage: "jk:pof", interpret: true, nbt: "txt.POF", color: "yellow"}, {storage: "jk:pof", interpret: true, nbt: "txt.event.loop.half_time.2.players", color: "aqua"}]
 execute if score #event_loop jkpof.int matches ..5 if score #ctrl_team jkpof.int matches 0 if score #players jkpof.int matches 2 run scoreboard players set #event_loop jkpof.int 7
-execute if score #event_loop jkpof.int matches ..5 if score #ctrl_team jkpof.int matches 1..2 if score #teams jkpof.int matches 2 run tellraw @a [{storage: "jk:pof", nbt: "txt.POF", color: "yellow"}, {storage: "jk:pof", nbt: "txt.event.loop.half_time.2.teams", color: "aqua"}]
+execute if score #event_loop jkpof.int matches ..5 if score #ctrl_team jkpof.int matches 1..2 if score #teams jkpof.int matches 2 run tellraw @a [{storage: "jk:pof", interpret: true, nbt: "txt.POF", color: "yellow"}, {storage: "jk:pof", interpret: true, nbt: "txt.event.loop.half_time.2.teams", color: "aqua"}]
 execute if score #event_loop jkpof.int matches ..5 if score #ctrl_team jkpof.int matches 1..2 if score #teams jkpof.int matches 2 run scoreboard players set #event_loop jkpof.int 7
 
-execute if score #event_loop jkpof.int matches 6 run tellraw @a [{storage: "jk:pof", nbt: "txt.POF", color: "yellow"}, {storage: "jk:pof", nbt: "txt.event.loop.half_time.6", color: "aqua"}]
+execute if score #event_loop jkpof.int matches 6 run tellraw @a [{storage: "jk:pof", interpret: true, nbt: "txt.POF", color: "yellow"}, {storage: "jk:pof", interpret: true, nbt: "txt.event.loop.half_time.6", color: "aqua"}]
 
 execute if score #event_loop jkpof.int matches ..5 run scoreboard players set #event_progress jkpof.int 60
 execute if score #event_loop jkpof.int matches 6.. run scoreboard players set #event_progress jkpof.int 30

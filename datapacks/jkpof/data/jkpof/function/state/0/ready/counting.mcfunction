@@ -7,7 +7,7 @@ execute if score #ctrl_team jkpof.int matches 1 if score #teams jkpof.int matche
 
 # 显示
 execute if score #countdown jkpof.int matches 1.. run title @a times 0 1.1s 0
-execute if score #countdown jkpof.int matches 1.. run title @a title {storage: "jk:pof", nbt: "txt.game.start.soon", color: "green"}
+execute if score #countdown jkpof.int matches 1.. run title @a title {storage: "jk:pof", interpret: true, nbt: "txt.game.start.soon", color: "green"}
 execute if score #countdown jkpof.int matches 3.. run title @a subtitle {score: {name: "#countdown", objective: "jkpof.int"}}
 execute if score #countdown jkpof.int matches 1..2 run title @a subtitle {score: {name: "#countdown", objective: "jkpof.int"}, color: "yellow"}
 
