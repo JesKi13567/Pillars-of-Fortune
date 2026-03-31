@@ -8,9 +8,6 @@ execute if score #before_start jkpof.int matches 0 run scoreboard players add #t
 scoreboard players remove #time_res jkpof.int 1
 execute if score #time_res jkpof.int matches ..0 run function jkpof:state/1/give/start
 
-# 复活信标
-execute as @e[type=item] if items entity @s container.0 player_head at @s if block ~ ~-1 ~ beacon unless block ~ ~-1 ~ beacon{Levels: 0} if data entity @s Item.components."minecraft:profile" run function jkpof:state/1/special_item/respawn/global
-
 # 清理掉落物
 scoreboard players remove #trash jkpof.int 1
 execute if score #trash jkpof.int matches ..0 run kill @e[type=item]

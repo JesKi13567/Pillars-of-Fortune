@@ -1,4 +1,48 @@
 {
+    "functions": [
+        {
+            "function": "set_components",
+            "components": {
+                "consumable": {
+                    "consume_seconds": 1000000,
+                    "animation": "none"
+                }
+            }
+        },
+        {
+            "function": "set_lore",
+            "entity": "this",
+            "mode": "replace_all",
+            "lore": [
+                [
+                    {
+                        "storage": "jk:pof",
+                        "interpret": true,
+                        "nbt": "txt.lobby.item.global.press",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": " [",
+                        "color": "gold"
+                    },
+                    {
+                        "keybind": "key.use",
+                        "color": "gold"
+                    },
+                    {
+                        "text": "] ",
+                        "color": "gold"
+                    },
+                    {
+                        "storage": "jk:pof",
+                        "interpret": true,
+                        "nbt": "txt.lobby.item.enchanted_book"
+                    }
+                ]
+            ]
+        }
+    ],
     "pools": [
         {
             "rolls": 1,

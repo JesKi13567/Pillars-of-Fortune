@@ -240,46 +240,47 @@ summon item_display -10 68.25 -100 {Tags: ["jkpof", "jkpof_display_lobby_item", 
 summon text_display -10 66.25 -100 {Tags: ["jkpof", "jkpof_display_lobby_item", "-1"], brightness: {block: 15, sky: 15}, Rotation: [-90f, 0f], line_width: 1000}
 
 summon interaction -10 65.5 -98.0 {Tags: ["jkpof", "jkpof_display_lobby_item", "0"], response: true, width: .5, height: .5}
-summon item_display -10 65.75 -98.0 {Tags: ["jkpof", "jkpof_display_lobby_item", "0"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.45f, .45f, .45f], translation: [0f, 0f, 0f]}, item: {id: "totem_of_undying"}, Rotation: [90f, 0f]}
 summon interaction -10 65.5 -98.5 {Tags: ["jkpof", "jkpof_display_lobby_item", "1"], response: true, width: .5, height: .5}
-summon item_display -10 65.75 -98.5 {Tags: ["jkpof", "jkpof_display_lobby_item", "1"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.45f, .45f, .45f], translation: [0f, 0f, 0f]}, item: {id: "fire_charge"}, Rotation: [90f, 0f]}
 summon interaction -10 65.5 -99.0 {Tags: ["jkpof", "jkpof_display_lobby_item", "2"], response: true, width: .5, height: .5}
-summon item_display -10 65.75 -99.0 {Tags: ["jkpof", "jkpof_display_lobby_item", "2"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.45f, .45f, .45f], translation: [0f, 0f, 0f]}, item: {id: "dragon_breath"}, Rotation: [90f, 0f]}
 summon interaction -10 65.5 -99.5 {Tags: ["jkpof", "jkpof_display_lobby_item", "3"], response: true, width: .5, height: .5}
-summon item_display -10 65.75 -99.5 {Tags: ["jkpof", "jkpof_display_lobby_item", "3"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.45f, .45f, .45f], translation: [0f, 0f, 0f]}, item: {id: "blaze_rod"}, Rotation: [90f, 0f]}
 summon interaction -10 65.5 -100.0 {Tags: ["jkpof", "jkpof_display_lobby_item", "4"], response: true, width: .5, height: .5}
-summon item_display -10 65.75 -100.0 {Tags: ["jkpof", "jkpof_display_lobby_item", "4"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.45f, .45f, .45f], translation: [0f, 0f, 0f]}, item: {id: "tnt"}, Rotation: [90f, 0f]}
 summon interaction -10 65.5 -100.5 {Tags: ["jkpof", "jkpof_display_lobby_item", "5"], response: true, width: .5, height: .5}
-summon item_display -10 65.75 -100.5 {Tags: ["jkpof", "jkpof_display_lobby_item", "5"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.45f, .45f, .45f], translation: [0f, 0f, 0f]}, item: {id: "end_crystal"}, Rotation: [90f, 0f]}
 summon interaction -10 65.5 -101.0 {Tags: ["jkpof", "jkpof_display_lobby_item", "6"], response: true, width: .5, height: .5}
-summon item_display -10 65.75 -101.0 {Tags: ["jkpof", "jkpof_display_lobby_item", "6"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.45f, .45f, .45f], translation: [0f, 0f, 0f]}, item: {id: "stick", components: {enchantment_glint_override: true}}, Rotation: [90f, 0f]}
 summon interaction -10 65.0 -98.0 {Tags: ["jkpof", "jkpof_display_lobby_item", "7"], response: true, width: .5, height: .5}
-summon item_display -10 65.25 -98.0 {Tags: ["jkpof", "jkpof_display_lobby_item", "7"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.45f, .45f, .45f], translation: [0f, 0f, 0f]}, item: {id: "netherite_ingot"}, Rotation: [90f, 0f]}
 summon interaction -10 65.0 -98.5 {Tags: ["jkpof", "jkpof_display_lobby_item", "8"], response: true, width: .5, height: .5}
-summon item_display -10 65.25 -98.5 {Tags: ["jkpof", "jkpof_display_lobby_item", "8"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.45f, .45f, .45f], translation: [0f, 0f, 0f]}, item: {id: "ender_eye"}, Rotation: [90f, 0f]}
 summon interaction -10 65.0 -99.0 {Tags: ["jkpof", "jkpof_display_lobby_item", "9"], response: true, width: .5, height: .5}
-summon item_display -10 65.25 -99.0 {Tags: ["jkpof", "jkpof_display_lobby_item", "9"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.45f, .45f, .45f], translation: [0f, 0f, 0f]}, item: {id: "chest"}, Rotation: [90f, 0f]}
 summon interaction -10 65.0 -99.5 {Tags: ["jkpof", "jkpof_display_lobby_item", "10"], response: true, width: .5, height: .5}
-summon item_display -10 65.25 -99.5 {Tags: ["jkpof", "jkpof_display_lobby_item", "10"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.45f, .45f, .45f], translation: [0f, 0f, 0f]}, item: {id: "player_head", components: {profile: "JK137"}}, Rotation: [90f, 0f]}
 summon interaction -10 65.0 -100.0 {Tags: ["jkpof", "jkpof_display_lobby_item", "11"], response: true, width: .5, height: .5}
-summon item_display -10 65.25 -100.0 {Tags: ["jkpof", "jkpof_display_lobby_item", "11"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.45f, .45f, .45f], translation: [0f, 0f, 0f]}, item: {id: "bedrock", components: {enchantment_glint_override: true}}, Rotation: [90f, 0f]}
 summon interaction -10 65.0 -100.5 {Tags: ["jkpof", "jkpof_display_lobby_item", "12"], response: true, width: .5, height: .5}
-summon item_display -10 65.25 -100.5 {Tags: ["jkpof", "jkpof_display_lobby_item", "12"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.45f, .45f, .45f], translation: [0f, 0f, 0f]}, item: {id: "crossbow"}, Rotation: [90f, 0f]}
 summon interaction -10 65.0 -101.0 {Tags: ["jkpof", "jkpof_display_lobby_item", "13"], response: true, width: .5, height: .5}
-summon item_display -10 65.25 -101.0 {Tags: ["jkpof", "jkpof_display_lobby_item", "13"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.45f, .45f, .45f], translation: [0f, 0f, 0f]}, item: {id: "writable_book", components: {enchantment_glint_override: true}}, Rotation: [90f, 0f]}
 summon interaction -10 64.5 -98.0 {Tags: ["jkpof", "jkpof_display_lobby_item", "14"], response: true, width: .5, height: .5}
-summon item_display -10 64.75 -98.0 {Tags: ["jkpof", "jkpof_display_lobby_item", "14"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.45f, .45f, .45f], translation: [0f, 0f, 0f]}, item: {id: "creeper_spawn_egg"}, Rotation: [90f, 0f]}
 summon interaction -10 64.5 -98.5 {Tags: ["jkpof", "jkpof_display_lobby_item", "15"], response: true, width: .5, height: .5}
-summon item_display -10 64.75 -98.5 {Tags: ["jkpof", "jkpof_display_lobby_item", "15"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.45f, .45f, .45f], translation: [0f, 0f, 0f]}, item: {id: "beacon"}, Rotation: [90f, 0f]}
 summon interaction -10 64.5 -99.0 {Tags: ["jkpof", "jkpof_display_lobby_item", "16"], response: true, width: .5, height: .5}
-summon item_display -10 64.75 -99.0 {Tags: ["jkpof", "jkpof_display_lobby_item", "16"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.45f, .45f, .45f], translation: [0f, 0f, 0f]}, item: {id: "glass", components: {enchantment_glint_override: true}}, Rotation: [90f, 0f]}
 summon interaction -10 64.5 -99.5 {Tags: ["jkpof", "jkpof_display_lobby_item", "17"], response: true, width: .5, height: .5}
-summon item_display -10 64.75 -99.5 {Tags: ["jkpof", "jkpof_display_lobby_item", "17"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.45f, .45f, .45f], translation: [0f, 0f, 0f]}, item: {id: "clock", components: {enchantment_glint_override: true}}, Rotation: [90f, 0f]}
 summon interaction -10 64.5 -100.0 {Tags: ["jkpof", "jkpof_display_lobby_item", "18"], response: true, width: .5, height: .5}
-summon item_display -10 64.75 -100.0 {Tags: ["jkpof", "jkpof_display_lobby_item", "18"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.45f, .45f, .45f], translation: [0f, 0f, 0f]}, item: {id: "elytra"}, Rotation: [90f, 0f]}
 summon interaction -10 64.5 -100.5 {Tags: ["jkpof", "jkpof_display_lobby_item", "19"], response: true, width: .5, height: .5}
-summon item_display -10 64.75 -100.5 {Tags: ["jkpof", "jkpof_display_lobby_item", "19"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.45f, .45f, .45f], translation: [0f, 0f, 0f]}, item: {id: "nether_star"}, Rotation: [90f, 0f]}
 summon interaction -10 64.5 -101.0 {Tags: ["jkpof", "jkpof_display_lobby_item", "20"], response: true, width: .5, height: .5}
+
+summon item_display -10 65.75 -98.0 {Tags: ["jkpof", "jkpof_display_lobby_item", "0"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.45f, .45f, .45f], translation: [0f, 0f, 0f]}, item: {id: "totem_of_undying"}, Rotation: [90f, 0f]}
+summon item_display -10 65.75 -98.5 {Tags: ["jkpof", "jkpof_display_lobby_item", "1"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.45f, .45f, .45f], translation: [0f, 0f, 0f]}, item: {id: "netherite_ingot"}, Rotation: [90f, 0f]}
+summon item_display -10 65.75 -99.0 {Tags: ["jkpof", "jkpof_display_lobby_item", "2"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.45f, .45f, .45f], translation: [0f, 0f, 0f]}, item: {id: "creeper_spawn_egg"}, Rotation: [90f, 0f]}
+summon item_display -10 65.75 -99.5 {Tags: ["jkpof", "jkpof_display_lobby_item", "3"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.45f, .45f, .45f], translation: [0f, 0f, 0f]}, item: {id: "player_head", components: {profile: "JK137"}}, Rotation: [90f, 0f]}
+summon item_display -10 65.75 -100.0 {Tags: ["jkpof", "jkpof_display_lobby_item", "4"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.45f, .45f, .45f], translation: [0f, 0f, 0f]}, item: {id: "enchanted_book"}, Rotation: [90f, 0f]}
+summon item_display -10 65.75 -100.5 {Tags: ["jkpof", "jkpof_display_lobby_item", "5"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.45f, .45f, .45f], translation: [0f, 0f, 0f]}, item: {id: "fire_charge"}, Rotation: [90f, 0f]}
+summon item_display -10 65.75 -101.0 {Tags: ["jkpof", "jkpof_display_lobby_item", "6"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.45f, .45f, .45f], translation: [0f, 0f, 0f]}, item: {id: "dragon_breath"}, Rotation: [90f, 0f]}
+summon item_display -10 65.25 -98.0 {Tags: ["jkpof", "jkpof_display_lobby_item", "7"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.45f, .45f, .45f], translation: [0f, 0f, 0f]}, item: {id: "stick", components: {enchantment_glint_override: true}}, Rotation: [90f, 0f]}
+summon item_display -10 65.25 -98.5 {Tags: ["jkpof", "jkpof_display_lobby_item", "8"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.45f, .45f, .45f], translation: [0f, 0f, 0f]}, item: {id: "blaze_rod"}, Rotation: [90f, 0f]}
+summon item_display -10 65.25 -99.0 {Tags: ["jkpof", "jkpof_display_lobby_item", "9"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.45f, .45f, .45f], translation: [0f, 0f, 0f]}, item: {id: "ender_eye"}, Rotation: [90f, 0f]}
+summon item_display -10 65.25 -99.5 {Tags: ["jkpof", "jkpof_display_lobby_item", "10"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.45f, .45f, .45f], translation: [0f, 0f, 0f]}, item: {id: "elytra"}, Rotation: [90f, 0f]}
+summon item_display -10 65.25 -100.0 {Tags: ["jkpof", "jkpof_display_lobby_item", "11"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.45f, .45f, .45f], translation: [0f, 0f, 0f]}, item: {id: "writable_book", components: {enchantment_glint_override: true}}, Rotation: [90f, 0f]}
+summon item_display -10 65.25 -100.5 {Tags: ["jkpof", "jkpof_display_lobby_item", "12"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.45f, .45f, .45f], translation: [0f, 0f, 0f]}, item: {id: "nether_star"}, Rotation: [90f, 0f]}
+summon item_display -10 65.25 -101.0 {Tags: ["jkpof", "jkpof_display_lobby_item", "13"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.45f, .45f, .45f], translation: [0f, 0f, 0f]}, item: {id: "end_crystal"}, Rotation: [90f, 0f]}
+summon item_display -10 64.75 -98.0 {Tags: ["jkpof", "jkpof_display_lobby_item", "14"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.45f, .45f, .45f], translation: [0f, 0f, 0f]}, item: {id: "clock", components: {enchantment_glint_override: true}}, Rotation: [90f, 0f]}
+summon item_display -10 64.75 -98.5 {Tags: ["jkpof", "jkpof_display_lobby_item", "15"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.45f, .45f, .45f], translation: [0f, 0f, 0f]}, item: {id: "chest"}, Rotation: [90f, 0f]}
+summon item_display -10 64.75 -99.0 {Tags: ["jkpof", "jkpof_display_lobby_item", "16"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.45f, .45f, .45f], translation: [0f, 0f, 0f]}, item: {id: "tnt"}, Rotation: [90f, 0f]}
+summon item_display -10 64.75 -99.5 {Tags: ["jkpof", "jkpof_display_lobby_item", "17"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.45f, .45f, .45f], translation: [0f, 0f, 0f]}, item: {id: "glass", components: {enchantment_glint_override: true}}, Rotation: [90f, 0f]}
+summon item_display -10 64.75 -100.0 {Tags: ["jkpof", "jkpof_display_lobby_item", "18"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.45f, .45f, .45f], translation: [0f, 0f, 0f]}, item: {id: "beacon"}, Rotation: [90f, 0f]}
+summon item_display -10 64.75 -100.5 {Tags: ["jkpof", "jkpof_display_lobby_item", "19"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.45f, .45f, .45f], translation: [0f, 0f, 0f]}, item: {id: "bedrock", components: {enchantment_glint_override: true}}, Rotation: [90f, 0f]}
 summon item_display -10 64.75 -101.0 {Tags: ["jkpof", "jkpof_display_lobby_item", "20"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.45f, .45f, .45f], translation: [0f, 0f, 0f]}, item: {id: "magenta_glazed_terracotta", components: {enchantment_glint_override: true}}, Rotation: [90f, 0f]}
 
 #- 事件
@@ -324,7 +325,7 @@ summon text_display -2 67.5 -110 {Tags: ["jkpof", "jkpof_display_ctrl_item_show"
 # 分配模式
 summon interaction -2 64.25 -110 {Tags: ["jkpof", "jkpof_ctrl", "jkpof_ctrl_item_mode"], response: true, width: .5, height: .5}
 summon text_display -2 65.05 -110 {Tags: ["jkpof", "jkpof_display_ctrl_item_mode"], brightness: {block: 15, sky: 15}, billboard: "center"}
-summon item_display -2 64.5 -110 {Tags: ["jkpof", "jkpof_display_ctrl_item_mode"], brightness: {block: 15, sky: 15}, CustomNameVisible: 1b, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.4f, .4f, .4f], translation: [0f, 0f, 0f]}, Rotation: [-180f, 0f]}
+summon item_display -2 64.5 -110 {Tags: ["jkpof", "jkpof_display_ctrl_item_mode"], brightness: {block: 15, sky: 15}, CustomNameVisible: true, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.4f, .4f, .4f], translation: [0f, 0f, 0f]}, Rotation: [-180f, 0f]}
 
 # 数量
 summon interaction -2 65.25 -110 {Tags: ["jkpof", "jkpof_ctrl", "jkpof_ctrl_item_count"], response: true, width: .5, height: .5}
@@ -342,7 +343,7 @@ summon text_display 0 67.5 -110 {Tags: ["jkpof", "jkpof_display_ctrl_pillar_show
 # 种类
 summon interaction 0 64.25 -110 {Tags: ["jkpof", "jkpof_ctrl", "jkpof_ctrl_pillar_type"], response: true, width: .5, height: .5}
 summon text_display 0 65.05 -110 {Tags: ["jkpof", "jkpof_display_ctrl_pillar_type"], brightness: {block: 15, sky: 15}, billboard: "center"}
-summon item_display 0 64.5 -110 {Tags: ["jkpof", "jkpof_display_ctrl_pillar_type"], brightness: {block: 15, sky: 15}, CustomNameVisible: 1b, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.4f, .4f, .4f], translation: [0f, 0f, 0f]}, Rotation: [-180f, 0f]}
+summon item_display 0 64.5 -110 {Tags: ["jkpof", "jkpof_display_ctrl_pillar_type"], brightness: {block: 15, sky: 15}, CustomNameVisible: true, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.4f, .4f, .4f], translation: [0f, 0f, 0f]}, Rotation: [-180f, 0f]}
 
 # 高度
 summon interaction 0 65.25 -110 {Tags: ["jkpof", "jkpof_ctrl", "jkpof_ctrl_pillar_height"], response: true, width: .5, height: .5}
@@ -360,7 +361,7 @@ summon text_display 2 68.5 -110 {Tags: ["jkpof", "jkpof_display_ctrl_ground_show
 # 种类
 summon interaction 2 64.25 -110 {Tags: ["jkpof", "jkpof_ctrl", "jkpof_ctrl_ground_type"], response: true, width: .5, height: .5}
 summon text_display 2 65.05 -110 {Tags: ["jkpof", "jkpof_display_ctrl_ground_type"], brightness: {block: 15, sky: 15}, billboard: "center"}
-summon item_display 2 64.5 -110 {Tags: ["jkpof", "jkpof_display_ctrl_ground_type"], brightness: {block: 15, sky: 15}, CustomNameVisible: 1b, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.4f, .4f, .4f], translation: [0f, 0f, 0f]}, Rotation: [-180f, 0f]}
+summon item_display 2 64.5 -110 {Tags: ["jkpof", "jkpof_display_ctrl_ground_type"], brightness: {block: 15, sky: 15}, CustomNameVisible: true, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.4f, .4f, .4f], translation: [0f, 0f, 0f]}, Rotation: [-180f, 0f]}
 
 # 半径
 summon interaction 2 65.25 -110 {Tags: ["jkpof", "jkpof_ctrl", "jkpof_ctrl_ground_radius"], response: true, width: .5, height: .5}
@@ -383,7 +384,10 @@ summon text_display 0 66.75 -116 {Tags: ["jkpof", "jkpof_display_ctrl_others_sho
 # 地图
 summon interaction 0 64.25 -113 {Tags: ["jkpof", "jkpof_ctrl", "jkpof_ctrl_map"], response: true, width: .5, height: .5}
 summon text_display 0 65.05 -113 {Tags: ["jkpof", "jkpof_display_ctrl_map"], brightness: {block: 15, sky: 15}, billboard: "center"}
-summon item_display 0 64.5 -113 {Tags: ["jkpof", "jkpof_display_ctrl_map"], brightness: {block: 15, sky: 15}, CustomNameVisible: 1b, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.4f, .4f, .4f], translation: [0f, 0f, 0f]}, Rotation: [-180f, 0f]}
+summon item_display 0 64.5 -113 {Tags: ["jkpof", "jkpof_display_ctrl_map"], brightness: {block: 15, sky: 15}, CustomNameVisible: true, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.4f, .4f, .4f], translation: [0f, 0f, 0f]}, Rotation: [-180f, 0f]}
+
+summon item_display -1 64.5 -113 {Tags: ["jkpof", "jkpof_display_ctrl_map_block1"], brightness: {block: 15, sky: 15}, CustomNameVisible: true, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.4f, .4f, .4f], translation: [0f, 0f, 0f]}, item: {id: "glass"}, Rotation: [-180f, 0f], view_range: 0}
+summon item_display 1 64.5 -113 {Tags: ["jkpof", "jkpof_display_ctrl_map_block2"], brightness: {block: 15, sky: 15}, CustomNameVisible: true, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.4f, .4f, .4f], translation: [0f, 0f, 0f]}, item: {id: "glass"}, Rotation: [-180f, 0f], view_range: 0}
 
 # 语言
 summon interaction 0 64.01 -101.5 {Tags: ["jkpof", "jkpof_ctrl_lang"], response: true, width: 1, height: .1}
@@ -395,42 +399,42 @@ summon text_display 0 65.0 -101.5 {Tags: ["jkpof", "jkpof_lobby_const_set_lang_1
 # 时间
 summon interaction 0 64.25 -116 {Tags: ["jkpof", "jkpof_ctrl", "jkpof_ctrl_time"], response: true, width: .5, height: .5}
 summon text_display 0 65.05 -116 {Tags: ["jkpof", "jkpof_display_ctrl_time"], brightness: {block: 15, sky: 15}, billboard: "center"}
-summon item_display 0 64.5 -116 {Tags: ["jkpof", "jkpof_display_ctrl_time"], brightness: {block: 15, sky: 15}, CustomNameVisible: 1b, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.4f, .4f, .4f], translation: [0f, 0f, 0f]}, item: {id: "clock"}, Glowing: true, Rotation: [-180f, 0f]}
+summon item_display 0 64.5 -116 {Tags: ["jkpof", "jkpof_display_ctrl_time"], brightness: {block: 15, sky: 15}, CustomNameVisible: true, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.4f, .4f, .4f], translation: [0f, 0f, 0f]}, item: {id: "clock"}, Glowing: true, Rotation: [-180f, 0f]}
 
 # 夜视
 summon interaction 2 64.25 -116 {Tags: ["jkpof", "jkpof_ctrl", "jkpof_ctrl_night_vision"], response: true, width: .5, height: .5}
 summon text_display 2 65.05 -116 {Tags: ["jkpof", "jkpof_display_ctrl_night_vision"], brightness: {block: 15, sky: 15}, billboard: "center", text: {translate: "effect.minecraft.night_vision", color: "green"}}
-summon item_display 2 64.5 -116 {Tags: ["jkpof", "jkpof_display_ctrl_night_vision"], brightness: {block: 15, sky: 15}, CustomNameVisible: 1b, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.4f, .4f, .4f], translation: [0f, 0f, 0f]}, Rotation: [-180f, 0f]}
+summon item_display 2 64.5 -116 {Tags: ["jkpof", "jkpof_display_ctrl_night_vision"], brightness: {block: 15, sky: 15}, CustomNameVisible: true, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.4f, .4f, .4f], translation: [0f, 0f, 0f]}, Rotation: [-180f, 0f]}
 
 # 自然回血
 summon interaction -2 64.25 -116 {Tags: ["jkpof", "jkpof_ctrl", "jkpof_ctrl_natural_regen"], response: true, width: .5, height: .5}
 summon text_display -2 65.05 -116 {Tags: ["jkpof", "jkpof_display_ctrl_natural_regen"], brightness: {block: 15, sky: 15}, billboard: "center"}
-summon item_display -2 64.5 -116 {Tags: ["jkpof", "jkpof_display_ctrl_natural_regen"], brightness: {block: 15, sky: 15}, CustomNameVisible: 1b, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.4f, .4f, .4f], translation: [0f, 0f, 0f]}, Rotation: [-180f, 0f]}
+summon item_display -2 64.5 -116 {Tags: ["jkpof", "jkpof_display_ctrl_natural_regen"], brightness: {block: 15, sky: 15}, CustomNameVisible: true, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.4f, .4f, .4f], translation: [0f, 0f, 0f]}, Rotation: [-180f, 0f]}
 
 # 进度展示
 summon interaction -2 65.25 -116 {Tags: ["jkpof", "jkpof_ctrl", "jkpof_ctrl_advancement"], response: true, width: .5, height: .5}
 summon text_display -2 66.05 -116 {Tags: ["jkpof", "jkpof_display_ctrl_advancement"], brightness: {block: 15, sky: 15}, billboard: "center"}
-summon item_display -2 65.5 -116 {Tags: ["jkpof", "jkpof_display_ctrl_advancement"], brightness: {block: 15, sky: 15}, CustomNameVisible: 1b, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.4f, .4f, .4f], translation: [0f, 0f, 0f]}, Rotation: [-180f, 0f]}
+summon item_display -2 65.5 -116 {Tags: ["jkpof", "jkpof_display_ctrl_advancement"], brightness: {block: 15, sky: 15}, CustomNameVisible: true, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.4f, .4f, .4f], translation: [0f, 0f, 0f]}, Rotation: [-180f, 0f]}
 
 # 定位栏
 summon interaction 2 65.25 -116 {Tags: ["jkpof", "jkpof_ctrl", "jkpof_ctrl_locator_bar"], response: true, width: .5, height: .5}
 summon text_display 2 66.05 -116 {Tags: ["jkpof", "jkpof_display_ctrl_locator_bar"], brightness: {block: 15, sky: 15}, billboard: "center"}
-summon item_display 2 65.5 -116 {Tags: ["jkpof", "jkpof_display_ctrl_locator_bar"], brightness: {block: 15, sky: 15}, CustomNameVisible: 1b, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.4f, .4f, .4f], translation: [0f, 0f, 0f]}, Rotation: [-180f, 0f]}
+summon item_display 2 65.5 -116 {Tags: ["jkpof", "jkpof_display_ctrl_locator_bar"], brightness: {block: 15, sky: 15}, CustomNameVisible: true, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.4f, .4f, .4f], translation: [0f, 0f, 0f]}, Rotation: [-180f, 0f]}
 
 # 颠倒模式
 summon interaction -2 66.25 -116 {Tags: ["jkpof", "jkpof_ctrl", "jkpof_ctrl_upside_down"], response: true, width: .5, height: .5}
 summon text_display -2 67.05 -116 {Tags: ["jkpof", "jkpof_display_ctrl_upside_down"], brightness: {block: 15, sky: 15}, billboard: "center"}
-summon item_display -2 66.5 -116 {Tags: ["jkpof", "jkpof_display_ctrl_upside_down"], brightness: {block: 15, sky: 15}, CustomNameVisible: 1b, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.4f, .4f, .4f], translation: [0f, 0f, 0f]}, Rotation: [-180f, 0f]}
+summon item_display -2 66.5 -116 {Tags: ["jkpof", "jkpof_display_ctrl_upside_down"], brightness: {block: 15, sky: 15}, CustomNameVisible: true, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.4f, .4f, .4f], translation: [0f, 0f, 0f]}, Rotation: [-180f, 0f]}
 
 # 小孩模式
 summon interaction 2 66.25 -116 {Tags: ["jkpof", "jkpof_ctrl", "jkpof_ctrl_kid_mode"], response: true, width: .5, height: .5}
 summon text_display 2 67.05 -116 {Tags: ["jkpof", "jkpof_display_ctrl_kid_mode"], brightness: {block: 15, sky: 15}, billboard: "center"}
-summon item_display 2 66.5 -116 {Tags: ["jkpof", "jkpof_display_ctrl_kid_mode"], brightness: {block: 15, sky: 15}, CustomNameVisible: 1b, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.4f, .4f, .4f], translation: [0f, 0f, 0f]}, Rotation: [-180f, 0f]}
+summon item_display 2 66.5 -116 {Tags: ["jkpof", "jkpof_display_ctrl_kid_mode"], brightness: {block: 15, sky: 15}, CustomNameVisible: true, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.4f, .4f, .4f], translation: [0f, 0f, 0f]}, Rotation: [-180f, 0f]}
 
 # 预设
 summon interaction 0 65.25 -116 {Tags: ["jkpof", "jkpof_ctrl_preset"], response: true, width: .5, height: .5}
 summon text_display 0 66.05 -116 {Tags: ["jkpof", "jkpof_display_ctrl_preset"], brightness: {block: 15, sky: 15}, billboard: "center"}
-summon item_display 0 65.5 -116 {Tags: ["jkpof", "jkpof_display_ctrl_preset"], brightness: {block: 15, sky: 15}, CustomNameVisible: 1b, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.4f, .4f, .4f], translation: [0f, 0f, 0f]}, Rotation: [-180f, 0f]}
+summon item_display 0 65.5 -116 {Tags: ["jkpof", "jkpof_display_ctrl_preset"], brightness: {block: 15, sky: 15}, CustomNameVisible: true, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.4f, .4f, .4f], translation: [0f, 0f, 0f]}, Rotation: [-180f, 0f]}
 
 scoreboard players set #ctrl_preset jkpof.int -1
 function jkpof:state/0/interaction/ctrl/preset/show

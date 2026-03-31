@@ -49,7 +49,7 @@ The language can be switched near the lobby spawn point \(has hint in initial\),
 ||进度展示|可避免其他玩家知晓你是否获得某物品|
 ||定位栏|展示经验栏上的玩家位置|
 ||**预设**|设置项的预设|
-||**地图**|包含随机，将影响柱子和地面，开局时会显示名称|
+||**地图**|包含随机，将影响柱子和地面，开局时会显示名称，亦可自定义|
 ||颠倒模式|玩家初始获得*重力装置\*2*，柱子将在地面下方生成，部分事件会被影响|
 ||小孩模式|玩家尺寸大小为原来的 1/2|
 
@@ -74,7 +74,7 @@ The language can be switched near the lobby spawn point \(has hint in initial\),
 |月球漫步|所有玩家获得 跳跃提升 + 缓降 效果。|
 |飞鸡来袭|随机选取 2 名玩家确定一条水平投影直线，在限高屏障处生成一只鸡，其沿此直线飞行途中会定时投放被激活的TNT。|
 |连锁换位|所有玩家随机交换位置，也可能不会。|
-|道具补给|接下来的 3 次物品给予均有 60% 概率为道具。正常情况下，这个值是 14/1262。|
+|道具补给|接下来的 3 次物品给予均有 60% 概率为道具。正常情况下，这个值是 16/1262。|
 
 ### 道具
 道具也会在大厅展示。
@@ -82,25 +82,25 @@ The language can be switched near the lobby spawn point \(has hint in initial\),
 |道具列表|描述|
 |-|-|
 |物品堆叠|大部分无耐久物品最大堆叠个数均修改为 64。|
+|下界合金锭|可直接用于合成下界合金制的物品。|
+|刷怪蛋|苦力怕刷怪蛋：均为自燃苦力怕。狼、猫＆鹦鹉：都是驯服的。部分生物拥有更多变种。弓/弩：能发射刷怪蛋并生成。|
+|玩家的头|玩家死亡会掉落头颅。|
+|附魔书|按 \[右键\] 给副手物品附魔。|
 |可发射的火球|按 \[右键\] 来发射。|
 |可发射的末影龙火球|按 \[右键\] 来发射。|
-|急救平台|按 \[右键\] 在脚下生成一层粘液块平台。|
-|自燃TNT|3 秒后爆炸。|
-|可随处放置的末地水晶|顾名思义。|
 |击退棒|击退 V|
-|下界合金锭|可直接用于合成下界合金制的物品。|
+|急救平台|按 \[右键\] 在脚下生成一层粘液块平台。|
 |折跃珍珠|沿指针方向瞬移最多 20 格，无视方块阻挡。|
-|战利品箱|来自原版 MC 的随机战利品，一个顶俩！|
-|玩家的头|玩家死亡会掉落头颅。|
-|虚空护符|在落入虚空时把你送回来。|
-|弓 / 弩|能发射刷怪蛋并生成。|
+|鞘翅|穿着任意胸甲，手持鞘翅并潜行，胸甲获得滑翔效果。|
 |死亡笔记|被写入名字的玩家有概率在 40 秒后获得不可避免的死亡。需保证主手使用、正文为某一玩家名、书名为“DEATH NOTE”。初始/最低概率为 50%，每次使用将减去 100%。以下物品食用后将增加概率：苹果 : 金苹果 : 附魔金苹果 = 10% : 20% : 50%|
-|刷怪蛋|苦力怕刷怪蛋：均为自燃苦力怕。末影龙刷怪蛋：末影龙更智能了。狼、猫＆鹦鹉：都是驯服的。部分生物拥有更多变种。|
-|信标|在发出光柱的信标上方，丢入玩家的头能使对应玩家复活。若成功，则会消耗掉第一层基座以及它本身。另外，铜块及其涂蜡变种也可作为基座。|
-|囚笼|用两层玻璃把玩家包裹起来。|
-|时间控制器|使用后增加 1/4 游戏天。|
-|鞘翅|可与任意胸甲锻造在一起，耐久会叠加。|
 |超级星|使用后无敌 15 秒。|
+|可随处放置的末地水晶|顾名思义。|
+|时间控制器|使用后增加 1/4 游戏天。|
+|战利品箱|来自原版 MC 的随机战利品，一个顶俩！|
+|自燃TNT|3 秒后爆炸。|
+|囚笼|用两层玻璃把玩家包裹起来。|
+|信标|主手持信标，副手持玩家的头并潜行，能使对应玩家复活。|
+|虚空护符|在落入虚空时把你送回来。|
 |重力装置|永久地颠倒自己的重力方向。|
 
 ## zh_tw
@@ -141,7 +141,7 @@ The language can be switched near the lobby spawn point \(has hint in initial\),
 ||進度展示|可避免其他玩家知曉你是否獲得某物品|
 ||定位條|展示經驗條上的玩家位置|
 ||**預設**|設定項目的預設|
-||**地圖**|包含隨機，將影響柱子和地面，開場時會顯示名稱|
+||**地圖**|包含隨機，將影響柱子和地面，開場時會顯示名稱，亦可自訂|
 ||顛倒模式|玩家初始獲得*重力裝置\*2*，柱子將在地面下方生成，部分事件會被影響|
 ||小孩模式|玩家尺寸大小為原來的 1/2|
 
@@ -166,7 +166,7 @@ The language can be switched near the lobby spawn point \(has hint in initial\),
 |月球漫步|所有玩家獲得 跳躍提升 + 緩降 效果。|
 |飛雞來襲|隨機選擇 2 名玩家連成水平投影直線，在限高屏障點生成一隻雞，其在沿此直線飛行途中會定時投放點燃的TNT。|
 |連鎖換位|所有玩家可能隨機交換位置，也可能不換。|
-|道具補給|接下來的 3 次給予物品均有 60% 機率為道具。正常情況下，這個值是 14/1262。|
+|道具補給|接下來的 3 次給予物品均有 60% 機率為道具。正常情況下，這個值是 16/1262。|
 
 ### 道具_
 道具也會在大廳展示。
@@ -174,25 +174,25 @@ The language can be switched near the lobby spawn point \(has hint in initial\),
 |道具列表|說明|
 |-|-|
 |物品堆疊|大部分無耐久物品最大堆疊個數均修改為 64。|
+|獄髓錠|可直接用於合成獄髓物品。|
+|生怪蛋|苦力怕生怪蛋：均為自燃苦力怕。狼、貓＆鸚鵡：都是馴服的。部分生物擁有更多變種。弓/弩：能發射生怪蛋並生成。|
+|玩家頭顱|玩家死亡會掉落頭顱。|
+|附魔書|按 \[右鍵\] 給副手物品附魔。|
 |可發射的火球|按 \[右鍵\] 來發射。|
 |可發射的龍炎彈|按 \[右鍵\] 來發射。|
-|急救平台|按 \[右鍵\] 在腳下生成一層史萊姆方塊平台。|
-|自燃TNT|3 秒後爆炸。|
-|可隨處放置的終界水晶|顧名思義。|
 |擊退棒|擊退 V|
-|獄髓錠|可直接用於合成獄髓物品。|
+|急救平台|按 \[右鍵\] 在腳下生成一層史萊姆方塊平台。|
 |折躍珍珠|沿準星方向瞬移 20 格，無視方塊阻擋。|
-|戰利品箱|來自原版 MC 的隨機戰利品，物超所值！|
-|玩家頭顱|玩家死亡會掉落頭顱。|
-|虛空護符|在落入虛空時把你送回來。|
-|弓 / 弩|能發射生怪蛋並生成。|
+|鞘翅|穿著任意胸甲，手持鞘翅並潛行，胸甲獲得滑翔效果。|
 |死亡筆記本|被寫入名字的玩家有機率在 40 秒後獲得不可避免的死亡。需保證主手使用、正文為一位玩家名稱、書名為「DEATH NOTE」。初始/最低機率為 50%，每次使用將減去 100%。以下物品食用後將增加機率：蘋果 : 金蘋果 : 附魔金蘋果 = 10% : 20% : 50%|
-|生怪蛋|苦力怕生怪蛋：均為自燃苦力怕。終界龍生怪蛋：終界龍更智慧了。狼、貓＆鸚鵡：都是馴服的。部分生物擁有更多變種。|
-|烽火台|在發出光柱的烽火台上方，丟入玩家頭顱能使對應玩家復活。若成功，則會消耗掉第一層基座以及它本身。另外，銅方塊及其上蠟變種也可作為基座。|
-|牢籠|用兩層玻璃把玩家包裹起來。|
-|時間控制器|使用後增加 1/4 遊戲天。|
-|鞘翅|可與任意胸甲鍛造在一起，耐久會疊加。|
 |無敵星|使用後無敵 15 秒。|
+|可隨處放置的終界水晶|顧名思義。|
+|時間控制器|使用後增加 1/4 遊戲天。|
+|戰利品箱|來自原版 MC 的隨機戰利品，物超所值！|
+|自燃TNT|3 秒後爆炸。|
+|牢籠|用兩層玻璃把玩家包裹起來。|
+|烽火台|主手持烽火台，副手持玩家頭顱並潛行，能使對應玩家復活。|
+|虛空護符|在落入虛空時把你送回來。|
 |重力裝置|永久地顛倒自己的重力方向。|
 
 ## en_us
@@ -233,7 +233,7 @@ All settings can be configured in the lobby.
 ||Show Advancements|Prevents other players from knowing if you've received specific items|
 ||Locator Bar|Whether to display player positions on the experience bar|
 ||**Presets**|Settings' presets|
-||**Map Theme**|Includes Random; affects Pillars & Ground; if enabled, the theme name will be displayed at the beginning|
+||**Map Theme**|Includes Random; affects Pillars & Ground; if enabled, the theme name will be displayed at the beginning, can also be customed|
 ||Upside Down Mode|Players get *Gravity Device\*2* on spawn, the pillars are under the ground, some events will be influenced|
 ||Kid Mode|Set players' scale to 1/2|
 
@@ -258,7 +258,7 @@ Events are displayed in the lobby, and players can toggle their activation statu
 |Moon Walk|All players will receive Jump Boost + Slow Falling effects.|
 |Bomb Chicken|Randomly select 2 players to form a horizontal projection line, then summon a Chicken at height-limit barrier. As it flies along this line, it will drop Primed TNT at regular intervals.|
 |Chain Swap|All players' positions will be randomly swapped, or not.|
-|Prop Supply|The next 3 items players receive have a 60% chance of being props. In common situation, the number is 14/1262.|
+|Prop Supply|The next 3 items players receive have a 60% chance of being props. In common situation, the number is 16/1262.|
 
 ### Items
 Items are also displayed in the lobby.
@@ -266,25 +266,25 @@ Items are also displayed in the lobby.
 |Items|Description|
 |-|-|
 |Item Stack|Most non-durable items have a maximum stack size of 64.|
+|Netherite Ingot|Can be directly used to craft Netherite things.|
+|Spawn Egg|Creeper Spawn Egg: now spawns Self-Igniting Creeper. Wolf, Cat & Parrot: they are tamed. Some mobs have more variants. Bow/Crossbow: Can shoot spawn eggs then summon them.|
+|Player Head|Players drop their own heads upon death.|
+|Enchanted Book|Press \[Right Button\] to enchant offhand item.|
 |Shootable Fireball|Press \[Right Button\] to shoot.|
 |Shootable Dragon Fireball|Press \[Right Button\] to shoot.|
-|Aid Platform|Press \[Right Button\] to place a Slime Block platform under your feet.|
-|Self-Igniting TNT|Explode in 3 seconds.|
-|Place-Anywhere End Crystal|As the name says.|
 |Knockback Stick|Knockback V|
-|Netherite Ingot|Can be directly used to craft Netherite things.|
+|Aid Platform|Press \[Right Button\] to place a Slime Block platform under your feet.|
 |Warp Pearl|Teleport up to 20 blocks in the direction you're facing, ignoring all block obstructions.|
-|Loot Chest|Random loot from vanilla Minecraft, which is doubled!|
-|Player Head|Players drop their own heads upon death.|
-|Void Charm|When you fall into void, send you back.|
-|Bow / Crossbow|Can shoot spawn eggs then summon them.|
+|Elytra|Wear any chestplate, hold an Elytra and sneaking, the chestplate obtains glide effect.|
 |Death Note|The player whose name is written in this book has a chance of getting inevitable death in 40 seconds. When using, ensure it's on your mainhand, the content is one player's name and the book title is \"DEATH NOTE\". The initial/minimum probability is 50%, every use will reduce 100%. Consuming any of the following items will increase this probability: Apple : Golden Apple : Enchanted Golden Apple = 10% : 20% : 50%|
-|Spawn Egg|Creeper Spawn Egg: now spawns Self-Igniting Creeper. Ender Dragon Spawn Egg: Ender Dragon becomes more intelligent. Wolf, Cat & Parrot: they are tamed. Some mobs have more variants.|
-|Beacon|Active the Beacon (beam is visible) then drop a Player Head on it to respawn the corresponding player. Upon success, the first layer of base blocks and itself will be consumed. In addition, Block of Copper and its waxed type can be used as base blocks.|
-|Cage|Surrounds the player with two layers of Glass.|
-|Time Controller|Adds 1/4 game day on use.|
-|Elytra|Can be smithed together with any chestplate, and the durability will be combined.|
 |Super Star|Invulnerable for 15s.|
+|Place-Anywhere End Crystal|As the name says.|
+|Time Controller|Adds 1/4 game day on use.|
+|Loot Chest|Random loot from vanilla Minecraft, which is doubled!|
+|Self-Igniting TNT|Explode in 3 seconds.|
+|Cage|Surrounds the player with two layers of Glass.|
+|Beacon|Mainhand: Beacon + Offhand: Player Head + Sneak = Respawn.|
+|Void Charm|When you fall into void, send you back.|
 |Gravity Device|Permanently reverse your gravity.|
 
 ## By JK137

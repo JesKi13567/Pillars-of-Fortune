@@ -1,3 +1,6 @@
+data modify storage jk:pof txt.map.title.11 set from storage jk:pof txt.map.global.mix
+data modify storage jk:pof txt.map.title.12 set from storage jk:pof txt.map.global.combine
+
 function jkpof:state/0/interaction/ctrl/preset/show_ctrl
 function jkpof:state/0/interaction/lobby/event/show
 function jkpof:state/0/interaction/lobby/item/global

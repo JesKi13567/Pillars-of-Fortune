@@ -14,7 +14,7 @@
             "rolls": 1,
             "entries": [
                 {
-                    "weight": 1087,
+                    "weight": 1084,
                     "type": "tag",
                     "expand": true,
                     "name": "jkpof:give/common"
@@ -58,6 +58,11 @@
                     "weight": 1,
                     "type": "loot_table",
                     "value": "jkpof:item/arrow"
+                },
+                {
+                    "weight": 1,
+                    "type": "loot_table",
+                    "value": "minecraft:entities/player"
                 },
                 {
                     "weight": 1,

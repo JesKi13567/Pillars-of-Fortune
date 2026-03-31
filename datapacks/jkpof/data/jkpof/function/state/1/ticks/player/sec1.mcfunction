@@ -14,3 +14,9 @@ execute as @s[scores={jkpof.damage.forgive=..0, jkpof.damage.source.real=1..}] r
 # 死亡笔记倒计时
 scoreboard players remove @s[scores={jkpof.death_note.cd=1..}] jkpof.death_note.cd 1
 kill @s[scores={jkpof.death_note.cd=0}]
+
+# 鞘翅
+execute if predicate jkpof:is_sneaking if items entity @s armor.chest #chest_armor if items entity @s weapon.* elytra at @s run function jkpof:state/1/special_item/elytra
+
+# 复活信标
+execute if predicate jkpof:is_sneaking if items entity @s weapon.mainhand beacon if items entity @s weapon.offhand player_head at @s run function jkpof:state/1/special_item/respawn/global

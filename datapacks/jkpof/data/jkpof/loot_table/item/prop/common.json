@@ -632,6 +632,77 @@
                     ]
                 },
                 {
+                    "type": "item",
+                    "name": "beacon",
+                    "functions": [
+                        {
+                            "function": "set_lore",
+                            "entity": "this",
+                            "mode": "replace_all",
+                            "lore": [
+                                [
+                                    {
+                                        "storage": "jk:pof",
+                                        "interpret": true,
+                                        "nbt": "txt.lobby.item.beacon.lore.p1",
+                                        "color": "gray",
+                                        "italic": false
+                                    },
+                                    {
+                                        "translate": "block.minecraft.beacon",
+                                        "color": "aqua"
+                                    },
+                                    {
+                                        "storage": "jk:pof",
+                                        "interpret": true,
+                                        "nbt": "txt.lobby.item.beacon.lore.p2"
+                                    },
+                                    {
+                                        "translate": "block.minecraft.player_head",
+                                        "color": "yellow"
+                                    },
+                                    {
+                                        "storage": "jk:pof",
+                                        "interpret": true,
+                                        "nbt": "txt.lobby.item.beacon.lore.p3"
+                                    }
+                                ]
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "elytra",
+                    "functions": [
+                        {
+                            "function": "set_lore",
+                            "entity": "this",
+                            "mode": "replace_all",
+                            "lore": [
+                                [
+                                    {
+                                        "storage": "jk:pof",
+                                        "interpret": true,
+                                        "nbt": "txt.lobby.item.elytra.p1",
+                                        "color": "gray",
+                                        "italic": false
+                                    },
+                                    {
+                                        "translate": "item.minecraft.elytra",
+                                        "color": "light_purple"
+                                    },
+                                    {
+                                        "storage": "jk:pof",
+                                        "interpret": true,
+                                        "nbt": "txt.lobby.item.elytra.p2"
+                                    }
+                                ]
+                            ]
+                        }
+                    ]
+                },
+                {
                     "type": "loot_table",
                     "value": "jkpof:item/prop/gravity_device"
                 }
