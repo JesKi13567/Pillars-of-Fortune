@@ -8,7 +8,7 @@ function jkpof:state/1/special_item/spawn_egg/player
 # 获取完成击杀的玩家
 scoreboard players operation @a jkpof.damage.temp = @s jkpof.damage.source.real
 execute as @a run scoreboard players operation @s jkpof.damage.temp -= @s jkpof.id
-tag @p[scores={jkpof.damage.temp=0}, team=!jkpof.spec] add jkpof_murder
+tag @a[limit=1, scores={jkpof.damage.temp=0}, team=!jkpof.spec] add jkpof_murder
 tag @s add jkpof_victim
 scoreboard players operation @s jkpof.damage.type.last = @s jkpof.damage.type.now
 

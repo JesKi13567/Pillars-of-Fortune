@@ -4,7 +4,7 @@ execute if score #ctrl_item_count_order jkpof.int matches 4 as @a[scores={jkpof.
 
 # 种类
 execute if score #supply_real jkpof.int matches 4.. as @a[scores={jkpof.state=2}, gamemode=survival] store result score @s jkpof.item.order run random value 1..16
-execute unless score #supply_real jkpof.int matches 4.. as @a[scores={jkpof.state=2}, gamemode=survival] store result score @s jkpof.item.order run random value 1..1262
+execute unless score #supply_real jkpof.int matches 4.. as @a[scores={jkpof.state=2}, gamemode=survival] store result score @s jkpof.item.order run random value 1..1246
 
 # 道具
 execute as @a[scores={jkpof.state=2, jkpof.item.order=2..16}, gamemode=survival] run loot give @s loot jkpof:item/prop/common

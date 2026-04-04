@@ -1,7 +1,7 @@
 tag @s add jkpof_self
 
 # 1. 优先选择不同队
-execute if score #ctrl_team jkpof.int matches 1..2 as @e[type=marker, tag=jkpof_swap_marker] unless score @s jkpof.team = @p[tag=jkpof_self] jkpof.team run tag @s add jkpof_swap_marker_sel
+execute if score #ctrl_team jkpof.int matches 1..2 as @e[type=marker, tag=jkpof_swap_marker] unless score @s jkpof.team = @a[limit=1, tag=jkpof_self] jkpof.team run tag @s add jkpof_swap_marker_sel
 #       没有则选择任意
 execute unless entity @e[type=marker, tag=jkpof_swap_marker_sel] run tag @e[type=marker, tag=jkpof_swap_marker] add jkpof_swap_marker_sel
 # 2. 优先选择未完成传送者，防止闭环

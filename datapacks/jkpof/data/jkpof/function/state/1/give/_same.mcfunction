@@ -5,7 +5,7 @@ scoreboard players operation @a[scores={jkpof.state=2}, gamemode=survival] jkpof
 
 # 种类
 execute if score #supply_real jkpof.int matches 4.. store result score #item_order jkpof.int run random value 1..16
-execute unless score #supply_real jkpof.int matches 4.. store result score #item_order jkpof.int run random value 1..1262
+execute unless score #supply_real jkpof.int matches 4.. store result score #item_order jkpof.int run random value 1..1246
 
 # 道具
 execute if score #item_order jkpof.int matches 2..16 as @r[scores={jkpof.state=2}, gamemode=survival] run loot give @a[scores={jkpof.state=2}, gamemode=survival] loot jkpof:item/prop/common

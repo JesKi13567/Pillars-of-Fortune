@@ -11,7 +11,7 @@ execute as @e[type=item, tag=!jkpof] run function jkpof:state/1/special_item/sta
 execute as @e[type=arrow, tag=!jkpof, nbt={inGround: true}] at @s run function jkpof:state/1/special_item/spawn_egg/arrow/block
 
 # 检查超级星玩家
-execute if entity @p[scores={jkpof.state=2}, gamemode=survival] run function jkpof:state/1/special_item/super_star/song
+execute if entity @a[limit=1, scores={jkpof.state=2}, gamemode=survival] run function jkpof:state/1/special_item/super_star/song
 
 # 玩家
 execute as @a[scores={jkpof.state=2}, gamemode=survival] run function jkpof:state/1/ticks/player/tick1

@@ -74,7 +74,7 @@ The language can be switched near the lobby spawn point \(has hint in initial\),
 |月球漫步|所有玩家获得 跳跃提升 + 缓降 效果。|
 |飞鸡来袭|随机选取 2 名玩家确定一条水平投影直线，在限高屏障处生成一只鸡，其沿此直线飞行途中会定时投放被激活的TNT。|
 |连锁换位|所有玩家随机交换位置，也可能不会。|
-|道具补给|接下来的 3 次物品给予均有 60% 概率为道具。正常情况下，这个值是 16/1262。|
+|道具补给|接下来的 3 次物品给予均有 60% 概率为道具。正常情况下，这个值是 16/1246。|
 
 ### 道具
 道具也会在大厅展示。
@@ -166,7 +166,7 @@ The language can be switched near the lobby spawn point \(has hint in initial\),
 |月球漫步|所有玩家獲得 跳躍提升 + 緩降 效果。|
 |飛雞來襲|隨機選擇 2 名玩家連成水平投影直線，在限高屏障點生成一隻雞，其在沿此直線飛行途中會定時投放點燃的TNT。|
 |連鎖換位|所有玩家可能隨機交換位置，也可能不換。|
-|道具補給|接下來的 3 次給予物品均有 60% 機率為道具。正常情況下，這個值是 16/1262。|
+|道具補給|接下來的 3 次給予物品均有 60% 機率為道具。正常情況下，這個值是 16/1246。|
 
 ### 道具_
 道具也會在大廳展示。
@@ -258,7 +258,7 @@ Events are displayed in the lobby, and players can toggle their activation statu
 |Moon Walk|All players will receive Jump Boost + Slow Falling effects.|
 |Bomb Chicken|Randomly select 2 players to form a horizontal projection line, then summon a Chicken at height-limit barrier. As it flies along this line, it will drop Primed TNT at regular intervals.|
 |Chain Swap|All players' positions will be randomly swapped, or not.|
-|Prop Supply|The next 3 items players receive have a 60% chance of being props. In common situation, the number is 16/1262.|
+|Prop Supply|The next 3 items players receive have a 60% chance of being props. In common situation, the number is 16/1246.|
 
 ### Items
 Items are also displayed in the lobby.

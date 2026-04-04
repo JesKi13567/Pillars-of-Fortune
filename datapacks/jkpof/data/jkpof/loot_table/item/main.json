@@ -14,7 +14,7 @@
             "rolls": 1,
             "entries": [
                 {
-                    "weight": 1084,
+                    "weight": 1067,
                     "type": "tag",
                     "expand": true,
                     "name": "jkpof:give/common"
@@ -48,6 +48,12 @@
                     "type": "tag",
                     "expand": true,
                     "name": "bundles"
+                },
+                {
+                    "weight": 1,
+                    "type": "tag",
+                    "expand": true,
+                    "name": "candles"
                 },
                 {
                     "weight": 93,

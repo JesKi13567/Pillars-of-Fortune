@@ -9,6 +9,66 @@ bossbar set jkpof:progress color blue
 # storage
 data modify storage jk:pof data.enchantments set value ["aqua_affinity", "bane_of_arthropods", "binding_curse", "blast_protection", "breach", "channeling", "density", "depth_strider", "efficiency", "feather_falling", "fire_aspect", "fire_protection", "flame", "fortune", "frost_walker", "impaling", "infinity", "knockback", "looting", "loyalty", "luck_of_the_sea", "lunge", "lure", "mending", "multishot", "piercing", "power", "projectile_protection", "protection", "punch", "quick_charge", "respiration", "riptide", "sharpness", "silk_touch", "smite", "soul_speed", "sweeping_edge", "swift_sneak", "thorns", "unbreaking", "vanishing_curse", "wind_burst"]
 
+# 游戏规则
+gamerule advance_time false
+gamerule advance_weather false
+gamerule allow_entering_nether_using_portals false
+gamerule block_drops true
+gamerule block_explosion_drop_decay true
+gamerule command_block_output false
+gamerule command_blocks_work false
+gamerule drowning_damage true
+gamerule elytra_movement_check false
+gamerule ender_pearls_vanish_on_death true
+gamerule entity_drops true
+gamerule fall_damage false
+gamerule fire_damage false
+gamerule fire_spread_radius_around_player 128
+gamerule forgive_dead_players true
+gamerule freeze_damage true
+gamerule global_sound_events true
+gamerule immediate_respawn true
+gamerule keep_inventory false
+gamerule lava_source_conversion false
+gamerule limited_crafting false
+gamerule locator_bar false
+gamerule log_admin_commands true
+gamerule max_block_modifications 1000000
+gamerule max_command_forks 1000000
+gamerule max_command_sequence_length 1000000
+gamerule max_entity_cramming 24
+gamerule max_snow_accumulation_height 1
+gamerule mob_drops true
+gamerule mob_explosion_drop_decay true
+gamerule mob_griefing true
+gamerule natural_health_regeneration true
+gamerule player_movement_check false
+gamerule players_nether_portal_creative_delay 100000
+gamerule players_nether_portal_default_delay 100000
+gamerule players_sleeping_percentage 100
+gamerule projectiles_can_break_blocks true
+gamerule pvp false
+gamerule raids true
+gamerule random_tick_speed 0
+gamerule reduced_debug_info false
+gamerule respawn_radius 0
+gamerule send_command_feedback true
+gamerule show_advancement_messages false
+gamerule show_death_messages false
+gamerule spawn_mobs false
+gamerule spawn_monsters false
+gamerule spawn_patrols false
+gamerule spawn_phantoms false
+gamerule spawn_wandering_traders false
+gamerule spawn_wardens false
+gamerule spawner_blocks_work true
+gamerule spectators_generate_chunks false
+gamerule spread_vines false
+gamerule tnt_explodes true
+gamerule tnt_explosion_drop_decay false
+gamerule universal_anger false
+gamerule water_source_conversion true
+
 # 队伍
 team add jkpof.red {text: "红队", color: "red"}
 team modify jkpof.red color red

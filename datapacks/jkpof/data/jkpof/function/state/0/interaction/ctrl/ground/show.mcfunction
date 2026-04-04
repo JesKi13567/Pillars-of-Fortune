@@ -18,8 +18,8 @@ execute if score #ctrl_map_real jkpof.int matches 11..12 run data modify entity 
 execute unless score #ctrl_map jkpof.int matches 11..12 run kill @e[type=interaction, tag=jkpof_ctrl_map_custom]
 execute unless score #ctrl_map jkpof.int matches 11..12 run data modify entity @e[type=item_display, tag=jkpof_display_ctrl_map_block1, limit=1] view_range set value 0
 execute unless score #ctrl_map jkpof.int matches 11..12 run data modify entity @e[type=item_display, tag=jkpof_display_ctrl_map_block2, limit=1] view_range set value 0
-execute if score #ctrl_map jkpof.int matches 11..12 run summon interaction -1 64.25 -113 {Tags: ["jkpof", "jkpof_ctrl", "jkpof_ctrl_map_custom", "jkpof_display_ctrl_map_block1"], response: true, width: .5, height: .5}
-execute if score #ctrl_map jkpof.int matches 11..12 run summon interaction 1 64.25 -113 {Tags: ["jkpof", "jkpof_ctrl", "jkpof_ctrl_map_custom", "jkpof_display_ctrl_map_block2"], response: true, width: .5, height: .5}
+execute if score #ctrl_map jkpof.int matches 11..12 unless entity @e[type=interaction, tag=jkpof_display_ctrl_map_block1] run summon interaction -1 64.25 -113 {Tags: ["jkpof", "jkpof_ctrl", "jkpof_ctrl_map_custom", "jkpof_display_ctrl_map_block1"], response: true, width: .5, height: .5}
+execute if score #ctrl_map jkpof.int matches 11..12 unless entity @e[type=interaction, tag=jkpof_display_ctrl_map_block2] run summon interaction 1 64.25 -113 {Tags: ["jkpof", "jkpof_ctrl", "jkpof_ctrl_map_custom", "jkpof_display_ctrl_map_block2"], response: true, width: .5, height: .5}
 execute if score #ctrl_map jkpof.int matches 11..12 run data modify entity @e[type=item_display, tag=jkpof_display_ctrl_map_block1, limit=1] view_range set value 1
 execute if score #ctrl_map jkpof.int matches 11..12 run data modify entity @e[type=item_display, tag=jkpof_display_ctrl_map_block2, limit=1] view_range set value 1
 execute if score #ctrl_map jkpof.int matches 11..12 as @s[tag=jkpof_ctrl_map] on attacker run tellraw @s [{storage: "jk:pof", interpret: true, nbt: "txt.POF", color: "yellow"}, {storage: "jk:pof", interpret: true, nbt: "txt.map.global.custom", color: "green"}]
