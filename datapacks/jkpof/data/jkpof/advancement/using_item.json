@@ -1,22 +1,7 @@
 {
     "criteria": {
         "jkpof": {
-            "trigger": "using_item",
-            "conditions": {
-                "item": {
-                    "items": [
-                        "fire_charge",
-                        "dragon_breath",
-                        "blaze_rod",
-                        "ender_eye",
-                        "glass",
-                        "clock",
-                        "nether_star",
-                        "magenta_glazed_terracotta",
-                        "enchanted_book"
-                    ]
-                }
-            }
+            "trigger": "using_item"
         }
     },
     "rewards": {

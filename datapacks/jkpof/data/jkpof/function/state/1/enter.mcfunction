@@ -6,6 +6,7 @@ scoreboard players reset * jkpof.lives
 scoreboard players reset * jkpof.tp
 
 scoreboard players reset * jkpof.cd
+scoreboard players reset * jkpof.ray
 scoreboard players reset * jkpof.void_charm.last
 scoreboard players reset * jkpof.void_charm.hold
 scoreboard players reset * jkpof.use.apple
@@ -16,6 +17,9 @@ scoreboard players reset * jkpof.death_note.cd
 scoreboard players reset * jkpof.death_note.source
 scoreboard players reset * jkpof.super_star
 scoreboard players reset * jkpof.gravity
+scoreboard players reset * jkpof.tp_scroll
+scoreboard players reset * jkpof.creative
+scoreboard players reset * jkpof.betrayal
 
 scoreboard players reset * jkpof.item.order
 scoreboard players reset * jkpof.item.count
@@ -106,14 +110,17 @@ scoreboard players reset #test_mode jkpof.int
 scoreboard players reset #start_flag jkpof.int
 scoreboard players reset #event_time jkpof.int
 scoreboard players reset #event_type jkpof.int
-scoreboard players reset #event_prop_supply jkpof.int
+scoreboard players reset #event_prop_supply.count.prop jkpof.int
+scoreboard players reset #event_prop_supply.count.enchanted_book jkpof.int
+scoreboard players reset #event_prop_supply.count.potion jkpof.int
+scoreboard players reset #event_betrayal_hour.status jkpof.int
 
-scoreboard players set #event_vote_last jkpof.int -1
+scoreboard players set #event_vote.last jkpof.int -1
+scoreboard players set #event_broom.time jkpof.int 123
 scoreboard players set #state jkpof.int 1
 scoreboard players set #time_last jkpof.int 0
 scoreboard players set #time_res jkpof.int 3
 scoreboard players set #before_start jkpof.int 3
-scoreboard players set #trash jkpof.int 123
 scoreboard players set #height_max jkpof.int 120
 scoreboard players set #height_min jkpof.int -70
 scoreboard players set #event_mode jkpof.int 0
@@ -130,6 +137,7 @@ execute if score #ctrl_advancement jkpof.int matches 1 run gamerule show_advance
 execute if score #ctrl_locator_bar jkpof.int matches 1 run gamerule locator_bar true
 worldborder set 49
 kill @e[type=marker, tag=!jkpof_player_spawn]
+kill @e[type=item_display, tag=jkpof_null_bomb_show]
 scoreboard players operation #event_ctrl_real jkpof.int = #event_ctrl jkpof.int
 execute if score #event_ctrl_real jkpof.int matches 1 run bossbar set jkpof:progress visible true
 bossbar set jkpof:progress max 60
@@ -147,6 +155,9 @@ execute if score #event_enable_4 jkpof.int matches 1 run data modify storage jk:
 execute if score #event_enable_5 jkpof.int matches 1 run data modify storage jk:pof data.event.list append value 5
 execute if score #event_enable_6 jkpof.int matches 1 run data modify storage jk:pof data.event.list append value 6
 execute if score #event_enable_7 jkpof.int matches 1 run data modify storage jk:pof data.event.list append value 7
+execute if score #event_enable_8 jkpof.int matches 1 run data modify storage jk:pof data.event.list append value 8
+execute if score #event_enable_9 jkpof.int matches 1 run data modify storage jk:pof data.event.list append value 9
+execute if score #event_enable_10 jkpof.int matches 1 run data modify storage jk:pof data.event.list append value 10
 execute store result score #event_s jkpof.int run data get storage jk:pof data.event.list
 execute store result storage jk:pof data.event.count int 1 run scoreboard players remove #event_s jkpof.int 1
 
@@ -182,4 +193,4 @@ execute if score #ctrl_map_real jkpof.int matches 1.. run function jkpof:state/1
 # 特殊模式
 execute if score #ctrl_kid_mode jkpof.int matches 1 run tellraw @a [{storage: "jk:pof", interpret: true, nbt: "txt.lobby.const.settings.kid_mode", color: "green"}, {storage: "jk:pof", interpret: true, nbt: "txt.char.colon"}, {storage: "jk:pof", interpret: true, nbt: "txt.lobby.bool.enabled.common", color: "yellow"}]
 execute if score #ctrl_upside_down jkpof.int matches 1 run tellraw @a [{storage: "jk:pof", interpret: true, nbt: "txt.lobby.const.settings.upside_down", color: "green"}, {storage: "jk:pof", interpret: true, nbt: "txt.char.colon"}, {storage: "jk:pof", interpret: true, nbt: "txt.lobby.bool.enabled.common", color: "yellow"}]
-execute if score #ctrl_upside_down jkpof.int matches 1 as @a[scores={jkpof.state=2}, gamemode=survival] run loot give @s loot jkpof:item/prop/gravity_device
+execute if score #ctrl_upside_down jkpof.int matches 1 as @a[scores={jkpof.state=2}] run loot give @s loot jkpof:item/prop/gravity_device

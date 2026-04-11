@@ -1,5 +1,5 @@
-tag @a[scores={jkpof.state=2}, gamemode=survival, limit=1, sort=random] add jkpof_chicken_0
-tag @a[scores={jkpof.state=2}, gamemode=survival, limit=1, sort=random, tag=!jkpof_chicken_0] add jkpof_chicken_1
+tag @r[scores={jkpof.state=2}] add jkpof_chicken_0
+tag @r[scores={jkpof.state=2}, tag=!jkpof_chicken_0] add jkpof_chicken_1
 
 execute if score #ctrl_upside_down jkpof.int matches 0 at @a[limit=1, tag=jkpof_chicken_0] run summon chicken ~ 120 ~ {Tags: ["jkpof", "jkpof_chicken"], Invulnerable: true, NoGravity: true}
 execute if score #ctrl_upside_down jkpof.int matches 1 at @a[limit=1, tag=jkpof_chicken_0] run summon chicken ~ -70 ~ {Tags: ["jkpof", "jkpof_chicken"], Invulnerable: true, NoGravity: true}
@@ -14,3 +14,4 @@ tag @a remove jkpof_chicken_1
 tellraw @a [{storage: "jk:pof", interpret: true, nbt: "txt.POF", color: "yellow"}, {storage: "jk:pof", interpret: true, nbt: "txt.event.bomb_chicken.tellraw", color: "aqua"}]
 title @a title {storage: "jk:pof", interpret: true, nbt: "txt.event.bomb_chicken.name", color: "aqua"}
 title @a subtitle {storage: "jk:pof", interpret: true, nbt: "txt.event.bomb_chicken.subtitle", color: "green"}
+scoreboard players set #event_time jkpof.int 100

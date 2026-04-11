@@ -1,0 +1,42 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "weight": 1,
+                    "type": "item",
+                    "name": "potion",
+                    "functions": [
+                        {
+                            "function": "set_random_potion",
+                            "options": "#jkpof:all"
+                        }
+                    ]
+                },
+                {
+                    "weight": 1,
+                    "type": "item",
+                    "name": "splash_potion",
+                    "functions": [
+                        {
+                            "function": "set_random_potion",
+                            "options": "#jkpof:all"
+                        }
+                    ]
+                },
+                {
+                    "weight": 1,
+                    "type": "item",
+                    "name": "lingering_potion",
+                    "functions": [
+                        {
+                            "function": "set_random_potion",
+                            "options": "#jkpof:all"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

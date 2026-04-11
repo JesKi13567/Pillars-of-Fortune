@@ -12,16 +12,16 @@
             "rolls": 1,
             "entries": [
                 {
-                    "weight": 1,
-                    "type": "tag",
-                    "expand": true,
-                    "name": "jkpof:give/64/banner_pattern"
-                },
-                {
                     "weight": 82,
                     "type": "tag",
                     "expand": true,
                     "name": "jkpof:give/64/common"
+                },
+                {
+                    "weight": 1,
+                    "type": "tag",
+                    "expand": true,
+                    "name": "jkpof:give/64/banner_pattern"
                 },
                 {
                     "weight": 1,
@@ -58,6 +58,11 @@
                     "value": "jkpof:item/64/enchanted_book"
                 },
                 {
+                    "weight": 3,
+                    "type": "loot_table",
+                    "value": "jkpof:item/64/potion"
+                },
+                {
                     "weight": 1,
                     "type": "item",
                     "name": "goat_horn",
@@ -65,39 +70,6 @@
                         {
                             "function": "set_instrument",
                             "options": "#goat_horns"
-                        }
-                    ]
-                },
-                {
-                    "weight": 1,
-                    "type": "item",
-                    "name": "potion",
-                    "functions": [
-                        {
-                            "function": "set_random_potion",
-                            "options": "#jkpof:all"
-                        }
-                    ]
-                },
-                {
-                    "weight": 1,
-                    "type": "item",
-                    "name": "splash_potion",
-                    "functions": [
-                        {
-                            "function": "set_random_potion",
-                            "options": "#jkpof:all"
-                        }
-                    ]
-                },
-                {
-                    "weight": 1,
-                    "type": "item",
-                    "name": "lingering_potion",
-                    "functions": [
-                        {
-                            "function": "set_random_potion",
-                            "options": "#jkpof:all"
                         }
                     ]
                 }

@@ -1,3 +1,4 @@
 tellraw @a [{storage: "jk:pof", interpret: true, nbt: "txt.POF", color: "yellow"}, {text: "2", color: "white"}, {storage: "jk:pof", interpret: true, nbt: "txt.event.global.seconds", color: "white"}, {storage: "jk:pof", interpret: true, nbt: "txt.event.arrow.tellraw.p1", color: "aqua"}, {translate: "entity.minecraft.arrow"}, {storage: "jk:pof", interpret: true, nbt: "txt.event.arrow.tellraw.p2", color: "aqua"}, {storage: "jk:pof", interpret: true, nbt: "txt.event.global.last", color: "aqua"}, "3", {storage: "jk:pof", interpret: true, nbt: "txt.event.global.seconds"}, {storage: "jk:pof", interpret: true, nbt: "txt.char.exclamation", color: "aqua"}]
 title @a title {storage: "jk:pof", interpret: true, nbt: "txt.event.arrow.name", color: "aqua"}
 title @a subtitle {storage: "jk:pof", interpret: true, nbt: "txt.event.arrow.subtitle", color: "green"}
+scoreboard players set #event_time jkpof.int 100

@@ -1,4 +1,14 @@
 {
+    "functions": [
+        {
+            "function": "set_count",
+            "count": {
+                "type": "score",
+                "target": "this",
+                "score": "jkpof.item.count"
+            }
+        }
+    ],
     "pools": [
         {
             "rolls": 1,

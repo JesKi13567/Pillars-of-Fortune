@@ -1,0 +1,7 @@
+scoreboard players remove @s jkpof.creative 1
+gamemode creative @s[gamemode=survival]
+clear @s command_block[custom_data={jkpof: ["creative"]}]
+tellraw @s[scores={jkpof.creative=40}] ["", {storage: "jk:pof", interpret: true, nbt: "txt.POF", color: "yellow"}, {translate: "gameMode.creative", color: "gold"}, {storage: "jk:pof", interpret: true, nbt: "txt.lobby.item.global.countdown", color: "aqua"}, {text: "2", color: "yellow"}, {storage: "jk:pof", interpret: true, nbt: "txt.event.global.seconds", color: "yellow"}, {storage: "jk:pof", interpret: true, nbt: "txt.char.dot", color: "aqua"}]
+tellraw @s[scores={jkpof.creative=20}] ["", {storage: "jk:pof", interpret: true, nbt: "txt.POF", color: "yellow"}, {translate: "gameMode.creative", color: "gold"}, {storage: "jk:pof", interpret: true, nbt: "txt.lobby.item.global.countdown", color: "aqua"}, {text: "1", color: "yellow"}, {storage: "jk:pof", interpret: true, nbt: "txt.event.global.seconds", color: "yellow"}, {storage: "jk:pof", interpret: true, nbt: "txt.char.dot", color: "aqua"}]
+execute as @s[scores={jkpof.creative=0}] run tellraw @a ["", {storage: "jk:pof", interpret: true, nbt: "txt.POF", color: "yellow"}, {translate: "commands.gamemode.success.other", with: [{selector: "@s"}, {translate: "gameMode.survival", color: "gold"}]}, {storage: "jk:pof", interpret: true, nbt: "txt.char.dot"}]
+execute at @s[scores={jkpof.creative=0}] run playsound entity.experience_orb.pickup block @a

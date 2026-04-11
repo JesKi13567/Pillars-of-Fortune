@@ -1,7 +1,7 @@
 scoreboard players set #respawn.state jkpof.int 0
 clear @s beacon 1
 $clear @s player_head[profile~{name: $(id)}] 1
-$execute if entity @a[limit=1, name="$(id)", scores={jkpof.state=2}, gamemode=spectator] run scoreboard players set #respawn.state jkpof.int 1
-$execute if score #respawn.state jkpof.int matches 0 run tellraw @a ["", {storage: "jk:pof", interpret: true, nbt: "txt.POF", color: "yellow"}, "$(id)", {storage: "jk:pof", interpret: true, nbt: "txt.lobby.item.beacon.tellraw.fail", color: "red"}]
-execute if score #respawn.state jkpof.int matches 0 run playsound entity.villager.no player @s
+$execute if entity @a[limit=1, name="$(id)", scores={jkpof.state=3}] run scoreboard players set #respawn.state jkpof.int 1
+$execute if score #respawn.state jkpof.int matches 0 run tellraw @a ["", {storage: "jk:pof", interpret: true, nbt: "txt.POF", color: "yellow"}, "$(id)", {storage: "jk:pof", interpret: true, nbt: "txt.lobby.item.player_head.tellraw.fail", color: "red"}]
+execute if score #respawn.state jkpof.int matches 0 run playsound entity.villager.no block @s
 $execute if score #respawn.state jkpof.int matches 1 run function jkpof:state/1/special_item/respawn/success {id: $(id)}

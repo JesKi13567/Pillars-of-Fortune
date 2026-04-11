@@ -1,6 +1,6 @@
 # 游戏结束
-execute if entity @a[limit=1, scores={jkpof.state=2}, gamemode=survival] run function jkpof:state/1/end/win
-execute unless entity @a[limit=1, scores={jkpof.state=2}, gamemode=survival] run tellraw @a [{storage: "jk:pof", interpret: true, nbt: "txt.POF", color: "yellow"}, {storage: "jk:pof", interpret: true, nbt: "txt.game.end.win.no", color: "green"}]
+execute if entity @a[limit=1, scores={jkpof.state=2}] run function jkpof:state/1/end/win
+execute unless entity @a[limit=1, scores={jkpof.state=2}] run tellraw @a [{storage: "jk:pof", interpret: true, nbt: "txt.POF", color: "yellow"}, {storage: "jk:pof", interpret: true, nbt: "txt.game.end.win.no", color: "green"}]
 execute if entity @a[limit=1, scores={jkpof.kills=2..}] run function jkpof:state/1/end/king {type: kill, color: red}
 execute if entity @a[limit=1, scores={jkpof.lives=2..}] run function jkpof:state/1/end/king {type: live, color: yellow}
 

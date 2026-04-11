@@ -7,8 +7,11 @@ execute if score #event_enable_4 jkpof.int matches 1 run summon marker 0 0 0 {Ta
 execute if score #event_enable_5 jkpof.int matches 1 run summon marker 0 0 0 {Tags: ["jkpof", "jkpof_votes", "5"]}
 execute if score #event_enable_6 jkpof.int matches 1 run summon marker 0 0 0 {Tags: ["jkpof", "jkpof_votes", "6"]}
 execute if score #event_enable_7 jkpof.int matches 1 run summon marker 0 0 0 {Tags: ["jkpof", "jkpof_votes", "7"]}
+execute if score #event_enable_8 jkpof.int matches 1 run summon marker 0 0 0 {Tags: ["jkpof", "jkpof_votes", "8"]}
+execute if score #event_enable_9 jkpof.int matches 1 run summon marker 0 0 0 {Tags: ["jkpof", "jkpof_votes", "9"]}
+execute if score #event_enable_10 jkpof.int matches 1 run summon marker 0 0 0 {Tags: ["jkpof", "jkpof_votes", "10"]}
 
-execute store result score @e[type=marker, tag=jkpof_votes, tag=-1, limit=1] jkpof.int if entity @a[scores={jkpof.vote=8}, gamemode=spectator]
+execute store result score @e[type=marker, tag=jkpof_votes, tag=-1, limit=1] jkpof.int if entity @a[scores={jkpof.vote=11}, gamemode=spectator]
 execute store result score @e[type=marker, tag=jkpof_votes, tag=1, limit=1] jkpof.int if entity @a[scores={jkpof.vote=1}, gamemode=spectator]
 execute store result score @e[type=marker, tag=jkpof_votes, tag=2, limit=1] jkpof.int if entity @a[scores={jkpof.vote=2}, gamemode=spectator]
 execute store result score @e[type=marker, tag=jkpof_votes, tag=3, limit=1] jkpof.int if entity @a[scores={jkpof.vote=3}, gamemode=spectator]
@@ -16,6 +19,9 @@ execute store result score @e[type=marker, tag=jkpof_votes, tag=4, limit=1] jkpo
 execute store result score @e[type=marker, tag=jkpof_votes, tag=5, limit=1] jkpof.int if entity @a[scores={jkpof.vote=5}, gamemode=spectator]
 execute store result score @e[type=marker, tag=jkpof_votes, tag=6, limit=1] jkpof.int if entity @a[scores={jkpof.vote=6}, gamemode=spectator]
 execute store result score @e[type=marker, tag=jkpof_votes, tag=7, limit=1] jkpof.int if entity @a[scores={jkpof.vote=7}, gamemode=spectator]
+execute store result score @e[type=marker, tag=jkpof_votes, tag=8, limit=1] jkpof.int if entity @a[scores={jkpof.vote=8}, gamemode=spectator]
+execute store result score @e[type=marker, tag=jkpof_votes, tag=9, limit=1] jkpof.int if entity @a[scores={jkpof.vote=9}, gamemode=spectator]
+execute store result score @e[type=marker, tag=jkpof_votes, tag=10, limit=1] jkpof.int if entity @a[scores={jkpof.vote=10}, gamemode=spectator]
 
 # 判断最大值
 scoreboard players set #event_votes_max jkpof.int 0
@@ -34,6 +40,9 @@ execute if score #event_mode jkpof.int matches 4 run data modify entity @e[type=
 execute if score #event_mode jkpof.int matches 5 run data modify entity @e[type=text_display, tag=jkpof_display_text, limit=1] text set value ["[", {storage: "jk:pof", interpret: true, nbt: "txt.event.bomb_chicken.name"}, "]"]
 execute if score #event_mode jkpof.int matches 6 run data modify entity @e[type=text_display, tag=jkpof_display_text, limit=1] text set value ["[", {storage: "jk:pof", interpret: true, nbt: "txt.event.chain_swap.name"}, "]"]
 execute if score #event_mode jkpof.int matches 7 run data modify entity @e[type=text_display, tag=jkpof_display_text, limit=1] text set value ["[", {storage: "jk:pof", interpret: true, nbt: "txt.event.prop_supply.name"}, "]"]
+execute if score #event_mode jkpof.int matches 8 run data modify entity @e[type=text_display, tag=jkpof_display_text, limit=1] text set value ["[", {storage: "jk:pof", interpret: true, nbt: "txt.event.vertical_lock.name"}, "]"]
+execute if score #event_mode jkpof.int matches 9 run data modify entity @e[type=text_display, tag=jkpof_display_text, limit=1] text set value ["[", {storage: "jk:pof", interpret: true, nbt: "txt.event.invisible_coating.name"}, "]"]
+execute if score #event_mode jkpof.int matches 10 run data modify entity @e[type=text_display, tag=jkpof_display_text, limit=1] text set value ["[", {storage: "jk:pof", interpret: true, nbt: "txt.event.betrayal_hour.name"}, "]"]
 
 summon marker 0 0 0 {Tags: ["jkpof", "jkpof_votes", "before"]}
 data modify entity @e[type=marker, tag=jkpof_votes, tag=before, limit=1] CustomName set from entity @e[type=text_display, tag=jkpof_display_text, limit=1] text
@@ -46,11 +55,14 @@ execute if entity @e[type=marker, tag=jkpof_votes_max_final, tag=4] run data mod
 execute if entity @e[type=marker, tag=jkpof_votes_max_final, tag=5] run data modify entity @e[type=text_display, tag=jkpof_display_text, limit=1] text set value ["[", {storage: "jk:pof", interpret: true, nbt: "txt.event.bomb_chicken.name"}, "]"]
 execute if entity @e[type=marker, tag=jkpof_votes_max_final, tag=6] run data modify entity @e[type=text_display, tag=jkpof_display_text, limit=1] text set value ["[", {storage: "jk:pof", interpret: true, nbt: "txt.event.chain_swap.name"}, "]"]
 execute if entity @e[type=marker, tag=jkpof_votes_max_final, tag=7] run data modify entity @e[type=text_display, tag=jkpof_display_text, limit=1] text set value ["[", {storage: "jk:pof", interpret: true, nbt: "txt.event.prop_supply.name"}, "]"]
+execute if entity @e[type=marker, tag=jkpof_votes_max_final, tag=8] run data modify entity @e[type=text_display, tag=jkpof_display_text, limit=1] text set value ["[", {storage: "jk:pof", interpret: true, nbt: "txt.event.vertical_lock.name"}, "]"]
+execute if entity @e[type=marker, tag=jkpof_votes_max_final, tag=9] run data modify entity @e[type=text_display, tag=jkpof_display_text, limit=1] text set value ["[", {storage: "jk:pof", interpret: true, nbt: "txt.event.invisible_coating.name"}, "]"]
+execute if entity @e[type=marker, tag=jkpof_votes_max_final, tag=10] run data modify entity @e[type=text_display, tag=jkpof_display_text, limit=1] text set value ["[", {storage: "jk:pof", interpret: true, nbt: "txt.event.betrayal_hour.name"}, "]"]
 
 summon marker 0 0 0 {Tags: ["jkpof", "jkpof_votes", "after"]}
 data modify entity @e[type=marker, tag=jkpof_votes, tag=after, limit=1] CustomName set from entity @e[type=text_display, tag=jkpof_display_text, limit=1] text
 
-tellraw @a [{storage: "jk:pof", interpret: true, nbt: "txt.VOF.show", color: "aqua"}, {storage: "jk:pof", interpret: true, nbt: "txt.VOF.check.success", color: "green"}, {selector: "@e[type=marker, tag=jkpof_votes, tag=before]", color: "gray"}, {text: " -> ", color: "green"}, {selector: "@e[type=marker, tag=jkpof_votes, tag=after]", color: "aqua"}]
+tellraw @a [{storage: "jk:pof", interpret: true, nbt: "txt.VOF.show", color: "aqua"}, {storage: "jk:pof", interpret: true, nbt: "txt.VOF.check.success", color: "green"}, {selector: "@e[type=marker, tag=jkpof_votes, tag=before]", color: "gray", hover_event: {action: "show_text", value: ""}}, {text: " -> ", color: "green"}, {selector: "@e[type=marker, tag=jkpof_votes, tag=after]", color: "aqua", hover_event: {action: "show_text", value: ""}}]
 
 # 设置
 execute if entity @e[type=marker, tag=jkpof_votes_max_final, tag=-1] run scoreboard players set #event_mode jkpof.int -1
@@ -61,10 +73,13 @@ execute if entity @e[type=marker, tag=jkpof_votes_max_final, tag=4] run scoreboa
 execute if entity @e[type=marker, tag=jkpof_votes_max_final, tag=5] run scoreboard players set #event_mode jkpof.int 5
 execute if entity @e[type=marker, tag=jkpof_votes_max_final, tag=6] run scoreboard players set #event_mode jkpof.int 6
 execute if entity @e[type=marker, tag=jkpof_votes_max_final, tag=7] run scoreboard players set #event_mode jkpof.int 7
+execute if entity @e[type=marker, tag=jkpof_votes_max_final, tag=8] run scoreboard players set #event_mode jkpof.int 8
+execute if entity @e[type=marker, tag=jkpof_votes_max_final, tag=9] run scoreboard players set #event_mode jkpof.int 9
+execute if entity @e[type=marker, tag=jkpof_votes_max_final, tag=10] run scoreboard players set #event_mode jkpof.int 10
 
 # 最多投票数展示
 tellraw @a[gamemode=spectator] [{storage: "jk:pof", interpret: true, nbt: "txt.VOF.show", color: "aqua"}, {storage: "jk:pof", interpret: true, nbt: "txt.VOF.check.list", color: "green"}]
-execute if entity @e[type=marker, tag=jkpof_votes_max, tag=-1] run tellraw @a[gamemode=spectator] ["[", {storage: "jk:pof", interpret: true, nbt: "txt.event.border.name"}, "]", {text: " -> ", color: "gray"}, {selector: "@a[scores={jkpof.vote=8}, gamemode=spectator]"}]
+execute if entity @e[type=marker, tag=jkpof_votes_max, tag=-1] run tellraw @a[gamemode=spectator] ["[", {storage: "jk:pof", interpret: true, nbt: "txt.event.border.name"}, "]", {text: " -> ", color: "gray"}, {selector: "@a[scores={jkpof.vote=11}, gamemode=spectator]"}]
 execute if entity @e[type=marker, tag=jkpof_votes_max, tag=1] run tellraw @a[gamemode=spectator] ["[", {storage: "jk:pof", interpret: true, nbt: "txt.event.arrow.name"}, "]", {text: " -> ", color: "gray"}, {selector: "@a[scores={jkpof.vote=1}, gamemode=spectator]"}]
 execute if entity @e[type=marker, tag=jkpof_votes_max, tag=2] run tellraw @a[gamemode=spectator] ["[", {storage: "jk:pof", interpret: true, nbt: "txt.event.lava.name"}, "]", {text: " -> ", color: "gray"}, {selector: "@a[scores={jkpof.vote=2}, gamemode=spectator]"}]
 execute if entity @e[type=marker, tag=jkpof_votes_max, tag=3] run tellraw @a[gamemode=spectator] ["[", {storage: "jk:pof", interpret: true, nbt: "txt.event.lightning.name"}, "]", {text: " -> ", color: "gray"}, {selector: "@a[scores={jkpof.vote=3}, gamemode=spectator]"}]
@@ -72,6 +87,9 @@ execute if entity @e[type=marker, tag=jkpof_votes_max, tag=4] run tellraw @a[gam
 execute if entity @e[type=marker, tag=jkpof_votes_max, tag=5] run tellraw @a[gamemode=spectator] ["[", {storage: "jk:pof", interpret: true, nbt: "txt.event.bomb_chicken.name"}, "]", {text: " -> ", color: "gray"}, {selector: "@a[scores={jkpof.vote=5}, gamemode=spectator]"}]
 execute if entity @e[type=marker, tag=jkpof_votes_max, tag=6] run tellraw @a[gamemode=spectator] ["[", {storage: "jk:pof", interpret: true, nbt: "txt.event.chain_swap.name"}, "]", {text: " -> ", color: "gray"}, {selector: "@a[scores={jkpof.vote=6}, gamemode=spectator]"}]
 execute if entity @e[type=marker, tag=jkpof_votes_max, tag=7] run tellraw @a[gamemode=spectator] ["[", {storage: "jk:pof", interpret: true, nbt: "txt.event.prop_supply.name"}, "]", {text: " -> ", color: "gray"}, {selector: "@a[scores={jkpof.vote=7}, gamemode=spectator]"}]
+execute if entity @e[type=marker, tag=jkpof_votes_max, tag=8] run tellraw @a[gamemode=spectator] ["[", {storage: "jk:pof", interpret: true, nbt: "txt.event.vertical_lock.name"}, "]", {text: " -> ", color: "gray"}, {selector: "@a[scores={jkpof.vote=8}, gamemode=spectator]"}]
+execute if entity @e[type=marker, tag=jkpof_votes_max, tag=9] run tellraw @a[gamemode=spectator] ["[", {storage: "jk:pof", interpret: true, nbt: "txt.event.invisible_coating.name"}, "]", {text: " -> ", color: "gray"}, {selector: "@a[scores={jkpof.vote=9}, gamemode=spectator]"}]
+execute if entity @e[type=marker, tag=jkpof_votes_max, tag=10] run tellraw @a[gamemode=spectator] ["[", {storage: "jk:pof", interpret: true, nbt: "txt.event.betrayal_hour.name"}, "]", {text: " -> ", color: "gray"}, {selector: "@a[scores={jkpof.vote=10}, gamemode=spectator]"}]
 
 # 清理
 kill @e[type=marker, tag=jkpof_votes]

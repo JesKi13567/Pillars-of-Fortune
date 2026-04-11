@@ -6,7 +6,6 @@ function jkpof:state/0/interaction/lobby/event/show
 function jkpof:state/0/interaction/lobby/item/global
 
 data modify entity @e[type=text_display, tag=jkpof_lobby_const_top_play, limit=1] text set value [{storage: "jk:pof", interpret: true, nbt: "txt.lobby.const.top.play", color: "green", bold: true}]
-data modify entity @e[type=text_display, tag=jkpof_lobby_const_top_items, limit=1] text set value [{storage: "jk:pof", interpret: true, nbt: "txt.lobby.const.top.items", color: "red", bold: true}]
 data modify entity @e[type=text_display, tag=jkpof_lobby_const_top_events, limit=1] text set value [{storage: "jk:pof", interpret: true, nbt: "txt.lobby.const.top.events", color: "aqua", bold: true}]
 data modify entity @e[type=text_display, tag=jkpof_lobby_const_top_settings, limit=1] text set value [{storage: "jk:pof", interpret: true, nbt: "txt.lobby.const.top.settings", color: "gold", bold: true}]
 data modify entity @e[type=text_display, tag=jkpof_lobby_const_top_lore, limit=1] text set value [{storage: "jk:pof", interpret: true, nbt: "txt.POF", color: "yellow"}, {text: "v1.3", color: "gold"}, "\n", {storage: "jk:pof", interpret: true, nbt: "txt.lobby.const.top.lore.p1", color: "green"}, "\n", {storage: "jk:pof", interpret: true, nbt: "txt.lobby.const.top.lore.p2", color: "aqua"}, {text: "JK137", color: "aqua"}, {storage: "jk:pof", interpret: true, nbt: "txt.lobby.const.top.lore.p3", color: "white"}]

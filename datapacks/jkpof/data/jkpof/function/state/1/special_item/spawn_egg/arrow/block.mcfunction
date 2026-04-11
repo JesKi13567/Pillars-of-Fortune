@@ -7,6 +7,9 @@ execute if items entity @s container.0 bat_spawn_egg[item_model=end_crystal] run
 execute if items entity @s container.0 tnt run function jkpof:state/1/special_item/spawn_egg/arrow/tnt
 execute if items entity @s container.0 bat_spawn_egg[item_model=tnt] run function jkpof:state/1/special_item/spawn_egg/arrow/tnt
 
+execute if items entity @s container.0 tadpole_spawn_egg[item_model=tadpole_spawn_egg] run summon tadpole
+execute if items entity @s container.0 tadpole_spawn_egg[item_model=barrel] summon marker run function jkpof:state/1/special_item/tower/arrow
+
 execute if items entity @s container.0 ender_dragon_spawn_egg run function jkpof:state/1/special_item/spawn_egg/arrow/ender_dragon
 execute if items entity @s container.0 creeper_spawn_egg run function jkpof:state/1/special_item/spawn_egg/arrow/creeper
 
@@ -93,7 +96,6 @@ execute if items entity @s container.0 sniffer_spawn_egg run summon sniffer
 execute if items entity @s container.0 snow_golem_spawn_egg run summon snow_golem
 execute if items entity @s container.0 squid_spawn_egg run summon squid
 execute if items entity @s container.0 strider_spawn_egg run summon strider
-execute if items entity @s container.0 tadpole_spawn_egg run summon tadpole
 execute if items entity @s container.0 tropical_fish_spawn_egg run summon tropical_fish
 execute if items entity @s container.0 turtle_spawn_egg run summon turtle
 execute if items entity @s container.0 wandering_trader_spawn_egg run summon wandering_trader

@@ -1,3 +1,4 @@
 tellraw @a [{storage: "jk:pof", interpret: true, nbt: "txt.POF", color: "yellow"}, {text: "5", color: "white"}, {storage: "jk:pof", interpret: true, nbt: "txt.event.global.seconds", color: "white"}, {storage: "jk:pof", interpret: true, nbt: "txt.event.lightning.tellraw", color: "aqua"}, {translate: "entity.minecraft.lightning_bolt"}, {storage: "jk:pof", interpret: true, nbt: "txt.char.exclamation", color: "aqua"}]
 title @a title {storage: "jk:pof", interpret: true, nbt: "txt.event.lightning.name", color: "aqua"}
 title @a subtitle {storage: "jk:pof", interpret: true, nbt: "txt.event.lightning.subtitle", color: "green"}
+scoreboard players set #event_time jkpof.int 100

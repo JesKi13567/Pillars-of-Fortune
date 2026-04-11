@@ -1,0 +1,5 @@
+scoreboard players remove #event_broom.time jkpof.int 1
+execute if score #event_broom.time jkpof.int matches ..0 run kill @e[type=item]
+execute if score #event_broom.time jkpof.int matches ..0 run tellraw @a [{storage: "jk:pof", interpret: true, nbt: "txt.BOF.show", color: "green"}, {storage: "jk:pof", interpret: true, nbt: "txt.BOF.clean.ed", color: "yellow"}]
+execute if score #event_broom.time jkpof.int matches ..0 run scoreboard players set #event_broom.time jkpof.int 120
+execute unless score #event_broom.time jkpof.int matches 31.. unless score #event_broom.time jkpof.int matches 11..29 unless score #event_broom.time jkpof.int matches ..9 run tellraw @a [{storage: "jk:pof", interpret: true, nbt: "txt.BOF.show", color: "green"}, {storage: "jk:pof", interpret: true, nbt: "txt.BOF.clean.countdown", color: "yellow"}, {score: {name: "#event_broom.time", objective: "jkpof.int"}, color: "red"}, {storage: "jk:pof", interpret: true, nbt: "txt.event.global.seconds", color: "yellow"}, {storage: "jk:pof", interpret: true, nbt: "txt.char.exclamation", color: "yellow"}]

@@ -1,0 +1,2248 @@
+{
+  "functions": [
+    {
+      "function": "set_components",
+      "components": {
+        "tooltip_display": {
+          "hidden_components": [
+            "fireworks"
+          ]
+        }
+      }
+    }
+  ],
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "firework_rocket",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "fireworks": {
+                  "flight_duration": 2,
+                  "explosions": [
+                    {
+                      "shape": "creeper",
+                      "colors": [
+                        1481884,
+                        8439583,
+                        15961002
+                      ],
+                      "has_trail": true,
+                      "has_twinkle": true
+                    },
+                    {
+                      "shape": "creeper",
+                      "colors": [
+                        11546150,
+                        15961002
+                      ],
+                      "has_twinkle": true
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "firework_rocket",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "fireworks": {
+                  "flight_duration": 1,
+                  "explosions": [
+                    {
+                      "shape": "star",
+                      "colors": [
+                        3847130,
+                        4673362,
+                        15790320
+                      ],
+                      "fade_colors": [
+                        6192150
+                      ],
+                      "has_trail": true
+                    },
+                    {
+                      "shape": "small_ball",
+                      "colors": [
+                        8608370,
+                        3847130,
+                        1908001
+                      ],
+                      "has_twinkle": true
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "firework_rocket",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "fireworks": {
+                  "flight_duration": 2,
+                  "explosions": [
+                    {
+                      "shape": "large_ball",
+                      "colors": [
+                        15790320,
+                        1908001,
+                        4673362
+                      ],
+                      "has_twinkle": true
+                    },
+                    {
+                      "shape": "burst",
+                      "colors": [
+                        16701501,
+                        6192150
+                      ],
+                      "fade_colors": [
+                        1481884
+                      ],
+                      "has_trail": true
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "firework_rocket",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "fireworks": {
+                  "flight_duration": 2,
+                  "explosions": [
+                    {
+                      "shape": "star",
+                      "colors": [
+                        1481884,
+                        15790320,
+                        11546150
+                      ],
+                      "has_trail": true,
+                      "has_twinkle": true
+                    },
+                    {
+                      "shape": "large_ball",
+                      "colors": [
+                        15961002,
+                        6192150
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "firework_rocket",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "fireworks": {
+                  "flight_duration": 2,
+                  "explosions": [
+                    {
+                      "shape": "large_ball",
+                      "colors": [
+                        16351261,
+                        15790320,
+                        10329495
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "firework_rocket",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "fireworks": {
+                  "flight_duration": 1,
+                  "explosions": [
+                    {
+                      "shape": "large_ball",
+                      "colors": [
+                        16351261,
+                        4673362,
+                        13061821
+                      ],
+                      "fade_colors": [
+                        16351261,
+                        8608370,
+                        8439583
+                      ],
+                      "has_twinkle": true
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "firework_rocket",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "fireworks": {
+                  "flight_duration": 1,
+                  "explosions": [
+                    {
+                      "shape": "star",
+                      "colors": [
+                        16351261,
+                        6192150
+                      ],
+                      "has_twinkle": true
+                    },
+                    {
+                      "shape": "star",
+                      "colors": [
+                        8439583
+                      ]
+                    },
+                    {
+                      "shape": "large_ball",
+                      "colors": [
+                        13061821,
+                        16701501
+                      ],
+                      "fade_colors": [
+                        16351261,
+                        3847130
+                      ],
+                      "has_trail": true,
+                      "has_twinkle": true
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "firework_rocket",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "fireworks": {
+                  "flight_duration": 1,
+                  "explosions": [
+                    {
+                      "shape": "creeper",
+                      "colors": [
+                        1908001
+                      ]
+                    },
+                    {
+                      "shape": "star",
+                      "colors": [
+                        3948714,
+                        4673362
+                      ],
+                      "has_trail": true,
+                      "has_twinkle": true
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "firework_rocket",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "fireworks": {
+                  "flight_duration": 1,
+                  "explosions": [
+                    {
+                      "shape": "creeper",
+                      "colors": [
+                        15790320
+                      ],
+                      "fade_colors": [
+                        15961002,
+                        15790320,
+                        4673362
+                      ],
+                      "has_twinkle": true
+                    },
+                    {
+                      "shape": "star",
+                      "colors": [
+                        13061821
+                      ],
+                      "has_trail": true
+                    },
+                    {
+                      "shape": "creeper",
+                      "colors": [
+                        3948714
+                      ],
+                      "fade_colors": [
+                        10329495,
+                        3948714,
+                        16351261
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "firework_rocket",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "fireworks": {
+                  "flight_duration": 1,
+                  "explosions": [
+                    {
+                      "shape": "creeper",
+                      "colors": [
+                        8996536,
+                        15961002
+                      ],
+                      "has_twinkle": true
+                    },
+                    {
+                      "shape": "burst",
+                      "colors": [
+                        11546150
+                      ],
+                      "has_trail": true
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "firework_rocket",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "fireworks": {
+                  "flight_duration": 1,
+                  "explosions": [
+                    {
+                      "shape": "small_ball",
+                      "colors": [
+                        8608370,
+                        8996536,
+                        15961002
+                      ],
+                      "has_twinkle": true
+                    },
+                    {
+                      "shape": "creeper",
+                      "colors": [
+                        1908001,
+                        8439583
+                      ],
+                      "has_trail": true
+                    },
+                    {
+                      "shape": "large_ball",
+                      "colors": [
+                        15961002,
+                        3847130,
+                        13061821
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "firework_rocket",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "fireworks": {
+                  "flight_duration": 1,
+                  "explosions": [
+                    {
+                      "shape": "large_ball",
+                      "colors": [
+                        11546150
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "firework_rocket",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "fireworks": {
+                  "flight_duration": 2,
+                  "explosions": [
+                    {
+                      "shape": "small_ball",
+                      "colors": [
+                        3847130,
+                        3948714,
+                        8608370
+                      ],
+                      "has_trail": true
+                    },
+                    {
+                      "shape": "small_ball",
+                      "colors": [
+                        13061821,
+                        16351261
+                      ],
+                      "fade_colors": [
+                        3948714,
+                        8439583,
+                        4673362
+                      ],
+                      "has_twinkle": true
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "firework_rocket",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "fireworks": {
+                  "flight_duration": 2,
+                  "explosions": [
+                    {
+                      "shape": "burst",
+                      "colors": [
+                        8439583,
+                        15790320
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "firework_rocket",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "fireworks": {
+                  "flight_duration": 1,
+                  "explosions": [
+                    {
+                      "shape": "small_ball",
+                      "colors": [
+                        1908001,
+                        6192150
+                      ],
+                      "fade_colors": [
+                        8608370,
+                        10329495
+                      ],
+                      "has_twinkle": true
+                    },
+                    {
+                      "shape": "star",
+                      "colors": [
+                        4673362,
+                        1908001
+                      ],
+                      "has_twinkle": true
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "firework_rocket",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "fireworks": {
+                  "flight_duration": 2,
+                  "explosions": [
+                    {
+                      "shape": "small_ball",
+                      "colors": [
+                        1481884,
+                        4673362,
+                        6192150
+                      ],
+                      "fade_colors": [
+                        8608370
+                      ],
+                      "has_trail": true,
+                      "has_twinkle": true
+                    },
+                    {
+                      "shape": "small_ball",
+                      "colors": [
+                        8439583,
+                        1481884,
+                        16701501
+                      ],
+                      "has_trail": true
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "firework_rocket",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "fireworks": {
+                  "flight_duration": 1,
+                  "explosions": [
+                    {
+                      "shape": "burst",
+                      "colors": [
+                        4673362,
+                        3847130,
+                        3948714
+                      ],
+                      "has_trail": true,
+                      "has_twinkle": true
+                    },
+                    {
+                      "shape": "star",
+                      "colors": [
+                        6192150,
+                        4673362
+                      ],
+                      "has_trail": true,
+                      "has_twinkle": true
+                    },
+                    {
+                      "shape": "large_ball",
+                      "colors": [
+                        10329495,
+                        4673362
+                      ],
+                      "has_trail": true,
+                      "has_twinkle": true
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "firework_rocket",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "fireworks": {
+                  "flight_duration": 2,
+                  "explosions": [
+                    {
+                      "shape": "burst",
+                      "colors": [
+                        8608370,
+                        1481884
+                      ],
+                      "fade_colors": [
+                        13061821,
+                        8439583,
+                        11546150
+                      ]
+                    },
+                    {
+                      "shape": "large_ball",
+                      "colors": [
+                        8608370,
+                        15961002
+                      ],
+                      "has_twinkle": true
+                    },
+                    {
+                      "shape": "large_ball",
+                      "colors": [
+                        16351261,
+                        1481884,
+                        1908001
+                      ],
+                      "has_trail": true
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "firework_rocket",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "fireworks": {
+                  "flight_duration": 1,
+                  "explosions": [
+                    {
+                      "shape": "large_ball",
+                      "colors": [
+                        15961002,
+                        4673362,
+                        10329495
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "firework_rocket",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "fireworks": {
+                  "flight_duration": 2,
+                  "explosions": [
+                    {
+                      "shape": "creeper",
+                      "colors": [
+                        15790320,
+                        10329495,
+                        3948714
+                      ],
+                      "has_trail": true,
+                      "has_twinkle": true
+                    },
+                    {
+                      "shape": "small_ball",
+                      "colors": [
+                        16701501,
+                        8439583
+                      ],
+                      "fade_colors": [
+                        1481884,
+                        8996536,
+                        13061821
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "firework_rocket",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "fireworks": {
+                  "flight_duration": 1,
+                  "explosions": [
+                    {
+                      "shape": "star",
+                      "colors": [
+                        15961002
+                      ],
+                      "fade_colors": [
+                        16351261,
+                        8608370
+                      ],
+                      "has_trail": true
+                    },
+                    {
+                      "shape": "burst",
+                      "colors": [
+                        8608370,
+                        13061821
+                      ],
+                      "has_twinkle": true
+                    },
+                    {
+                      "shape": "large_ball",
+                      "colors": [
+                        1481884,
+                        15790320,
+                        11546150
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "firework_rocket",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "fireworks": {
+                  "flight_duration": 2,
+                  "explosions": [
+                    {
+                      "shape": "star",
+                      "colors": [
+                        8996536,
+                        6192150
+                      ],
+                      "has_trail": true
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "firework_rocket",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "fireworks": {
+                  "flight_duration": 1,
+                  "explosions": [
+                    {
+                      "shape": "small_ball",
+                      "colors": [
+                        3948714,
+                        15961002,
+                        16351261
+                      ],
+                      "has_trail": true
+                    },
+                    {
+                      "shape": "creeper",
+                      "colors": [
+                        1481884,
+                        15961002
+                      ],
+                      "has_twinkle": true
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "firework_rocket",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "fireworks": {
+                  "flight_duration": 2,
+                  "explosions": [
+                    {
+                      "shape": "star",
+                      "colors": [
+                        16701501,
+                        11546150
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "firework_rocket",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "fireworks": {
+                  "flight_duration": 1,
+                  "explosions": [
+                    {
+                      "shape": "star",
+                      "colors": [
+                        13061821,
+                        1908001,
+                        3847130
+                      ],
+                      "fade_colors": [
+                        13061821,
+                        8439583
+                      ]
+                    },
+                    {
+                      "shape": "burst",
+                      "colors": [
+                        15790320,
+                        15961002,
+                        11546150
+                      ],
+                      "has_twinkle": true
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "firework_rocket",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "fireworks": {
+                  "flight_duration": 2,
+                  "explosions": [
+                    {
+                      "shape": "burst",
+                      "colors": [
+                        3847130,
+                        10329495
+                      ],
+                      "has_twinkle": true
+                    },
+                    {
+                      "shape": "small_ball",
+                      "colors": [
+                        8996536
+                      ],
+                      "has_twinkle": true
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "firework_rocket",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "fireworks": {
+                  "flight_duration": 2,
+                  "explosions": [
+                    {
+                      "shape": "creeper",
+                      "colors": [
+                        8996536,
+                        13061821,
+                        11546150
+                      ],
+                      "has_trail": true
+                    },
+                    {
+                      "shape": "large_ball",
+                      "colors": [
+                        15961002,
+                        3847130,
+                        1481884
+                      ],
+                      "has_trail": true,
+                      "has_twinkle": true
+                    },
+                    {
+                      "shape": "star",
+                      "colors": [
+                        8996536,
+                        15790320,
+                        11546150
+                      ],
+                      "fade_colors": [
+                        10329495,
+                        4673362,
+                        15790320
+                      ],
+                      "has_trail": true
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "firework_rocket",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "fireworks": {
+                  "flight_duration": 1,
+                  "explosions": [
+                    {
+                      "shape": "creeper",
+                      "colors": [
+                        3847130,
+                        10329495
+                      ],
+                      "fade_colors": [
+                        15790320,
+                        3948714
+                      ],
+                      "has_trail": true,
+                      "has_twinkle": true
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "firework_rocket",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "fireworks": {
+                  "flight_duration": 1,
+                  "explosions": [
+                    {
+                      "shape": "burst",
+                      "colors": [
+                        4673362
+                      ],
+                      "fade_colors": [
+                        1481884
+                      ],
+                      "has_trail": true
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "firework_rocket",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "fireworks": {
+                  "flight_duration": 2,
+                  "explosions": [
+                    {
+                      "shape": "star",
+                      "colors": [
+                        16351261,
+                        3847130,
+                        6192150
+                      ],
+                      "has_twinkle": true
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "firework_rocket",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "fireworks": {
+                  "flight_duration": 1,
+                  "explosions": [
+                    {
+                      "shape": "small_ball",
+                      "colors": [
+                        15790320
+                      ],
+                      "has_trail": true
+                    },
+                    {
+                      "shape": "star",
+                      "colors": [
+                        1908001
+                      ],
+                      "has_twinkle": true
+                    },
+                    {
+                      "shape": "creeper",
+                      "colors": [
+                        16351261,
+                        10329495,
+                        8608370
+                      ],
+                      "has_trail": true
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "firework_rocket",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "fireworks": {
+                  "flight_duration": 2,
+                  "explosions": [
+                    {
+                      "shape": "creeper",
+                      "colors": [
+                        4673362,
+                        13061821,
+                        16351261
+                      ]
+                    },
+                    {
+                      "shape": "burst",
+                      "colors": [
+                        8439583,
+                        15790320,
+                        11546150
+                      ],
+                      "has_trail": true
+                    },
+                    {
+                      "shape": "creeper",
+                      "colors": [
+                        16701501,
+                        6192150
+                      ],
+                      "has_trail": true
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "firework_rocket",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "fireworks": {
+                  "flight_duration": 1,
+                  "explosions": [
+                    {
+                      "shape": "large_ball",
+                      "colors": [
+                        8996536
+                      ],
+                      "fade_colors": [
+                        3948714,
+                        8996536,
+                        6192150
+                      ],
+                      "has_trail": true
+                    },
+                    {
+                      "shape": "star",
+                      "colors": [
+                        6192150
+                      ]
+                    },
+                    {
+                      "shape": "burst",
+                      "colors": [
+                        4673362
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "firework_rocket",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "fireworks": {
+                  "flight_duration": 1,
+                  "explosions": [
+                    {
+                      "shape": "creeper",
+                      "colors": [
+                        13061821,
+                        8608370,
+                        11546150
+                      ],
+                      "fade_colors": [
+                        3847130,
+                        6192150,
+                        4673362
+                      ],
+                      "has_trail": true,
+                      "has_twinkle": true
+                    },
+                    {
+                      "shape": "small_ball",
+                      "colors": [
+                        15961002
+                      ],
+                      "has_twinkle": true
+                    },
+                    {
+                      "shape": "small_ball",
+                      "colors": [
+                        1481884,
+                        8996536
+                      ],
+                      "fade_colors": [
+                        8439583,
+                        10329495
+                      ],
+                      "has_trail": true
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "firework_rocket",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "fireworks": {
+                  "flight_duration": 2,
+                  "explosions": [
+                    {
+                      "shape": "burst",
+                      "colors": [
+                        3948714
+                      ],
+                      "fade_colors": [
+                        16701501
+                      ],
+                      "has_twinkle": true
+                    },
+                    {
+                      "shape": "star",
+                      "colors": [
+                        3847130
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "firework_rocket",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "fireworks": {
+                  "flight_duration": 2,
+                  "explosions": [
+                    {
+                      "shape": "large_ball",
+                      "colors": [
+                        8996536
+                      ]
+                    },
+                    {
+                      "shape": "creeper",
+                      "colors": [
+                        10329495,
+                        16351261,
+                        8996536
+                      ],
+                      "has_trail": true,
+                      "has_twinkle": true
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "firework_rocket",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "fireworks": {
+                  "flight_duration": 2,
+                  "explosions": [
+                    {
+                      "shape": "star",
+                      "colors": [
+                        16351261,
+                        3948714
+                      ],
+                      "has_trail": true
+                    },
+                    {
+                      "shape": "burst",
+                      "colors": [
+                        10329495,
+                        11546150
+                      ],
+                      "fade_colors": [
+                        1908001,
+                        8996536,
+                        8439583
+                      ],
+                      "has_trail": true
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "firework_rocket",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "fireworks": {
+                  "flight_duration": 1,
+                  "explosions": [
+                    {
+                      "shape": "large_ball",
+                      "colors": [
+                        13061821,
+                        11546150,
+                        1481884
+                      ],
+                      "has_trail": true
+                    },
+                    {
+                      "shape": "small_ball",
+                      "colors": [
+                        1908001
+                      ],
+                      "has_trail": true
+                    },
+                    {
+                      "shape": "star",
+                      "colors": [
+                        8439583
+                      ],
+                      "has_twinkle": true
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "firework_rocket",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "fireworks": {
+                  "flight_duration": 1,
+                  "explosions": [
+                    {
+                      "shape": "creeper",
+                      "colors": [
+                        10329495
+                      ],
+                      "fade_colors": [
+                        16701501,
+                        6192150,
+                        8996536
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "firework_rocket",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "fireworks": {
+                  "flight_duration": 2,
+                  "explosions": [
+                    {
+                      "shape": "large_ball",
+                      "colors": [
+                        8439583,
+                        4673362
+                      ],
+                      "fade_colors": [
+                        13061821,
+                        15961002
+                      ],
+                      "has_twinkle": true
+                    },
+                    {
+                      "shape": "creeper",
+                      "colors": [
+                        10329495
+                      ],
+                      "has_trail": true,
+                      "has_twinkle": true
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "firework_rocket",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "fireworks": {
+                  "flight_duration": 1,
+                  "explosions": [
+                    {
+                      "shape": "creeper",
+                      "colors": [
+                        15961002,
+                        4673362,
+                        8996536
+                      ],
+                      "fade_colors": [
+                        1481884,
+                        1908001
+                      ],
+                      "has_trail": true,
+                      "has_twinkle": true
+                    },
+                    {
+                      "shape": "creeper",
+                      "colors": [
+                        3948714,
+                        16351261
+                      ],
+                      "has_trail": true
+                    },
+                    {
+                      "shape": "creeper",
+                      "colors": [
+                        16701501
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "firework_rocket",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "fireworks": {
+                  "flight_duration": 2,
+                  "explosions": [
+                    {
+                      "shape": "creeper",
+                      "colors": [
+                        1908001
+                      ],
+                      "has_twinkle": true
+                    },
+                    {
+                      "shape": "burst",
+                      "colors": [
+                        15790320,
+                        16701501
+                      ],
+                      "has_twinkle": true
+                    },
+                    {
+                      "shape": "burst",
+                      "colors": [
+                        16701501
+                      ],
+                      "fade_colors": [
+                        8439583
+                      ],
+                      "has_twinkle": true
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "firework_rocket",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "fireworks": {
+                  "flight_duration": 1,
+                  "explosions": [
+                    {
+                      "shape": "creeper",
+                      "colors": [
+                        4673362
+                      ],
+                      "has_trail": true,
+                      "has_twinkle": true
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "firework_rocket",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "fireworks": {
+                  "flight_duration": 1,
+                  "explosions": [
+                    {
+                      "shape": "star",
+                      "colors": [
+                        1908001
+                      ]
+                    },
+                    {
+                      "shape": "large_ball",
+                      "colors": [
+                        1908001,
+                        10329495,
+                        16701501
+                      ],
+                      "fade_colors": [
+                        8439583
+                      ],
+                      "has_trail": true,
+                      "has_twinkle": true
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "firework_rocket",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "fireworks": {
+                  "flight_duration": 2,
+                  "explosions": [
+                    {
+                      "shape": "burst",
+                      "colors": [
+                        3847130,
+                        4673362,
+                        1481884
+                      ],
+                      "has_trail": true,
+                      "has_twinkle": true
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "firework_rocket",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "fireworks": {
+                  "flight_duration": 2,
+                  "explosions": [
+                    {
+                      "shape": "creeper",
+                      "colors": [
+                        8439583,
+                        15790320
+                      ],
+                      "fade_colors": [
+                        13061821
+                      ],
+                      "has_trail": true
+                    },
+                    {
+                      "shape": "creeper",
+                      "colors": [
+                        10329495,
+                        15961002,
+                        15790320
+                      ],
+                      "has_trail": true
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "firework_rocket",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "fireworks": {
+                  "flight_duration": 1,
+                  "explosions": [
+                    {
+                      "shape": "small_ball",
+                      "colors": [
+                        8439583,
+                        8608370,
+                        8996536
+                      ],
+                      "fade_colors": [
+                        10329495
+                      ],
+                      "has_trail": true,
+                      "has_twinkle": true
+                    },
+                    {
+                      "shape": "star",
+                      "colors": [
+                        4673362,
+                        11546150,
+                        8439583
+                      ],
+                      "fade_colors": [
+                        3948714
+                      ],
+                      "has_trail": true
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "firework_rocket",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "fireworks": {
+                  "flight_duration": 2,
+                  "explosions": [
+                    {
+                      "shape": "large_ball",
+                      "colors": [
+                        8608370,
+                        4673362
+                      ],
+                      "has_trail": true
+                    },
+                    {
+                      "shape": "star",
+                      "colors": [
+                        6192150
+                      ],
+                      "fade_colors": [
+                        3847130,
+                        15790320,
+                        6192150
+                      ],
+                      "has_twinkle": true
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "firework_rocket",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "fireworks": {
+                  "flight_duration": 2,
+                  "explosions": [
+                    {
+                      "shape": "creeper",
+                      "colors": [
+                        10329495,
+                        1908001
+                      ]
+                    },
+                    {
+                      "shape": "star",
+                      "colors": [
+                        11546150,
+                        8996536
+                      ],
+                      "has_twinkle": true
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "firework_rocket",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "fireworks": {
+                  "flight_duration": 2,
+                  "explosions": [
+                    {
+                      "shape": "burst",
+                      "colors": [
+                        3847130,
+                        8608370
+                      ],
+                      "has_twinkle": true
+                    },
+                    {
+                      "shape": "burst",
+                      "colors": [
+                        10329495,
+                        8996536
+                      ],
+                      "fade_colors": [
+                        16701501,
+                        15961002,
+                        3948714
+                      ],
+                      "has_twinkle": true
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "firework_rocket",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "fireworks": {
+                  "flight_duration": 2,
+                  "explosions": [
+                    {
+                      "shape": "large_ball",
+                      "colors": [
+                        1481884,
+                        11546150
+                      ],
+                      "has_trail": true
+                    },
+                    {
+                      "shape": "small_ball",
+                      "colors": [
+                        8996536
+                      ],
+                      "has_trail": true,
+                      "has_twinkle": true
+                    },
+                    {
+                      "shape": "creeper",
+                      "colors": [
+                        15790320
+                      ],
+                      "has_trail": true,
+                      "has_twinkle": true
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "firework_rocket",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "fireworks": {
+                  "flight_duration": 1,
+                  "explosions": [
+                    {
+                      "shape": "star",
+                      "colors": [
+                        8996536,
+                        1481884
+                      ]
+                    },
+                    {
+                      "shape": "burst",
+                      "colors": [
+                        4673362,
+                        6192150,
+                        1908001
+                      ],
+                      "has_trail": true
+                    },
+                    {
+                      "shape": "star",
+                      "colors": [
+                        1481884,
+                        8439583,
+                        15790320
+                      ],
+                      "has_trail": true,
+                      "has_twinkle": true
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "firework_rocket",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "fireworks": {
+                  "flight_duration": 1,
+                  "explosions": [
+                    {
+                      "shape": "small_ball",
+                      "colors": [
+                        3847130,
+                        1481884
+                      ],
+                      "has_twinkle": true
+                    },
+                    {
+                      "shape": "star",
+                      "colors": [
+                        6192150
+                      ],
+                      "has_twinkle": true
+                    },
+                    {
+                      "shape": "large_ball",
+                      "colors": [
+                        6192150,
+                        15961002
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "firework_rocket",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "fireworks": {
+                  "flight_duration": 1,
+                  "explosions": [
+                    {
+                      "shape": "large_ball",
+                      "colors": [
+                        11546150,
+                        13061821,
+                        16351261
+                      ],
+                      "has_trail": true,
+                      "has_twinkle": true
+                    },
+                    {
+                      "shape": "small_ball",
+                      "colors": [
+                        3948714
+                      ],
+                      "has_trail": true,
+                      "has_twinkle": true
+                    },
+                    {
+                      "shape": "burst",
+                      "colors": [
+                        8608370,
+                        15790320
+                      ],
+                      "has_twinkle": true
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "firework_rocket",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "fireworks": {
+                  "flight_duration": 1,
+                  "explosions": [
+                    {
+                      "shape": "creeper",
+                      "colors": [
+                        1481884
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "firework_rocket",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "fireworks": {
+                  "flight_duration": 1,
+                  "explosions": [
+                    {
+                      "shape": "large_ball",
+                      "colors": [
+                        16701501
+                      ],
+                      "has_trail": true,
+                      "has_twinkle": true
+                    },
+                    {
+                      "shape": "large_ball",
+                      "colors": [
+                        4673362,
+                        8439583,
+                        3948714
+                      ],
+                      "fade_colors": [
+                        1481884,
+                        13061821,
+                        16351261
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "firework_rocket",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "fireworks": {
+                  "flight_duration": 2,
+                  "explosions": [
+                    {
+                      "shape": "star",
+                      "colors": [
+                        4673362,
+                        11546150
+                      ],
+                      "has_trail": true
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "firework_rocket",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "fireworks": {
+                  "flight_duration": 1,
+                  "explosions": [
+                    {
+                      "shape": "star",
+                      "colors": [
+                        6192150,
+                        3847130,
+                        16701501
+                      ],
+                      "fade_colors": [
+                        3847130,
+                        16351261
+                      ],
+                      "has_trail": true,
+                      "has_twinkle": true
+                    },
+                    {
+                      "shape": "star",
+                      "colors": [
+                        10329495
+                      ],
+                      "has_twinkle": true
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "firework_rocket",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "fireworks": {
+                  "flight_duration": 1,
+                  "explosions": [
+                    {
+                      "shape": "small_ball",
+                      "colors": [
+                        3948714,
+                        8996536,
+                        15961002
+                      ],
+                      "has_twinkle": true
+                    },
+                    {
+                      "shape": "star",
+                      "colors": [
+                        6192150,
+                        16351261
+                      ],
+                      "has_twinkle": true
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "firework_rocket",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "fireworks": {
+                  "flight_duration": 1,
+                  "explosions": [
+                    {
+                      "shape": "burst",
+                      "colors": [
+                        16351261
+                      ],
+                      "has_trail": true
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "firework_rocket",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "fireworks": {
+                  "flight_duration": 1,
+                  "explosions": [
+                    {
+                      "shape": "small_ball",
+                      "colors": [
+                        11546150,
+                        8608370
+                      ],
+                      "fade_colors": [
+                        16351261
+                      ],
+                      "has_trail": true,
+                      "has_twinkle": true
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "firework_rocket",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "fireworks": {
+                  "flight_duration": 1,
+                  "explosions": [
+                    {
+                      "shape": "star",
+                      "colors": [
+                        16701501,
+                        3948714
+                      ],
+                      "fade_colors": [
+                        1481884,
+                        8996536,
+                        16351261
+                      ]
+                    },
+                    {
+                      "shape": "burst",
+                      "colors": [
+                        3847130
+                      ],
+                      "has_trail": true
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "firework_rocket",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "fireworks": {
+                  "flight_duration": 2,
+                  "explosions": [
+                    {
+                      "shape": "large_ball",
+                      "colors": [
+                        8439583,
+                        15790320,
+                        3847130
+                      ],
+                      "has_twinkle": true
+                    },
+                    {
+                      "shape": "creeper",
+                      "colors": [
+                        16351261
+                      ],
+                      "has_twinkle": true
+                    },
+                    {
+                      "shape": "burst",
+                      "colors": [
+                        15790320,
+                        16351261
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "firework_rocket",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "fireworks": {
+                  "flight_duration": 2,
+                  "explosions": [
+                    {
+                      "shape": "large_ball",
+                      "colors": [
+                        3948714,
+                        4673362,
+                        10329495
+                      ],
+                      "fade_colors": [
+                        6192150,
+                        13061821,
+                        8996536
+                      ],
+                      "has_twinkle": true
+                    },
+                    {
+                      "shape": "star",
+                      "colors": [
+                        8996536,
+                        16351261,
+                        15961002
+                      ],
+                      "fade_colors": [
+                        8608370
+                      ],
+                      "has_trail": true
+                    },
+                    {
+                      "shape": "burst",
+                      "colors": [
+                        10329495
+                      ],
+                      "has_trail": true
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

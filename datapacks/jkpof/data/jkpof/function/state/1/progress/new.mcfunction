@@ -38,12 +38,21 @@ execute if score #event_mode jkpof.int matches 6 run function jkpof:state/1/prog
 # 道具补给
 execute if score #event_mode jkpof.int matches 7 run function jkpof:state/1/progress/event/once/prop_supply
 
+# 天地封锁
+execute if score #event_mode jkpof.int matches 8 run function jkpof:state/1/progress/event/vertical_lock/show
+
+# 隐形涂层
+execute if score #event_mode jkpof.int matches 9 run function jkpof:state/1/progress/event/invisible_coating/show
+
+# 背叛之时
+execute if score #event_betrayal_hour.status jkpof.int matches 1 run function jkpof:state/1/progress/event/once/betrayal_hour/recover
+execute if score #event_mode jkpof.int matches 10 run function jkpof:state/1/progress/event/once/betrayal_hour/show
+
 # 持续时间
-execute if score #event_mode jkpof.int matches 1.. run scoreboard players set #event_time jkpof.int 100
 execute if score #event_mode jkpof.int matches 1.. run scoreboard players operation #event_type jkpof.int = #event_mode jkpof.int
 
 # 新阶段
-execute unless score #event_mode jkpof.int matches 0 run playsound block.note_block.bit block @a[scores={jkpof.state=2}, gamemode=survival] 0 1000000 0 10000000
+execute unless score #event_mode jkpof.int matches 0 run playsound block.note_block.bit block @a[scores={jkpof.state=2}] 0 1000000 0 10000000
 
 execute store result score #event_cur_count jkpof.int run data get storage jk:pof data.event.count
 execute if score #event_cur_count jkpof.int matches 0.. run function jkpof:state/1/progress/roll/start
