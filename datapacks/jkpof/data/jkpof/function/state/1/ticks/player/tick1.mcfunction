@@ -16,4 +16,10 @@ execute at @s[scores={jkpof.super_star=1..}] run function jkpof:state/1/special_
 
 # 当个创世神
 execute unless score @s[gamemode=creative] jkpof.creative matches 1.. run gamemode survival @s
-execute as @s[scores={jkpof.creative=1..}] run function jkpof:state/1/special_item/creative/global
+execute as @s[scores={jkpof.creative=1..999}] run function jkpof:state/1/special_item/creative/global
+
+# 死亡
+execute as @s[scores={jkpof.death=1..}] run function jkpof:state/1/hurt/sub/death/on
+
+# 离开游戏
+execute as @s[scores={jkpof.leavegame=1..}] run function jkpof:state/1/hurt/sub/death/leavegame

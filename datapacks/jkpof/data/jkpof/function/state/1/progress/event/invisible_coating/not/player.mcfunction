@@ -1,4 +1,12 @@
 summon item_display ~ ~ ~ {Tags: ["jkpof_invisile_recover"]}
+
+execute if items entity @s player.cursor * run function jkpof:state/1/progress/event/invisible_coating/not/slot {slot: 'player.cursor'}
+
+execute if items entity @s player.crafting.0 * run function jkpof:state/1/progress/event/invisible_coating/not/slot {slot: 'player.crafting.0'}
+execute if items entity @s player.crafting.1 * run function jkpof:state/1/progress/event/invisible_coating/not/slot {slot: 'player.crafting.1'}
+execute if items entity @s player.crafting.2 * run function jkpof:state/1/progress/event/invisible_coating/not/slot {slot: 'player.crafting.2'}
+execute if items entity @s player.crafting.3 * run function jkpof:state/1/progress/event/invisible_coating/not/slot {slot: 'player.crafting.3'}
+
 execute if items entity @s weapon.offhand * run function jkpof:state/1/progress/event/invisible_coating/not/slot {slot: 'weapon.offhand'}
 execute if items entity @s armor.head * run function jkpof:state/1/progress/event/invisible_coating/not/slot {slot: 'armor.head'}
 execute if items entity @s armor.chest * run function jkpof:state/1/progress/event/invisible_coating/not/slot {slot: 'armor.chest'}

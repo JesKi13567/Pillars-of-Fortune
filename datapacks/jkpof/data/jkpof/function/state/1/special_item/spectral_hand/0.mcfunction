@@ -1,48 +1,55 @@
-# 遍历整个物品栏
-data remove storage jk:pof data.spectral_hand.slot
+# 遍历背包
+data remove storage jk:pof data.spectral_hand
 
-execute if data entity @s Inventory[{Slot: 0b}] run data modify storage jk:pof data.spectral_hand.slot append value "container.0"
-execute if data entity @s Inventory[{Slot: 1b}] run data modify storage jk:pof data.spectral_hand.slot append value "container.1"
-execute if data entity @s Inventory[{Slot: 2b}] run data modify storage jk:pof data.spectral_hand.slot append value "container.2"
-execute if data entity @s Inventory[{Slot: 3b}] run data modify storage jk:pof data.spectral_hand.slot append value "container.3"
-execute if data entity @s Inventory[{Slot: 4b}] run data modify storage jk:pof data.spectral_hand.slot append value "container.4"
-execute if data entity @s Inventory[{Slot: 5b}] run data modify storage jk:pof data.spectral_hand.slot append value "container.5"
-execute if data entity @s Inventory[{Slot: 6b}] run data modify storage jk:pof data.spectral_hand.slot append value "container.6"
-execute if data entity @s Inventory[{Slot: 7b}] run data modify storage jk:pof data.spectral_hand.slot append value "container.7"
-execute if data entity @s Inventory[{Slot: 8b}] run data modify storage jk:pof data.spectral_hand.slot append value "container.8"
-execute if data entity @s Inventory[{Slot: 9b}] run data modify storage jk:pof data.spectral_hand.slot append value "container.9"
-execute if data entity @s Inventory[{Slot: 10b}] run data modify storage jk:pof data.spectral_hand.slot append value "container.10"
-execute if data entity @s Inventory[{Slot: 11b}] run data modify storage jk:pof data.spectral_hand.slot append value "container.11"
-execute if data entity @s Inventory[{Slot: 12b}] run data modify storage jk:pof data.spectral_hand.slot append value "container.12"
-execute if data entity @s Inventory[{Slot: 13b}] run data modify storage jk:pof data.spectral_hand.slot append value "container.13"
-execute if data entity @s Inventory[{Slot: 14b}] run data modify storage jk:pof data.spectral_hand.slot append value "container.14"
-execute if data entity @s Inventory[{Slot: 15b}] run data modify storage jk:pof data.spectral_hand.slot append value "container.15"
-execute if data entity @s Inventory[{Slot: 16b}] run data modify storage jk:pof data.spectral_hand.slot append value "container.16"
-execute if data entity @s Inventory[{Slot: 17b}] run data modify storage jk:pof data.spectral_hand.slot append value "container.17"
-execute if data entity @s Inventory[{Slot: 18b}] run data modify storage jk:pof data.spectral_hand.slot append value "container.18"
-execute if data entity @s Inventory[{Slot: 19b}] run data modify storage jk:pof data.spectral_hand.slot append value "container.19"
-execute if data entity @s Inventory[{Slot: 20b}] run data modify storage jk:pof data.spectral_hand.slot append value "container.20"
-execute if data entity @s Inventory[{Slot: 21b}] run data modify storage jk:pof data.spectral_hand.slot append value "container.21"
-execute if data entity @s Inventory[{Slot: 22b}] run data modify storage jk:pof data.spectral_hand.slot append value "container.22"
-execute if data entity @s Inventory[{Slot: 23b}] run data modify storage jk:pof data.spectral_hand.slot append value "container.23"
-execute if data entity @s Inventory[{Slot: 24b}] run data modify storage jk:pof data.spectral_hand.slot append value "container.24"
-execute if data entity @s Inventory[{Slot: 25b}] run data modify storage jk:pof data.spectral_hand.slot append value "container.25"
-execute if data entity @s Inventory[{Slot: 26b}] run data modify storage jk:pof data.spectral_hand.slot append value "container.26"
-execute if data entity @s Inventory[{Slot: 27b}] run data modify storage jk:pof data.spectral_hand.slot append value "container.27"
-execute if data entity @s Inventory[{Slot: 28b}] run data modify storage jk:pof data.spectral_hand.slot append value "container.28"
-execute if data entity @s Inventory[{Slot: 29b}] run data modify storage jk:pof data.spectral_hand.slot append value "container.29"
-execute if data entity @s Inventory[{Slot: 30b}] run data modify storage jk:pof data.spectral_hand.slot append value "container.30"
-execute if data entity @s Inventory[{Slot: 31b}] run data modify storage jk:pof data.spectral_hand.slot append value "container.31"
-execute if data entity @s Inventory[{Slot: 32b}] run data modify storage jk:pof data.spectral_hand.slot append value "container.32"
-execute if data entity @s Inventory[{Slot: 33b}] run data modify storage jk:pof data.spectral_hand.slot append value "container.33"
-execute if data entity @s Inventory[{Slot: 34b}] run data modify storage jk:pof data.spectral_hand.slot append value "container.34"
-execute if data entity @s Inventory[{Slot: 35b}] run data modify storage jk:pof data.spectral_hand.slot append value "container.35"
+execute if items entity @s player.cursor * run data modify storage jk:pof data.spectral_hand.slot append value 'player.cursor'
 
-execute if data entity @s equipment.offhand run data modify storage jk:pof data.spectral_hand.slot append value "weapon.offhand"
-execute if data entity @s equipment.head run data modify storage jk:pof data.spectral_hand.slot append value "armor.head"
-execute if data entity @s equipment.chest run data modify storage jk:pof data.spectral_hand.slot append value "armor.chest"
-execute if data entity @s equipment.legs run data modify storage jk:pof data.spectral_hand.slot append value "armor.legs"
-execute if data entity @s equipment.feet run data modify storage jk:pof data.spectral_hand.slot append value "armor.feet"
+execute if items entity @s player.crafting.0 * run data modify storage jk:pof data.spectral_hand.slot append value 'player.crafting.0'
+execute if items entity @s player.crafting.1 * run data modify storage jk:pof data.spectral_hand.slot append value 'player.crafting.1'
+execute if items entity @s player.crafting.2 * run data modify storage jk:pof data.spectral_hand.slot append value 'player.crafting.2'
+execute if items entity @s player.crafting.3 * run data modify storage jk:pof data.spectral_hand.slot append value 'player.crafting.3'
+
+execute if items entity @s weapon.offhand * run data modify storage jk:pof data.spectral_hand.slot append value 'weapon.offhand'
+execute if items entity @s armor.head * run data modify storage jk:pof data.spectral_hand.slot append value 'armor.head'
+execute if items entity @s armor.chest * run data modify storage jk:pof data.spectral_hand.slot append value 'armor.chest'
+execute if items entity @s armor.legs * run data modify storage jk:pof data.spectral_hand.slot append value 'armor.legs'
+execute if items entity @s armor.feet * run data modify storage jk:pof data.spectral_hand.slot append value 'armor.feet'
+
+execute if items entity @s container.0 * run data modify storage jk:pof data.spectral_hand.slot append value 'container.0'
+execute if items entity @s container.1 * run data modify storage jk:pof data.spectral_hand.slot append value 'container.1'
+execute if items entity @s container.2 * run data modify storage jk:pof data.spectral_hand.slot append value 'container.2'
+execute if items entity @s container.3 * run data modify storage jk:pof data.spectral_hand.slot append value 'container.3'
+execute if items entity @s container.4 * run data modify storage jk:pof data.spectral_hand.slot append value 'container.4'
+execute if items entity @s container.5 * run data modify storage jk:pof data.spectral_hand.slot append value 'container.5'
+execute if items entity @s container.6 * run data modify storage jk:pof data.spectral_hand.slot append value 'container.6'
+execute if items entity @s container.7 * run data modify storage jk:pof data.spectral_hand.slot append value 'container.7'
+execute if items entity @s container.8 * run data modify storage jk:pof data.spectral_hand.slot append value 'container.8'
+execute if items entity @s container.9 * run data modify storage jk:pof data.spectral_hand.slot append value 'container.9'
+execute if items entity @s container.10 * run data modify storage jk:pof data.spectral_hand.slot append value 'container.10'
+execute if items entity @s container.11 * run data modify storage jk:pof data.spectral_hand.slot append value 'container.11'
+execute if items entity @s container.12 * run data modify storage jk:pof data.spectral_hand.slot append value 'container.12'
+execute if items entity @s container.13 * run data modify storage jk:pof data.spectral_hand.slot append value 'container.13'
+execute if items entity @s container.14 * run data modify storage jk:pof data.spectral_hand.slot append value 'container.14'
+execute if items entity @s container.15 * run data modify storage jk:pof data.spectral_hand.slot append value 'container.15'
+execute if items entity @s container.16 * run data modify storage jk:pof data.spectral_hand.slot append value 'container.16'
+execute if items entity @s container.17 * run data modify storage jk:pof data.spectral_hand.slot append value 'container.17'
+execute if items entity @s container.18 * run data modify storage jk:pof data.spectral_hand.slot append value 'container.18'
+execute if items entity @s container.19 * run data modify storage jk:pof data.spectral_hand.slot append value 'container.19'
+execute if items entity @s container.20 * run data modify storage jk:pof data.spectral_hand.slot append value 'container.20'
+execute if items entity @s container.21 * run data modify storage jk:pof data.spectral_hand.slot append value 'container.21'
+execute if items entity @s container.22 * run data modify storage jk:pof data.spectral_hand.slot append value 'container.22'
+execute if items entity @s container.23 * run data modify storage jk:pof data.spectral_hand.slot append value 'container.23'
+execute if items entity @s container.24 * run data modify storage jk:pof data.spectral_hand.slot append value 'container.24'
+execute if items entity @s container.25 * run data modify storage jk:pof data.spectral_hand.slot append value 'container.25'
+execute if items entity @s container.26 * run data modify storage jk:pof data.spectral_hand.slot append value 'container.26'
+execute if items entity @s container.27 * run data modify storage jk:pof data.spectral_hand.slot append value 'container.27'
+execute if items entity @s container.28 * run data modify storage jk:pof data.spectral_hand.slot append value 'container.28'
+execute if items entity @s container.29 * run data modify storage jk:pof data.spectral_hand.slot append value 'container.29'
+execute if items entity @s container.30 * run data modify storage jk:pof data.spectral_hand.slot append value 'container.30'
+execute if items entity @s container.31 * run data modify storage jk:pof data.spectral_hand.slot append value 'container.31'
+execute if items entity @s container.32 * run data modify storage jk:pof data.spectral_hand.slot append value 'container.32'
+execute if items entity @s container.33 * run data modify storage jk:pof data.spectral_hand.slot append value 'container.33'
+execute if items entity @s container.34 * run data modify storage jk:pof data.spectral_hand.slot append value 'container.34'
+execute if items entity @s container.35 * run data modify storage jk:pof data.spectral_hand.slot append value 'container.35'
 
 execute store result score #spectral_hand.slot jkpof.int run data get storage jk:pof data.spectral_hand.slot
 execute store result storage jk:pof data.spectral_hand.random_max int 1 run scoreboard players remove #spectral_hand.slot jkpof.int 1

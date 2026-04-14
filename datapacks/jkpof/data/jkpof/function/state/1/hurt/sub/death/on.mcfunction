@@ -3,9 +3,6 @@ scoreboard players reset @s jkpof.death
 gamemode spectator @s
 execute if score #event_broom jkpof.int matches 1 run scoreboard players add #event_broom.time jkpof.int 30
 
-# 死前放下的刷怪蛋
-function jkpof:state/1/special_item/spawn_egg/player
-
 # 获取完成击杀的玩家
 scoreboard players operation @a jkpof.damage.temp = @s jkpof.damage.source.real
 execute as @a run scoreboard players operation @s jkpof.damage.temp -= @s jkpof.id

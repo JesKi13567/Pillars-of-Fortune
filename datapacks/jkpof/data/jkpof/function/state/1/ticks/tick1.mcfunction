@@ -1,14 +1,14 @@
-# 变成旁观
-execute as @a[gamemode=!spectator] run function jkpof:state/1/spectator/tick1
+# 玩家
+execute as @a[scores={jkpof.state=2}] run function jkpof:state/1/ticks/player/tick1
+
+# 观众
+execute unless score @s jkpof.id matches -1.. run function jkpof:state/1/spectator
 
 # 事件
 execute if score #event_ctrl_real jkpof.int matches 1 run function jkpof:state/1/progress/event/tick1
 
-# 检查无敌星玩家
+# 无敌星音乐
 execute if entity @a[limit=1, scores={jkpof.state=2}] run function jkpof:state/1/special_item/super_star/song
-
-# 玩家
-execute as @a[scores={jkpof.state=2}] run function jkpof:state/1/ticks/player/tick1
 
 # 可堆叠物品
 execute as @e[type=item, tag=!jkpof] run function jkpof:state/1/special_item/stack

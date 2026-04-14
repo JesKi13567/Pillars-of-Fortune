@@ -140,6 +140,7 @@ kill @e[type=marker, tag=!jkpof_player_spawn]
 kill @e[type=item_display, tag=jkpof_null_bomb_show]
 scoreboard players operation #event_ctrl_real jkpof.int = #event_ctrl jkpof.int
 execute if score #event_ctrl_real jkpof.int matches 1 run bossbar set jkpof:progress visible true
+execute if score #ctrl_bossbar jkpof.int matches 0 run bossbar set jkpof:progress visible false
 bossbar set jkpof:progress max 60
 tellraw @a [{storage: "jk:pof", interpret: true, nbt: "txt.POF", color: "yellow"}, {storage: "jk:pof", interpret: true, nbt: "txt.game.start.ed", color: "green"}]
 execute as @a run function jkpof:state/0/player/clear
@@ -190,7 +191,17 @@ function jkpof:state/0/interaction/ctrl/ground/map/set
 execute if score #ctrl_map_real jkpof.int matches 0 run function jkpof:state/1/fill/map/not
 execute if score #ctrl_map_real jkpof.int matches 1.. run function jkpof:state/1/fill/map/by with storage jk:pof data.map
 
-# 特殊模式
-execute if score #ctrl_kid_mode jkpof.int matches 1 run tellraw @a [{storage: "jk:pof", interpret: true, nbt: "txt.lobby.const.settings.kid_mode", color: "green"}, {storage: "jk:pof", interpret: true, nbt: "txt.char.colon"}, {storage: "jk:pof", interpret: true, nbt: "txt.lobby.bool.enabled.common", color: "yellow"}]
-execute if score #ctrl_upside_down jkpof.int matches 1 run tellraw @a [{storage: "jk:pof", interpret: true, nbt: "txt.lobby.const.settings.upside_down", color: "green"}, {storage: "jk:pof", interpret: true, nbt: "txt.char.colon"}, {storage: "jk:pof", interpret: true, nbt: "txt.lobby.bool.enabled.common", color: "yellow"}]
+# 特殊规则
+scoreboard players set #special_rules.count jkpof.int 0
+scoreboard players operation #special_rules.count jkpof.int += #ctrl_kid_mode jkpof.int
+scoreboard players operation #special_rules.count jkpof.int += #ctrl_upside_down jkpof.int
+scoreboard players operation #special_rules.count jkpof.int += #ctrl_forgiving_void jkpof.int
+scoreboard players operation #special_rules.count jkpof.int += #ctrl_double_health jkpof.int
+scoreboard players operation #special_rules.count jkpof.int += #ctrl_init_tool jkpof.int
+execute if score #special_rules.count jkpof.int matches 1.. run tellraw @a [{storage: "jk:pof", interpret: true, nbt: "txt.lobby.const.settings.special_rules.lore", color: "yellow"}]
+execute if score #ctrl_kid_mode jkpof.int matches 1 run tellraw @a [{storage: "jk:pof", interpret: true, nbt: "txt.lobby.const.settings.special_rules.kid_mode.name", color: "green"}]
+execute if score #ctrl_upside_down jkpof.int matches 1 run tellraw @a [{storage: "jk:pof", interpret: true, nbt: "txt.lobby.const.settings.special_rules.upside_down.name", color: "green"}]
 execute if score #ctrl_upside_down jkpof.int matches 1 as @a[scores={jkpof.state=2}] run loot give @s loot jkpof:item/prop/gravity_device
+execute if score #ctrl_forgiving_void jkpof.int matches 1 run tellraw @a [{storage: "jk:pof", interpret: true, nbt: "txt.lobby.const.settings.special_rules.forgiving_void.name", color: "green"}]
+execute if score #ctrl_double_health jkpof.int matches 1 run tellraw @a [{storage: "jk:pof", interpret: true, nbt: "txt.lobby.const.settings.special_rules.double_health.name", color: "green"}]
+execute if score #ctrl_init_tool jkpof.int matches 1 run tellraw @a [{storage: "jk:pof", interpret: true, nbt: "txt.lobby.const.settings.special_rules.init_tool.name", color: "green"}]

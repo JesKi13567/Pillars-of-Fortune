@@ -12,6 +12,7 @@ xp set @s 0 points
 attribute @s scale base reset
 attribute @s knockback_resistance base reset
 attribute @s gravity base reset
+attribute @s max_health base reset
 
 function jkpof:state/1/hurt/sub/forgive
 

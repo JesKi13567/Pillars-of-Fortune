@@ -386,7 +386,7 @@
                                     ]
                                 },
                                 "container_loot": {
-                                    "loot_table": "jkpof:loot/chest"
+                                    "loot_table": "jkpof:chest"
                                 }
                             }
                         },
@@ -802,7 +802,8 @@
                                 "consumable": {
                                     "consume_seconds": 1000000,
                                     "animation": "none"
-                                }
+                                },
+                                "enchantment_glint_override": true
                             }
                         },
                         {

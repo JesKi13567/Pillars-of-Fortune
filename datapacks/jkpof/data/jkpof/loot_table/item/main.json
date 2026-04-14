@@ -73,6 +73,11 @@
                 {
                     "weight": 1,
                     "type": "loot_table",
+                    "value": "jkpof:item/shears"
+                },
+                {
+                    "weight": 1,
+                    "type": "loot_table",
                     "value": "minecraft:entities/player"
                 },
                 {
@@ -152,57 +157,6 @@
                                     "translate": "entity.minecraft.creeper",
                                     "color": "white"
                                 }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "weight": 1,
-                    "type": "item",
-                    "name": "shears",
-                    "functions": [
-                        {
-                            "function": "set_components",
-                            "components": {
-                                "tool": {
-                                    "rules": [
-                                        {
-                                            "blocks": "#jkpof:mineable",
-                                            "speed": 10,
-                                            "correct_for_drops": true
-                                        }
-                                    ]
-                                },
-                                "enchantment_glint_override": true
-                            }
-                        },
-                        {
-                            "function": "set_name",
-                            "entity": "this",
-                            "name": [
-                                {
-                                    "storage": "jk:pof",
-                                    "interpret": true,
-                                    "nbt": "txt.lobby.item.shears.name",
-                                    "color": "light_purple",
-                                    "italic": false
-                                }
-                            ]
-                        },
-                        {
-                            "function": "set_lore",
-                            "entity": "this",
-                            "mode": "replace_all",
-                            "lore": [
-                                [
-                                    {
-                                        "storage": "jk:pof",
-                                        "interpret": true,
-                                        "nbt": "txt.lobby.item.shears.lore",
-                                        "color": "gray",
-                                        "italic": false
-                                    }
-                                ]
                             ]
                         }
                     ]

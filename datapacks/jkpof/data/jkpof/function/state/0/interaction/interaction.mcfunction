@@ -2,8 +2,7 @@ function jkpof:state/0/interaction/same
 
 execute as @s[tag=jkpof_ctrl_pillar_count] run function jkpof:state/0/interaction/ctrl/pillar/count/add
 execute as @s[tag=jkpof_ctrl_pillar_height] run function jkpof:state/0/interaction/ctrl/pillar/height/add
-execute as @s[tag=jkpof_ctrl_map] run function jkpof:state/0/interaction/ctrl/ground/map/add
-execute as @s[tag=jkpof_ctrl_map_custom] run function jkpof:state/0/interaction/ctrl/ground/map/custom
+execute if score #ctrl_map jkpof.int matches 11..12 as @s[tag=jkpof_ctrl_map_custom] run function jkpof:state/0/interaction/ctrl/ground/map/custom
 
 execute as @s[tag=jkpof_ctrl_time] run function jkpof:state/0/interaction/ctrl/time/change
 
