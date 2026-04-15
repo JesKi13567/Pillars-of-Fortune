@@ -7,15 +7,6 @@ execute if score #ctrl_item_count_order jkpof.int matches 0..2 run scoreboard pl
 ## 道具
 scoreboard players set #is_prop jkpof.int 0
 
-# 道具获取概率
-execute if score #ctrl_item_prop_chance jkpof.int matches 0 store result score #is_prop.roll jkpof.int run random value 1..1247
-execute if score #ctrl_item_prop_chance jkpof.int matches 0 if score #is_prop.roll jkpof.int matches 1..21 run scoreboard players set #is_prop jkpof.int 1
-execute if score #ctrl_item_prop_chance jkpof.int matches 1 if predicate {condition: "random_chance", chance: 0.01} run scoreboard players set #is_prop jkpof.int 1
-execute if score #ctrl_item_prop_chance jkpof.int matches 2 if predicate {condition: "random_chance", chance: 0.02} run scoreboard players set #is_prop jkpof.int 1
-execute if score #ctrl_item_prop_chance jkpof.int matches 3 if predicate {condition: "random_chance", chance: 0.03} run scoreboard players set #is_prop jkpof.int 1
-execute if score #ctrl_item_prop_chance jkpof.int matches 4 if predicate {condition: "random_chance", chance: 0.04} run scoreboard players set #is_prop jkpof.int 1
-execute if score #ctrl_item_prop_chance jkpof.int matches 5 if predicate {condition: "random_chance", chance: 0.05} run scoreboard players set #is_prop jkpof.int 1
-
 # 道具补给事件
 scoreboard players set #event_prop_supply.chance.prop jkpof.int 0
 execute if score #event_prop_supply.count.prop jkpof.int matches 1.. store result score #event_prop_supply.chance.prop jkpof.int run random value 0..9

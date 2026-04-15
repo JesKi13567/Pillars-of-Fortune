@@ -2,7 +2,7 @@
 execute as @a[scores={jkpof.state=2}] run function jkpof:state/1/ticks/player/tick1
 
 # 观众
-execute unless score @s jkpof.id matches -1.. run function jkpof:state/1/spectator
+execute as @a unless score @s jkpof.state matches 2.. run function jkpof:state/1/spectator
 
 # 事件
 execute if score #event_ctrl_real jkpof.int matches 1 run function jkpof:state/1/progress/event/tick1

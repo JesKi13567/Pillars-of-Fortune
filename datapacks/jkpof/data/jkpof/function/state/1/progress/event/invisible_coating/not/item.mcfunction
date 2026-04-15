@@ -1,8 +1,8 @@
 # 普通物品
-$data remove entity $(entity) item.components."minecraft:item_model"
+$data remove entity $(entity) $(i)tem.components."minecraft:item_model"
 
 # 盔甲
-$execute if items entity $(entity) container.0 #enchantable/armor run data remove entity $(entity) item.components."minecraft:equippable"
+$execute if items entity $(entity) container.0 #enchantable/armor run data remove entity $(entity) $(i)tem.components."minecraft:equippable"
 
 # 道具
 $execute if items entity $(entity) container.0 bat_spawn_egg[custom_data={jkpof_model: "end_crystal"}] run item modify entity $(entity) container.0 {function: "set_components", components: {item_model: "end_crystal"}}

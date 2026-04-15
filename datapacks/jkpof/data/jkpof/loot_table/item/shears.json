@@ -30,7 +30,7 @@
                                     "storage": "jk:pof",
                                     "interpret": true,
                                     "nbt": "txt.lobby.item.shears.name",
-                                    "color": "light_purple",
+                                    "color": "aqua",
                                     "italic": false
                                 }
                             ]

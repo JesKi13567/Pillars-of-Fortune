@@ -118,7 +118,7 @@ The language can be switched near the lobby spawn point \(has hint in initial\),
 |快速防御塔|放下后会自动快速建造一座防御塔。|
 |自燃TNT|3 秒后爆炸。|
 |囚笼|用两层玻璃把玩家包裹起来。|
-|虚空护符|在落入虚空时把你送回来。|
+|虚空护符|在落入下虚空时把你送回来。|
 |重力装置|永久地颠倒自己的重力方向。|
 |当个创世神|获得 3 秒创造模式。处于创造模式时，此道具会被清除。不建议使用已保存的快捷栏。|
 
@@ -241,7 +241,7 @@ The language can be switched near the lobby spawn point \(has hint in initial\),
 |快速防禦塔|放下後會自動快速建造一座防禦塔。|
 |自燃TNT|3 秒後爆炸。|
 |牢籠|用兩層玻璃把玩家包裹起來。|
-|虛空護符|在落入虛空時把你送回來。|
+|虛空護符|在落入下虛空時把你送回來。|
 |重力裝置|永久地顛倒自己的重力方向。|
 |當個創世神|獲得 3 秒創造模式。處於創造模式時，此道具會被清除。不建議使用已儲存的快捷欄。|
 
@@ -364,7 +364,7 @@ Items are also displayed in the lobby.
 |Quick Defend Tower|It will build a tower soon after you placed.|
 |Self-Igniting TNT|Explode in 3 seconds.|
 |Cage|Surrounds the player with two layers of Glass.|
-|Void Charm|When you fall into void, send you back.|
+|Void Charm|When you fall into lower void, send you back.|
 |Gravity Device|Permanently reverse your gravity.|
 |Creatived!|Gain Creative Mode for 3s. This prop will be cleared in Creative Mode. It's not recommended to use Saved Hotbars.|
 
