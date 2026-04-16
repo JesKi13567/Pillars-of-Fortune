@@ -83,7 +83,7 @@ The language can be switched near the lobby spawn point \(has hint in initial\),
 |月球漫步|所有玩家获得 跳跃提升 + 缓降 效果。|
 |飞鸡来袭|随机选取 2 名玩家确定一条水平投影直线，在限高屏障处生成一只鸡，其沿此直线飞行途中会定时投放被激活的TNT。|
 |连锁换位|所有玩家随机交换位置，也可能不会。|
-|道具补给|接下来的 3 次物品给予将随机触发以下情况之一：1. 均有 60% 概率为道具。(80%) 2. 额外附赠随机附魔书。(10%) 3. 额外附赠随机药水。(10%)|
+|道具补给|接下来的 3 次物品给予将随机触发以下情况：1. 均有 60% 概率为道具。(80%) 2. 额外附赠随机附魔书。(10%) 3. 额外附赠随机药水。(10%)|
 |天地封锁|每位玩家上下层级铺满屏障，持续 8 秒。|
 |隐形涂层|所有实体隐形，玩家背包物品也不可见，持续 10 秒。|
 |背叛之时|随机选中一名玩家转为全员敌对状态，其余玩家结成同一队伍，效果持续至下个事件触发时重置。|
@@ -206,7 +206,7 @@ The language can be switched near the lobby spawn point \(has hint in initial\),
 |月球漫步|所有玩家獲得 跳躍提升 + 緩降 效果。|
 |飛雞來襲|隨機選擇 2 名玩家連成水平投影直線，在限高屏障點生成一隻雞，其在沿此直線飛行途中會定時投放點燃的 TNT。|
 |連鎖換位|所有玩家可能隨機交換位置，也可能不換。|
-|道具補給|接下來的 3 次給予物品將隨機觸發以下情況之一：1. 均有 60% 概率為道具。(80%) 2. 額外附贈隨機附魔書。(10%) 3. 額外附贈隨機藥水。(10%) |
+|道具補給|接下來的 3 次給予物品將隨機觸發以下情況：1. 均有 60% 概率為道具。(80%) 2. 額外附贈隨機附魔書。(10%) 3. 額外附贈隨機藥水。(10%) |
 |天地封鎖|每位玩家上下層級鋪滿屏障，持續 8 秒。|
 |隱形塗層|所有實體隱形，玩家背包物品也不可見，持續 10 秒。|
 |背叛之時|隨機選中一名玩家轉為全員敵對狀態，其餘玩家結成同一隊伍，效果持續至下個事件觸發時重置。|
@@ -329,7 +329,7 @@ Events are displayed in the lobby, and players can toggle their activation statu
 |Moon Walk|All players will receive Jump Boost + Slow Falling effects.|
 |Bomb Chicken|Randomly select 2 players to form a horizontal projection line, then summon a Chicken at height-limit barrier. As it flies along this line, it will drop Primed TNT at regular intervals.|
 |Chain Swap|All players' positions will be randomly swapped, or not.|
-|Prop Supply|The next 3 items players receive will be one of the following: 1. 60% chance of being props.(80%) 2. Plus a random Enchanted Book.(10%) 3. Plus a random Potion.(10%) |
+|Prop Supply|The next 3 items players receive will be randomly chosen from the following: 1. 60% chance of being props. (80%) 2. Plus a random Enchanted Book. (10%) 3. Plus a random Potion. (10%) |
 |Vertical Lock|Fill the layers above and below each player with Barrier, lasting 8s.|
 |Invisible Coating|All entities & inventory items are invisible, lasting 10s.|
 |Betrayal Hour|One random player becomes fully hostile to all others, while the remaining players are auto-allied.  Status resets on the next event.|

@@ -64,6 +64,7 @@ scoreboard players reset * jkpof.spawn_egg.pig
 scoreboard players reset * jkpof.spawn_egg.frog
 
 scoreboard players reset * jkpof.spawn_egg.bat
+scoreboard players reset * jkpof.spawn_egg.tadpole
 
 scoreboard players reset * jkpof.spawn_egg.bee
 scoreboard players reset * jkpof.spawn_egg.bogged
