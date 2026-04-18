@@ -31,7 +31,7 @@ execute as @s[tag=jkpof_ctrl_double_health] run function jkpof:state/0/interacti
 execute as @s[tag=jkpof_ctrl_init_tool] run function jkpof:state/0/interaction/ctrl/switcher {id: 'init_tool', item: 'shears'}
 execute as @s[tag=jkpof_ctrl_init_tool] if score #ctrl_init_tool jkpof.int matches 1 run tellraw @a ["", {storage: "jk:pof", interpret: true, nbt: "txt.POF", color: "yellow"}, {storage: "jk:pof", interpret: true, nbt: "txt.lobby.const.settings.special_rules.init_tool.name", color: "green"}, {storage: "jk:pof", interpret: true, nbt: "txt.char.colon"}, {storage: "jk:pof", interpret: true, nbt: "txt.lobby.const.settings.special_rules.global.player_get_on_spawn.p1"}, {storage: "jk:pof", interpret: true, nbt: "txt.lobby.item.shears.name", color: "aqua"}, {text: "*1", color: "aqua"}, {storage: "jk:pof", interpret: true, nbt: "txt.lobby.const.settings.special_rules.global.player_get_on_spawn.p2"}, {storage: "jk:pof", interpret: true, nbt: "txt.char.dot"}]
 
-execute as @s[tag=jkpof_ctrl_lang] run function jkpof:state/0/interaction/ctrl/lang
+execute as @s[tag=jkpof_ctrl_lang] run function jkpof:state/0/interaction/ctrl/lang/0
 
 execute as @s[tag=jkpof_display_lobby_item] run function jkpof:state/0/interaction/lobby/item/global
 execute as @s[tag=jkpof_display_event_order] run function jkpof:state/0/interaction/lobby/event/show

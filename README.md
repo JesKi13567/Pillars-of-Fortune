@@ -135,6 +135,8 @@ The language can be switched near the lobby spawn point \(has hint in initial\),
 |`/function jkpof:test/next_event`|直接触发当前事件。|
 
 ## zh_tw
+- 注：此版本繁體中文暫未校對。
+
 ### 目錄
 1. [介紹](#介紹)
 
