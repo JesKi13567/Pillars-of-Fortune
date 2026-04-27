@@ -1,5 +1,5 @@
 # 幸运之柱 JK's Pillars of Fortune
-## v1.3 for MC26.1.x
+## v1.3 for MC1.21.11
 - [简体中文](#zh_cn)
 - [繁體中文](#zh_tw)
 - [English](#en_us)

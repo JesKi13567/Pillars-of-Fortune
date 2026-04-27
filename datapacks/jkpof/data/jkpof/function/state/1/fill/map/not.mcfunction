@@ -26,7 +26,7 @@ execute if score #ctrl_upside_down jkpof.int matches 1 if score #ctrl_ground_typ
 # 柱子
 execute if score #ctrl_pillar_type jkpof.int matches 0 if score #ctrl_upside_down jkpof.int matches 0 as @e[type=marker, tag=jkpof_player_spawn] at @s run function jkpof:state/1/fill/random {tar: '#pillar', x1: '~', y1: '~-2', z1: '~', x2: '~', y2: '1', z2: '~'}
 execute if score #ctrl_pillar_type jkpof.int matches 0 if score #ctrl_upside_down jkpof.int matches 1 as @e[type=marker, tag=jkpof_player_spawn] at @s run function jkpof:state/1/fill/random {tar: '#pillar', x1: '~', y1: '~3', z1: '~', x2: '~', y2: '49', z2: '~'}
-execute if score #ctrl_pillar_type jkpof.int matches 1 store result score #pillar jkpof.int run random value 1..1164
+execute if score #ctrl_pillar_type jkpof.int matches 1 store result score #pillar jkpof.int run random value 1..1163
 execute if score #ctrl_pillar_type jkpof.int matches 1 if score #ctrl_upside_down jkpof.int matches 0 at @e[type=marker, tag=jkpof_player_spawn] run function jkpof:state/1/fill/const {tar: '#pillar', x1: '~', y1: '~-2', z1: '~', x2: '~', y2: '1', z2: '~'}
 execute if score #ctrl_pillar_type jkpof.int matches 1 if score #ctrl_upside_down jkpof.int matches 1 at @e[type=marker, tag=jkpof_player_spawn] run function jkpof:state/1/fill/const {tar: '#pillar', x1: '~', y1: '~3', z1: '~', x2: '~', y2: '49', z2: '~'}
 execute if score #ctrl_pillar_type jkpof.int matches 3 if score #ctrl_upside_down jkpof.int matches 0 as @e[type=marker, tag=jkpof_player_spawn] at @s run fill ~ ~-2 ~ ~ 1 ~ air strict
