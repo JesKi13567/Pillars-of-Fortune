@@ -1,5 +1,3 @@
-summon item_display ~ ~ ~ {Tags: ["jkpof_invisile_recover"]}
-
 execute if items entity @s player.cursor * run function jkpof:state/1/progress/event/invisible_coating/not/slot {slot: 'player.cursor'}
 
 execute if items entity @s player.crafting.0 * run function jkpof:state/1/progress/event/invisible_coating/not/slot {slot: 'player.crafting.0'}

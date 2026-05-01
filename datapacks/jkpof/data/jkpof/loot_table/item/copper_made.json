@@ -7,12 +7,6 @@
                 "target": "this",
                 "score": "jkpof.item.count"
             }
-        },
-        {
-            "function": "set_components",
-            "components": {
-                "max_stack_size": 64
-            }
         }
     ],
     "pools": [
@@ -22,7 +16,7 @@
                 {
                     "type": "tag",
                     "expand": true,
-                    "name": "jkpof:give/64/common"
+                    "name": "jkpof:give/copper_made"
                 }
             ]
         }

@@ -1,0 +1,72 @@
+{
+    "functions": [
+        {
+            "function": "set_count",
+            "count": {
+                "type": "score",
+                "target": "this",
+                "score": "jkpof.item.count"
+            }
+        },
+        {
+            "function": "set_components",
+            "components": {
+                "max_stack_size": 64
+            }
+        }
+    ],
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "tag",
+                    "expand": true,
+                    "name": "jkpof:give/64/entity_armor"
+                },
+                {
+                    "type": "tag",
+                    "expand": true,
+                    "name": "jkpof:give/64/signs"
+                },
+                {
+                    "type": "tag",
+                    "expand": true,
+                    "name": "banners"
+                },
+                {
+                    "type": "tag",
+                    "expand": true,
+                    "name": "harnesses"
+                },
+                {
+                    "type": "tag",
+                    "expand": true,
+                    "name": "loom_patterns"
+                },
+                {
+                    "type": "loot_table",
+                    "value": "jkpof:item/64/music_disc"
+                },
+                {
+                    "type": "loot_table",
+                    "value": "jkpof:item/64/enchanted_book"
+                },
+                {
+                    "type": "loot_table",
+                    "value": "jkpof:item/64/potion"
+                },
+                {
+                    "type": "item",
+                    "name": "goat_horn",
+                    "functions": [
+                        {
+                            "function": "set_instrument",
+                            "options": "#goat_horns"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

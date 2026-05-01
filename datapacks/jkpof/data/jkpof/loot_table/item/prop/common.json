@@ -18,6 +18,10 @@
                     "value": "jkpof:item/prop/gravity_device"
                 },
                 {
+                    "type": "loot_table",
+                    "value": "jkpof:item/prop/chest"
+                },
+                {
                     "type": "item",
                     "name": "fire_charge",
                     "functions": [
@@ -365,54 +369,6 @@
                                         "storage": "jk:pof",
                                         "interpret": true,
                                         "nbt": "txt.lobby.item.ender_eye.lore",
-                                        "color": "gray",
-                                        "italic": false
-                                    }
-                                ]
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "type": "item",
-                    "name": "chest",
-                    "functions": [
-                        {
-                            "function": "set_components",
-                            "components": {
-                                "tooltip_display": {
-                                    "hidden_components": [
-                                        "container_loot"
-                                    ]
-                                },
-                                "container_loot": {
-                                    "loot_table": "jkpof:chest"
-                                }
-                            }
-                        },
-                        {
-                            "function": "set_name",
-                            "entity": "this",
-                            "name": [
-                                {
-                                    "storage": "jk:pof",
-                                    "interpret": true,
-                                    "nbt": "txt.lobby.item.loot_chest.name",
-                                    "color": "yellow",
-                                    "italic": false
-                                }
-                            ]
-                        },
-                        {
-                            "function": "set_lore",
-                            "entity": "this",
-                            "mode": "replace_all",
-                            "lore": [
-                                [
-                                    {
-                                        "storage": "jk:pof",
-                                        "interpret": true,
-                                        "nbt": "txt.lobby.item.loot_chest.lore",
                                         "color": "gray",
                                         "italic": false
                                     }

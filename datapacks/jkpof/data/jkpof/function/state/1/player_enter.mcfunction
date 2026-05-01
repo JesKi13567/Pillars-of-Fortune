@@ -15,3 +15,4 @@ execute if score #ctrl_night_vision jkpof.int matches 1 run effect give @s night
 execute if score #ctrl_kid_mode jkpof.int matches 1 run attribute @s scale base set 0.5
 execute if score #ctrl_double_health jkpof.int matches 1 run attribute @s max_health base set 40
 execute if score #ctrl_init_tool jkpof.int matches 1 run loot give @s loot jkpof:item/shears
+execute if score #ctrl_bonus_chest jkpof.int matches 1 run loot give @s loot jkpof:item/prop/chest

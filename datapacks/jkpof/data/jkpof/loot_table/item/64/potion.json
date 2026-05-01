@@ -4,7 +4,6 @@
             "rolls": 1,
             "entries": [
                 {
-                    "weight": 1,
                     "type": "item",
                     "name": "potion",
                     "functions": [
@@ -15,7 +14,6 @@
                     ]
                 },
                 {
-                    "weight": 1,
                     "type": "item",
                     "name": "splash_potion",
                     "functions": [
@@ -26,7 +24,6 @@
                     ]
                 },
                 {
-                    "weight": 1,
                     "type": "item",
                     "name": "lingering_potion",
                     "functions": [

@@ -14,74 +14,47 @@
             "rolls": 1,
             "entries": [
                 {
-                    "weight": 1059,
-                    "type": "tag",
-                    "expand": true,
-                    "name": "jkpof:give/common"
-                },
-                {
-                    "weight": 60,
-                    "type": "tag",
-                    "expand": true,
-                    "name": "jkpof:give/copper_made"
-                },
-                {
-                    "weight": 1,
                     "type": "tag",
                     "expand": true,
                     "name": "jkpof:give/coral"
                 },
                 {
-                    "weight": 1,
                     "type": "tag",
                     "expand": true,
                     "name": "jkpof:give/pottery_sherd"
                 },
                 {
-                    "weight": 1,
                     "type": "tag",
                     "expand": true,
                     "name": "jkpof:give/smithing_template"
                 },
                 {
-                    "weight": 1,
                     "type": "tag",
                     "expand": true,
                     "name": "bundles"
                 },
                 {
-                    "weight": 1,
                     "type": "tag",
                     "expand": true,
                     "name": "candles"
                 },
                 {
-                    "weight": 93,
-                    "type": "loot_table",
-                    "value": "jkpof:item/64/common"
-                },
-                {
-                    "weight": 1,
                     "type": "loot_table",
                     "value": "jkpof:item/arrow"
                 },
                 {
-                    "weight": 1,
                     "type": "loot_table",
                     "value": "jkpof:item/firework_rocket"
                 },
                 {
-                    "weight": 1,
                     "type": "loot_table",
                     "value": "jkpof:item/shears"
                 },
                 {
-                    "weight": 1,
                     "type": "loot_table",
                     "value": "minecraft:entities/player"
                 },
                 {
-                    "weight": 1,
                     "type": "item",
                     "name": "bat_spawn_egg",
                     "functions": [
@@ -97,7 +70,6 @@
                     ]
                 },
                 {
-                    "weight": 1,
                     "type": "item",
                     "name": "tadpole_spawn_egg",
                     "functions": [
@@ -113,7 +85,6 @@
                     ]
                 },
                 {
-                    "weight": 1,
                     "type": "item",
                     "name": "ender_dragon_spawn_egg",
                     "functions": [
@@ -129,7 +100,6 @@
                     ]
                 },
                 {
-                    "weight": 1,
                     "type": "item",
                     "name": "creeper_spawn_egg",
                     "functions": [
@@ -162,7 +132,6 @@
                     ]
                 },
                 {
-                    "weight": 1,
                     "type": "item",
                     "name": "beacon",
                     "functions": [
@@ -198,6 +167,68 @@
                                         "nbt": "txt.lobby.item.player_head.p4"
                                     }
                                 ]
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "poisonous_potato",
+                    "functions": [
+                        {
+                            "function": "set_components",
+                            "components": {
+                                "food": {
+                                    "can_always_eat": true,
+                                    "nutrition": 2,
+                                    "saturation": 4.8
+                                },
+                                "consumable": {
+                                    "on_consume_effects": [
+                                        {
+                                            "type": "apply_effects",
+                                            "effects": [
+                                                {
+                                                    "id": "absorption",
+                                                    "amplifier": 3,
+                                                    "duration": 2400
+                                                },
+                                                {
+                                                    "id": "poison",
+                                                    "amplifier": 7,
+                                                    "duration": 400
+                                                },
+                                                {
+                                                    "id": "unluck",
+                                                    "amplifier": 4,
+                                                    "duration": 6000
+                                                },
+                                                {
+                                                    "id": "luck",
+                                                    "amplifier": 4,
+                                                    "duration": 6000
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                "enchantment_glint_override": true
+                            }
+                        },
+                        {
+                            "function": "set_name",
+                            "entity": "this",
+                            "name": [
+                                {
+                                    "storage": "jk:pof",
+                                    "interpret": true,
+                                    "nbt": "txt.lobby.item.global.enchanted_golden",
+                                    "color": "aqua",
+                                    "italic": false
+                                },
+                                {
+                                    "translate": "item.minecraft.poisonous_potato"
+                                }
                             ]
                         }
                     ]

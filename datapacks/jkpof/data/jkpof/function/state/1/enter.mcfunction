@@ -169,12 +169,8 @@ execute as @e[type=marker, tag=jkpof_player_spawn, sort=random] store result sco
 
 # 玩家进入
 scoreboard players reset #id_temp jkpof.int
-execute if score #ctrl_team jkpof.int matches 0 if score #ctrl_pillar_count_order_real jkpof.int matches 0 as @a[scores={jkpof.state=1}, limit=2, sort=random] run function jkpof:state/1/player_enter
-execute if score #ctrl_team jkpof.int matches 0 if score #ctrl_pillar_count_order_real jkpof.int matches 1 as @a[scores={jkpof.state=1}, limit=4, sort=random] run function jkpof:state/1/player_enter
-execute if score #ctrl_team jkpof.int matches 0 if score #ctrl_pillar_count_order_real jkpof.int matches 2 as @a[scores={jkpof.state=1}, limit=5, sort=random] run function jkpof:state/1/player_enter
-execute if score #ctrl_team jkpof.int matches 0 if score #ctrl_pillar_count_order_real jkpof.int matches 3 as @a[scores={jkpof.state=1}, limit=8, sort=random] run function jkpof:state/1/player_enter
-execute if score #ctrl_team jkpof.int matches 0 if score #ctrl_pillar_count_order_real jkpof.int matches 4 as @a[scores={jkpof.state=1}, limit=9, sort=random] run function jkpof:state/1/player_enter
-execute if score #ctrl_team jkpof.int matches 0 if score #ctrl_pillar_count_order_real jkpof.int matches 5 as @a[scores={jkpof.state=1}, limit=12, sort=random] run function jkpof:state/1/player_enter
+execute if score #ctrl_team jkpof.int matches 0 store result storage jk:pof data.pillar.n int 1 run scoreboard players get #ctrl_pillar_count_order_real jkpof.int
+execute if score #ctrl_team jkpof.int matches 0 run function jkpof:state/1/before_start/pillar_count with storage jk:pof data.pillar
 execute if score #ctrl_team jkpof.int matches 1..2 as @a[scores={jkpof.state=1, jkpof.team=1..}] run function jkpof:state/1/player_enter
 
 ## 地图
@@ -199,6 +195,7 @@ scoreboard players operation #special_rules.count jkpof.int += #ctrl_upside_down
 scoreboard players operation #special_rules.count jkpof.int += #ctrl_forgiving_void jkpof.int
 scoreboard players operation #special_rules.count jkpof.int += #ctrl_double_health jkpof.int
 scoreboard players operation #special_rules.count jkpof.int += #ctrl_init_tool jkpof.int
+scoreboard players operation #special_rules.count jkpof.int += #ctrl_bonus_chest jkpof.int
 execute if score #special_rules.count jkpof.int matches 1.. run tellraw @a [{storage: "jk:pof", interpret: true, nbt: "txt.lobby.const.settings.special_rules.lore", color: "yellow"}]
 execute if score #ctrl_kid_mode jkpof.int matches 1 run tellraw @a [{storage: "jk:pof", interpret: true, nbt: "txt.lobby.const.settings.special_rules.kid_mode.name", color: "green"}]
 execute if score #ctrl_upside_down jkpof.int matches 1 run tellraw @a [{storage: "jk:pof", interpret: true, nbt: "txt.lobby.const.settings.special_rules.upside_down.name", color: "green"}]
@@ -206,3 +203,4 @@ execute if score #ctrl_upside_down jkpof.int matches 1 as @a[scores={jkpof.state
 execute if score #ctrl_forgiving_void jkpof.int matches 1 run tellraw @a [{storage: "jk:pof", interpret: true, nbt: "txt.lobby.const.settings.special_rules.forgiving_void.name", color: "green"}]
 execute if score #ctrl_double_health jkpof.int matches 1 run tellraw @a [{storage: "jk:pof", interpret: true, nbt: "txt.lobby.const.settings.special_rules.double_health.name", color: "green"}]
 execute if score #ctrl_init_tool jkpof.int matches 1 run tellraw @a [{storage: "jk:pof", interpret: true, nbt: "txt.lobby.const.settings.special_rules.init_tool.name", color: "green"}]
+execute if score #ctrl_bonus_chest jkpof.int matches 1 run tellraw @a [{translate: "selectWorld.bonusItems", color: "green"}]

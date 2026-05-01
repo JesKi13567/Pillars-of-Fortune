@@ -20,6 +20,7 @@ execute if items entity @s container.0 ghast_spawn_egg run function jkpof:state/
 execute if items entity @s container.0 blaze_spawn_egg run function jkpof:state/1/special_item/spawn_egg/arrow/type {type: place, entity: blaze}
 execute if items entity @s container.0 breeze_spawn_egg run function jkpof:state/1/special_item/spawn_egg/arrow/type {type: place, entity: breeze}
 execute if items entity @s container.0 vex_spawn_egg run function jkpof:state/1/special_item/spawn_egg/arrow/type {type: place, entity: vex}
+execute if items entity @s container.0 evoker_spawn_egg run function jkpof:state/1/special_item/spawn_egg/arrow/type {type: place, entity: evoker}
 
 execute if items entity @s container.0 villager_spawn_egg run function jkpof:state/1/special_item/spawn_egg/arrow/variant {entity: villager, type: 1}
 execute if items entity @s container.0 rabbit_spawn_egg run function jkpof:state/1/special_item/spawn_egg/arrow/variant {entity: rabbit, type: 1}
@@ -41,7 +42,6 @@ execute if items entity @s container.0 dolphin_spawn_egg run function jkpof:stat
 execute if items entity @s container.0 drowned_spawn_egg run function jkpof:state/1/special_item/spawn_egg/arrow/type {type: hostile, entity: drowned}
 execute if items entity @s container.0 enderman_spawn_egg run function jkpof:state/1/special_item/spawn_egg/arrow/type {type: hostile, entity: enderman}
 execute if items entity @s container.0 endermite_spawn_egg run function jkpof:state/1/special_item/spawn_egg/arrow/type {type: hostile, entity: endermite}
-execute if items entity @s container.0 evoker_spawn_egg run function jkpof:state/1/special_item/spawn_egg/arrow/type {type: hostile, entity: evoker}
 execute if items entity @s container.0 goat_spawn_egg run function jkpof:state/1/special_item/spawn_egg/arrow/type {type: hostile, entity: goat}
 execute if items entity @s container.0 guardian_spawn_egg run function jkpof:state/1/special_item/spawn_egg/arrow/type {type: hostile, entity: guardian}
 execute if items entity @s container.0 hoglin_spawn_egg run function jkpof:state/1/special_item/spawn_egg/arrow/type {type: hostile, entity: hoglin}

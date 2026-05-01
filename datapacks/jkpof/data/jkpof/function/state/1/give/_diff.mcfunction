@@ -7,7 +7,7 @@ execute if score #event_prop_supply.count.enchanted_book jkpof.int matches 1.. a
 execute if score #event_prop_supply.count.potion jkpof.int matches 1.. as @a[scores={jkpof.state=2}] run loot give @s loot {functions: [{function: "set_components", components: {max_stack_size: 64}}, {function: "set_count", count: {type: "score", target: "this", score: "jkpof.item.count"}}], pools: [{rolls: 1, entries: [{type: "loot_table", value: "jkpof:item/64/potion"}]}]}
 
 ## 分数
-execute if score #is_prop jkpof.int matches 0 as @a[scores={jkpof.state=2}] store result score @s jkpof.item.order run random value 1..1247
+execute if score #is_prop jkpof.int matches 0 as @a[scores={jkpof.state=2}] store result score @s jkpof.item.order run random value 1..1245
 execute if score #is_prop jkpof.int matches 0 if score #ctrl_item_prop_chance jkpof.int matches 1 as @a[scores={jkpof.state=2, jkpof.item.order=22..}] if predicate {condition: "random_chance", chance: 0.01} store result score @s jkpof.item.order run random value 1..21
 execute if score #is_prop jkpof.int matches 0 if score #ctrl_item_prop_chance jkpof.int matches 2 as @a[scores={jkpof.state=2, jkpof.item.order=22..}] if predicate {condition: "random_chance", chance: 0.02} store result score @s jkpof.item.order run random value 1..21
 execute if score #is_prop jkpof.int matches 0 if score #ctrl_item_prop_chance jkpof.int matches 3 as @a[scores={jkpof.state=2, jkpof.item.order=22..}] if predicate {condition: "random_chance", chance: 0.03} store result score @s jkpof.item.order run random value 1..21
@@ -21,5 +21,9 @@ execute if score #ctrl_lang jkpof.int matches 2 as @a[scores={jkpof.state=2, jkp
 execute as @a[scores={jkpof.state=2, jkpof.item.order=2}] run loot give @s loot jkpof:item/prop/creative
 execute as @a[scores={jkpof.state=2, jkpof.item.order=3..21}] run loot give @s loot jkpof:item/prop/common
 
-# 非道具
-execute as @a[scores={jkpof.state=2, jkpof.item.order=22..}] run loot give @s loot jkpof:item/main
+# 非道具 1058 60 15 82 9
+execute as @a[scores={jkpof.state=2, jkpof.item.order=22..1079}] run loot give @s loot jkpof:item/common
+execute as @a[scores={jkpof.state=2, jkpof.item.order=1080..1139}] run loot give @s loot jkpof:item/copper_made
+execute as @a[scores={jkpof.state=2, jkpof.item.order=1140..1154}] run loot give @s loot jkpof:item/1
+execute as @a[scores={jkpof.state=2, jkpof.item.order=1155..1236}] run loot give @s loot jkpof:item/64/common
+execute as @a[scores={jkpof.state=2, jkpof.item.order=1237..1245}] run loot give @s loot jkpof:item/64/1

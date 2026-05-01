@@ -1,5 +1,5 @@
 # 幸运之柱 JK's Pillars of Fortune
-## v1.3 for MC26.1.x
+## v1.3.1 for MC26.1.x
 - [简体中文](#zh_cn)
 - [繁體中文](#zh_tw)
 - [English](#en_us)
@@ -59,13 +59,14 @@ The language can be switched near the lobby spawn point \(has hint in initial\),
 ||小孩模式|玩家尺寸为原来的 1/2 。|
 ||仁慈的虚空|玩家掉落下虚空时，会从上虚空回归。|
 ||双倍生命值| \ |
-||初始工具|玩家初始获得「挖掘一切」*1|
+||初始工具|玩家初始获得「挖掘一切」*1。|
+||奖励箱|玩家初始获得「战利品箱」*1。|
 
 以下设置在「游戏」附近调整。
 
 |设置项|描述|
 |-|-|
-|**柱子数**|用于设定游玩人数或队伍数，选项包含 *自动/2/4/5/8/9/12*|
+|**柱子数**|用于设定游玩人数或队伍数，选项包含 *自动/2/../12*|
 |**队伍模式**|柱子数量不为 “自动” 时才可启用，有自选与随机分配，默认禁用|
 
 ### 事件
@@ -74,7 +75,7 @@ The language can be switched near the lobby spawn point \(has hint in initial\),
 |事件列表|描述|
 |-|-|
 |清理垃圾/幸运之帚（系统事件）|系统每 2 分钟清理一次掉落物。若有玩家死亡，下次清理时间增加 30 秒。|
-|观众投票/幸运之票（观众事件）|观众可投票选择下一玩家事件。事件初始触发冷却为 30 秒时开启投票，观众投票人数达到一半后确认下一事件。|
+|观众投票/幸运之票（观众事件）|观众可投票选择下一玩家事件。事件初始触发冷却为 30 秒时开启投票。|
 |边界收缩|边界收缩方向：→← + ↓。最多收缩 2 次。|
 |无事发生|无事发生也是一种事件，开局时必出。|
 |万箭齐发|所有玩家头上将不断生成箭，缓冲 2 秒，持续 3 秒。|
@@ -99,7 +100,7 @@ The language can be switched near the lobby spawn point \(has hint in initial\),
 |玩家的头|玩家死亡会掉落头颅。主手持信标，副手持玩家的头并潜行，能使对应玩家复活。|
 |附魔书|按 [右键] 给副手物品附魔。|
 |挖掘一切|能挖掘生存模式下的所有可挖掘方块。|
-|烟花火箭|内含随机烟花。|
+|附魔金毒马铃薯| \ |
 |击退棒|击退 V|
 |急救平台|在脚下生成一层黏液块平台。|
 |折跃珍珠|沿指针方向瞬移 20 格，无视方块阻挡。|
@@ -183,13 +184,14 @@ The language can be switched near the lobby spawn point \(has hint in initial\),
 ||小孩模式|玩家大小為原來的 1/2 。|
 ||仁慈的虛空|玩家掉落下虛空時，會從上虛空回歸。|
 ||雙倍生命值| \ |
-||初始工具|玩家初始獲得「挖掘一切」* 1|
+||初始工具|玩家初始獲得「挖掘一切」* 1。|
+||獎勵箱|玩家初始獲得「戰利品箱」* 1。|
 
 以下設定在「遊戲」附近調整。
 
 |設定項目|說明|
 |-|-|
-|**柱子數**|用於設定遊玩人數或隊伍數，選項包含 *自動/2/4/5/8/9/12*|
+|**柱子數**|用於設定遊玩人數或隊伍數，選項包含 *自動/2/../12*|
 |**隊伍模式**|柱子數量不為「自動」時才可啟用，有自選與隨機分配，預設停用|
 
 ### 事件_
@@ -198,7 +200,7 @@ The language can be switched near the lobby spawn point \(has hint in initial\),
 |事件列表|說明|
 |-|-|
 |清理垃圾/幸運之帚（系統事件）|系統每 2 分鐘清理一次掉落物。若有玩家死亡，下次清理時間增加 30 秒。|
-|觀眾投票/幸運之票（觀眾事件）|觀眾可投票選擇下一個玩家事件。事件初始觸發冷卻為 30 秒時開啟投票，觀眾投票人數達到一半後確認下一個事件。|
+|觀眾投票/幸運之票（觀眾事件）|觀眾可投票選擇下一個玩家事件。事件初始觸發冷卻為 30 秒時開啟投票。|
 |邊界收縮|邊界收縮方向：→← + ↓。最多收縮 2 次。|
 |無事發生|無事發生也是一種事件，開場時必出。|
 |萬箭齊發|所有玩家頭上將不斷生成箭矢，緩衝 2 秒，持續 3 秒。|
@@ -223,7 +225,7 @@ The language can be switched near the lobby spawn point \(has hint in initial\),
 |玩家頭顱|玩家死亡會掉落頭顱。主手持烽火台，副手持玩家頭顱並潛行，能使對應玩家復活。|
 |附魔書|按 [右鍵] 給副手物品附魔。|
 |挖掘一切|能挖掘生存模式下的所有可挖掘方塊。|
-|煙火|內含隨機煙火。|
+|附魔金毒馬鈴薯| \ |
 |擊退棒|擊退 V|
 |急救平台|在腳下生成一層史萊姆方塊平台。|
 |折躍珍珠|沿準星方向瞬移 20 格，無視方塊阻擋。|
@@ -307,12 +309,13 @@ All settings can be configured in the lobby.
 ||Forgiving Void|Falling into the lower void will return the player from the upper void.|
 ||Double Health| \ |
 ||Init Tool|Players get "Mine Everything"*1 on spawn.|
+||Bonus Chest|Players get "Loot Chest"*1 on spawn.|
 
 Following settings can be adjusted near the "Play" area.
 
 |Settings|Description|
 |-|-|
-|**Pillar Count**|The number of players or teams, including the options of *Auto/2/4/5/8/9/12*|
+|**Pillar Count**|The number of players or teams, including the options of *Auto/2/../12*|
 |**Team Mode**|Can be enabled only if the Pillar Count is not set to "Auto"|
 
 ### Events
@@ -321,7 +324,7 @@ Events are displayed in the lobby, and players can toggle their activation statu
 |Events|Description|
 |-|-|
 |Clear Trash / BOF (System Event)|The system clears dropped items every 2m. If a player dies, the next cleanup time will be delayed by 30s.|
-|Spectators' Vote / VOF (Spectator Event)|Spectators can vote for the next player event. Voting opens when the initial event cooldown is 30 seconds. The next event will be confirmed once half of the spectators have voted.|
+|Spectators' Vote / VOF (Spectator Event)|Spectators can vote for the next player event. Voting opens when the initial event cooldown is 30 seconds.|
 |Border Shrink|Border shrink direction: →← + ↓. Max twice.|
 |Nothing Happens|Nothing Happens is also an event, and it will definitely be triggered at the beginning.|
 |Arrow Rain|The Arrow will be continuously summoned above all players' heads, with a 2s buffer and a 3s duration.|
@@ -346,7 +349,7 @@ Items are also displayed in the lobby.
 |Player Head|Players drop their own heads upon death. Mainhand: Beacon + Offhand: Player Head + Sneak = Respawn.|
 |Enchanted Book|Press [Right Button] to enchant offhand item.|
 |Mine Everything|Mines any mineable block in Survival Mode.|
-|Firework Rocket|Contains random fireworks.|
+|Enchanted Golden Poisonous Potato| \ |
 |Knockback Stick|Knockback V|
 |Aid Platform|Place a Slime Block platform under your feet.|
 |Warp Pearl|Teleport 20 blocks forward, passing through blocks.|

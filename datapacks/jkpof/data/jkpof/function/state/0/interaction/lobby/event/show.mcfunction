@@ -28,7 +28,7 @@ execute if score #event_enable_6 jkpof.int matches 1 run data modify entity @e[t
 execute if score #event_enable_7 jkpof.int matches 1 run data modify entity @e[type=item_display, tag=jkpof_display_event_order, tag=7, limit=1] item.id set value "honeycomb"
 execute if score #event_enable_8 jkpof.int matches 1 run data modify entity @e[type=item_display, tag=jkpof_display_event_order, tag=8, limit=1] item.id set value "iron_bars"
 execute if score #event_enable_9 jkpof.int matches 1 run data modify entity @e[type=item_display, tag=jkpof_display_event_order, tag=9, limit=1] item.id set value "glass_pane"
-execute if score #event_enable_10 jkpof.int matches 1 run data modify entity @e[type=item_display, tag=jkpof_display_event_order, tag=10, limit=1] item.id set value "poisonous_potato"
+execute if score #event_enable_10 jkpof.int matches 1 run data modify entity @e[type=item_display, tag=jkpof_display_event_order, tag=10, limit=1] item.id set value "iron_sword"
 
 execute if score #event_broom jkpof.int matches 0 run data modify entity @e[type=item_display, tag=jkpof_display_event_order, tag=-3, limit=1] item.id set value "structure_void"
 execute if score #event_vote jkpof.int matches 0 run data modify entity @e[type=item_display, tag=jkpof_display_event_order, tag=-2, limit=1] item.id set value "structure_void"
@@ -75,7 +75,7 @@ execute if score #event_order jkpof.int matches 6 run data modify entity @e[type
 execute if score #event_order jkpof.int matches 7 run data modify entity @e[type=item_display, tag=jkpof_display_event_order, tag=-99, limit=1] item.id set value "honeycomb"
 execute if score #event_order jkpof.int matches 8 run data modify entity @e[type=item_display, tag=jkpof_display_event_order, tag=-99, limit=1] item.id set value "iron_bars"
 execute if score #event_order jkpof.int matches 9 run data modify entity @e[type=item_display, tag=jkpof_display_event_order, tag=-99, limit=1] item.id set value "glass_pane"
-execute if score #event_order jkpof.int matches 10 run data modify entity @e[type=item_display, tag=jkpof_display_event_order, tag=-99, limit=1] item.id set value "poisonous_potato"
+execute if score #event_order jkpof.int matches 10 run data modify entity @e[type=item_display, tag=jkpof_display_event_order, tag=-99, limit=1] item.id set value "iron_sword"
 
 execute if score #event_order jkpof.int matches -3 run data modify entity @e[type=text_display, tag=jkpof_display_event_order, tag=-99, limit=1] text set value [{storage: "jk:pof", interpret: true, nbt: "txt.event.broom.name"}, "\n", {storage: "jk:pof", interpret: true, nbt: "txt.event.broom.lore", color: "aqua"}]
 execute if score #event_order jkpof.int matches -2 run data modify entity @e[type=text_display, tag=jkpof_display_event_order, tag=-99, limit=1] text set value [{storage: "jk:pof", interpret: true, nbt: "txt.event.vote.name"}, "\n", {storage: "jk:pof", interpret: true, nbt: "txt.event.vote.lore", color: "aqua"}]

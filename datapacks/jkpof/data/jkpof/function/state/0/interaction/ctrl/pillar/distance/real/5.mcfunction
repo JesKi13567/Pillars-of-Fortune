@@ -1,12 +1,17 @@
-$summon marker -$(n1) 40 0 {Tags: ["jkpof", "jkpof_player_spawn", "W"]}
-$summon marker $(n1) 40 0 {Tags: ["jkpof", "jkpof_player_spawn", "E"]}
-$summon marker 0 40 -$(n1) {Tags: ["jkpof", "jkpof_player_spawn", "N"]}
-$summon marker 0 40 $(n1) {Tags: ["jkpof", "jkpof_player_spawn", "S"]}
-$summon marker $(n2) 40 $(n2) {Tags: ["jkpof", "jkpof_player_spawn", "SE"]}
-$summon marker $(n2) 40 -$(n2) {Tags: ["jkpof", "jkpof_player_spawn", "NE"]}
-$summon marker -$(n2) 40 $(n2) {Tags: ["jkpof", "jkpof_player_spawn", "SW"]}
-$summon marker -$(n2) 40 -$(n2) {Tags: ["jkpof", "jkpof_player_spawn", "NW"]}
-$summon marker $(n3) 40 $(n3) {Tags: ["jkpof", "jkpof_player_spawn", "SEO"]}
-$summon marker $(n3) 40 -$(n3) {Tags: ["jkpof", "jkpof_player_spawn", "NEO"]}
-$summon marker -$(n3) 40 $(n3) {Tags: ["jkpof", "jkpof_player_spawn", "SWO"]}
-$summon marker -$(n3) 40 -$(n3) {Tags: ["jkpof", "jkpof_player_spawn", "NWO"]}
+execute if score #ctrl_pillar_distance jkpof.int matches 0 run summon marker 0 40 7 {Tags: ["jkpof", "jkpof_player_spawn"]}
+execute if score #ctrl_pillar_distance jkpof.int matches 0 run summon marker -7 40 2 {Tags: ["jkpof", "jkpof_player_spawn"]}
+execute if score #ctrl_pillar_distance jkpof.int matches 0 run summon marker -4 40 -6 {Tags: ["jkpof", "jkpof_player_spawn"]}
+execute if score #ctrl_pillar_distance jkpof.int matches 0 run summon marker 4 40 -6 {Tags: ["jkpof", "jkpof_player_spawn"]}
+execute if score #ctrl_pillar_distance jkpof.int matches 0 run summon marker 7 40 2 {Tags: ["jkpof", "jkpof_player_spawn"]}
+
+execute if score #ctrl_pillar_distance jkpof.int matches 1 run summon marker 0 40 12 {Tags: ["jkpof", "jkpof_player_spawn"]}
+execute if score #ctrl_pillar_distance jkpof.int matches 1 run summon marker -11 40 4 {Tags: ["jkpof", "jkpof_player_spawn"]}
+execute if score #ctrl_pillar_distance jkpof.int matches 1 run summon marker -7 40 -10 {Tags: ["jkpof", "jkpof_player_spawn"]}
+execute if score #ctrl_pillar_distance jkpof.int matches 1 run summon marker 7 40 -10 {Tags: ["jkpof", "jkpof_player_spawn"]}
+execute if score #ctrl_pillar_distance jkpof.int matches 1 run summon marker 11 40 4 {Tags: ["jkpof", "jkpof_player_spawn"]}
+
+execute if score #ctrl_pillar_distance jkpof.int matches 2 run summon marker 0 40 17 {Tags: ["jkpof", "jkpof_player_spawn"]}
+execute if score #ctrl_pillar_distance jkpof.int matches 2 run summon marker -16 40 5 {Tags: ["jkpof", "jkpof_player_spawn"]}
+execute if score #ctrl_pillar_distance jkpof.int matches 2 run summon marker -10 40 -14 {Tags: ["jkpof", "jkpof_player_spawn"]}
+execute if score #ctrl_pillar_distance jkpof.int matches 2 run summon marker 10 40 -14 {Tags: ["jkpof", "jkpof_player_spawn"]}
+execute if score #ctrl_pillar_distance jkpof.int matches 2 run summon marker 16 40 5 {Tags: ["jkpof", "jkpof_player_spawn"]}

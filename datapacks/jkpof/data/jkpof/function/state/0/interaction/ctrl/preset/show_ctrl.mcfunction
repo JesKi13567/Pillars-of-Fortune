@@ -36,3 +36,5 @@ scoreboard players remove #ctrl_double_health jkpof.int 1
 function jkpof:state/0/interaction/ctrl/switcher {id: 'double_health', item: 'cake'}
 scoreboard players remove #ctrl_init_tool jkpof.int 1
 function jkpof:state/0/interaction/ctrl/switcher {id: 'init_tool', item: 'shears'}
+scoreboard players remove #ctrl_bonus_chest jkpof.int 1
+function jkpof:state/0/interaction/ctrl/switcher {id: 'bonus_chest', item: 'chest'}

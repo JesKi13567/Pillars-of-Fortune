@@ -353,7 +353,7 @@ summon item_display -10 65.75 -99.0 {Tags: ["jkpof", "jkpof_display_lobby_item",
 summon item_display -10 65.75 -99.5 {Tags: ["jkpof", "jkpof_display_lobby_item", "3"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.45f, .45f, .45f], translation: [0f, 0f, 0f]}, item: {id: "player_head", components: {profile: "JK137"}}, Rotation: [90f, 0f]}
 summon item_display -10 65.75 -100.0 {Tags: ["jkpof", "jkpof_display_lobby_item", "4"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.45f, .45f, .45f], translation: [0f, 0f, 0f]}, item: {id: "enchanted_book"}, Rotation: [90f, 0f]}
 summon item_display -10 65.75 -100.5 {Tags: ["jkpof", "jkpof_display_lobby_item", "5"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.45f, .45f, .45f], translation: [0f, 0f, 0f]}, item: {id: "shears", components: {enchantment_glint_override: true}}, Rotation: [90f, 0f]}
-summon item_display -10 65.75 -101.0 {Tags: ["jkpof", "jkpof_display_lobby_item", "6"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.45f, .45f, .45f], translation: [0f, 0f, 0f]}, item: {id: "firework_rocket"}, Rotation: [90f, 0f]}
+summon item_display -10 65.75 -101.0 {Tags: ["jkpof", "jkpof_display_lobby_item", "6"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.45f, .45f, .45f], translation: [0f, 0f, 0f]}, item: {id: "poisonous_potato", components: {enchantment_glint_override: true}}, Rotation: [90f, 0f]}
 summon item_display -10 65.25 -98.0 {Tags: ["jkpof", "jkpof_display_lobby_item", "7"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.45f, .45f, .45f], translation: [0f, 0f, 0f]}, item: {id: "stick", components: {enchantment_glint_override: true}}, Rotation: [90f, 0f]}
 summon item_display -10 65.25 -98.5 {Tags: ["jkpof", "jkpof_display_lobby_item", "8"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.45f, .45f, .45f], translation: [0f, 0f, 0f]}, item: {id: "blaze_rod"}, Rotation: [90f, 0f]}
 summon item_display -10 65.25 -99.0 {Tags: ["jkpof", "jkpof_display_lobby_item", "9"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.45f, .45f, .45f], translation: [0f, 0f, 0f]}, item: {id: "ender_eye"}, Rotation: [90f, 0f]}
@@ -543,20 +543,25 @@ summon interaction 10.5 65.25 -111.5 {Tags: ["jkpof", "jkpof_ctrl", "jkpof_ctrl_
 summon text_display 10.5 66.05 -111.5 {Tags: ["jkpof", "jkpof_display_ctrl_kid_mode"], brightness: {block: 15, sky: 15}, billboard: "center"}
 summon item_display 10.5 65.5 -111.5 {Tags: ["jkpof", "jkpof_display_ctrl_kid_mode"], brightness: {block: 15, sky: 15}, CustomNameVisible: true, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.4f, .4f, .4f], translation: [0f, 0f, 0f]}, Rotation: [-135f, 0f]}
 
+# 初始工具
+summon interaction 10.5 66.25 -111.5 {Tags: ["jkpof", "jkpof_ctrl", "jkpof_ctrl_init_tool"], response: true, width: .5, height: .5}
+summon text_display 10.5 67.05 -111.5 {Tags: ["jkpof", "jkpof_display_ctrl_init_tool"], brightness: {block: 15, sky: 15}, billboard: "center"}
+summon item_display 10.5 66.5 -111.5 {Tags: ["jkpof", "jkpof_display_ctrl_init_tool"], brightness: {block: 15, sky: 15}, CustomNameVisible: true, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.4f, .4f, .4f], translation: [0f, 0f, 0f]}, Rotation: [-135f, 0f]}
+
 # 仁慈的虚空
 summon interaction 12.5 64.25 -109.5 {Tags: ["jkpof", "jkpof_ctrl", "jkpof_ctrl_forgiving_void"], response: true, width: .5, height: .5}
 summon text_display 12.5 65.05 -109.5 {Tags: ["jkpof", "jkpof_display_ctrl_forgiving_void"], brightness: {block: 15, sky: 15}, billboard: "center"}
 summon item_display 12.5 64.5 -109.5 {Tags: ["jkpof", "jkpof_display_ctrl_forgiving_void"], brightness: {block: 15, sky: 15}, CustomNameVisible: true, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.4f, .4f, .4f], translation: [0f, 0f, 0f]}, Rotation: [-135f, 0f]}
 
-# 蛋糕战争
+# 双倍生命值
 summon interaction 12.5 65.25 -109.5 {Tags: ["jkpof", "jkpof_ctrl", "jkpof_ctrl_double_health"], response: true, width: .5, height: .5}
 summon text_display 12.5 66.05 -109.5 {Tags: ["jkpof", "jkpof_display_ctrl_double_health"], brightness: {block: 15, sky: 15}, billboard: "center"}
 summon item_display 12.5 65.5 -109.5 {Tags: ["jkpof", "jkpof_display_ctrl_double_health"], brightness: {block: 15, sky: 15}, CustomNameVisible: true, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.4f, .4f, .4f], translation: [0f, 0f, 0f]}, Rotation: [-135f, 0f]}
 
-# 初始工具
-summon interaction 11.5 66.25 -110.5 {Tags: ["jkpof", "jkpof_ctrl", "jkpof_ctrl_init_tool"], response: true, width: .5, height: .5}
-summon text_display 11.5 67.05 -110.5 {Tags: ["jkpof", "jkpof_display_ctrl_init_tool"], brightness: {block: 15, sky: 15}, billboard: "center"}
-summon item_display 11.5 66.5 -110.5 {Tags: ["jkpof", "jkpof_display_ctrl_init_tool"], brightness: {block: 15, sky: 15}, CustomNameVisible: true, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.4f, .4f, .4f], translation: [0f, 0f, 0f]}, Rotation: [-135f, 0f]}
+# 奖励箱
+summon interaction 12.5 66.25 -109.5 {Tags: ["jkpof", "jkpof_ctrl", "jkpof_ctrl_bonus_chest"], response: true, width: .5, height: .5}
+summon text_display 12.5 67.05 -109.5 {Tags: ["jkpof", "jkpof_display_ctrl_bonus_chest"], brightness: {block: 15, sky: 15}, billboard: "center", text: [{translate: "selectWorld.bonusItems", color: "green"}]}
+summon item_display 12.5 66.5 -109.5 {Tags: ["jkpof", "jkpof_display_ctrl_bonus_chest"], brightness: {block: 15, sky: 15}, CustomNameVisible: true, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.4f, .4f, .4f], translation: [0f, 0f, 0f]}, Rotation: [-135f, 0f]}
 
 ## 地图
 summon text_display -10.5 66.5 -110.5 {Tags: ["jkpof", "jkpof_display_ctrl_map"], brightness: {block: 15, sky: 15}, billboard: "center"}
