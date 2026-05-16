@@ -1,5 +1,5 @@
 # 幸运之柱 JK's Pillars of Fortune
-## v1.3.1 for MC26.1.x
+## v1.3.2 for MC26.1.x
 - [简体中文](#zh_cn)
 - [繁體中文](#zh_tw)
 - [English](#en_us)
@@ -45,7 +45,6 @@ The language can be switched near the lobby spawn point \(has hint in initial\),
 |**地面**|种类|包含随机，会被**地图**影响|
 ||半径|越大则地面越宽|
 ||层数|越大则地面越厚|
-||各层随机|地面种类为随机且层数 >1 时可启用|
 |**杂项**|时间|选择白天黑夜及昼夜交替|
 ||夜视|玩家是否获得夜视效果|
 ||自然回血|玩家是否可吃普通食物回血|
@@ -170,7 +169,6 @@ The language can be switched near the lobby spawn point \(has hint in initial\),
 |**地面**|種類|包含隨機，會被**地圖**影響|
 ||半徑|越大則地面越寬|
 ||層數|越大則地面越厚|
-||每層隨機|地面種類為隨機且層數 > 1 時可啟用|
 |**雜項**|時間|選擇白天黑夜及晝夜交替|
 ||夜視|玩家是否獲得夜視效果|
 ||自然回血|玩家是否可吃普通食物回血|
@@ -294,7 +292,6 @@ All settings can be configured in the lobby.
 |**Ground**|Type|Includes Random; affected by the **Map Theme** setting|
 ||Radius|Higher value = wider ground|
 ||Floor Count|Higher value = thicker ground|
-||Random per Floor|Enabled when Ground Type is Random and Floor Count > 1|
 |**Others**|Time|Select day or night, and day-night cycle|
 ||Night Vision|Whether players receive the Night Vision effect|
 ||Natural Regeneration|Whether players can regenerate health by eating common food|

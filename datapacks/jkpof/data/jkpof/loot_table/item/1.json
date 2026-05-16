@@ -56,36 +56,6 @@
                 },
                 {
                     "type": "item",
-                    "name": "bat_spawn_egg",
-                    "functions": [
-                        {
-                            "function": "set_components",
-                            "components": {
-                                "custom_data": {
-                                    "jkpof_model": "bat_spawn_egg"
-                                },
-                                "item_model": "bat_spawn_egg"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "type": "item",
-                    "name": "tadpole_spawn_egg",
-                    "functions": [
-                        {
-                            "function": "set_components",
-                            "components": {
-                                "custom_data": {
-                                    "jkpof_model": "tadpole_spawn_egg"
-                                },
-                                "item_model": "tadpole_spawn_egg"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "type": "item",
                     "name": "ender_dragon_spawn_egg",
                     "functions": [
                         {

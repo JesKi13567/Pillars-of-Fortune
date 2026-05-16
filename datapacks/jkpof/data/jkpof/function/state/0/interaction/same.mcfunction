@@ -1,4 +1,5 @@
 playsound block.note_block.bell block @a
+execute as @s[tag=!jkpof_stats] run scoreboard players set #countdown jkpof.int 10
 
 execute as @s[tag=jkpof_ctrl_pillar_type] run function jkpof:state/0/interaction/ctrl/pillar/type
 execute as @s[tag=jkpof_ctrl_pillar_distance] run function jkpof:state/0/interaction/ctrl/pillar/distance/add
@@ -11,8 +12,7 @@ execute as @s[tag=jkpof_ctrl_item_prop_chance] run function jkpof:state/0/intera
 
 execute as @s[tag=jkpof_ctrl_ground_type] run function jkpof:state/0/interaction/ctrl/ground/type
 execute as @s[tag=jkpof_ctrl_ground_radius] run function jkpof:state/0/interaction/ctrl/ground/radius
-execute as @s[tag=jkpof_ctrl_ground_floor] run function jkpof:state/0/interaction/ctrl/ground/floor/s
-execute as @s[tag=jkpof_ctrl_ground_floor_random] run function jkpof:state/0/interaction/ctrl/ground/floor/random
+execute as @s[tag=jkpof_ctrl_ground_floor] run function jkpof:state/0/interaction/ctrl/ground/floor
 
 execute as @s[tag=jkpof_ctrl_night_vision] run function jkpof:state/0/interaction/ctrl/switcher {id: 'night_vision', item: 'golden_carrot'}
 execute as @s[tag=jkpof_ctrl_natural_regen] run function jkpof:state/0/interaction/ctrl/switcher {id: 'natural_regen', item: 'golden_apple'}
@@ -54,6 +54,11 @@ execute as @s[tag=jkpof_ctrl_map, tag=9] run function jkpof:state/0/interaction/
 execute as @s[tag=jkpof_ctrl_map, tag=10] run function jkpof:state/0/interaction/ctrl/ground/map/num {n: 10}
 execute as @s[tag=jkpof_ctrl_map, tag=11] run function jkpof:state/0/interaction/ctrl/ground/map/num {n: 11}
 execute as @s[tag=jkpof_ctrl_map, tag=12] run function jkpof:state/0/interaction/ctrl/ground/map/num {n: 12}
+execute as @s[tag=jkpof_ctrl_map, tag=13] run function jkpof:state/0/interaction/ctrl/ground/map/num {n: 13}
+execute as @s[tag=jkpof_ctrl_map, tag=14] run function jkpof:state/0/interaction/ctrl/ground/map/num {n: 14}
+execute as @s[tag=jkpof_ctrl_map, tag=15] run function jkpof:state/0/interaction/ctrl/ground/map/num {n: 15}
+execute as @s[tag=jkpof_ctrl_map, tag=16] run function jkpof:state/0/interaction/ctrl/ground/map/num {n: 16}
+execute as @s[tag=jkpof_ctrl_map, tag=17] run function jkpof:state/0/interaction/ctrl/ground/map/num {n: 17}
 
 execute as @s[tag=jkpof_ctrl_preset] run function jkpof:state/0/interaction/ctrl/preset/show
 execute as @s[tag=jkpof_ctrl] run function jkpof:state/0/interaction/ctrl/preset/custom

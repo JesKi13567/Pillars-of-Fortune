@@ -190,6 +190,16 @@ scoreboard objectives add jkpof.damage.type.real dummy "玩家受伤-类型-追�
 scoreboard objectives add jkpof.damage.forgive dummy "玩家受伤-仇恨计时"
 scoreboard objectives add jkpof.damage.temp dummy "玩家受伤-暂时值"
 
+scoreboard objectives add jkpof.stats.round dummy "统计-次数-游玩"
+scoreboard objectives add jkpof.stats.win dummy "统计-次数-获胜"
+scoreboard objectives add jkpof.stats.kill dummy "统计-次数-击杀"
+scoreboard objectives add jkpof.stats.kill.1st dummy "统计-次数-击杀-首次"
+scoreboard objectives add jkpof.stats.death.all dummy "统计-次数-死亡-所有"
+scoreboard objectives add jkpof.stats.death.suicide dummy "统计-次数-死亡-自杀"
+scoreboard objectives add jkpof.stats.death.1st dummy "统计-次数-死亡-首次"
+scoreboard objectives add jkpof.stats.king.kill dummy "统计-次数-击杀王"
+scoreboard objectives add jkpof.stats.king.live dummy "统计-次数-耐活王"
+
 scoreboard objectives add jkpof.spawn_egg.ender_dragon used:ender_dragon_spawn_egg ""
 scoreboard objectives add jkpof.spawn_egg.wither used:wither_spawn_egg ""
 scoreboard objectives add jkpof.spawn_egg.warden used:warden_spawn_egg ""
@@ -463,7 +473,7 @@ summon text_display 0 67.05 -110 {Tags: ["jkpof", "jkpof_display_ctrl_pillar_dis
 summon text_display 0 66.5 -110 {Tags: ["jkpof", "jkpof_display_show_ctrl_pillar_distance"], brightness: {block: 15, sky: 15}, billboard: "center"}
 
 ## 地面
-summon text_display 2 68.5 -110 {Tags: ["jkpof", "jkpof_display_ctrl_ground_show"], brightness: {block: 15, sky: 15}, billboard: "center"}
+summon text_display 2 67.5 -110 {Tags: ["jkpof", "jkpof_display_ctrl_ground_show"], brightness: {block: 15, sky: 15}, billboard: "center"}
 
 # 种类
 summon interaction 2 64.25 -110 {Tags: ["jkpof", "jkpof_ctrl", "jkpof_ctrl_ground_type"], response: true, width: .5, height: .5}
@@ -480,13 +490,12 @@ summon interaction 2 66.25 -110 {Tags: ["jkpof", "jkpof_ctrl", "jkpof_ctrl_groun
 summon text_display 2 67.05 -110 {Tags: ["jkpof", "jkpof_display_ctrl_ground_floor"], brightness: {block: 15, sky: 15}, billboard: "center"}
 summon text_display 2 66.5 -110 {Tags: ["jkpof", "jkpof_display_show_ctrl_ground_floor"], brightness: {block: 15, sky: 15}, billboard: "center"}
 
-# 各层随机
-summon interaction 2 67.25 -110 {Tags: ["jkpof", "jkpof_ctrl", "jkpof_ctrl_ground_floor_random"], response: true, width: .5, height: .5}
-summon text_display 2 68.05 -110 {Tags: ["jkpof", "jkpof_display_ctrl_ground_floor_random"], brightness: {block: 15, sky: 15}, billboard: "center"}
-summon text_display 2 67.5 -110 {Tags: ["jkpof", "jkpof_display_show_ctrl_ground_floor_random"], brightness: {block: 15, sky: 15}, billboard: "center"}
-
 ## 杂项
 summon text_display 0 66.75 -116 {Tags: ["jkpof", "jkpof_display_ctrl_others_show"], brightness: {block: 15, sky: 15}, billboard: "center"}
+
+# 统计
+summon interaction 0 64.01 -96.0 {Tags: ["jkpof", "jkpof_stats"], response: true, width: 2, height: .1}
+summon text_display 0 64.01 -96.2 {Tags: ["jkpof", "jkpof_display_stats"], brightness: {block: 15, sky: 15}, background: 0, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [1.8f, 1.8f, 1.8f], translation: [0f, 0f, 0f]}, Rotation: [180f, -90f]}
 
 # 语言
 summon interaction 0 64.01 -101.5 {Tags: ["jkpof", "jkpof_ctrl_lang"], response: true, width: 1, height: .1}
@@ -566,39 +575,53 @@ summon item_display 12.5 66.5 -109.5 {Tags: ["jkpof", "jkpof_display_ctrl_bonus_
 ## 地图
 summon text_display -10.5 66.5 -110.5 {Tags: ["jkpof", "jkpof_display_ctrl_map"], brightness: {block: 15, sky: 15}, billboard: "center"}
 
+summon interaction -12.0 64.5 -109.0 {Tags: ["jkpof", "jkpof_ctrl", "jkpof_ctrl_map", "0"], response: true, width: .5, height: .5}
 summon interaction -11.5 64.5 -109.5 {Tags: ["jkpof", "jkpof_ctrl", "jkpof_ctrl_map", "-1"], response: true, width: .5, height: .5}
-summon interaction -11.0 64.5 -110.0 {Tags: ["jkpof", "jkpof_ctrl", "jkpof_ctrl_map", "0"], response: true, width: .5, height: .5}
-summon interaction -11.5 65.5 -109.5 {Tags: ["jkpof", "jkpof_ctrl", "jkpof_ctrl_map", "1"], response: true, width: .5, height: .5}
-summon interaction -11.0 65.5 -110.0 {Tags: ["jkpof", "jkpof_ctrl", "jkpof_ctrl_map", "2"], response: true, width: .5, height: .5}
-summon interaction -10.5 65.5 -110.5 {Tags: ["jkpof", "jkpof_ctrl", "jkpof_ctrl_map", "3"], response: true, width: .5, height: .5}
-summon interaction -10.0 65.5 -111.0 {Tags: ["jkpof", "jkpof_ctrl", "jkpof_ctrl_map", "4"], response: true, width: .5, height: .5}
-summon interaction -9.5 65.5 -111.5 {Tags: ["jkpof", "jkpof_ctrl", "jkpof_ctrl_map", "5"], response: true, width: .5, height: .5}
-summon interaction -11.5 65.0 -109.5 {Tags: ["jkpof", "jkpof_ctrl", "jkpof_ctrl_map", "6"], response: true, width: .5, height: .5}
-summon interaction -11.0 65.0 -110.0 {Tags: ["jkpof", "jkpof_ctrl", "jkpof_ctrl_map", "7"], response: true, width: .5, height: .5}
-summon interaction -10.5 65.0 -110.5 {Tags: ["jkpof", "jkpof_ctrl", "jkpof_ctrl_map", "8"], response: true, width: .5, height: .5}
-summon interaction -10.0 65.0 -111.0 {Tags: ["jkpof", "jkpof_ctrl", "jkpof_ctrl_map", "9"], response: true, width: .5, height: .5}
-summon interaction -9.5 65.0 -111.5 {Tags: ["jkpof", "jkpof_ctrl", "jkpof_ctrl_map", "10"], response: true, width: .5, height: .5}
-summon interaction -10.0 64.5 -111.0 {Tags: ["jkpof", "jkpof_ctrl", "jkpof_ctrl_map", "11"], response: true, width: .5, height: .5}
-summon interaction -9.5 64.5 -111.5 {Tags: ["jkpof", "jkpof_ctrl", "jkpof_ctrl_map", "12"], response: true, width: .5, height: .5}
-summon interaction -10.0 64.25 -109.0 {Tags: ["jkpof", "jkpof_ctrl", "jkpof_ctrl_map_custom", "block1"], response: true, width: .5, height: .5}
-summon interaction -9.0 64.25 -110.0 {Tags: ["jkpof", "jkpof_ctrl", "jkpof_ctrl_map_custom", "block2"], response: true, width: .5, height: .5}
+summon interaction -12.0 65.5 -109.0 {Tags: ["jkpof", "jkpof_ctrl", "jkpof_ctrl_map", "1"], response: true, width: .5, height: .5}
+summon interaction -11.5 65.5 -109.5 {Tags: ["jkpof", "jkpof_ctrl", "jkpof_ctrl_map", "2"], response: true, width: .5, height: .5}
+summon interaction -11.0 65.5 -110.0 {Tags: ["jkpof", "jkpof_ctrl", "jkpof_ctrl_map", "3"], response: true, width: .5, height: .5}
+summon interaction -10.5 65.5 -110.5 {Tags: ["jkpof", "jkpof_ctrl", "jkpof_ctrl_map", "4"], response: true, width: .5, height: .5}
+summon interaction -10.0 65.5 -111.0 {Tags: ["jkpof", "jkpof_ctrl", "jkpof_ctrl_map", "5"], response: true, width: .5, height: .5}
+summon interaction -9.5 65.5 -111.5 {Tags: ["jkpof", "jkpof_ctrl", "jkpof_ctrl_map", "6"], response: true, width: .5, height: .5}
+summon interaction -9.0 65.5 -112.0 {Tags: ["jkpof", "jkpof_ctrl", "jkpof_ctrl_map", "7"], response: true, width: .5, height: .5}
+summon interaction -12.0 65.0 -109.0 {Tags: ["jkpof", "jkpof_ctrl", "jkpof_ctrl_map", "8"], response: true, width: .5, height: .5}
+summon interaction -11.5 65.0 -109.5 {Tags: ["jkpof", "jkpof_ctrl", "jkpof_ctrl_map", "9"], response: true, width: .5, height: .5}
+summon interaction -11.0 65.0 -110.0 {Tags: ["jkpof", "jkpof_ctrl", "jkpof_ctrl_map", "10"], response: true, width: .5, height: .5}
+summon interaction -10.5 65.0 -110.5 {Tags: ["jkpof", "jkpof_ctrl", "jkpof_ctrl_map", "11"], response: true, width: .5, height: .5}
+summon interaction -10.0 65.0 -111.0 {Tags: ["jkpof", "jkpof_ctrl", "jkpof_ctrl_map", "12"], response: true, width: .5, height: .5}
+summon interaction -9.5 65.0 -111.5 {Tags: ["jkpof", "jkpof_ctrl", "jkpof_ctrl_map", "13"], response: true, width: .5, height: .5}
+summon interaction -9.0 65.0 -112.0 {Tags: ["jkpof", "jkpof_ctrl", "jkpof_ctrl_map", "14"], response: true, width: .5, height: .5}
+summon interaction -10.0 64.5 -111.0 {Tags: ["jkpof", "jkpof_ctrl", "jkpof_ctrl_map", "15"], response: true, width: .5, height: .5}
+summon interaction -9.5 64.5 -111.5 {Tags: ["jkpof", "jkpof_ctrl", "jkpof_ctrl_map", "16"], response: true, width: .5, height: .5}
+summon interaction -9.0 64.5 -112.0 {Tags: ["jkpof", "jkpof_ctrl", "jkpof_ctrl_map", "17"], response: true, width: .5, height: .5}
+summon interaction -10.0 64.25 -109.0 {Tags: ["jkpof", "jkpof_ctrl", "jkpof_ctrl_map_custom", "b1", "1st_2"], response: true, width: .5, height: .5}
+summon interaction -9.0 64.25 -110.0 {Tags: ["jkpof", "jkpof_ctrl", "jkpof_ctrl_map_custom", "b2", "1st_2"], response: true, width: .5, height: .5}
+summon interaction -9.0 64.25 -108.0 {Tags: ["jkpof", "jkpof_ctrl", "jkpof_ctrl_map_custom", "b3"], response: true, width: .5, height: .5}
+summon interaction -8.0 64.25 -109.0 {Tags: ["jkpof", "jkpof_ctrl", "jkpof_ctrl_map_custom", "b4"], response: true, width: .5, height: .5}
 
+summon item_display -12.0 64.75 -109.0 {Tags: ["jkpof", "jkpof_display_ctrl_map", "0"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.4f, .4f, .4f], translation: [0f, 0f, 0f]}, item: {id: "barrier"}, Rotation: [135f, 0f]}
 summon item_display -11.5 64.75 -109.5 {Tags: ["jkpof", "jkpof_display_ctrl_map", "-1"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.4f, .4f, .4f], translation: [0f, 0f, 0f]}, item: {id: "map"}, Rotation: [135f, 0f]}
-summon item_display -11.0 64.75 -110.0 {Tags: ["jkpof", "jkpof_display_ctrl_map", "0"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.4f, .4f, .4f], translation: [0f, 0f, 0f]}, item: {id: "barrier"}, Rotation: [135f, 0f]}
-summon item_display -11.5 65.75 -109.5 {Tags: ["jkpof", "jkpof_display_ctrl_map", "1"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.4f, .4f, .4f], translation: [0f, 0f, 0f]}, item: {id: "cobweb"}, Rotation: [135f, 0f]}
-summon item_display -11.0 65.75 -110.0 {Tags: ["jkpof", "jkpof_display_ctrl_map", "2"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.4f, .4f, .4f], translation: [0f, 0f, 0f]}, item: {id: "honey_block"}, Rotation: [135f, 0f]}
-summon item_display -10.5 65.75 -110.5 {Tags: ["jkpof", "jkpof_display_ctrl_map", "3"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.4f, .4f, .4f], translation: [0f, 0f, 0f]}, item: {id: "snow_block"}, Rotation: [135f, 0f]}
-summon item_display -10.0 65.75 -111.0 {Tags: ["jkpof", "jkpof_display_ctrl_map", "4"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.4f, .4f, .4f], translation: [0f, 0f, 0f]}, item: {id: "gold_block"}, Rotation: [135f, 0f]}
-summon item_display -9.5 65.75 -111.5 {Tags: ["jkpof", "jkpof_display_ctrl_map", "5"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.4f, .4f, .4f], translation: [0f, 0f, 0f]}, item: {id: "decorated_pot"}, Rotation: [135f, 0f]}
-summon item_display -11.5 65.25 -109.5 {Tags: ["jkpof", "jkpof_display_ctrl_map", "6"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.4f, .4f, .4f], translation: [0f, 0f, 0f]}, item: {id: "tnt"}, Rotation: [135f, 0f]}
-summon item_display -11.0 65.25 -110.0 {Tags: ["jkpof", "jkpof_display_ctrl_map", "7"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.4f, .4f, .4f], translation: [0f, 0f, 0f]}, item: {id: "end_stone"}, Rotation: [135f, 0f]}
-summon item_display -10.5 65.25 -110.5 {Tags: ["jkpof", "jkpof_display_ctrl_map", "8"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.4f, .4f, .4f], translation: [0f, 0f, 0f]}, item: {id: "big_dripleaf"}, Rotation: [135f, 0f]}
-summon item_display -10.0 65.25 -111.0 {Tags: ["jkpof", "jkpof_display_ctrl_map", "9"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.4f, .4f, .4f], translation: [0f, 0f, 0f]}, item: {id: "ladder"}, Rotation: [135f, 0f]}
-summon item_display -9.5 65.25 -111.5 {Tags: ["jkpof", "jkpof_display_ctrl_map", "10"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.4f, .4f, .4f], translation: [0f, 0f, 0f]}, item: {id: "oak_log"}, Rotation: [135f, 0f]}
-summon item_display -10.0 64.75 -111.0 {Tags: ["jkpof", "jkpof_display_ctrl_map", "11"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.4f, .4f, .4f], translation: [0f, 0f, 0f]}, item: {id: "loom"}, Rotation: [135f, 0f]}
-summon item_display -9.5 64.75 -111.5 {Tags: ["jkpof", "jkpof_display_ctrl_map", "12"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.4f, .4f, .4f], translation: [0f, 0f, 0f]}, item: {id: "cartography_table"}, Rotation: [135f, 0f]}
-summon item_display -10.0 64.5 -109.0 {Tags: ["jkpof", "jkpof_display_ctrl_map", "jkpof_ctrl_map_custom", "block1"], brightness: {block: 15, sky: 15}, CustomNameVisible: true, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.4f, .4f, .4f], translation: [0f, 0f, 0f]}, item: {id: "glass"}, Rotation: [135f, 0f]}
-summon item_display -9.0 64.5 -110.0 {Tags: ["jkpof", "jkpof_display_ctrl_map", "jkpof_ctrl_map_custom", "block2"], brightness: {block: 15, sky: 15}, CustomNameVisible: true, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.4f, .4f, .4f], translation: [0f, 0f, 0f]}, item: {id: "glass"}, Rotation: [135f, 0f]}
+summon item_display -12.0 65.75 -109.0 {Tags: ["jkpof", "jkpof_display_ctrl_map", "1"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.4f, .4f, .4f], translation: [0f, 0f, 0f]}, item: {id: "cobweb"}, Rotation: [135f, 0f]}
+summon item_display -11.5 65.75 -109.5 {Tags: ["jkpof", "jkpof_display_ctrl_map", "2"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.4f, .4f, .4f], translation: [0f, 0f, 0f]}, item: {id: "honey_block"}, Rotation: [135f, 0f]}
+summon item_display -11.0 65.75 -110.0 {Tags: ["jkpof", "jkpof_display_ctrl_map", "3"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.4f, .4f, .4f], translation: [0f, 0f, 0f]}, item: {id: "snow_block"}, Rotation: [135f, 0f]}
+summon item_display -10.5 65.75 -110.5 {Tags: ["jkpof", "jkpof_display_ctrl_map", "4"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.4f, .4f, .4f], translation: [0f, 0f, 0f]}, item: {id: "gold_block"}, Rotation: [135f, 0f]}
+summon item_display -10.0 65.75 -111.0 {Tags: ["jkpof", "jkpof_display_ctrl_map", "5"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.4f, .4f, .4f], translation: [0f, 0f, 0f]}, item: {id: "decorated_pot"}, Rotation: [135f, 0f]}
+summon item_display -9.5 65.75 -111.5 {Tags: ["jkpof", "jkpof_display_ctrl_map", "6"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.4f, .4f, .4f], translation: [0f, 0f, 0f]}, item: {id: "end_stone"}, Rotation: [135f, 0f]}
+summon item_display -9.0 65.75 -112.0 {Tags: ["jkpof", "jkpof_display_ctrl_map", "7"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.4f, .4f, .4f], translation: [0f, 0f, 0f]}, item: {id: "ladder"}, Rotation: [135f, 0f]}
+summon item_display -12.0 65.25 -109.0 {Tags: ["jkpof", "jkpof_display_ctrl_map", "8"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.4f, .4f, .4f], translation: [0f, 0f, 0f]}, item: {id: "big_dripleaf"}, Rotation: [135f, 0f]}
+summon item_display -11.5 65.25 -109.5 {Tags: ["jkpof", "jkpof_display_ctrl_map", "9"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.4f, .4f, .4f], translation: [0f, 0f, 0f]}, item: {id: "cauldron"}, Rotation: [135f, 0f]}
+summon item_display -11.0 65.25 -110.0 {Tags: ["jkpof", "jkpof_display_ctrl_map", "10"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.4f, .4f, .4f], translation: [0f, 0f, 0f]}, item: {id: "tnt"}, Rotation: [135f, 0f]}
+summon item_display -10.5 65.25 -110.5 {Tags: ["jkpof", "jkpof_display_ctrl_map", "11"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.4f, .4f, .4f], translation: [0f, 0f, 0f]}, item: {id: "soul_sand"}, Rotation: [135f, 0f]}
+summon item_display -10.0 65.25 -111.0 {Tags: ["jkpof", "jkpof_display_ctrl_map", "12"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.4f, .4f, .4f], translation: [0f, 0f, 0f]}, item: {id: "hay_block"}, Rotation: [135f, 0f]}
+summon item_display -9.5 65.25 -111.5 {Tags: ["jkpof", "jkpof_display_ctrl_map", "13"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.4f, .4f, .4f], translation: [0f, 0f, 0f]}, item: {id: "oak_log"}, Rotation: [135f, 0f]}
+summon item_display -9.0 65.25 -112.0 {Tags: ["jkpof", "jkpof_display_ctrl_map", "14"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.4f, .4f, .4f], translation: [0f, 0f, 0f]}, item: {id: "pink_stained_glass"}, Rotation: [135f, 0f]}
+summon item_display -10.0 64.75 -111.0 {Tags: ["jkpof", "jkpof_display_ctrl_map", "15"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.4f, .4f, .4f], translation: [0f, 0f, 0f]}, item: {id: "loom"}, Rotation: [135f, 0f]}
+summon item_display -9.5 64.75 -111.5 {Tags: ["jkpof", "jkpof_display_ctrl_map", "16"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.4f, .4f, .4f], translation: [0f, 0f, 0f]}, item: {id: "cartography_table"}, Rotation: [135f, 0f]}
+summon item_display -9.0 64.75 -112.0 {Tags: ["jkpof", "jkpof_display_ctrl_map", "17"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.4f, .4f, .4f], translation: [0f, 0f, 0f]}, item: {id: "smooth_stone"}, Rotation: [135f, 0f]}
+summon item_display -10.0 64.5 -109.0 {Tags: ["jkpof", "jkpof_display_ctrl_map", "jkpof_ctrl_map_custom", "b1", "1st_2"], brightness: {block: 15, sky: 15}, CustomNameVisible: true, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.4f, .4f, .4f], translation: [0f, 0f, 0f]}, item: {id: "glass"}, Rotation: [135f, 0f], view_range: 0}
+summon item_display -9.0 64.5 -110.0 {Tags: ["jkpof", "jkpof_display_ctrl_map", "jkpof_ctrl_map_custom", "b2", "1st_2"], brightness: {block: 15, sky: 15}, CustomNameVisible: true, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.4f, .4f, .4f], translation: [0f, 0f, 0f]}, item: {id: "glass"}, Rotation: [135f, 0f], view_range: 0}
+summon item_display -9.0 64.5 -108.0 {Tags: ["jkpof", "jkpof_display_ctrl_map", "jkpof_ctrl_map_custom", "b3"], brightness: {block: 15, sky: 15}, CustomNameVisible: true, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.4f, .4f, .4f], translation: [0f, 0f, 0f]}, item: {id: "glass"}, Rotation: [135f, 0f], view_range: 0}
+summon item_display -8.0 64.5 -109.0 {Tags: ["jkpof", "jkpof_display_ctrl_map", "jkpof_ctrl_map_custom", "b4"], brightness: {block: 15, sky: 15}, CustomNameVisible: true, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.4f, .4f, .4f], translation: [0f, 0f, 0f]}, item: {id: "glass"}, Rotation: [135f, 0f], view_range: 0}
 
 ## 预设
 summon interaction 0 65.25 -116 {Tags: ["jkpof", "jkpof_ctrl_preset"], response: true, width: .5, height: .5}

@@ -13,7 +13,6 @@ scoreboard players set #ctrl_item_prop_chance jkpof.int 0
 scoreboard players set #ctrl_ground_type jkpof.int 0
 scoreboard players set #ctrl_ground_radius jkpof.int 16
 scoreboard players set #ctrl_ground_floor jkpof.int 1
-scoreboard players set #ctrl_ground_floor_random jkpof.int 0
 scoreboard players set #ctrl_map jkpof.int 0
 scoreboard players set #ctrl_map_real jkpof.int 0
 

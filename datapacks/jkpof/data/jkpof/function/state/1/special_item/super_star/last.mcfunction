@@ -8,7 +8,8 @@ particle effect{color: [1, 1, 1]} ~ ~ ~ 0 0 0 1 1
 particle effect{color: [1, 0, 0]} ~ ~ ~ 0 0 0 1 1
 particle effect{color: [0, 1, 0]} ~ ~ ~ 0 0 0 1 1
 particle effect{color: [0, 0, 1]} ~ ~ ~ 0 0 0 1 1
-function jkpof:state/1/special_item/super_star/note_
+
+function jkpof:state/1/special_item/super_star/song/real
 
 # 结束
 execute as @s[scores={jkpof.super_star=0}] run attribute @s knockback_resistance base reset

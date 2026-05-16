@@ -40,3 +40,5 @@ execute as @s[scores={jkpof.damage.type.last=324}] run tellraw @a ["", {storage:
 
 # 击杀数 +1
 execute unless score #test_mode jkpof.int matches 1 run scoreboard players add @a[limit=1, tag=jkpof_murder] jkpof.kills 1
+execute unless score #test_mode jkpof.int matches 1 run scoreboard players add @a[limit=1, tag=jkpof_murder] jkpof.stats.kill 1
+execute unless score #test_mode jkpof.int matches 1 if score #1st_blood jkpof.int matches 1 run scoreboard players add @a[limit=1, tag=jkpof_murder] jkpof.stats.kill.1st 1

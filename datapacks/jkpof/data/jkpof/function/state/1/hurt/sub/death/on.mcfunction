@@ -2,6 +2,8 @@ scoreboard players set @s jkpof.state 3
 scoreboard players reset @s jkpof.death
 gamemode spectator @s
 execute if score #event_broom jkpof.int matches 1 run scoreboard players add #event_broom.time jkpof.int 30
+execute unless score #test_mode jkpof.int matches 1 run scoreboard players add @s jkpof.stats.death.all 1
+execute unless score #test_mode jkpof.int matches 1 if score #1st_blood jkpof.int matches 1 run scoreboard players add @s jkpof.stats.death.1st 1
 
 # 获取完成击杀的玩家
 scoreboard players operation @a jkpof.damage.temp = @s jkpof.damage.source.real
@@ -21,6 +23,7 @@ execute if score #death_type jkpof.int matches 1 run function jkpof:state/1/hurt
 # 清理
 tag @a remove jkpof_murder
 tag @s remove jkpof_victim
+scoreboard players reset #1st_blood jkpof.int
 function jkpof:state/1/hurt/sub/forgive
 
 # 记录死亡点

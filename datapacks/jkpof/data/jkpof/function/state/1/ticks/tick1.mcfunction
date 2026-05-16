@@ -8,7 +8,7 @@ execute as @a unless score @s jkpof.state matches 2.. run function jkpof:state/1
 execute if score #event_ctrl_real jkpof.int matches 1 run function jkpof:state/1/progress/event/tick1
 
 # 无敌星音乐
-execute if entity @a[limit=1, scores={jkpof.state=2}] run function jkpof:state/1/special_item/super_star/song
+execute if entity @a[limit=1, scores={jkpof.state=2, jkpof.super_star=1..}] run function jkpof:state/1/special_item/super_star/song/0
 
 # 可堆叠物品
 execute as @e[type=item, tag=!jkpof] run function jkpof:state/1/special_item/stack

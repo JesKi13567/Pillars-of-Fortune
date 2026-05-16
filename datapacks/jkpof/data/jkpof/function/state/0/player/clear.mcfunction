@@ -1,4 +1,5 @@
 clear @s
+dialog clear @s
 advancement revoke @s everything
 
 effect clear @s

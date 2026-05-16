@@ -116,6 +116,7 @@ scoreboard players reset #event_prop_supply.count.enchanted_book jkpof.int
 scoreboard players reset #event_prop_supply.count.potion jkpof.int
 scoreboard players reset #event_betrayal_hour.status jkpof.int
 
+scoreboard players set #1st_blood jkpof.int 1
 scoreboard players set #event_vote.last jkpof.int -1
 scoreboard players set #event_broom.time jkpof.int 123
 scoreboard players set #state jkpof.int 1

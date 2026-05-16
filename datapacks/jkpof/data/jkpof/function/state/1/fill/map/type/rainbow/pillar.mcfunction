@@ -1,0 +1,12 @@
+$execute as @s[scores={jkpof.id=1}] run fill ~ ~$(y1) ~ ~ $(y2) ~ red_$(type) strict
+$execute as @s[scores={jkpof.id=2}] run fill ~ ~$(y1) ~ ~ $(y2) ~ blue_$(type) strict
+$execute as @s[scores={jkpof.id=3}] run fill ~ ~$(y1) ~ ~ $(y2) ~ green_$(type) strict
+$execute as @s[scores={jkpof.id=4}] run fill ~ ~$(y1) ~ ~ $(y2) ~ yellow_$(type) strict
+$execute as @s[scores={jkpof.id=5}] run fill ~ ~$(y1) ~ ~ $(y2) ~ cyan_$(type) strict
+$execute as @s[scores={jkpof.id=6}] run fill ~ ~$(y1) ~ ~ $(y2) ~ white_$(type) strict
+$execute as @s[scores={jkpof.id=7}] run fill ~ ~$(y1) ~ ~ $(y2) ~ pink_$(type) strict
+$execute as @s[scores={jkpof.id=8}] run fill ~ ~$(y1) ~ ~ $(y2) ~ gray_$(type) strict
+$execute as @s[scores={jkpof.id=9}] run fill ~ ~$(y1) ~ ~ $(y2) ~ orange_$(type) strict
+$execute as @s[scores={jkpof.id=10}] run fill ~ ~$(y1) ~ ~ $(y2) ~ lime_$(type) strict
+$execute as @s[scores={jkpof.id=11}] run fill ~ ~$(y1) ~ ~ $(y2) ~ purple_$(type) strict
+$execute as @s[scores={jkpof.id=12}] run fill ~ ~$(y1) ~ ~ $(y2) ~ light_gray_$(type) strict
