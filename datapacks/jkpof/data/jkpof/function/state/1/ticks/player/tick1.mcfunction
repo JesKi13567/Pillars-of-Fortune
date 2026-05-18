@@ -18,6 +18,9 @@ execute at @s[scores={jkpof.super_star=1..}] run function jkpof:state/1/special_
 execute unless score @s[gamemode=creative] jkpof.creative matches 1.. run gamemode survival @s
 execute as @s[scores={jkpof.creative=1..999}] run function jkpof:state/1/special_item/creative/global
 
+# 触则生变
+execute if score #before_start jkpof.int matches 0 if score #ctrl_touch_change jkpof.int matches 1 at @s align xyz positioned ~.5 ~.5 ~.5 run function jkpof:state/1/special_item/touch_change/global
+
 # 死亡
 execute as @s[scores={jkpof.death=1..}] run function jkpof:state/1/hurt/sub/death/on
 

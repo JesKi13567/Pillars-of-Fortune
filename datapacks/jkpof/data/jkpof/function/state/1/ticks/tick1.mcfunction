@@ -25,3 +25,6 @@ execute as @e[type=marker, tag=jkpof_tower] at @s run function jkpof:state/1/spe
 # 湮灭爆弹
 execute as @e[type=snowball, tag=!jkpof] at @s run function jkpof:state/1/special_item/null_bomb/summon
 execute as @e[type=armor_stand, tag=jkpof_null_bomb] at @s unless entity @e[type=snowball, distance=..2] run function jkpof:state/1/special_item/null_bomb/land
+
+# 触则生变
+execute if score #before_start jkpof.int matches 0 if score #ctrl_touch_change jkpof.int matches 1 as @e[type=marker, tag=jkpof_touch_block] at @s if block ~ ~ ~ #jkpof:touch_not_change run kill @s

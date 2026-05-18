@@ -28,7 +28,7 @@ scoreboard players set #ctrl_bossbar jkpof.int 1
 
 scoreboard players set #ctrl_upside_down jkpof.int 0
 scoreboard players set #ctrl_kid_mode jkpof.int 0
-scoreboard players set #ctrl_forgiving_void jkpof.int 0
+scoreboard players set #ctrl_touch_change jkpof.int 0
 scoreboard players set #ctrl_double_health jkpof.int 0
 scoreboard players set #ctrl_init_tool jkpof.int 0
 scoreboard players set #ctrl_bonus_chest jkpof.int 0

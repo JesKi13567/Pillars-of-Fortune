@@ -193,7 +193,7 @@ execute if score #ctrl_map_real jkpof.int matches 1.. run function jkpof:state/1
 scoreboard players set #special_rules.count jkpof.int 0
 scoreboard players operation #special_rules.count jkpof.int += #ctrl_kid_mode jkpof.int
 scoreboard players operation #special_rules.count jkpof.int += #ctrl_upside_down jkpof.int
-scoreboard players operation #special_rules.count jkpof.int += #ctrl_forgiving_void jkpof.int
+scoreboard players operation #special_rules.count jkpof.int += #ctrl_touch_change jkpof.int
 scoreboard players operation #special_rules.count jkpof.int += #ctrl_double_health jkpof.int
 scoreboard players operation #special_rules.count jkpof.int += #ctrl_init_tool jkpof.int
 scoreboard players operation #special_rules.count jkpof.int += #ctrl_bonus_chest jkpof.int
@@ -201,7 +201,7 @@ execute if score #special_rules.count jkpof.int matches 1.. run tellraw @a [{sto
 execute if score #ctrl_kid_mode jkpof.int matches 1 run tellraw @a [{storage: "jk:pof", interpret: true, nbt: "txt.lobby.const.settings.special_rules.kid_mode.name", color: "green"}]
 execute if score #ctrl_upside_down jkpof.int matches 1 run tellraw @a [{storage: "jk:pof", interpret: true, nbt: "txt.lobby.const.settings.special_rules.upside_down.name", color: "green"}]
 execute if score #ctrl_upside_down jkpof.int matches 1 as @a[scores={jkpof.state=2}] run loot give @s loot jkpof:item/prop/gravity_device
-execute if score #ctrl_forgiving_void jkpof.int matches 1 run tellraw @a [{storage: "jk:pof", interpret: true, nbt: "txt.lobby.const.settings.special_rules.forgiving_void.name", color: "green"}]
+execute if score #ctrl_touch_change jkpof.int matches 1 run tellraw @a [{storage: "jk:pof", interpret: true, nbt: "txt.lobby.const.settings.special_rules.touch_change.name", color: "green"}]
 execute if score #ctrl_double_health jkpof.int matches 1 run tellraw @a [{storage: "jk:pof", interpret: true, nbt: "txt.lobby.const.settings.special_rules.double_health.name", color: "green"}]
 execute if score #ctrl_init_tool jkpof.int matches 1 run tellraw @a [{storage: "jk:pof", interpret: true, nbt: "txt.lobby.const.settings.special_rules.init_tool.name", color: "green"}]
 execute if score #ctrl_bonus_chest jkpof.int matches 1 run tellraw @a [{translate: "selectWorld.bonusItems", color: "green"}]

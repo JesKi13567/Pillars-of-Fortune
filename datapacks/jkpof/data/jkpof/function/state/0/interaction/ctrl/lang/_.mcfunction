@@ -42,7 +42,7 @@ data modify entity @e[type=text_display, tag=jkpof_display_ctrl_bossbar, limit=1
 data modify entity @e[type=text_display, tag=jkpof_display_ctrl_special_rules_show, limit=1] text set value [{storage: "jk:pof", interpret: true, nbt: "txt.lobby.const.settings.special_rules.name", color: "gold"}]
 data modify entity @e[type=text_display, tag=jkpof_display_ctrl_upside_down, limit=1] text set value [{storage: "jk:pof", interpret: true, nbt: "txt.lobby.const.settings.special_rules.upside_down.name", color: "green"}]
 data modify entity @e[type=text_display, tag=jkpof_display_ctrl_kid_mode, limit=1] text set value [{storage: "jk:pof", interpret: true, nbt: "txt.lobby.const.settings.special_rules.kid_mode.name", color: "green"}]
-data modify entity @e[type=text_display, tag=jkpof_display_ctrl_forgiving_void, limit=1] text set value [{storage: "jk:pof", interpret: true, nbt: "txt.lobby.const.settings.special_rules.forgiving_void.name", color: "green"}]
+data modify entity @e[type=text_display, tag=jkpof_display_ctrl_touch_change, limit=1] text set value [{storage: "jk:pof", interpret: true, nbt: "txt.lobby.const.settings.special_rules.touch_change.name", color: "green"}]
 data modify entity @e[type=text_display, tag=jkpof_display_ctrl_double_health, limit=1] text set value [{storage: "jk:pof", interpret: true, nbt: "txt.lobby.const.settings.special_rules.double_health.name", color: "green"}]
 data modify entity @e[type=text_display, tag=jkpof_display_ctrl_init_tool, limit=1] text set value [{storage: "jk:pof", interpret: true, nbt: "txt.lobby.const.settings.special_rules.init_tool.name", color: "green"}]
 

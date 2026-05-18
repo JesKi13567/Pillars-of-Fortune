@@ -30,8 +30,8 @@ scoreboard players remove #ctrl_upside_down jkpof.int 1
 function jkpof:state/0/interaction/ctrl/switcher {id: 'upside_down', item: 'magenta_glazed_terracotta'}
 scoreboard players remove #ctrl_kid_mode jkpof.int 1
 function jkpof:state/0/interaction/ctrl/switcher {id: 'kid_mode', item: 'wheat_seeds'}
-scoreboard players remove #ctrl_forgiving_void jkpof.int 1
-function jkpof:state/0/interaction/ctrl/switcher {id: 'forgiving_void', item: 'bedrock'}
+scoreboard players remove #ctrl_touch_change jkpof.int 1
+function jkpof:state/0/interaction/ctrl/switcher {id: 'touch_change', item: 'rabbit_foot'}
 scoreboard players remove #ctrl_double_health jkpof.int 1
 function jkpof:state/0/interaction/ctrl/switcher {id: 'double_health', item: 'cake'}
 scoreboard players remove #ctrl_init_tool jkpof.int 1

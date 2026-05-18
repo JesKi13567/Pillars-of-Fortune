@@ -9,22 +9,22 @@ execute if score #event_prop_supply.count.potion jkpof.int matches 1.. as @r[sco
 
 ## 分数
 execute if score #is_prop jkpof.int matches 0 store result score #item_order jkpof.int run random value 1..1245
-execute if score #is_prop jkpof.int matches 0 if score #ctrl_item_prop_chance jkpof.int matches 1 if score #item_order jkpof.int matches 22.. if predicate {condition: "random_chance", chance: 0.01} run scoreboard players set #is_prop jkpof.int 1
-execute if score #is_prop jkpof.int matches 0 if score #ctrl_item_prop_chance jkpof.int matches 2 if score #item_order jkpof.int matches 22.. if predicate {condition: "random_chance", chance: 0.02} run scoreboard players set #is_prop jkpof.int 1
-execute if score #is_prop jkpof.int matches 0 if score #ctrl_item_prop_chance jkpof.int matches 3 if score #item_order jkpof.int matches 22.. if predicate {condition: "random_chance", chance: 0.03} run scoreboard players set #is_prop jkpof.int 1
-execute if score #is_prop jkpof.int matches 0 if score #ctrl_item_prop_chance jkpof.int matches 4 if score #item_order jkpof.int matches 22.. if predicate {condition: "random_chance", chance: 0.04} run scoreboard players set #is_prop jkpof.int 1
-execute if score #is_prop jkpof.int matches 0 if score #ctrl_item_prop_chance jkpof.int matches 5 if score #item_order jkpof.int matches 22.. if predicate {condition: "random_chance", chance: 0.05} run scoreboard players set #is_prop jkpof.int 1
-execute if score #is_prop jkpof.int matches 1 store result score #item_order jkpof.int run random value 1..21
+execute if score #is_prop jkpof.int matches 0 if score #ctrl_item_prop_chance jkpof.int matches 1 if score #item_order jkpof.int matches 23.. if predicate {condition: "random_chance", chance: 0.01} run scoreboard players set #is_prop jkpof.int 1
+execute if score #is_prop jkpof.int matches 0 if score #ctrl_item_prop_chance jkpof.int matches 2 if score #item_order jkpof.int matches 23.. if predicate {condition: "random_chance", chance: 0.02} run scoreboard players set #is_prop jkpof.int 1
+execute if score #is_prop jkpof.int matches 0 if score #ctrl_item_prop_chance jkpof.int matches 3 if score #item_order jkpof.int matches 23.. if predicate {condition: "random_chance", chance: 0.03} run scoreboard players set #is_prop jkpof.int 1
+execute if score #is_prop jkpof.int matches 0 if score #ctrl_item_prop_chance jkpof.int matches 4 if score #item_order jkpof.int matches 23.. if predicate {condition: "random_chance", chance: 0.04} run scoreboard players set #is_prop jkpof.int 1
+execute if score #is_prop jkpof.int matches 0 if score #ctrl_item_prop_chance jkpof.int matches 5 if score #item_order jkpof.int matches 23.. if predicate {condition: "random_chance", chance: 0.05} run scoreboard players set #is_prop jkpof.int 1
+execute if score #is_prop jkpof.int matches 1 store result score #item_order jkpof.int run random value 1..22
 
 # 道具
 execute unless score #ctrl_lang jkpof.int matches 2 if score #item_order jkpof.int matches 1 as @r[scores={jkpof.state=2}] run loot give @a[scores={jkpof.state=2}] loot jkpof:item/prop/death_note/zh
 execute if score #ctrl_lang jkpof.int matches 2 if score #item_order jkpof.int matches 1 as @r[scores={jkpof.state=2}] run loot give @a[scores={jkpof.state=2}] loot jkpof:item/prop/death_note/en
 execute if score #item_order jkpof.int matches 2 as @r[scores={jkpof.state=2}] run loot give @a[scores={jkpof.state=2}] loot jkpof:item/prop/creative
-execute if score #item_order jkpof.int matches 3..21 as @r[scores={jkpof.state=2}] run loot give @a[scores={jkpof.state=2}] loot jkpof:item/prop/common
+execute if score #item_order jkpof.int matches 3..22 as @r[scores={jkpof.state=2}] run loot give @a[scores={jkpof.state=2}] loot jkpof:item/prop/common
 
 # 非道具
-execute if score #item_order jkpof.int matches 22..1081 as @r[scores={jkpof.state=2}] run loot give @a[scores={jkpof.state=2}] loot jkpof:item/common
-execute if score #item_order jkpof.int matches 1082..1141 as @r[scores={jkpof.state=2}] run loot give @a[scores={jkpof.state=2}] loot jkpof:item/copper_made
-execute if score #item_order jkpof.int matches 1142..1154 as @r[scores={jkpof.state=2}] run loot give @a[scores={jkpof.state=2}] loot jkpof:item/1
+execute if score #item_order jkpof.int matches 23..1083 as @r[scores={jkpof.state=2}] run loot give @a[scores={jkpof.state=2}] loot jkpof:item/common
+execute if score #item_order jkpof.int matches 1084..1143 as @r[scores={jkpof.state=2}] run loot give @a[scores={jkpof.state=2}] loot jkpof:item/copper_made
+execute if score #item_order jkpof.int matches 1144..1154 as @r[scores={jkpof.state=2}] run loot give @a[scores={jkpof.state=2}] loot jkpof:item/1
 execute if score #item_order jkpof.int matches 1155..1236 as @r[scores={jkpof.state=2}] run loot give @a[scores={jkpof.state=2}] loot jkpof:item/64/common
 execute if score #item_order jkpof.int matches 1237..1245 as @r[scores={jkpof.state=2}] run loot give @a[scores={jkpof.state=2}] loot jkpof:item/64/1

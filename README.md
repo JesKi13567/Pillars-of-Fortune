@@ -96,10 +96,10 @@ The language can be switched near the lobby spawn point \(has hint in initial\),
 |物品堆叠|大部分无耐久物品最大堆叠个数均修改为 64。|
 |下界合金锭|可直接用于合成下界合金制的物品。|
 |刷怪蛋|苦力怕刷怪蛋：均为自燃苦力怕。狼，猫＆鹦鹉：都是驯服的。部分生物拥有更多变种。弓/弩：能发射刷怪蛋并生成。|
-|玩家的头|玩家死亡会掉落头颅。主手持信标，副手持玩家的头并潜行，能使对应玩家复活。|
+|玩家的头|玩家死亡会掉落头颅。|
 |附魔书|按 [右键] 给副手物品附魔。|
-|挖掘一切|能挖掘生存模式下的所有可挖掘方块。|
 |附魔金毒马铃薯| \ |
+|挖掘一切|能挖掘生存模式下的所有可挖掘方块。|
 |击退棒|击退 V|
 |急救平台|在脚下生成一层黏液块平台。|
 |折跃珍珠|沿指针方向瞬移 20 格，无视方块阻挡。|
@@ -112,8 +112,8 @@ The language can be switched near the lobby spawn point \(has hint in initial\),
 |可发射的火球|按 [右键] 来发射。|
 |可发射的末影龙火球|按 [右键] 来发射。|
 |湮灭爆弹|湮灭目标区域 9×9×9 范围的所有方块。|
-|时间控制器|使用后增加 1/4 游戏天。|
 |大盗鬼手|夺取指针指向玩家的物品栏内的一格物品。|
+|信标|主手持信标，副手持玩家的头并潜行，能使对应玩家复活。|
 |战利品箱|来自原版 MC 的随机战利品，一个顶俩！|
 |快速防御塔|放下后会自动快速建造一座防御塔。|
 |自燃TNT|3 秒后爆炸。|
@@ -220,10 +220,10 @@ The language can be switched near the lobby spawn point \(has hint in initial\),
 |物品堆疊|大部分無耐久物品最大堆疊個數均修改為 64。|
 |獄髓錠|可直接用於合成獄髓物品。|
 |生怪蛋|苦力怕生怪蛋：均為自燃苦力怕。狼，貓＆鸚鵡：都是馴服的。部分生物擁有更多變種。弓/弩：能發射生怪蛋並生成。|
-|玩家頭顱|玩家死亡會掉落頭顱。主手持烽火台，副手持玩家頭顱並潛行，能使對應玩家復活。|
+|玩家頭顱|玩家死亡會掉落頭顱。|
 |附魔書|按 [右鍵] 給副手物品附魔。|
-|挖掘一切|能挖掘生存模式下的所有可挖掘方塊。|
 |附魔金毒馬鈴薯| \ |
+|挖掘一切|能挖掘生存模式下的所有可挖掘方塊。|
 |擊退棒|擊退 V|
 |急救平台|在腳下生成一層史萊姆方塊平台。|
 |折躍珍珠|沿準星方向瞬移 20 格，無視方塊阻擋。|
@@ -236,8 +236,8 @@ The language can be switched near the lobby spawn point \(has hint in initial\),
 |可發射的火球|按 [右鍵] 來發射。|
 |可發射的龍炎彈|按 [右鍵] 來發射。|
 |湮滅爆彈|湮滅目標區域 9×9×9 範圍的所有方塊。|
-|時間控制器|使用後增加 1/4 遊戲天。|
 |大盜鬼手|奪取準星指向的玩家物品欄內的一格物品。|
+|烽火台|主手持烽火台，副手持玩家頭顱並潛行，能使對應玩家復活。|
 |戰利品箱|來自原版 MC 的隨機戰利品，物超所值！|
 |快速防禦塔|放下後會自動快速建造一座防禦塔。|
 |自燃TNT|3 秒後爆炸。|
@@ -343,10 +343,10 @@ Items are also displayed in the lobby.
 |Item Stack|Most non-durable items have a maximum stack size of 64.|
 |Netherite Ingot|Can be directly used to craft Netherite things.|
 |Spawn Egg|Creeper Spawn Egg: spawns Self-Igniting Creeper. Wolf, Cat & Parrot: they are tamed. Some mobs have more variants. Bow/Crossbow: Can shoot spawn eggs then summon them.|
-|Player Head|Players drop their own heads upon death. Mainhand: Beacon + Offhand: Player Head + Sneak = Respawn.|
+|Player Head|Players drop their own heads upon death.|
 |Enchanted Book|Press [Right Button] to enchant offhand item.|
-|Mine Everything|Mines any mineable block in Survival Mode.|
 |Enchanted Golden Poisonous Potato| \ |
+|Mine Everything|Mines any mineable block in Survival Mode.|
 |Knockback Stick|Knockback V|
 |Aid Platform|Place a Slime Block platform under your feet.|
 |Warp Pearl|Teleport 20 blocks forward, passing through blocks.|
@@ -359,8 +359,8 @@ Items are also displayed in the lobby.
 |Shootable Fireball|Press [Right Button] to shoot.|
 |Shootable Dragon Fireball|Press [Right Button] to shoot.|
 |Null Bomb|Erases all blocks in a 9×9×9 area.|
-|Time Controller|Adds 1/4 game day on use.|
 |Arch-Thief's Spectral Hand|Steal one inventory slot item from the pointed player.|
+|Beacon|Mainhand: Beacon + Offhand: Player Head + Sneak = Respawn.|
 |Loot Chest|Random loot from vanilla Minecraft, which is doubled!|
 |Quick Defend Tower|It will build a tower soon after you placed.|
 |Self-Igniting TNT|Explode in 3 seconds.|

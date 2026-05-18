@@ -5,4 +5,4 @@ $execute as @a[scores={jkpof.id=1..}] if score @s jkpof.$(type)s = #king_max jkp
 $scoreboard players add @a[tag=jkpof_king_max] jkpof.stats.king.$(type) 1
 $tellraw @a ["", {storage: "jk:pof", interpret: true, nbt: "txt.POF", color: "yellow"}, {storage: "jk:pof", interpret: true, nbt: "txt.game.end.king.$(type)", color: "green"}, {selector: "@a[tag=jkpof_king_max]"}, {text: " (", color: "gray"}, {score: {name: "#king_max", objective: "jkpof.int"}, color: "$(color)"}, {text: ")", color: "gray"}]
 
-tag @a[tag=jkpof_king_max] remove jkpof_king_max
+tag @a remove jkpof_king_max

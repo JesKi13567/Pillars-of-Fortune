@@ -22,6 +22,10 @@
                     "value": "jkpof:item/prop/chest"
                 },
                 {
+                    "type": "loot_table",
+                    "value": "jkpof:item/shears"
+                },
+                {
                     "type": "item",
                     "name": "fire_charge",
                     "functions": [
@@ -484,36 +488,8 @@
                 },
                 {
                     "type": "item",
-                    "name": "clock",
+                    "name": "beacon",
                     "functions": [
-                        {
-                            "function": "set_components",
-                            "components": {
-                                "custom_data": {
-                                    "jkpof": [
-                                        "clock"
-                                    ]
-                                },
-                                "consumable": {
-                                    "consume_seconds": 1000000,
-                                    "animation": "none"
-                                },
-                                "enchantment_glint_override": true
-                            }
-                        },
-                        {
-                            "function": "set_name",
-                            "entity": "this",
-                            "name": [
-                                {
-                                    "storage": "jk:pof",
-                                    "interpret": true,
-                                    "nbt": "txt.lobby.item.clock.name",
-                                    "color": "gold",
-                                    "italic": false
-                                }
-                            ]
-                        },
                         {
                             "function": "set_lore",
                             "entity": "this",
@@ -523,9 +499,27 @@
                                     {
                                         "storage": "jk:pof",
                                         "interpret": true,
-                                        "nbt": "txt.lobby.item.clock.lore",
+                                        "nbt": "txt.lobby.item.player_head.p2",
                                         "color": "gray",
                                         "italic": false
+                                    },
+                                    {
+                                        "translate": "block.minecraft.beacon",
+                                        "color": "aqua"
+                                    },
+                                    {
+                                        "storage": "jk:pof",
+                                        "interpret": true,
+                                        "nbt": "txt.lobby.item.player_head.p3"
+                                    },
+                                    {
+                                        "translate": "block.minecraft.player_head",
+                                        "color": "yellow"
+                                    },
+                                    {
+                                        "storage": "jk:pof",
+                                        "interpret": true,
+                                        "nbt": "txt.lobby.item.player_head.p4"
                                     }
                                 ]
                             ]

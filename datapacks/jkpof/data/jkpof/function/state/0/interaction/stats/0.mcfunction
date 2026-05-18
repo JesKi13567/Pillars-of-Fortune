@@ -7,6 +7,7 @@ execute store result storage jk:pof data.stats.kill_1st int 1 run scoreboard pla
 execute store result storage jk:pof data.stats.death_all int 1 run scoreboard players add @s jkpof.stats.death.all 0
 execute store result storage jk:pof data.stats.death_suicide int 1 run scoreboard players add @s jkpof.stats.death.suicide 0
 execute store result storage jk:pof data.stats.death_1st int 1 run scoreboard players add @s jkpof.stats.death.1st 0
+execute store result storage jk:pof data.stats.respawn int 1 run scoreboard players add @s jkpof.stats.respawn 0
 execute store result storage jk:pof data.stats.king_kill int 1 run scoreboard players add @s jkpof.stats.king.kill 0
 execute store result storage jk:pof data.stats.king_live int 1 run scoreboard players add @s jkpof.stats.king.live 0
 
