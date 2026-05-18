@@ -56,7 +56,7 @@ The language can be switched near the lobby spawn point \(has hint in initial\),
 |**地图**| \ |包含随机，将影响柱子和地面，开局时会显示名称，亦可自定义|
 |**特殊规则**|颠倒模式|玩家初始获得「重力装置」*2，柱子将在地面下方生成，部分事件会被影响。|
 ||小孩模式|玩家尺寸为原来的 1/2 。|
-||仁慈的虚空|玩家掉落下虚空时，会从上虚空回归。|
+||触则生变|玩家接触的方块变为随机方块。|
 ||双倍生命值| \ |
 ||初始工具|玩家初始获得「挖掘一切」*1。|
 ||奖励箱|玩家初始获得「战利品箱」*1。|
@@ -178,9 +178,9 @@ The language can be switched near the lobby spawn point \(has hint in initial\),
 ||事件進度條|可關閉顯示|
 ||**預設**|設定項目的預設|
 |**地圖**| \ |包含隨機，將影響柱子和地面，開場時會顯示名稱，亦可自訂|
-||顛倒模式|玩家初始獲得「重力裝置」* 2，柱子將在地面下方生成，部分事件會被影響。|
+|**特殊規則**|顛倒模式|玩家初始獲得「重力裝置」* 2，柱子將在地面下方生成，部分事件會被影響。|
 ||小孩模式|玩家大小為原來的 1/2 。|
-||仁慈的虛空|玩家掉落下虛空時，會從上虛空回歸。|
+||觸則生變|玩家接觸的方塊變為隨機方塊。|
 ||雙倍生命值| \ |
 ||初始工具|玩家初始獲得「挖掘一切」* 1。|
 ||獎勵箱|玩家初始獲得「戰利品箱」* 1。|
@@ -303,7 +303,7 @@ All settings can be configured in the lobby.
 |**Map Theme**| \ |Includes Random; affects Pillars & Ground; if enabled, the theme name will be displayed at the beginning, can also be customed|
 |**Special Rules**|Upside Down Mode|Players get "Gravity Device"*2 on spawn, the pillars are under the ground, some events will be influenced.|
 ||Kid Mode|Set players' Scale to 1/2 .|
-||Forgiving Void|Falling into the lower void will return the player from the upper void.|
+||Touch to Change|Blocks players touch turn random.|
 ||Double Health| \ |
 ||Init Tool|Players get "Mine Everything"*1 on spawn.|
 ||Bonus Chest|Players get "Loot Chest"*1 on spawn.|
