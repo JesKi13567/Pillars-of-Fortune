@@ -1,6 +1,10 @@
-scoreboard players set @s jkpof.state 3
+tellraw @s[scores={jkpof.leavegame=1..}] [{storage: "jk:pof", interpret: true, nbt: "txt.POF", color: "yellow"}, {storage: "jk:pof", interpret: true, nbt: "txt.spectator.by.leavegame", color: "green"}]
+scoreboard players reset @s jkpof.leavegame
+
 scoreboard players reset @s jkpof.death
+scoreboard players set @s jkpof.state 3
 gamemode spectator @s
+clear @s
 execute if score #event_broom jkpof.int matches 1 run scoreboard players add #event_broom.time jkpof.int 30
 execute unless score #test_mode jkpof.int matches 1 run scoreboard players add @s jkpof.stats.death.all 1
 execute unless score #test_mode jkpof.int matches 1 if score #1st_blood jkpof.int matches 1 run scoreboard players add @s jkpof.stats.death.1st 1
