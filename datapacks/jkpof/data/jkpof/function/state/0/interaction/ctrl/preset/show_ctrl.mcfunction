@@ -25,6 +25,8 @@ scoreboard players remove #ctrl_actionbar jkpof.int 1
 function jkpof:state/0/interaction/ctrl/switcher {id: 'actionbar', item: 'name_tag'}
 scoreboard players remove #ctrl_bossbar jkpof.int 1
 function jkpof:state/0/interaction/ctrl/switcher {id: 'bossbar', item: 'repeater'}
+scoreboard players remove #ctrl_player_list jkpof.int 1
+function jkpof:state/0/interaction/ctrl/switcher {id: 'player_list', item: 'oak_sign'}
 
 scoreboard players remove #ctrl_upside_down jkpof.int 1
 function jkpof:state/0/interaction/ctrl/switcher {id: 'upside_down', item: 'magenta_glazed_terracotta'}

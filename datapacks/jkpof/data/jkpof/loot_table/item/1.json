@@ -1,165 +1,165 @@
 {
-    "functions": [
+  "functions": [
+    {
+      "function": "set_count",
+      "count": {
+        "type": "score",
+        "target": "this",
+        "score": "jkpof.item.count"
+      }
+    }
+  ],
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
         {
-            "function": "set_count",
-            "count": {
-                "type": "score",
-                "target": "this",
-                "score": "jkpof.item.count"
-            }
-        }
-    ],
-    "pools": [
+          "type": "tag",
+          "expand": true,
+          "name": "jkpof:give/coral"
+        },
         {
-            "rolls": 1,
-            "entries": [
-                {
-                    "type": "tag",
-                    "expand": true,
-                    "name": "jkpof:give/coral"
-                },
-                {
-                    "type": "tag",
-                    "expand": true,
-                    "name": "jkpof:give/pottery_sherd"
-                },
-                {
-                    "type": "tag",
-                    "expand": true,
-                    "name": "jkpof:give/smithing_template"
-                },
-                {
-                    "type": "tag",
-                    "expand": true,
-                    "name": "bundles"
-                },
-                {
-                    "type": "tag",
-                    "expand": true,
-                    "name": "candles"
-                },
-                {
-                    "type": "loot_table",
-                    "value": "jkpof:item/arrow"
-                },
-                {
-                    "type": "loot_table",
-                    "value": "jkpof:item/firework_rocket"
-                },
-                {
-                    "type": "loot_table",
-                    "value": "minecraft:entities/player"
-                },
-                {
-                    "type": "item",
-                    "name": "ender_dragon_spawn_egg",
-                    "functions": [
-                        {
-                            "function": "set_components",
-                            "components": {
-                                "entity_data": {
-                                    "id": "ender_dragon",
-                                    "DragonPhase": 8
-                                }
-                            }
-                        }
-                    ]
-                },
-                {
-                    "type": "item",
-                    "name": "creeper_spawn_egg",
-                    "functions": [
-                        {
-                            "function": "set_components",
-                            "components": {
-                                "entity_data": {
-                                    "id": "creeper",
-                                    "ignited": true
-                                }
-                            }
-                        },
-                        {
-                            "function": "set_name",
-                            "entity": "this",
-                            "name": [
-                                {
-                                    "storage": "jk:pof",
-                                    "interpret": true,
-                                    "nbt": "txt.lobby.item.global.self_igniting",
-                                    "color": "red",
-                                    "italic": false
-                                },
-                                {
-                                    "translate": "entity.minecraft.creeper",
-                                    "color": "white"
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "type": "item",
-                    "name": "poisonous_potato",
-                    "functions": [
-                        {
-                            "function": "set_components",
-                            "components": {
-                                "food": {
-                                    "can_always_eat": true,
-                                    "nutrition": 2,
-                                    "saturation": 4.8
-                                },
-                                "consumable": {
-                                    "on_consume_effects": [
-                                        {
-                                            "type": "apply_effects",
-                                            "effects": [
-                                                {
-                                                    "id": "absorption",
-                                                    "amplifier": 3,
-                                                    "duration": 2400
-                                                },
-                                                {
-                                                    "id": "poison",
-                                                    "amplifier": 7,
-                                                    "duration": 400
-                                                },
-                                                {
-                                                    "id": "unluck",
-                                                    "amplifier": 4,
-                                                    "duration": 6000
-                                                },
-                                                {
-                                                    "id": "luck",
-                                                    "amplifier": 4,
-                                                    "duration": 6000
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                },
-                                "enchantment_glint_override": true
-                            }
-                        },
-                        {
-                            "function": "set_name",
-                            "entity": "this",
-                            "name": [
-                                {
-                                    "storage": "jk:pof",
-                                    "interpret": true,
-                                    "nbt": "txt.lobby.item.global.enchanted_golden",
-                                    "color": "aqua",
-                                    "italic": false
-                                },
-                                {
-                                    "translate": "item.minecraft.poisonous_potato"
-                                }
-                            ]
-                        }
-                    ]
+          "type": "tag",
+          "expand": true,
+          "name": "jkpof:give/pottery_sherd"
+        },
+        {
+          "type": "tag",
+          "expand": true,
+          "name": "jkpof:give/smithing_template"
+        },
+        {
+          "type": "tag",
+          "expand": true,
+          "name": "bundles"
+        },
+        {
+          "type": "tag",
+          "expand": true,
+          "name": "candles"
+        },
+        {
+          "type": "loot_table",
+          "value": "jkpof:item/arrow"
+        },
+        {
+          "type": "loot_table",
+          "value": "jkpof:item/firework_rocket"
+        },
+        {
+          "type": "loot_table",
+          "value": "minecraft:entities/player"
+        },
+        {
+          "type": "item",
+          "name": "ender_dragon_spawn_egg",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "entity_data": {
+                  "id": "ender_dragon",
+                  "DragonPhase": 8
                 }
-            ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "creeper_spawn_egg",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "entity_data": {
+                  "id": "creeper",
+                  "ignited": true
+                }
+              }
+            },
+            {
+              "function": "set_name",
+              "entity": "this",
+              "name": [
+                {
+                  "storage": "jk:pof",
+                  "interpret": true,
+                  "nbt": "txt.lobby.item.global.self_igniting",
+                  "color": "red",
+                  "italic": false
+                },
+                {
+                  "translate": "entity.minecraft.creeper",
+                  "color": "white"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "poisonous_potato",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "food": {
+                  "can_always_eat": true,
+                  "nutrition": 2,
+                  "saturation": 4.8
+                },
+                "consumable": {
+                  "on_consume_effects": [
+                    {
+                      "type": "apply_effects",
+                      "effects": [
+                        {
+                          "id": "absorption",
+                          "amplifier": 3,
+                          "duration": 2400
+                        },
+                        {
+                          "id": "poison",
+                          "amplifier": 7,
+                          "duration": 400
+                        },
+                        {
+                          "id": "unluck",
+                          "amplifier": 4,
+                          "duration": 6000
+                        },
+                        {
+                          "id": "luck",
+                          "amplifier": 4,
+                          "duration": 6000
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "enchantment_glint_override": true
+              }
+            },
+            {
+              "function": "set_name",
+              "entity": "this",
+              "name": [
+                {
+                  "storage": "jk:pof",
+                  "interpret": true,
+                  "nbt": "txt.lobby.item.global.enchanted_golden",
+                  "color": "aqua",
+                  "italic": false
+                },
+                {
+                  "translate": "item.minecraft.poisonous_potato"
+                }
+              ]
+            }
+          ]
         }
-    ]
+      ]
+    }
+  ]
 }

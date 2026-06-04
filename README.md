@@ -1,5 +1,5 @@
 # 幸运之柱 JK's Pillars of Fortune
-## v1.3.2 for MC26.1.x
+## v1.3.3 for MC26.1.x
 - [简体中文](#zh_cn)
 - [繁體中文](#zh_tw)
 - [English](#en_us)
@@ -50,8 +50,9 @@ The language can be switched near the lobby spawn point \(has hint in initial\),
 ||自然回血|玩家是否可吃普通食物回血|
 ||进度展示|可避免其他玩家知晓你是否获得某物品|
 ||定位栏|展示经验栏上的玩家位置|
-||物品获取倒计时|可关闭显示|
+||动作栏倒计时|可关闭显示|
 ||事件进度条|可关闭显示|
+||列表生命值|可关闭显示|
 ||**预设**|设置项的预设|
 |**地图**| \ |包含随机，将影响柱子和地面，开局时会显示名称，亦可自定义|
 |**特殊规则**|颠倒模式|玩家初始获得「重力装置」*2，柱子将在地面下方生成，部分事件会被影响。|
@@ -174,9 +175,10 @@ The language can be switched near the lobby spawn point \(has hint in initial\),
 ||自然回血|玩家是否可吃普通食物回血|
 ||進度展示|可避免其他玩家知曉你是否獲得某物品|
 ||定位條|展示經驗條上的玩家位置|
-||物品獲取倒計時|可關閉顯示|
+||动作栏倒數計時|可關閉顯示|
 ||事件進度條|可關閉顯示|
-||**預設**|設定項目的預設|
+||列表生命值|可關閉顯示|
+||**預設集**|設定項目的預設|
 |**地圖**| \ |包含隨機，將影響柱子和地面，開場時會顯示名稱，亦可自訂|
 |**特殊規則**|顛倒模式|玩家初始獲得「重力裝置」* 2，柱子將在地面下方生成，部分事件會被影響。|
 ||小孩模式|玩家大小為原來的 1/2 。|
@@ -297,8 +299,9 @@ All settings can be configured in the lobby.
 ||Natural Regeneration|Whether players can regenerate health by eating common food|
 ||Show Advancements|Prevents other players from knowing if you've received specific items|
 ||Locator Bar|Whether to display player positions on the experience bar|
-||Next Item Countdown|Can toggle its display|
+||Action Bar Countdown|Can toggle its display|
 ||Event Progress Bar|Can toggle its display|
+||List Health|Can toggle its display|
 ||**Presets**|Settings' presets|
 |**Map Theme**| \ |Includes Random; affects Pillars & Ground; if enabled, the theme name will be displayed at the beginning, can also be customed|
 |**Special Rules**|Upside Down Mode|Players get "Gravity Device"*2 on spawn, the pillars are under the ground, some events will be influenced.|

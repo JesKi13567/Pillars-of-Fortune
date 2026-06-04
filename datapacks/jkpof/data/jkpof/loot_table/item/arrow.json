@@ -1,27 +1,27 @@
 {
-    "pools": [
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
         {
-            "rolls": 1,
-            "entries": [
-                {
-                    "type": "item",
-                    "name": "arrow"
-                },
-                {
-                    "type": "item",
-                    "name": "spectral_arrow"
-                },
-                {
-                    "type": "item",
-                    "name": "tipped_arrow",
-                    "functions": [
-                        {
-                            "function": "set_random_potion",
-                            "options": "#jkpof:all"
-                        }
-                    ]
-                }
-            ]
+          "type": "item",
+          "name": "arrow"
+        },
+        {
+          "type": "item",
+          "name": "spectral_arrow"
+        },
+        {
+          "type": "item",
+          "name": "tipped_arrow",
+          "functions": [
+            {
+              "function": "set_random_potion",
+              "options": "#jkpof:all"
+            }
+          ]
         }
-    ]
+      ]
+    }
+  ]
 }

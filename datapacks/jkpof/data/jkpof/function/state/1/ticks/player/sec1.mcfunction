@@ -1,11 +1,5 @@
-# 物品获取倒计时
+# 动作栏倒计时
 execute if score #ctrl_actionbar jkpof.int matches 1 run title @s actionbar [{storage: "jk:pof", interpret: true, nbt: "txt.game.item_give", color: "yellow"}, {score: {name: "#time_res", objective: "jkpof.int"}, color: "gold"}, {storage: "jk:pof", interpret: true, nbt: "txt.event.global.seconds"}]
-
-# 限高
-execute store result score @s jkpof.Y run data get entity @s Pos[1]
-execute if score @s jkpof.Y < #height_min jkpof.int run function jkpof:state/1/height_limit/player/low
-execute if score @s jkpof.Y > #height_max jkpof.int run function jkpof:state/1/height_limit/player/high
-execute if score @s jkpof.Y matches 400.. run damage @s 100 out_of_world
 
 # 原谅
 scoreboard players remove @s[scores={jkpof.damage.forgive=1..}] jkpof.damage.forgive 1

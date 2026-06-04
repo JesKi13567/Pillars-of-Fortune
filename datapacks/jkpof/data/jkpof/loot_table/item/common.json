@@ -1,24 +1,24 @@
 {
-    "functions": [
+  "functions": [
+    {
+      "function": "set_count",
+      "count": {
+        "type": "score",
+        "target": "this",
+        "score": "jkpof.item.count"
+      }
+    }
+  ],
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
         {
-            "function": "set_count",
-            "count": {
-                "type": "score",
-                "target": "this",
-                "score": "jkpof.item.count"
-            }
+          "type": "tag",
+          "expand": true,
+          "name": "jkpof:give/common"
         }
-    ],
-    "pools": [
-        {
-            "rolls": 1,
-            "entries": [
-                {
-                    "type": "tag",
-                    "expand": true,
-                    "name": "jkpof:give/common"
-                }
-            ]
-        }
-    ]
+      ]
+    }
+  ]
 }

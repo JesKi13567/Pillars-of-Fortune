@@ -1,39 +1,39 @@
 {
-    "pools": [
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
         {
-            "rolls": 1,
-            "entries": [
-                {
-                    "type": "item",
-                    "name": "potion",
-                    "functions": [
-                        {
-                            "function": "set_random_potion",
-                            "options": "#jkpof:all"
-                        }
-                    ]
-                },
-                {
-                    "type": "item",
-                    "name": "splash_potion",
-                    "functions": [
-                        {
-                            "function": "set_random_potion",
-                            "options": "#jkpof:all"
-                        }
-                    ]
-                },
-                {
-                    "type": "item",
-                    "name": "lingering_potion",
-                    "functions": [
-                        {
-                            "function": "set_random_potion",
-                            "options": "#jkpof:all"
-                        }
-                    ]
-                }
-            ]
+          "type": "item",
+          "name": "potion",
+          "functions": [
+            {
+              "function": "set_random_potion",
+              "options": "#jkpof:all"
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "splash_potion",
+          "functions": [
+            {
+              "function": "set_random_potion",
+              "options": "#jkpof:all"
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "lingering_potion",
+          "functions": [
+            {
+              "function": "set_random_potion",
+              "options": "#jkpof:all"
+            }
+          ]
         }
-    ]
+      ]
+    }
+  ]
 }

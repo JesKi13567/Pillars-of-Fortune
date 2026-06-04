@@ -25,6 +25,7 @@ scoreboard players set #ctrl_advancement jkpof.int 1
 scoreboard players set #ctrl_locator_bar jkpof.int 1
 scoreboard players set #ctrl_actionbar jkpof.int 1
 scoreboard players set #ctrl_bossbar jkpof.int 1
+scoreboard players set #ctrl_player_list jkpof.int 1
 
 scoreboard players set #ctrl_upside_down jkpof.int 0
 scoreboard players set #ctrl_kid_mode jkpof.int 0

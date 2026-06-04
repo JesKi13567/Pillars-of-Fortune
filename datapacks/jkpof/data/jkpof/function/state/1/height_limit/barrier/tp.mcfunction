@@ -1,5 +1,5 @@
-$tp @s 0 ~$(symbol)2 0
-$execute store result score #height_$(m) jkpof.int run data get entity @s Pos[1]
+$tp @s 0 ~$(sb)2 0
+$scoreboard players $(op) #height_m$(m) jkpof.int 2
 
 data modify entity @s Glowing set value true
 scoreboard players remove @s jkpof.int 1

@@ -143,6 +143,7 @@ kill @e[type=item_display, tag=jkpof_null_bomb_show]
 scoreboard players operation #event_ctrl_real jkpof.int = #event_ctrl jkpof.int
 execute if score #event_ctrl_real jkpof.int matches 1 run bossbar set jkpof:progress visible true
 execute if score #ctrl_bossbar jkpof.int matches 0 run bossbar set jkpof:progress visible false
+execute if score #ctrl_player_list jkpof.int matches 1 run scoreboard objectives setdisplay list jkpof.hp
 bossbar set jkpof:progress max 60
 tellraw @a [{storage: "jk:pof", interpret: true, nbt: "txt.POF", color: "yellow"}, {storage: "jk:pof", interpret: true, nbt: "txt.game.start.ed", color: "green"}]
 execute as @a run function jkpof:state/0/player/clear

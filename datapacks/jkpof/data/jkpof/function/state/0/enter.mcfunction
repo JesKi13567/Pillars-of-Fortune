@@ -4,6 +4,7 @@ scoreboard players reset * jkpof.state
 scoreboard players reset * jkpof.id
 scoreboard players reset * jkpof.team
 scoreboard players reset * jkpof.vote
+scoreboard objectives setdisplay list
 difficulty peaceful
 gamerule pvp false
 gamerule fall_damage false

@@ -272,7 +272,6 @@ scoreboard objectives add jkpof.spawn_egg.zombified_piglin used:zombified_piglin
 scoreboard objectives add jkpof.spawn_egg.pufferfish_bucket used:pufferfish_bucket ""
 
 scoreboard objectives add jkpof.hp health "♥"
-scoreboard objectives setdisplay list jkpof.hp
 
 scoreboard players set #2 jkpof.int 2
 scoreboard players set #20 jkpof.int 20
@@ -502,7 +501,7 @@ summon text_display 0 64.01 -96.2 {Tags: ["jkpof", "jkpof_display_stats"], brigh
 summon interaction 0 64.01 -101.5 {Tags: ["jkpof", "jkpof_ctrl_lang"], response: true, width: 1, height: .1}
 summon text_display 0 64.01 -101.7 {Tags: ["jkpof", "jkpof_display_ctrl_lang"], brightness: {block: 15, sky: 15}, text: {text: "Lang", color: "green"}, background: 0, Rotation: [0f, -90f]}
 summon text_display 0 64.01 -101.2 {Tags: ["jkpof", "jkpof_display_show_ctrl_lang"], brightness: {block: 15, sky: 15}, text: {text: "???", color: "yellow"}, background: 0, Rotation: [0f, -90f]}
-summon text_display 0 64.01 -102.4 {Tags: ["jkpof", "jkpof_lobby_const_short_text_explain"], brightness: {block: 15, sky: 15}, text: [{text: "POF = Pillars Of Fortune", color: "yellow"}, "\n", {text: "VOF = Votes Of Fortune", color: "aqua"}, "\n", {text: "BOF = Brooms Of Fortune", color: "green"}, "\n", {text: "EOF = Eggs Of Fortune", color: "gold"}, "\n", {text: "DOF = Death Of Fortune", color: "red"}], background: 0, Rotation: [0f, -90f], view_range: 0}
+summon text_display 0 64.01 -102.4 {Tags: ["jkpof", "jkpof_lobby_const_short_text_explain"], brightness: {block: 15, sky: 15}, text: [{text: "POF = Pillars of Fortune", color: "yellow"}, "\n", {text: "VOF = Votes of Fortune", color: "aqua"}, "\n", {text: "BOF = Brooms of Fortune", color: "green"}, "\n", {text: "EOF = Eggs of Fortune", color: "gold"}, "\n", {text: "DOF = Death of Fortune", color: "red"}], background: 0, Rotation: [0f, -90f], view_range: 0}
 summon text_display 0 65.0 -101.5 {Tags: ["jkpof", "jkpof_lobby_const_set_lang_1st"], brightness: {block: 15, sky: 15}, text: [{text: "请先设置语言！\n請先設定語言！\nSet your language first!", color: "green"}, {text: "\n↓↓↓", color: "yellow"}], billboard: "center", line_width: 1000}
 
 # 时间
@@ -530,7 +529,7 @@ summon interaction 2 65.25 -116 {Tags: ["jkpof", "jkpof_ctrl", "jkpof_ctrl_locat
 summon text_display 2 66.05 -116 {Tags: ["jkpof", "jkpof_display_ctrl_locator_bar"], brightness: {block: 15, sky: 15}, billboard: "center"}
 summon item_display 2 65.5 -116 {Tags: ["jkpof", "jkpof_display_ctrl_locator_bar"], brightness: {block: 15, sky: 15}, CustomNameVisible: true, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.4f, .4f, .4f], translation: [0f, 0f, 0f]}, Rotation: [-180f, 0f]}
 
-# 物品获取倒计时
+# 动作栏倒计时
 summon interaction -2 66.25 -116 {Tags: ["jkpof", "jkpof_ctrl", "jkpof_ctrl_actionbar"], response: true, width: .5, height: .5}
 summon text_display -2 67.05 -116 {Tags: ["jkpof", "jkpof_display_ctrl_actionbar"], brightness: {block: 15, sky: 15}, billboard: "center"}
 summon item_display -2 66.5 -116 {Tags: ["jkpof", "jkpof_display_ctrl_actionbar"], brightness: {block: 15, sky: 15}, CustomNameVisible: true, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.4f, .4f, .4f], translation: [0f, 0f, 0f]}, Rotation: [-180f, 0f]}
@@ -539,6 +538,11 @@ summon item_display -2 66.5 -116 {Tags: ["jkpof", "jkpof_display_ctrl_actionbar"
 summon interaction 2 66.25 -116 {Tags: ["jkpof", "jkpof_ctrl", "jkpof_ctrl_bossbar"], response: true, width: .5, height: .5}
 summon text_display 2 67.05 -116 {Tags: ["jkpof", "jkpof_display_ctrl_bossbar"], brightness: {block: 15, sky: 15}, billboard: "center"}
 summon item_display 2 66.5 -116 {Tags: ["jkpof", "jkpof_display_ctrl_bossbar"], brightness: {block: 15, sky: 15}, CustomNameVisible: true, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.4f, .4f, .4f], translation: [0f, 0f, 0f]}, Rotation: [-180f, 0f]}
+
+# 列表生命值
+summon interaction 0 65.25 -116 {Tags: ["jkpof", "jkpof_ctrl", "jkpof_ctrl_player_list"], response: true, width: .5, height: .5}
+summon text_display 0 66.05 -116 {Tags: ["jkpof", "jkpof_display_ctrl_player_list"], brightness: {block: 15, sky: 15}, billboard: "center"}
+summon item_display 0 65.5 -116 {Tags: ["jkpof", "jkpof_display_ctrl_player_list"], brightness: {block: 15, sky: 15}, CustomNameVisible: true, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.4f, .4f, .4f], translation: [0f, 0f, 0f]}, Rotation: [-180f, 0f]}
 
 ## 特殊规则
 summon text_display 10.5 64.5 -109.5 {Tags: ["jkpof", "jkpof_display_ctrl_special_rules_show"], brightness: {block: 15, sky: 15}, billboard: "center"}
@@ -625,9 +629,9 @@ summon item_display -9.0 64.5 -108.0 {Tags: ["jkpof", "jkpof_display_ctrl_map", 
 summon item_display -8.0 64.5 -109.0 {Tags: ["jkpof", "jkpof_display_ctrl_map", "jkpof_ctrl_map_custom", "b4"], brightness: {block: 15, sky: 15}, CustomNameVisible: true, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.4f, .4f, .4f], translation: [0f, 0f, 0f]}, item: {id: "glass"}, Rotation: [135f, 0f], view_range: 0}
 
 ## 预设
-summon interaction 0 65.25 -116 {Tags: ["jkpof", "jkpof_ctrl_preset"], response: true, width: .5, height: .5}
-summon text_display 0 66.05 -116 {Tags: ["jkpof", "jkpof_display_ctrl_preset"], brightness: {block: 15, sky: 15}, billboard: "center"}
-summon item_display 0 65.5 -116 {Tags: ["jkpof", "jkpof_display_ctrl_preset"], brightness: {block: 15, sky: 15}, CustomNameVisible: true, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.4f, .4f, .4f], translation: [0f, 0f, 0f]}, Rotation: [-180f, 0f]}
+summon interaction 0 64.25 -113 {Tags: ["jkpof", "jkpof_ctrl_preset"], response: true, width: .5, height: .5}
+summon text_display 0 65.05 -113 {Tags: ["jkpof", "jkpof_display_ctrl_preset"], brightness: {block: 15, sky: 15}, billboard: "center"}
+summon item_display 0 64.5 -113 {Tags: ["jkpof", "jkpof_display_ctrl_preset"], brightness: {block: 15, sky: 15}, CustomNameVisible: true, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.4f, .4f, .4f], translation: [0f, 0f, 0f]}, item_display: "gui", Rotation: [-180f, 0f]}
 
 scoreboard players set #ctrl_preset jkpof.int -1
 function jkpof:state/0/interaction/ctrl/preset/show

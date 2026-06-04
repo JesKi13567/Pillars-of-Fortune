@@ -11,12 +11,11 @@ execute if score #time_res jkpof.int matches ..0 run function jkpof:state/1/give
 # 清理掉落物
 execute if score #event_broom jkpof.int matches 1 run function jkpof:state/1/progress/event/broom
 
-# 屏障展示实体-限高
-execute if score #ctrl_upside_down jkpof.int matches 0 as @e[type=item_display, tag=jkpof_height_barrier, tag=max, limit=1, scores={jkpof.int=1..}] at @s run function jkpof:state/1/height_limit/barrier/tp {symbol: '-', m: 'max'}
-execute if score #ctrl_upside_down jkpof.int matches 1 as @e[type=item_display, tag=jkpof_height_barrier, tag=min, limit=1, scores={jkpof.int=1..}] at @s run function jkpof:state/1/height_limit/barrier/tp {symbol: '', m: 'min'}
-
 # 玩家
 execute as @a[scores={jkpof.state=2}] run function jkpof:state/1/ticks/player/sec1
+
+# 屏障展示实体-限高
+execute as @e[type=item_display, tag=jkpof_height_barrier] at @s run function jkpof:state/1/height_limit/barrier/global
 
 # 旁观者
 effect give @a[gamemode=spectator] night_vision infinite 0 true
