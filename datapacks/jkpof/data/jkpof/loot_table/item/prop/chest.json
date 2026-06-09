@@ -16,7 +16,7 @@
                   ]
                 },
                 "container_loot": {
-                  "loot_table": "jkpof:chest"
+                  "loot_table": "jkpof:set/chest"
                 }
               }
             },

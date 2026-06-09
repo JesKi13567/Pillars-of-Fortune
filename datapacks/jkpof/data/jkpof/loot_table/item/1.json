@@ -52,53 +52,6 @@
         },
         {
           "type": "item",
-          "name": "ender_dragon_spawn_egg",
-          "functions": [
-            {
-              "function": "set_components",
-              "components": {
-                "entity_data": {
-                  "id": "ender_dragon",
-                  "DragonPhase": 8
-                }
-              }
-            }
-          ]
-        },
-        {
-          "type": "item",
-          "name": "creeper_spawn_egg",
-          "functions": [
-            {
-              "function": "set_components",
-              "components": {
-                "entity_data": {
-                  "id": "creeper",
-                  "ignited": true
-                }
-              }
-            },
-            {
-              "function": "set_name",
-              "entity": "this",
-              "name": [
-                {
-                  "storage": "jk:pof",
-                  "interpret": true,
-                  "nbt": "txt.lobby.item.global.self_igniting",
-                  "color": "red",
-                  "italic": false
-                },
-                {
-                  "translate": "entity.minecraft.creeper",
-                  "color": "white"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "item",
           "name": "poisonous_potato",
           "functions": [
             {

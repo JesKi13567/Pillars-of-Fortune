@@ -1,0 +1,396 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "allay_spawn_egg"
+        },
+        {
+          "type": "item",
+          "name": "armadillo_spawn_egg"
+        },
+        {
+          "type": "item",
+          "name": "axolotl_spawn_egg"
+        },
+        {
+          "type": "item",
+          "name": "bat_spawn_egg"
+        },
+        {
+          "type": "item",
+          "name": "bee_spawn_egg"
+        },
+        {
+          "type": "item",
+          "name": "blaze_spawn_egg"
+        },
+        {
+          "type": "item",
+          "name": "bogged_spawn_egg"
+        },
+        {
+          "type": "item",
+          "name": "breeze_spawn_egg"
+        },
+        {
+          "type": "item",
+          "name": "camel_husk_spawn_egg"
+        },
+        {
+          "type": "item",
+          "name": "camel_spawn_egg"
+        },
+        {
+          "type": "item",
+          "name": "cat_spawn_egg"
+        },
+        {
+          "type": "item",
+          "name": "cave_spider_spawn_egg"
+        },
+        {
+          "type": "item",
+          "name": "chicken_spawn_egg"
+        },
+        {
+          "type": "item",
+          "name": "cod_spawn_egg"
+        },
+        {
+          "type": "item",
+          "name": "copper_golem_spawn_egg"
+        },
+        {
+          "type": "item",
+          "name": "cow_spawn_egg"
+        },
+        {
+          "type": "item",
+          "name": "creaking_spawn_egg"
+        },
+        {
+          "type": "item",
+          "name": "dolphin_spawn_egg"
+        },
+        {
+          "type": "item",
+          "name": "donkey_spawn_egg"
+        },
+        {
+          "type": "item",
+          "name": "drowned_spawn_egg"
+        },
+        {
+          "type": "item",
+          "name": "elder_guardian_spawn_egg"
+        },
+        {
+          "type": "item",
+          "name": "enderman_spawn_egg"
+        },
+        {
+          "type": "item",
+          "name": "endermite_spawn_egg"
+        },
+        {
+          "type": "item",
+          "name": "evoker_spawn_egg"
+        },
+        {
+          "type": "item",
+          "name": "fox_spawn_egg"
+        },
+        {
+          "type": "item",
+          "name": "frog_spawn_egg"
+        },
+        {
+          "type": "item",
+          "name": "ghast_spawn_egg"
+        },
+        {
+          "type": "item",
+          "name": "glow_squid_spawn_egg"
+        },
+        {
+          "type": "item",
+          "name": "goat_spawn_egg"
+        },
+        {
+          "type": "item",
+          "name": "guardian_spawn_egg"
+        },
+        {
+          "type": "item",
+          "name": "happy_ghast_spawn_egg"
+        },
+        {
+          "type": "item",
+          "name": "hoglin_spawn_egg"
+        },
+        {
+          "type": "item",
+          "name": "horse_spawn_egg"
+        },
+        {
+          "type": "item",
+          "name": "husk_spawn_egg"
+        },
+        {
+          "type": "item",
+          "name": "iron_golem_spawn_egg"
+        },
+        {
+          "type": "item",
+          "name": "llama_spawn_egg"
+        },
+        {
+          "type": "item",
+          "name": "magma_cube_spawn_egg"
+        },
+        {
+          "type": "item",
+          "name": "mooshroom_spawn_egg"
+        },
+        {
+          "type": "item",
+          "name": "mule_spawn_egg"
+        },
+        {
+          "type": "item",
+          "name": "nautilus_spawn_egg"
+        },
+        {
+          "type": "item",
+          "name": "ocelot_spawn_egg"
+        },
+        {
+          "type": "item",
+          "name": "panda_spawn_egg"
+        },
+        {
+          "type": "item",
+          "name": "parched_spawn_egg"
+        },
+        {
+          "type": "item",
+          "name": "parrot_spawn_egg"
+        },
+        {
+          "type": "item",
+          "name": "phantom_spawn_egg"
+        },
+        {
+          "type": "item",
+          "name": "pig_spawn_egg"
+        },
+        {
+          "type": "item",
+          "name": "piglin_brute_spawn_egg"
+        },
+        {
+          "type": "item",
+          "name": "piglin_spawn_egg"
+        },
+        {
+          "type": "item",
+          "name": "pillager_spawn_egg"
+        },
+        {
+          "type": "item",
+          "name": "polar_bear_spawn_egg"
+        },
+        {
+          "type": "item",
+          "name": "pufferfish_spawn_egg"
+        },
+        {
+          "type": "item",
+          "name": "rabbit_spawn_egg"
+        },
+        {
+          "type": "item",
+          "name": "ravager_spawn_egg"
+        },
+        {
+          "type": "item",
+          "name": "salmon_spawn_egg"
+        },
+        {
+          "type": "item",
+          "name": "sheep_spawn_egg"
+        },
+        {
+          "type": "item",
+          "name": "shulker_spawn_egg"
+        },
+        {
+          "type": "item",
+          "name": "silverfish_spawn_egg"
+        },
+        {
+          "type": "item",
+          "name": "skeleton_horse_spawn_egg"
+        },
+        {
+          "type": "item",
+          "name": "skeleton_spawn_egg"
+        },
+        {
+          "type": "item",
+          "name": "slime_spawn_egg"
+        },
+        {
+          "type": "item",
+          "name": "sniffer_spawn_egg"
+        },
+        {
+          "type": "item",
+          "name": "snow_golem_spawn_egg"
+        },
+        {
+          "type": "item",
+          "name": "spider_spawn_egg"
+        },
+        {
+          "type": "item",
+          "name": "squid_spawn_egg"
+        },
+        {
+          "type": "item",
+          "name": "stray_spawn_egg"
+        },
+        {
+          "type": "item",
+          "name": "strider_spawn_egg"
+        },
+        {
+          "type": "item",
+          "name": "tadpole_spawn_egg"
+        },
+        {
+          "type": "item",
+          "name": "trader_llama_spawn_egg"
+        },
+        {
+          "type": "item",
+          "name": "tropical_fish_spawn_egg"
+        },
+        {
+          "type": "item",
+          "name": "turtle_spawn_egg"
+        },
+        {
+          "type": "item",
+          "name": "vex_spawn_egg"
+        },
+        {
+          "type": "item",
+          "name": "villager_spawn_egg"
+        },
+        {
+          "type": "item",
+          "name": "vindicator_spawn_egg"
+        },
+        {
+          "type": "item",
+          "name": "wandering_trader_spawn_egg"
+        },
+        {
+          "type": "item",
+          "name": "warden_spawn_egg"
+        },
+        {
+          "type": "item",
+          "name": "witch_spawn_egg"
+        },
+        {
+          "type": "item",
+          "name": "wither_skeleton_spawn_egg"
+        },
+        {
+          "type": "item",
+          "name": "wither_spawn_egg"
+        },
+        {
+          "type": "item",
+          "name": "wolf_spawn_egg"
+        },
+        {
+          "type": "item",
+          "name": "zoglin_spawn_egg"
+        },
+        {
+          "type": "item",
+          "name": "zombie_horse_spawn_egg"
+        },
+        {
+          "type": "item",
+          "name": "zombie_nautilus_spawn_egg"
+        },
+        {
+          "type": "item",
+          "name": "zombie_spawn_egg"
+        },
+        {
+          "type": "item",
+          "name": "zombie_villager_spawn_egg"
+        },
+        {
+          "type": "item",
+          "name": "zombified_piglin_spawn_egg"
+        },
+        {
+          "type": "item",
+          "name": "ender_dragon_spawn_egg",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "entity_data": {
+                  "id": "ender_dragon",
+                  "DragonPhase": 8
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "creeper_spawn_egg",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "entity_data": {
+                  "id": "creeper",
+                  "ignited": true
+                }
+              }
+            },
+            {
+              "function": "set_name",
+              "entity": "this",
+              "name": [
+                {
+                  "storage": "jk:pof",
+                  "interpret": true,
+                  "nbt": "txt.lobby.item.global.self_igniting",
+                  "color": "red",
+                  "italic": false
+                },
+                {
+                  "translate": "entity.minecraft.creeper",
+                  "color": "white"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

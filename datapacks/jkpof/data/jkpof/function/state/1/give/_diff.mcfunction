@@ -21,9 +21,10 @@ execute if score #ctrl_lang jkpof.int matches 2 as @a[scores={jkpof.state=2, jkp
 execute as @a[scores={jkpof.state=2, jkpof.item.order=2}] run loot give @s loot jkpof:item/prop/creative
 execute as @a[scores={jkpof.state=2, jkpof.item.order=3..22}] run loot give @s loot jkpof:item/prop/common
 
-# 非道具 1061, 60, 11, 82, 9
-execute as @a[scores={jkpof.state=2, jkpof.item.order=23..1083}] run loot give @s loot jkpof:item/common
-execute as @a[scores={jkpof.state=2, jkpof.item.order=1084..1143}] run loot give @s loot jkpof:item/copper_made
-execute as @a[scores={jkpof.state=2, jkpof.item.order=1144..1154}] run loot give @s loot jkpof:item/1
+# 非道具 976, 87, 60, 9, 82, 9
+execute as @a[scores={jkpof.state=2, jkpof.item.order=23..998}] run loot give @s loot jkpof:item/common
+execute as @a[scores={jkpof.state=2, jkpof.item.order=999..1085}] run loot give @s loot jkpof:item/spawn_egg
+execute as @a[scores={jkpof.state=2, jkpof.item.order=1086..1145}] run loot give @s loot jkpof:item/copper_made
+execute as @a[scores={jkpof.state=2, jkpof.item.order=1146..1154}] run loot give @s loot jkpof:item/1
 execute as @a[scores={jkpof.state=2, jkpof.item.order=1155..1236}] run loot give @s loot jkpof:item/64/common
 execute as @a[scores={jkpof.state=2, jkpof.item.order=1237..1245}] run loot give @s loot jkpof:item/64/1

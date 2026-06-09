@@ -23,8 +23,9 @@ execute if score #item_order jkpof.int matches 2 as @r[scores={jkpof.state=2}] r
 execute if score #item_order jkpof.int matches 3..22 as @r[scores={jkpof.state=2}] run loot give @a[scores={jkpof.state=2}] loot jkpof:item/prop/common
 
 # 非道具
-execute if score #item_order jkpof.int matches 23..1083 as @r[scores={jkpof.state=2}] run loot give @a[scores={jkpof.state=2}] loot jkpof:item/common
-execute if score #item_order jkpof.int matches 1084..1143 as @r[scores={jkpof.state=2}] run loot give @a[scores={jkpof.state=2}] loot jkpof:item/copper_made
-execute if score #item_order jkpof.int matches 1144..1154 as @r[scores={jkpof.state=2}] run loot give @a[scores={jkpof.state=2}] loot jkpof:item/1
+execute if score #item_order jkpof.int matches 23..998 as @r[scores={jkpof.state=2}] run loot give @a[scores={jkpof.state=2}] loot jkpof:item/common
+execute if score #item_order jkpof.int matches 999..1085 as @r[scores={jkpof.state=2}] run loot give @a[scores={jkpof.state=2}] loot jkpof:item/spawn_egg
+execute if score #item_order jkpof.int matches 1086..1145 as @r[scores={jkpof.state=2}] run loot give @a[scores={jkpof.state=2}] loot jkpof:item/copper_made
+execute if score #item_order jkpof.int matches 1146..1154 as @r[scores={jkpof.state=2}] run loot give @a[scores={jkpof.state=2}] loot jkpof:item/1
 execute if score #item_order jkpof.int matches 1155..1236 as @r[scores={jkpof.state=2}] run loot give @a[scores={jkpof.state=2}] loot jkpof:item/64/common
 execute if score #item_order jkpof.int matches 1237..1245 as @r[scores={jkpof.state=2}] run loot give @a[scores={jkpof.state=2}] loot jkpof:item/64/1

@@ -1,0 +1,33 @@
+{
+  "pools": [
+    {
+      "rolls": 6,
+      "entries": [
+        {
+          "type": "loot_table",
+          "value": "archaeology/desert_pyramid"
+        },
+        {
+          "type": "loot_table",
+          "value": "archaeology/desert_well"
+        },
+        {
+          "type": "loot_table",
+          "value": "archaeology/ocean_ruin_cold"
+        },
+        {
+          "type": "loot_table",
+          "value": "archaeology/ocean_ruin_warm"
+        },
+        {
+          "type": "loot_table",
+          "value": "archaeology/trail_ruins_common"
+        },
+        {
+          "type": "loot_table",
+          "value": "archaeology/trail_ruins_rare"
+        }
+      ]
+    }
+  ]
+}

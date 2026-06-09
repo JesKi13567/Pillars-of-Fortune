@@ -5,6 +5,10 @@
       "entries": [
         {
           "type": "loot_table",
+          "value": "jkpof:set/archaeology"
+        },
+        {
+          "type": "loot_table",
           "value": "chests/abandoned_mineshaft"
         },
         {
@@ -133,31 +137,7 @@
         },
         {
           "type": "loot_table",
-          "value": "chests/trial_chambers/reward_common"
-        },
-        {
-          "type": "loot_table",
           "value": "chests/trial_chambers/reward_ominous"
-        },
-        {
-          "type": "loot_table",
-          "value": "chests/trial_chambers/reward_ominous_common"
-        },
-        {
-          "type": "loot_table",
-          "value": "chests/trial_chambers/reward_ominous_rare"
-        },
-        {
-          "type": "loot_table",
-          "value": "chests/trial_chambers/reward_ominous_unique"
-        },
-        {
-          "type": "loot_table",
-          "value": "chests/trial_chambers/reward_rare"
-        },
-        {
-          "type": "loot_table",
-          "value": "chests/trial_chambers/reward_unique"
         },
         {
           "type": "loot_table",
