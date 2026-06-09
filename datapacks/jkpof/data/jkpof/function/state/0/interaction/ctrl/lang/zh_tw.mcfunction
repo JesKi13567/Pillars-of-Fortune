@@ -135,7 +135,7 @@ data modify storage jk:pof txt.lobby.const.settings.ground.floor_count set value
 data modify storage jk:pof txt.lobby.const.settings.ground.name set value "地面"
 data modify storage jk:pof txt.lobby.const.settings.ground.radius set value "半徑"
 data modify storage jk:pof txt.lobby.const.settings.map set value "地圖"
-data modify storage jk:pof txt.lobby.const.settings.others.actionbar set value "动作栏倒數計時"
+data modify storage jk:pof txt.lobby.const.settings.others.actionbar set value "動作欄倒數計時"
 data modify storage jk:pof txt.lobby.const.settings.others.advancement set value "進度展示"
 data modify storage jk:pof txt.lobby.const.settings.others.bossbar set value "事件進度條"
 data modify storage jk:pof txt.lobby.const.settings.others.locator_bar set value "定位條"
