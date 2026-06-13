@@ -493,8 +493,12 @@ summon text_display 2 66.5 -110 {Tags: ["jkpof", "jkpof_display_show_ctrl_ground
 ## 杂项
 summon text_display 0 66.75 -116 {Tags: ["jkpof", "jkpof_display_ctrl_others_show"], brightness: {block: 15, sky: 15}, billboard: "center"}
 
-# 统计
-summon interaction 0 64.01 -96.0 {Tags: ["jkpof", "jkpof_stats"], response: true, width: 2, height: .1}
+# 彩蛋
+summon interaction -15.75 64.0 -103.75 {Tags: ["jkpof", "jkpof_egg", "jkpof_silent"], response: true, width: .5, height: .5}
+summon item_display -15.87 64.15 -103.87 {Tags: ["jkpof", "jkpof_egg"], transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.45f, .45f, .45f], translation: [0f, 0f, 0f]}, item: {id: "egg"}, Rotation: [135f, 45f]}
+
+# 统计信息
+summon interaction 0 64.01 -96.0 {Tags: ["jkpof", "jkpof_stats", "jkpof_silent"], response: true, width: 2, height: .1}
 summon text_display 0 64.01 -96.2 {Tags: ["jkpof", "jkpof_display_stats"], brightness: {block: 15, sky: 15}, background: 0, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [1.8f, 1.8f, 1.8f], translation: [0f, 0f, 0f]}, Rotation: [180f, -90f]}
 
 # 语言

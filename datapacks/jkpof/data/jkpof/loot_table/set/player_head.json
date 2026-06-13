@@ -1,0 +1,440 @@
+{
+  "functions": [
+    {
+      "function": "set_components",
+      "components": {
+        "tooltip_display": {
+          "hidden_components": [
+            "profile"
+          ]
+        }
+      }
+    }
+  ],
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "weight": 4,
+          "type": "loot_table",
+          "value": "entities/player"
+        },
+        {
+          "weight": 2,
+          "type": "item",
+          "name": "player_head",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "profile": "JK137",
+                "lore": [
+                  {
+                    "text": "地图作者",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "嗯哼~",
+                    "color": "white",
+                    "italic": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "weight": 2,
+          "type": "item",
+          "name": "player_head",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "profile": "Alex_Cai",
+                "lore": [
+                  {
+                    "text": "繁體中文翻譯",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "player_head",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "profile": "leo725mc",
+                "lore": [
+                  {
+                    "text": "玻色大小姐占领世界",
+                    "color": "aqua",
+                    "italic": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "player_head",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "profile": "YQ_CN",
+                "lore": [
+                  {
+                    "text": "云秦不玩mc关我秦云什么事",
+                    "color": "blue",
+                    "italic": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "player_head",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "profile": "HQerVC",
+                "lore": [
+                  {
+                    "text": "闪!电!行!者!",
+                    "color": "yellow",
+                    "italic": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "player_head",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "profile": "woodo5",
+                "lore": [
+                  {
+                    "text": "复活吧，我的爱↑人→",
+                    "color": "aqua",
+                    "italic": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "player_head",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "profile": "Randbug",
+                "lore": [
+                  {
+                    "text": "sx",
+                    "color": "dark_purple",
+                    "italic": false,
+                    "bold": true,
+                    "font": "alt",
+                    "extra": [
+                      {
+                        "text": "RaNDomIzed",
+                        "color": "dark_purple",
+                        "italic": false,
+                        "bold": true,
+                        "font": "default"
+                      },
+                      {
+                        "text": "bs",
+                        "color": "dark_purple",
+                        "italic": false,
+                        "bold": true,
+                        "font": "alt"
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "player_head",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "profile": "Qin_Sea",
+                "lore": [
+                  {
+                    "text": "？！猪猪！？",
+                    "color": "light_purple",
+                    "italic": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "player_head",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "profile": "Big_bai_dada",
+                "lore": [
+                  {
+                    "text": "你→等↗死↓吧→",
+                    "color": "red",
+                    "italic": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "player_head",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "profile": "Joseph3094",
+                "lore": [
+                  {
+                    "text": "混沌中立，应该是个好人",
+                    "color": "aqua",
+                    "italic": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "player_head",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "profile": "TunaFish2K",
+                "lore": [
+                  {
+                    "text": "读到此文本者v我50",
+                    "color": "aqua",
+                    "italic": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "player_head",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "profile": "tp2_token",
+                "lore": [
+                  {
+                    "text": "捅死你喵",
+                    "color": "red",
+                    "italic": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "player_head",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "profile": "yipianluoyei",
+                "lore": [
+                  {
+                    "text": "以前我没得选，现在我想做个好叶",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "player_head",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "profile": "Beiyao",
+                "lore": [
+                  {
+                    "text": "药北北北药",
+                    "color": "aqua",
+                    "italic": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "player_head",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "profile": "mcwuguodadi",
+                "lore": [
+                  {
+                    "text": "啥都不会干的大地",
+                    "color": "aqua",
+                    "italic": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "player_head",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "profile": "LanYangYang_CN",
+                "lore": [
+                  {
+                    "text": "很懒的羊",
+                    "color": "aqua",
+                    "italic": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "player_head",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "profile": "CNghost",
+                "lore": [
+                  {
+                    "text": "想成为幸运之鬼",
+                    "color": "gold",
+                    "italic": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "player_head",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "profile": "Nancisama",
+                "lore": [
+                  {
+                    "text": "绝对的唐人，由此而生的糖分，教会你绷的是……",
+                    "color": "white",
+                    "italic": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "player_head",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "profile": "passerby_yin",
+                "lore": [
+                  {
+                    "text": "这是yin，她很可爱",
+                    "color": "white",
+                    "italic": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "player_head",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "profile": "FeatheredBall",
+                "lore": [
+                  [
+                    {
+                      "italic": false,
+                      "color": "yellow",
+                      "text": "按"
+                    },
+                    {
+                      "keybind": "key.drop"
+                    },
+                    {
+                      "color": "yellow",
+                      "text": "一键让我摸不着头脑防止诈尸"
+                    }
+                  ]
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

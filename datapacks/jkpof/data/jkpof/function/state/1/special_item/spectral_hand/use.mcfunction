@@ -1,5 +1,5 @@
 # 冷却
-scoreboard players set @s jkpof.cd 10
+scoreboard players set @s jkpof.cd 5
 scoreboard players set @s jkpof.ray 200
 tag @s add jkpof_immune_ray
 

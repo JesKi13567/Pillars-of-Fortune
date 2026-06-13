@@ -1,5 +1,5 @@
-playsound block.note_block.bell block @a
-execute as @s[tag=!jkpof_stats] run scoreboard players set #countdown jkpof.int 10
+execute as @s[tag=!jkpof_silent] run playsound block.note_block.bell block @a
+execute as @s[tag=!jkpof_silent] run scoreboard players set #countdown jkpof.int 10
 
 execute as @s[tag=jkpof_ctrl_pillar_type] run function jkpof:state/0/interaction/ctrl/pillar/type
 execute as @s[tag=jkpof_ctrl_pillar_distance] run function jkpof:state/0/interaction/ctrl/pillar/distance/add

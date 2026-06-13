@@ -1,6 +1,6 @@
 # 消耗和冷却
 clear @s ender_eye[custom_data={jkpof: ["ender_eye"]}] 1
-scoreboard players set @s jkpof.cd 4
+scoreboard players set @s jkpof.cd 5
 
 # 递归前进
 scoreboard players set #ender_eye_temp jkpof.int 20

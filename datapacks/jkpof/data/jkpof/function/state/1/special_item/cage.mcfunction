@@ -1,6 +1,6 @@
 # 消耗和冷却
 clear @s glass[custom_data={jkpof: ["cage"]}] 1
-scoreboard players set @s jkpof.cd 20
+scoreboard players set @s jkpof.cd 5
 playsound block.glass.place block @a
 
 # 生成

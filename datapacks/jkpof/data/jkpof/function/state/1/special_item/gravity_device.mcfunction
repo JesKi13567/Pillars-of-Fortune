@@ -1,6 +1,6 @@
 # 消耗和冷却
 clear @s magenta_glazed_terracotta[custom_data={jkpof: ["gravity_device"]}] 1
-scoreboard players set @s jkpof.cd 20
+scoreboard players set @s jkpof.cd 5
 
 playsound entity.evoker.prepare_summon block @a ~ ~ ~ 1 1.5
 tellraw @s ["", {storage: "jk:pof", interpret: true, nbt: "txt.POF", color: "yellow"}, {storage: "jk:pof", interpret: true, nbt: "txt.lobby.item.gravity_device.tellraw", color: "light_purple"}]

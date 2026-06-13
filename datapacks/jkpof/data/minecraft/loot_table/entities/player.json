@@ -11,6 +11,40 @@
             {
               "function": "fill_player_head",
               "entity": "this"
+            },
+            {
+              "function": "set_lore",
+              "entity": "this",
+              "mode": "replace_all",
+              "lore": [
+                [
+                  {
+                    "storage": "jk:pof",
+                    "interpret": true,
+                    "nbt": "txt.lobby.item.player_head.p2",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "translate": "block.minecraft.beacon",
+                    "color": "aqua"
+                  },
+                  {
+                    "storage": "jk:pof",
+                    "interpret": true,
+                    "nbt": "txt.lobby.item.player_head.p3"
+                  },
+                  {
+                    "translate": "block.minecraft.player_head",
+                    "color": "yellow"
+                  },
+                  {
+                    "storage": "jk:pof",
+                    "interpret": true,
+                    "nbt": "txt.lobby.item.player_head.p4"
+                  }
+                ]
+              ]
             }
           ]
         }

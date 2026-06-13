@@ -123,8 +123,6 @@ scoreboard players set #state jkpof.int 1
 scoreboard players set #time_last jkpof.int 0
 scoreboard players set #time_res jkpof.int 3
 scoreboard players set #before_start jkpof.int 3
-scoreboard players set #height_max jkpof.int 120
-scoreboard players set #height_min jkpof.int -70
 scoreboard players set #event_mode jkpof.int 0
 scoreboard players set #event_progress jkpof.int 63
 scoreboard players set #event_border jkpof.int 2

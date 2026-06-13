@@ -48,7 +48,7 @@
         },
         {
           "type": "loot_table",
-          "value": "minecraft:entities/player"
+          "value": "jkpof:set/player_head"
         },
         {
           "type": "item",
