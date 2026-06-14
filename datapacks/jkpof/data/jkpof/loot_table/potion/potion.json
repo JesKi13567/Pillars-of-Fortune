@@ -1,0 +1,469 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "potion",
+          "functions": [
+            {
+              "function": "set_potion",
+              "id": "awkward"
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "potion",
+          "functions": [
+            {
+              "function": "set_potion",
+              "id": "fire_resistance"
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "potion",
+          "functions": [
+            {
+              "function": "set_potion",
+              "id": "harming"
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "potion",
+          "functions": [
+            {
+              "function": "set_potion",
+              "id": "healing"
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "potion",
+          "functions": [
+            {
+              "function": "set_potion",
+              "id": "infested"
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "potion",
+          "functions": [
+            {
+              "function": "set_potion",
+              "id": "invisibility"
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "potion",
+          "functions": [
+            {
+              "function": "set_potion",
+              "id": "leaping"
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "potion",
+          "functions": [
+            {
+              "function": "set_potion",
+              "id": "long_fire_resistance"
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "potion",
+          "functions": [
+            {
+              "function": "set_potion",
+              "id": "long_invisibility"
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "potion",
+          "functions": [
+            {
+              "function": "set_potion",
+              "id": "long_leaping"
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "potion",
+          "functions": [
+            {
+              "function": "set_potion",
+              "id": "long_night_vision"
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "potion",
+          "functions": [
+            {
+              "function": "set_potion",
+              "id": "long_poison"
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "potion",
+          "functions": [
+            {
+              "function": "set_potion",
+              "id": "long_regeneration"
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "potion",
+          "functions": [
+            {
+              "function": "set_potion",
+              "id": "long_slow_falling"
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "potion",
+          "functions": [
+            {
+              "function": "set_potion",
+              "id": "long_slowness"
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "potion",
+          "functions": [
+            {
+              "function": "set_potion",
+              "id": "long_strength"
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "potion",
+          "functions": [
+            {
+              "function": "set_potion",
+              "id": "long_swiftness"
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "potion",
+          "functions": [
+            {
+              "function": "set_potion",
+              "id": "long_turtle_master"
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "potion",
+          "functions": [
+            {
+              "function": "set_potion",
+              "id": "long_water_breathing"
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "potion",
+          "functions": [
+            {
+              "function": "set_potion",
+              "id": "long_weakness"
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "potion",
+          "functions": [
+            {
+              "function": "set_potion",
+              "id": "luck"
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "potion",
+          "functions": [
+            {
+              "function": "set_potion",
+              "id": "mundane"
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "potion",
+          "functions": [
+            {
+              "function": "set_potion",
+              "id": "night_vision"
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "potion",
+          "functions": [
+            {
+              "function": "set_potion",
+              "id": "oozing"
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "potion",
+          "functions": [
+            {
+              "function": "set_potion",
+              "id": "poison"
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "potion",
+          "functions": [
+            {
+              "function": "set_potion",
+              "id": "regeneration"
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "potion",
+          "functions": [
+            {
+              "function": "set_potion",
+              "id": "slow_falling"
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "potion",
+          "functions": [
+            {
+              "function": "set_potion",
+              "id": "slowness"
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "potion",
+          "functions": [
+            {
+              "function": "set_potion",
+              "id": "strength"
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "potion",
+          "functions": [
+            {
+              "function": "set_potion",
+              "id": "strong_harming"
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "potion",
+          "functions": [
+            {
+              "function": "set_potion",
+              "id": "strong_healing"
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "potion",
+          "functions": [
+            {
+              "function": "set_potion",
+              "id": "strong_leaping"
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "potion",
+          "functions": [
+            {
+              "function": "set_potion",
+              "id": "strong_poison"
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "potion",
+          "functions": [
+            {
+              "function": "set_potion",
+              "id": "strong_regeneration"
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "potion",
+          "functions": [
+            {
+              "function": "set_potion",
+              "id": "strong_slowness"
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "potion",
+          "functions": [
+            {
+              "function": "set_potion",
+              "id": "strong_strength"
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "potion",
+          "functions": [
+            {
+              "function": "set_potion",
+              "id": "strong_swiftness"
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "potion",
+          "functions": [
+            {
+              "function": "set_potion",
+              "id": "strong_turtle_master"
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "potion",
+          "functions": [
+            {
+              "function": "set_potion",
+              "id": "swiftness"
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "potion",
+          "functions": [
+            {
+              "function": "set_potion",
+              "id": "thick"
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "potion",
+          "functions": [
+            {
+              "function": "set_potion",
+              "id": "turtle_master"
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "potion",
+          "functions": [
+            {
+              "function": "set_potion",
+              "id": "water"
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "potion",
+          "functions": [
+            {
+              "function": "set_potion",
+              "id": "water_breathing"
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "potion",
+          "functions": [
+            {
+              "function": "set_potion",
+              "id": "weakness"
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "potion",
+          "functions": [
+            {
+              "function": "set_potion",
+              "id": "weaving"
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "potion",
+          "functions": [
+            {
+              "function": "set_potion",
+              "id": "wind_charged"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

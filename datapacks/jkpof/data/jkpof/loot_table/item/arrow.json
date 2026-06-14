@@ -12,14 +12,8 @@
           "name": "spectral_arrow"
         },
         {
-          "type": "item",
-          "name": "tipped_arrow",
-          "functions": [
-            {
-              "function": "set_random_potion",
-              "options": "#jkpof:all"
-            }
-          ]
+          "type": "loot_table",
+          "value": "jkpof:potion/arrow"
         }
       ]
     }

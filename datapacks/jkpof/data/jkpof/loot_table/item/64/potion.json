@@ -4,34 +4,16 @@
       "rolls": 1,
       "entries": [
         {
-          "type": "item",
-          "name": "potion",
-          "functions": [
-            {
-              "function": "set_random_potion",
-              "options": "#jkpof:all"
-            }
-          ]
+          "type": "loot_table",
+          "value": "jkpof:potion/potion"
         },
         {
-          "type": "item",
-          "name": "splash_potion",
-          "functions": [
-            {
-              "function": "set_random_potion",
-              "options": "#jkpof:all"
-            }
-          ]
+          "type": "loot_table",
+          "value": "jkpof:potion/splash_potion"
         },
         {
-          "type": "item",
-          "name": "lingering_potion",
-          "functions": [
-            {
-              "function": "set_random_potion",
-              "options": "#jkpof:all"
-            }
-          ]
+          "type": "loot_table",
+          "value": "jkpof:potion/lingering_potion"
         }
       ]
     }
