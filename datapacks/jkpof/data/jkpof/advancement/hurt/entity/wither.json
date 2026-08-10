@@ -1,1 +1,1 @@
-{"criteria":{"jkpof":{"trigger":"entity_hurt_player","conditions":{"damage":{"type":{"source_entity":{"type":"wither"}}}}}},"rewards":{"function":"jkpof:state/1/hurt/entity/wither"}}
+{"criteria":{"jkpof":{"trigger":"entity_hurt_player","conditions":{"damage":{"type":{"source_entity":{"entity_type":"wither"}}}}}},"rewards":{"function":"jkpof:state/1/hurt/entity/wither"}}

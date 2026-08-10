@@ -1,14 +1,4 @@
 {
-  "functions": [
-    {
-      "function": "set_count",
-      "count": {
-        "type": "score",
-        "target": "this",
-        "score": "jkpof.item.count"
-      }
-    }
-  ],
   "pools": [
     {
       "rolls": 1,
@@ -37,6 +27,11 @@
           "type": "tag",
           "expand": true,
           "name": "candles"
+        },
+        {
+          "type": "tag",
+          "expand": true,
+          "name": "flowers"
         },
         {
           "type": "loot_table",

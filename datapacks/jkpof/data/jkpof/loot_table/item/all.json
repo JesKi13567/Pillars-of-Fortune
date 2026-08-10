@@ -1,0 +1,222 @@
+{
+  "functions": [
+    {
+      "function": "set_count",
+      "count": {
+        "type": "score",
+        "target": "this",
+        "score": "jkpof.item.count"
+      }
+    }
+  ],
+  "pools": [
+    {
+      "conditions": [
+        {
+          "condition": "entity_scores",
+          "entity": "this",
+          "scores": {
+            "jkpof.item.order": {
+              "min": 3,
+              "max": 1152
+            }
+          }
+        }
+      ],
+      "rolls": 1,
+      "entries": [
+        {
+          "conditions": [
+            {
+              "condition": "entity_scores",
+              "entity": "this",
+              "scores": {
+                "jkpof.item.order": {
+                  "min": 3,
+                  "max": 22
+                }
+              }
+            }
+          ],
+          "type": "loot_table",
+          "value": "jkpof:item/prop/common"
+        },
+        {
+          "conditions": [
+            {
+              "condition": "entity_scores",
+              "entity": "this",
+              "scores": {
+                "jkpof.item.order": {
+                  "min": 23,
+                  "max": 919
+                }
+              }
+            }
+          ],
+          "type": "tag",
+          "expand": true,
+          "name": "jkpof:give/common"
+        },
+        {
+          "conditions": [
+            {
+              "condition": "entity_scores",
+              "entity": "this",
+              "scores": {
+                "jkpof.item.order": {
+                  "min": 920,
+                  "max": 979
+                }
+              }
+            }
+          ],
+          "type": "tag",
+          "expand": true,
+          "name": "jkpof:give/copper_made"
+        },
+        {
+          "conditions": [
+            {
+              "condition": "entity_scores",
+              "entity": "this",
+              "scores": {
+                "jkpof.item.order": {
+                  "min": 980,
+                  "max": 1067
+                }
+              }
+            }
+          ],
+          "type": "loot_table",
+          "value": "jkpof:item/spawn_egg"
+        },
+        {
+          "conditions": [
+            {
+              "condition": "entity_scores",
+              "entity": "this",
+              "scores": {
+                "jkpof.item.order": {
+                  "min": 1068,
+                  "max": 1096
+                }
+              }
+            }
+          ],
+          "type": "tag",
+          "expand": true,
+          "name": "trimmable_armor"
+        },
+        {
+          "conditions": [
+            {
+              "condition": "entity_scores",
+              "entity": "this",
+              "scores": {
+                "jkpof.item.order": {
+                  "min": 1097,
+                  "max": 1142
+                }
+              }
+            }
+          ],
+          "type": "tag",
+          "expand": true,
+          "name": "jkpof:give/weapon"
+        },
+        {
+          "conditions": [
+            {
+              "condition": "entity_scores",
+              "entity": "this",
+              "scores": {
+                "jkpof.item.order": {
+                  "min": 1143,
+                  "max": 1152
+                }
+              }
+            }
+          ],
+          "type": "loot_table",
+          "value": "jkpof:item/1"
+        }
+      ]
+    },
+    {
+      "conditions": [
+        {
+          "condition": "entity_scores",
+          "entity": "this",
+          "scores": {
+            "jkpof.item.order": {
+              "min": 1153,
+              "max": 1244
+            }
+          }
+        }
+      ],
+      "functions": [
+        {
+          "function": "set_components",
+          "components": {
+            "max_stack_size": 64
+          }
+        }
+      ],
+      "rolls": 1,
+      "entries": [
+        {
+          "conditions": [
+            {
+              "condition": "entity_scores",
+              "entity": "this",
+              "scores": {
+                "jkpof.item.order": {
+                  "min": 1153,
+                  "max": 1223
+                }
+              }
+            }
+          ],
+          "type": "tag",
+          "expand": true,
+          "name": "jkpof:give/64/common"
+        },
+        {
+          "conditions": [
+            {
+              "condition": "entity_scores",
+              "entity": "this",
+              "scores": {
+                "jkpof.item.order": {
+                  "min": 1224,
+                  "max": 1235
+                }
+              }
+            }
+          ],
+          "type": "tag",
+          "expand": true,
+          "name": "jkpof:give/64/bucket"
+        },
+        {
+          "conditions": [
+            {
+              "condition": "entity_scores",
+              "entity": "this",
+              "scores": {
+                "jkpof.item.order": {
+                  "min": 1236,
+                  "max": 1244
+                }
+              }
+            }
+          ],
+          "type": "loot_table",
+          "value": "jkpof:item/64/1"
+        }
+      ]
+    }
+  ]
+}

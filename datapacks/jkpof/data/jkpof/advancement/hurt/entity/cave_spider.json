@@ -1,1 +1,1 @@
-{"criteria":{"jkpof":{"trigger":"entity_hurt_player","conditions":{"damage":{"type":{"source_entity":{"type":"cave_spider"}}}}}},"rewards":{"function":"jkpof:state/1/hurt/entity/cave_spider"}}
+{"criteria":{"jkpof":{"trigger":"entity_hurt_player","conditions":{"damage":{"type":{"source_entity":{"entity_type":"cave_spider"}}}}}},"rewards":{"function":"jkpof:state/1/hurt/entity/cave_spider"}}

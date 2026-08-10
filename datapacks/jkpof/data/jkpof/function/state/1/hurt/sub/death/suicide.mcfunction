@@ -88,3 +88,4 @@ execute as @s[scores={jkpof.damage.type.now=321}] run tellraw @a ["", {storage: 
 execute as @s[scores={jkpof.damage.type.now=322}] run tellraw @a ["", {storage: "jk:pof", interpret: true, nbt: "txt.DOF", color: "red"}, {translate: "death.attack.flyIntoWall", with: [{selector: "@s"}]}]
 execute as @s[scores={jkpof.damage.type.now=323}] run tellraw @a ["", {storage: "jk:pof", interpret: true, nbt: "txt.DOF", color: "red"}, {translate: "death.attack.explosion", with: [{selector: "@s"}]}]
 execute as @s[scores={jkpof.damage.type.now=324}] run tellraw @a ["", {storage: "jk:pof", interpret: true, nbt: "txt.DOF", color: "red"}, {translate: "death.attack.arrow", with: [{selector: "@s"}, {translate: "entity.minecraft.arrow"}]}]
+execute as @s[scores={jkpof.damage.type.now=325}] run tellraw @a ["", {storage: "jk:pof", interpret: true, nbt: "txt.DOF", color: "red"}, {translate: "death.attack.sulfurCubeHot", with: [{selector: "@s"}]}]

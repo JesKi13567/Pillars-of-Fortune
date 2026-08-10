@@ -1,1 +1,1 @@
-{"criteria":{"jkpof":{"trigger":"entity_hurt_player","conditions":{"damage":{"type":{"source_entity":{"type":"warden"}}}}}},"rewards":{"function":"jkpof:state/1/hurt/entity/warden"}}
+{"criteria":{"jkpof":{"trigger":"entity_hurt_player","conditions":{"damage":{"type":{"source_entity":{"entity_type":"warden"}}}}}},"rewards":{"function":"jkpof:state/1/hurt/entity/warden"}}

@@ -299,7 +299,6 @@ worldborder center 0 0
 worldborder warning distance 0
 worldborder damage amount 0.5
 worldborder damage buffer 1
-gamerule show_death_messages false
 
 kill @e[type=!player]
 

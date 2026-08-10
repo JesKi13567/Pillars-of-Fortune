@@ -1,1 +1,1 @@
-{"criteria":{"jkpof":{"trigger":"entity_hurt_player","conditions":{"damage":{"type":{"source_entity":{"type":"guardian"}}}}}},"rewards":{"function":"jkpof:state/1/hurt/entity/guardian"}}
+{"criteria":{"jkpof":{"trigger":"entity_hurt_player","conditions":{"damage":{"type":{"source_entity":{"entity_type":"guardian"}}}}}},"rewards":{"function":"jkpof:state/1/hurt/entity/guardian"}}

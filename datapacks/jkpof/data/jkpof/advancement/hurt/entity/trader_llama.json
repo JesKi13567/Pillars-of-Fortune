@@ -1,1 +1,1 @@
-{"criteria":{"jkpof":{"trigger":"entity_hurt_player","conditions":{"damage":{"type":{"source_entity":{"type":"trader_llama"}}}}}},"rewards":{"function":"jkpof:state/1/hurt/entity/trader_llama"}}
+{"criteria":{"jkpof":{"trigger":"entity_hurt_player","conditions":{"damage":{"type":{"source_entity":{"entity_type":"trader_llama"}}}}}},"rewards":{"function":"jkpof:state/1/hurt/entity/trader_llama"}}

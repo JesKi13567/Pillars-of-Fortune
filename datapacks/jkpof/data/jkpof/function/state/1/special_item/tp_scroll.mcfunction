@@ -17,9 +17,7 @@ tellraw @s[scores={jkpof.tp_scroll=2}] ["", {storage: "jk:pof", interpret: true,
 execute as @s[scores={jkpof.tp_scroll=2}] run tag @a remove jkpof_tar
 
 execute if score #ctrl_upside_down jkpof.int matches 0 run tp @s[scores={jkpof.tp_scroll=3}] 0 1 0
-execute if score #ctrl_upside_down jkpof.int matches 0 run setblock 0 0 0 glass strict
 execute if score #ctrl_upside_down jkpof.int matches 1 run tp @s[scores={jkpof.tp_scroll=3}] 0 48 0
-execute if score #ctrl_upside_down jkpof.int matches 1 run setblock 0 47 0 glass strict
 tellraw @s[scores={jkpof.tp_scroll=3}] [{storage: "jk:pof", interpret: true, nbt: "txt.POF", color: "yellow"}, {storage: "jk:pof", interpret: true, nbt: "txt.lobby.item.tp_scroll.lore.p4", color: "aqua"}]
 
 scoreboard players reset @s jkpof.tp_scroll

@@ -38,6 +38,7 @@ execute as @s[scores={jkpof.damage.type.last=321}] run tellraw @a ["", {storage:
 execute as @s[scores={jkpof.damage.type.last=322}] run tellraw @a ["", {storage: "jk:pof", interpret: true, nbt: "txt.DOF", color: "red"}, {translate: "death.attack.flyIntoWall.player", with: [{selector: "@s"}, {selector: "@a[limit=1, tag=jkpof_murder]"}]}]
 execute as @s[scores={jkpof.damage.type.last=323}] run tellraw @a ["", {storage: "jk:pof", interpret: true, nbt: "txt.DOF", color: "red"}, {translate: "death.attack.explosion.player", with: [{selector: "@s"}, {selector: "@a[limit=1, tag=jkpof_murder]"}]}]
 execute as @s[scores={jkpof.damage.type.last=324}] run tellraw @a ["", {storage: "jk:pof", interpret: true, nbt: "txt.DOF", color: "red"}, {translate: "death.attack.arrow", with: [{selector: "@s"}, {selector: "@a[limit=1, tag=jkpof_murder]"}]}]
+execute as @s[scores={jkpof.damage.type.last=325}] run tellraw @a ["", {storage: "jk:pof", interpret: true, nbt: "txt.DOF", color: "red"}, {translate: "death.attack.sulfurCubeHot.player", with: [{selector: "@s"}, {selector: "@a[limit=1, tag=jkpof_murder]"}]}]
 
 # 击杀数 +1
 execute unless score #test_mode jkpof.int matches 1 run scoreboard players add @a[limit=1, tag=jkpof_murder] jkpof.kills 1
