@@ -13,6 +13,13 @@ execute as @s[tag=7] run scoreboard players set #event_order jkpof.int 7
 execute as @s[tag=8] run scoreboard players set #event_order jkpof.int 8
 execute as @s[tag=9] run scoreboard players set #event_order jkpof.int 9
 execute as @s[tag=10] run scoreboard players set #event_order jkpof.int 10
+execute as @s[tag=11] run scoreboard players set #event_order jkpof.int 11
+execute as @s[tag=12] run scoreboard players set #event_order jkpof.int 12
+execute as @s[tag=13] run scoreboard players set #event_order jkpof.int 13
+execute as @s[tag=14] run scoreboard players set #event_order jkpof.int 14
+execute as @s[tag=15] run scoreboard players set #event_order jkpof.int 15
+execute as @s[tag=16] run scoreboard players set #event_order jkpof.int 16
+execute as @s[tag=17] run scoreboard players set #event_order jkpof.int 17
 
 # 显示启用
 execute if score #event_broom jkpof.int matches 1 run data modify entity @e[type=item_display, tag=jkpof_display_event_order, tag=-3, limit=1] item.id set value "brush"
@@ -25,10 +32,17 @@ execute if score #event_enable_3 jkpof.int matches 1 run data modify entity @e[t
 execute if score #event_enable_4 jkpof.int matches 1 run data modify entity @e[type=item_display, tag=jkpof_display_event_order, tag=4, limit=1] item.id set value "diamond_boots"
 execute if score #event_enable_5 jkpof.int matches 1 run data modify entity @e[type=item_display, tag=jkpof_display_event_order, tag=5, limit=1] item.id set value "chicken_spawn_egg"
 execute if score #event_enable_6 jkpof.int matches 1 run data modify entity @e[type=item_display, tag=jkpof_display_event_order, tag=6, limit=1] item.id set value "ender_pearl"
-execute if score #event_enable_7 jkpof.int matches 1 run data modify entity @e[type=item_display, tag=jkpof_display_event_order, tag=7, limit=1] item.id set value "honeycomb"
+execute if score #event_enable_7 jkpof.int matches 1 run data modify entity @e[type=item_display, tag=jkpof_display_event_order, tag=7, limit=1] item.id set value "bundle"
 execute if score #event_enable_8 jkpof.int matches 1 run data modify entity @e[type=item_display, tag=jkpof_display_event_order, tag=8, limit=1] item.id set value "iron_bars"
 execute if score #event_enable_9 jkpof.int matches 1 run data modify entity @e[type=item_display, tag=jkpof_display_event_order, tag=9, limit=1] item.id set value "glass_pane"
 execute if score #event_enable_10 jkpof.int matches 1 run data modify entity @e[type=item_display, tag=jkpof_display_event_order, tag=10, limit=1] item.id set value "iron_sword"
+execute if score #event_enable_11 jkpof.int matches 1 run data modify entity @e[type=item_display, tag=jkpof_display_event_order, tag=11, limit=1] item.id set value "hay_block"
+execute if score #event_enable_12 jkpof.int matches 1 run data modify entity @e[type=item_display, tag=jkpof_display_event_order, tag=12, limit=1] item.id set value "iron_block"
+execute if score #event_enable_13 jkpof.int matches 1 run data modify entity @e[type=item_display, tag=jkpof_display_event_order, tag=13, limit=1] item.id set value "lodestone"
+execute if score #event_enable_14 jkpof.int matches 1 run data modify entity @e[type=item_display, tag=jkpof_display_event_order, tag=14, limit=1] item.id set value "tadpole_bucket"
+execute if score #event_enable_15 jkpof.int matches 1 run data modify entity @e[type=item_display, tag=jkpof_display_event_order, tag=15, limit=1] item.id set value "rabbit_foot"
+execute if score #event_enable_16 jkpof.int matches 1 run data modify entity @e[type=item_display, tag=jkpof_display_event_order, tag=16, limit=1] item.id set value "skeleton_skull"
+execute if score #event_enable_17 jkpof.int matches 1 run data modify entity @e[type=item_display, tag=jkpof_display_event_order, tag=17, limit=1] item.id set value "tnt"
 
 execute if score #event_broom jkpof.int matches 0 run data modify entity @e[type=item_display, tag=jkpof_display_event_order, tag=-3, limit=1] item.id set value "structure_void"
 execute if score #event_vote jkpof.int matches 0 run data modify entity @e[type=item_display, tag=jkpof_display_event_order, tag=-2, limit=1] item.id set value "structure_void"
@@ -44,6 +58,13 @@ execute if score #event_enable_7 jkpof.int matches 0 run data modify entity @e[t
 execute if score #event_enable_8 jkpof.int matches 0 run data modify entity @e[type=item_display, tag=jkpof_display_event_order, tag=8, limit=1] item.id set value "structure_void"
 execute if score #event_enable_9 jkpof.int matches 0 run data modify entity @e[type=item_display, tag=jkpof_display_event_order, tag=9, limit=1] item.id set value "structure_void"
 execute if score #event_enable_10 jkpof.int matches 0 run data modify entity @e[type=item_display, tag=jkpof_display_event_order, tag=10, limit=1] item.id set value "structure_void"
+execute if score #event_enable_11 jkpof.int matches 0 run data modify entity @e[type=item_display, tag=jkpof_display_event_order, tag=11, limit=1] item.id set value "structure_void"
+execute if score #event_enable_12 jkpof.int matches 0 run data modify entity @e[type=item_display, tag=jkpof_display_event_order, tag=12, limit=1] item.id set value "structure_void"
+execute if score #event_enable_13 jkpof.int matches 0 run data modify entity @e[type=item_display, tag=jkpof_display_event_order, tag=13, limit=1] item.id set value "structure_void"
+execute if score #event_enable_14 jkpof.int matches 0 run data modify entity @e[type=item_display, tag=jkpof_display_event_order, tag=14, limit=1] item.id set value "structure_void"
+execute if score #event_enable_15 jkpof.int matches 0 run data modify entity @e[type=item_display, tag=jkpof_display_event_order, tag=15, limit=1] item.id set value "structure_void"
+execute if score #event_enable_16 jkpof.int matches 0 run data modify entity @e[type=item_display, tag=jkpof_display_event_order, tag=16, limit=1] item.id set value "structure_void"
+execute if score #event_enable_17 jkpof.int matches 0 run data modify entity @e[type=item_display, tag=jkpof_display_event_order, tag=17, limit=1] item.id set value "structure_void"
 
 execute as @e[type=item_display, tag=jkpof_display_event_order, tag=!-99] run data modify entity @s Glowing set value false
 execute if score #event_order jkpof.int matches -3 run data modify entity @e[type=item_display, tag=jkpof_display_event_order, tag=-3, limit=1] Glowing set value true
@@ -60,6 +81,13 @@ execute if score #event_order jkpof.int matches 7 run data modify entity @e[type
 execute if score #event_order jkpof.int matches 8 run data modify entity @e[type=item_display, tag=jkpof_display_event_order, tag=8, limit=1] Glowing set value true
 execute if score #event_order jkpof.int matches 9 run data modify entity @e[type=item_display, tag=jkpof_display_event_order, tag=9, limit=1] Glowing set value true
 execute if score #event_order jkpof.int matches 10 run data modify entity @e[type=item_display, tag=jkpof_display_event_order, tag=10, limit=1] Glowing set value true
+execute if score #event_order jkpof.int matches 11 run data modify entity @e[type=item_display, tag=jkpof_display_event_order, tag=11, limit=1] Glowing set value true
+execute if score #event_order jkpof.int matches 12 run data modify entity @e[type=item_display, tag=jkpof_display_event_order, tag=12, limit=1] Glowing set value true
+execute if score #event_order jkpof.int matches 13 run data modify entity @e[type=item_display, tag=jkpof_display_event_order, tag=13, limit=1] Glowing set value true
+execute if score #event_order jkpof.int matches 14 run data modify entity @e[type=item_display, tag=jkpof_display_event_order, tag=14, limit=1] Glowing set value true
+execute if score #event_order jkpof.int matches 15 run data modify entity @e[type=item_display, tag=jkpof_display_event_order, tag=15, limit=1] Glowing set value true
+execute if score #event_order jkpof.int matches 16 run data modify entity @e[type=item_display, tag=jkpof_display_event_order, tag=16, limit=1] Glowing set value true
+execute if score #event_order jkpof.int matches 17 run data modify entity @e[type=item_display, tag=jkpof_display_event_order, tag=17, limit=1] Glowing set value true
 
 # 详情
 execute if score #event_order jkpof.int matches -3 run data modify entity @e[type=item_display, tag=jkpof_display_event_order, tag=-99, limit=1] item.id set value "brush"
@@ -72,10 +100,17 @@ execute if score #event_order jkpof.int matches 3 run data modify entity @e[type
 execute if score #event_order jkpof.int matches 4 run data modify entity @e[type=item_display, tag=jkpof_display_event_order, tag=-99, limit=1] item.id set value "diamond_boots"
 execute if score #event_order jkpof.int matches 5 run data modify entity @e[type=item_display, tag=jkpof_display_event_order, tag=-99, limit=1] item.id set value "chicken_spawn_egg"
 execute if score #event_order jkpof.int matches 6 run data modify entity @e[type=item_display, tag=jkpof_display_event_order, tag=-99, limit=1] item.id set value "ender_pearl"
-execute if score #event_order jkpof.int matches 7 run data modify entity @e[type=item_display, tag=jkpof_display_event_order, tag=-99, limit=1] item.id set value "honeycomb"
+execute if score #event_order jkpof.int matches 7 run data modify entity @e[type=item_display, tag=jkpof_display_event_order, tag=-99, limit=1] item.id set value "bundle"
 execute if score #event_order jkpof.int matches 8 run data modify entity @e[type=item_display, tag=jkpof_display_event_order, tag=-99, limit=1] item.id set value "iron_bars"
 execute if score #event_order jkpof.int matches 9 run data modify entity @e[type=item_display, tag=jkpof_display_event_order, tag=-99, limit=1] item.id set value "glass_pane"
 execute if score #event_order jkpof.int matches 10 run data modify entity @e[type=item_display, tag=jkpof_display_event_order, tag=-99, limit=1] item.id set value "iron_sword"
+execute if score #event_order jkpof.int matches 11 run data modify entity @e[type=item_display, tag=jkpof_display_event_order, tag=-99, limit=1] item.id set value "hay_block"
+execute if score #event_order jkpof.int matches 12 run data modify entity @e[type=item_display, tag=jkpof_display_event_order, tag=-99, limit=1] item.id set value "iron_block"
+execute if score #event_order jkpof.int matches 13 run data modify entity @e[type=item_display, tag=jkpof_display_event_order, tag=-99, limit=1] item.id set value "lodestone"
+execute if score #event_order jkpof.int matches 14 run data modify entity @e[type=item_display, tag=jkpof_display_event_order, tag=-99, limit=1] item.id set value "tadpole_bucket"
+execute if score #event_order jkpof.int matches 15 run data modify entity @e[type=item_display, tag=jkpof_display_event_order, tag=-99, limit=1] item.id set value "rabbit_foot"
+execute if score #event_order jkpof.int matches 16 run data modify entity @e[type=item_display, tag=jkpof_display_event_order, tag=-99, limit=1] item.id set value "skeleton_skull"
+execute if score #event_order jkpof.int matches 17 run data modify entity @e[type=item_display, tag=jkpof_display_event_order, tag=-99, limit=1] item.id set value "tnt"
 
 execute if score #event_order jkpof.int matches -3 run data modify entity @e[type=text_display, tag=jkpof_display_event_order, tag=-99, limit=1] text set value [{storage: "jk:pof", interpret: true, nbt: "txt.event.broom.name"}, "\n", {storage: "jk:pof", interpret: true, nbt: "txt.event.broom.lore", color: "aqua"}]
 execute if score #event_order jkpof.int matches -2 run data modify entity @e[type=text_display, tag=jkpof_display_event_order, tag=-99, limit=1] text set value [{storage: "jk:pof", interpret: true, nbt: "txt.event.vote.name"}, "\n", {storage: "jk:pof", interpret: true, nbt: "txt.event.vote.lore", color: "aqua"}]
@@ -90,7 +125,14 @@ execute if score #event_order jkpof.int matches 6 run data modify entity @e[type
 execute if score #event_order jkpof.int matches 7 run data modify entity @e[type=text_display, tag=jkpof_display_event_order, tag=-99, limit=1] text set value [{text: "", color: "aqua"}, {storage: "jk:pof", interpret: true, nbt: "txt.event.prop_supply.name", color: "white"}, "\n", {storage: "jk:pof", interpret: true, nbt: "txt.event.prop_supply.lore.p1"}, "\n1. ", {storage: "jk:pof", interpret: true, nbt: "txt.event.prop_supply.lore.p2"}, " (80%)\n2. ", {storage: "jk:pof", interpret: true, nbt: "txt.event.prop_supply.lore.p3"}, {translate: "item.minecraft.enchanted_book", color: "white"}, {storage: "jk:pof", interpret: true, nbt: "txt.char.dot"}, " (10%)\n3. ", {storage: "jk:pof", interpret: true, nbt: "txt.event.prop_supply.lore.p3"}, {translate: "item.minecraft.potion", color: "white"}, {storage: "jk:pof", interpret: true, nbt: "txt.char.dot"}, " (10%)"]
 execute if score #event_order jkpof.int matches 8 run data modify entity @e[type=text_display, tag=jkpof_display_event_order, tag=-99, limit=1] text set value [{storage: "jk:pof", interpret: true, nbt: "txt.event.vertical_lock.name"}, "\n", {storage: "jk:pof", interpret: true, nbt: "txt.event.vertical_lock.lore", color: "aqua"}, {translate: "block.minecraft.barrier"}, {storage: "jk:pof", interpret: true, nbt: "txt.event.global.last", color: "aqua"}, {text: "8", color: "aqua"}, {storage: "jk:pof", interpret: true, nbt: "txt.event.global.seconds", color: "aqua"}, {storage: "jk:pof", interpret: true, nbt: "txt.char.dot", color: "aqua"}]
 execute if score #event_order jkpof.int matches 9 run data modify entity @e[type=text_display, tag=jkpof_display_event_order, tag=-99, limit=1] text set value [{storage: "jk:pof", interpret: true, nbt: "txt.event.invisible_coating.name"}, "\n", {storage: "jk:pof", interpret: true, nbt: "txt.event.invisible_coating.lore", color: "aqua"}, {storage: "jk:pof", interpret: true, nbt: "txt.event.global.last", color: "aqua"}, {text: "10", color: "aqua"}, {storage: "jk:pof", interpret: true, nbt: "txt.event.global.seconds", color: "aqua"}, {storage: "jk:pof", interpret: true, nbt: "txt.char.dot", color: "aqua"}]
-execute if score #event_order jkpof.int matches 10 run data modify entity @e[type=text_display, tag=jkpof_display_event_order, tag=-99, limit=1] text set value [{storage: "jk:pof", interpret: true, nbt: "txt.event.betrayal_hour.name"}, "\n", {storage: "jk:pof", interpret: true, nbt: "txt.event.betrayal_hour.lore", color: "aqua"}]
+execute if score #event_order jkpof.int matches 10 run data modify entity @e[type=text_display, tag=jkpof_display_event_order, tag=-99, limit=1] text set value [{storage: "jk:pof", interpret: true, nbt: "txt.event.betrayal_hour.name"}, "\n", {storage: "jk:pof", interpret: true, nbt: "txt.event.betrayal_hour.lore", color: "aqua"}, "\n", {storage: "jk:pof", interpret: true, nbt: "txt.event.global.next_reset.lore", color: "aqua"}]
+execute if score #event_order jkpof.int matches 11 run data modify entity @e[type=text_display, tag=jkpof_display_event_order, tag=-99, limit=1] text set value [{storage: "jk:pof", interpret: true, nbt: "txt.event.bountiful_harvest.name"}, "\n", {storage: "jk:pof", interpret: true, nbt: "txt.event.bountiful_harvest.lore", color: "aqua"}]
+execute if score #event_order jkpof.int matches 12 run data modify entity @e[type=text_display, tag=jkpof_display_event_order, tag=-99, limit=1] text set value [{storage: "jk:pof", interpret: true, nbt: "txt.event.iron_torrent.name"}, "\n", {storage: "jk:pof", interpret: true, nbt: "txt.event.iron_torrent.lore", color: "aqua"}]
+execute if score #event_order jkpof.int matches 13 run data modify entity @e[type=text_display, tag=jkpof_display_event_order, tag=-99, limit=1] text set value [{storage: "jk:pof", interpret: true, nbt: "txt.event.loot_magnet.name"}, "\n", {storage: "jk:pof", interpret: true, nbt: "txt.event.loot_magnet.lore", color: "aqua"}, "\n", {storage: "jk:pof", interpret: true, nbt: "txt.event.global.next_reset.lore", color: "aqua"}]
+execute if score #event_order jkpof.int matches 14 run data modify entity @e[type=text_display, tag=jkpof_display_event_order, tag=-99, limit=1] text set value [{storage: "jk:pof", interpret: true, nbt: "txt.event.kid_mode.name"}, "\n", {storage: "jk:pof", interpret: true, nbt: "txt.event.kid_mode.lore.p1", color: "aqua"}, {translate: "attribute.name.scale"}, {storage: "jk:pof", interpret: true, nbt: "txt.event.kid_mode.lore.p2", color: "aqua"}, "\n", {storage: "jk:pof", interpret: true, nbt: "txt.event.global.next_reset.lore", color: "aqua"}]
+execute if score #event_order jkpof.int matches 15 run data modify entity @e[type=text_display, tag=jkpof_display_event_order, tag=-99, limit=1] text set value [{storage: "jk:pof", interpret: true, nbt: "txt.event.touch_change.name"}, "\n", {storage: "jk:pof", interpret: true, nbt: "txt.event.touch_change.lore", color: "aqua"}, "\n", {storage: "jk:pof", interpret: true, nbt: "txt.event.global.next_reset.lore", color: "aqua"}]
+execute if score #event_order jkpof.int matches 16 run data modify entity @e[type=text_display, tag=jkpof_display_event_order, tag=-99, limit=1] text set value [{storage: "jk:pof", interpret: true, nbt: "txt.event.purge.name"}, "\n", {storage: "jk:pof", interpret: true, nbt: "txt.event.purge.lore", color: "aqua"}]
+execute if score #event_order jkpof.int matches 17 run data modify entity @e[type=text_display, tag=jkpof_display_event_order, tag=-99, limit=1] text set value [{storage: "jk:pof", interpret: true, nbt: "txt.event.nuke.name"}, "\n", {storage: "jk:pof", interpret: true, nbt: "txt.event.nuke.lore", color: "aqua"}]
 
 # 启用
 execute if score #event_order jkpof.int matches -3 if score #event_broom jkpof.int matches 1 run data modify entity @e[type=text_display, tag=jkpof_display_event_switch, limit=1] text set value {storage: "jk:pof", interpret: true, nbt: "txt.lobby.bool.enabled.common", color: "green"}
@@ -107,6 +149,13 @@ execute if score #event_order jkpof.int matches 7 if score #event_enable_7 jkpof
 execute if score #event_order jkpof.int matches 8 if score #event_enable_8 jkpof.int matches 1 run data modify entity @e[type=text_display, tag=jkpof_display_event_switch, limit=1] text set value {storage: "jk:pof", interpret: true, nbt: "txt.lobby.bool.enabled.common", color: "green"}
 execute if score #event_order jkpof.int matches 9 if score #event_enable_9 jkpof.int matches 1 run data modify entity @e[type=text_display, tag=jkpof_display_event_switch, limit=1] text set value {storage: "jk:pof", interpret: true, nbt: "txt.lobby.bool.enabled.common", color: "green"}
 execute if score #event_order jkpof.int matches 10 if score #event_enable_10 jkpof.int matches 1 run data modify entity @e[type=text_display, tag=jkpof_display_event_switch, limit=1] text set value {storage: "jk:pof", interpret: true, nbt: "txt.lobby.bool.enabled.common", color: "green"}
+execute if score #event_order jkpof.int matches 11 if score #event_enable_11 jkpof.int matches 1 run data modify entity @e[type=text_display, tag=jkpof_display_event_switch, limit=1] text set value {storage: "jk:pof", interpret: true, nbt: "txt.lobby.bool.enabled.common", color: "green"}
+execute if score #event_order jkpof.int matches 12 if score #event_enable_12 jkpof.int matches 1 run data modify entity @e[type=text_display, tag=jkpof_display_event_switch, limit=1] text set value {storage: "jk:pof", interpret: true, nbt: "txt.lobby.bool.enabled.common", color: "green"}
+execute if score #event_order jkpof.int matches 13 if score #event_enable_13 jkpof.int matches 1 run data modify entity @e[type=text_display, tag=jkpof_display_event_switch, limit=1] text set value {storage: "jk:pof", interpret: true, nbt: "txt.lobby.bool.enabled.common", color: "green"}
+execute if score #event_order jkpof.int matches 14 if score #event_enable_14 jkpof.int matches 1 run data modify entity @e[type=text_display, tag=jkpof_display_event_switch, limit=1] text set value {storage: "jk:pof", interpret: true, nbt: "txt.lobby.bool.enabled.common", color: "green"}
+execute if score #event_order jkpof.int matches 15 if score #event_enable_15 jkpof.int matches 1 run data modify entity @e[type=text_display, tag=jkpof_display_event_switch, limit=1] text set value {storage: "jk:pof", interpret: true, nbt: "txt.lobby.bool.enabled.common", color: "green"}
+execute if score #event_order jkpof.int matches 16 if score #event_enable_16 jkpof.int matches 1 run data modify entity @e[type=text_display, tag=jkpof_display_event_switch, limit=1] text set value {storage: "jk:pof", interpret: true, nbt: "txt.lobby.bool.enabled.common", color: "green"}
+execute if score #event_order jkpof.int matches 17 if score #event_enable_17 jkpof.int matches 1 run data modify entity @e[type=text_display, tag=jkpof_display_event_switch, limit=1] text set value {storage: "jk:pof", interpret: true, nbt: "txt.lobby.bool.enabled.common", color: "green"}
 
 execute if score #event_order jkpof.int matches -3 if score #event_broom jkpof.int matches 0 run data modify entity @e[type=text_display, tag=jkpof_display_event_switch, limit=1] text set value {storage: "jk:pof", interpret: true, nbt: "txt.lobby.bool.disabled.common", color: "red"}
 execute if score #event_order jkpof.int matches -2 if score #event_vote jkpof.int matches 0 run data modify entity @e[type=text_display, tag=jkpof_display_event_switch, limit=1] text set value {storage: "jk:pof", interpret: true, nbt: "txt.lobby.bool.disabled.common", color: "red"}
@@ -122,6 +171,13 @@ execute if score #event_order jkpof.int matches 7 if score #event_enable_7 jkpof
 execute if score #event_order jkpof.int matches 8 if score #event_enable_8 jkpof.int matches 0 run data modify entity @e[type=text_display, tag=jkpof_display_event_switch, limit=1] text set value {storage: "jk:pof", interpret: true, nbt: "txt.lobby.bool.disabled.common", color: "red"}
 execute if score #event_order jkpof.int matches 9 if score #event_enable_9 jkpof.int matches 0 run data modify entity @e[type=text_display, tag=jkpof_display_event_switch, limit=1] text set value {storage: "jk:pof", interpret: true, nbt: "txt.lobby.bool.disabled.common", color: "red"}
 execute if score #event_order jkpof.int matches 10 if score #event_enable_10 jkpof.int matches 0 run data modify entity @e[type=text_display, tag=jkpof_display_event_switch, limit=1] text set value {storage: "jk:pof", interpret: true, nbt: "txt.lobby.bool.disabled.common", color: "red"}
+execute if score #event_order jkpof.int matches 11 if score #event_enable_11 jkpof.int matches 0 run data modify entity @e[type=text_display, tag=jkpof_display_event_switch, limit=1] text set value {storage: "jk:pof", interpret: true, nbt: "txt.lobby.bool.disabled.common", color: "red"}
+execute if score #event_order jkpof.int matches 12 if score #event_enable_12 jkpof.int matches 0 run data modify entity @e[type=text_display, tag=jkpof_display_event_switch, limit=1] text set value {storage: "jk:pof", interpret: true, nbt: "txt.lobby.bool.disabled.common", color: "red"}
+execute if score #event_order jkpof.int matches 13 if score #event_enable_13 jkpof.int matches 0 run data modify entity @e[type=text_display, tag=jkpof_display_event_switch, limit=1] text set value {storage: "jk:pof", interpret: true, nbt: "txt.lobby.bool.disabled.common", color: "red"}
+execute if score #event_order jkpof.int matches 14 if score #event_enable_14 jkpof.int matches 0 run data modify entity @e[type=text_display, tag=jkpof_display_event_switch, limit=1] text set value {storage: "jk:pof", interpret: true, nbt: "txt.lobby.bool.disabled.common", color: "red"}
+execute if score #event_order jkpof.int matches 15 if score #event_enable_15 jkpof.int matches 0 run data modify entity @e[type=text_display, tag=jkpof_display_event_switch, limit=1] text set value {storage: "jk:pof", interpret: true, nbt: "txt.lobby.bool.disabled.common", color: "red"}
+execute if score #event_order jkpof.int matches 16 if score #event_enable_16 jkpof.int matches 0 run data modify entity @e[type=text_display, tag=jkpof_display_event_switch, limit=1] text set value {storage: "jk:pof", interpret: true, nbt: "txt.lobby.bool.disabled.common", color: "red"}
+execute if score #event_order jkpof.int matches 17 if score #event_enable_17 jkpof.int matches 0 run data modify entity @e[type=text_display, tag=jkpof_display_event_switch, limit=1] text set value {storage: "jk:pof", interpret: true, nbt: "txt.lobby.bool.disabled.common", color: "red"}
 
 # 一键
 scoreboard players reset #event_enables jkpof.int
@@ -139,10 +195,17 @@ scoreboard players operation #event_enables jkpof.int += #event_enable_7 jkpof.i
 scoreboard players operation #event_enables jkpof.int += #event_enable_8 jkpof.int
 scoreboard players operation #event_enables jkpof.int += #event_enable_9 jkpof.int
 scoreboard players operation #event_enables jkpof.int += #event_enable_10 jkpof.int
+scoreboard players operation #event_enables jkpof.int += #event_enable_11 jkpof.int
+scoreboard players operation #event_enables jkpof.int += #event_enable_12 jkpof.int
+scoreboard players operation #event_enables jkpof.int += #event_enable_13 jkpof.int
+scoreboard players operation #event_enables jkpof.int += #event_enable_14 jkpof.int
+scoreboard players operation #event_enables jkpof.int += #event_enable_15 jkpof.int
+scoreboard players operation #event_enables jkpof.int += #event_enable_16 jkpof.int
+scoreboard players operation #event_enables jkpof.int += #event_enable_17 jkpof.int
 
 execute if score #event_enables jkpof.int matches 1.. run scoreboard players set #event_ctrl jkpof.int 1
 execute if score #event_enables jkpof.int matches 0 run scoreboard players set #event_ctrl jkpof.int 0
 
 execute if score #event_ctrl jkpof.int matches 0 run data modify entity @e[type=text_display, tag=jkpof_display_event_ctrl, limit=1] text set value {storage: "jk:pof", interpret: true, nbt: "txt.lobby.bool.disabled.all", color: "red"}
 execute if score #event_ctrl jkpof.int matches 1 run data modify entity @e[type=text_display, tag=jkpof_display_event_ctrl, limit=1] text set value {storage: "jk:pof", interpret: true, nbt: "txt.lobby.bool.enabled.not_all", color: "yellow"}
-execute if score #event_ctrl jkpof.int matches 1 if score #event_enables jkpof.int matches 14 run data modify entity @e[type=text_display, tag=jkpof_display_event_ctrl, limit=1] text set value {storage: "jk:pof", interpret: true, nbt: "txt.lobby.bool.enabled.all", color: "green"}
+execute if score #event_ctrl jkpof.int matches 1 if score #event_enables jkpof.int matches 21 run data modify entity @e[type=text_display, tag=jkpof_display_event_ctrl, limit=1] text set value {storage: "jk:pof", interpret: true, nbt: "txt.lobby.bool.enabled.all", color: "green"}

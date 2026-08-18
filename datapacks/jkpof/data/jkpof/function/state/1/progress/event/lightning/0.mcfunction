@@ -63,4 +63,4 @@ tellraw @s [{storage: "jk:pof", interpret: true, nbt: "txt.POF", color: "yellow"
 
 execute store result storage jk:pof data.lightning.enchant_index int 1 run random value 0..42
 execute store result storage jk:pof data.lightning.enchant_lvl int 1 run random value 1..10
-function jkpof:state/1/progress/event/once/lightning/1 with storage jk:pof data.lightning
+function jkpof:state/1/progress/event/lightning/1 with storage jk:pof data.lightning

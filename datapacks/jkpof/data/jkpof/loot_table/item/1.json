@@ -29,11 +29,6 @@
           "name": "candles"
         },
         {
-          "type": "tag",
-          "expand": true,
-          "name": "flowers"
-        },
-        {
           "type": "loot_table",
           "value": "jkpof:item/arrow"
         },

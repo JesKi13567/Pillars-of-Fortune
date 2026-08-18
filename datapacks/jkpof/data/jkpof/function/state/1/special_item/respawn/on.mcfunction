@@ -1,5 +1,7 @@
 gamemode survival @s
 attribute @s gravity base reset
+attribute @s scale base reset
+execute if score #event_kid_mode jkpof.int matches 1 run attribute @s scale base set 0.5
 effect give @s weakness 10
 effect give @s nausea 10
 scoreboard players reset @s jkpof.death_note.cd

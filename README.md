@@ -56,8 +56,6 @@ The language can be switched near the lobby spawn point \(has hint in initial\),
 ||**预设**|设置项的预设|
 |**地图**| \ |包含随机，将影响柱子和地面，开局时会显示名称，亦可自定义|
 |**特殊规则**|颠倒模式|玩家初始获得「重力装置」*2，柱子将在地面下方生成，部分事件会被影响。|
-||小孩模式|玩家尺寸为原来的 1/2 。|
-||触则生变|玩家接触的方块变为随机方块。|
 ||双倍生命值| \ |
 ||初始工具|玩家初始获得「挖掘一切」*1。|
 ||奖励箱|玩家初始获得「战利品箱」*1。|
@@ -87,7 +85,14 @@ The language can be switched near the lobby spawn point \(has hint in initial\),
 |道具补给|接下来的 3 次物品给予将随机触发以下情况：1. 均有 60% 概率为道具。(80%) 2. 额外附赠随机附魔书。(10%) 3. 额外附赠随机药水。(10%)|
 |天地封锁|每位玩家上下层级铺满屏障，持续 8 秒。|
 |隐形涂层|所有实体隐形，玩家背包物品也不可见，持续 10 秒。|
-|背叛之时|随机选中一名玩家转为全员敌对状态，其余玩家结成同一队伍，效果持续至下个事件触发时重置。|
+|背叛之时|随机选中一名玩家转为全员敌对状态，其余玩家结成同一队伍。效果持续至下个事件触发时重置。|
+|五谷丰登|残血玩家恢复满血，满血玩家获得一次随机道具抽取。|
+|钢铁洪流|天上随机掉落铁质方块和实体，持续 6 秒。|
+|吸星大法|玩家 8 格内的掉落物会被自动吸附。效果持续至下个事件触发时重置。|
+|小孩模式|玩家尺寸变为原来的 1/2 。效果持续至下个事件触发时重置。|
+|触则生变|玩家接触的方块变为随机方块。效果持续至下个事件触发时重置。|
+|万物归零|杀死场上所有非玩家生物。|
+|世界核平|将地图按十字分为四个区域，随机一处区域方块及实体被彻底抹除。最多触发 1 次。|
 
 ### 道具
 道具也会在大厅展示。
@@ -181,8 +186,6 @@ The language can be switched near the lobby spawn point \(has hint in initial\),
 ||**預設集**|設定項目的預設|
 |**地圖**| \ |包含隨機，將影響柱子和地面，開場時會顯示名稱，亦可自訂|
 |**特殊規則**|顛倒模式|玩家初始獲得「重力裝置」* 2，柱子將在地面下方生成，部分事件會被影響。|
-||小孩模式|玩家大小為原來的 1/2 。|
-||觸則生變|玩家接觸的方塊變為隨機方塊。|
 ||雙倍生命值| \ |
 ||初始工具|玩家初始獲得「挖掘一切」* 1。|
 ||獎勵箱|玩家初始獲得「戰利品箱」* 1。|
@@ -212,7 +215,14 @@ The language can be switched near the lobby spawn point \(has hint in initial\),
 |道具補給|接下來的 3 次給予物品將隨機觸發以下情況：1. 均有 60% 機率為道具。(80%) 2. 額外附贈隨機附魔書。(10%) 3. 額外附贈隨機藥水。(10%) |
 |天地封鎖|每位玩家上下層級鋪滿屏障，持續 8 秒。|
 |隱形塗層|所有實體隱形，玩家背包物品也不可見，持續 10 秒。|
-|背叛之時|隨機選中一名玩家轉為全員敵對狀態，其餘玩家結成同一隊伍，效果持續至下個事件觸發時重設。|
+|背叛之時|隨機選中一名玩家轉為全員敵對狀態，其餘玩家結成同一隊伍。效果持續至下個事件觸發時重設。|
+|五谷丰登|残血玩家恢复满血，满血玩家获得一次随机道具抽取。|
+|钢铁洪流|天上随机掉落铁质方块和实体，持续 6 秒。|
+|吸星大法|玩家 8 格内的掉落物会被自动吸附。效果持續至下個事件觸發時重設。|
+|小孩模式|玩家大小變為原來的 1/2 。效果持續至下個事件觸發時重設。|
+|觸則生變|玩家接觸的方塊變為隨機方塊。效果持續至下個事件觸發時重設。|
+|万物归零|杀死场上所有非玩家生物。|
+|世界核平|将地图按十字分为四个区域，随机一处区域方块及实体被彻底抹除。最多触发 1 次。|
 
 ### 道具_
 道具也會在大廳展示。
@@ -305,8 +315,6 @@ All settings can be configured in the lobby.
 ||**Presets**|Settings' presets|
 |**Map Theme**| \ |Includes Random; affects Pillars & Ground; if enabled, the theme name will be displayed at the beginning, can also be customed|
 |**Special Rules**|Upside Down Mode|Players get "Gravity Device"*2 on spawn, the pillars are under the ground, some events will be influenced.|
-||Kid Mode|Set players' Scale to 1/2 .|
-||Touch to Change|Blocks players touch turn random.|
 ||Double Health| \ |
 ||Init Tool|Players get "Mine Everything"*1 on spawn.|
 ||Bonus Chest|Players get "Loot Chest"*1 on spawn.|
@@ -336,7 +344,14 @@ Events are displayed in the lobby, and players can toggle their activation statu
 |Prop Supply|The next 3 items players receive will be randomly chosen from the following: 1. 60% chance of being props. (80%) 2. Plus a random Enchanted Book. (10%) 3. Plus a random Potion. (10%) |
 |Vertical Lock|Fill the layers above and below each player with Barrier, lasting 8s.|
 |Invisible Coating|All entities & inventory items are invisible, lasting 10s.|
-|Betrayal Hour|One random player becomes fully hostile to all others, while the remaining players are auto-allied.  Status resets on the next event.|
+|Betrayal Hour|One random player becomes fully hostile to all others, while the remaining players are auto-allied. Status resets on the next event.|
+|Bountiful Harvest|Injured players heal to full, healthy players draw a random prop.|
+|Iron Torrent|Iron blocks and entities fall from the sky, lasting 6 seconds.|
+|Loot Magnet|Items within 8 blocks are attracted to players. Status resets on the next event.|
+|Kid Mode|Set players' Scale to 1/2 . Status resets on the next event.|
+|Touch Shuffle|Blocks players touch turn random. Status resets on the next event.|
+|The Purge|Kill all non-player creatures on the field.|
+|Nuclear Peace|Split the map into 4 quadrants, randomly erase 1 of them. Only triggers once.|
 
 ### Items
 Items are also displayed in the lobby.

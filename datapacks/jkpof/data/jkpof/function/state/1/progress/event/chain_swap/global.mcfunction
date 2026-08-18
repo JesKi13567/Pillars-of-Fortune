@@ -2,10 +2,10 @@
 tag @a[scores={jkpof.state=2}] add jkpof_swap_player
 
 # 每人召唤一个
-execute as @a[tag=jkpof_swap_player] at @s summon marker run function jkpof:state/1/progress/event/once/chain_swap/marker
+execute as @a[tag=jkpof_swap_player] at @s summon marker run function jkpof:state/1/progress/event/chain_swap/marker
 
 # 传送并清除
-execute as @a[tag=jkpof_swap_player] at @s run function jkpof:state/1/progress/event/once/chain_swap/player
+execute as @a[tag=jkpof_swap_player] at @s run function jkpof:state/1/progress/event/chain_swap/player
 
 # 音效
 playsound block.beacon.power_select block @a 0 1000000 0 10000000

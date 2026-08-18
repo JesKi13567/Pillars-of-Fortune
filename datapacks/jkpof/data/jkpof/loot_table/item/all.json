@@ -17,8 +17,7 @@
           "entity": "this",
           "scores": {
             "jkpof.item.order": {
-              "min": 3,
-              "max": 1152
+              "max": 1182
             }
           }
         }
@@ -49,7 +48,7 @@
               "scores": {
                 "jkpof.item.order": {
                   "min": 23,
-                  "max": 919
+                  "max": 950
                 }
               }
             }
@@ -65,8 +64,8 @@
               "entity": "this",
               "scores": {
                 "jkpof.item.order": {
-                  "min": 920,
-                  "max": 979
+                  "min": 951,
+                  "max": 1010
                 }
               }
             }
@@ -82,8 +81,8 @@
               "entity": "this",
               "scores": {
                 "jkpof.item.order": {
-                  "min": 980,
-                  "max": 1067
+                  "min": 1011,
+                  "max": 1098
                 }
               }
             }
@@ -98,8 +97,8 @@
               "entity": "this",
               "scores": {
                 "jkpof.item.order": {
-                  "min": 1068,
-                  "max": 1096
+                  "min": 1099,
+                  "max": 1127
                 }
               }
             }
@@ -115,8 +114,8 @@
               "entity": "this",
               "scores": {
                 "jkpof.item.order": {
-                  "min": 1097,
-                  "max": 1142
+                  "min": 1128,
+                  "max": 1173
                 }
               }
             }
@@ -132,8 +131,8 @@
               "entity": "this",
               "scores": {
                 "jkpof.item.order": {
-                  "min": 1143,
-                  "max": 1152
+                  "min": 1174,
+                  "max": 1182
                 }
               }
             }
@@ -150,8 +149,7 @@
           "entity": "this",
           "scores": {
             "jkpof.item.order": {
-              "min": 1153,
-              "max": 1244
+              "min": 1183
             }
           }
         }
@@ -173,8 +171,8 @@
               "entity": "this",
               "scores": {
                 "jkpof.item.order": {
-                  "min": 1153,
-                  "max": 1223
+                  "min": 1183,
+                  "max": 1253
                 }
               }
             }
@@ -190,8 +188,8 @@
               "entity": "this",
               "scores": {
                 "jkpof.item.order": {
-                  "min": 1224,
-                  "max": 1235
+                  "min": 1254,
+                  "max": 1265
                 }
               }
             }
@@ -207,8 +205,8 @@
               "entity": "this",
               "scores": {
                 "jkpof.item.order": {
-                  "min": 1236,
-                  "max": 1244
+                  "min": 1266,
+                  "max": 1274
                 }
               }
             }

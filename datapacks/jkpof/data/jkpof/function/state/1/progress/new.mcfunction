@@ -15,7 +15,7 @@ execute store result bossbar jkpof:progress max run scoreboard players get #even
 title @a times 0 3s 8t
 
 # 边界收缩
-execute if score #event_mode jkpof.int matches -1 run function jkpof:state/1/progress/event/once/border/global
+execute if score #event_mode jkpof.int matches -1 run function jkpof:state/1/progress/event/border/global
 
 # 万箭齐发
 execute if score #event_mode jkpof.int matches 1 run function jkpof:state/1/progress/event/arrow/show
@@ -24,19 +24,19 @@ execute if score #event_mode jkpof.int matches 1 run function jkpof:state/1/prog
 execute if score #event_mode jkpof.int matches 2 run function jkpof:state/1/progress/event/lava/show
 
 # 雷霆之劫
-execute if score #event_mode jkpof.int matches 3 run function jkpof:state/1/progress/event/once/lightning/show
+execute if score #event_mode jkpof.int matches 3 run function jkpof:state/1/progress/event/lightning/show
 
 # 月球漫步
-execute if score #event_mode jkpof.int matches 4 run function jkpof:state/1/progress/event/once/moon_walk
+execute if score #event_mode jkpof.int matches 4 run function jkpof:state/1/progress/event/moon_walk
 
 # 飞鸡来袭
 execute if score #event_mode jkpof.int matches 5 run function jkpof:state/1/progress/event/bomb_chicken/summon
 
 # 连锁换位
-execute if score #event_mode jkpof.int matches 6 run function jkpof:state/1/progress/event/once/chain_swap/show
+execute if score #event_mode jkpof.int matches 6 run function jkpof:state/1/progress/event/chain_swap/show
 
 # 道具补给
-execute if score #event_mode jkpof.int matches 7 run function jkpof:state/1/progress/event/once/prop_supply
+execute if score #event_mode jkpof.int matches 7 run function jkpof:state/1/progress/event/prop_supply
 
 # 天地封锁
 execute if score #event_mode jkpof.int matches 8 run function jkpof:state/1/progress/event/vertical_lock/show
@@ -45,8 +45,32 @@ execute if score #event_mode jkpof.int matches 8 run function jkpof:state/1/prog
 execute if score #event_mode jkpof.int matches 9 run function jkpof:state/1/progress/event/invisible_coating/show
 
 # 背叛之时
-execute if score #event_betrayal_hour.status jkpof.int matches 1 run function jkpof:state/1/progress/event/once/betrayal_hour/recover
-execute if score #event_mode jkpof.int matches 10 run function jkpof:state/1/progress/event/once/betrayal_hour/show
+execute if score #event_betrayal_hour.status jkpof.int matches 1 run function jkpof:state/1/progress/event/betrayal_hour/recover
+execute if score #event_mode jkpof.int matches 10 run function jkpof:state/1/progress/event/betrayal_hour/show
+
+# 五谷丰登
+execute if score #event_mode jkpof.int matches 11 run function jkpof:state/1/progress/event/bountiful_harvest
+
+# 钢铁洪流
+execute if score #event_mode jkpof.int matches 12 run function jkpof:state/1/progress/event/iron_torrent/show
+
+# 吸星大法
+execute if score #event_loot_magnet jkpof.int matches 1 run function jkpof:state/1/progress/event/loot_magnet/end
+execute if score #event_mode jkpof.int matches 13 run function jkpof:state/1/progress/event/loot_magnet/show
+
+# 小孩模式
+execute if score #event_kid_mode jkpof.int matches 1 run function jkpof:state/1/progress/event/kid_mode/end
+execute if score #event_mode jkpof.int matches 14 run function jkpof:state/1/progress/event/kid_mode/show
+
+# 触则生变
+execute if score #event_touch_change jkpof.int matches 1 run function jkpof:state/1/progress/event/touch_change/end
+execute if score #event_mode jkpof.int matches 15 run function jkpof:state/1/progress/event/touch_change/show
+
+# 万物归零
+execute if score #event_mode jkpof.int matches 16 run function jkpof:state/1/progress/event/purge
+
+# 世界核平
+execute if score #event_mode jkpof.int matches 17 run function jkpof:state/1/progress/event/nuke/show
 
 # 持续时间
 execute if score #event_mode jkpof.int matches 1.. run scoreboard players operation #event_type jkpof.int = #event_mode jkpof.int

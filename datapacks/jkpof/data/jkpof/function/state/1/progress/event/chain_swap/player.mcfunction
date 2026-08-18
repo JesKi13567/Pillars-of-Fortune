@@ -5,7 +5,7 @@ execute if score #ctrl_team jkpof.int matches 1..2 as @e[type=marker, tag=jkpof_
 #    没有则全选
 execute unless entity @e[type=marker, tag=jkpof_swap_marker_sel] run tag @e[type=marker, tag=jkpof_swap_marker] add jkpof_swap_marker_sel
 # 2. 优先选择未完成传送者，防止闭环
-execute as @a[tag=jkpof_swap_player] at @s run function jkpof:state/1/progress/event/once/chain_swap/player_sel
+execute as @a[tag=jkpof_swap_player] at @s run function jkpof:state/1/progress/event/chain_swap/player_sel
 #    没有则选择任意
 execute unless entity @e[type=marker, tag=jkpof_swap_marker_sel2] run tag @e[type=marker, tag=jkpof_swap_marker_sel] add jkpof_swap_marker_sel2
 # 3. 随机选择一个符合条件的

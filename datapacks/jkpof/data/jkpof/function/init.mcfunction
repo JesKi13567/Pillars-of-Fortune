@@ -173,6 +173,8 @@ scoreboard objectives add jkpof.gravity dummy "重力方向"
 scoreboard objectives add jkpof.tp_scroll dummy "传送卷轴-选项"
 scoreboard objectives add jkpof.creative dummy "当个创世神-持续时间（刻）"
 scoreboard objectives add jkpof.betrayal dummy "全员敌对玩家标记"
+scoreboard objectives add jkpof.bh.hp dummy "五谷丰登-当前生命值"
+scoreboard objectives add jkpof.bh.max dummy "五谷丰登-最大生命值"
 
 scoreboard objectives add jkpof.item.order dummy "物品标号"
 scoreboard objectives add jkpof.item.count dummy "物品个数"
@@ -294,6 +296,13 @@ scoreboard players set #event_enable_7 jkpof.int 1
 scoreboard players set #event_enable_8 jkpof.int 1
 scoreboard players set #event_enable_9 jkpof.int 1
 scoreboard players set #event_enable_10 jkpof.int 1
+scoreboard players set #event_enable_11 jkpof.int 1
+scoreboard players set #event_enable_12 jkpof.int 1
+scoreboard players set #event_enable_13 jkpof.int 1
+scoreboard players set #event_enable_14 jkpof.int 1
+scoreboard players set #event_enable_15 jkpof.int 1
+scoreboard players set #event_enable_16 jkpof.int 1
+scoreboard players set #event_enable_17 jkpof.int 1
 
 worldborder center 0 0
 worldborder warning distance 0
@@ -411,6 +420,13 @@ summon interaction 10 64.75 -99.5 {Tags: ["jkpof", "jkpof_display_event_order", 
 summon interaction 10 64.75 -99.0 {Tags: ["jkpof", "jkpof_display_event_order", "8"], response: true, width: .5, height: .5}
 summon interaction 10 64.75 -98.5 {Tags: ["jkpof", "jkpof_display_event_order", "9"], response: true, width: .5, height: .5}
 summon interaction 10 64.75 -98.0 {Tags: ["jkpof", "jkpof_display_event_order", "10"], response: true, width: .5, height: .5}
+summon interaction 10 64.25 -101.0 {Tags: ["jkpof", "jkpof_display_event_order", "11"], response: true, width: .5, height: .5}
+summon interaction 10 64.25 -100.5 {Tags: ["jkpof", "jkpof_display_event_order", "12"], response: true, width: .5, height: .5}
+summon interaction 10 64.25 -100.0 {Tags: ["jkpof", "jkpof_display_event_order", "13"], response: true, width: .5, height: .5}
+summon interaction 10 64.25 -99.5 {Tags: ["jkpof", "jkpof_display_event_order", "14"], response: true, width: .5, height: .5}
+summon interaction 10 64.25 -99.0 {Tags: ["jkpof", "jkpof_display_event_order", "15"], response: true, width: .5, height: .5}
+summon interaction 10 64.25 -98.5 {Tags: ["jkpof", "jkpof_display_event_order", "16"], response: true, width: .5, height: .5}
+summon interaction 10 64.25 -98.0 {Tags: ["jkpof", "jkpof_display_event_order", "17"], response: true, width: .5, height: .5}
 
 summon item_display 10 65.5 -101.0 {Tags: ["jkpof", "jkpof_display_event_order", "-3"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.45f, .45f, .45f], translation: [0f, 0f, 0f]}, Rotation: [-90f, 0f]}
 summon item_display 10 65.5 -100.5 {Tags: ["jkpof", "jkpof_display_event_order", "-2"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.45f, .45f, .45f], translation: [0f, 0f, 0f]}, Rotation: [-90f, 0f]}
@@ -426,6 +442,13 @@ summon item_display 10 65.0 -99.5 {Tags: ["jkpof", "jkpof_display_event_order", 
 summon item_display 10 65.0 -99.0 {Tags: ["jkpof", "jkpof_display_event_order", "8"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.45f, .45f, .45f], translation: [0f, 0f, 0f]}, Rotation: [-90f, 0f]}
 summon item_display 10 65.0 -98.5 {Tags: ["jkpof", "jkpof_display_event_order", "9"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.45f, .45f, .45f], translation: [0f, 0f, 0f]}, Rotation: [-90f, 0f]}
 summon item_display 10 65.0 -98.0 {Tags: ["jkpof", "jkpof_display_event_order", "10"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.45f, .45f, .45f], translation: [0f, 0f, 0f]}, Rotation: [-90f, 0f]}
+summon item_display 10 64.5 -101.0 {Tags: ["jkpof", "jkpof_display_event_order", "11"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.45f, .45f, .45f], translation: [0f, 0f, 0f]}, Rotation: [-90f, 0f]}
+summon item_display 10 64.5 -100.5 {Tags: ["jkpof", "jkpof_display_event_order", "12"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.45f, .45f, .45f], translation: [0f, 0f, 0f]}, Rotation: [-90f, 0f]}
+summon item_display 10 64.5 -100.0 {Tags: ["jkpof", "jkpof_display_event_order", "13"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.45f, .45f, .45f], translation: [0f, 0f, 0f]}, Rotation: [-90f, 0f]}
+summon item_display 10 64.5 -99.5 {Tags: ["jkpof", "jkpof_display_event_order", "14"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.45f, .45f, .45f], translation: [0f, 0f, 0f]}, Rotation: [-90f, 0f]}
+summon item_display 10 64.5 -99.0 {Tags: ["jkpof", "jkpof_display_event_order", "15"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.45f, .45f, .45f], translation: [0f, 0f, 0f]}, Rotation: [-90f, 0f]}
+summon item_display 10 64.5 -98.5 {Tags: ["jkpof", "jkpof_display_event_order", "16"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.45f, .45f, .45f], translation: [0f, 0f, 0f]}, Rotation: [-90f, 0f]}
+summon item_display 10 64.5 -98.0 {Tags: ["jkpof", "jkpof_display_event_order", "17"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.45f, .45f, .45f], translation: [0f, 0f, 0f]}, Rotation: [-90f, 0f]}
 
 #- 设置
 summon text_display 0 70 -110 {Tags: ["jkpof", "jkpof_lobby_const_top_settings"], brightness: {block: 15, sky: 15}, billboard: "center", transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [6f, 6f, 6f], translation: [0f, 0f, 0f]}}
@@ -555,30 +578,20 @@ summon interaction 10.5 64.25 -111.5 {Tags: ["jkpof", "jkpof_ctrl", "jkpof_ctrl_
 summon text_display 10.5 65.05 -111.5 {Tags: ["jkpof", "jkpof_display_ctrl_upside_down"], brightness: {block: 15, sky: 15}, billboard: "center"}
 summon item_display 10.5 64.5 -111.5 {Tags: ["jkpof", "jkpof_display_ctrl_upside_down"], brightness: {block: 15, sky: 15}, CustomNameVisible: true, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.4f, .4f, .4f], translation: [0f, 0f, 0f]}, Rotation: [-135f, 0f]}
 
-# 小孩模式
-summon interaction 10.5 65.25 -111.5 {Tags: ["jkpof", "jkpof_ctrl", "jkpof_ctrl_kid_mode"], response: true, width: .5, height: .5}
-summon text_display 10.5 66.05 -111.5 {Tags: ["jkpof", "jkpof_display_ctrl_kid_mode"], brightness: {block: 15, sky: 15}, billboard: "center"}
-summon item_display 10.5 65.5 -111.5 {Tags: ["jkpof", "jkpof_display_ctrl_kid_mode"], brightness: {block: 15, sky: 15}, CustomNameVisible: true, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.4f, .4f, .4f], translation: [0f, 0f, 0f]}, Rotation: [-135f, 0f]}
-
 # 初始工具
-summon interaction 10.5 66.25 -111.5 {Tags: ["jkpof", "jkpof_ctrl", "jkpof_ctrl_init_tool"], response: true, width: .5, height: .5}
-summon text_display 10.5 67.05 -111.5 {Tags: ["jkpof", "jkpof_display_ctrl_init_tool"], brightness: {block: 15, sky: 15}, billboard: "center"}
-summon item_display 10.5 66.5 -111.5 {Tags: ["jkpof", "jkpof_display_ctrl_init_tool"], brightness: {block: 15, sky: 15}, CustomNameVisible: true, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.4f, .4f, .4f], translation: [0f, 0f, 0f]}, Rotation: [-135f, 0f]}
-
-# 触则生变
-summon interaction 12.5 64.25 -109.5 {Tags: ["jkpof", "jkpof_ctrl", "jkpof_ctrl_touch_change"], response: true, width: .5, height: .5}
-summon text_display 12.5 65.05 -109.5 {Tags: ["jkpof", "jkpof_display_ctrl_touch_change"], brightness: {block: 15, sky: 15}, billboard: "center"}
-summon item_display 12.5 64.5 -109.5 {Tags: ["jkpof", "jkpof_display_ctrl_touch_change"], brightness: {block: 15, sky: 15}, CustomNameVisible: true, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.4f, .4f, .4f], translation: [0f, 0f, 0f]}, Rotation: [-135f, 0f]}
+summon interaction 10.5 65.25 -111.5 {Tags: ["jkpof", "jkpof_ctrl", "jkpof_ctrl_init_tool"], response: true, width: .5, height: .5}
+summon text_display 10.5 66.05 -111.5 {Tags: ["jkpof", "jkpof_display_ctrl_init_tool"], brightness: {block: 15, sky: 15}, billboard: "center"}
+summon item_display 10.5 65.5 -111.5 {Tags: ["jkpof", "jkpof_display_ctrl_init_tool"], brightness: {block: 15, sky: 15}, CustomNameVisible: true, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.4f, .4f, .4f], translation: [0f, 0f, 0f]}, Rotation: [-135f, 0f]}
 
 # 双倍生命值
-summon interaction 12.5 65.25 -109.5 {Tags: ["jkpof", "jkpof_ctrl", "jkpof_ctrl_double_health"], response: true, width: .5, height: .5}
-summon text_display 12.5 66.05 -109.5 {Tags: ["jkpof", "jkpof_display_ctrl_double_health"], brightness: {block: 15, sky: 15}, billboard: "center"}
-summon item_display 12.5 65.5 -109.5 {Tags: ["jkpof", "jkpof_display_ctrl_double_health"], brightness: {block: 15, sky: 15}, CustomNameVisible: true, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.4f, .4f, .4f], translation: [0f, 0f, 0f]}, Rotation: [-135f, 0f]}
+summon interaction 12.5 64.25 -109.5 {Tags: ["jkpof", "jkpof_ctrl", "jkpof_ctrl_double_health"], response: true, width: .5, height: .5}
+summon text_display 12.5 65.05 -109.5 {Tags: ["jkpof", "jkpof_display_ctrl_double_health"], brightness: {block: 15, sky: 15}, billboard: "center"}
+summon item_display 12.5 64.5 -109.5 {Tags: ["jkpof", "jkpof_display_ctrl_double_health"], brightness: {block: 15, sky: 15}, CustomNameVisible: true, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.4f, .4f, .4f], translation: [0f, 0f, 0f]}, Rotation: [-135f, 0f]}
 
 # 奖励箱
-summon interaction 12.5 66.25 -109.5 {Tags: ["jkpof", "jkpof_ctrl", "jkpof_ctrl_bonus_chest"], response: true, width: .5, height: .5}
-summon text_display 12.5 67.05 -109.5 {Tags: ["jkpof", "jkpof_display_ctrl_bonus_chest"], brightness: {block: 15, sky: 15}, billboard: "center", text: [{translate: "selectWorld.bonusItems", color: "green"}]}
-summon item_display 12.5 66.5 -109.5 {Tags: ["jkpof", "jkpof_display_ctrl_bonus_chest"], brightness: {block: 15, sky: 15}, CustomNameVisible: true, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.4f, .4f, .4f], translation: [0f, 0f, 0f]}, Rotation: [-135f, 0f]}
+summon interaction 12.5 65.25 -109.5 {Tags: ["jkpof", "jkpof_ctrl", "jkpof_ctrl_bonus_chest"], response: true, width: .5, height: .5}
+summon text_display 12.5 66.05 -109.5 {Tags: ["jkpof", "jkpof_display_ctrl_bonus_chest"], brightness: {block: 15, sky: 15}, billboard: "center", text: [{translate: "selectWorld.bonusItems", color: "green"}]}
+summon item_display 12.5 65.5 -109.5 {Tags: ["jkpof", "jkpof_display_ctrl_bonus_chest"], brightness: {block: 15, sky: 15}, CustomNameVisible: true, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.4f, .4f, .4f], translation: [0f, 0f, 0f]}, Rotation: [-135f, 0f]}
 
 ## 地图
 summon text_display -10.5 66.5 -110.5 {Tags: ["jkpof", "jkpof_display_ctrl_map"], brightness: {block: 15, sky: 15}, billboard: "center"}

@@ -63,6 +63,7 @@ execute as @s[scores={jkpof.damage.type.now=205}] run tellraw @a ["", {storage: 
 execute as @s[scores={jkpof.damage.type.now=207}] run tellraw @a ["", {storage: "jk:pof", interpret: true, nbt: "txt.DOF", color: "red"}, {translate: "death.attack.indirectMagic", with: [{selector: "@s"}, {selector: "@s"}]}]
 execute as @s[scores={jkpof.damage.type.now=210}] run tellraw @a ["", {storage: "jk:pof", interpret: true, nbt: "txt.DOF", color: "red"}, {translate: "death.attack.explosion", with: [{selector: "@s"}]}]
 execute as @s[scores={jkpof.damage.type.now=299}] run tellraw @a ["", {storage: "jk:pof", interpret: true, nbt: "txt.DOF", color: "red"}, {selector: "@s"}, {storage: "jk:pof", interpret: true, nbt: "txt.death.suicide.death_note"}]
+execute as @s[scores={jkpof.damage.type.now=300}] run tellraw @a ["", {storage: "jk:pof", interpret: true, nbt: "txt.DOF", color: "red"}, {selector: "@s"}, {storage: "jk:pof", interpret: true, nbt: "txt.death.victim.nuke.self"}]
 
 execute as @s[scores={jkpof.damage.type.now=301}] run tellraw @a ["", {storage: "jk:pof", interpret: true, nbt: "txt.DOF", color: "red"}, {translate: "death.attack.onFire", with: [{selector: "@s"}]}]
 execute as @s[scores={jkpof.damage.type.now=302}] run tellraw @a ["", {storage: "jk:pof", interpret: true, nbt: "txt.DOF", color: "red"}, {translate: "death.attack.magic", with: [{selector: "@s"}]}]

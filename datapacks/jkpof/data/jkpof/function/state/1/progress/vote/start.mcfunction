@@ -14,9 +14,16 @@ execute if score #event_enable_7 jkpof.int matches 1 run function jkpof:state/1/
 execute if score #event_enable_8 jkpof.int matches 1 run function jkpof:state/1/progress/vote/colored {id: '8', name: 'vertical_lock'}
 execute if score #event_enable_9 jkpof.int matches 1 run function jkpof:state/1/progress/vote/colored {id: '9', name: 'invisible_coating'}
 execute if score #event_enable_10 jkpof.int matches 1 run function jkpof:state/1/progress/vote/colored {id: '10', name: 'betrayal_hour'}
+execute if score #event_enable_11 jkpof.int matches 1 run function jkpof:state/1/progress/vote/colored {id: '11', name: 'bountiful_harvest'}
+execute if score #event_enable_12 jkpof.int matches 1 run function jkpof:state/1/progress/vote/colored {id: '12', name: 'iron_torrent'}
+execute if score #event_enable_13 jkpof.int matches 1 run function jkpof:state/1/progress/vote/colored {id: '13', name: 'loot_magnet'}
+execute if score #event_enable_14 jkpof.int matches 1 run function jkpof:state/1/progress/vote/colored {id: '14', name: 'kid_mode'}
+execute if score #event_enable_15 jkpof.int matches 1 run function jkpof:state/1/progress/vote/colored {id: '15', name: 'touch_change'}
+execute if score #event_enable_16 jkpof.int matches 1 run function jkpof:state/1/progress/vote/colored {id: '16', name: 'purge'}
+execute if score #event_enable_17 jkpof.int matches 1 if score #event_nuke.c jkpof.int matches 1.. run function jkpof:state/1/progress/vote/colored {id: '17', name: 'nuke'}
 
 tellraw @a[gamemode=spectator] [\
-{selector: "@e[type=marker, tag=jkpof_vote_show, tag=-1]", hover_event: {action: "show_text", value: ["[", {storage: "jk:pof", interpret: true, nbt: "txt.event.border.name"}, "]"]}, click_event: {action: "run_command", command: "/trigger jkpof.vote set 11"}}, \
+{selector: "@e[type=marker, tag=jkpof_vote_show, tag=-1]", hover_event: {action: "show_text", value: ["[", {storage: "jk:pof", interpret: true, nbt: "txt.event.border.name"}, "]"]}, click_event: {action: "run_command", command: "/trigger jkpof.vote set 99"}}, \
 {selector: "@e[type=marker, tag=jkpof_vote_show, tag=1]", hover_event: {action: "show_text", value: ["[", {storage: "jk:pof", interpret: true, nbt: "txt.event.arrow.name"}, "]"]}, click_event: {action: "run_command", command: "/trigger jkpof.vote set 1"}}, \
 {selector: "@e[type=marker, tag=jkpof_vote_show, tag=2]", hover_event: {action: "show_text", value: ["[", {storage: "jk:pof", interpret: true, nbt: "txt.event.lava.name"}, "]"]}, click_event: {action: "run_command", command: "/trigger jkpof.vote set 2"}}, \
 {selector: "@e[type=marker, tag=jkpof_vote_show, tag=3]", hover_event: {action: "show_text", value: ["[", {storage: "jk:pof", interpret: true, nbt: "txt.event.lightning.name"}, "]"]}, click_event: {action: "run_command", command: "/trigger jkpof.vote set 3"}}, \
@@ -27,6 +34,13 @@ tellraw @a[gamemode=spectator] [\
 {selector: "@e[type=marker, tag=jkpof_vote_show, tag=8]", hover_event: {action: "show_text", value: ["[", {storage: "jk:pof", interpret: true, nbt: "txt.event.vertical_lock.name"}, "]"]}, click_event: {action: "run_command", command: "/trigger jkpof.vote set 8"}}, \
 {selector: "@e[type=marker, tag=jkpof_vote_show, tag=9]", hover_event: {action: "show_text", value: ["[", {storage: "jk:pof", interpret: true, nbt: "txt.event.invisible_coating.name"}, "]"]}, click_event: {action: "run_command", command: "/trigger jkpof.vote set 9"}}, \
 {selector: "@e[type=marker, tag=jkpof_vote_show, tag=10]", hover_event: {action: "show_text", value: ["[", {storage: "jk:pof", interpret: true, nbt: "txt.event.betrayal_hour.name"}, "]"]}, click_event: {action: "run_command", command: "/trigger jkpof.vote set 10"}}, \
+{selector: "@e[type=marker, tag=jkpof_vote_show, tag=11]", hover_event: {action: "show_text", value: ["[", {storage: "jk:pof", interpret: true, nbt: "txt.event.bountiful_harvest.name"}, "]"]}, click_event: {action: "run_command", command: "/trigger jkpof.vote set 11"}}, \
+{selector: "@e[type=marker, tag=jkpof_vote_show, tag=12]", hover_event: {action: "show_text", value: ["[", {storage: "jk:pof", interpret: true, nbt: "txt.event.iron_torrent.name"}, "]"]}, click_event: {action: "run_command", command: "/trigger jkpof.vote set 12"}}, \
+{selector: "@e[type=marker, tag=jkpof_vote_show, tag=13]", hover_event: {action: "show_text", value: ["[", {storage: "jk:pof", interpret: true, nbt: "txt.event.loot_magnet.name"}, "]"]}, click_event: {action: "run_command", command: "/trigger jkpof.vote set 13"}}, \
+{selector: "@e[type=marker, tag=jkpof_vote_show, tag=14]", hover_event: {action: "show_text", value: ["[", {storage: "jk:pof", interpret: true, nbt: "txt.event.kid_mode.name"}, "]"]}, click_event: {action: "run_command", command: "/trigger jkpof.vote set 14"}}, \
+{selector: "@e[type=marker, tag=jkpof_vote_show, tag=15]", hover_event: {action: "show_text", value: ["[", {storage: "jk:pof", interpret: true, nbt: "txt.event.touch_change.name"}, "]"]}, click_event: {action: "run_command", command: "/trigger jkpof.vote set 15"}}, \
+{selector: "@e[type=marker, tag=jkpof_vote_show, tag=16]", hover_event: {action: "show_text", value: ["[", {storage: "jk:pof", interpret: true, nbt: "txt.event.purge.name"}, "]"]}, click_event: {action: "run_command", command: "/trigger jkpof.vote set 16"}}, \
+{selector: "@e[type=marker, tag=jkpof_vote_show, tag=17]", hover_event: {action: "show_text", value: ["[", {storage: "jk:pof", interpret: true, nbt: "txt.event.nuke.name"}, "]"]}, click_event: {action: "run_command", command: "/trigger jkpof.vote set 17"}}, \
 ]
 
 kill @e[type=marker, tag=jkpof_vote_show]

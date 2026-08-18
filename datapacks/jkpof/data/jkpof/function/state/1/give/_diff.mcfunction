@@ -20,5 +20,5 @@ execute unless score #ctrl_lang jkpof.int matches 2 as @a[scores={jkpof.state=2,
 execute if score #ctrl_lang jkpof.int matches 2 as @a[scores={jkpof.state=2, jkpof.item.order=1}] run loot give @s loot jkpof:item/prop/death_note/en
 execute as @a[scores={jkpof.state=2, jkpof.item.order=2}] run loot give @s loot jkpof:item/prop/creative
 
-# 所有 943, 88, 60, 29, 10, 71, 12, 9
+# 所有 928, 60, 88, 29, 46, 9, 71, 12, 9
 execute as @a[scores={jkpof.state=2, jkpof.item.order=3..}] run loot give @s loot jkpof:item/all

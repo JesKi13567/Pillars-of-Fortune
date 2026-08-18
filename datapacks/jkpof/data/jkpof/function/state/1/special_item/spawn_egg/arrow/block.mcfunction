@@ -96,6 +96,7 @@ execute if items entity @s container.0 sniffer_spawn_egg run summon sniffer
 execute if items entity @s container.0 snow_golem_spawn_egg run summon snow_golem
 execute if items entity @s container.0 squid_spawn_egg run summon squid
 execute if items entity @s container.0 strider_spawn_egg run summon strider
+execute if items entity @s container.0 sulfur_cube_spawn_egg run summon sulfur_cube
 execute if items entity @s container.0 tropical_fish_spawn_egg run summon tropical_fish
 execute if items entity @s container.0 turtle_spawn_egg run summon turtle
 execute if items entity @s container.0 wandering_trader_spawn_egg run summon wandering_trader

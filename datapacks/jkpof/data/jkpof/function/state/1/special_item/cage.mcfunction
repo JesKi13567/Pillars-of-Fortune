@@ -91,7 +91,7 @@ summon marker ~-1 ~1 ~1 {Tags: ["jkpof", "jkpof_glass", "jkpof_check_pos"]}
 summon marker ~-1 ~1 ~2 {Tags: ["jkpof", "jkpof_glass", "jkpof_check_pos"]}
 summon marker ~ ~1 ~-2 {Tags: ["jkpof", "jkpof_glass", "jkpof_check_pos"]}
 summon marker ~ ~1 ~-1 {Tags: ["jkpof", "jkpof_glass", "jkpof_check_pos"]}
-execute if score #ctrl_kid_mode jkpof.int matches 1 run summon marker ~ ~1 ~ {Tags: ["jkpof", "jkpof_glass", "jkpof_check_pos"]}
+execute if score #event_kid_mode jkpof.int matches 1 run summon marker ~ ~1 ~ {Tags: ["jkpof", "jkpof_glass", "jkpof_check_pos"]}
 summon marker ~ ~1 ~1 {Tags: ["jkpof", "jkpof_glass", "jkpof_check_pos"]}
 summon marker ~ ~1 ~2 {Tags: ["jkpof", "jkpof_glass", "jkpof_check_pos"]}
 summon marker ~1 ~1 ~-2 {Tags: ["jkpof", "jkpof_glass", "jkpof_check_pos"]}
@@ -129,31 +129,31 @@ summon marker ~2 ~2 ~-1 {Tags: ["jkpof", "jkpof_glass", "jkpof_check_pos"]}
 summon marker ~2 ~2 ~ {Tags: ["jkpof", "jkpof_glass", "jkpof_check_pos"]}
 summon marker ~2 ~2 ~1 {Tags: ["jkpof", "jkpof_glass", "jkpof_check_pos"]}
 summon marker ~2 ~2 ~2 {Tags: ["jkpof", "jkpof_glass", "jkpof_check_pos"]}
-execute if score #ctrl_kid_mode jkpof.int matches 0 run summon marker ~-2 ~3 ~-2 {Tags: ["jkpof", "jkpof_glass", "jkpof_check_pos"]}
-execute if score #ctrl_kid_mode jkpof.int matches 0 run summon marker ~-2 ~3 ~-1 {Tags: ["jkpof", "jkpof_glass", "jkpof_check_pos"]}
-execute if score #ctrl_kid_mode jkpof.int matches 0 run summon marker ~-2 ~3 ~ {Tags: ["jkpof", "jkpof_glass", "jkpof_check_pos"]}
-execute if score #ctrl_kid_mode jkpof.int matches 0 run summon marker ~-2 ~3 ~1 {Tags: ["jkpof", "jkpof_glass", "jkpof_check_pos"]}
-execute if score #ctrl_kid_mode jkpof.int matches 0 run summon marker ~-2 ~3 ~2 {Tags: ["jkpof", "jkpof_glass", "jkpof_check_pos"]}
-execute if score #ctrl_kid_mode jkpof.int matches 0 run summon marker ~-1 ~3 ~-2 {Tags: ["jkpof", "jkpof_glass", "jkpof_check_pos"]}
-execute if score #ctrl_kid_mode jkpof.int matches 0 run summon marker ~-1 ~3 ~-1 {Tags: ["jkpof", "jkpof_glass", "jkpof_check_pos"]}
-execute if score #ctrl_kid_mode jkpof.int matches 0 run summon marker ~-1 ~3 ~ {Tags: ["jkpof", "jkpof_glass", "jkpof_check_pos"]}
-execute if score #ctrl_kid_mode jkpof.int matches 0 run summon marker ~-1 ~3 ~1 {Tags: ["jkpof", "jkpof_glass", "jkpof_check_pos"]}
-execute if score #ctrl_kid_mode jkpof.int matches 0 run summon marker ~-1 ~3 ~2 {Tags: ["jkpof", "jkpof_glass", "jkpof_check_pos"]}
-execute if score #ctrl_kid_mode jkpof.int matches 0 run summon marker ~ ~3 ~-2 {Tags: ["jkpof", "jkpof_glass", "jkpof_check_pos"]}
-execute if score #ctrl_kid_mode jkpof.int matches 0 run summon marker ~ ~3 ~-1 {Tags: ["jkpof", "jkpof_glass", "jkpof_check_pos"]}
-execute if score #ctrl_kid_mode jkpof.int matches 0 run summon marker ~ ~3 ~ {Tags: ["jkpof", "jkpof_glass", "jkpof_check_pos"]}
-execute if score #ctrl_kid_mode jkpof.int matches 0 run summon marker ~ ~3 ~1 {Tags: ["jkpof", "jkpof_glass", "jkpof_check_pos"]}
-execute if score #ctrl_kid_mode jkpof.int matches 0 run summon marker ~ ~3 ~2 {Tags: ["jkpof", "jkpof_glass", "jkpof_check_pos"]}
-execute if score #ctrl_kid_mode jkpof.int matches 0 run summon marker ~1 ~3 ~-2 {Tags: ["jkpof", "jkpof_glass", "jkpof_check_pos"]}
-execute if score #ctrl_kid_mode jkpof.int matches 0 run summon marker ~1 ~3 ~-1 {Tags: ["jkpof", "jkpof_glass", "jkpof_check_pos"]}
-execute if score #ctrl_kid_mode jkpof.int matches 0 run summon marker ~1 ~3 ~ {Tags: ["jkpof", "jkpof_glass", "jkpof_check_pos"]}
-execute if score #ctrl_kid_mode jkpof.int matches 0 run summon marker ~1 ~3 ~1 {Tags: ["jkpof", "jkpof_glass", "jkpof_check_pos"]}
-execute if score #ctrl_kid_mode jkpof.int matches 0 run summon marker ~1 ~3 ~2 {Tags: ["jkpof", "jkpof_glass", "jkpof_check_pos"]}
-execute if score #ctrl_kid_mode jkpof.int matches 0 run summon marker ~2 ~3 ~-2 {Tags: ["jkpof", "jkpof_glass", "jkpof_check_pos"]}
-execute if score #ctrl_kid_mode jkpof.int matches 0 run summon marker ~2 ~3 ~-1 {Tags: ["jkpof", "jkpof_glass", "jkpof_check_pos"]}
-execute if score #ctrl_kid_mode jkpof.int matches 0 run summon marker ~2 ~3 ~ {Tags: ["jkpof", "jkpof_glass", "jkpof_check_pos"]}
-execute if score #ctrl_kid_mode jkpof.int matches 0 run summon marker ~2 ~3 ~1 {Tags: ["jkpof", "jkpof_glass", "jkpof_check_pos"]}
-execute if score #ctrl_kid_mode jkpof.int matches 0 run summon marker ~2 ~3 ~2 {Tags: ["jkpof", "jkpof_glass", "jkpof_check_pos"]}
+execute if score #event_kid_mode jkpof.int matches 0 run summon marker ~-2 ~3 ~-2 {Tags: ["jkpof", "jkpof_glass", "jkpof_check_pos"]}
+execute if score #event_kid_mode jkpof.int matches 0 run summon marker ~-2 ~3 ~-1 {Tags: ["jkpof", "jkpof_glass", "jkpof_check_pos"]}
+execute if score #event_kid_mode jkpof.int matches 0 run summon marker ~-2 ~3 ~ {Tags: ["jkpof", "jkpof_glass", "jkpof_check_pos"]}
+execute if score #event_kid_mode jkpof.int matches 0 run summon marker ~-2 ~3 ~1 {Tags: ["jkpof", "jkpof_glass", "jkpof_check_pos"]}
+execute if score #event_kid_mode jkpof.int matches 0 run summon marker ~-2 ~3 ~2 {Tags: ["jkpof", "jkpof_glass", "jkpof_check_pos"]}
+execute if score #event_kid_mode jkpof.int matches 0 run summon marker ~-1 ~3 ~-2 {Tags: ["jkpof", "jkpof_glass", "jkpof_check_pos"]}
+execute if score #event_kid_mode jkpof.int matches 0 run summon marker ~-1 ~3 ~-1 {Tags: ["jkpof", "jkpof_glass", "jkpof_check_pos"]}
+execute if score #event_kid_mode jkpof.int matches 0 run summon marker ~-1 ~3 ~ {Tags: ["jkpof", "jkpof_glass", "jkpof_check_pos"]}
+execute if score #event_kid_mode jkpof.int matches 0 run summon marker ~-1 ~3 ~1 {Tags: ["jkpof", "jkpof_glass", "jkpof_check_pos"]}
+execute if score #event_kid_mode jkpof.int matches 0 run summon marker ~-1 ~3 ~2 {Tags: ["jkpof", "jkpof_glass", "jkpof_check_pos"]}
+execute if score #event_kid_mode jkpof.int matches 0 run summon marker ~ ~3 ~-2 {Tags: ["jkpof", "jkpof_glass", "jkpof_check_pos"]}
+execute if score #event_kid_mode jkpof.int matches 0 run summon marker ~ ~3 ~-1 {Tags: ["jkpof", "jkpof_glass", "jkpof_check_pos"]}
+execute if score #event_kid_mode jkpof.int matches 0 run summon marker ~ ~3 ~ {Tags: ["jkpof", "jkpof_glass", "jkpof_check_pos"]}
+execute if score #event_kid_mode jkpof.int matches 0 run summon marker ~ ~3 ~1 {Tags: ["jkpof", "jkpof_glass", "jkpof_check_pos"]}
+execute if score #event_kid_mode jkpof.int matches 0 run summon marker ~ ~3 ~2 {Tags: ["jkpof", "jkpof_glass", "jkpof_check_pos"]}
+execute if score #event_kid_mode jkpof.int matches 0 run summon marker ~1 ~3 ~-2 {Tags: ["jkpof", "jkpof_glass", "jkpof_check_pos"]}
+execute if score #event_kid_mode jkpof.int matches 0 run summon marker ~1 ~3 ~-1 {Tags: ["jkpof", "jkpof_glass", "jkpof_check_pos"]}
+execute if score #event_kid_mode jkpof.int matches 0 run summon marker ~1 ~3 ~ {Tags: ["jkpof", "jkpof_glass", "jkpof_check_pos"]}
+execute if score #event_kid_mode jkpof.int matches 0 run summon marker ~1 ~3 ~1 {Tags: ["jkpof", "jkpof_glass", "jkpof_check_pos"]}
+execute if score #event_kid_mode jkpof.int matches 0 run summon marker ~1 ~3 ~2 {Tags: ["jkpof", "jkpof_glass", "jkpof_check_pos"]}
+execute if score #event_kid_mode jkpof.int matches 0 run summon marker ~2 ~3 ~-2 {Tags: ["jkpof", "jkpof_glass", "jkpof_check_pos"]}
+execute if score #event_kid_mode jkpof.int matches 0 run summon marker ~2 ~3 ~-1 {Tags: ["jkpof", "jkpof_glass", "jkpof_check_pos"]}
+execute if score #event_kid_mode jkpof.int matches 0 run summon marker ~2 ~3 ~ {Tags: ["jkpof", "jkpof_glass", "jkpof_check_pos"]}
+execute if score #event_kid_mode jkpof.int matches 0 run summon marker ~2 ~3 ~1 {Tags: ["jkpof", "jkpof_glass", "jkpof_check_pos"]}
+execute if score #event_kid_mode jkpof.int matches 0 run summon marker ~2 ~3 ~2 {Tags: ["jkpof", "jkpof_glass", "jkpof_check_pos"]}
 
 # 检查位置
 execute as @e[type=marker, tag=jkpof_check_pos] at @s run function jkpof:state/1/special_item/check_pos

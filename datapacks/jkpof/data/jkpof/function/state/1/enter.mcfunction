@@ -126,6 +126,10 @@ scoreboard players set #before_start jkpof.int 3
 scoreboard players set #event_mode jkpof.int 0
 scoreboard players set #event_progress jkpof.int 63
 scoreboard players set #event_border jkpof.int 2
+scoreboard players set #event_nuke.c jkpof.int 1
+scoreboard players set #event_kid_mode jkpof.int 0
+scoreboard players set #event_touch_change jkpof.int 0
+scoreboard players set #event_loot_magnet jkpof.int 0
 scoreboard players set #event_loop jkpof.int 0
 
 difficulty hard
@@ -160,6 +164,13 @@ execute if score #event_enable_7 jkpof.int matches 1 run data modify storage jk:
 execute if score #event_enable_8 jkpof.int matches 1 run data modify storage jk:pof data.event.list append value 8
 execute if score #event_enable_9 jkpof.int matches 1 run data modify storage jk:pof data.event.list append value 9
 execute if score #event_enable_10 jkpof.int matches 1 run data modify storage jk:pof data.event.list append value 10
+execute if score #event_enable_11 jkpof.int matches 1 run data modify storage jk:pof data.event.list append value 11
+execute if score #event_enable_12 jkpof.int matches 1 run data modify storage jk:pof data.event.list append value 12
+execute if score #event_enable_13 jkpof.int matches 1 run data modify storage jk:pof data.event.list append value 13
+execute if score #event_enable_14 jkpof.int matches 1 run data modify storage jk:pof data.event.list append value 14
+execute if score #event_enable_15 jkpof.int matches 1 run data modify storage jk:pof data.event.list append value 15
+execute if score #event_enable_16 jkpof.int matches 1 run data modify storage jk:pof data.event.list append value 16
+execute if score #event_enable_17 jkpof.int matches 1 run data modify storage jk:pof data.event.list append value 17
 execute store result score #event_s jkpof.int run data get storage jk:pof data.event.list
 execute store result storage jk:pof data.event.count int 1 run scoreboard players remove #event_s jkpof.int 1
 
@@ -190,17 +201,12 @@ execute if score #ctrl_map_real jkpof.int matches 1.. run function jkpof:state/1
 
 # 特殊规则
 scoreboard players set #special_rules.count jkpof.int 0
-scoreboard players operation #special_rules.count jkpof.int += #ctrl_kid_mode jkpof.int
 scoreboard players operation #special_rules.count jkpof.int += #ctrl_upside_down jkpof.int
-scoreboard players operation #special_rules.count jkpof.int += #ctrl_touch_change jkpof.int
 scoreboard players operation #special_rules.count jkpof.int += #ctrl_double_health jkpof.int
 scoreboard players operation #special_rules.count jkpof.int += #ctrl_init_tool jkpof.int
 scoreboard players operation #special_rules.count jkpof.int += #ctrl_bonus_chest jkpof.int
 execute if score #special_rules.count jkpof.int matches 1.. run tellraw @a [{storage: "jk:pof", interpret: true, nbt: "txt.lobby.const.settings.special_rules.lore", color: "yellow"}]
-execute if score #ctrl_kid_mode jkpof.int matches 1 run tellraw @a [{storage: "jk:pof", interpret: true, nbt: "txt.lobby.const.settings.special_rules.kid_mode.name", color: "green"}]
 execute if score #ctrl_upside_down jkpof.int matches 1 run tellraw @a [{storage: "jk:pof", interpret: true, nbt: "txt.lobby.const.settings.special_rules.upside_down.name", color: "green"}]
-execute if score #ctrl_upside_down jkpof.int matches 1 as @a[scores={jkpof.state=2}] run loot give @s loot jkpof:item/prop/gravity_device
-execute if score #ctrl_touch_change jkpof.int matches 1 run tellraw @a [{storage: "jk:pof", interpret: true, nbt: "txt.lobby.const.settings.special_rules.touch_change.name", color: "green"}]
 execute if score #ctrl_double_health jkpof.int matches 1 run tellraw @a [{storage: "jk:pof", interpret: true, nbt: "txt.lobby.const.settings.special_rules.double_health.name", color: "green"}]
 execute if score #ctrl_init_tool jkpof.int matches 1 run tellraw @a [{storage: "jk:pof", interpret: true, nbt: "txt.lobby.const.settings.special_rules.init_tool.name", color: "green"}]
 execute if score #ctrl_bonus_chest jkpof.int matches 1 run tellraw @a [{translate: "selectWorld.bonusItems", color: "green"}]

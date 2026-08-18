@@ -15,6 +15,13 @@ execute if score #event_ctrl jkpof.int matches 0 run scoreboard players set #eve
 execute if score #event_ctrl jkpof.int matches 0 run scoreboard players set #event_enable_8 jkpof.int 0
 execute if score #event_ctrl jkpof.int matches 0 run scoreboard players set #event_enable_9 jkpof.int 0
 execute if score #event_ctrl jkpof.int matches 0 run scoreboard players set #event_enable_10 jkpof.int 0
+execute if score #event_ctrl jkpof.int matches 0 run scoreboard players set #event_enable_11 jkpof.int 0
+execute if score #event_ctrl jkpof.int matches 0 run scoreboard players set #event_enable_12 jkpof.int 0
+execute if score #event_ctrl jkpof.int matches 0 run scoreboard players set #event_enable_13 jkpof.int 0
+execute if score #event_ctrl jkpof.int matches 0 run scoreboard players set #event_enable_14 jkpof.int 0
+execute if score #event_ctrl jkpof.int matches 0 run scoreboard players set #event_enable_15 jkpof.int 0
+execute if score #event_ctrl jkpof.int matches 0 run scoreboard players set #event_enable_16 jkpof.int 0
+execute if score #event_ctrl jkpof.int matches 0 run scoreboard players set #event_enable_17 jkpof.int 0
 
 execute if score #event_ctrl jkpof.int matches 1 run scoreboard players set #event_broom jkpof.int 1
 execute if score #event_ctrl jkpof.int matches 1 run scoreboard players set #event_vote jkpof.int 1
@@ -30,5 +37,12 @@ execute if score #event_ctrl jkpof.int matches 1 run scoreboard players set #eve
 execute if score #event_ctrl jkpof.int matches 1 run scoreboard players set #event_enable_8 jkpof.int 1
 execute if score #event_ctrl jkpof.int matches 1 run scoreboard players set #event_enable_9 jkpof.int 1
 execute if score #event_ctrl jkpof.int matches 1 run scoreboard players set #event_enable_10 jkpof.int 1
+execute if score #event_ctrl jkpof.int matches 1 run scoreboard players set #event_enable_11 jkpof.int 1
+execute if score #event_ctrl jkpof.int matches 1 run scoreboard players set #event_enable_12 jkpof.int 1
+execute if score #event_ctrl jkpof.int matches 1 run scoreboard players set #event_enable_13 jkpof.int 1
+execute if score #event_ctrl jkpof.int matches 1 run scoreboard players set #event_enable_14 jkpof.int 1
+execute if score #event_ctrl jkpof.int matches 1 run scoreboard players set #event_enable_15 jkpof.int 1
+execute if score #event_ctrl jkpof.int matches 1 run scoreboard players set #event_enable_16 jkpof.int 1
+execute if score #event_ctrl jkpof.int matches 1 run scoreboard players set #event_enable_17 jkpof.int 1
 
 function jkpof:state/0/interaction/lobby/event/show

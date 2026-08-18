@@ -12,6 +12,13 @@ execute if score #event_order jkpof.int matches 7 run scoreboard players add #ev
 execute if score #event_order jkpof.int matches 8 run scoreboard players add #event_enable_8 jkpof.int 1
 execute if score #event_order jkpof.int matches 9 run scoreboard players add #event_enable_9 jkpof.int 1
 execute if score #event_order jkpof.int matches 10 run scoreboard players add #event_enable_10 jkpof.int 1
+execute if score #event_order jkpof.int matches 11 run scoreboard players add #event_enable_11 jkpof.int 1
+execute if score #event_order jkpof.int matches 12 run scoreboard players add #event_enable_12 jkpof.int 1
+execute if score #event_order jkpof.int matches 13 run scoreboard players add #event_enable_13 jkpof.int 1
+execute if score #event_order jkpof.int matches 14 run scoreboard players add #event_enable_14 jkpof.int 1
+execute if score #event_order jkpof.int matches 15 run scoreboard players add #event_enable_15 jkpof.int 1
+execute if score #event_order jkpof.int matches 16 run scoreboard players add #event_enable_16 jkpof.int 1
+execute if score #event_order jkpof.int matches 17 run scoreboard players add #event_enable_17 jkpof.int 1
 
 execute if score #event_broom jkpof.int matches 2.. run scoreboard players set #event_broom jkpof.int 0
 execute if score #event_vote jkpof.int matches 2.. run scoreboard players set #event_vote jkpof.int 0
@@ -27,5 +34,12 @@ execute if score #event_enable_7 jkpof.int matches 2.. run scoreboard players se
 execute if score #event_enable_8 jkpof.int matches 2.. run scoreboard players set #event_enable_8 jkpof.int 0
 execute if score #event_enable_9 jkpof.int matches 2.. run scoreboard players set #event_enable_9 jkpof.int 0
 execute if score #event_enable_10 jkpof.int matches 2.. run scoreboard players set #event_enable_10 jkpof.int 0
+execute if score #event_enable_11 jkpof.int matches 2.. run scoreboard players set #event_enable_11 jkpof.int 0
+execute if score #event_enable_12 jkpof.int matches 2.. run scoreboard players set #event_enable_12 jkpof.int 0
+execute if score #event_enable_13 jkpof.int matches 2.. run scoreboard players set #event_enable_13 jkpof.int 0
+execute if score #event_enable_14 jkpof.int matches 2.. run scoreboard players set #event_enable_14 jkpof.int 0
+execute if score #event_enable_15 jkpof.int matches 2.. run scoreboard players set #event_enable_15 jkpof.int 0
+execute if score #event_enable_16 jkpof.int matches 2.. run scoreboard players set #event_enable_16 jkpof.int 0
+execute if score #event_enable_17 jkpof.int matches 2.. run scoreboard players set #event_enable_17 jkpof.int 0
 
 function jkpof:state/0/interaction/lobby/event/show

@@ -19,7 +19,7 @@ execute unless score @s[gamemode=creative] jkpof.creative matches 1.. run gamemo
 execute as @s[scores={jkpof.creative=1..999}] run function jkpof:state/1/special_item/creative/global
 
 # 触则生变
-execute if score #before_start jkpof.int matches 0 if score #ctrl_touch_change jkpof.int matches 1 at @s align xyz positioned ~.5 ~.5 ~.5 run function jkpof:state/1/special_item/touch_change/global
+execute if score #event_touch_change jkpof.int matches 1 at @s align xyz positioned ~.5 ~.5 ~.5 run function jkpof:state/1/progress/event/touch_change/global
 
 # 离开游戏
 scoreboard players set @s[scores={jkpof.leavegame=1..}] jkpof.death 1
