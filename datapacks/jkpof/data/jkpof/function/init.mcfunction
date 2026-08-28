@@ -131,7 +131,6 @@ team modify jkpof.light_gray collisionRule never
 team modify jkpof.light_gray friendlyFire false
 
 team add jkpof.traitor {text: "叛徒", color: "red"}
-team modify jkpof.traitor color red
 team modify jkpof.traitor collisionRule never
 team modify jkpof.traitor friendlyFire false
 
@@ -175,6 +174,7 @@ scoreboard objectives add jkpof.creative dummy "当个创世神-持续时间（�
 scoreboard objectives add jkpof.betrayal dummy "全员敌对玩家标记"
 scoreboard objectives add jkpof.bh.hp dummy "五谷丰登-当前生命值"
 scoreboard objectives add jkpof.bh.max dummy "五谷丰登-最大生命值"
+scoreboard objectives add jkpof.cs.id dummy "连锁换位-id"
 
 scoreboard objectives add jkpof.item.order dummy "物品标号"
 scoreboard objectives add jkpof.item.count dummy "物品个数"
@@ -303,6 +303,27 @@ scoreboard players set #event_enable_14 jkpof.int 1
 scoreboard players set #event_enable_15 jkpof.int 1
 scoreboard players set #event_enable_16 jkpof.int 1
 scoreboard players set #event_enable_17 jkpof.int 1
+scoreboard players set #event_plus_ctrl jkpof.int 0
+scoreboard players set #event_plus_1 jkpof.int 0
+scoreboard players set #event_plus_2 jkpof.int 0
+scoreboard players set #event_plus_3 jkpof.int 0
+scoreboard players set #event_plus_4 jkpof.int 0
+scoreboard players set #event_plus_5 jkpof.int 0
+scoreboard players set #event_plus_6 jkpof.int 0
+scoreboard players set #event_plus_7 jkpof.int 0
+scoreboard players set #event_plus_8 jkpof.int 0
+scoreboard players set #event_plus_9 jkpof.int 0
+scoreboard players set #event_plus_10 jkpof.int 0
+scoreboard players set #event_plus_11 jkpof.int 0
+scoreboard players set #event_plus_12 jkpof.int 0
+scoreboard players set #event_plus_13 jkpof.int 0
+scoreboard players set #event_plus_14 jkpof.int 0
+scoreboard players set #event_plus_15 jkpof.int 0
+scoreboard players set #event_plus_16 jkpof.int 0
+scoreboard players set #event_plus_17 jkpof.int 0
+scoreboard players set #event_border.t jkpof.int 2
+scoreboard players set #event_nuke.t jkpof.int 1
+scoreboard players set #event_lightning.t jkpof.int 3
 
 worldborder center 0 0
 worldborder warning distance 0
@@ -397,58 +418,71 @@ summon item_display -10 64.25 -101.0 {Tags: ["jkpof", "jkpof_display_lobby_item"
 #- 事件
 summon text_display 10 70 -100 {Tags: ["jkpof", "jkpof_lobby_const_top_events"], brightness: {block: 15, sky: 15}, billboard: "center", transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [6f, 6f, 6f], translation: [0f, 0f, 0f]}}
 
-summon interaction 10 65.75 -99 {Tags: ["jkpof", "jkpof_display_event_switch"], response: true, width: .5, height: .5}
-summon interaction 10 65.75 -101 {Tags: ["jkpof", "jkpof_display_event_ctrl"], response: true, width: .5, height: .5}
-
-summon text_display 10 65.875 -99 {Tags: ["jkpof", "jkpof_display_event_switch"], brightness: {block: 15, sky: 15}, Rotation: [90f, 0f]}
-summon text_display 10 65.875 -101 {Tags: ["jkpof", "jkpof_display_event_ctrl"], brightness: {block: 15, sky: 15}, Rotation: [90f, 0f]}
-
 summon item_display 10 68.25 -100 {Tags: ["jkpof", "jkpof_display_event_order", "-99"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [1f, 1f, 1f], translation: [0f, 0f, 0f]}, Rotation: [-90f, 0f]}
 summon text_display 10 66.25 -100 {Tags: ["jkpof", "jkpof_display_event_order", "-99"], brightness: {block: 15, sky: 15}, Rotation: [90f, 0f], line_width: 1000}
 
-summon interaction 10 65.25 -101.0 {Tags: ["jkpof", "jkpof_display_event_order", "-3"], response: true, width: .5, height: .5}
-summon interaction 10 65.25 -100.5 {Tags: ["jkpof", "jkpof_display_event_order", "-2"], response: true, width: .5, height: .5}
-summon interaction 10 65.25 -100.0 {Tags: ["jkpof", "jkpof_display_event_order", "-1"], response: true, width: .5, height: .5}
-summon interaction 10 65.25 -99.5 {Tags: ["jkpof", "jkpof_display_event_order", "0"], response: true, width: .5, height: .5}
-summon interaction 10 65.25 -99.0 {Tags: ["jkpof", "jkpof_display_event_order", "1"], response: true, width: .5, height: .5}
-summon interaction 10 65.25 -98.5 {Tags: ["jkpof", "jkpof_display_event_order", "2"], response: true, width: .5, height: .5}
-summon interaction 10 65.25 -98.0 {Tags: ["jkpof", "jkpof_display_event_order", "3"], response: true, width: .5, height: .5}
-summon interaction 10 64.75 -101.0 {Tags: ["jkpof", "jkpof_display_event_order", "4"], response: true, width: .5, height: .5}
-summon interaction 10 64.75 -100.5 {Tags: ["jkpof", "jkpof_display_event_order", "5"], response: true, width: .5, height: .5}
-summon interaction 10 64.75 -100.0 {Tags: ["jkpof", "jkpof_display_event_order", "6"], response: true, width: .5, height: .5}
-summon interaction 10 64.75 -99.5 {Tags: ["jkpof", "jkpof_display_event_order", "7"], response: true, width: .5, height: .5}
-summon interaction 10 64.75 -99.0 {Tags: ["jkpof", "jkpof_display_event_order", "8"], response: true, width: .5, height: .5}
-summon interaction 10 64.75 -98.5 {Tags: ["jkpof", "jkpof_display_event_order", "9"], response: true, width: .5, height: .5}
-summon interaction 10 64.75 -98.0 {Tags: ["jkpof", "jkpof_display_event_order", "10"], response: true, width: .5, height: .5}
-summon interaction 10 64.25 -101.0 {Tags: ["jkpof", "jkpof_display_event_order", "11"], response: true, width: .5, height: .5}
-summon interaction 10 64.25 -100.5 {Tags: ["jkpof", "jkpof_display_event_order", "12"], response: true, width: .5, height: .5}
-summon interaction 10 64.25 -100.0 {Tags: ["jkpof", "jkpof_display_event_order", "13"], response: true, width: .5, height: .5}
-summon interaction 10 64.25 -99.5 {Tags: ["jkpof", "jkpof_display_event_order", "14"], response: true, width: .5, height: .5}
-summon interaction 10 64.25 -99.0 {Tags: ["jkpof", "jkpof_display_event_order", "15"], response: true, width: .5, height: .5}
-summon interaction 10 64.25 -98.5 {Tags: ["jkpof", "jkpof_display_event_order", "16"], response: true, width: .5, height: .5}
-summon interaction 10 64.25 -98.0 {Tags: ["jkpof", "jkpof_display_event_order", "17"], response: true, width: .5, height: .5}
+summon interaction 10 65.5 -99 {Tags: ["jkpof", "jkpof_display_event_switch"], response: true, width: .5, height: .5}
+summon text_display 10 65.625 -99 {Tags: ["jkpof", "jkpof_display_event_switch"], brightness: {block: 15, sky: 15}, Rotation: [90f, 0f]}
 
-summon item_display 10 65.5 -101.0 {Tags: ["jkpof", "jkpof_display_event_order", "-3"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.45f, .45f, .45f], translation: [0f, 0f, 0f]}, Rotation: [-90f, 0f]}
-summon item_display 10 65.5 -100.5 {Tags: ["jkpof", "jkpof_display_event_order", "-2"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.45f, .45f, .45f], translation: [0f, 0f, 0f]}, Rotation: [-90f, 0f]}
-summon item_display 10 65.5 -100.0 {Tags: ["jkpof", "jkpof_display_event_order", "-1"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.45f, .45f, .45f], translation: [0f, 0f, 0f]}, Rotation: [-90f, 0f]}
-summon item_display 10 65.5 -99.5 {Tags: ["jkpof", "jkpof_display_event_order", "0"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.45f, .45f, .45f], translation: [0f, 0f, 0f]}, Rotation: [-90f, 0f]}
-summon item_display 10 65.5 -99.0 {Tags: ["jkpof", "jkpof_display_event_order", "1"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.45f, .45f, .45f], translation: [0f, 0f, 0f]}, Rotation: [-90f, 0f]}
-summon item_display 10 65.5 -98.5 {Tags: ["jkpof", "jkpof_display_event_order", "2"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.45f, .45f, .45f], translation: [0f, 0f, 0f]}, Rotation: [-90f, 0f]}
-summon item_display 10 65.5 -98.0 {Tags: ["jkpof", "jkpof_display_event_order", "3"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.45f, .45f, .45f], translation: [0f, 0f, 0f]}, Rotation: [-90f, 0f]}
-summon item_display 10 65.0 -101.0 {Tags: ["jkpof", "jkpof_display_event_order", "4"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.45f, .45f, .45f], translation: [0f, 0f, 0f]}, Rotation: [-90f, 0f]}
-summon item_display 10 65.0 -100.5 {Tags: ["jkpof", "jkpof_display_event_order", "5"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.45f, .45f, .45f], translation: [0f, 0f, 0f]}, Rotation: [-90f, 0f]}
-summon item_display 10 65.0 -100.0 {Tags: ["jkpof", "jkpof_display_event_order", "6"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.45f, .45f, .45f], translation: [0f, 0f, 0f]}, Rotation: [-90f, 0f]}
-summon item_display 10 65.0 -99.5 {Tags: ["jkpof", "jkpof_display_event_order", "7"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.45f, .45f, .45f], translation: [0f, 0f, 0f]}, Rotation: [-90f, 0f]}
-summon item_display 10 65.0 -99.0 {Tags: ["jkpof", "jkpof_display_event_order", "8"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.45f, .45f, .45f], translation: [0f, 0f, 0f]}, Rotation: [-90f, 0f]}
-summon item_display 10 65.0 -98.5 {Tags: ["jkpof", "jkpof_display_event_order", "9"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.45f, .45f, .45f], translation: [0f, 0f, 0f]}, Rotation: [-90f, 0f]}
-summon item_display 10 65.0 -98.0 {Tags: ["jkpof", "jkpof_display_event_order", "10"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.45f, .45f, .45f], translation: [0f, 0f, 0f]}, Rotation: [-90f, 0f]}
-summon item_display 10 64.5 -101.0 {Tags: ["jkpof", "jkpof_display_event_order", "11"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.45f, .45f, .45f], translation: [0f, 0f, 0f]}, Rotation: [-90f, 0f]}
-summon item_display 10 64.5 -100.5 {Tags: ["jkpof", "jkpof_display_event_order", "12"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.45f, .45f, .45f], translation: [0f, 0f, 0f]}, Rotation: [-90f, 0f]}
-summon item_display 10 64.5 -100.0 {Tags: ["jkpof", "jkpof_display_event_order", "13"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.45f, .45f, .45f], translation: [0f, 0f, 0f]}, Rotation: [-90f, 0f]}
-summon item_display 10 64.5 -99.5 {Tags: ["jkpof", "jkpof_display_event_order", "14"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.45f, .45f, .45f], translation: [0f, 0f, 0f]}, Rotation: [-90f, 0f]}
-summon item_display 10 64.5 -99.0 {Tags: ["jkpof", "jkpof_display_event_order", "15"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.45f, .45f, .45f], translation: [0f, 0f, 0f]}, Rotation: [-90f, 0f]}
-summon item_display 10 64.5 -98.5 {Tags: ["jkpof", "jkpof_display_event_order", "16"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.45f, .45f, .45f], translation: [0f, 0f, 0f]}, Rotation: [-90f, 0f]}
-summon item_display 10 64.5 -98.0 {Tags: ["jkpof", "jkpof_display_event_order", "17"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.45f, .45f, .45f], translation: [0f, 0f, 0f]}, Rotation: [-90f, 0f]}
+summon interaction 10 65.5 -101 {Tags: ["jkpof", "jkpof_display_event_ctrl"], response: true, width: .5, height: .5}
+summon text_display 10 65.625 -101 {Tags: ["jkpof", "jkpof_display_event_ctrl"], brightness: {block: 15, sky: 15}, Rotation: [90f, 0f]}
+
+summon interaction 11.0 65.5 -100 {Tags: ["jkpof", "jkpof_display_event_num"], response: true, width: .5, height: .5}
+summon text_display 11.0 65.625 -100 {Tags: ["jkpof", "jkpof_display_event_num"], brightness: {block: 15, sky: 15}, view_range: 0, Rotation: [90f, 0f]}
+
+# 事件+
+summon text_display 9.25 64.01 -100 {Tags: ["jkpof", "jkpof_display_event_plus", "jkpof_display_event_plus_show"], brightness: {block: 15, sky: 15}, view_range: 0, background: 0, Rotation: [90f, -90f]}
+
+summon interaction 9.0 63.51 -99 {Tags: ["jkpof", "jkpof_display_event_plus_switch"], response: true, width: .5, height: .5}
+summon text_display 8.875 64.01 -99 {Tags: ["jkpof", "jkpof_display_event_plus", "jkpof_display_event_plus_switch"], brightness: {block: 15, sky: 15}, view_range: 0, background: 0, Rotation: [90f, -90f]}
+
+summon interaction 9.0 63.51 -101 {Tags: ["jkpof", "jkpof_display_event_plus_ctrl"], response: true, width: .5, height: .5}
+summon text_display 8.875 64.01 -101 {Tags: ["jkpof", "jkpof_display_event_plus", "jkpof_display_event_plus_ctrl"], brightness: {block: 15, sky: 15}, view_range: 0, background: 0, Rotation: [90f, -90f]}
+
+# 事件列表
+summon interaction 10 65.0 -101.0 {Tags: ["jkpof", "jkpof_display_event_order", "-3"], response: true, width: .5, height: .5}
+summon interaction 10 65.0 -100.5 {Tags: ["jkpof", "jkpof_display_event_order", "-2"], response: true, width: .5, height: .5}
+summon interaction 10 65.0 -100.0 {Tags: ["jkpof", "jkpof_display_event_order", "-1"], response: true, width: .5, height: .5}
+summon interaction 10 65.0 -99.5 {Tags: ["jkpof", "jkpof_display_event_order", "0"], response: true, width: .5, height: .5}
+summon interaction 10 65.0 -99.0 {Tags: ["jkpof", "jkpof_display_event_order", "1"], response: true, width: .5, height: .5}
+summon interaction 10 65.0 -98.5 {Tags: ["jkpof", "jkpof_display_event_order", "2"], response: true, width: .5, height: .5}
+summon interaction 10 65.0 -98.0 {Tags: ["jkpof", "jkpof_display_event_order", "3"], response: true, width: .5, height: .5}
+summon interaction 10 64.5 -101.0 {Tags: ["jkpof", "jkpof_display_event_order", "4"], response: true, width: .5, height: .5}
+summon interaction 10 64.5 -100.5 {Tags: ["jkpof", "jkpof_display_event_order", "5"], response: true, width: .5, height: .5}
+summon interaction 10 64.5 -100.0 {Tags: ["jkpof", "jkpof_display_event_order", "6"], response: true, width: .5, height: .5}
+summon interaction 10 64.5 -99.5 {Tags: ["jkpof", "jkpof_display_event_order", "7"], response: true, width: .5, height: .5}
+summon interaction 10 64.5 -99.0 {Tags: ["jkpof", "jkpof_display_event_order", "8"], response: true, width: .5, height: .5}
+summon interaction 10 64.5 -98.5 {Tags: ["jkpof", "jkpof_display_event_order", "9"], response: true, width: .5, height: .5}
+summon interaction 10 64.5 -98.0 {Tags: ["jkpof", "jkpof_display_event_order", "10"], response: true, width: .5, height: .5}
+summon interaction 10 64.0 -101.0 {Tags: ["jkpof", "jkpof_display_event_order", "11"], response: true, width: .5, height: .5}
+summon interaction 10 64.0 -100.5 {Tags: ["jkpof", "jkpof_display_event_order", "12"], response: true, width: .5, height: .5}
+summon interaction 10 64.0 -100.0 {Tags: ["jkpof", "jkpof_display_event_order", "13"], response: true, width: .5, height: .5}
+summon interaction 10 64.0 -99.5 {Tags: ["jkpof", "jkpof_display_event_order", "14"], response: true, width: .5, height: .5}
+summon interaction 10 64.0 -99.0 {Tags: ["jkpof", "jkpof_display_event_order", "15"], response: true, width: .5, height: .5}
+summon interaction 10 64.0 -98.5 {Tags: ["jkpof", "jkpof_display_event_order", "16"], response: true, width: .5, height: .5}
+summon interaction 10 64.0 -98.0 {Tags: ["jkpof", "jkpof_display_event_order", "17"], response: true, width: .5, height: .5}
+
+summon item_display 10 65.25 -101.0 {Tags: ["jkpof", "jkpof_display_event_order", "-3"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.45f, .45f, .45f], translation: [0f, 0f, 0f]}, Rotation: [-90f, 0f]}
+summon item_display 10 65.25 -100.5 {Tags: ["jkpof", "jkpof_display_event_order", "-2"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.45f, .45f, .45f], translation: [0f, 0f, 0f]}, Rotation: [-90f, 0f]}
+summon item_display 10 65.25 -100.0 {Tags: ["jkpof", "jkpof_display_event_order", "-1"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.45f, .45f, .45f], translation: [0f, 0f, 0f]}, Rotation: [-90f, 0f]}
+summon item_display 10 65.25 -99.5 {Tags: ["jkpof", "jkpof_display_event_order", "0"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.45f, .45f, .45f], translation: [0f, 0f, 0f]}, Rotation: [-90f, 0f]}
+summon item_display 10 65.25 -99.0 {Tags: ["jkpof", "jkpof_display_event_order", "1"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.45f, .45f, .45f], translation: [0f, 0f, 0f]}, Rotation: [-90f, 0f]}
+summon item_display 10 65.25 -98.5 {Tags: ["jkpof", "jkpof_display_event_order", "2"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.45f, .45f, .45f], translation: [0f, 0f, 0f]}, Rotation: [-90f, 0f]}
+summon item_display 10 65.25 -98.0 {Tags: ["jkpof", "jkpof_display_event_order", "3"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.45f, .45f, .45f], translation: [0f, 0f, 0f]}, Rotation: [-90f, 0f]}
+summon item_display 10 64.75 -101.0 {Tags: ["jkpof", "jkpof_display_event_order", "4"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.45f, .45f, .45f], translation: [0f, 0f, 0f]}, Rotation: [-90f, 0f]}
+summon item_display 10 64.75 -100.5 {Tags: ["jkpof", "jkpof_display_event_order", "5"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.45f, .45f, .45f], translation: [0f, 0f, 0f]}, Rotation: [-90f, 0f]}
+summon item_display 10 64.75 -100.0 {Tags: ["jkpof", "jkpof_display_event_order", "6"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.45f, .45f, .45f], translation: [0f, 0f, 0f]}, Rotation: [-90f, 0f]}
+summon item_display 10 64.75 -99.5 {Tags: ["jkpof", "jkpof_display_event_order", "7"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.45f, .45f, .45f], translation: [0f, 0f, 0f]}, Rotation: [-90f, 0f]}
+summon item_display 10 64.75 -99.0 {Tags: ["jkpof", "jkpof_display_event_order", "8"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.45f, .45f, .45f], translation: [0f, 0f, 0f]}, Rotation: [-90f, 0f]}
+summon item_display 10 64.75 -98.5 {Tags: ["jkpof", "jkpof_display_event_order", "9"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.45f, .45f, .45f], translation: [0f, 0f, 0f]}, Rotation: [-90f, 0f]}
+summon item_display 10 64.75 -98.0 {Tags: ["jkpof", "jkpof_display_event_order", "10"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.45f, .45f, .45f], translation: [0f, 0f, 0f]}, Rotation: [-90f, 0f]}
+summon item_display 10 64.25 -101.0 {Tags: ["jkpof", "jkpof_display_event_order", "11"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.45f, .45f, .45f], translation: [0f, 0f, 0f]}, Rotation: [-90f, 0f]}
+summon item_display 10 64.25 -100.5 {Tags: ["jkpof", "jkpof_display_event_order", "12"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.45f, .45f, .45f], translation: [0f, 0f, 0f]}, Rotation: [-90f, 0f]}
+summon item_display 10 64.25 -100.0 {Tags: ["jkpof", "jkpof_display_event_order", "13"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.45f, .45f, .45f], translation: [0f, 0f, 0f]}, Rotation: [-90f, 0f]}
+summon item_display 10 64.25 -99.5 {Tags: ["jkpof", "jkpof_display_event_order", "14"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.45f, .45f, .45f], translation: [0f, 0f, 0f]}, Rotation: [-90f, 0f]}
+summon item_display 10 64.25 -99.0 {Tags: ["jkpof", "jkpof_display_event_order", "15"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.45f, .45f, .45f], translation: [0f, 0f, 0f]}, Rotation: [-90f, 0f]}
+summon item_display 10 64.25 -98.5 {Tags: ["jkpof", "jkpof_display_event_order", "16"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.45f, .45f, .45f], translation: [0f, 0f, 0f]}, Rotation: [-90f, 0f]}
+summon item_display 10 64.25 -98.0 {Tags: ["jkpof", "jkpof_display_event_order", "17"], brightness: {block: 15, sky: 15}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.45f, .45f, .45f], translation: [0f, 0f, 0f]}, Rotation: [-90f, 0f]}
 
 #- 设置
 summon text_display 0 70 -110 {Tags: ["jkpof", "jkpof_lobby_const_top_settings"], brightness: {block: 15, sky: 15}, billboard: "center", transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [6f, 6f, 6f], translation: [0f, 0f, 0f]}}

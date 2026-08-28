@@ -1,5 +1,5 @@
 # 消耗和冷却
-clear @s fire_charge[custom_data={jkpof: ["fireball"]}] 1
+clear @s fire_charge[custom_data~{jkpof: ["fireball"]}] 1
 scoreboard players set @s jkpof.cd 5
 
 # 生成

@@ -12,7 +12,8 @@
               "components": {
                 "custom_data": {
                   "jkpof": [
-                    "creative"
+                    "creative",
+                    "is_prop"
                   ]
                 },
                 "consumable": {

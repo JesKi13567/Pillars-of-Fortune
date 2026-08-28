@@ -1,5 +1,5 @@
 # 消耗和冷却
-clear @s blaze_rod[custom_data={jkpof: ["platform"]}] 1
+clear @s blaze_rod[custom_data~{jkpof: ["platform"]}] 1
 scoreboard players set @s jkpof.cd 5
 
 # 生成

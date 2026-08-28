@@ -28,6 +28,3 @@ execute as @e[type=armor_stand, tag=jkpof_null_bomb] at @s unless entity @e[type
 
 # 触则生变清理
 execute as @e[type=marker, tag=jkpof_touch_block] at @s if block ~ ~ ~ #jkpof:touch_not_change run kill @s
-
-# 吸星大法吸附
-execute if score #event_loot_magnet jkpof.int matches 1 as @a[scores={jkpof.state=2}] at @s run tp @e[type=item, distance=..8] ~ ~0.5 ~

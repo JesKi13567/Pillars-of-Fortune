@@ -1,0 +1,14 @@
+execute if score #event_plus_8 jkpof.int matches 0 run summon marker 0 ~-1 0 {Tags: ["jkpof_vertical_lock"]}
+execute if score #event_plus_8 jkpof.int matches 0 run summon marker 0 ~3 0 {Tags: ["jkpof_vertical_lock"]}
+execute if score #event_plus_8 jkpof.int matches 1 run summon marker ~2 0 ~ {Tags: ["jkpof_vertical_lock"]}
+execute if score #event_plus_8 jkpof.int matches 1 run summon marker ~2 0 ~1 {Tags: ["jkpof_vertical_lock"]}
+execute if score #event_plus_8 jkpof.int matches 1 run summon marker ~2 0 ~-1 {Tags: ["jkpof_vertical_lock"]}
+execute if score #event_plus_8 jkpof.int matches 1 run summon marker ~-2 0 ~ {Tags: ["jkpof_vertical_lock"]}
+execute if score #event_plus_8 jkpof.int matches 1 run summon marker ~-2 0 ~1 {Tags: ["jkpof_vertical_lock"]}
+execute if score #event_plus_8 jkpof.int matches 1 run summon marker ~-2 0 ~-1 {Tags: ["jkpof_vertical_lock"]}
+execute if score #event_plus_8 jkpof.int matches 1 run summon marker ~ 0 ~2 {Tags: ["jkpof_vertical_lock"]}
+execute if score #event_plus_8 jkpof.int matches 1 run summon marker ~1 0 ~2 {Tags: ["jkpof_vertical_lock"]}
+execute if score #event_plus_8 jkpof.int matches 1 run summon marker ~-1 0 ~2 {Tags: ["jkpof_vertical_lock"]}
+execute if score #event_plus_8 jkpof.int matches 1 run summon marker ~ 0 ~-2 {Tags: ["jkpof_vertical_lock"]}
+execute if score #event_plus_8 jkpof.int matches 1 run summon marker ~1 0 ~-2 {Tags: ["jkpof_vertical_lock"]}
+execute if score #event_plus_8 jkpof.int matches 1 run summon marker ~-1 0 ~-2 {Tags: ["jkpof_vertical_lock"]}

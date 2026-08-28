@@ -1,0 +1,6 @@
+execute if score #event_time jkpof.int matches 1..60 run scoreboard players remove #event_time_arrow jkpof.int 1
+execute if score #event_time jkpof.int matches 1..60 if score #event_time_arrow jkpof.int matches ..0 run scoreboard players set #event_time_arrow jkpof.int 2
+execute if score #event_time jkpof.int matches 1..60 if score #event_time_arrow jkpof.int matches 1 as @a[scores={jkpof.state=2}] at @s run function jkpof:state/1/progress/event/1_arrow/summon
+execute if score #event_time jkpof.int matches 0 if score #event_plus_1 jkpof.int matches 0 run tellraw @a [{storage: "jk:pof", interpret: true, nbt: "txt.POF", color: "yellow"}, {storage: "jk:pof", interpret: true, nbt: "txt.event.arrow.name", color: "aqua"}, {storage: "jk:pof", interpret: true, nbt: "txt.event.global.stage_ended"}]
+execute if score #event_time jkpof.int matches 0 if score #event_plus_1 jkpof.int matches 1 run tellraw @a [{storage: "jk:pof", interpret: true, nbt: "txt.POF", color: "yellow"}, {storage: "jk:pof", interpret: true, nbt: "txt.event.plus.arrow.name", color: "aqua"}, {storage: "jk:pof", interpret: true, nbt: "txt.event.global.stage_ended"}]
+execute if score #event_time jkpof.int matches -100 run kill @e[type=arrow, tag=jkpof_arrow]

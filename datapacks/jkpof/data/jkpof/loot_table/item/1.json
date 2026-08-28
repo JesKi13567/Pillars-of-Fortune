@@ -4,43 +4,124 @@
       "rolls": 1,
       "entries": [
         {
+          "conditions": [
+            {
+              "condition": "entity_scores",
+              "entity": "this",
+              "scores": {
+                "jkpof.item.order": 1096
+              }
+            }
+          ],
           "type": "tag",
           "expand": true,
-          "name": "jkpof:give/coral"
+          "name": "jkpof:give/plant"
         },
         {
+          "conditions": [
+            {
+              "condition": "entity_scores",
+              "entity": "this",
+              "scores": {
+                "jkpof.item.order": 1097
+              }
+            }
+          ],
           "type": "tag",
           "expand": true,
           "name": "jkpof:give/pottery_sherd"
         },
         {
+          "conditions": [
+            {
+              "condition": "entity_scores",
+              "entity": "this",
+              "scores": {
+                "jkpof.item.order": 1098
+              }
+            }
+          ],
           "type": "tag",
           "expand": true,
           "name": "jkpof:give/smithing_template"
         },
         {
+          "conditions": [
+            {
+              "condition": "entity_scores",
+              "entity": "this",
+              "scores": {
+                "jkpof.item.order": 1099
+              }
+            }
+          ],
           "type": "tag",
           "expand": true,
           "name": "bundles"
         },
         {
+          "conditions": [
+            {
+              "condition": "entity_scores",
+              "entity": "this",
+              "scores": {
+                "jkpof.item.order": 1100
+              }
+            }
+          ],
           "type": "tag",
           "expand": true,
           "name": "candles"
         },
         {
+          "conditions": [
+            {
+              "condition": "entity_scores",
+              "entity": "this",
+              "scores": {
+                "jkpof.item.order": 1101
+              }
+            }
+          ],
           "type": "loot_table",
           "value": "jkpof:item/arrow"
         },
         {
+          "conditions": [
+            {
+              "condition": "entity_scores",
+              "entity": "this",
+              "scores": {
+                "jkpof.item.order": 1102
+              }
+            }
+          ],
           "type": "loot_table",
           "value": "jkpof:item/firework_rocket"
         },
         {
+          "conditions": [
+            {
+              "condition": "entity_scores",
+              "entity": "this",
+              "scores": {
+                "jkpof.item.order": 1103
+              }
+            }
+          ],
           "type": "loot_table",
           "value": "jkpof:set/player_head"
         },
         {
+          "conditions": [
+            {
+              "condition": "entity_scores",
+              "entity": "this",
+              "scores": {
+                "jkpof.item.order": 1104
+              }
+            }
+          ],
           "type": "item",
           "name": "poisonous_potato",
           "functions": [

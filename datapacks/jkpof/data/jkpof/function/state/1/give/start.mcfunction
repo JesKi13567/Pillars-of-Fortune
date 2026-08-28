@@ -18,5 +18,3 @@ execute if score #ctrl_item_mode jkpof.int matches 1 run function jkpof:state/1/
 
 # 清理
 execute if score #event_prop_supply.count.prop jkpof.int matches 1.. run scoreboard players remove #event_prop_supply.count.prop jkpof.int 1
-execute if score #event_prop_supply.count.enchanted_book jkpof.int matches 1.. run scoreboard players remove #event_prop_supply.count.enchanted_book jkpof.int 1
-execute if score #event_prop_supply.count.potion jkpof.int matches 1.. run scoreboard players remove #event_prop_supply.count.potion jkpof.int 1

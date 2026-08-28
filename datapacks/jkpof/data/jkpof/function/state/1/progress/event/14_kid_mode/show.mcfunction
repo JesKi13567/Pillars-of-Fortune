@@ -1,0 +1,10 @@
+execute if score #event_plus_14 jkpof.int matches 0 run tellraw @a ["", {storage: "jk:pof", interpret: true, nbt: "txt.POF", color: "yellow"}, {storage: "jk:pof", interpret: true, nbt: "txt.event.kid_mode.lore.p1", color: "aqua"}, {translate: "attribute.name.scale"}, {storage: "jk:pof", interpret: true, nbt: "txt.event.kid_mode.lore.p2", color: "aqua"}, " 1/2 ", {storage: "jk:pof", interpret: true, nbt: "txt.char.dot", color: "aqua"}, "\n", {storage: "jk:pof", interpret: true, nbt: "txt.POF", color: "yellow"}, {storage: "jk:pof", interpret: true, nbt: "txt.event.global.next_reset.tellraw", color: "aqua"}]
+execute if score #event_plus_14 jkpof.int matches 0 run title @a title {storage: "jk:pof", interpret: true, nbt: "txt.event.kid_mode.name", color: "aqua"}
+execute if score #event_plus_14 jkpof.int matches 0 run title @a subtitle {text: "APTX4869", color: "green"}
+execute if score #event_plus_14 jkpof.int matches 1 run tellraw @a ["", {storage: "jk:pof", interpret: true, nbt: "txt.POF", color: "yellow"}, {storage: "jk:pof", interpret: true, nbt: "txt.event.kid_mode.lore.p1", color: "aqua"}, {translate: "attribute.name.scale"}, {storage: "jk:pof", interpret: true, nbt: "txt.event.kid_mode.lore.p2", color: "aqua"}, " 50% ~ 125% ", {storage: "jk:pof", interpret: true, nbt: "txt.char.dot", color: "aqua"}, "\n", {storage: "jk:pof", interpret: true, nbt: "txt.POF", color: "yellow"}, {storage: "jk:pof", interpret: true, nbt: "txt.event.global.next_reset.tellraw", color: "aqua"}]
+execute if score #event_plus_14 jkpof.int matches 1 run title @a title {storage: "jk:pof", interpret: true, nbt: "txt.event.plus.kid_mode.name", color: "aqua"}
+execute if score #event_plus_14 jkpof.int matches 1 run title @a subtitle {storage: "jk:pof", interpret: true, nbt: "txt.event.plus.kid_mode.subtitle", color: "green"}
+
+scoreboard players set #event_kid_mode jkpof.int 1
+execute as @a[scores={jkpof.state=2}] run function jkpof:state/1/progress/event/14_kid_mode/random/0
+execute as @e[type=mannequin] run function jkpof:state/1/progress/event/14_kid_mode/random/0

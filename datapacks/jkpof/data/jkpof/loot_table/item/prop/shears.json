@@ -10,6 +10,11 @@
             {
               "function": "set_components",
               "components": {
+                "custom_data": {
+                  "jkpof": [
+                    "is_prop"
+                  ]
+                },
                 "tool": {
                   "rules": [
                     {

@@ -1,6 +1,6 @@
 scoreboard players remove @s jkpof.creative 1
 gamemode creative @s[gamemode=survival]
-clear @s command_block[custom_data={jkpof: ["creative"]}]
+clear @s command_block[custom_data~{jkpof: ["creative"]}]
 
 execute at @s[scores={jkpof.creative=60}] run playsound entity.player.levelup block @a
 execute at @s[scores={jkpof.creative=0}] run playsound entity.experience_orb.pickup block @a

@@ -8,8 +8,8 @@ scoreboard players remove @s[scores={jkpof.cd=1..}] jkpof.cd 1
 execute as @s[scores={jkpof.void_charm.last=1..}] run function jkpof:state/1/special_item/void_charm/last
 
 # 死亡笔记
-execute if items entity @s weapon.* writable_book[custom_data={jkpof: ["death_note"]}] run function jkpof:state/1/special_item/death_note/chance
-execute if items entity @s weapon.mainhand written_book[custom_data={jkpof: ["death_note"]}] run function jkpof:state/1/special_item/death_note/check/global
+execute if items entity @s weapon.* writable_book[custom_data~{jkpof: ["death_note"]}] run function jkpof:state/1/special_item/death_note/chance
+execute if items entity @s weapon.mainhand written_book[custom_data~{jkpof: ["death_note"]}] run function jkpof:state/1/special_item/death_note/check/global
 
 # 无敌星
 execute at @s[scores={jkpof.super_star=1..}] run function jkpof:state/1/special_item/super_star/last
@@ -19,7 +19,7 @@ execute unless score @s[gamemode=creative] jkpof.creative matches 1.. run gamemo
 execute as @s[scores={jkpof.creative=1..999}] run function jkpof:state/1/special_item/creative/global
 
 # 触则生变
-execute if score #event_touch_change jkpof.int matches 1 at @s align xyz positioned ~.5 ~.5 ~.5 run function jkpof:state/1/progress/event/touch_change/global
+execute if score #event_touch_change jkpof.int matches 1 at @s align xyz positioned ~.5 ~.5 ~.5 run function jkpof:state/1/progress/event/15_touch_change/global
 
 # 离开游戏
 scoreboard players set @s[scores={jkpof.leavegame=1..}] jkpof.death 1

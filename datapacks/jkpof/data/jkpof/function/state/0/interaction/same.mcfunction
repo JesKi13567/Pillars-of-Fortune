@@ -36,6 +36,9 @@ execute as @s[tag=jkpof_display_lobby_item] run function jkpof:state/0/interacti
 execute as @s[tag=jkpof_display_event_order] run function jkpof:state/0/interaction/lobby/event/show
 execute as @s[tag=jkpof_display_event_switch] run function jkpof:state/0/interaction/lobby/event/switch
 execute as @s[tag=jkpof_display_event_ctrl] run function jkpof:state/0/interaction/lobby/event/ctrl
+execute as @s[tag=jkpof_display_event_num] run function jkpof:state/0/interaction/lobby/event/num
+execute as @s[tag=jkpof_display_event_plus_switch] run function jkpof:state/0/interaction/lobby/event/plus/switch
+execute as @s[tag=jkpof_display_event_plus_ctrl] run function jkpof:state/0/interaction/lobby/event/plus/ctrl
 
 execute as @s[tag=jkpof_ctrl_map, tag=-1] run function jkpof:state/0/interaction/ctrl/ground/map/num {n: -1}
 execute as @s[tag=jkpof_ctrl_map, tag=0] run function jkpof:state/0/interaction/ctrl/ground/map/num {n: 0}

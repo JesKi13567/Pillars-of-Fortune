@@ -1,5 +1,5 @@
 # 消耗和冷却
-clear @s dragon_breath[custom_data={jkpof: ["fireball_dragon"]}] 1
+clear @s dragon_breath[custom_data~{jkpof: ["fireball_dragon"]}] 1
 scoreboard players set @s jkpof.cd 5
 
 # 生成

@@ -1,5 +1,5 @@
 # 消耗和冷却
-clear @s magenta_glazed_terracotta[custom_data={jkpof: ["gravity_device"]}] 1
+clear @s magenta_glazed_terracotta[custom_data~{jkpof: ["gravity_device"]}] 1
 scoreboard players set @s jkpof.cd 5
 
 playsound entity.evoker.prepare_summon block @a ~ ~ ~ 1 1.5

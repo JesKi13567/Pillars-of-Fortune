@@ -1,5 +1,5 @@
 # 检查持有虚空护符
-execute store success score @s jkpof.void_charm.hold run clear @s bedrock[custom_data={jkpof: ["void_charm"]}] 0
+execute store success score @s jkpof.void_charm.hold run clear @s bedrock[custom_data~{jkpof: ["void_charm"]}] 0
 execute unless score @s[scores={jkpof.void_charm.hold=1}] jkpof.void_charm.last matches 1.. run function jkpof:state/1/special_item/void_charm/use
 execute as @s[scores={jkpof.void_charm.last=1..}] run return 0
 

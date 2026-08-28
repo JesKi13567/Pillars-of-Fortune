@@ -1,0 +1,7 @@
+execute if score #event_plus_15 jkpof.int matches 0 run tellraw @a [{storage: "jk:pof", interpret: true, nbt: "txt.POF", color: "yellow"}, {storage: "jk:pof", interpret: true, nbt: "txt.event.touch_change.lore", color: "aqua"}, "\n", {storage: "jk:pof", interpret: true, nbt: "txt.POF", color: "yellow"}, {storage: "jk:pof", interpret: true, nbt: "txt.event.global.next_reset.tellraw", color: "aqua"}]
+execute if score #event_plus_15 jkpof.int matches 0 run title @a title {storage: "jk:pof", interpret: true, nbt: "txt.event.touch_change.name", color: "aqua"}
+execute if score #event_plus_15 jkpof.int matches 0 run title @a subtitle {storage: "jk:pof", interpret: true, nbt: "txt.event.touch_change.subtitle", color: "green"}
+execute if score #event_plus_15 jkpof.int matches 1 run tellraw @a [{storage: "jk:pof", interpret: true, nbt: "txt.POF", color: "yellow"}, {storage: "jk:pof", interpret: true, nbt: "txt.event.plus.touch_change.lore", color: "aqua"}, "\n", {storage: "jk:pof", interpret: true, nbt: "txt.POF", color: "yellow"}, {storage: "jk:pof", interpret: true, nbt: "txt.event.global.next_reset.tellraw", color: "aqua"}]
+execute if score #event_plus_15 jkpof.int matches 1 run title @a title {storage: "jk:pof", interpret: true, nbt: "txt.event.plus.touch_change.name", color: "aqua"}
+execute if score #event_plus_15 jkpof.int matches 1 run title @a subtitle {storage: "jk:pof", interpret: true, nbt: "txt.event.plus.touch_change.subtitle", color: "green"}
+scoreboard players set #event_touch_change jkpof.int 1

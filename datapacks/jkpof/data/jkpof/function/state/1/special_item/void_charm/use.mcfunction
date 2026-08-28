@@ -1,4 +1,4 @@
-clear @s bedrock[custom_data={jkpof: ["void_charm"]}] 1
+clear @s bedrock[custom_data~{jkpof: ["void_charm"]}] 1
 execute store result score @s jkpof.Y run data get entity @s Pos[1]
 execute at @s[scores={jkpof.Y=..-75}] run tp @s ~ -70 ~
 scoreboard players set @s jkpof.void_charm.last 400

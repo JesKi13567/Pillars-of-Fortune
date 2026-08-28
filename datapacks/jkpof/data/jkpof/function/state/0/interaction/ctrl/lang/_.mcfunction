@@ -14,6 +14,8 @@ data modify entity @e[type=text_display, tag=jkpof_lobby_const_top_lore, limit=1
 v1.4 - MC26.2\
 ", color: "gold"}, "\n", {storage: "jk:pof", interpret: true, nbt: "txt.lobby.const.top.lore.p1", color: "green"}, "\n", {storage: "jk:pof", interpret: true, nbt: "txt.lobby.const.top.lore.p2", color: "aqua"}, {text: "JK137", color: "aqua"}, "\n", {storage: "jk:pof", interpret: true, nbt: "txt.lobby.const.top.lore.p3", color: "white"}]
 
+data modify entity @e[type=text_display, tag=jkpof_display_event_plus_show, limit=1] text set value [{storage: "jk:pof", interpret: true, nbt: "txt.lobby.const.top.events", color: "gold"}, "+"]
+data modify entity @e[type=text_display, tag=jkpof_display_event_num, limit=1] text set value [{storage: "jk:pof", interpret: true, nbt: "txt.lobby.global.change", color: "white", underlined: true}]
 data modify entity @e[type=text_display, tag=jkpof_display_stats, limit=1] text set value [{storage: "jk:pof", interpret: true, nbt: "txt.lobby.const.stats.name", color: "white", bold: true}]
 
 data modify entity @e[type=text_display, tag=jkpof_display_ctrl_item_show, limit=1] text set value [{storage: "jk:pof", interpret: true, nbt: "txt.lobby.const.settings.random_item_give.name", color: "gold"}]

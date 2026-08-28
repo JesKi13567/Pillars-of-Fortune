@@ -12,7 +12,8 @@
               "components": {
                 "custom_data": {
                   "jkpof": [
-                    "gravity_device"
+                    "gravity_device",
+                    "is_prop"
                   ]
                 },
                 "consumable": {

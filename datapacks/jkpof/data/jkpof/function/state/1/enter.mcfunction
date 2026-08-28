@@ -125,11 +125,10 @@ scoreboard players set #time_res jkpof.int 3
 scoreboard players set #before_start jkpof.int 3
 scoreboard players set #event_mode jkpof.int 0
 scoreboard players set #event_progress jkpof.int 63
-scoreboard players set #event_border jkpof.int 2
-scoreboard players set #event_nuke.c jkpof.int 1
+scoreboard players set #event_border.o jkpof.int 0
+scoreboard players operation #event_nuke.c jkpof.int = #event_nuke.t jkpof.int
 scoreboard players set #event_kid_mode jkpof.int 0
 scoreboard players set #event_touch_change jkpof.int 0
-scoreboard players set #event_loot_magnet jkpof.int 0
 scoreboard players set #event_loop jkpof.int 0
 
 difficulty hard
@@ -151,6 +150,49 @@ tellraw @a [{storage: "jk:pof", interpret: true, nbt: "txt.POF", color: "yellow"
 execute as @a run function jkpof:state/0/player/clear
 
 # 事件池
+kill @e[type=text_display, tag=jkpof_event_pool]
+
+execute if score #event_enable__1 jkpof.int matches 1 run summon text_display 0 0 0 {Tags: ["jkpof", "jkpof_event_pool", "-1"], text: [{text: "[", color: white, italic: false}, {storage: "jk:pof", interpret: true, nbt: "txt.event.border.name"}, "]"], view_range: 0}
+execute if score #event_enable_0 jkpof.int matches 1 run summon text_display 0 0 0 {Tags: ["jkpof", "jkpof_event_pool", "0"], text: [{text: "[", color: white, italic: false}, {storage: "jk:pof", interpret: true, nbt: "txt.event.nothing.name"}, "]"], view_range: 0}
+
+execute if score #event_enable_1 jkpof.int matches 1 if score #event_plus_1 jkpof.int matches 0 run summon text_display 0 0 0 {Tags: ["jkpof", "jkpof_event_pool", "1"], text: [{text: "[", color: white, italic: false}, {storage: "jk:pof", interpret: true, nbt: "txt.event.arrow.name"}, "]"], view_range: 0}
+execute if score #event_enable_2 jkpof.int matches 1 if score #event_plus_2 jkpof.int matches 0 run summon text_display 0 0 0 {Tags: ["jkpof", "jkpof_event_pool", "2"], text: [{text: "[", color: white, italic: false}, {storage: "jk:pof", interpret: true, nbt: "txt.event.lava.name"}, "]"], view_range: 0}
+execute if score #event_enable_3 jkpof.int matches 1 if score #event_plus_3 jkpof.int matches 0 run summon text_display 0 0 0 {Tags: ["jkpof", "jkpof_event_pool", "3"], text: [{text: "[", color: white, italic: false}, {storage: "jk:pof", interpret: true, nbt: "txt.event.lightning.name"}, "]"], view_range: 0}
+execute if score #event_enable_4 jkpof.int matches 1 if score #event_plus_4 jkpof.int matches 0 run summon text_display 0 0 0 {Tags: ["jkpof", "jkpof_event_pool", "4"], text: [{text: "[", color: white, italic: false}, {storage: "jk:pof", interpret: true, nbt: "txt.event.moon_walk.name"}, "]"], view_range: 0}
+execute if score #event_enable_5 jkpof.int matches 1 if score #event_plus_5 jkpof.int matches 0 run summon text_display 0 0 0 {Tags: ["jkpof", "jkpof_event_pool", "5"], text: [{text: "[", color: white, italic: false}, {storage: "jk:pof", interpret: true, nbt: "txt.event.bomb_chicken.name"}, "]"], view_range: 0}
+execute if score #event_enable_6 jkpof.int matches 1 if score #event_plus_6 jkpof.int matches 0 run summon text_display 0 0 0 {Tags: ["jkpof", "jkpof_event_pool", "6"], text: [{text: "[", color: white, italic: false}, {storage: "jk:pof", interpret: true, nbt: "txt.event.chain_swap.name"}, "]"], view_range: 0}
+execute if score #event_enable_7 jkpof.int matches 1 if score #event_plus_7 jkpof.int matches 0 run summon text_display 0 0 0 {Tags: ["jkpof", "jkpof_event_pool", "7"], text: [{text: "[", color: white, italic: false}, {storage: "jk:pof", interpret: true, nbt: "txt.event.prop_supply.name"}, "]"], view_range: 0}
+execute if score #event_enable_8 jkpof.int matches 1 if score #event_plus_8 jkpof.int matches 0 run summon text_display 0 0 0 {Tags: ["jkpof", "jkpof_event_pool", "8"], text: [{text: "[", color: white, italic: false}, {storage: "jk:pof", interpret: true, nbt: "txt.event.vertical_lock.name"}, "]"], view_range: 0}
+execute if score #event_enable_9 jkpof.int matches 1 if score #event_plus_9 jkpof.int matches 0 run summon text_display 0 0 0 {Tags: ["jkpof", "jkpof_event_pool", "9"], text: [{text: "[", color: white, italic: false}, {storage: "jk:pof", interpret: true, nbt: "txt.event.invisible_coating.name"}, "]"], view_range: 0}
+execute if score #event_enable_10 jkpof.int matches 1 if score #event_plus_10 jkpof.int matches 0 run summon text_display 0 0 0 {Tags: ["jkpof", "jkpof_event_pool", "10"], text: [{text: "[", color: white, italic: false}, {storage: "jk:pof", interpret: true, nbt: "txt.event.betrayal_hour.name"}, "]"], view_range: 0}
+execute if score #event_enable_11 jkpof.int matches 1 if score #event_plus_11 jkpof.int matches 0 run summon text_display 0 0 0 {Tags: ["jkpof", "jkpof_event_pool", "11"], text: [{text: "[", color: white, italic: false}, {storage: "jk:pof", interpret: true, nbt: "txt.event.bountiful_harvest.name"}, "]"], view_range: 0}
+execute if score #event_enable_12 jkpof.int matches 1 if score #event_plus_12 jkpof.int matches 0 run summon text_display 0 0 0 {Tags: ["jkpof", "jkpof_event_pool", "12"], text: [{text: "[", color: white, italic: false}, {storage: "jk:pof", interpret: true, nbt: "txt.event.iron_torrent.name"}, "]"], view_range: 0}
+execute if score #event_enable_13 jkpof.int matches 1 if score #event_plus_13 jkpof.int matches 0 run summon text_display 0 0 0 {Tags: ["jkpof", "jkpof_event_pool", "13"], text: [{text: "[", color: white, italic: false}, {storage: "jk:pof", interpret: true, nbt: "txt.event.loot_magnet.name"}, "]"], view_range: 0}
+execute if score #event_enable_14 jkpof.int matches 1 if score #event_plus_14 jkpof.int matches 0 run summon text_display 0 0 0 {Tags: ["jkpof", "jkpof_event_pool", "14"], text: [{text: "[", color: white, italic: false}, {storage: "jk:pof", interpret: true, nbt: "txt.event.kid_mode.name"}, "]"], view_range: 0}
+execute if score #event_enable_15 jkpof.int matches 1 if score #event_plus_15 jkpof.int matches 0 run summon text_display 0 0 0 {Tags: ["jkpof", "jkpof_event_pool", "15"], text: [{text: "[", color: white, italic: false}, {storage: "jk:pof", interpret: true, nbt: "txt.event.touch_change.name"}, "]"], view_range: 0}
+execute if score #event_enable_16 jkpof.int matches 1 if score #event_plus_16 jkpof.int matches 0 run summon text_display 0 0 0 {Tags: ["jkpof", "jkpof_event_pool", "16"], text: [{text: "[", color: white, italic: false}, {storage: "jk:pof", interpret: true, nbt: "txt.event.purge.name"}, "]"], view_range: 0}
+execute if score #event_enable_17 jkpof.int matches 1 if score #event_plus_17 jkpof.int matches 0 run summon text_display 0 0 0 {Tags: ["jkpof", "jkpof_event_pool", "17"], text: [{text: "[", color: white, italic: false}, {storage: "jk:pof", interpret: true, nbt: "txt.event.nuke.name"}, "]"], view_range: 0}
+
+execute if score #event_enable_1 jkpof.int matches 1 if score #event_plus_1 jkpof.int matches 1 run summon text_display 0 0 0 {Tags: ["jkpof", "jkpof_event_pool", "1"], text: [{text: "[", color: white, italic: false}, {storage: "jk:pof", interpret: true, nbt: "txt.event.plus.arrow.name"}, "]"], view_range: 0}
+execute if score #event_enable_2 jkpof.int matches 1 if score #event_plus_2 jkpof.int matches 1 run summon text_display 0 0 0 {Tags: ["jkpof", "jkpof_event_pool", "2"], text: [{text: "[", color: white, italic: false}, {storage: "jk:pof", interpret: true, nbt: "txt.event.plus.lava.name"}, "]"], view_range: 0}
+execute if score #event_enable_3 jkpof.int matches 1 if score #event_plus_3 jkpof.int matches 1 run summon text_display 0 0 0 {Tags: ["jkpof", "jkpof_event_pool", "3"], text: [{text: "[", color: white, italic: false}, {storage: "jk:pof", interpret: true, nbt: "txt.event.plus.lightning.name"}, "]"], view_range: 0}
+execute if score #event_enable_4 jkpof.int matches 1 if score #event_plus_4 jkpof.int matches 1 run summon text_display 0 0 0 {Tags: ["jkpof", "jkpof_event_pool", "4"], text: [{text: "[", color: white, italic: false}, {storage: "jk:pof", interpret: true, nbt: "txt.event.plus.moon_walk.name"}, "]"], view_range: 0}
+execute if score #event_enable_5 jkpof.int matches 1 if score #event_plus_5 jkpof.int matches 1 run summon text_display 0 0 0 {Tags: ["jkpof", "jkpof_event_pool", "5"], text: [{text: "[", color: white, italic: false}, {storage: "jk:pof", interpret: true, nbt: "txt.event.plus.bomb_chicken.name"}, "]"], view_range: 0}
+execute if score #event_enable_6 jkpof.int matches 1 if score #event_plus_6 jkpof.int matches 1 run summon text_display 0 0 0 {Tags: ["jkpof", "jkpof_event_pool", "6"], text: [{text: "[", color: white, italic: false}, {storage: "jk:pof", interpret: true, nbt: "txt.event.plus.chain_swap.name"}, "]"], view_range: 0}
+execute if score #event_enable_7 jkpof.int matches 1 if score #event_plus_7 jkpof.int matches 1 run summon text_display 0 0 0 {Tags: ["jkpof", "jkpof_event_pool", "7"], text: [{text: "[", color: white, italic: false}, {storage: "jk:pof", interpret: true, nbt: "txt.event.plus.prop_supply.name"}, "]"], view_range: 0}
+execute if score #event_enable_8 jkpof.int matches 1 if score #event_plus_8 jkpof.int matches 1 run summon text_display 0 0 0 {Tags: ["jkpof", "jkpof_event_pool", "8"], text: [{text: "[", color: white, italic: false}, {storage: "jk:pof", interpret: true, nbt: "txt.event.plus.vertical_lock.name"}, "]"], view_range: 0}
+execute if score #event_enable_9 jkpof.int matches 1 if score #event_plus_9 jkpof.int matches 1 run summon text_display 0 0 0 {Tags: ["jkpof", "jkpof_event_pool", "9"], text: [{text: "[", color: white, italic: false}, {storage: "jk:pof", interpret: true, nbt: "txt.event.plus.invisible_coating.name"}, "]"], view_range: 0}
+execute if score #event_enable_10 jkpof.int matches 1 if score #event_plus_10 jkpof.int matches 1 run summon text_display 0 0 0 {Tags: ["jkpof", "jkpof_event_pool", "10"], text: [{text: "[", color: white, italic: false}, {storage: "jk:pof", interpret: true, nbt: "txt.event.plus.betrayal_hour.name"}, "]"], view_range: 0}
+execute if score #event_enable_11 jkpof.int matches 1 if score #event_plus_11 jkpof.int matches 1 run summon text_display 0 0 0 {Tags: ["jkpof", "jkpof_event_pool", "11"], text: [{text: "[", color: white, italic: false}, {storage: "jk:pof", interpret: true, nbt: "txt.event.plus.bountiful_harvest.name"}, "]"], view_range: 0}
+execute if score #event_enable_12 jkpof.int matches 1 if score #event_plus_12 jkpof.int matches 1 run summon text_display 0 0 0 {Tags: ["jkpof", "jkpof_event_pool", "12"], text: [{text: "[", color: white, italic: false}, {storage: "jk:pof", interpret: true, nbt: "txt.event.plus.iron_torrent.name"}, "]"], view_range: 0}
+execute if score #event_enable_13 jkpof.int matches 1 if score #event_plus_13 jkpof.int matches 1 run summon text_display 0 0 0 {Tags: ["jkpof", "jkpof_event_pool", "13"], text: [{text: "[", color: white, italic: false}, {storage: "jk:pof", interpret: true, nbt: "txt.event.plus.loot_magnet.name"}, "]"], view_range: 0}
+execute if score #event_enable_14 jkpof.int matches 1 if score #event_plus_14 jkpof.int matches 1 run summon text_display 0 0 0 {Tags: ["jkpof", "jkpof_event_pool", "14"], text: [{text: "[", color: white, italic: false}, {storage: "jk:pof", interpret: true, nbt: "txt.event.plus.kid_mode.name"}, "]"], view_range: 0}
+execute if score #event_enable_15 jkpof.int matches 1 if score #event_plus_15 jkpof.int matches 1 run summon text_display 0 0 0 {Tags: ["jkpof", "jkpof_event_pool", "15"], text: [{text: "[", color: white, italic: false}, {storage: "jk:pof", interpret: true, nbt: "txt.event.plus.touch_change.name"}, "]"], view_range: 0}
+execute if score #event_enable_16 jkpof.int matches 1 if score #event_plus_16 jkpof.int matches 1 run summon text_display 0 0 0 {Tags: ["jkpof", "jkpof_event_pool", "16"], text: [{text: "[", color: white, italic: false}, {storage: "jk:pof", interpret: true, nbt: "txt.event.plus.purge.name"}, "]"], view_range: 0}
+execute if score #event_enable_17 jkpof.int matches 1 if score #event_plus_17 jkpof.int matches 1 run summon text_display 0 0 0 {Tags: ["jkpof", "jkpof_event_pool", "17"], text: [{text: "[", color: white, italic: false}, {storage: "jk:pof", interpret: true, nbt: "txt.event.plus.nuke.name"}, "]"], view_range: 0}
+
+execute as @e[type=text_display, tag=jkpof_event_pool] run data modify entity @s CustomName set from entity @s text
+
 data remove storage jk:pof data.event.list
 execute if score #event_enable__1 jkpof.int matches 1 run data modify storage jk:pof data.event.list append value -1
 execute if score #event_enable_0 jkpof.int matches 1 run data modify storage jk:pof data.event.list append value 0

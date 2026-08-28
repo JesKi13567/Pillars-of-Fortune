@@ -1,2 +1,0 @@
-execute if score #event_time jkpof.int matches 1.. run function jkpof:state/1/progress/event/iron_torrent/drop
-execute if score #event_time jkpof.int matches 0 run tellraw @a [{storage: "jk:pof", interpret: true, nbt: "txt.POF", color: "yellow"}, {storage: "jk:pof", interpret: true, nbt: "txt.event.iron_torrent.name", color: "aqua"}, {storage: "jk:pof", interpret: true, nbt: "txt.event.global.stage_ended"}]

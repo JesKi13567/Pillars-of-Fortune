@@ -11,6 +11,9 @@ execute if score #time_res jkpof.int matches ..0 run function jkpof:state/1/give
 # 清理掉落物
 execute if score #event_broom jkpof.int matches 1 run function jkpof:state/1/progress/event/broom
 
+# 颠倒模式+鸡飞蛋打
+execute if score #event_plus_5 jkpof.int matches 1 if score #ctrl_upside_down jkpof.int matches 1 as @e[type=tadpole, tag=jkpof_bomb_tadpole, tag=jkpof] run function jkpof:state/1/progress/event/5_bomb_chicken/tadpole
+
 # 玩家
 execute as @a[scores={jkpof.state=2}] run function jkpof:state/1/ticks/player/sec1
 

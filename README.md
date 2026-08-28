@@ -9,7 +9,7 @@
 
 - 现在还支持繁体中文，感谢[@AlexCai2019](https://github.com/AlexCai2019)。
 
-The language can be switched near the lobby spawn point \(has hint in initial\), and setting the client language in advance will be better.
+The language can be switched near the lobby spawn point (has hint in initial), and setting the client language in advance will be better.
 
 ## zh_cn
 ### 目录
@@ -74,25 +74,48 @@ The language can be switched near the lobby spawn point \(has hint in initial\),
 |-|-|
 |清理垃圾/幸运之帚（系统事件）|系统每 2 分钟清理一次掉落物。若有玩家死亡，下次清理时间增加 30 秒。|
 |观众投票/幸运之票（观众事件）|观众可投票选择下一玩家事件。事件初始触发冷却为 30 秒时开启投票。|
-|边界收缩|边界收缩方向：→← + ↓。最多收缩 2 次。|
+|边界收缩|边界收缩方向：→← + ↓。最多触发 3 次。|
 |无事发生|无事发生也是一种事件，开局时必出。|
-|万箭齐发|所有玩家头上将不断生成箭，缓冲 2 秒，持续 3 秒。|
-|熔岩地板|所有玩家脚下的方块会逐渐变成熔岩。黄色羊毛->橙色羊毛->红色羊毛->熔岩|
-|雷霆之劫|给予随机玩家一发闪电束，同时给该玩家背包某一栏位进行随机附魔。|
+|万箭齐发|所有玩家头上将不断生成箭。|
+|熔岩地板|所有玩家脚下的方块会逐渐变成熔岩。黄色羊毛→橙色羊毛→红色羊毛→熔岩|
+|雷霆之劫|给予随机玩家一发闪电束，同时随机附魔背包中的一格栏位。|
 |月球漫步|所有玩家获得 跳跃提升 + 缓降 效果。|
 |飞鸡来袭|随机选取 2 名玩家确定一条水平投影直线，在限高屏障处生成一只鸡，其沿此直线飞行途中会定时投放被激活的TNT。|
 |连锁换位|所有玩家随机交换位置，也可能不会。|
 |道具补给|接下来的 3 次物品给予将随机触发以下情况：1. 均有 60% 概率为道具。(80%) 2. 额外附赠随机附魔书。(10%) 3. 额外附赠随机药水。(10%)|
-|天地封锁|每位玩家上下层级铺满屏障，持续 8 秒。|
-|隐形涂层|所有实体隐形，玩家背包物品也不可见，持续 10 秒。|
+|天地封锁|每位玩家上下层级铺满屏障。|
+|隐形涂层|所有实体隐形，玩家背包物品也不可见。|
 |背叛之时|随机选中一名玩家转为全员敌对状态，其余玩家结成同一队伍。效果持续至下个事件触发时重置。|
 |五谷丰登|残血玩家恢复满血，满血玩家获得一次随机道具抽取。|
-|钢铁洪流|天上随机掉落铁质方块和实体，持续 6 秒。|
-|吸星大法|玩家 8 格内的掉落物会被自动吸附。效果持续至下个事件触发时重置。|
+|钢铁洪流|天上随机掉落铁质方块和实体。|
+|吸星大法|玩家附近的掉落物会被自动吸附。|
 |小孩模式|玩家尺寸变为原来的 1/2 。效果持续至下个事件触发时重置。|
 |触则生变|玩家接触的方块变为随机方块。效果持续至下个事件触发时重置。|
-|万物归零|杀死场上所有非玩家生物。|
-|世界核平|将地图按十字分为四个区域，随机一处区域方块及实体被彻底抹除。最多触发 1 次。|
+|万物归零|杀死场上所有非玩家生物（NPC）。|
+|世界核平|将地图按十字分为四个区域，随机一处区域方块及实体被彻底抹除。最多触发 4 次。|
+
+#### 事件+
+事件+是原版事件的变种。
+
+|事件列表|描述|
+|-|-|
+|万药齐发|所有玩家头上将不断生成药箭。|
+|细雪地板|所有玩家脚下的方块会逐渐变成细雪。黄色羊毛→橙色羊毛→红色羊毛→细雪|
+|雷霆万劫|给予至多 99 名随机玩家一发闪电束，同时随机附魔背包中的一格栏位。|
+|失重漫步|所有玩家获得更强的 跳跃提升 + 无摔落伤害 效果。|
+|鸡飞蛋打|随机选取 2 名玩家确定一条水平投影直线，在限高屏障处生成一只鸡，其沿此直线飞行途中会定时投放湮灭爆弹。|
+|移形换影|所有玩家和生物随机交换位置，也可能不会。|
+|道具空投|接下来的 3 次道具空投将随机触发以下情况：1. 任意道具。(80%) 2. 随机附魔书。(10%) 3. 随机药水。(10%)|
+|天罗地网|每位玩家横向四周铺满屏障。|
+|荧光涂层|所有实体发光。|
+|卧底之时|随机一名玩家成为卧底，其身份不可见。效果持续至下个事件触发时重置。|
+|雪上加霜|残血玩家失去一件道具，满血玩家受到 6 点伤害。|
+|铜器时代|天上随机掉落铜质方块和实体。|
+|斥星大法|玩家附近的掉落物会被自动排斥。|
+|巨细无常|玩家尺寸变为原来的 50% ~ 125% 。效果持续至下个事件触发时重置。|
+|范围生变|玩家接触的更大范围方块变为随机方块。效果持续至下个事件触发时重置。|
+|镜像军团|复制场上所有非玩家生物（NPC）。|
+|琥珀标本|将地图按十字分为四个区域，随机一处区域被填满橙色染色玻璃。最多触发 4 次。|
 
 ### 道具
 道具也会在大厅展示。
@@ -204,25 +227,48 @@ The language can be switched near the lobby spawn point \(has hint in initial\),
 |-|-|
 |清理垃圾/幸運之帚（系統事件）|系統每 2 分鐘清理一次掉落物。若有玩家死亡，下次清理時間增加 30 秒。|
 |觀眾投票/幸運之票（觀眾事件）|觀眾可投票選擇下一個玩家事件。事件初始觸發冷卻為 30 秒時開啟投票。|
-|邊界收縮|邊界收縮方向：→← + ↓。最多收縮 2 次。|
+|邊界收縮|邊界收縮方向：→← + ↓。最多觸發 3 次。|
 |無事發生|無事發生也是一種事件，開場時必出。|
-|萬箭齊發|所有玩家頭上將不斷生成箭矢，緩衝 2 秒，持續 3 秒。|
-|熔岩地板|所有玩家腳下的方塊會逐漸變成熔岩。黃色羊毛->橙色羊毛->紅色羊毛->熔岩|
+|萬箭齊發|所有玩家頭上將不斷生成箭矢。|
+|熔岩地板|所有玩家腳下的方塊會逐漸變成熔岩。黃色羊毛→橙色羊毛→紅色羊毛→熔岩|
 |雷霆之劫|給予隨機玩家一發閃電電流，同時隨機附魔背包內某一格欄位。|
 |月球漫步|所有玩家獲得 跳躍提升 + 緩降 效果。|
 |飛雞來襲|隨機選擇 2 名玩家連成水平投影直線，在限高屏障點生成一隻雞，其在沿此直線飛行途中會定時投放點燃的 TNT。|
 |連鎖換位|所有玩家可能隨機交換位置，也可能不換。|
-|道具補給|接下來的 3 次給予物品將隨機觸發以下情況：1. 均有 60% 機率為道具。(80%) 2. 額外附贈隨機附魔書。(10%) 3. 額外附贈隨機藥水。(10%) |
-|天地封鎖|每位玩家上下層級鋪滿屏障，持續 8 秒。|
-|隱形塗層|所有實體隱形，玩家背包物品也不可見，持續 10 秒。|
+|道具補給|接下來的 3 次給予物品將隨機觸發以下情況：1. 均有 60% 機率為道具。(80%) 2. 額外附贈隨機附魔書。(10%) 3. 額外附贈隨機藥水。(10%)|
+|天地封鎖|每位玩家上下層級鋪滿屏障。|
+|隱形塗層|所有實體隱形，玩家背包物品也不可見。|
 |背叛之時|隨機選中一名玩家轉為全員敵對狀態，其餘玩家結成同一隊伍。效果持續至下個事件觸發時重設。|
 |五谷丰登|残血玩家恢复满血，满血玩家获得一次随机道具抽取。|
-|钢铁洪流|天上随机掉落铁质方块和实体，持续 6 秒。|
-|吸星大法|玩家 8 格内的掉落物会被自动吸附。效果持續至下個事件觸發時重設。|
+|钢铁洪流|天上随机掉落铁质方块和实体。|
+|吸星大法|玩家附近的掉落物会被自动吸附。|
 |小孩模式|玩家大小變為原來的 1/2 。效果持續至下個事件觸發時重設。|
 |觸則生變|玩家接觸的方塊變為隨機方塊。效果持續至下個事件觸發時重設。|
-|万物归零|杀死场上所有非玩家生物。|
-|世界核平|将地图按十字分为四个区域，随机一处区域方块及实体被彻底抹除。最多触发 1 次。|
+|万物归零|杀死场上所有非玩家生物（NPC）。|
+|世界核平|将地图按十字分为四个区域，随机一处区域方块及实体被彻底抹除。最多触发 4 次。|
+
+#### 事件+
+事件+是原版事件的变种。
+
+|事件列表|描述|
+|-|-|
+|万药齐发|所有玩家头上将不断生成药箭。|
+|细雪地板|所有玩家脚下的方块会逐渐变成细雪。黄色羊毛→橙色羊毛→红色羊毛→细雪|
+|雷霆万劫|给予至多 99 名随机玩家一发闪电束，同时随机附魔背包中的一格栏位。|
+|失重漫步|所有玩家获得更强的 跳跃提升 + 无摔落伤害 效果。|
+|鸡飞蛋打|随机选取 2 名玩家确定一条水平投影直线，在限高屏障处生成一只鸡，其沿此直线飞行途中会定时投放湮灭爆弹。|
+|移形换影|所有玩家和生物随机交换位置，也可能不会。|
+|道具空投|接下来的 3 次道具空投将随机触发以下情况：1. 任意道具。(80%) 2. 随机附魔书。(10%) 3. 随机药水。(10%)|
+|天罗地网|每位玩家横向四周铺满屏障。|
+|荧光涂层|所有实体发光。|
+|卧底之时|随机一名玩家成为卧底，其身份不可见。效果持續至下個事件觸發時重設。|
+|雪上加霜|残血玩家失去一件道具，满血玩家受到 6 点伤害。|
+|铜器时代|天上随机掉落铜质方块和实体。|
+|斥星大法|玩家附近的掉落物会被自动排斥。|
+|巨细无常|玩家尺寸变为原来的 50% ~ 125% 。效果持續至下個事件觸發時重設。|
+|范围生变|玩家接触的更大范围方块变为随机方块。效果持續至下個事件觸發時重設。|
+|镜像军团|复制场上所有非玩家生物（NPC）。|
+|琥珀标本|将地图按十字分为四个区域，随机一处区域被填满橙色染色玻璃。最多触发 4 次。|
 
 ### 道具_
 道具也會在大廳展示。
@@ -285,7 +331,7 @@ The language can be switched near the lobby spawn point \(has hint in initial\),
 ### Info
 Players spawn on top of pillars at the beginning, receive random items at regular intervals, their goal is to be the last player surviving.
 
-This map supports 2~12 players/teams. If Team Mode is on, player count has no limitation \(in theory\).
+This map supports 2~12 players/teams. If Team Mode is on, player count has no limitation (in theory).
 
 How to start: players need to stand on **Lime Concrete** or **wool** and wait.
 
@@ -333,25 +379,48 @@ Events are displayed in the lobby, and players can toggle their activation statu
 |-|-|
 |Clear Trash / BOF (System Event)|The system clears dropped items every 2m. If a player dies, the next cleanup time will be delayed by 30s.|
 |Spectators' Vote / VOF (Spectator Event)|Spectators can vote for the next player event. Voting opens when the initial event cooldown is 30 seconds.|
-|Border Shrink|Border shrink direction: →← + ↓. Max twice.|
+|Border Shrink|Border shrink direction: →← + ↓. Max triggers 3 times.|
 |Nothing Happens|Nothing Happens is also an event, and it will definitely be triggered at the beginning.|
-|Arrow Rain|The Arrow will be continuously summoned above all players' heads, with a 2s buffer and a 3s duration.|
-|Lava Floor|Blocks beneath all players' feet will gradually transform into Lava. Yellow Wool->Orange Wool->Red Wool->Lava|
+|Arrow Rain|The Arrow will be continuously summoned above all players' heads.|
+|Lava Floor|Blocks beneath all players' feet will gradually transform into Lava. Yellow Wool→Orange Wool→Red Wool→Lava|
 |Lightning Strike|A random player will be struck by a Lightning Bolt, and a random slot in their inventory will receive a random enchantment.|
 |Moon Walk|All players will receive Jump Boost + Slow Falling effects.|
 |Bomb Chicken|Randomly select 2 players to form a horizontal projection line, then summon a Chicken at height-limit barrier. As it flies along this line, it will drop Primed TNT at regular intervals.|
 |Chain Swap|All players' positions will be randomly swapped, or not.|
-|Prop Supply|The next 3 items players receive will be randomly chosen from the following: 1. 60% chance of being props. (80%) 2. Plus a random Enchanted Book. (10%) 3. Plus a random Potion. (10%) |
-|Vertical Lock|Fill the layers above and below each player with Barrier, lasting 8s.|
-|Invisible Coating|All entities & inventory items are invisible, lasting 10s.|
+|Prop Supply|The next 3 items players receive will be randomly chosen from the following: 1. 60% chance of being props. (80%) 2. Plus a random Enchanted Book. (10%) 3. Plus a random Potion. (10%)|
+|Vertical Lock|Fill the layers above and below each player with Barrier.|
+|Invisible Coating|All entities & inventory items are invisible.|
 |Betrayal Hour|One random player becomes fully hostile to all others, while the remaining players are auto-allied. Status resets on the next event.|
 |Bountiful Harvest|Injured players heal to full, healthy players draw a random prop.|
-|Iron Torrent|Iron blocks and entities fall from the sky, lasting 6 seconds.|
-|Loot Magnet|Items within 8 blocks are attracted to players. Status resets on the next event.|
+|Iron Torrent|Iron-made blocks and entities fall from the sky.|
+|Loot Magnet|Nearby items are attracted to players.|
 |Kid Mode|Set players' Scale to 1/2 . Status resets on the next event.|
 |Touch Shuffle|Blocks players touch turn random. Status resets on the next event.|
-|The Purge|Kill all non-player creatures on the field.|
-|Nuclear Peace|Split the map into 4 quadrants, randomly erase 1 of them. Only triggers once.|
+|The Purge|Kill all Non-Player Creatures (NPCs) on the field.|
+|Nuclear Peace|Split the map into 4 quadrants, randomly erase 1 of them. Max triggers 4 times.|
+
+#### Event+
+Event+ are variants of the original events.
+
+|Events|Description|
+|-|-|
+|Tipped Rain|The Tipped Arrow will be continuously summoned above all players' heads.|
+|Snow Floor|Blocks beneath all players' feet will gradually transform into Powder Snow. Yellow Wool→Orange Wool→Red Wool→Powder Snow|
+|Thunder Doom|Max of 99 players will be struck by a Lightning Bolt, and a random slot in their inventory will receive a random enchantment.|
+|Weightless Walk|All players will receive stronger Jump Boost + No Fall Damage effects.|
+|Null Chicken|Randomly select 2 players to form a horizontal projection line, then summon a Chicken at height-limit barrier. As it flies along this line, it will drop Null Bomb at regular intervals.|
+|Universal Swap|All players and mobs randomly swap positions, or not.|
+|Prop Drop|The next 3 prop drops will be randomly chosen from the following: 1. Any prop. (80%) 2. A random Enchanted Book. (10%) 3. A random Potion. (10%)|
+|Horizontal Shield|Fill the horizontal surroundings of each player with Barrier.|
+|Glowing Coating|All entities are glowing.|
+|Mole Hour|One random player becomes a hidden mole, their identity is invisible. Status resets on the next event.|
+|Even Worse|Injured players lose one prop, healthy players take 6 damage.|
+|Copper Age|Copper-made blocks and entities fall from the sky.|
+|Loot Repel|Nearby items are repelled from players.|
+|Scale Roulette|Set players' Scale to 50% ~ 125%. Status resets on the next event.|
+|Range Shuffle|Blocks in a wider range around players turn random. Status resets on the next event.|
+|Mirror Legion|Clone all Non-Player Creatures (NPCs) on the field.|
+|Amber Specimen|Split the map into 4 quadrants, randomly fill 1 of them with Orange Stained Glass. Max triggers 4 times.|
 
 ### Items
 Items are also displayed in the lobby.
@@ -393,7 +462,7 @@ All commands below are for admins only.
 |Commands|Description|
 |-|-|
 |`/function jkpof:init`|Reset/Initialize the entire map.|
-|`/function jkpof:test/_start`|Force start the game with test mode \(single player is fine\), cannot end normally.|
+|`/function jkpof:test/_start`|Force start the game with test mode (single player is fine), cannot end normally.|
 |`/function jkpof:test/_stop`|Force stop the current game.|
 |`/function jkpof:test/creative`|Switch to Creative Mode in-game.|
 |`/function jkpof:test/give`|Clear all players' inventory and grant random props; make item receive delay.|

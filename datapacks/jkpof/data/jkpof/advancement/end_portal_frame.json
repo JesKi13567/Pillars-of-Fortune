@@ -1,0 +1,28 @@
+{
+  "criteria": {
+    "jkpof": {
+      "trigger": "item_used_on_block",
+      "conditions": {
+        "location": [
+          {
+            "condition": "match_tool",
+            "predicate": {
+              "items": "ender_eye"
+            }
+          },
+          {
+            "condition": "location_check",
+            "predicate": {
+              "block": {
+                "blocks": "end_portal_frame"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "jkpof:state/1/special_item/ender_eye/end_portal_frame"
+  }
+}

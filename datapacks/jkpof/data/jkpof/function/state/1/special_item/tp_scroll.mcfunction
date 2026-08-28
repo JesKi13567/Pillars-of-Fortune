@@ -1,5 +1,5 @@
 # 消耗和冷却
-clear @s paper[custom_data={jkpof: ["tp_scroll"]}] 1
+clear @s paper[custom_data~{jkpof: ["tp_scroll"]}] 1
 scoreboard players set @s jkpof.cd 5
 
 effect give @s slow_falling 1 0 true

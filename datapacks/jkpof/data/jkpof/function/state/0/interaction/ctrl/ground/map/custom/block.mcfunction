@@ -1,4 +1,4 @@
-# 自定义 转换 物品->方块
+# 自定义 转换 物品→方块
 $data modify storage jk:pof data.map.$(x) set from entity @e[type=item_display, tag=jkpof_display_ctrl_map, tag=$(x), limit=1] item.id
 
 $execute if items entity @e[type=item_display, tag=jkpof_display_ctrl_map, tag=$(x), limit=1] container.0 bucket run data modify storage jk:pof data.map.$(x) set value "air"

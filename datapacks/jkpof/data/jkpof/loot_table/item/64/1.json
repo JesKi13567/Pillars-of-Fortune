@@ -4,43 +4,124 @@
       "rolls": 1,
       "entries": [
         {
+          "conditions": [
+            {
+              "condition": "entity_scores",
+              "entity": "this",
+              "scores": {
+                "jkpof.item.order": 1188
+              }
+            }
+          ],
           "type": "tag",
           "expand": true,
           "name": "jkpof:give/64/entity_armor"
         },
         {
+          "conditions": [
+            {
+              "condition": "entity_scores",
+              "entity": "this",
+              "scores": {
+                "jkpof.item.order": 1189
+              }
+            }
+          ],
           "type": "tag",
           "expand": true,
           "name": "jkpof:give/64/signs"
         },
         {
+          "conditions": [
+            {
+              "condition": "entity_scores",
+              "entity": "this",
+              "scores": {
+                "jkpof.item.order": 1190
+              }
+            }
+          ],
           "type": "tag",
           "expand": true,
           "name": "banners"
         },
         {
+          "conditions": [
+            {
+              "condition": "entity_scores",
+              "entity": "this",
+              "scores": {
+                "jkpof.item.order": 1191
+              }
+            }
+          ],
           "type": "tag",
           "expand": true,
           "name": "harnesses"
         },
         {
+          "conditions": [
+            {
+              "condition": "entity_scores",
+              "entity": "this",
+              "scores": {
+                "jkpof.item.order": 1192
+              }
+            }
+          ],
           "type": "tag",
           "expand": true,
           "name": "loom_patterns"
         },
         {
+          "conditions": [
+            {
+              "condition": "entity_scores",
+              "entity": "this",
+              "scores": {
+                "jkpof.item.order": 1193
+              }
+            }
+          ],
           "type": "loot_table",
           "value": "jkpof:item/64/music_disc"
         },
         {
+          "conditions": [
+            {
+              "condition": "entity_scores",
+              "entity": "this",
+              "scores": {
+                "jkpof.item.order": 1194
+              }
+            }
+          ],
           "type": "loot_table",
           "value": "jkpof:item/64/enchanted_book"
         },
         {
+          "conditions": [
+            {
+              "condition": "entity_scores",
+              "entity": "this",
+              "scores": {
+                "jkpof.item.order": 1195
+              }
+            }
+          ],
           "type": "loot_table",
           "value": "jkpof:item/64/potion"
         },
         {
+          "conditions": [
+            {
+              "condition": "entity_scores",
+              "entity": "this",
+              "scores": {
+                "jkpof.item.order": 1196
+              }
+            }
+          ],
           "type": "item",
           "name": "goat_horn",
           "functions": [

@@ -1,0 +1,35 @@
+tag @s add jkpof_self
+
+# 1. 优先选择不同队
+execute if score #ctrl_team jkpof.int matches 1..2 as @e[type=marker, tag=jkpof_swap_marker] unless score @s jkpof.team = @n[type=#jkpof:mobs_and_player, tag=jkpof_self] jkpof.team run tag @s add jkpof_swap_marker_sel
+#    没有则全选
+execute unless entity @e[type=marker, tag=jkpof_swap_marker_sel] run tag @e[type=marker, tag=jkpof_swap_marker] add jkpof_swap_marker_sel
+# 2. 优先选择未完成传送者，防止闭环
+execute as @e[type=#jkpof:mobs_and_player, tag=jkpof_swap_player] at @s run function jkpof:state/1/progress/event/6_chain_swap/player_sel
+#    没有则选择任意
+execute unless entity @e[type=marker, tag=jkpof_swap_marker_sel2] run tag @e[type=marker, tag=jkpof_swap_marker_sel] add jkpof_swap_marker_sel2
+# 3. 随机选择一个符合条件的
+tag @e[type=marker, tag=jkpof_swap_marker_sel2, sort=random, limit=1] add jkpof_swap_marker_sel3
+# 4. 清理 Tag，至此只留下一个 jkpof_swap_marker_sel3
+tag @e[type=marker, tag=jkpof_swap_marker_sel] remove jkpof_swap_marker_sel
+tag @e[type=marker, tag=jkpof_swap_marker_sel2] remove jkpof_swap_marker_sel2
+tag @s remove jkpof_self
+
+# 传送
+tp @s @e[type=marker, tag=jkpof_swap_marker_sel3, limit=1]
+
+# 显示提示
+execute as @e[type=#jkpof:mobs_and_player, tag=jkpof_swap_entity] if score @s jkpof.cs.id = @e[type=marker, tag=jkpof_swap_marker_sel3, limit=1] jkpof.cs.id run tag @s add jkpof_swap_target
+tellraw @s ["", {storage: "jk:pof", interpret: true, nbt: "txt.POF", color: "yellow"}, {storage: "jk:pof", interpret: true, nbt: "txt.event.chain_swap.tellraw.p2", color: "aqua"}, " ", {selector: "@e[type=#jkpof:mobs_and_player, tag=jkpof_swap_target]"}, " ", {storage: "jk:pof", interpret: true, nbt: "txt.event.chain_swap.tellraw.p3", color: "aqua"}]
+
+# 伤害记录
+scoreboard players operation @s jkpof.damage.source.now = @e[type=#jkpof:mobs_and_player, limit=1, tag=jkpof_swap_target] jkpof.id
+function jkpof:state/1/hurt/sub/record
+tag @e[type=#jkpof:mobs_and_player] remove jkpof_swap_target
+
+# 清理
+tag @s remove jkpof_swap_player
+kill @e[type=marker, tag=jkpof_swap_marker_sel3]
+
+# 特效
+particle reverse_portal ~ ~1.3 ~ 0.4 0.4 0.4 0.15 100
