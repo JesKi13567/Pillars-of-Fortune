@@ -1,7 +1,7 @@
 # 分数
 $scoreboard players reset @s jkpof.spawn_egg.$(entity)
 # 找到
-$tag @e[type=$(entity), tag=!jkpof_variant_ed, limit=1, sort=nearest] add jkpof_variant
+$tag @n[type=$(entity), tag=!jkpof_variant_ed] add jkpof_variant
 # 变种
 execute store result score #entity_variant jkpof.int run random value 0..2
 $execute if score #entity_variant jkpof.int matches 0 run data modify entity @e[type=$(entity), tag=jkpof_variant, limit=1] variant set value "temperate"

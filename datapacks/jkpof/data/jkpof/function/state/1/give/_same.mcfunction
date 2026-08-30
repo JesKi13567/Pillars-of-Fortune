@@ -4,7 +4,7 @@ execute if score #ctrl_item_count_order jkpof.int matches 4 store result score #
 execute if score #ctrl_item_count_order jkpof.int matches 3..4 run scoreboard players operation @a[scores={jkpof.state=2}] jkpof.item.count = #item_count jkpof.int
 
 # 分数
-execute if score #is_prop jkpof.int matches 0 store result score #item_order jkpof.int run random value 1..1196
+execute if score #is_prop jkpof.int matches 0 store result score #item_order jkpof.int run random value 1..1187
 execute if score #is_prop jkpof.int matches 0 if score #ctrl_item_prop_chance jkpof.int matches 1 if score #item_order jkpof.int matches 23.. if predicate {condition: "random_chance", chance: 0.01} run scoreboard players set #is_prop jkpof.int 1
 execute if score #is_prop jkpof.int matches 0 if score #ctrl_item_prop_chance jkpof.int matches 2 if score #item_order jkpof.int matches 23.. if predicate {condition: "random_chance", chance: 0.02} run scoreboard players set #is_prop jkpof.int 1
 execute if score #is_prop jkpof.int matches 0 if score #ctrl_item_prop_chance jkpof.int matches 3 if score #item_order jkpof.int matches 23.. if predicate {condition: "random_chance", chance: 0.03} run scoreboard players set #is_prop jkpof.int 1

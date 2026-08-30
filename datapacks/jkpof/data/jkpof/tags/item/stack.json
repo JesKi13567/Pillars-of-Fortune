@@ -1,11 +1,13 @@
 {
   "values": [
-    "#jkpof:give/64/common",
-    "#jkpof:give/64/entity_armor",
-    "#jkpof:give/64/music_disc",
-    "#jkpof:give/64/signs",
     "#banners",
     "#harnesses",
+    "#jkpof:give/64/bucket",
+    "#jkpof:give/64/common",
+    "#jkpof:give/64/entity_armor",
+    "#jkpof:give/64/minecart",
+    "#jkpof:give/64/music_disc",
+    "#jkpof:give/64/signs",
     "#loom_patterns",
     "enchanted_book",
     "goat_horn",

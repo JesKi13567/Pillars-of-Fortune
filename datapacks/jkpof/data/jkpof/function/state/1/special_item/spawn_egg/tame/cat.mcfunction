@@ -1,7 +1,7 @@
 # 分数
 scoreboard players reset @s jkpof.spawn_egg.cat
 # 找到
-tag @e[type=cat, tag=!jkpof_tame_ed, limit=1, sort=nearest] add jkpof_tame
+tag @n[type=cat, tag=!jkpof_tame_ed] add jkpof_tame
 # 认主
 data modify entity @e[type=cat, tag=jkpof_tame, limit=1] Owner set from entity @s UUID
 # 项圈颜色

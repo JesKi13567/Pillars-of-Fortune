@@ -1,7 +1,7 @@
 # 分数
 scoreboard players reset @s jkpof.spawn_egg.wolf
 # 找到
-tag @e[type=wolf, tag=!jkpof_tame_ed, limit=1, sort=nearest] add jkpof_tame
+tag @n[type=wolf, tag=!jkpof_tame_ed] add jkpof_tame
 scoreboard players operation @e[type=wolf, tag=jkpof_tame] jkpof.id = @s jkpof.id
 # 认主
 data modify entity @e[type=wolf, tag=jkpof_tame, limit=1] Owner set from entity @s UUID

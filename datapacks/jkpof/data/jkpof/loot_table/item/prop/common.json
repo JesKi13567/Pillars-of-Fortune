@@ -5,15 +5,19 @@
       "entries": [
         {
           "type": "loot_table",
-          "value": "jkpof:item/prop/gravity_device"
-        },
-        {
-          "type": "loot_table",
           "value": "jkpof:item/prop/chest"
         },
         {
           "type": "loot_table",
+          "value": "jkpof:item/prop/gravity_device"
+        },
+        {
+          "type": "loot_table",
           "value": "jkpof:item/prop/shears"
+        },
+        {
+          "type": "loot_table",
+          "value": "jkpof:item/prop/tnt"
         },
         {
           "type": "item",
@@ -212,59 +216,6 @@
                     "nbt": "txt.lobby.item.platform.p2"
                   }
                 ]
-              ]
-            }
-          ]
-        },
-        {
-          "type": "item",
-          "name": "bat_spawn_egg",
-          "functions": [
-            {
-              "function": "set_components",
-              "components": {
-                "custom_data": {
-                  "jkpof_model": "tnt",
-                  "jkpof": [
-                    "is_prop"
-                  ]
-                },
-                "entity_data": {
-                  "id": "tnt",
-                  "fuse": 60
-                },
-                "item_model": "tnt"
-              }
-            },
-            {
-              "function": "set_name",
-              "entity": "this",
-              "name": [
-                {
-                  "storage": "jk:pof",
-                  "interpret": true,
-                  "nbt": "txt.lobby.item.global.self_igniting",
-                  "color": "red",
-                  "italic": false
-                },
-                {
-                  "translate": "block.minecraft.tnt",
-                  "color": "white"
-                }
-              ]
-            },
-            {
-              "function": "set_lore",
-              "entity": "this",
-              "mode": "replace_all",
-              "lore": [
-                {
-                  "storage": "jk:pof",
-                  "interpret": true,
-                  "nbt": "txt.lobby.item.tnt.lore",
-                  "color": "gray",
-                  "italic": false
-                }
               ]
             }
           ]

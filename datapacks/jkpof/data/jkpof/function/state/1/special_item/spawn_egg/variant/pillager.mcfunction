@@ -1,7 +1,7 @@
 # 分数
 scoreboard players reset @s jkpof.spawn_egg.pillager
 # 找到
-tag @e[type=pillager, tag=!jkpof_variant_ed, limit=1, sort=nearest] add jkpof_variant
+tag @n[type=pillager, tag=!jkpof_variant_ed] add jkpof_variant
 # 变种
 execute store result score #entity_variant jkpof.int run random value 0..9
 execute unless score #entity_variant jkpof.int matches 9 run scoreboard players operation @e[type=pillager, tag=jkpof_variant] jkpof.id = @s jkpof.id

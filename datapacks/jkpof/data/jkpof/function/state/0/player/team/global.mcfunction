@@ -11,18 +11,7 @@ execute if block ~ 63 ~ lime_wool run scoreboard players set @s jkpof.team 10
 execute if block ~ 63 ~ purple_wool run scoreboard players set @s jkpof.team 11
 execute if block ~ 63 ~ light_gray_wool run scoreboard players set @s jkpof.team 12
 
-team join jkpof.red @s[scores={jkpof.team=1}]
-team join jkpof.blue @s[scores={jkpof.team=2}]
-team join jkpof.green @s[scores={jkpof.team=3}]
-team join jkpof.yellow @s[scores={jkpof.team=4}]
-team join jkpof.cyan @s[scores={jkpof.team=5}]
-team join jkpof.white @s[scores={jkpof.team=6}]
-team join jkpof.pink @s[scores={jkpof.team=7}]
-team join jkpof.gray @s[scores={jkpof.team=8}]
-team join jkpof.gold @s[scores={jkpof.team=9}]
-team join jkpof.lime @s[scores={jkpof.team=10}]
-team join jkpof.purple @s[scores={jkpof.team=11}]
-team join jkpof.light_gray @s[scores={jkpof.team=12}]
+function jkpof:state/0/player/team/join
 
 title @s[scores={jkpof.team=0}] actionbar {storage: "jk:pof", interpret: true, nbt: "txt.lobby.will_be.1.spectator", color: "gray"}
 title @s[scores={jkpof.team=1}] actionbar [{storage: "jk:pof", interpret: true, nbt: "txt.lobby.will_be.team.p1", color: "green"}, {storage: "jk:pof", interpret: true, nbt: "txt.teams.red", color: "red"}, {storage: "jk:pof", interpret: true, nbt: "txt.lobby.will_be.team.p2"}]

@@ -285,7 +285,7 @@ scoreboard players set #event_ctrl jkpof.int 1
 scoreboard players set #event_broom jkpof.int 1
 scoreboard players set #event_vote jkpof.int 1
 scoreboard players set #event_enable__1 jkpof.int 1
-scoreboard players set #event_enable_0 jkpof.int 1
+scoreboard players set #event_enable_0 jkpof.int 0
 scoreboard players set #event_enable_1 jkpof.int 1
 scoreboard players set #event_enable_2 jkpof.int 1
 scoreboard players set #event_enable_3 jkpof.int 1

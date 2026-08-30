@@ -1,7 +1,8 @@
 # 初始
 tp @s ~ ~-1 ~
 scoreboard players set @s jkpof.int 8
-execute if score #ctrl_team jkpof.int matches 0 run scoreboard players set @s jkpof.team 6
+scoreboard players set @s jkpof.team 6
+execute if score #ctrl_team jkpof.int matches 0 run scoreboard players operation @s jkpof.team = @p[scores={jkpof.spawn_egg.tadpole=1..}, tag=jkpof_merged] jkpof.team
 execute if score #ctrl_team jkpof.int matches 1..2 run scoreboard players operation @s jkpof.team = @p[scores={jkpof.spawn_egg.tadpole=1..}] jkpof.team
 
 # 转向

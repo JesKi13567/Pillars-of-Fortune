@@ -155,19 +155,22 @@ summon marker ~2 ~3 ~2 {Tags: ["jkpof", "jkpof_glass", "jkpof_check_pos"]}
 
 # 检查位置
 execute as @e[type=marker, tag=jkpof_check_pos] at @s run function jkpof:state/1/special_item/check_pos
-execute if score #ctrl_team jkpof.int matches 0 as @e[type=marker, tag=jkpof_glass] at @s run setblock ~ ~ ~ glass
-execute if score #ctrl_team jkpof.int matches 1..2 as @s[scores={jkpof.team=1}] as @e[type=marker, tag=jkpof_glass] at @s run setblock ~ ~ ~ red_stained_glass
-execute if score #ctrl_team jkpof.int matches 1..2 as @s[scores={jkpof.team=2}] as @e[type=marker, tag=jkpof_glass] at @s run setblock ~ ~ ~ blue_stained_glass
-execute if score #ctrl_team jkpof.int matches 1..2 as @s[scores={jkpof.team=3}] as @e[type=marker, tag=jkpof_glass] at @s run setblock ~ ~ ~ green_stained_glass
-execute if score #ctrl_team jkpof.int matches 1..2 as @s[scores={jkpof.team=4}] as @e[type=marker, tag=jkpof_glass] at @s run setblock ~ ~ ~ yellow_stained_glass
-execute if score #ctrl_team jkpof.int matches 1..2 as @s[scores={jkpof.team=5}] as @e[type=marker, tag=jkpof_glass] at @s run setblock ~ ~ ~ cyan_stained_glass
-execute if score #ctrl_team jkpof.int matches 1..2 as @s[scores={jkpof.team=6}] as @e[type=marker, tag=jkpof_glass] at @s run setblock ~ ~ ~ white_stained_glass
-execute if score #ctrl_team jkpof.int matches 1..2 as @s[scores={jkpof.team=7}] as @e[type=marker, tag=jkpof_glass] at @s run setblock ~ ~ ~ pink_stained_glass
-execute if score #ctrl_team jkpof.int matches 1..2 as @s[scores={jkpof.team=8}] as @e[type=marker, tag=jkpof_glass] at @s run setblock ~ ~ ~ gray_stained_glass
-execute if score #ctrl_team jkpof.int matches 1..2 as @s[scores={jkpof.team=9}] as @e[type=marker, tag=jkpof_glass] at @s run setblock ~ ~ ~ orange_stained_glass
-execute if score #ctrl_team jkpof.int matches 1..2 as @s[scores={jkpof.team=10}] as @e[type=marker, tag=jkpof_glass] at @s run setblock ~ ~ ~ lime_stained_glass
-execute if score #ctrl_team jkpof.int matches 1..2 as @s[scores={jkpof.team=11}] as @e[type=marker, tag=jkpof_glass] at @s run setblock ~ ~ ~ purple_stained_glass
-execute if score #ctrl_team jkpof.int matches 1..2 as @s[scores={jkpof.team=12}] as @e[type=marker, tag=jkpof_glass] at @s run setblock ~ ~ ~ light_gray_stained_glass
+scoreboard players set #block_color jkpof.int 0
+execute if score #ctrl_team jkpof.int matches 0 as @s[tag=jkpof_merged] run scoreboard players operation #block_color jkpof.int = @s jkpof.team
+execute if score #ctrl_team jkpof.int matches 1..2 run scoreboard players operation #block_color jkpof.int = @s jkpof.team
+execute if score #block_color jkpof.int matches 0 as @e[type=marker, tag=jkpof_glass] at @s run setblock ~ ~ ~ glass
+execute if score #block_color jkpof.int matches 1 as @e[type=marker, tag=jkpof_glass] at @s run setblock ~ ~ ~ red_stained_glass
+execute if score #block_color jkpof.int matches 2 as @e[type=marker, tag=jkpof_glass] at @s run setblock ~ ~ ~ blue_stained_glass
+execute if score #block_color jkpof.int matches 3 as @e[type=marker, tag=jkpof_glass] at @s run setblock ~ ~ ~ green_stained_glass
+execute if score #block_color jkpof.int matches 4 as @e[type=marker, tag=jkpof_glass] at @s run setblock ~ ~ ~ yellow_stained_glass
+execute if score #block_color jkpof.int matches 5 as @e[type=marker, tag=jkpof_glass] at @s run setblock ~ ~ ~ cyan_stained_glass
+execute if score #block_color jkpof.int matches 6 as @e[type=marker, tag=jkpof_glass] at @s run setblock ~ ~ ~ white_stained_glass
+execute if score #block_color jkpof.int matches 7 as @e[type=marker, tag=jkpof_glass] at @s run setblock ~ ~ ~ pink_stained_glass
+execute if score #block_color jkpof.int matches 8 as @e[type=marker, tag=jkpof_glass] at @s run setblock ~ ~ ~ gray_stained_glass
+execute if score #block_color jkpof.int matches 9 as @e[type=marker, tag=jkpof_glass] at @s run setblock ~ ~ ~ orange_stained_glass
+execute if score #block_color jkpof.int matches 10 as @e[type=marker, tag=jkpof_glass] at @s run setblock ~ ~ ~ lime_stained_glass
+execute if score #block_color jkpof.int matches 11 as @e[type=marker, tag=jkpof_glass] at @s run setblock ~ ~ ~ purple_stained_glass
+execute if score #block_color jkpof.int matches 12 as @e[type=marker, tag=jkpof_glass] at @s run setblock ~ ~ ~ light_gray_stained_glass
 
 # 清理
 kill @e[type=marker, tag=jkpof_check_pos]

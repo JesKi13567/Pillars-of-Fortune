@@ -9,7 +9,7 @@
               "condition": "entity_scores",
               "entity": "this",
               "scores": {
-                "jkpof.item.order": 1188
+                "jkpof.item.order": 1178
               }
             }
           ],
@@ -23,7 +23,7 @@
               "condition": "entity_scores",
               "entity": "this",
               "scores": {
-                "jkpof.item.order": 1189
+                "jkpof.item.order": 1179
               }
             }
           ],
@@ -37,7 +37,7 @@
               "condition": "entity_scores",
               "entity": "this",
               "scores": {
-                "jkpof.item.order": 1190
+                "jkpof.item.order": 1180
               }
             }
           ],
@@ -51,7 +51,7 @@
               "condition": "entity_scores",
               "entity": "this",
               "scores": {
-                "jkpof.item.order": 1191
+                "jkpof.item.order": 1181
               }
             }
           ],
@@ -65,7 +65,7 @@
               "condition": "entity_scores",
               "entity": "this",
               "scores": {
-                "jkpof.item.order": 1192
+                "jkpof.item.order": 1182
               }
             }
           ],
@@ -79,7 +79,21 @@
               "condition": "entity_scores",
               "entity": "this",
               "scores": {
-                "jkpof.item.order": 1193
+                "jkpof.item.order": 1183
+              }
+            }
+          ],
+          "type": "tag",
+          "expand": true,
+          "name": "jkpof:give/64/minecart"
+        },
+        {
+          "conditions": [
+            {
+              "condition": "entity_scores",
+              "entity": "this",
+              "scores": {
+                "jkpof.item.order": 1184
               }
             }
           ],
@@ -92,7 +106,7 @@
               "condition": "entity_scores",
               "entity": "this",
               "scores": {
-                "jkpof.item.order": 1194
+                "jkpof.item.order": 1185
               }
             }
           ],
@@ -105,7 +119,7 @@
               "condition": "entity_scores",
               "entity": "this",
               "scores": {
-                "jkpof.item.order": 1195
+                "jkpof.item.order": 1186
               }
             }
           ],
@@ -118,7 +132,7 @@
               "condition": "entity_scores",
               "entity": "this",
               "scores": {
-                "jkpof.item.order": 1196
+                "jkpof.item.order": 1187
               }
             }
           ],

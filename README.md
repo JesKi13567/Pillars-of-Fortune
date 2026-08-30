@@ -142,10 +142,10 @@ The language can be switched near the lobby spawn point (has hint in initial), a
 |可发射的末影龙火球|按 [右键] 来发射。|
 |湮灭爆弹|湮灭目标区域 9×9×9 范围的所有方块。|
 |大盗鬼手|夺取指针指向玩家的物品栏内的一格物品。|
-|信标|主手持信标，副手持玩家的头并潜行，能使对应玩家复活。|
+|信标|主手持信标，副手持玩家的头并潜行，能使对应玩家复活并加入队伍。|
 |战利品箱|来自原版 MC 的随机战利品，一个顶俩！|
 |快速防御塔|放下后会自动快速建造一座防御塔。|
-|自燃TNT|3 秒后爆炸。|
+|TNT|自燃TNT＆可投掷的TNT：3 秒后爆炸。|
 |囚笼|用两层玻璃把玩家包裹起来。|
 |虚空护符|在落入下虚空时把你送回来。|
 |重力装置|永久地颠倒自己的重力方向。|
@@ -295,10 +295,10 @@ The language can be switched near the lobby spawn point (has hint in initial), a
 |可發射的龍炎彈|按 [右鍵] 來發射。|
 |湮滅爆彈|湮滅目標區域 9×9×9 範圍的所有方塊。|
 |大盜鬼手|奪取準星指向的玩家物品欄內的一格物品。|
-|烽火台|主手持烽火台，副手持玩家頭顱並潛行，能使對應玩家復活。|
+|烽火台|主手持烽火台，副手持玩家頭顱並潛行，能使對應玩家復活并加入队伍。|
 |戰利品箱|來自原版 MC 的隨機戰利品，物超所值！|
 |快速防禦塔|放下後會自動快速建造一座防禦塔。|
-|自燃TNT|3 秒後爆炸。|
+|TNT|自燃TNT＆可投掷的TNT：3 秒後爆炸。|
 |牢籠|用兩層玻璃把玩家包裹起來。|
 |虛空護符|在落入下虛空時把你送回來。|
 |重力裝置|永久地顛倒自己的重力方向。|
@@ -447,10 +447,10 @@ Items are also displayed in the lobby.
 |Shootable Dragon Fireball|Press [Right Button] to shoot.|
 |Null Bomb|Erases all blocks in a 9×9×9 area.|
 |Arch-Thief's Spectral Hand|Steal one inventory slot item from the pointed player.|
-|Beacon|Mainhand: Beacon + Offhand: Player Head + Sneak = Respawn.|
+|Beacon|Mainhand: Beacon + Offhand: Player Head + Sneak = Respawn & Join Team.|
 |Loot Chest|Random loot from vanilla Minecraft, which is doubled!|
 |Quick Defend Tower|It will build a tower soon after you placed.|
-|Self-Igniting TNT|Explode in 3 seconds.|
+|TNT|Self-Igniting TNT & Throwable TNT: Explode in 3 seconds.|
 |Cage|Surrounds the player with two layers of Glass.|
 |Void Charm|When you fall into lower void, send you back.|
 |Gravity Device|Permanently reverse your gravity.|

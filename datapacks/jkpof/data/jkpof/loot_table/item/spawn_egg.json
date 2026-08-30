@@ -10,8 +10,7 @@
               "entity": "this",
               "scores": {
                 "jkpof.item.order": {
-                  "min": 933,
-                  "max": 1018
+                  "max": 1011
                 }
               }
             }
@@ -26,7 +25,7 @@
               "condition": "entity_scores",
               "entity": "this",
               "scores": {
-                "jkpof.item.order": 1019
+                "jkpof.item.order": 1012
               }
             }
           ],
@@ -67,7 +66,7 @@
               "condition": "entity_scores",
               "entity": "this",
               "scores": {
-                "jkpof.item.order": 1020
+                "jkpof.item.order": 1013
               }
             }
           ],

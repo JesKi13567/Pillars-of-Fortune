@@ -1,7 +1,7 @@
 # 分数
 scoreboard players reset @s jkpof.spawn_egg.villager
 # 找到
-tag @e[type=villager, tag=!jkpof_variant_ed, limit=1, sort=nearest] add jkpof_variant
+tag @n[type=villager, tag=!jkpof_variant_ed] add jkpof_variant
 # 变种
 execute store result score #entity_variant jkpof.int run random value -1..6
 execute if score #entity_variant jkpof.int matches -1 run loot spawn 0 800 0 kill @s

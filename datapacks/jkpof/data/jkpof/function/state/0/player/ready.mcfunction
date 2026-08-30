@@ -8,4 +8,4 @@ title @s[scores={jkpof.state=1}] actionbar {storage: "jk:pof", interpret: true, 
 scoreboard players set @s jkpof.team 0
 team leave @s
 
-execute if score #ctrl_team jkpof.int matches 1 run function jkpof:state/0/player/team
+execute if score #ctrl_team jkpof.int matches 1 run function jkpof:state/0/player/team/global

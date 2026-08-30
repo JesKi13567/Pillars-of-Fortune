@@ -1,11 +1,13 @@
 gamemode survival @s
 spawnpoint @s 0 120 0
 recipe give @s *
+tag @s remove jkpof_merged
 scoreboard players set @s jkpof.state 2
 scoreboard players set @s jkpof.lives 1
 
 # 玩家标号
 execute store result score @s jkpof.id run scoreboard players add #id_temp jkpof.int 1
+execute if score #ctrl_team jkpof.int matches 0 run scoreboard players operation @s jkpof.team = @s jkpof.id
 
 # 传送
 function jkpof:state/1/before_start/tp_spawn

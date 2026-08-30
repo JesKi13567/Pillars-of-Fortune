@@ -433,6 +433,27 @@
               }
             }
           ]
+        },
+        {
+          "type": "item",
+          "name": "player_head",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "profile": "_Lucky_Duck",
+                "lore": [
+                  [
+                    {
+                      "italic": false,
+                      "color": "green",
+                      "text": "运"
+                    }
+                  ]
+                ]
+              }
+            }
+          ]
         }
       ]
     }

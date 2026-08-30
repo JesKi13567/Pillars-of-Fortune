@@ -10,9 +10,9 @@ execute unless score #test_mode jkpof.int matches 1 run scoreboard players add @
 execute unless score #test_mode jkpof.int matches 1 if score #1st_blood jkpof.int matches 1 run scoreboard players add @s jkpof.stats.death.1st 1
 
 # 获取完成击杀的玩家
-scoreboard players operation @a jkpof.damage.temp = @s jkpof.damage.source.real
-execute as @a run scoreboard players operation @s jkpof.damage.temp -= @s jkpof.id
-tag @a[limit=1, scores={jkpof.damage.temp=0}, team=!jkpof.spec] add jkpof_murder
+scoreboard players operation @a[scores={jkpof.state=2..3}] jkpof.damage.temp = @s jkpof.damage.source.real
+execute as @a[scores={jkpof.state=2..3}] run scoreboard players operation @s jkpof.damage.temp -= @s jkpof.id
+tag @a[limit=1, scores={jkpof.state=2..3, jkpof.damage.temp=0}, team=!jkpof.spec] add jkpof_murder
 tag @s add jkpof_victim
 scoreboard players operation @s jkpof.damage.type.last = @s jkpof.damage.type.now
 
