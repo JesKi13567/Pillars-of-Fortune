@@ -332,8 +332,8 @@ execute if score #event_plus_ctrl jkpof.int matches 0 run data modify entity @e[
 execute if score #event_plus_ctrl jkpof.int matches 1 run data modify entity @e[type=text_display, tag=jkpof_display_event_plus_ctrl, limit=1] text set value {storage: "jk:pof", interpret: true, nbt: "txt.lobby.bool.enabled.not_all", color: "yellow"}
 execute if score #event_plus_ctrl jkpof.int matches 1 if score #event_pluses jkpof.int matches 17 run data modify entity @e[type=text_display, tag=jkpof_display_event_plus_ctrl, limit=1] text set value {storage: "jk:pof", interpret: true, nbt: "txt.lobby.bool.enabled.all", color: "green"}
 
-execute unless score #event_order jkpof.int matches 1..17 as @e[type=text_display, tag=jkpof_display_event_plus] run data modify entity @s view_range set value false
-execute if score #event_order jkpof.int matches 1..17 as @e[type=text_display, tag=jkpof_display_event_plus] run data modify entity @s view_range set value true
+execute unless score #event_order jkpof.int matches 1..17 as @e[type=text_display, tag=jkpof_display_event_plus_switch] run data modify entity @s view_range set value false
+execute if score #event_order jkpof.int matches 1..17 as @e[type=text_display, tag=jkpof_display_event_plus_switch] run data modify entity @s view_range set value true
 
 # 数字显示
 data modify entity @e[type=text_display, tag=jkpof_display_event_num, limit=1] view_range set value 0

@@ -1,5 +1,4 @@
 summon lightning_bolt ~ ~ ~
-execute if score #event_plus_3 jkpof.int matches 0 run tellraw @a[tag=!jkpof_lightning_player] ["", {storage: "jk:pof", interpret: true, nbt: "txt.POF", color: "yellow"}, {storage: "jk:pof", interpret: true, nbt: "txt.event.lightning.player.others.p1", color: "aqua"}, " ", {selector: "@s"}, " ", {storage: "jk:pof", interpret: true, nbt: "txt.event.lightning.player.others.p2", color: "aqua"}]
 
 # 遍历背包
 data remove storage jk:pof data.lightning

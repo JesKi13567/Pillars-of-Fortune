@@ -1,4 +1,5 @@
 # 翻倍是个危险的设计.jpg
+tag @s add jkpof_mob_self
 data modify storage jk:pof data.purge.data set from entity @s
 execute as @s[type=allay] summon allay run function jkpof:state/1/progress/event/16_purge/data with storage jk:pof data.purge
 execute as @s[type=armadillo] summon armadillo run function jkpof:state/1/progress/event/16_purge/data with storage jk:pof data.purge
@@ -90,3 +91,4 @@ execute as @s[type=zombie_villager] summon zombie_villager run function jkpof:st
 execute as @s[type=zombified_piglin] summon zombified_piglin run function jkpof:state/1/progress/event/16_purge/data with storage jk:pof data.purge
 execute as @s[type=mannequin] summon mannequin run function jkpof:state/1/progress/event/16_purge/data with storage jk:pof data.purge
 execute as @s[type=illusioner] summon illusioner run function jkpof:state/1/progress/event/16_purge/data with storage jk:pof data.purge
+tag @s remove jkpof_mob_self

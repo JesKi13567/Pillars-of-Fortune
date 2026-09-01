@@ -431,13 +431,13 @@ summon interaction 11.0 65.5 -100 {Tags: ["jkpof", "jkpof_display_event_num"], r
 summon text_display 11.0 65.625 -100 {Tags: ["jkpof", "jkpof_display_event_num"], brightness: {block: 15, sky: 15}, view_range: 0, Rotation: [90f, 0f]}
 
 # 事件+
-summon text_display 9.25 64.01 -100 {Tags: ["jkpof", "jkpof_display_event_plus", "jkpof_display_event_plus_show"], brightness: {block: 15, sky: 15}, view_range: 0, background: 0, Rotation: [90f, -90f]}
+summon text_display 9.25 64.01 -100 {Tags: ["jkpof", "jkpof_display_event_plus_show"], brightness: {block: 15, sky: 15}, background: 0, Rotation: [90f, -90f]}
 
 summon interaction 9.0 63.51 -99 {Tags: ["jkpof", "jkpof_display_event_plus_switch"], response: true, width: .5, height: .5}
-summon text_display 8.875 64.01 -99 {Tags: ["jkpof", "jkpof_display_event_plus", "jkpof_display_event_plus_switch"], brightness: {block: 15, sky: 15}, view_range: 0, background: 0, Rotation: [90f, -90f]}
+summon text_display 8.875 64.01 -99 {Tags: ["jkpof", "jkpof_display_event_plus_switch"], brightness: {block: 15, sky: 15}, view_range: 0, background: 0, Rotation: [90f, -90f]}
 
 summon interaction 9.0 63.51 -101 {Tags: ["jkpof", "jkpof_display_event_plus_ctrl"], response: true, width: .5, height: .5}
-summon text_display 8.875 64.01 -101 {Tags: ["jkpof", "jkpof_display_event_plus", "jkpof_display_event_plus_ctrl"], brightness: {block: 15, sky: 15}, view_range: 0, background: 0, Rotation: [90f, -90f]}
+summon text_display 8.875 64.01 -101 {Tags: ["jkpof", "jkpof_display_event_plus_ctrl"], brightness: {block: 15, sky: 15}, background: 0, Rotation: [90f, -90f]}
 
 # 事件列表
 summon interaction 10 65.0 -101.0 {Tags: ["jkpof", "jkpof_display_event_order", "-3"], response: true, width: .5, height: .5}
