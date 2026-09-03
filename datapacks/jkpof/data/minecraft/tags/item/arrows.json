@@ -3,6 +3,8 @@
     "#jkpof:give/spawn_egg_common",
     "creeper_spawn_egg",
     "ender_dragon_spawn_egg",
+    "warden_spawn_egg",
+    "wither_spawn_egg",
     "end_crystal",
     "tnt"
   ]

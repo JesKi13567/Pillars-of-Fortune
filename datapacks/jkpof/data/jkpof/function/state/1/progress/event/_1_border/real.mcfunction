@@ -7,7 +7,7 @@
 # n        混凝土坐标: 25 / 15 / 7
 # y        最终高度: 80 / 50 / 20
 # yu       最终高度: -30 / 0 / 30
-$tellraw @a [{storage: "jk:pof", interpret: true, nbt: "txt.POF", color: "yellow"}, {storage: "jk:pof", interpret: true, nbt: "txt.event.border.tellraw", color: "aqua"}, {text: " →$(arrow)←", color: "green"}, " $(time)", {storage: "jk:pof", interpret: true, nbt: "txt.event.global.seconds"}, {text: ", ", color: "aqua"}, {selector: "@e[type=marker, tag=jkpof_height_symbol, limit=1]", color: "green"}, {text: "$(height)", color: "green"}, {selector: "@e[type=marker, tag=jkpof_height_symbol, limit=1]", color: "green"}, " $(score)", {storage: "jk:pof", interpret: true, nbt: "txt.event.global.seconds"}, {storage: "jk:pof", interpret: true, nbt: "txt.char.exclamation", color: "aqua"}]
+$tellraw @a [{storage: "jk:pof", interpret: true, nbt: "txt.POF.show", color: "yellow"}, {storage: "jk:pof", interpret: true, nbt: "txt.event.border.tellraw", color: "aqua"}, {text: " →$(arrow)←", color: "green"}, " $(time)", {storage: "jk:pof", interpret: true, nbt: "txt.event.global.seconds"}, {text: ", ", color: "aqua"}, {selector: "@e[type=marker, tag=jkpof_height_symbol, limit=1]", color: "green"}, {text: "$(height)", color: "green"}, {selector: "@e[type=marker, tag=jkpof_height_symbol, limit=1]", color: "green"}, " $(score)", {storage: "jk:pof", interpret: true, nbt: "txt.event.global.seconds"}, {storage: "jk:pof", interpret: true, nbt: "txt.char.exclamation", color: "aqua"}]
 $title @a subtitle {text: "$(subtitle)", color: "green"}
 
 $worldborder set $(size) $(time)s

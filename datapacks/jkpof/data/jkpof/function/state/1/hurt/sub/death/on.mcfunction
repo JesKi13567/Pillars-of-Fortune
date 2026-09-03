@@ -1,4 +1,4 @@
-tellraw @s[scores={jkpof.leavegame=1..}] [{storage: "jk:pof", interpret: true, nbt: "txt.POF", color: "yellow"}, {storage: "jk:pof", interpret: true, nbt: "txt.spectator.by.leavegame", color: "green"}]
+tellraw @s[scores={jkpof.leavegame=1..}] [{storage: "jk:pof", interpret: true, nbt: "txt.POF.show", color: "yellow"}, {storage: "jk:pof", interpret: true, nbt: "txt.spectator.by.leavegame", color: "green"}]
 scoreboard players reset @s jkpof.leavegame
 
 scoreboard players reset @s jkpof.death

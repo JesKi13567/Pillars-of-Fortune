@@ -1,10 +1,10 @@
 # 循环次数增加
 scoreboard players add #event_loop jkpof.int 1
 
-execute if score #event_loop jkpof.int matches ..5 if score #teams jkpof.int matches 2 run tellraw @a [{storage: "jk:pof", interpret: true, nbt: "txt.POF", color: "yellow"}, {storage: "jk:pof", interpret: true, nbt: "txt.event.loop.half_time.2.teams", color: "aqua"}]
+execute if score #event_loop jkpof.int matches ..5 if score #teams jkpof.int matches 2 run tellraw @a [{storage: "jk:pof", interpret: true, nbt: "txt.POF.show", color: "yellow"}, {storage: "jk:pof", interpret: true, nbt: "txt.event.loop.half_time.2.teams", color: "aqua"}]
 execute if score #event_loop jkpof.int matches ..5 if score #teams jkpof.int matches 2 run scoreboard players set #event_loop jkpof.int 7
 
-execute if score #event_loop jkpof.int matches 6 run tellraw @a [{storage: "jk:pof", interpret: true, nbt: "txt.POF", color: "yellow"}, {storage: "jk:pof", interpret: true, nbt: "txt.event.loop.half_time.6", color: "aqua"}]
+execute if score #event_loop jkpof.int matches 6 run tellraw @a [{storage: "jk:pof", interpret: true, nbt: "txt.POF.show", color: "yellow"}, {storage: "jk:pof", interpret: true, nbt: "txt.event.loop.half_time.6", color: "aqua"}]
 
 execute if score #event_loop jkpof.int matches ..5 run scoreboard players set #event_progress jkpof.int 60
 execute if score #event_loop jkpof.int matches 6.. run scoreboard players set #event_progress jkpof.int 30
@@ -15,7 +15,7 @@ title @a times 0 3s 8t
 # 结束事件
 execute if score #event_betrayal_hour.status jkpof.int matches 1 run function jkpof:state/1/progress/event/10_betrayal_hour/recover
 execute if score #event_kid_mode jkpof.int matches 1 run function jkpof:state/1/progress/event/14_kid_mode/end
-execute if score #event_touch_change jkpof.int matches 1 run function jkpof:state/1/progress/event/15_touch_change/end
+execute if score #event_touch_change.status jkpof.int matches 1 run function jkpof:state/1/progress/event/15_touch_change/end
 
 # 边界收缩
 execute if score #event_mode jkpof.int matches -1 run function jkpof:state/1/progress/event/_1_border/global

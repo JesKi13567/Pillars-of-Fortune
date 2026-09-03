@@ -1,5 +1,5 @@
 # 动作栏倒计时
-execute if score #ctrl_actionbar jkpof.int matches 1 run title @s actionbar [{storage: "jk:pof", interpret: true, nbt: "txt.game.item_give", color: "yellow"}, {score: {name: "#time_res", objective: "jkpof.int"}, color: "gold"}, {storage: "jk:pof", interpret: true, nbt: "txt.event.global.seconds"}]
+execute if score #ctrl_game_mode jkpof.int matches 0 if score #ctrl_actionbar jkpof.int matches 1 run title @s actionbar [{storage: "jk:pof", interpret: true, nbt: "txt.game.item_give", color: "yellow"}, {score: {name: "#time_res", objective: "jkpof.int"}, color: "gold"}, {storage: "jk:pof", interpret: true, nbt: "txt.event.global.seconds"}]
 
 # 原谅
 scoreboard players remove @s[scores={jkpof.damage.forgive=1..}] jkpof.damage.forgive 1

@@ -8,6 +8,6 @@ execute if score #event_betrayal_hour.status jkpof.int matches 1 if entity @a[sc
 execute if score #event_betrayal_hour.status jkpof.int matches 1 if entity @a[scores={jkpof.state=2..3}, limit=1, tag=jkpof_winner, team=jkpof.traitor] run tag @a[team=jkpof.traitor] add jkpof_winner
 
 execute unless score #test_mode jkpof.int matches 1 run scoreboard players add @a[tag=jkpof_winner] jkpof.stats.win 1
-tellraw @a ["", {storage: "jk:pof", interpret: true, nbt: "txt.POF", color: "yellow"}, {storage: "jk:pof", interpret: true, nbt: "txt.game.end.win.yes.p1", color: "green"}, {selector: "@a[tag=jkpof_winner]"}, {storage: "jk:pof", interpret: true, nbt: "txt.game.end.win.yes.p2", color: "green"}]
+tellraw @a ["", {storage: "jk:pof", interpret: true, nbt: "txt.POF.show", color: "yellow"}, {storage: "jk:pof", interpret: true, nbt: "txt.game.end.win.yes.p1", color: "green"}, {selector: "@a[tag=jkpof_winner]"}, {storage: "jk:pof", interpret: true, nbt: "txt.game.end.win.yes.p2", color: "green"}]
 
 tag @a remove jkpof_winner

@@ -1,0 +1,156 @@
+{
+  "type": "fishing",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "conditions": [
+            {
+              "condition": "entity_scores",
+              "entity": "this",
+              "scores": {
+                "jkpof.item.order": 0
+              }
+            }
+          ],
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "type": "score",
+                "target": "this",
+                "score": "jkpof.item.count"
+              }
+            }
+          ],
+          "type": "loot_table",
+          "value": "jkpof:item/prop/death_note/zh"
+        },
+        {
+          "conditions": [
+            {
+              "condition": "entity_scores",
+              "entity": "this",
+              "scores": {
+                "jkpof.item.order": 1
+              }
+            }
+          ],
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "type": "score",
+                "target": "this",
+                "score": "jkpof.item.count"
+              }
+            }
+          ],
+          "type": "loot_table",
+          "value": "jkpof:item/prop/death_note/en"
+        },
+        {
+          "conditions": [
+            {
+              "condition": "entity_scores",
+              "entity": "this",
+              "scores": {
+                "jkpof.item.order": 2
+              }
+            }
+          ],
+          "type": "loot_table",
+          "value": "jkpof:item/prop/creative"
+        },
+        {
+          "conditions": [
+            {
+              "condition": "entity_scores",
+              "entity": "this",
+              "scores": {
+                "jkpof.item.order": {
+                  "min": 3
+                }
+              }
+            }
+          ],
+          "type": "loot_table",
+          "value": "jkpof:item/all"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "functions": [
+        {
+          "function": "set_components",
+          "components": {
+            "max_stack_size": 64
+          }
+        },
+        {
+          "function": "set_count",
+          "count": {
+            "type": "score",
+            "target": "this",
+            "score": "jkpof.item.count"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "conditions": [
+            {
+              "condition": "entity_scores",
+              "entity": "this",
+              "scores": {
+                "jkpof.item.extra.enchanted_book": {
+                  "min": 1
+                }
+              }
+            }
+          ],
+          "type": "loot_table",
+          "value": "jkpof:item/64/enchanted_book"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "functions": [
+        {
+          "function": "set_components",
+          "components": {
+            "max_stack_size": 64
+          }
+        },
+        {
+          "function": "set_count",
+          "count": {
+            "type": "score",
+            "target": "this",
+            "score": "jkpof.item.count"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "conditions": [
+            {
+              "condition": "entity_scores",
+              "entity": "this",
+              "scores": {
+                "jkpof.item.extra.potion": {
+                  "min": 1
+                }
+              }
+            }
+          ],
+          "type": "loot_table",
+          "value": "jkpof:item/64/potion"
+        }
+      ]
+    }
+  ]
+}

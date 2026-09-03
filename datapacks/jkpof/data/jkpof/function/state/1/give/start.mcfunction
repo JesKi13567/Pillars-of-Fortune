@@ -1,4 +1,7 @@
 # 计时
+scoreboard players remove #time_res jkpof.int 1
+execute if score #time_res jkpof.int matches 1.. run return 0
+
 scoreboard players operation #time_res jkpof.int = #ctrl_item_time jkpof.int
 
 # 个数（常量）

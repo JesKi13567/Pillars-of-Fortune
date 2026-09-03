@@ -3,18 +3,19 @@ data modify storage jk:pof txt.map.title.15 set from storage jk:pof txt.map.glob
 data modify storage jk:pof txt.map.title.16 set from storage jk:pof txt.map.global.combine
 data modify storage jk:pof txt.map.title.17 set from storage jk:pof txt.map.global.3f
 
+data modify entity @e[type=text_display, tag=jkpof_lobby_const_top_lore, limit=1] text set value ["", {storage: "jk:pof", interpret: true, nbt: "txt.POF.expand", color: "yellow"}, "\n", {text: "\
+v1.4 - MC26.2\
+", color: "gold"}, "\n", {storage: "jk:pof", interpret: true, nbt: "txt.lobby.const.top.description.p1", color: "green"}, "\n", {storage: "jk:pof", interpret: true, nbt: "txt.lobby.const.top.description.p2", color: "green"}, "\n", {storage: "jk:pof", interpret: true, nbt: "txt.lobby.const.top.description.p3", color: "green"}, "\n", {storage: "jk:pof", interpret: true, nbt: "txt.lobby.const.top.lore.map_author", color: "aqua"}, {text: "JK137", color: "aqua"}, "\n", {storage: "jk:pof", interpret: true, nbt: "txt.lobby.const.top.lore.who", color: "white"}]
+
 function jkpof:state/0/interaction/ctrl/preset/show_ctrl
-function jkpof:state/0/interaction/lobby/event/show
+function jkpof:state/0/interaction/lobby/event/show/global
 function jkpof:state/0/interaction/lobby/item/global
 
 data modify entity @e[type=text_display, tag=jkpof_lobby_const_top_play, limit=1] text set value [{storage: "jk:pof", interpret: true, nbt: "txt.lobby.const.top.play", color: "green", bold: true}]
 data modify entity @e[type=text_display, tag=jkpof_lobby_const_top_events, limit=1] text set value [{storage: "jk:pof", interpret: true, nbt: "txt.lobby.const.top.events", color: "aqua", bold: true}]
 data modify entity @e[type=text_display, tag=jkpof_lobby_const_top_settings, limit=1] text set value [{storage: "jk:pof", interpret: true, nbt: "txt.lobby.const.top.settings", color: "gold", bold: true}]
-data modify entity @e[type=text_display, tag=jkpof_lobby_const_top_lore, limit=1] text set value [{storage: "jk:pof", interpret: true, nbt: "txt.lobby.const.top.POF", color: "yellow"}, "\n", {text: "\
-v1.4 - MC26.2\
-", color: "gold"}, "\n", {storage: "jk:pof", interpret: true, nbt: "txt.lobby.const.top.lore.p1", color: "green"}, "\n", {storage: "jk:pof", interpret: true, nbt: "txt.lobby.const.top.lore.p2", color: "aqua"}, {text: "JK137", color: "aqua"}, "\n", {storage: "jk:pof", interpret: true, nbt: "txt.lobby.const.top.lore.p3", color: "white"}]
+data modify entity @e[type=text_display, tag=jkpof_display_ctrl_game_mode, limit=1] text set value [{storage: "jk:pof", interpret: true, nbt: "txt.lobby.const.settings.game_mode.name", color: "green"}]
 
-data modify entity @e[type=text_display, tag=jkpof_display_event_plus_show, limit=1] text set value [{storage: "jk:pof", interpret: true, nbt: "txt.lobby.const.top.events", color: "gold"}, "+"]
 data modify entity @e[type=text_display, tag=jkpof_display_event_num, limit=1] text set value [{storage: "jk:pof", interpret: true, nbt: "txt.lobby.global.change", color: "white", underlined: true}]
 data modify entity @e[type=text_display, tag=jkpof_display_stats, limit=1] text set value [{storage: "jk:pof", interpret: true, nbt: "txt.lobby.const.stats.name", color: "white", bold: true}]
 
@@ -48,8 +49,13 @@ data modify entity @e[type=text_display, tag=jkpof_display_ctrl_special_rules_sh
 data modify entity @e[type=text_display, tag=jkpof_display_ctrl_upside_down, limit=1] text set value [{storage: "jk:pof", interpret: true, nbt: "txt.lobby.const.settings.special_rules.upside_down.name", color: "green"}]
 data modify entity @e[type=text_display, tag=jkpof_display_ctrl_double_health, limit=1] text set value [{storage: "jk:pof", interpret: true, nbt: "txt.lobby.const.settings.special_rules.double_health.name", color: "green"}]
 data modify entity @e[type=text_display, tag=jkpof_display_ctrl_init_tool, limit=1] text set value [{storage: "jk:pof", interpret: true, nbt: "txt.lobby.const.settings.special_rules.init_tool.name", color: "green"}]
+data modify entity @e[type=text_display, tag=jkpof_display_ctrl_spawn_protect, limit=1] text set value [{storage: "jk:pof", interpret: true, nbt: "txt.lobby.const.settings.special_rules.spawn_protect.name", color: "green"}]
+data modify entity @e[type=text_display, tag=jkpof_display_ctrl_zero_friction, limit=1] text set value [{storage: "jk:pof", interpret: true, nbt: "txt.lobby.const.settings.special_rules.zero_friction.name", color: "green"}]
+
+data modify entity @e[type=text_display, tag=jkpof_display_ctrl_ban_spawn_egg, tag=global, limit=1] text set value [{storage: "jk:pof", interpret: true, nbt: "txt.lobby.const.settings.ban_spawn_egg", color: "gold"}]
 
 data modify entity @e[type=text_display, tag=jkpof_display_ctrl_preset, limit=1] text set value [{storage: "jk:pof", interpret: true, nbt: "txt.lobby.const.settings.presets", color: "green"}]
+data modify entity @e[type=text_display, tag=jkpof_display_ctrl_event_preset, limit=1] text set value [{storage: "jk:pof", interpret: true, nbt: "txt.lobby.const.top.events", color: "aqua"}, " ", {storage: "jk:pof", interpret: true, nbt: "txt.lobby.const.settings.presets"}]
 
 data modify entity @e[type=text_display, tag=jkpof_lobby_const_short_text_explain, limit=1] view_range set value 0
 data modify entity @e[type=text_display, tag=jkpof_lobby_const_set_lang_1st, limit=1] view_range set value 0

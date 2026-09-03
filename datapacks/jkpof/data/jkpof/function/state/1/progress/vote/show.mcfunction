@@ -1,28 +1,28 @@
 tag @s add jkpof_voted
 
 # 无效投票
-execute unless score #event_enable__1 jkpof.int matches 1 run scoreboard players set @s[scores={jkpof.vote=99}] jkpof.vote 0
+execute if score #event_enable__1 jkpof.int matches 0 run scoreboard players set @s[scores={jkpof.vote=99}] jkpof.vote 0
 execute if score #event_enable__1 jkpof.int matches 1 unless score #event_border.o jkpof.int < #event_border.t jkpof.int run scoreboard players set @s[scores={jkpof.vote=99}] jkpof.vote 0
 
-execute unless score #event_enable_17 jkpof.int matches 1 run scoreboard players set @s[scores={jkpof.vote=17}] jkpof.vote 0
-execute if score #event_enable_17 jkpof.int matches 1 unless score #event_nuke.c jkpof.int matches 1.. run scoreboard players set @s[scores={jkpof.vote=17}] jkpof.vote 0
+execute if score #event_enable_17 jkpof.int matches 0 run scoreboard players set @s[scores={jkpof.vote=17}] jkpof.vote 0
+execute if score #event_enable_17 jkpof.int matches 1.. unless score #event_nuke.c jkpof.int matches 1.. run scoreboard players set @s[scores={jkpof.vote=17}] jkpof.vote 0
 
-execute unless score #event_enable_1 jkpof.int matches 1 run scoreboard players set @s[scores={jkpof.vote=1}] jkpof.vote 0
-execute unless score #event_enable_2 jkpof.int matches 1 run scoreboard players set @s[scores={jkpof.vote=2}] jkpof.vote 0
-execute unless score #event_enable_3 jkpof.int matches 1 run scoreboard players set @s[scores={jkpof.vote=3}] jkpof.vote 0
-execute unless score #event_enable_4 jkpof.int matches 1 run scoreboard players set @s[scores={jkpof.vote=4}] jkpof.vote 0
-execute unless score #event_enable_5 jkpof.int matches 1 run scoreboard players set @s[scores={jkpof.vote=5}] jkpof.vote 0
-execute unless score #event_enable_6 jkpof.int matches 1 run scoreboard players set @s[scores={jkpof.vote=6}] jkpof.vote 0
-execute unless score #event_enable_7 jkpof.int matches 1 run scoreboard players set @s[scores={jkpof.vote=7}] jkpof.vote 0
-execute unless score #event_enable_8 jkpof.int matches 1 run scoreboard players set @s[scores={jkpof.vote=8}] jkpof.vote 0
-execute unless score #event_enable_9 jkpof.int matches 1 run scoreboard players set @s[scores={jkpof.vote=9}] jkpof.vote 0
-execute unless score #event_enable_10 jkpof.int matches 1 run scoreboard players set @s[scores={jkpof.vote=10}] jkpof.vote 0
-execute unless score #event_enable_11 jkpof.int matches 1 run scoreboard players set @s[scores={jkpof.vote=11}] jkpof.vote 0
-execute unless score #event_enable_12 jkpof.int matches 1 run scoreboard players set @s[scores={jkpof.vote=12}] jkpof.vote 0
-execute unless score #event_enable_13 jkpof.int matches 1 run scoreboard players set @s[scores={jkpof.vote=13}] jkpof.vote 0
-execute unless score #event_enable_14 jkpof.int matches 1 run scoreboard players set @s[scores={jkpof.vote=14}] jkpof.vote 0
-execute unless score #event_enable_15 jkpof.int matches 1 run scoreboard players set @s[scores={jkpof.vote=15}] jkpof.vote 0
-execute unless score #event_enable_16 jkpof.int matches 1 run scoreboard players set @s[scores={jkpof.vote=16}] jkpof.vote 0
+execute if score #event_enable_1 jkpof.int matches 0 run scoreboard players set @s[scores={jkpof.vote=1}] jkpof.vote 0
+execute if score #event_enable_2 jkpof.int matches 0 run scoreboard players set @s[scores={jkpof.vote=2}] jkpof.vote 0
+execute if score #event_enable_3 jkpof.int matches 0 run scoreboard players set @s[scores={jkpof.vote=3}] jkpof.vote 0
+execute if score #event_enable_4 jkpof.int matches 0 run scoreboard players set @s[scores={jkpof.vote=4}] jkpof.vote 0
+execute if score #event_enable_5 jkpof.int matches 0 run scoreboard players set @s[scores={jkpof.vote=5}] jkpof.vote 0
+execute if score #event_enable_6 jkpof.int matches 0 run scoreboard players set @s[scores={jkpof.vote=6}] jkpof.vote 0
+execute if score #event_enable_7 jkpof.int matches 0 run scoreboard players set @s[scores={jkpof.vote=7}] jkpof.vote 0
+execute if score #event_enable_8 jkpof.int matches 0 run scoreboard players set @s[scores={jkpof.vote=8}] jkpof.vote 0
+execute if score #event_enable_9 jkpof.int matches 0 run scoreboard players set @s[scores={jkpof.vote=9}] jkpof.vote 0
+execute if score #event_enable_10 jkpof.int matches 0 run scoreboard players set @s[scores={jkpof.vote=10}] jkpof.vote 0
+execute if score #event_enable_11 jkpof.int matches 0 run scoreboard players set @s[scores={jkpof.vote=11}] jkpof.vote 0
+execute if score #event_enable_12 jkpof.int matches 0 run scoreboard players set @s[scores={jkpof.vote=12}] jkpof.vote 0
+execute if score #event_enable_13 jkpof.int matches 0 run scoreboard players set @s[scores={jkpof.vote=13}] jkpof.vote 0
+execute if score #event_enable_14 jkpof.int matches 0 run scoreboard players set @s[scores={jkpof.vote=14}] jkpof.vote 0
+execute if score #event_enable_15 jkpof.int matches 0 run scoreboard players set @s[scores={jkpof.vote=15}] jkpof.vote 0
+execute if score #event_enable_16 jkpof.int matches 0 run scoreboard players set @s[scores={jkpof.vote=16}] jkpof.vote 0
 
 execute unless score @s jkpof.vote matches 1..17 unless score @s jkpof.vote matches 99 run scoreboard players set @s jkpof.vote 0
 

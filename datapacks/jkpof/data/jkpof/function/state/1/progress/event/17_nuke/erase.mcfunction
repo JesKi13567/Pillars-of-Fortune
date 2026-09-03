@@ -3,8 +3,8 @@ execute if score #event_nuke.q jkpof.int matches 2 positioned 1 -64 -24 run func
 execute if score #event_nuke.q jkpof.int matches 3 positioned -24 -64 -24 run function jkpof:state/1/progress/event/17_nuke/real
 execute if score #event_nuke.q jkpof.int matches 4 positioned -24 -64 1 run function jkpof:state/1/progress/event/17_nuke/real
 
-execute if score #event_plus_17 jkpof.int matches 0 run tellraw @a [{storage: "jk:pof", interpret: true, nbt: "txt.POF", color: "yellow"}, {storage: "jk:pof", interpret: true, nbt: "txt.event.nuke.name", color: "aqua"}, {storage: "jk:pof", interpret: true, nbt: "txt.event.global.stage_ended"}]
-execute if score #event_plus_17 jkpof.int matches 1 run tellraw @a [{storage: "jk:pof", interpret: true, nbt: "txt.POF", color: "yellow"}, {storage: "jk:pof", interpret: true, nbt: "txt.event.plus.nuke.name", color: "aqua"}, {storage: "jk:pof", interpret: true, nbt: "txt.event.global.stage_ended"}]
+execute if score #event_plus_17 jkpof.int matches 0 run tellraw @a [{storage: "jk:pof", interpret: true, nbt: "txt.POF.show", color: "yellow"}, {storage: "jk:pof", interpret: true, nbt: "txt.event.nuke.name", color: "aqua"}, {storage: "jk:pof", interpret: true, nbt: "txt.event.global.stage_ended"}]
+execute if score #event_plus_17 jkpof.int matches 1 run tellraw @a [{storage: "jk:pof", interpret: true, nbt: "txt.POF.show", color: "yellow"}, {storage: "jk:pof", interpret: true, nbt: "txt.event.plus.nuke.name", color: "aqua"}, {storage: "jk:pof", interpret: true, nbt: "txt.event.global.stage_ended"}]
 
 # 移出随机池
 execute if score #event_nuke.c jkpof.int matches 1.. run return 0

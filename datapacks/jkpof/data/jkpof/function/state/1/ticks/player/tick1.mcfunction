@@ -19,7 +19,10 @@ execute unless score @s[gamemode=creative] jkpof.creative matches 1.. run gamemo
 execute as @s[scores={jkpof.creative=1..999}] run function jkpof:state/1/special_item/creative/global
 
 # 触则生变
-execute if score #event_touch_change jkpof.int matches 1 at @s align xyz positioned ~.5 ~.5 ~.5 run function jkpof:state/1/progress/event/15_touch_change/global
+execute if score #event_touch_change.status jkpof.int matches 1 at @s align xyz positioned ~.5 ~.5 ~.5 run function jkpof:state/1/progress/event/15_touch_change/global
+
+# 幸运之钓
+execute as @s[scores={jkpof.fishing=1..}] run function jkpof:state/1/give/_fishing
 
 # 离开游戏
 scoreboard players set @s[scores={jkpof.leavegame=1..}] jkpof.death 1

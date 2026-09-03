@@ -2,6 +2,9 @@ gamemode survival @s
 spawnpoint @s 0 120 0
 recipe give @s *
 tag @s remove jkpof_merged
+scoreboard players set @s jkpof.item.is_prop 0
+scoreboard players set @s jkpof.item.extra.enchanted_book 0
+scoreboard players set @s jkpof.item.extra.potion 0
 scoreboard players set @s jkpof.state 2
 scoreboard players set @s jkpof.lives 1
 
@@ -18,3 +21,8 @@ execute if score #ctrl_upside_down jkpof.int matches 1 run loot give @s loot jkp
 execute if score #ctrl_double_health jkpof.int matches 1 run attribute @s max_health base set 40
 execute if score #ctrl_init_tool jkpof.int matches 1 run loot give @s loot jkpof:item/prop/shears
 execute if score #ctrl_bonus_chest jkpof.int matches 1 run loot give @s loot jkpof:item/prop/chest
+execute if score #ctrl_game_mode jkpof.int matches 1 run loot give @s loot jkpof:item/fishing
+execute if score #ctrl_zero_friction jkpof.int matches 1 run attribute @s air_drag_modifier base set 0
+execute if score #ctrl_zero_friction jkpof.int matches 1 run attribute @s friction_modifier base set 0
+execute if score #ctrl_zero_friction jkpof.int matches 1 run attribute @s fall_damage_multiplier base set 0
+execute if score #ctrl_zero_friction jkpof.int matches 1 run attribute @s bounciness base set 1

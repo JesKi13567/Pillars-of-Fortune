@@ -14,5 +14,5 @@ execute as @a[scores={jkpof.state=2}] if score @s jkpof.team = #merged jkpof.tea
 execute unless score #event_betrayal_hour.status jkpof.int matches 1 as @a[scores={jkpof.state=2}] if score @s jkpof.team = #merged jkpof.team run function jkpof:state/0/player/team/join
 execute if score #event_betrayal_hour.status jkpof.int matches 1 if score #respawn.type jkpof.int matches 0 run team join jkpof.allies @s
 execute if score #event_betrayal_hour.status jkpof.int matches 1 if score #respawn.type jkpof.int matches 1 run team join jkpof.traitor @s
-execute if score #event_plus_10 jkpof.int matches 1 run tellraw @s[team=jkpof.traitor] [{storage: "jk:pof", interpret: true, nbt: "txt.POF", color: "yellow"}, {storage: "jk:pof", interpret: true, nbt: "txt.event.plus.betrayal_hour.self", color: "gold"}]
+execute if score #event_plus_10 jkpof.int matches 1 run tellraw @s[team=jkpof.traitor] [{storage: "jk:pof", interpret: true, nbt: "txt.POF.show", color: "yellow"}, {storage: "jk:pof", interpret: true, nbt: "txt.event.plus.betrayal_hour.self", color: "gold"}]
 execute unless score #test_mode jkpof.int matches 1 run scoreboard players add @s jkpof.stats.respawn 1

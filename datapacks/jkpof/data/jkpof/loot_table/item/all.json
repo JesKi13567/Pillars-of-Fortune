@@ -32,7 +32,7 @@
               "scores": {
                 "jkpof.item.order": {
                   "min": 3,
-                  "max": 22
+                  "max": 23
                 }
               }
             }
@@ -47,7 +47,7 @@
               "entity": "this",
               "scores": {
                 "jkpof.item.order": {
-                  "min": 23,
+                  "min": 24,
                   "max": 865
                 }
               }

@@ -1,3 +1,4 @@
+$execute if items entity @s weapon.$(hand)hand clock[custom_data~{jkpof: ["clock"]}] run function jkpof:state/1/special_item/clock/global
 $execute if items entity @s weapon.$(hand)hand tnt[custom_data~{jkpof: ["is_prop"]}] run function jkpof:state/1/special_item/throwable_tnt
 $execute if items entity @s weapon.$(hand)hand fire_charge[custom_data~{jkpof: ["fireball"]}] run function jkpof:state/1/special_item/fireball/ghast
 $execute if items entity @s weapon.$(hand)hand dragon_breath[custom_data~{jkpof: ["fireball_dragon"]}] run function jkpof:state/1/special_item/fireball/dragon

@@ -20,7 +20,7 @@ tp @s @e[type=marker, tag=jkpof_swap_marker_sel3, limit=1]
 
 # 显示提示
 execute as @e[type=#jkpof:mobs_and_player, tag=jkpof_swap_entity] if score @s jkpof.cs.id = @e[type=marker, tag=jkpof_swap_marker_sel3, limit=1] jkpof.cs.id run tag @s add jkpof_swap_target
-tellraw @s ["", {storage: "jk:pof", interpret: true, nbt: "txt.POF", color: "yellow"}, {storage: "jk:pof", interpret: true, nbt: "txt.event.chain_swap.tellraw.p2", color: "aqua"}, " ", {selector: "@e[type=#jkpof:mobs_and_player, tag=jkpof_swap_target]"}, " ", {storage: "jk:pof", interpret: true, nbt: "txt.event.chain_swap.tellraw.p3", color: "aqua"}]
+tellraw @s ["", {storage: "jk:pof", interpret: true, nbt: "txt.POF.show", color: "yellow"}, {storage: "jk:pof", interpret: true, nbt: "txt.event.chain_swap.tellraw.p2", color: "aqua"}, " ", {selector: "@e[type=#jkpof:mobs_and_player, tag=jkpof_swap_target]"}, " ", {storage: "jk:pof", interpret: true, nbt: "txt.event.chain_swap.tellraw.p3", color: "aqua"}]
 
 # 伤害记录
 scoreboard players operation @s jkpof.damage.source.now = @e[type=#jkpof:mobs_and_player, limit=1, tag=jkpof_swap_target] jkpof.id

@@ -1,0 +1,17 @@
+scoreboard players set #event_enable_1 jkpof.int 1
+scoreboard players set #event_enable_2 jkpof.int 2
+scoreboard players set #event_enable_3 jkpof.int 2
+scoreboard players set #event_enable_4 jkpof.int 2
+scoreboard players set #event_enable_5 jkpof.int 2
+scoreboard players set #event_enable_6 jkpof.int 2
+scoreboard players set #event_enable_7 jkpof.int 2
+scoreboard players set #event_enable_8 jkpof.int 2
+scoreboard players set #event_enable_9 jkpof.int 2
+scoreboard players set #event_enable_10 jkpof.int 2
+scoreboard players set #event_enable_11 jkpof.int 2
+scoreboard players set #event_enable_12 jkpof.int 0
+scoreboard players set #event_enable_13 jkpof.int 0
+scoreboard players set #event_enable_14 jkpof.int -1
+scoreboard players set #event_enable_15 jkpof.int 1
+scoreboard players set #event_enable_16 jkpof.int 2
+scoreboard players set #event_enable_17 jkpof.int 2

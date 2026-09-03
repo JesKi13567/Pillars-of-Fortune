@@ -55,10 +55,10 @@ execute if items entity @s container.35 * run data modify storage jk:pof data.li
 
 execute store result score #event_lightning.slot jkpof.int run data get storage jk:pof data.lightning.slot
 execute store result storage jk:pof data.lightning.random_max int 1 run scoreboard players remove #event_lightning.slot jkpof.int 1
-execute if score #event_lightning.slot jkpof.int matches ..-1 run return run tellraw @s [{storage: "jk:pof", interpret: true, nbt: "txt.POF", color: "yellow"}, {storage: "jk:pof", interpret: true, nbt: "txt.event.lightning.player.me.poor", color: "aqua"}]
+execute if score #event_lightning.slot jkpof.int matches ..-1 run return run tellraw @s [{storage: "jk:pof", interpret: true, nbt: "txt.POF.show", color: "yellow"}, {storage: "jk:pof", interpret: true, nbt: "txt.event.lightning.player.me.poor", color: "aqua"}]
 
 # 通过
-tellraw @s [{storage: "jk:pof", interpret: true, nbt: "txt.POF", color: "yellow"}, {storage: "jk:pof", interpret: true, nbt: "txt.event.lightning.player.me.hasitem", color: "aqua"}]
+tellraw @s [{storage: "jk:pof", interpret: true, nbt: "txt.POF.show", color: "yellow"}, {storage: "jk:pof", interpret: true, nbt: "txt.event.lightning.player.me.hasitem", color: "aqua"}]
 
 execute store result storage jk:pof data.lightning.enchant_index int 1 run random value 0..42
 execute store result storage jk:pof data.lightning.enchant_lvl int 1 run random value 1..10

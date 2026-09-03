@@ -1,22 +1,22 @@
 # 记录投票数
 execute if score #event_enable__1 jkpof.int matches 1 if score #event_border.o jkpof.int < #event_border.t jkpof.int run summon marker 0 0 0 {Tags: ["jkpof", "jkpof_votes", "-1"]}
-execute if score #event_enable_1 jkpof.int matches 1 run summon marker 0 0 0 {Tags: ["jkpof", "jkpof_votes", "1"]}
-execute if score #event_enable_2 jkpof.int matches 1 run summon marker 0 0 0 {Tags: ["jkpof", "jkpof_votes", "2"]}
-execute if score #event_enable_3 jkpof.int matches 1 run summon marker 0 0 0 {Tags: ["jkpof", "jkpof_votes", "3"]}
-execute if score #event_enable_4 jkpof.int matches 1 run summon marker 0 0 0 {Tags: ["jkpof", "jkpof_votes", "4"]}
-execute if score #event_enable_5 jkpof.int matches 1 run summon marker 0 0 0 {Tags: ["jkpof", "jkpof_votes", "5"]}
-execute if score #event_enable_6 jkpof.int matches 1 run summon marker 0 0 0 {Tags: ["jkpof", "jkpof_votes", "6"]}
-execute if score #event_enable_7 jkpof.int matches 1 run summon marker 0 0 0 {Tags: ["jkpof", "jkpof_votes", "7"]}
-execute if score #event_enable_8 jkpof.int matches 1 run summon marker 0 0 0 {Tags: ["jkpof", "jkpof_votes", "8"]}
-execute if score #event_enable_9 jkpof.int matches 1 run summon marker 0 0 0 {Tags: ["jkpof", "jkpof_votes", "9"]}
-execute if score #event_enable_10 jkpof.int matches 1 run summon marker 0 0 0 {Tags: ["jkpof", "jkpof_votes", "10"]}
-execute if score #event_enable_11 jkpof.int matches 1 run summon marker 0 0 0 {Tags: ["jkpof", "jkpof_votes", "11"]}
-execute if score #event_enable_12 jkpof.int matches 1 run summon marker 0 0 0 {Tags: ["jkpof", "jkpof_votes", "12"]}
-execute if score #event_enable_13 jkpof.int matches 1 run summon marker 0 0 0 {Tags: ["jkpof", "jkpof_votes", "13"]}
-execute if score #event_enable_14 jkpof.int matches 1 run summon marker 0 0 0 {Tags: ["jkpof", "jkpof_votes", "14"]}
-execute if score #event_enable_15 jkpof.int matches 1 run summon marker 0 0 0 {Tags: ["jkpof", "jkpof_votes", "15"]}
-execute if score #event_enable_16 jkpof.int matches 1 run summon marker 0 0 0 {Tags: ["jkpof", "jkpof_votes", "16"]}
-execute if score #event_enable_17 jkpof.int matches 1 if score #event_nuke.c jkpof.int matches 1.. run summon marker 0 0 0 {Tags: ["jkpof", "jkpof_votes", "17"]}
+execute if score #event_enable_1 jkpof.int matches 1.. run summon marker 0 0 0 {Tags: ["jkpof", "jkpof_votes", "1"]}
+execute if score #event_enable_2 jkpof.int matches 1.. run summon marker 0 0 0 {Tags: ["jkpof", "jkpof_votes", "2"]}
+execute if score #event_enable_3 jkpof.int matches 1.. run summon marker 0 0 0 {Tags: ["jkpof", "jkpof_votes", "3"]}
+execute if score #event_enable_4 jkpof.int matches 1.. run summon marker 0 0 0 {Tags: ["jkpof", "jkpof_votes", "4"]}
+execute if score #event_enable_5 jkpof.int matches 1.. run summon marker 0 0 0 {Tags: ["jkpof", "jkpof_votes", "5"]}
+execute if score #event_enable_6 jkpof.int matches 1.. run summon marker 0 0 0 {Tags: ["jkpof", "jkpof_votes", "6"]}
+execute if score #event_enable_7 jkpof.int matches 1.. run summon marker 0 0 0 {Tags: ["jkpof", "jkpof_votes", "7"]}
+execute if score #event_enable_8 jkpof.int matches 1.. run summon marker 0 0 0 {Tags: ["jkpof", "jkpof_votes", "8"]}
+execute if score #event_enable_9 jkpof.int matches 1.. run summon marker 0 0 0 {Tags: ["jkpof", "jkpof_votes", "9"]}
+execute if score #event_enable_10 jkpof.int matches 1.. run summon marker 0 0 0 {Tags: ["jkpof", "jkpof_votes", "10"]}
+execute if score #event_enable_11 jkpof.int matches 1.. run summon marker 0 0 0 {Tags: ["jkpof", "jkpof_votes", "11"]}
+execute if score #event_enable_12 jkpof.int matches 1.. run summon marker 0 0 0 {Tags: ["jkpof", "jkpof_votes", "12"]}
+execute if score #event_enable_13 jkpof.int matches 1.. run summon marker 0 0 0 {Tags: ["jkpof", "jkpof_votes", "13"]}
+execute if score #event_enable_14 jkpof.int matches 1.. run summon marker 0 0 0 {Tags: ["jkpof", "jkpof_votes", "14"]}
+execute if score #event_enable_15 jkpof.int matches 1.. run summon marker 0 0 0 {Tags: ["jkpof", "jkpof_votes", "15"]}
+execute if score #event_enable_16 jkpof.int matches 1.. run summon marker 0 0 0 {Tags: ["jkpof", "jkpof_votes", "16"]}
+execute if score #event_enable_17 jkpof.int matches 1.. if score #event_nuke.c jkpof.int matches 1.. run summon marker 0 0 0 {Tags: ["jkpof", "jkpof_votes", "17"]}
 
 execute store result score @e[type=marker, tag=jkpof_votes, tag=-1, limit=1] jkpof.int if entity @a[scores={jkpof.vote=99}, gamemode=spectator, tag=jkpof_voted]
 execute store result score @e[type=marker, tag=jkpof_votes, tag=1, limit=1] jkpof.int if entity @a[scores={jkpof.vote=1}, gamemode=spectator, tag=jkpof_voted]

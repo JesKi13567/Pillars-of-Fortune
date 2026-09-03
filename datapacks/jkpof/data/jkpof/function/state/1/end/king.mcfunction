@@ -3,6 +3,6 @@ $scoreboard players operation #king_max jkpof.int > @a[scores={jkpof.id=1..}] jk
 $execute as @a[scores={jkpof.id=1..}] if score @s jkpof.$(type)s = #king_max jkpof.int run tag @s add jkpof_king_max
 
 $scoreboard players add @a[tag=jkpof_king_max] jkpof.stats.king.$(type) 1
-$tellraw @a ["", {storage: "jk:pof", interpret: true, nbt: "txt.POF", color: "yellow"}, {storage: "jk:pof", interpret: true, nbt: "txt.game.end.king.$(type)", color: "green"}, {selector: "@a[tag=jkpof_king_max]"}, {text: " (", color: "gray"}, {score: {name: "#king_max", objective: "jkpof.int"}, color: "$(color)"}, {text: ")", color: "gray"}]
+$tellraw @a ["", {storage: "jk:pof", interpret: true, nbt: "txt.POF.show", color: "yellow"}, {storage: "jk:pof", interpret: true, nbt: "txt.game.end.king.$(type)", color: "green"}, {selector: "@a[tag=jkpof_king_max]"}, {text: " (", color: "gray"}, {score: {name: "#king_max", objective: "jkpof.int"}, color: "$(color)"}, {text: ")", color: "gray"}]
 
 tag @a remove jkpof_king_max

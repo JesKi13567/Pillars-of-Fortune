@@ -1,6 +1,14 @@
 execute as @s[tag=!jkpof_silent] run playsound block.note_block.bell block @a
 execute as @s[tag=!jkpof_silent] run scoreboard players set #countdown jkpof.int 10
 
+execute as @s[tag=jkpof_ctrl_event_preset] run function jkpof:state/0/interaction/lobby/event/preset/global
+
+execute as @s[tag=jkpof_ctrl_ban_spawn_egg, tag=ender_dragon] run function jkpof:state/0/interaction/lobby/item/ban_spawn_egg {id: 'ender_dragon'}
+execute as @s[tag=jkpof_ctrl_ban_spawn_egg, tag=warden] run function jkpof:state/0/interaction/lobby/item/ban_spawn_egg {id: 'warden'}
+execute as @s[tag=jkpof_ctrl_ban_spawn_egg, tag=wither] run function jkpof:state/0/interaction/lobby/item/ban_spawn_egg {id: 'wither'}
+
+execute as @s[tag=jkpof_ctrl_game_mode] run function jkpof:state/0/interaction/ctrl/item/game_mode
+
 execute as @s[tag=jkpof_ctrl_pillar_type] run function jkpof:state/0/interaction/ctrl/pillar/type
 execute as @s[tag=jkpof_ctrl_pillar_distance] run function jkpof:state/0/interaction/ctrl/pillar/distance/add
 execute as @s[tag=jkpof_ctrl_team] run function jkpof:state/0/interaction/ctrl/pillar/count/team
@@ -23,22 +31,24 @@ execute as @s[tag=jkpof_ctrl_bossbar] run function jkpof:state/0/interaction/ctr
 execute as @s[tag=jkpof_ctrl_player_list] run function jkpof:state/0/interaction/ctrl/switcher {id: 'player_list', item: 'oak_sign'}
 
 execute as @s[tag=jkpof_ctrl_upside_down] run function jkpof:state/0/interaction/ctrl/switcher {id: 'upside_down', item: 'magenta_glazed_terracotta'}
-execute as @s[tag=jkpof_ctrl_upside_down] if score #ctrl_upside_down jkpof.int matches 1 run tellraw @a ["", {storage: "jk:pof", interpret: true, nbt: "txt.POF", color: "yellow"}, {storage: "jk:pof", interpret: true, nbt: "txt.lobby.const.settings.special_rules.upside_down.name", color: "green"}, {storage: "jk:pof", interpret: true, nbt: "txt.char.colon"}, {storage: "jk:pof", interpret: true, nbt: "txt.lobby.const.settings.special_rules.global.player_get_on_spawn.p1"}, {storage: "jk:pof", interpret: true, nbt: "txt.lobby.item.gravity_device.name", color: "light_purple"}, {text: "*2", color: "light_purple"}, {storage: "jk:pof", interpret: true, nbt: "txt.lobby.const.settings.special_rules.global.player_get_on_spawn.p2"}, {storage: "jk:pof", interpret: true, nbt: "txt.lobby.const.settings.special_rules.upside_down.lore"}]
+execute as @s[tag=jkpof_ctrl_upside_down] if score #ctrl_upside_down jkpof.int matches 1 run tellraw @a ["", {storage: "jk:pof", interpret: true, nbt: "txt.POF.show", color: "yellow"}, {storage: "jk:pof", interpret: true, nbt: "txt.lobby.const.settings.special_rules.upside_down.name", color: "green"}, {storage: "jk:pof", interpret: true, nbt: "txt.char.colon"}, {storage: "jk:pof", interpret: true, nbt: "txt.lobby.const.settings.special_rules.global.player_get_on_spawn.p1"}, {storage: "jk:pof", interpret: true, nbt: "txt.lobby.item.gravity_device.name", color: "light_purple"}, {text: "*2", color: "light_purple"}, {storage: "jk:pof", interpret: true, nbt: "txt.lobby.const.settings.special_rules.global.player_get_on_spawn.p2"}, {storage: "jk:pof", interpret: true, nbt: "txt.lobby.const.settings.special_rules.upside_down.lore"}]
 execute as @s[tag=jkpof_ctrl_double_health] run function jkpof:state/0/interaction/ctrl/switcher {id: 'double_health', item: 'cake'}
 execute as @s[tag=jkpof_ctrl_init_tool] run function jkpof:state/0/interaction/ctrl/switcher {id: 'init_tool', item: 'shears'}
-execute as @s[tag=jkpof_ctrl_init_tool] if score #ctrl_init_tool jkpof.int matches 1 run tellraw @a ["", {storage: "jk:pof", interpret: true, nbt: "txt.POF", color: "yellow"}, {storage: "jk:pof", interpret: true, nbt: "txt.lobby.const.settings.special_rules.init_tool.name", color: "green"}, {storage: "jk:pof", interpret: true, nbt: "txt.char.colon"}, {storage: "jk:pof", interpret: true, nbt: "txt.lobby.const.settings.special_rules.global.player_get_on_spawn.p1"}, {storage: "jk:pof", interpret: true, nbt: "txt.lobby.item.shears.name", color: "aqua"}, {text: "*1", color: "aqua"}, {storage: "jk:pof", interpret: true, nbt: "txt.lobby.const.settings.special_rules.global.player_get_on_spawn.p2"}, {storage: "jk:pof", interpret: true, nbt: "txt.char.dot"}]
+execute as @s[tag=jkpof_ctrl_init_tool] if score #ctrl_init_tool jkpof.int matches 1 run tellraw @a ["", {storage: "jk:pof", interpret: true, nbt: "txt.POF.show", color: "yellow"}, {storage: "jk:pof", interpret: true, nbt: "txt.lobby.const.settings.special_rules.init_tool.name", color: "green"}, {storage: "jk:pof", interpret: true, nbt: "txt.char.colon"}, {storage: "jk:pof", interpret: true, nbt: "txt.lobby.const.settings.special_rules.global.player_get_on_spawn.p1"}, {storage: "jk:pof", interpret: true, nbt: "txt.lobby.item.shears.name", color: "aqua"}, {text: "*1", color: "aqua"}, {storage: "jk:pof", interpret: true, nbt: "txt.lobby.const.settings.special_rules.global.player_get_on_spawn.p2"}, {storage: "jk:pof", interpret: true, nbt: "txt.char.dot"}]
 execute as @s[tag=jkpof_ctrl_bonus_chest] run function jkpof:state/0/interaction/ctrl/switcher {id: 'bonus_chest', item: 'chest'}
-execute as @s[tag=jkpof_ctrl_bonus_chest] if score #ctrl_bonus_chest jkpof.int matches 1 run tellraw @a ["", {storage: "jk:pof", interpret: true, nbt: "txt.POF", color: "yellow"}, {translate: "selectWorld.bonusItems", color: "green"}, {storage: "jk:pof", interpret: true, nbt: "txt.char.colon"}, {storage: "jk:pof", interpret: true, nbt: "txt.lobby.const.settings.special_rules.global.player_get_on_spawn.p1"}, {storage: "jk:pof", interpret: true, nbt: "txt.lobby.item.loot_chest.name", color: "yellow"}, {text: "*1", color: "yellow"}, {storage: "jk:pof", interpret: true, nbt: "txt.lobby.const.settings.special_rules.global.player_get_on_spawn.p2"}, {storage: "jk:pof", interpret: true, nbt: "txt.char.dot"}]
+execute as @s[tag=jkpof_ctrl_bonus_chest] if score #ctrl_bonus_chest jkpof.int matches 1 run tellraw @a ["", {storage: "jk:pof", interpret: true, nbt: "txt.POF.show", color: "yellow"}, {translate: "selectWorld.bonusItems", color: "green"}, {storage: "jk:pof", interpret: true, nbt: "txt.char.colon"}, {storage: "jk:pof", interpret: true, nbt: "txt.lobby.const.settings.special_rules.global.player_get_on_spawn.p1"}, {storage: "jk:pof", interpret: true, nbt: "txt.lobby.item.loot_chest.name", color: "yellow"}, {text: "*1", color: "yellow"}, {storage: "jk:pof", interpret: true, nbt: "txt.lobby.const.settings.special_rules.global.player_get_on_spawn.p2"}, {storage: "jk:pof", interpret: true, nbt: "txt.char.dot"}]
+execute as @s[tag=jkpof_ctrl_spawn_protect] run function jkpof:state/0/interaction/ctrl/switcher {id: 'spawn_protect', item: 'glass'}
+execute as @s[tag=jkpof_ctrl_spawn_protect] if score #ctrl_spawn_protect jkpof.int matches 1 run tellraw @a ["", {storage: "jk:pof", interpret: true, nbt: "txt.POF.show", color: "yellow"}, {storage: "jk:pof", interpret: true, nbt: "txt.lobby.const.settings.special_rules.spawn_protect.name", color: "green"}, {storage: "jk:pof", interpret: true, nbt: "txt.char.colon"}, {storage: "jk:pof", interpret: true, nbt: "txt.lobby.const.settings.special_rules.spawn_protect.lore.p1"}, {storage: "jk:pof", interpret: true, nbt: "txt.lobby.item.cage.name", color: "yellow"}, {storage: "jk:pof", interpret: true, nbt: "txt.lobby.const.settings.special_rules.spawn_protect.lore.p2"}]
+execute as @s[tag=jkpof_ctrl_zero_friction] run function jkpof:state/0/interaction/ctrl/switcher {id: 'zero_friction', item: 'slime_block'}
+execute as @s[tag=jkpof_ctrl_zero_friction] if score #ctrl_zero_friction jkpof.int matches 1 run tellraw @a ["", {storage: "jk:pof", interpret: true, nbt: "txt.POF.show", color: "yellow"}, {storage: "jk:pof", interpret: true, nbt: "txt.lobby.const.settings.special_rules.zero_friction.name", color: "green"}, {storage: "jk:pof", interpret: true, nbt: "txt.char.colon"}, {storage: "jk:pof", interpret: true, nbt: "txt.lobby.const.settings.special_rules.zero_friction.lore"}]
 
 execute as @s[tag=jkpof_ctrl_lang] run function jkpof:state/0/interaction/ctrl/lang/0
 
 execute as @s[tag=jkpof_display_lobby_item] run function jkpof:state/0/interaction/lobby/item/global
-execute as @s[tag=jkpof_display_event_order] run function jkpof:state/0/interaction/lobby/event/show
-execute as @s[tag=jkpof_display_event_switch] run function jkpof:state/0/interaction/lobby/event/switch
-execute as @s[tag=jkpof_display_event_ctrl] run function jkpof:state/0/interaction/lobby/event/ctrl
+execute as @s[tag=jkpof_display_event_order] run function jkpof:state/0/interaction/lobby/event/show/global
+execute as @s[tag=jkpof_display_event_switch] run function jkpof:state/0/interaction/lobby/event/switch/global
+execute as @s[tag=jkpof_display_event_ctrl] run function jkpof:state/0/interaction/lobby/event/ctrl/global
 execute as @s[tag=jkpof_display_event_num] run function jkpof:state/0/interaction/lobby/event/num
-execute as @s[tag=jkpof_display_event_plus_switch] run function jkpof:state/0/interaction/lobby/event/plus/switch
-execute as @s[tag=jkpof_display_event_plus_ctrl] run function jkpof:state/0/interaction/lobby/event/plus/ctrl
 
 execute as @s[tag=jkpof_ctrl_map, tag=-1] run function jkpof:state/0/interaction/ctrl/ground/map/num {n: -1}
 execute as @s[tag=jkpof_ctrl_map, tag=0] run function jkpof:state/0/interaction/ctrl/ground/map/num {n: 0}
@@ -60,5 +70,5 @@ execute as @s[tag=jkpof_ctrl_map, tag=15] run function jkpof:state/0/interaction
 execute as @s[tag=jkpof_ctrl_map, tag=16] run function jkpof:state/0/interaction/ctrl/ground/map/num {n: 16}
 execute as @s[tag=jkpof_ctrl_map, tag=17] run function jkpof:state/0/interaction/ctrl/ground/map/num {n: 17}
 
-execute as @s[tag=jkpof_ctrl_preset] run function jkpof:state/0/interaction/ctrl/preset/show
+execute as @s[tag=jkpof_ctrl_preset] run function jkpof:state/0/interaction/ctrl/preset/global
 execute as @s[tag=jkpof_ctrl] run function jkpof:state/0/interaction/ctrl/preset/custom

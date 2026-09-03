@@ -1,8 +1,10 @@
-scoreboard players add #ctrl_preset jkpof.int 1
-execute if score #ctrl_preset jkpof.int matches 2.. run scoreboard players set #ctrl_preset jkpof.int 0
+execute if score #ctrl_preset jkpof.int matches -1 run data modify entity @e[type=item_display, tag=jkpof_display_ctrl_preset, limit=1] item.id set value "nether_star"
+execute if score #ctrl_preset jkpof.int matches -1 run data modify entity @e[type=text_display, tag=jkpof_display_text, limit=1] text set value [{storage: "jk:pof", interpret: true, nbt: "txt.lobby.global.custom"}]
+execute if score #ctrl_preset jkpof.int matches 0 run data modify entity @e[type=item_display, tag=jkpof_display_ctrl_preset, limit=1] item.id set value "iron_ingot"
+execute if score #ctrl_preset jkpof.int matches 0 run data modify entity @e[type=text_display, tag=jkpof_display_text, limit=1] text set value [{storage: "jk:pof", interpret: true, nbt: "txt.lobby.global.default"}]
+execute if score #ctrl_preset jkpof.int matches 1 run data modify entity @e[type=item_display, tag=jkpof_display_ctrl_preset, limit=1] item.id set value "spyglass"
+execute if score #ctrl_preset jkpof.int matches 1 run data modify entity @e[type=text_display, tag=jkpof_display_text, limit=1] text set value [{storage: "jk:pof", interpret: true, nbt: "txt.lobby.preset.focus"}]
+execute if score #ctrl_preset jkpof.int matches 2 run data modify entity @e[type=item_display, tag=jkpof_display_ctrl_preset, limit=1] item.id set value "fishing_rod"
+execute if score #ctrl_preset jkpof.int matches 2 run data modify entity @e[type=text_display, tag=jkpof_display_text, limit=1] text set value [{storage: "jk:pof", interpret: true, nbt: "txt.lobby.preset.fishing"}]
 
-function jkpof:state/0/interaction/ctrl/preset/_default
-execute if score #ctrl_preset jkpof.int matches 1 run function jkpof:state/0/interaction/ctrl/preset/_focus
-
-# 其他所有按钮的显示
-function jkpof:state/0/interaction/ctrl/preset/show_ctrl
+data modify entity @e[type=item_display, tag=jkpof_display_ctrl_preset, limit=1] CustomName set from entity @e[type=text_display, tag=jkpof_display_text, limit=1] text

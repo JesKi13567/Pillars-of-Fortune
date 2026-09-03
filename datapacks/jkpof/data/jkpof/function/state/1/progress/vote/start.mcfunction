@@ -4,23 +4,23 @@ tellraw @a[gamemode=spectator] [{storage: "jk:pof", interpret: true, nbt: "txt.V
 
 scoreboard players set #vote_show_color jkpof.int -1
 execute if score #event_enable__1 jkpof.int matches 1 if score #event_border.o jkpof.int < #event_border.t jkpof.int run function jkpof:state/1/progress/vote/colored {id: '-1'}
-execute if score #event_enable_1 jkpof.int matches 1 run function jkpof:state/1/progress/vote/colored {id: '1'}
-execute if score #event_enable_2 jkpof.int matches 1 run function jkpof:state/1/progress/vote/colored {id: '2'}
-execute if score #event_enable_3 jkpof.int matches 1 run function jkpof:state/1/progress/vote/colored {id: '3'}
-execute if score #event_enable_4 jkpof.int matches 1 run function jkpof:state/1/progress/vote/colored {id: '4'}
-execute if score #event_enable_5 jkpof.int matches 1 run function jkpof:state/1/progress/vote/colored {id: '5'}
-execute if score #event_enable_6 jkpof.int matches 1 run function jkpof:state/1/progress/vote/colored {id: '6'}
-execute if score #event_enable_7 jkpof.int matches 1 run function jkpof:state/1/progress/vote/colored {id: '7'}
-execute if score #event_enable_8 jkpof.int matches 1 run function jkpof:state/1/progress/vote/colored {id: '8'}
-execute if score #event_enable_9 jkpof.int matches 1 run function jkpof:state/1/progress/vote/colored {id: '9'}
-execute if score #event_enable_10 jkpof.int matches 1 run function jkpof:state/1/progress/vote/colored {id: '10'}
-execute if score #event_enable_11 jkpof.int matches 1 run function jkpof:state/1/progress/vote/colored {id: '11'}
-execute if score #event_enable_12 jkpof.int matches 1 run function jkpof:state/1/progress/vote/colored {id: '12'}
-execute if score #event_enable_13 jkpof.int matches 1 run function jkpof:state/1/progress/vote/colored {id: '13'}
-execute if score #event_enable_14 jkpof.int matches 1 run function jkpof:state/1/progress/vote/colored {id: '14'}
-execute if score #event_enable_15 jkpof.int matches 1 run function jkpof:state/1/progress/vote/colored {id: '15'}
-execute if score #event_enable_16 jkpof.int matches 1 run function jkpof:state/1/progress/vote/colored {id: '16'}
-execute if score #event_enable_17 jkpof.int matches 1 if score #event_nuke.c jkpof.int matches 1.. run function jkpof:state/1/progress/vote/colored {id: '17'}
+execute if score #event_enable_1 jkpof.int matches 1.. run function jkpof:state/1/progress/vote/colored {id: '1'}
+execute if score #event_enable_2 jkpof.int matches 1.. run function jkpof:state/1/progress/vote/colored {id: '2'}
+execute if score #event_enable_3 jkpof.int matches 1.. run function jkpof:state/1/progress/vote/colored {id: '3'}
+execute if score #event_enable_4 jkpof.int matches 1.. run function jkpof:state/1/progress/vote/colored {id: '4'}
+execute if score #event_enable_5 jkpof.int matches 1.. run function jkpof:state/1/progress/vote/colored {id: '5'}
+execute if score #event_enable_6 jkpof.int matches 1.. run function jkpof:state/1/progress/vote/colored {id: '6'}
+execute if score #event_enable_7 jkpof.int matches 1.. run function jkpof:state/1/progress/vote/colored {id: '7'}
+execute if score #event_enable_8 jkpof.int matches 1.. run function jkpof:state/1/progress/vote/colored {id: '8'}
+execute if score #event_enable_9 jkpof.int matches 1.. run function jkpof:state/1/progress/vote/colored {id: '9'}
+execute if score #event_enable_10 jkpof.int matches 1.. run function jkpof:state/1/progress/vote/colored {id: '10'}
+execute if score #event_enable_11 jkpof.int matches 1.. run function jkpof:state/1/progress/vote/colored {id: '11'}
+execute if score #event_enable_12 jkpof.int matches 1.. run function jkpof:state/1/progress/vote/colored {id: '12'}
+execute if score #event_enable_13 jkpof.int matches 1.. run function jkpof:state/1/progress/vote/colored {id: '13'}
+execute if score #event_enable_14 jkpof.int matches 1.. run function jkpof:state/1/progress/vote/colored {id: '14'}
+execute if score #event_enable_15 jkpof.int matches 1.. run function jkpof:state/1/progress/vote/colored {id: '15'}
+execute if score #event_enable_16 jkpof.int matches 1.. run function jkpof:state/1/progress/vote/colored {id: '16'}
+execute if score #event_enable_17 jkpof.int matches 1.. if score #event_nuke.c jkpof.int matches 1.. run function jkpof:state/1/progress/vote/colored {id: '17'}
 
 tellraw @a[gamemode=spectator] [\
 {selector: "@e[type=marker, tag=jkpof_vote_show, tag=-1]", hover_event: {action: "show_text", value: {selector: "@e[type=text_display, tag=jkpof_event_pool, tag=-1, limit=1]", color: "gold"}}, click_event: {action: "run_command", command: "/trigger jkpof.vote set 99"}}, \

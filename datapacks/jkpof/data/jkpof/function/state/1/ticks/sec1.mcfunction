@@ -5,8 +5,7 @@ execute if score #before_start jkpof.int matches 1.. run function jkpof:state/1/
 execute if score #before_start jkpof.int matches 0 run scoreboard players add #time_last jkpof.int 1
 
 # 给资源
-scoreboard players remove #time_res jkpof.int 1
-execute if score #time_res jkpof.int matches ..0 run function jkpof:state/1/give/start
+execute if score #ctrl_game_mode jkpof.int matches 0 run function jkpof:state/1/give/start
 
 # 清理掉落物
 execute if score #event_broom jkpof.int matches 1 run function jkpof:state/1/progress/event/broom

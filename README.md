@@ -15,20 +15,23 @@ The language can be switched near the lobby spawn point (has hint in initial), a
 ### 目录
 1. [介绍](#介绍)
 
-1. [设置](#设置)
+2. [设置](#设置)
 
-1. [事件](#事件)
+3. [事件](#事件)
 
-1. [道具](#道具)
+4. [道具](#道具)
 
-1. [命令](#命令)
+5. [命令](#命令)
 
 ### 介绍
 玩家初始生成在各个柱子顶端，每隔一段时间获得随机物品，最终目标是活到最后。
+- 若游戏模式为**幸运之钓**，则需要通过钓鱼获取物品。
 
 本地图支持 2~12 人/队 游玩，若开启队伍模式，理论上人数不限。
 
 如何开始：玩家站在**黄绿色混凝土**或**羊毛**上方等待即可。
+
+服务器使用：在 `server.properties` 文件中调整 `spawn-protection=0`。
 
 ### 设置
 所有设置都在大厅操作。
@@ -59,6 +62,8 @@ The language can be switched near the lobby spawn point (has hint in initial), a
 ||双倍生命值| \ |
 ||初始工具|玩家初始获得「挖掘一切」*1。|
 ||奖励箱|玩家初始获得「战利品箱」*1。|
+||出生点保护|玩家初始被迷你版「囚笼」保护。|
+||零摩擦弹性碰撞试验场|所有实体都没有摩擦力，碰撞均为弹性碰撞，且没有摔落伤害。|
 
 以下设置在「游戏」附近调整。
 
@@ -89,7 +94,7 @@ The language can be switched near the lobby spawn point (has hint in initial), a
 |五谷丰登|残血玩家恢复满血，满血玩家获得一次随机道具抽取。|
 |钢铁洪流|天上随机掉落铁质方块和实体。|
 |吸星大法|玩家附近的掉落物会被自动吸附。|
-|小孩模式|玩家尺寸变为原来的 1/2 。效果持续至下个事件触发时重置。|
+|小孩模式|玩家尺寸变为原来的 1/2。效果持续至下个事件触发时重置。|
 |触则生变|玩家接触的方块变为随机方块。效果持续至下个事件触发时重置。|
 |万物归零|杀死场上所有非玩家生物（NPC）。|
 |世界核平|将地图按十字分为四个区域，随机一处区域方块及实体被彻底抹除。最多触发 4 次。|
@@ -112,7 +117,7 @@ The language can be switched near the lobby spawn point (has hint in initial), a
 |雪上加霜|残血玩家失去一件道具，满血玩家受到 6 点伤害。|
 |铜器时代|天上随机掉落铜质方块和实体。|
 |斥星大法|玩家附近的掉落物会被自动排斥。|
-|巨细无常|玩家尺寸变为原来的 50% ~ 125% 。效果持续至下个事件触发时重置。|
+|巨细无常|玩家尺寸变为原来的 50%~125%。效果持续至下个事件触发时重置。|
 |范围生变|玩家接触的更大范围方块变为随机方块。效果持续至下个事件触发时重置。|
 |镜像军团|复制场上所有非玩家生物（NPC）。|
 |琥珀标本|将地图按十字分为四个区域，随机一处区域被填满橙色染色玻璃。最多触发 4 次。|
@@ -127,7 +132,7 @@ The language can be switched near the lobby spawn point (has hint in initial), a
 |刷怪蛋|苦力怕刷怪蛋：均为自燃苦力怕。狼，猫＆鹦鹉：都是驯服的。部分生物拥有更多变种。弓/弩：能发射刷怪蛋并生成。|
 |玩家的头|玩家死亡会掉落头颅。|
 |附魔书|按 [右键] 给副手物品附魔。|
-|附魔金毒马铃薯| \ |
+|时间控制器|以下效果中随机触发其一：1. 冻结场上所有 NPC 30 秒。（可叠加）2. 增加 1/4 游戏天。3. 昼夜流转冻结/解冻。4. 修改昼夜流转倍率。|
 |挖掘一切|能挖掘生存模式下的所有可挖掘方块。|
 |击退棒|击退 V|
 |急救平台|在脚下生成一层黏液块平台。|
@@ -137,7 +142,7 @@ The language can be switched near the lobby spawn point (has hint in initial), a
 |无敌星|使用后无敌 15 秒。|
 |可随处放置的末地水晶| \ |
 |秒人斧|1 点耐久，10 亿伤害。|
-|传送卷轴|以下三种效果中随机触发其一：1. 传送至出生点。2. 传送至任意玩家位置。3. 传送至地面中心点。|
+|传送卷轴|以下效果中随机触发其一：1. 传送至出生点。2. 传送至任意玩家位置。3. 传送至地面中心点。|
 |可发射的火球|按 [右键] 来发射。|
 |可发射的末影龙火球|按 [右键] 来发射。|
 |湮灭爆弹|湮灭目标区域 9×9×9 范围的所有方块。|
@@ -178,10 +183,13 @@ The language can be switched near the lobby spawn point (has hint in initial), a
 
 ### 介紹
 開場玩家重生在每根柱子的頂端，每隔一段時間獲得隨機物品，最終目標是活到最後。
+- 若游戏模式为**幸運之钓**，则需要通过钓鱼获取物品。
 
 本地圖支援 2~12 人/隊 遊玩，若開啟隊伍模式，理論上人數不限。
 
 如何開始：玩家站在**淺綠色混凝土**或**羊毛**上方等待即可。
+
+服务器使用：在 `server.properties` 文件中调整 `spawn-protection=0`。
 
 ### 設定
 所有設定都在大廳操作。
@@ -212,6 +220,8 @@ The language can be switched near the lobby spawn point (has hint in initial), a
 ||雙倍生命值| \ |
 ||初始工具|玩家初始獲得「挖掘一切」* 1。|
 ||獎勵箱|玩家初始獲得「戰利品箱」* 1。|
+||出生点保护|玩家初始被迷你版「牢籠」保护。|
+||零摩擦弹性碰撞试验场|所有实体都没有摩擦力，碰撞均为弹性碰撞，且没有摔落伤害。|
 
 以下設定在「遊戲」附近調整。
 
@@ -242,7 +252,7 @@ The language can be switched near the lobby spawn point (has hint in initial), a
 |五谷丰登|残血玩家恢复满血，满血玩家获得一次随机道具抽取。|
 |钢铁洪流|天上随机掉落铁质方块和实体。|
 |吸星大法|玩家附近的掉落物会被自动吸附。|
-|小孩模式|玩家大小變為原來的 1/2 。效果持續至下個事件觸發時重設。|
+|小孩模式|玩家大小變為原來的 1/2。效果持續至下個事件觸發時重設。|
 |觸則生變|玩家接觸的方塊變為隨機方塊。效果持續至下個事件觸發時重設。|
 |万物归零|杀死场上所有非玩家生物（NPC）。|
 |世界核平|将地图按十字分为四个区域，随机一处区域方块及实体被彻底抹除。最多触发 4 次。|
@@ -265,7 +275,7 @@ The language can be switched near the lobby spawn point (has hint in initial), a
 |雪上加霜|残血玩家失去一件道具，满血玩家受到 6 点伤害。|
 |铜器时代|天上随机掉落铜质方块和实体。|
 |斥星大法|玩家附近的掉落物会被自动排斥。|
-|巨细无常|玩家尺寸变为原来的 50% ~ 125% 。效果持續至下個事件觸發時重設。|
+|巨细无常|玩家尺寸变为原来的 50%~125%。效果持續至下個事件觸發時重設。|
 |范围生变|玩家接触的更大范围方块变为随机方块。效果持續至下個事件觸發時重設。|
 |镜像军团|复制场上所有非玩家生物（NPC）。|
 |琥珀标本|将地图按十字分为四个区域，随机一处区域被填满橙色染色玻璃。最多触发 4 次。|
@@ -280,7 +290,7 @@ The language can be switched near the lobby spawn point (has hint in initial), a
 |生怪蛋|苦力怕生怪蛋：均為自燃苦力怕。狼，貓＆鸚鵡：都是馴服的。部分生物擁有更多變種。弓/弩：能發射生怪蛋並生成。|
 |玩家頭顱|玩家死亡會掉落頭顱。|
 |附魔書|按 [右鍵] 給副手物品附魔。|
-|附魔金毒馬鈴薯| \ |
+|時間控制器|以下效果中隨機觸發其一：1. 冻结场上所有 NPC 30 秒。（可叠加）2. 增加 1/4 遊戲天。3. 昼夜流转冻结/解冻。4. 修改昼夜流转倍率。|
 |挖掘一切|能挖掘生存模式下的所有可挖掘方塊。|
 |擊退棒|擊退 V|
 |急救平台|在腳下生成一層史萊姆方塊平台。|
@@ -290,7 +300,7 @@ The language can be switched near the lobby spawn point (has hint in initial), a
 |無敵星|使用後無敵 15 秒。|
 |可隨處放置的終界水晶| \ |
 |秒人斧|1 點耐久，10 億傷害。|
-|傳送卷軸|以下三種效果中隨機觸發其一：1. 傳送至出生點。2. 傳送至任意玩家位置。3. 傳送至地面中心點。|
+|傳送卷軸|以下效果中隨機觸發其一：1. 傳送至出生點。2. 傳送至任意玩家位置。3. 傳送至地面中心點。|
 |可發射的火球|按 [右鍵] 來發射。|
 |可發射的龍炎彈|按 [右鍵] 來發射。|
 |湮滅爆彈|湮滅目標區域 9×9×9 範圍的所有方塊。|
@@ -320,20 +330,23 @@ The language can be switched near the lobby spawn point (has hint in initial), a
 ### Contents
 1. [Info](#Info)
 
-1. [Settings](#Settings)
+2. [Settings](#Settings)
 
-1. [Events](#Events)
+3. [Events](#Events)
 
-1. [Items](#Items)
+4. [Items](#Items)
 
-1. [Commands](#Commands)
+5. [Commands](#Commands)
 
 ### Info
 Players spawn on top of pillars at the beginning, receive random items at regular intervals, their goal is to be the last player surviving.
+- If the game mode is **Fishing of Fortune**, players need to fish to receive items.
 
 This map supports 2~12 players/teams. If Team Mode is on, player count has no limitation (in theory).
 
-How to start: players need to stand on **Lime Concrete** or **wool** and wait.
+How to start: players need to stand on **Lime Concrete** or **Any Color Wool** and wait.
+
+Server use: In the `server.properties` file, set `spawn-protection=0`.
 
 ### Settings
 All settings can be configured in the lobby.
@@ -359,11 +372,13 @@ All settings can be configured in the lobby.
 ||Event Progress Bar|Can toggle its display|
 ||List Health|Can toggle its display|
 ||**Presets**|Settings' presets|
-|**Map Theme**| \ |Includes Random; affects Pillars & Ground; if enabled, the theme name will be displayed at the beginning, can also be customed|
+|**Map Theme**| \ |Includes Random; affects Pillars & Ground; if enabled, the theme name will be displayed at the beginning, can also be customized|
 |**Special Rules**|Upside Down Mode|Players get "Gravity Device"*2 on spawn, the pillars are under the ground, some events will be influenced.|
 ||Double Health| \ |
 ||Init Tool|Players get "Mine Everything"*1 on spawn.|
 ||Bonus Chest|Players get "Loot Chest"*1 on spawn.|
+||Spawn Protection|Players start protected by a mini "Cage".|
+||Zero-Friction Elastic Collision Field|All entities have no friction, all collisions are perfectly elastic, and there is no fall damage.|
 
 Following settings can be adjusted near the "Play" area.
 
@@ -394,7 +409,7 @@ Events are displayed in the lobby, and players can toggle their activation statu
 |Bountiful Harvest|Injured players heal to full, healthy players draw a random prop.|
 |Iron Torrent|Iron-made blocks and entities fall from the sky.|
 |Loot Magnet|Nearby items are attracted to players.|
-|Kid Mode|Set players' Scale to 1/2 . Status resets on the next event.|
+|Kid Mode|Set players' Scale to 1/2. Status resets on the next event.|
 |Touch Shuffle|Blocks players touch turn random. Status resets on the next event.|
 |The Purge|Kill all Non-Player Creatures (NPCs) on the field.|
 |Nuclear Peace|Split the map into 4 quadrants, randomly erase 1 of them. Max triggers 4 times.|
@@ -417,7 +432,7 @@ Event+ are variants of the original events.
 |Even Worse|Injured players lose one prop, healthy players take 6 damage.|
 |Copper Age|Copper-made blocks and entities fall from the sky.|
 |Loot Repel|Nearby items are repelled from players.|
-|Scale Roulette|Set players' Scale to 50% ~ 125%. Status resets on the next event.|
+|Scale Roulette|Set players' Scale to 50%~125%. Status resets on the next event.|
 |Range Shuffle|Blocks in a wider range around players turn random. Status resets on the next event.|
 |Mirror Legion|Clone all Non-Player Creatures (NPCs) on the field.|
 |Amber Specimen|Split the map into 4 quadrants, randomly fill 1 of them with Orange Stained Glass. Max triggers 4 times.|
@@ -432,7 +447,7 @@ Items are also displayed in the lobby.
 |Spawn Egg|Creeper Spawn Egg: spawns Self-Igniting Creeper. Wolf, Cat & Parrot: they are tamed. Some mobs have more variants. Bow/Crossbow: Can shoot spawn eggs then summon them.|
 |Player Head|Players drop their own heads upon death.|
 |Enchanted Book|Press [Right Button] to enchant offhand item.|
-|Enchanted Golden Poisonous Potato| \ |
+|Time Controller|Randomly trigger one of the following effects: 1. Freeze all NPCs on the field for 30s. (Stackable) 2. Skip 1/4 game day. 3. Freeze / Unfreeze the day-night cycle. 4. Change the day-night cycle rate.|
 |Mine Everything|Mines any mineable block in Survival Mode.|
 |Knockback Stick|Knockback V|
 |Aid Platform|Place a Slime Block platform under your feet.|
@@ -442,14 +457,14 @@ Items are also displayed in the lobby.
 |Super Star|Invulnerable for 15s.|
 |Place-Anywhere End Crystal| \ |
 |One-Hit Axe|1 Durability · 1B Damage|
-|Teleport Scroll|Randomly trigger one of the following three effects: 1. Teleport to spawn point. 2. Teleport to a random player's location. 3. Teleport to the center of the ground.|
+|Teleport Scroll|Randomly trigger one of the following effects: 1. Teleport to spawn point. 2. Teleport to a random player's location. 3. Teleport to the center of the ground.|
 |Shootable Fireball|Press [Right Button] to shoot.|
 |Shootable Dragon Fireball|Press [Right Button] to shoot.|
 |Null Bomb|Erases all blocks in a 9×9×9 area.|
 |Arch-Thief's Spectral Hand|Steal one inventory slot item from the pointed player.|
 |Beacon|Mainhand: Beacon + Offhand: Player Head + Sneak = Respawn & Join Team.|
 |Loot Chest|Random loot from vanilla Minecraft, which is doubled!|
-|Quick Defend Tower|It will build a tower soon after you placed.|
+|Quick Defend Tower|It will build a tower soon after you place it.|
 |TNT|Self-Igniting TNT & Throwable TNT: Explode in 3 seconds.|
 |Cage|Surrounds the player with two layers of Glass.|
 |Void Charm|When you fall into lower void, send you back.|

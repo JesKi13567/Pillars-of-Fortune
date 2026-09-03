@@ -5,4 +5,4 @@ clear @s
 gamemode spectator @s
 tp @s @r[scores={jkpof.state=2}]
 team join jkpof.spec
-tellraw @s [{storage: "jk:pof", interpret: true, nbt: "txt.POF", color: "yellow"}, {storage: "jk:pof", interpret: true, nbt: "txt.spectator.by.not_in", color: "green"}]
+tellraw @s [{storage: "jk:pof", interpret: true, nbt: "txt.POF.show", color: "yellow"}, {storage: "jk:pof", interpret: true, nbt: "txt.spectator.by.not_in", color: "green"}]

@@ -1,14 +1,6 @@
-function jkpof:state/0/interaction/ctrl/preset/show_preset
+function jkpof:state/0/interaction/ctrl/preset/show
 
-scoreboard players remove #ctrl_item_mode jkpof.int 1
-function jkpof:state/0/interaction/ctrl/item/mode
-scoreboard players remove #ctrl_item_count_order jkpof.int 1
-function jkpof:state/0/interaction/ctrl/item/count
-scoreboard players remove #ctrl_item_time jkpof.int 1
-function jkpof:state/0/interaction/ctrl/item/time
-scoreboard players remove #ctrl_item_prop_chance jkpof.int 1
-function jkpof:state/0/interaction/ctrl/item/prop_chance
-
+function jkpof:state/0/interaction/ctrl/item/show
 function jkpof:state/0/interaction/ctrl/pillar/show
 function jkpof:state/0/interaction/ctrl/ground/show
 
@@ -36,3 +28,7 @@ scoreboard players remove #ctrl_init_tool jkpof.int 1
 function jkpof:state/0/interaction/ctrl/switcher {id: 'init_tool', item: 'shears'}
 scoreboard players remove #ctrl_bonus_chest jkpof.int 1
 function jkpof:state/0/interaction/ctrl/switcher {id: 'bonus_chest', item: 'chest'}
+scoreboard players remove #ctrl_spawn_protect jkpof.int 1
+function jkpof:state/0/interaction/ctrl/switcher {id: 'spawn_protect', item: 'glass'}
+scoreboard players remove #ctrl_zero_friction jkpof.int 1
+function jkpof:state/0/interaction/ctrl/switcher {id: 'zero_friction', item: 'slime_block'}
