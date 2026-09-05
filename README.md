@@ -92,10 +92,10 @@ The language can be switched near the lobby spawn point (has hint in initial), a
 |隐形涂层|所有实体隐形，玩家背包物品也不可见。|
 |背叛之时|随机选中一名玩家转为全员敌对状态，其余玩家结成同一队伍。效果持续至下个事件触发时重置。|
 |五谷丰登|残血玩家恢复满血，满血玩家获得一次随机道具抽取。|
-|钢铁洪流|天上随机掉落铁质方块和实体。|
+|钢铁洪流|天上随机掉落铁质方块和生物。|
 |吸星大法|玩家附近的掉落物会被自动吸附。|
 |小孩模式|玩家尺寸变为原来的 1/2。效果持续至下个事件触发时重置。|
-|触则生变|玩家接触的方块变为随机方块。效果持续至下个事件触发时重置。|
+|触则生变|玩家接触的方块（不包括水＆熔岩）变为随机方块。效果持续至下个事件触发时重置。|
 |万物归零|杀死场上所有非玩家生物（NPC）。|
 |世界核平|将地图按十字分为四个区域，随机一处区域方块及实体被彻底抹除。最多触发 4 次。|
 
@@ -109,16 +109,16 @@ The language can be switched near the lobby spawn point (has hint in initial), a
 |雷霆万劫|给予至多 99 名随机玩家一发闪电束，同时随机附魔背包中的一格栏位。|
 |失重漫步|所有玩家获得更强的 跳跃提升 + 无摔落伤害 效果。|
 |鸡飞蛋打|随机选取 2 名玩家确定一条水平投影直线，在限高屏障处生成一只鸡，其沿此直线飞行途中会定时投放湮灭爆弹。|
-|移形换影|所有玩家和生物随机交换位置，也可能不会。|
+|移形换影|所有生物随机交换位置，也可能不会。|
 |道具空投|接下来的 3 次道具空投将随机触发以下情况：1. 任意道具。(80%) 2. 随机附魔书。(10%) 3. 随机药水。(10%)|
 |天罗地网|每位玩家横向四周铺满屏障。|
 |荧光涂层|所有实体发光。|
 |卧底之时|随机一名玩家成为卧底，其身份不可见。效果持续至下个事件触发时重置。|
 |雪上加霜|残血玩家失去一件道具，满血玩家受到 6 点伤害。|
-|铜器时代|天上随机掉落铜质方块和实体。|
+|铜器时代|天上随机掉落铜质方块和生物。|
 |斥星大法|玩家附近的掉落物会被自动排斥。|
 |巨细无常|玩家尺寸变为原来的 50%~125%。效果持续至下个事件触发时重置。|
-|范围生变|玩家接触的更大范围方块变为随机方块。效果持续至下个事件触发时重置。|
+|范围生变|玩家接触的更大范围方块（不包括水＆熔岩）变为随机方块。效果持续至下个事件触发时重置。|
 |镜像军团|复制场上所有非玩家生物（NPC）。|
 |琥珀标本|将地图按十字分为四个区域，随机一处区域被填满橙色染色玻璃。最多触发 4 次。|
 
@@ -129,7 +129,7 @@ The language can be switched near the lobby spawn point (has hint in initial), a
 |-|-|
 |物品堆叠|大部分无耐久物品最大堆叠个数均修改为 64。|
 |下界合金锭|可直接用于合成下界合金制的物品。|
-|刷怪蛋|苦力怕刷怪蛋：均为自燃苦力怕。狼，猫＆鹦鹉：都是驯服的。部分生物拥有更多变种。弓/弩：能发射刷怪蛋并生成。|
+|刷怪蛋|苦力怕刷怪蛋：均为自燃苦力怕。狼，猫＆鹦鹉：都是驯服的。部分生物拥有更多变种。弓/弩：能发射刷怪蛋并生成。部分刷怪蛋可在下方禁用。|
 |玩家的头|玩家死亡会掉落头颅。|
 |附魔书|按 [右键] 给副手物品附魔。|
 |时间控制器|以下效果中随机触发其一：1. 冻结场上所有 NPC 30 秒。（可叠加）2. 增加 1/4 游戏天。3. 昼夜流转冻结/解冻。4. 修改昼夜流转倍率。|
@@ -267,7 +267,7 @@ The language can be switched near the lobby spawn point (has hint in initial), a
 |雷霆万劫|给予至多 99 名随机玩家一发闪电束，同时随机附魔背包中的一格栏位。|
 |失重漫步|所有玩家获得更强的 跳跃提升 + 无摔落伤害 效果。|
 |鸡飞蛋打|随机选取 2 名玩家确定一条水平投影直线，在限高屏障处生成一只鸡，其沿此直线飞行途中会定时投放湮灭爆弹。|
-|移形换影|所有玩家和生物随机交换位置，也可能不会。|
+|移形换影|所有生物随机交换位置，也可能不会。|
 |道具空投|接下来的 3 次道具空投将随机触发以下情况：1. 任意道具。(80%) 2. 随机附魔书。(10%) 3. 随机药水。(10%)|
 |天罗地网|每位玩家横向四周铺满屏障。|
 |荧光涂层|所有实体发光。|
@@ -378,14 +378,14 @@ All settings can be configured in the lobby.
 ||Init Tool|Players get "Mine Everything"*1 on spawn.|
 ||Bonus Chest|Players get "Loot Chest"*1 on spawn.|
 ||Spawn Protection|Players start protected by a mini "Cage".|
-||Zero-Friction Elastic Collision Field|All entities have no friction, all collisions are perfectly elastic, and there is no fall damage.|
+||Zero-Friction Elastic Collision Field|All mobs have no friction, all collisions are perfectly elastic, and there is no fall damage.|
 
 Following settings can be adjusted near the "Play" area.
 
 |Settings|Description|
 |-|-|
 |**Pillar Count**|The number of players or teams, including the options of *Auto/2/../12*|
-|**Team Mode**|Can be enabled only if the Pillar Count is not set to "Auto"|
+|**Team Mode**|Can be enabled only if the Pillar Count is not "Auto"|
 
 ### Events
 Events are displayed in the lobby, and players can toggle their activation status.
@@ -401,16 +401,16 @@ Events are displayed in the lobby, and players can toggle their activation statu
 |Lightning Strike|A random player will be struck by a Lightning Bolt, and a random slot in their inventory will receive a random enchantment.|
 |Moon Walk|All players will receive Jump Boost + Slow Falling effects.|
 |Bomb Chicken|Randomly select 2 players to form a horizontal projection line, then summon a Chicken at height-limit barrier. As it flies along this line, it will drop Primed TNT at regular intervals.|
-|Chain Swap|All players' positions will be randomly swapped, or not.|
+|Chain Swap|All players randomly swap positions, or not.|
 |Prop Supply|The next 3 items players receive will be randomly chosen from the following: 1. 60% chance of being props. (80%) 2. Plus a random Enchanted Book. (10%) 3. Plus a random Potion. (10%)|
 |Vertical Lock|Fill the layers above and below each player with Barrier.|
 |Invisible Coating|All entities & inventory items are invisible.|
 |Betrayal Hour|One random player becomes fully hostile to all others, while the remaining players are auto-allied. Status resets on the next event.|
 |Bountiful Harvest|Injured players heal to full, healthy players draw a random prop.|
-|Iron Torrent|Iron-made blocks and entities fall from the sky.|
-|Loot Magnet|Nearby items are attracted to players.|
+|Iron Torrent|Iron-made blocks and mobs fall from the sky.|
+|Loot Magnet|Nearby dropped items are attracted to players.|
 |Kid Mode|Set players' Scale to 1/2. Status resets on the next event.|
-|Touch Shuffle|Blocks players touch turn random. Status resets on the next event.|
+|Touch Shuffle|Blocks (not including Water & Lava) players touch turn random. Status resets on the next event.|
 |The Purge|Kill all Non-Player Creatures (NPCs) on the field.|
 |Nuclear Peace|Split the map into 4 quadrants, randomly erase 1 of them. Max triggers 4 times.|
 
@@ -424,16 +424,16 @@ Event+ are variants of the original events.
 |Thunder Doom|Max of 99 players will be struck by a Lightning Bolt, and a random slot in their inventory will receive a random enchantment.|
 |Weightless Walk|All players will receive stronger Jump Boost + No Fall Damage effects.|
 |Null Chicken|Randomly select 2 players to form a horizontal projection line, then summon a Chicken at height-limit barrier. As it flies along this line, it will drop Null Bomb at regular intervals.|
-|Universal Swap|All players and mobs randomly swap positions, or not.|
+|Universal Swap|All mobs randomly swap positions, or not.|
 |Prop Drop|The next 3 prop drops will be randomly chosen from the following: 1. Any prop. (80%) 2. A random Enchanted Book. (10%) 3. A random Potion. (10%)|
 |Horizontal Shield|Fill the horizontal surroundings of each player with Barrier.|
 |Glowing Coating|All entities are glowing.|
 |Mole Hour|One random player becomes a hidden mole, their identity is invisible. Status resets on the next event.|
 |Even Worse|Injured players lose one prop, healthy players take 6 damage.|
-|Copper Age|Copper-made blocks and entities fall from the sky.|
-|Loot Repel|Nearby items are repelled from players.|
+|Copper Age|Copper-made blocks and mobs fall from the sky.|
+|Loot Repel|Nearby dropped items are repelled from players.|
 |Scale Roulette|Set players' Scale to 50%~125%. Status resets on the next event.|
-|Range Shuffle|Blocks in a wider range around players turn random. Status resets on the next event.|
+|Range Shuffle|Blocks (not including Water & Lava) in a wider range around players turn random. Status resets on the next event.|
 |Mirror Legion|Clone all Non-Player Creatures (NPCs) on the field.|
 |Amber Specimen|Split the map into 4 quadrants, randomly fill 1 of them with Orange Stained Glass. Max triggers 4 times.|
 
@@ -444,7 +444,7 @@ Items are also displayed in the lobby.
 |-|-|
 |Item Stack|Most non-durable items have a maximum stack size of 64.|
 |Netherite Ingot|Can be directly used to craft Netherite things.|
-|Spawn Egg|Creeper Spawn Egg: spawns Self-Igniting Creeper. Wolf, Cat & Parrot: they are tamed. Some mobs have more variants. Bow/Crossbow: Can shoot spawn eggs then summon them.|
+|Spawn Egg|Creeper Spawn Egg: spawns Self-Igniting Creeper. Wolf, Cat & Parrot: they are tamed. Some mobs have more variants. Bow/Crossbow: Can shoot spawn eggs then summon them. Some of them can be banned below.|
 |Player Head|Players drop their own heads upon death.|
 |Enchanted Book|Press [Right Button] to enchant offhand item.|
 |Time Controller|Randomly trigger one of the following effects: 1. Freeze all NPCs on the field for 30s. (Stackable) 2. Skip 1/4 game day. 3. Freeze / Unfreeze the day-night cycle. 4. Change the day-night cycle rate.|
