@@ -63,7 +63,7 @@ The language can be switched near the lobby spawn point (has hint in initial), a
 ||初始工具|玩家初始获得「挖掘一切」*1。|
 ||奖励箱|玩家初始获得「战利品箱」*1。|
 ||出生点保护|玩家初始被迷你版「囚笼」保护。|
-||零摩擦弹性碰撞试验场|所有实体都没有摩擦力，碰撞均为弹性碰撞，且没有摔落伤害。|
+||零摩擦弹性碰撞试验场|所有玩家和生物都没有摩擦力，碰撞均为弹性碰撞，且没有摔落伤害。|
 
 以下设置在「游戏」附近调整。
 
@@ -109,7 +109,7 @@ The language can be switched near the lobby spawn point (has hint in initial), a
 |雷霆万劫|给予至多 99 名随机玩家一发闪电束，同时随机附魔背包中的一格栏位。|
 |失重漫步|所有玩家获得更强的 跳跃提升 + 无摔落伤害 效果。|
 |鸡飞蛋打|随机选取 2 名玩家确定一条水平投影直线，在限高屏障处生成一只鸡，其沿此直线飞行途中会定时投放湮灭爆弹。|
-|移形换影|所有生物随机交换位置，也可能不会。|
+|移形换影|所有玩家和生物随机交换位置，也可能不会。|
 |道具空投|接下来的 3 次道具空投将随机触发以下情况：1. 任意道具。(80%) 2. 随机附魔书。(10%) 3. 随机药水。(10%)|
 |天罗地网|每位玩家横向四周铺满屏障。|
 |荧光涂层|所有实体发光。|
@@ -220,8 +220,8 @@ The language can be switched near the lobby spawn point (has hint in initial), a
 ||雙倍生命值| \ |
 ||初始工具|玩家初始獲得「挖掘一切」* 1。|
 ||獎勵箱|玩家初始獲得「戰利品箱」* 1。|
-||出生点保护|玩家初始被迷你版「牢籠」保护。|
-||零摩擦弹性碰撞试验场|所有实体都没有摩擦力，碰撞均为弹性碰撞，且没有摔落伤害。|
+||重生點保護|玩家初始被迷你版「牢籠」保護。|
+||零摩擦彈性碰撞試驗場|所有玩家和生物都沒有摩擦力，碰撞均為彈性碰撞，且沒有摔落傷害。|
 
 以下設定在「遊戲」附近調整。
 
@@ -250,35 +250,35 @@ The language can be switched near the lobby spawn point (has hint in initial), a
 |隱形塗層|所有實體隱形，玩家背包物品也不可見。|
 |背叛之時|隨機選中一名玩家轉為全員敵對狀態，其餘玩家結成同一隊伍。效果持續至下個事件觸發時重設。|
 |五谷豐登|殘血玩家恢復滿血，滿血玩家獲得一次隨機道具抽取。|
-|鋼鐵洪流|天上隨機掉落鐵質方塊和實體。|
+|鋼鐵洪流|天上隨機掉落鐵質方塊和生物。|
 |吸星大法|玩家附近的掉落物會被自動吸附。|
 |小孩模式|玩家大小變為原來的 1/2。效果持續至下個事件觸發時重設。|
-|觸則生變|玩家接觸的方塊變為隨機方塊。效果持續至下個事件觸發時重設。|
+|觸則生變|玩家接觸的方塊（不包括水＆熔岩）變為隨機方塊。效果持續至下個事件觸發時重設。|
 |萬物歸零|殺死場上所有非玩家生物（NPC）。|
-|世界核平|將地圖按十字分為四个區域，隨機一處區域方塊及實體被徹底抹除。最多觸發 4 次。|
+|世界核平|將地圖按十字分為四個區域，隨機一處區域方塊及實體被徹底抹除。最多觸發 4 次。|
 
 #### 事件+
 事件+是原版事件的變種。
 
 |事件列表|描述|
 |-|-|
-|萬藥齊發|所有玩家頭上將不斷生成藥水箭矢。|
+|萬藥齊發|所有玩家頭上將不斷生成藥水箭。|
 |粉雪地板|所有玩家腳下的方塊會逐漸變成粉雪。黃色羊毛→橙色羊毛→紅色羊毛→粉雪|
 |雷霆萬劫|給予至多 99 名隨機玩家一發閃電電流，同時隨機附魔背包內某一格欄位。|
 |失重漫步|所有玩家獲得更強的 跳躍提升 + 緩降 效果。|
 |雞飛蛋打|隨機選擇 2 名玩家連成水平投影直線，在限高屏障點生成一隻雞，其在沿此直線飛行途中會定時投放湮滅爆彈。|
-|消影現影|所有生物隨機交換位置，也可能不換。|
+|消影現影|所有玩家和生物隨機交換位置，也可能不換。|
 |道具空投|接下來的 3 次道具空投將隨機觸發以下情況：1. 任意道具。(80%) 2. 隨機附魔書。(10%) 3. 隨機藥水。(10%)|
 |天羅地網|每位玩家橫向四周鋪滿屏障。|
 |螢光塗層|所有實體發光。|
 |臥底之時|隨機一名玩家成為臥底，其身份不可見。效果持續至下個事件觸發時重設。|
 |雪上加霜|殘血玩家失去一件道具，滿血玩家受到 6 點傷害。|
-|銅器時代|天上隨機掉落銅質方塊和實體。|
+|銅器時代|天上隨機掉落銅質方塊和生物。|
 |斥星大法|玩家附近的掉落物會被自動排斥。|
 |巨細無常|玩家尺寸變為原來的 50%~125%。效果持續至下個事件觸發時重設。|
-|範圍生變|玩家接觸的更大範圍方塊變為隨機方塊。效果持續至下個事件觸發時重設。|
+|範圍生變|玩家接觸的更大範圍方塊（不包括水＆熔岩）變為隨機方塊。效果持續至下個事件觸發時重設。|
 |鏡像軍團|複製場上所有非玩家生物（NPC）。|
-|琥珀標本|將地圖按十字分為四个區域，隨機一處區域被填滿橙色染色玻璃。最多觸發 4 次。|
+|琥珀標本|將地圖按十字分為四個區域，隨機一處區域被填滿橙色染色玻璃。最多觸發 4 次。|
 
 ### 道具_
 道具也會在大廳展示。
@@ -287,7 +287,7 @@ The language can be switched near the lobby spawn point (has hint in initial), a
 |-|-|
 |物品堆疊|大部分無耐久物品最大堆疊個數均修改為 64。|
 |獄髓錠|可直接用於合成獄髓物品。|
-|生怪蛋|苦力怕生怪蛋：均為自燃苦力怕。狼，貓＆鸚鵡：都是馴服的。部分生物擁有更多變種。弓/弩：能發射生怪蛋並生成。|
+|生怪蛋|苦力怕生怪蛋：均為自燃苦力怕。狼，貓＆鸚鵡：都是馴服的。部分生物擁有更多變種。弓/弩：能發射生怪蛋並生成。部分生怪蛋可在下方禁止。|
 |玩家頭顱|玩家死亡會掉落頭顱。|
 |附魔書|按 [右鍵] 給副手物品附魔。|
 |時間控制器|以下效果中隨機觸發其一：1. 凍結場上所有 NPC 30 秒。（可疊加）2. 增加 1/4 遊戲天。3. 晝夜流轉凍結/解凍。4. 修改晝夜流轉倍率。|
@@ -305,7 +305,7 @@ The language can be switched near the lobby spawn point (has hint in initial), a
 |可發射的龍炎彈|按 [右鍵] 來發射。|
 |湮滅爆彈|湮滅目標區域 9×9×9 範圍的所有方塊。|
 |大盜鬼手|奪取準星指向的玩家物品欄內的一格物品。|
-|烽火台|主手持烽火台，副手持玩家頭顱並潛行，能使對應玩家復活并加入队伍。|
+|烽火台|主手持烽火台，副手持玩家頭顱並潛行，能使對應玩家復活並加入隊伍。|
 |戰利品箱|來自原版 MC 的隨機戰利品，物超所值！|
 |快速防禦塔|放下後會自動快速建造一座防禦塔。|
 |TNT|自燃TNT＆可投擲的TNT：3 秒後爆炸。|
@@ -378,7 +378,7 @@ All settings can be configured in the lobby.
 ||Init Tool|Players get "Mine Everything"*1 on spawn.|
 ||Bonus Chest|Players get "Loot Chest"*1 on spawn.|
 ||Spawn Protection|Players start protected by a mini "Cage".|
-||Zero-Friction Elastic Collision Field|All mobs have no friction, all collisions are perfectly elastic, and there is no fall damage.|
+||Zero-Friction Elastic Collision Field|All players & mobs have no friction, all collisions are perfectly elastic, and there is no fall damage.|
 
 Following settings can be adjusted near the "Play" area.
 
@@ -424,7 +424,7 @@ Event+ are variants of the original events.
 |Thunder Doom|Max of 99 players will be struck by a Lightning Bolt, and a random slot in their inventory will receive a random enchantment.|
 |Weightless Walk|All players will receive stronger Jump Boost + No Fall Damage effects.|
 |Null Chicken|Randomly select 2 players to form a horizontal projection line, then summon a Chicken at height-limit barrier. As it flies along this line, it will drop Null Bomb at regular intervals.|
-|Universal Swap|All mobs randomly swap positions, or not.|
+|Universal Swap|All players & mobs randomly swap positions, or not.|
 |Prop Drop|The next 3 prop drops will be randomly chosen from the following: 1. Any prop. (80%) 2. A random Enchanted Book. (10%) 3. A random Potion. (10%)|
 |Horizontal Shield|Fill the horizontal surroundings of each player with Barrier.|
 |Glowing Coating|All entities are glowing.|
