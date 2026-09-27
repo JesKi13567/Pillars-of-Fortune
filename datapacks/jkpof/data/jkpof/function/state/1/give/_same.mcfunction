@@ -4,17 +4,17 @@ execute if score #ctrl_item_count_order jkpof.int matches 4 store result score #
 execute if score #ctrl_item_count_order jkpof.int matches 3..4 run scoreboard players operation @a[scores={jkpof.state=2}] jkpof.item.count = #item_count jkpof.int
 
 # 分数
-execute if score #is_prop jkpof.int matches 0 store result score #item_order jkpof.int run random value 1..1187
-execute if score #is_prop jkpof.int matches 0 if score #ctrl_item_prop_chance jkpof.int matches 1 if score #item_order jkpof.int matches 24.. if predicate {condition: "random_chance", chance: 0.01} run scoreboard players set #is_prop jkpof.int 1
-execute if score #is_prop jkpof.int matches 0 if score #ctrl_item_prop_chance jkpof.int matches 2 if score #item_order jkpof.int matches 24.. if predicate {condition: "random_chance", chance: 0.02} run scoreboard players set #is_prop jkpof.int 1
-execute if score #is_prop jkpof.int matches 0 if score #ctrl_item_prop_chance jkpof.int matches 3 if score #item_order jkpof.int matches 24.. if predicate {condition: "random_chance", chance: 0.03} run scoreboard players set #is_prop jkpof.int 1
-execute if score #is_prop jkpof.int matches 0 if score #ctrl_item_prop_chance jkpof.int matches 4 if score #item_order jkpof.int matches 24.. if predicate {condition: "random_chance", chance: 0.04} run scoreboard players set #is_prop jkpof.int 1
-execute if score #is_prop jkpof.int matches 0 if score #ctrl_item_prop_chance jkpof.int matches 5 if score #item_order jkpof.int matches 24.. if predicate {condition: "random_chance", chance: 0.05} run scoreboard players set #is_prop jkpof.int 1
+execute if score #is_prop jkpof.int matches 0 store result score #item_order jkpof.int run random value 1..1289
+execute if score #is_prop jkpof.int matches 0 if score #ctrl_item_prop_chance jkpof.int matches 1 if score #item_order jkpof.int matches 24.. if predicate {type: "random_chance", chance: 0.01} run scoreboard players set #is_prop jkpof.int 1
+execute if score #is_prop jkpof.int matches 0 if score #ctrl_item_prop_chance jkpof.int matches 2 if score #item_order jkpof.int matches 24.. if predicate {type: "random_chance", chance: 0.02} run scoreboard players set #is_prop jkpof.int 1
+execute if score #is_prop jkpof.int matches 0 if score #ctrl_item_prop_chance jkpof.int matches 3 if score #item_order jkpof.int matches 24.. if predicate {type: "random_chance", chance: 0.03} run scoreboard players set #is_prop jkpof.int 1
+execute if score #is_prop jkpof.int matches 0 if score #ctrl_item_prop_chance jkpof.int matches 4 if score #item_order jkpof.int matches 24.. if predicate {type: "random_chance", chance: 0.04} run scoreboard players set #is_prop jkpof.int 1
+execute if score #is_prop jkpof.int matches 0 if score #ctrl_item_prop_chance jkpof.int matches 5 if score #item_order jkpof.int matches 24.. if predicate {type: "random_chance", chance: 0.05} run scoreboard players set #is_prop jkpof.int 1
 execute if score #is_prop jkpof.int matches 1 store result score #item_order jkpof.int run random value 1..23
 
-execute if score #ctrl_ban_spawn_egg.ender_dragon jkpof.int matches 1 if score #item_order jkpof.int matches 1013 store result score #item_order jkpof.int run random value 926..1010
-execute if score #ctrl_ban_spawn_egg.warden jkpof.int matches 1 if score #item_order jkpof.int matches 1011 store result score #item_order jkpof.int run random value 926..1010
-execute if score #ctrl_ban_spawn_egg.wither jkpof.int matches 1 if score #item_order jkpof.int matches 1012 store result score #item_order jkpof.int run random value 926..1010
+execute if score #ctrl_ban_spawn_egg.ender_dragon jkpof.int matches 1 if score #item_order jkpof.int matches 1094 store result score #item_order jkpof.int run random value 1009..1093
+execute if score #ctrl_ban_spawn_egg.warden jkpof.int matches 1 if score #item_order jkpof.int matches 1095 store result score #item_order jkpof.int run random value 1009..1093
+execute if score #ctrl_ban_spawn_egg.wither jkpof.int matches 1 if score #item_order jkpof.int matches 1096 store result score #item_order jkpof.int run random value 1009..1093
 
 scoreboard players operation @a[scores={jkpof.state=2}] jkpof.item.order = #item_order jkpof.int
 

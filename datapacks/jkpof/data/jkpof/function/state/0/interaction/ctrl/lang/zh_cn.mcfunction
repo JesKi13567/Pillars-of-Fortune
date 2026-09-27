@@ -341,6 +341,7 @@ data modify storage jk:pof txt.lobby.item.elytra.p3 set value "若成功激活�
 data modify storage jk:pof txt.lobby.item.enchanted_book set value "给副手物品附魔。"
 data modify storage jk:pof txt.lobby.item.ender_eye.lore set value "沿指针方向瞬移 20 格，无视方块阻挡。"
 data modify storage jk:pof txt.lobby.item.ender_eye.name set value "折跃珍珠"
+data modify storage jk:pof txt.lobby.item.global.chance set value "概率："
 data modify storage jk:pof txt.lobby.item.global.countdown set value "倒计时："
 data modify storage jk:pof txt.lobby.item.global.enchanted_golden set value "附魔金"
 data modify storage jk:pof txt.lobby.item.global.place_anywhere set value "可随处放置的"

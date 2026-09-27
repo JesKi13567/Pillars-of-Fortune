@@ -1,11 +1,1 @@
-{
-  "values": [
-    "#jkpof:give/spawn_egg_common",
-    "creeper_spawn_egg",
-    "ender_dragon_spawn_egg",
-    "warden_spawn_egg",
-    "wither_spawn_egg",
-    "end_crystal",
-    "tnt"
-  ]
-}
+{"values":["#jkpof:give/spawn_egg_common","creeper_spawn_egg","end_crystal","ender_dragon_spawn_egg","pillager_spawn_egg","rabbit_spawn_egg","tnt","villager_spawn_egg","vindicator_spawn_egg","warden_spawn_egg","wither_spawn_egg","zombie_spawn_egg"]}

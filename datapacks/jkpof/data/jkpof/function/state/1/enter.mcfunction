@@ -56,6 +56,7 @@ scoreboard players reset * jkpof.spawn_egg.vindicator
 scoreboard players reset * jkpof.spawn_egg.pillager
 scoreboard players reset * jkpof.spawn_egg.sheep
 scoreboard players reset * jkpof.spawn_egg.fox
+scoreboard players reset * jkpof.spawn_egg.zombie
 
 scoreboard players reset * jkpof.spawn_egg.chicken
 scoreboard players reset * jkpof.spawn_egg.cow
@@ -100,7 +101,6 @@ scoreboard players reset * jkpof.spawn_egg.trader_llama
 scoreboard players reset * jkpof.spawn_egg.witch
 scoreboard players reset * jkpof.spawn_egg.wither_skeleton
 scoreboard players reset * jkpof.spawn_egg.zoglin
-scoreboard players reset * jkpof.spawn_egg.zombie
 scoreboard players reset * jkpof.spawn_egg.zombie_nautilus
 scoreboard players reset * jkpof.spawn_egg.zombie_villager
 scoreboard players reset * jkpof.spawn_egg.zombified_piglin

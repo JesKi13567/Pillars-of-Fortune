@@ -91,4 +91,5 @@ execute as @s[type=zombie_villager] summon zombie_villager run function jkpof:st
 execute as @s[type=zombified_piglin] summon zombified_piglin run function jkpof:state/1/progress/event/16_purge/data with storage jk:pof data.purge
 execute as @s[type=mannequin] summon mannequin run function jkpof:state/1/progress/event/16_purge/data with storage jk:pof data.purge
 execute as @s[type=illusioner] summon illusioner run function jkpof:state/1/progress/event/16_purge/data with storage jk:pof data.purge
+execute as @s[type=giant] summon giant run function jkpof:state/1/progress/event/16_purge/data with storage jk:pof data.purge
 tag @s remove jkpof_mob_self

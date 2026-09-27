@@ -18,6 +18,7 @@ execute at @s[scores={jkpof.spawn_egg.vindicator=1..}] run function jkpof:state/
 execute at @s[scores={jkpof.spawn_egg.pillager=1..}] run function jkpof:state/1/special_item/spawn_egg/variant/pillager
 execute at @s[scores={jkpof.spawn_egg.sheep=1..}] run function jkpof:state/1/special_item/spawn_egg/variant/sheep
 execute at @s[scores={jkpof.spawn_egg.fox=1..}] run function jkpof:state/1/special_item/spawn_egg/variant/fox
+execute at @s[scores={jkpof.spawn_egg.zombie=1..}] run function jkpof:state/1/special_item/spawn_egg/variant/zombie
 
 execute at @s[scores={jkpof.spawn_egg.chicken=1..}] run function jkpof:state/1/special_item/spawn_egg/variant/3 {entity: chicken}
 execute at @s[scores={jkpof.spawn_egg.cow=1..}] run function jkpof:state/1/special_item/spawn_egg/variant/3 {entity: cow}
@@ -61,7 +62,6 @@ execute as @s[scores={jkpof.spawn_egg.trader_llama=1..}] run function jkpof:stat
 execute as @s[scores={jkpof.spawn_egg.witch=1..}] run function jkpof:state/1/special_item/spawn_egg/hostile {entity: witch}
 execute as @s[scores={jkpof.spawn_egg.wither_skeleton=1..}] run function jkpof:state/1/special_item/spawn_egg/hostile {entity: wither_skeleton}
 execute as @s[scores={jkpof.spawn_egg.zoglin=1..}] run function jkpof:state/1/special_item/spawn_egg/hostile {entity: zoglin}
-execute as @s[scores={jkpof.spawn_egg.zombie=1..}] run function jkpof:state/1/special_item/spawn_egg/hostile {entity: zombie}
 execute as @s[scores={jkpof.spawn_egg.zombie_nautilus=1..}] run function jkpof:state/1/special_item/spawn_egg/hostile {entity: zombie_nautilus}
 execute as @s[scores={jkpof.spawn_egg.zombie_villager=1..}] run function jkpof:state/1/special_item/spawn_egg/hostile {entity: zombie_villager}
 execute as @s[scores={jkpof.spawn_egg.zombified_piglin=1..}] run function jkpof:state/1/special_item/spawn_egg/hostile {entity: zombified_piglin}

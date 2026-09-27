@@ -1,5 +1,5 @@
 # 地面
-execute store result score #style_temp jkpof.int run random value 0..14
+execute store result score #style_temp jkpof.int run random value 0..17
 execute if score #style_temp jkpof.int matches 0 run data modify storage jk:pof data.map.b1 set value "acacia_leaves"
 execute if score #style_temp jkpof.int matches 1 run data modify storage jk:pof data.map.b1 set value "azalea_leaves"
 execute if score #style_temp jkpof.int matches 2 run data modify storage jk:pof data.map.b1 set value "birch_leaves"
@@ -15,8 +15,11 @@ execute if score #style_temp jkpof.int matches 11 run data modify storage jk:pof
 execute if score #style_temp jkpof.int matches 12 run data modify storage jk:pof data.map.b1 set value "red_mushroom_block"
 execute if score #style_temp jkpof.int matches 13 run data modify storage jk:pof data.map.b1 set value "nether_wart_block"
 execute if score #style_temp jkpof.int matches 14 run data modify storage jk:pof data.map.b1 set value "warped_wart_block"
+execute if score #style_temp jkpof.int matches 15 run data modify storage jk:pof data.map.b1 set value "red_poplar_leaves"
+execute if score #style_temp jkpof.int matches 16 run data modify storage jk:pof data.map.b1 set value "orange_poplar_leaves"
+execute if score #style_temp jkpof.int matches 17 run data modify storage jk:pof data.map.b1 set value "yellow_poplar_leaves"
 
-execute store result score #style_temp jkpof.int run random value 0..14
+execute store result score #style_temp jkpof.int run random value 0..17
 execute if score #style_temp jkpof.int matches 0 run data modify storage jk:pof data.map.b2 set value "acacia_leaves"
 execute if score #style_temp jkpof.int matches 1 run data modify storage jk:pof data.map.b2 set value "azalea_leaves"
 execute if score #style_temp jkpof.int matches 2 run data modify storage jk:pof data.map.b2 set value "birch_leaves"
@@ -32,6 +35,9 @@ execute if score #style_temp jkpof.int matches 11 run data modify storage jk:pof
 execute if score #style_temp jkpof.int matches 12 run data modify storage jk:pof data.map.b2 set value "red_mushroom_block"
 execute if score #style_temp jkpof.int matches 13 run data modify storage jk:pof data.map.b2 set value "nether_wart_block"
 execute if score #style_temp jkpof.int matches 14 run data modify storage jk:pof data.map.b2 set value "warped_wart_block"
+execute if score #style_temp jkpof.int matches 15 run data modify storage jk:pof data.map.b2 set value "red_poplar_leaves"
+execute if score #style_temp jkpof.int matches 16 run data modify storage jk:pof data.map.b2 set value "orange_poplar_leaves"
+execute if score #style_temp jkpof.int matches 17 run data modify storage jk:pof data.map.b2 set value "yellow_poplar_leaves"
 
 function jkpof:state/1/fill/map/type/mix/floor with storage jk:pof data.map
 

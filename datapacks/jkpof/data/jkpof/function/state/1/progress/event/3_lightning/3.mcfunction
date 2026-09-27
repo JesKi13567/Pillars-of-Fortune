@@ -1,2 +1,2 @@
-$execute if items entity @s $(real) golden_apple run item modify entity @s $(real) {function: "set_item", item: "enchanted_golden_apple"}
-$item modify entity @s $(real) {function: "set_enchantments", enchantments: {$(enchant_value): $(enchant_lvl)}}
+$execute if items entity @s $(real) golden_apple run item modify entity @s $(real) {type: "set_item", item: "enchanted_golden_apple"}
+$item modify entity @s $(real) {type: "set_enchantments", enchantments: {$(enchant_value): $(enchant_lvl)}}

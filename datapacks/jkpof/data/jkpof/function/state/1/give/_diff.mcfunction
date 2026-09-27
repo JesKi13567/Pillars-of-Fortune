@@ -3,17 +3,17 @@ execute if score #ctrl_item_count_order jkpof.int matches 3 as @a[scores={jkpof.
 execute if score #ctrl_item_count_order jkpof.int matches 4 as @a[scores={jkpof.state=2}] store result score @s jkpof.item.count run random value 1..8
 
 # 分数
-execute if score #is_prop jkpof.int matches 0 as @a[scores={jkpof.state=2}] store result score @s jkpof.item.order run random value 1..1187
-execute if score #is_prop jkpof.int matches 0 if score #ctrl_item_prop_chance jkpof.int matches 1 as @a[scores={jkpof.state=2, jkpof.item.order=24..}] if predicate {condition: "random_chance", chance: 0.01} store result score @s jkpof.item.order run random value 1..23
-execute if score #is_prop jkpof.int matches 0 if score #ctrl_item_prop_chance jkpof.int matches 2 as @a[scores={jkpof.state=2, jkpof.item.order=24..}] if predicate {condition: "random_chance", chance: 0.02} store result score @s jkpof.item.order run random value 1..23
-execute if score #is_prop jkpof.int matches 0 if score #ctrl_item_prop_chance jkpof.int matches 3 as @a[scores={jkpof.state=2, jkpof.item.order=24..}] if predicate {condition: "random_chance", chance: 0.03} store result score @s jkpof.item.order run random value 1..23
-execute if score #is_prop jkpof.int matches 0 if score #ctrl_item_prop_chance jkpof.int matches 4 as @a[scores={jkpof.state=2, jkpof.item.order=24..}] if predicate {condition: "random_chance", chance: 0.04} store result score @s jkpof.item.order run random value 1..23
-execute if score #is_prop jkpof.int matches 0 if score #ctrl_item_prop_chance jkpof.int matches 5 as @a[scores={jkpof.state=2, jkpof.item.order=24..}] if predicate {condition: "random_chance", chance: 0.05} store result score @s jkpof.item.order run random value 1..23
+execute if score #is_prop jkpof.int matches 0 as @a[scores={jkpof.state=2}] store result score @s jkpof.item.order run random value 1..1289
+execute if score #is_prop jkpof.int matches 0 if score #ctrl_item_prop_chance jkpof.int matches 1 as @a[scores={jkpof.state=2, jkpof.item.order=24..}] if predicate {type: "random_chance", chance: 0.01} store result score @s jkpof.item.order run random value 1..23
+execute if score #is_prop jkpof.int matches 0 if score #ctrl_item_prop_chance jkpof.int matches 2 as @a[scores={jkpof.state=2, jkpof.item.order=24..}] if predicate {type: "random_chance", chance: 0.02} store result score @s jkpof.item.order run random value 1..23
+execute if score #is_prop jkpof.int matches 0 if score #ctrl_item_prop_chance jkpof.int matches 3 as @a[scores={jkpof.state=2, jkpof.item.order=24..}] if predicate {type: "random_chance", chance: 0.03} store result score @s jkpof.item.order run random value 1..23
+execute if score #is_prop jkpof.int matches 0 if score #ctrl_item_prop_chance jkpof.int matches 4 as @a[scores={jkpof.state=2, jkpof.item.order=24..}] if predicate {type: "random_chance", chance: 0.04} store result score @s jkpof.item.order run random value 1..23
+execute if score #is_prop jkpof.int matches 0 if score #ctrl_item_prop_chance jkpof.int matches 5 as @a[scores={jkpof.state=2, jkpof.item.order=24..}] if predicate {type: "random_chance", chance: 0.05} store result score @s jkpof.item.order run random value 1..23
 execute if score #is_prop jkpof.int matches 1 as @a[scores={jkpof.state=2}] store result score @s jkpof.item.order run random value 1..23
 
-execute if score #ctrl_ban_spawn_egg.ender_dragon jkpof.int matches 1 as @a[scores={jkpof.state=2, jkpof.item.order=1013}] store result score @s jkpof.item.order run random value 926..1010
-execute if score #ctrl_ban_spawn_egg.warden jkpof.int matches 1 as @a[scores={jkpof.state=2, jkpof.item.order=1011}] store result score @s jkpof.item.order run random value 926..1010
-execute if score #ctrl_ban_spawn_egg.wither jkpof.int matches 1 as @a[scores={jkpof.state=2, jkpof.item.order=1012}] store result score @s jkpof.item.order run random value 926..1010
+execute if score #ctrl_ban_spawn_egg.ender_dragon jkpof.int matches 1 as @a[scores={jkpof.state=2, jkpof.item.order=1094}] store result score @s jkpof.item.order run random value 1009..1093
+execute if score #ctrl_ban_spawn_egg.warden jkpof.int matches 1 as @a[scores={jkpof.state=2, jkpof.item.order=1095}] store result score @s jkpof.item.order run random value 1009..1093
+execute if score #ctrl_ban_spawn_egg.wither jkpof.int matches 1 as @a[scores={jkpof.state=2, jkpof.item.order=1096}] store result score @s jkpof.item.order run random value 1009..1093
 
 # 真正
 execute if score #event_prop_supply.count.enchanted_book jkpof.int matches 1.. run function jkpof:state/1/give/extra {A: 'a', S: 's', I: 'enchanted_book'}

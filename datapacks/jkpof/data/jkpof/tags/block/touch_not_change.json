@@ -1,7 +1,1 @@
-{
-  "values": [
-    "bubble_column",
-    "water",
-    "lava"
-  ]
-}
+{"values":["bubble_column","lava","water"]}

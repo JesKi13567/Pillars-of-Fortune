@@ -1,4 +1,4 @@
-execute store result score @s jkpof.int run random value 0..12
+execute store result score @s jkpof.int run random value 0..13
 
 $execute as @s[scores={jkpof.int=0}] run fill ~ ~$(y1) ~ ~ $(y2) ~ acacia_log strict
 $execute as @s[scores={jkpof.int=1}] run fill ~ ~$(y1) ~ ~ $(y2) ~ birch_log strict
@@ -13,3 +13,4 @@ $execute as @s[scores={jkpof.int=9}] run fill ~ ~$(y1) ~ ~ $(y2) ~ bamboo_block 
 $execute as @s[scores={jkpof.int=10}] run fill ~ ~$(y1) ~ ~ $(y2) ~ mushroom_stem strict
 $execute as @s[scores={jkpof.int=11}] run fill ~ ~$(y1) ~ ~ $(y2) ~ crimson_stem strict
 $execute as @s[scores={jkpof.int=12}] run fill ~ ~$(y1) ~ ~ $(y2) ~ warped_stem strict
+$execute as @s[scores={jkpof.int=13}] run fill ~ ~$(y1) ~ ~ $(y2) ~ poplar_log strict

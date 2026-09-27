@@ -28,6 +28,7 @@ execute if items entity @s container.0 vindicator_spawn_egg run function jkpof:s
 execute if items entity @s container.0 pillager_spawn_egg run function jkpof:state/1/special_item/spawn_egg/arrow/variant {entity: pillager, type: 1}
 execute if items entity @s container.0 sheep_spawn_egg run function jkpof:state/1/special_item/spawn_egg/arrow/variant {entity: sheep, type: 1}
 execute if items entity @s container.0 fox_spawn_egg run function jkpof:state/1/special_item/spawn_egg/arrow/variant {entity: fox, type: 1}
+execute if items entity @s container.0 zombie_spawn_egg run function jkpof:state/1/special_item/spawn_egg/arrow/variant {entity: zombie, type: 1}
 
 execute if items entity @s container.0 chicken_spawn_egg run function jkpof:state/1/special_item/spawn_egg/arrow/variant {entity: chicken, type: 2}
 execute if items entity @s container.0 cow_spawn_egg run function jkpof:state/1/special_item/spawn_egg/arrow/variant {entity: cow, type: 2}
@@ -69,7 +70,6 @@ execute if items entity @s container.0 witch_spawn_egg run function jkpof:state/
 execute if items entity @s container.0 wither_skeleton_spawn_egg run function jkpof:state/1/special_item/spawn_egg/arrow/type {type: hostile, entity: wither_skeleton}
 execute if items entity @s container.0 wolf_spawn_egg run function jkpof:state/1/special_item/spawn_egg/arrow/type {type: hostile, entity: wolf}
 execute if items entity @s container.0 zoglin_spawn_egg run function jkpof:state/1/special_item/spawn_egg/arrow/type {type: hostile, entity: zoglin}
-execute if items entity @s container.0 zombie_spawn_egg run function jkpof:state/1/special_item/spawn_egg/arrow/type {type: hostile, entity: zombie}
 execute if items entity @s container.0 zombie_nautilus_spawn_egg run function jkpof:state/1/special_item/spawn_egg/arrow/type {type: hostile, entity: zombie_nautilus}
 execute if items entity @s container.0 zombie_villager_spawn_egg run function jkpof:state/1/special_item/spawn_egg/arrow/type {type: hostile, entity: zombie_villager}
 execute if items entity @s container.0 zombified_piglin_spawn_egg run function jkpof:state/1/special_item/spawn_egg/arrow/type {type: hostile, entity: zombified_piglin}

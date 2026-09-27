@@ -341,6 +341,7 @@ data modify storage jk:pof txt.lobby.item.elytra.p3 set value "If attached, gran
 data modify storage jk:pof txt.lobby.item.enchanted_book set value "to enchant offhand item."
 data modify storage jk:pof txt.lobby.item.ender_eye.lore set value "Teleport 20 blocks forward, passing through blocks."
 data modify storage jk:pof txt.lobby.item.ender_eye.name set value "Warp Pearl"
+data modify storage jk:pof txt.lobby.item.global.chance set value "Chance: "
 data modify storage jk:pof txt.lobby.item.global.countdown set value " countdown: "
 data modify storage jk:pof txt.lobby.item.global.enchanted_golden set value "Enchanted Golden "
 data modify storage jk:pof txt.lobby.item.global.place_anywhere set value "Place-Anywhere "

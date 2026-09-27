@@ -4,7 +4,7 @@ data modify storage jk:pof txt.map.title.16 set from storage jk:pof txt.map.glob
 data modify storage jk:pof txt.map.title.17 set from storage jk:pof txt.map.global.3f
 
 data modify entity @e[type=text_display, tag=jkpof_lobby_const_top_lore, limit=1] text set value ["", {storage: "jk:pof", interpret: true, nbt: "txt.POF.expand", color: "yellow"}, "\n", {text: "\
-v1.4 - MC26.2\
+v1.4.1 - MC26.3\
 ", color: "gold"}, "\n", {storage: "jk:pof", interpret: true, nbt: "txt.lobby.const.top.description.p1", color: "green"}, "\n", {storage: "jk:pof", interpret: true, nbt: "txt.lobby.const.top.description.p2", color: "green"}, "\n", {storage: "jk:pof", interpret: true, nbt: "txt.lobby.const.top.description.p3", color: "green"}, "\n", {storage: "jk:pof", interpret: true, nbt: "txt.lobby.const.top.lore.map_author", color: "aqua"}, {text: "JK137", color: "aqua"}, "\n", {storage: "jk:pof", interpret: true, nbt: "txt.lobby.const.top.lore.who", color: "white"}]
 
 function jkpof:state/0/interaction/ctrl/preset/show_ctrl

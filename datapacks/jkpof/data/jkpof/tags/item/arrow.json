@@ -1,7 +1,1 @@
-{
-  "values": [
-    "arrow",
-    "tipped_arrow",
-    "spectral_arrow"
-  ]
-}
+{"values":["arrow","spectral_arrow","tipped_arrow"]}

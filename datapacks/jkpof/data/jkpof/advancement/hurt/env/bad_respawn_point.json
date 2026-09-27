@@ -1,0 +1,1 @@
+{"criteria":{"jkpof":{"trigger":"entity_hurt_player","conditions":{"damage":{"type":{"tags":[{"expected":true,"id":"bad_respawn_point"}]}}}}},"rewards":{"function":"jkpof:state/1/hurt/env/bad_respawn_point"}}

@@ -1,17 +1,1 @@
-{
-  "type": "crafting_shaped",
-  "category": "equipment",
-  "key": {
-    "#": "stick",
-    "X": "#netherite_tool_materials"
-  },
-  "pattern": [
-    "XXX",
-    " # ",
-    " # "
-  ],
-  "result": {
-    "count": 1,
-    "id": "netherite_pickaxe"
-  }
-}
+{"type":"crafting_shaped","category":"equipment","key":{"#":"stick","X":"#netherite_tool_materials"},"pattern":["XXX"," # "," # "],"result":{"count":1,"id":"netherite_pickaxe"}}

@@ -6,18 +6,18 @@ execute if score #ctrl_item_count_order jkpof.int matches 3 store result score @
 execute if score #ctrl_item_count_order jkpof.int matches 4 store result score @s jkpof.item.count run random value 1..8
 
 # 分数
-execute store result score @s[scores={jkpof.item.is_prop=0}] jkpof.item.order run random value 1..1187
-execute if score #ctrl_item_prop_chance jkpof.int matches 1 as @s[scores={jkpof.item.is_prop=0, jkpof.item.order=24..}] if predicate {condition: "random_chance", chance: 0.01} store result score @s jkpof.item.order run random value 1..23
-execute if score #ctrl_item_prop_chance jkpof.int matches 2 as @s[scores={jkpof.item.is_prop=0, jkpof.item.order=24..}] if predicate {condition: "random_chance", chance: 0.02} store result score @s jkpof.item.order run random value 1..23
-execute if score #ctrl_item_prop_chance jkpof.int matches 3 as @s[scores={jkpof.item.is_prop=0, jkpof.item.order=24..}] if predicate {condition: "random_chance", chance: 0.03} store result score @s jkpof.item.order run random value 1..23
-execute if score #ctrl_item_prop_chance jkpof.int matches 4 as @s[scores={jkpof.item.is_prop=0, jkpof.item.order=24..}] if predicate {condition: "random_chance", chance: 0.04} store result score @s jkpof.item.order run random value 1..23
-execute if score #ctrl_item_prop_chance jkpof.int matches 5 as @s[scores={jkpof.item.is_prop=0, jkpof.item.order=24..}] if predicate {condition: "random_chance", chance: 0.05} store result score @s jkpof.item.order run random value 1..23
+execute store result score @s[scores={jkpof.item.is_prop=0}] jkpof.item.order run random value 1..1289
+execute if score #ctrl_item_prop_chance jkpof.int matches 1 as @s[scores={jkpof.item.is_prop=0, jkpof.item.order=24..}] if predicate {type: "random_chance", chance: 0.01} store result score @s jkpof.item.order run random value 1..23
+execute if score #ctrl_item_prop_chance jkpof.int matches 2 as @s[scores={jkpof.item.is_prop=0, jkpof.item.order=24..}] if predicate {type: "random_chance", chance: 0.02} store result score @s jkpof.item.order run random value 1..23
+execute if score #ctrl_item_prop_chance jkpof.int matches 3 as @s[scores={jkpof.item.is_prop=0, jkpof.item.order=24..}] if predicate {type: "random_chance", chance: 0.03} store result score @s jkpof.item.order run random value 1..23
+execute if score #ctrl_item_prop_chance jkpof.int matches 4 as @s[scores={jkpof.item.is_prop=0, jkpof.item.order=24..}] if predicate {type: "random_chance", chance: 0.04} store result score @s jkpof.item.order run random value 1..23
+execute if score #ctrl_item_prop_chance jkpof.int matches 5 as @s[scores={jkpof.item.is_prop=0, jkpof.item.order=24..}] if predicate {type: "random_chance", chance: 0.05} store result score @s jkpof.item.order run random value 1..23
 execute store result score @s[scores={jkpof.item.is_prop=1..}] jkpof.item.order run random value 1..23
 execute unless score #ctrl_lang jkpof.int matches 2 run scoreboard players set @s[scores={jkpof.item.order=1}] jkpof.item.order 0
 
-execute if score #ctrl_ban_spawn_egg.ender_dragon jkpof.int matches 1 store result score @s[scores={jkpof.item.order=1013}] jkpof.item.order run random value 926..1010
-execute if score #ctrl_ban_spawn_egg.warden jkpof.int matches 1 store result score @s[scores={jkpof.item.order=1011}] jkpof.item.order run random value 926..1010
-execute if score #ctrl_ban_spawn_egg.wither jkpof.int matches 1 store result score @s[scores={jkpof.item.order=1012}] jkpof.item.order run random value 926..1010
+execute if score #ctrl_ban_spawn_egg.ender_dragon jkpof.int matches 1 store result score @s[scores={jkpof.item.order=1094}] jkpof.item.order run random value 1009..1093
+execute if score #ctrl_ban_spawn_egg.warden jkpof.int matches 1 store result score @s[scores={jkpof.item.order=1095}] jkpof.item.order run random value 1009..1093
+execute if score #ctrl_ban_spawn_egg.wither jkpof.int matches 1 store result score @s[scores={jkpof.item.order=1096}] jkpof.item.order run random value 1009..1093
 
 # 应用
 scoreboard players operation @e[type=fishing_bobber, tag=!jkpof] jkpof.item.count = @s jkpof.item.count

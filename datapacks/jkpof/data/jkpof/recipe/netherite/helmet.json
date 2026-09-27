@@ -1,15 +1,1 @@
-{
-  "type": "crafting_shaped",
-  "category": "equipment",
-  "key": {
-    "X": "netherite_ingot"
-  },
-  "pattern": [
-    "XXX",
-    "X X"
-  ],
-  "result": {
-    "count": 1,
-    "id": "netherite_helmet"
-  }
-}
+{"type":"crafting_shaped","category":"equipment","key":{"X":"netherite_ingot"},"pattern":["XXX","X X"],"result":{"count":1,"id":"netherite_helmet"}}
